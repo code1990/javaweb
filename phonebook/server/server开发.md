@@ -6,7 +6,7 @@
 
 测试url：http://localhost/login 
 
-正常返回说明执行ok
+返回login字符串说明执行ok
 
 ----------
 
