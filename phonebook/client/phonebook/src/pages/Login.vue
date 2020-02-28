@@ -51,7 +51,8 @@
             console.log(response);
             if (response.data.code === 0) {
               console.log(response.data.token);
-              window.localStorage.setItem("token", token);
+              window.localStorage.setItem("token", response.data.token);
+              this.$router.replace("/phoneBook")
             } else {
               this.errorInfo = response.data.msg;
             }
