@@ -29,4 +29,11 @@
 设置一个SystemConstant
 设置一个JwtUtils用于设置jwt相关的内容
 
+--------------------------
+### 05 前后端接口对接token
 
+后端的关键点在于使用webMvcConfigurer 来控制跨域请求
+
+然后返回正确的的token到前台
+
+--------

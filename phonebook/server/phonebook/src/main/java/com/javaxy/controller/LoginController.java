@@ -1,8 +1,13 @@
 package com.javaxy.controller;
 
+import com.javaxy.constant.SystemConstant;
 import com.javaxy.entity.Admin;
+import com.javaxy.entity.R;
 import com.javaxy.service.AdminService;
-import org.springframework.web.bind.annotation.*;
+import com.javaxy.util.JwtUtils;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
 
@@ -28,8 +33,16 @@ public class LoginController {
      * @return 单条数据
      */
     @RequestMapping("/login")
-    public String login(Admin admin) {
-        return "login";
+    public R login(@RequestBody Admin admin) {
+        Admin u = adminService.login(admin);
+        R r = new R();
+        if (u == null) {
+            return R.error("用户名或者密码错误");
+        } else {
+            String token = JwtUtils.createJWT(String.valueOf(u.getId()), u.getUserName(), SystemConstant.JWT_TTL);
+            r.put("token", token);
+        }
+        return r;
     }
 
 }
