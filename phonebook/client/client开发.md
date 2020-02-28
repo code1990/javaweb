@@ -1,4 +1,4 @@
-### 02搭建vue.js项目
+### 02搭建vue.js项目初始化
 
 -------------
 
@@ -30,6 +30,16 @@ mended) npm
 
 移动端设置如下的属性
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+width:可视区域的宽度，值可为数字或关键词device-width
+
+ intial-scale:页面首次被显示是可视区域的缩放级别，取值1.0则页面按实际尺寸显示，无任何缩放
+
+ maximum-scale=1.0, minimum-scale=1.0;可视区域的缩放级别，
+
+maximum-scale用户可将页面放大的程序，1.0将禁止用户放大到实际尺寸之上。
+
+ user-scalable:是否可对页面进行缩放，no 禁止缩放
+
 修改config/index.js文件localhost为0.0.0.0 便于使用ip地址访问（开发环境不建议修改）
 
 设置自动打开浏览器
@@ -39,3 +49,31 @@ mended) npm
 测试：http://localhost:8080/#/
 
 ok:成功返回login标识ok
+
+-----------------------
+
+### 03前端登陆页面的开发
+
+----------------------------------
+
+为了更好的适配移动端加入border.css，Reset.css
+这些样式 是全局样式 所以需要加入到main.js文件中
+
+stylus安装：执行css的预处理
+
+npm install stylus --save
+
+npm install stylus-loader --save
+
+ Axios安装:便于Ajax请求
+
+npm install axios
+
+
+
+开发Login.vue页面的开发
+
+
+可以看到正确的登陆效果说明本功能正常
+----
+
