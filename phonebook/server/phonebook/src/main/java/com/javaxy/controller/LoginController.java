@@ -33,10 +33,10 @@ public class LoginController {
      * @return 单条数据
      */
     @RequestMapping("/login")
-    public R login(@RequestBody Admin admin) {
-        Admin u = adminService.login(admin);
-        R r = new R();
-        if (u == null) {
+    public R login(@RequestBody Admin admin)throws Exception{
+        Admin u=adminService.login(admin);
+        R r=new R();
+        if(u==null){
             return R.error("用户名或者密码错误");
         } else {
             String token = JwtUtils.createJWT(String.valueOf(u.getId()), u.getUserName(), SystemConstant.JWT_TTL);

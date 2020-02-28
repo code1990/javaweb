@@ -13,9 +13,9 @@ export default new Router({
       component: Login
     },
     {
-      path:'/phoneBook',
-      name:'/phoneBook',
-      component:PhoneBook
+      path: '/phoneBook',
+      name: 'PhoneBook',
+      component: PhoneBook
     }
   ]
 })

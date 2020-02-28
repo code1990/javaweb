@@ -28,16 +28,16 @@ public class SysInterceptor implements HandlerInterceptor {
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         String contextPath = request.getRequestURI();
         logger.info("路径："+contextPath);
-        String token = request.getHeader("token");
-        if (handler instanceof HandlerMethod) {
-            if (StringUtil.isEmpty(token)) {
-                logger.info("签名证书不存在");
-                print(response, R.error(SystemConstant.JWT_ERRCODE_NULL, "签名验证不存在"));
+        String token=request.getHeader("token");
+        if(handler instanceof HandlerMethod){
+            if(StringUtil.isEmpty(token)){
+                logger.info("签名签证不存在");
+                print(response, R.error(SystemConstant.JWT_ERRCODE_NULL,"签名验证不存在"));
                 return false;
-            } else {
+            }else{
                 CheckResult checkResult = JwtUtils.validateJWT(token);
-                if ((checkResult.isSuccess())) {
-                    logger.info("签名证书通过");
+                if(checkResult.isSuccess()){
+                    logger.info("签名验证通过");
                     return true;
                 } else {
                     switch (checkResult.getErrCode()) {
@@ -53,8 +53,9 @@ public class SysInterceptor implements HandlerInterceptor {
                     return false;
                 }
             }
+        }else{
+            return true;
         }
-        return false;
     }
 
     private void print(HttpServletResponse response, Object message) {

@@ -1,71 +1,67 @@
 <template>
-  <div>
-    <div class="login-logo">通讯录</div>
-    <form action="" class="login-cont">
-      <ul>
-        <li>
-          <input type="text" v-model="userName" placeholder="请输入用户名">
-        </li>
-        <li>
-          <input type="password" v-model="password" placeholder="请输入密码">
-        </li>
-      </ul>
-      <a href="javascript:;" class="submitButton" @click="submit()">登录</a>
-      <p class="errorInfo">{{errorInfo}}</p>
-    </form>
-    <p class="copyright">
-      Copyright © 2012-2019 <a href="http://www.javaxy.com">www.javaxy.com</a>
-    </p>
-  </div>
+    <div>
+      <div class="login-logo">通讯录</div>
+      <form action="" class="login-cont">
+        <ul>
+          <li>
+            <input v-model="userName" type="text" placeholder="请输入用户名：">
+          </li>
+          <li>
+            <input v-model="password" type="password" placeholder="请输入密码：">
+          </li>
+        </ul>
+        <a href="javascript:;" class="submitButton" @click="submit()">登  录</a>
+        <p class="errorInfo">{{errorInfo}}</p>
+      </form>
+      <p class="copyright">
+        Copyright © 2012-2019 <a href="http://www.java1234.com">www.java1234.com</a>
+      </p>
+    </div>
 </template>
 
 <script>
     import axios from 'axios'
     import {getServerUrl} from '@/config/sys.js'
-
-  export default {
-    name: 'Login',
-    data() {
-      return {
-        userName: "",
-        password: "",
-        errorInfo: ""
-      }
-    },
-    methods: {
-      submit() {
-        let url=getServerUrl("login");
-        console.log(url);
-        if (this.userName.trim() === "") {
-          this.errorInfo = "用户名不能为空";
-          return;
-        }
-        if (this.password.trim() === "") {
-          this.errorInfo = "密码不能为空";
-          return;
-        }
-        console.log("ok");
-        axios.post(url,
-          {"userName": this.userName, "password": this.password})
-          .then(response => {
-            console.log(response);
-            if (response.data.code === 0) {
-              console.log(response.data.token);
-              window.localStorage.setItem("token", response.data.token);
-              this.$router.replace("/phoneBook")
-            } else {
-              this.errorInfo = response.data.msg;
+    export default {
+        name: "Login",
+        data(){
+          return{
+            userName:'',
+            password:'',
+            errorInfo:''
+          }
+        },
+        methods:{
+          submit(){
+            let url=getServerUrl("login");
+            console.log(url)
+            if(this.userName.trim()==''){
+              this.errorInfo="用户名不能为空！";
+              return;
             }
-          }).catch(error => {
-            console.log(error);
-            this.errorInfo = error;
-        })
-      }
+            if(this.password.trim()==''){
+              this.errorInfo="密码不能为空！";
+              return;
+            }
+            console.log('ok')
+            axios.post(url,{"userName":this.userName,"password":this.password})
+              .then(response=>{
+                if(response.data.code==0){
+                 // console.log(response.data.token);
+                  window.localStorage.setItem("token",response.data.token);
+                  this.$router.replace('/phoneBook')
+                }else{
+                  this.errorInfo=response.data.msg;
+                }
+              }).catch(error=>{
+                console.log(error)
+                this.errorInfo=error;
+            })
+          }
+        }
     }
-  }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="stylus" scoped>
 
   .login-logo
