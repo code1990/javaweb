@@ -2,7 +2,7 @@
   <div>
     <phone-book-header></phone-book-header>
     <phone-book-search></phone-book-search>
-    <phone-book-list></phone-book-list>
+    <phone-book-list :phoneBooks="phoneBooks"></phone-book-list>
   </div>
 </template>
 
@@ -15,6 +15,11 @@
 
   export default {
     name: "PhoneBook",
+    data(){
+      return{
+        phoneBooks:{}
+      }
+    },
     components: {
       PhoneBookHeader,
       PhoneBookSearch,
@@ -40,8 +45,9 @@
         axios.get(url)
           .then(response => {
             console.log(response)
+            this.phoneBooks=response.data.data
           }).catch(error => {
-          console.log(error)
+            console.log(error)
         })
       }
     },

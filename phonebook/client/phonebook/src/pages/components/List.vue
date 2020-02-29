@@ -1,29 +1,32 @@
 <template>
     <div class="list">
-      <div class="phoneBook">
-        <div class="title">A</div>
-        <div class="item">
-          <img src="http://www.open1111.com:80/image/default.jpg" >
-          <div class="content border-bottom">∞¢¿Ô∞Õ∞ÕA</div>
-        </div>
-      </div>
-      <div class="phoneBook">
-        <div class="title">B</div>
-        <div class="item">
-          <img src="http://www.open1111.com:80/image/010.png" >
-          <div class="content border-bottom">Bibi</div>
-        </div>
-        <div class="item">
-          <img src="http://www.open1111.com:80/image/20190905093006.jpg">
-          <div class="content border-bottom">B∏Á</div>
+      <div class="phoneBook"
+          v-for="(item,key) of phoneBooks"
+          :key="key">
+        <div class="title">{{key}}</div>
+        <div class="item"
+             v-for="innerItem of item"
+             :key="innerItem.id">
+          <img :src="getImageUrl(innerItem.image)" >
+          <div class="content border-bottom">{{innerItem.name}}</div>
         </div>
       </div>
     </div>
 </template>
 
 <script>
+    import {getServerUrl} from '@/config/sys.js'
+
     export default {
-        name: "List"
+        name: "List",
+        props:{
+          phoneBooks:Object
+        },
+        methods:{
+          getImageUrl(image){
+            return getServerUrl('image/'+image);
+          }
+        }
     }
 </script>
 
@@ -42,20 +45,24 @@
     left: 0
     right: 0
     bottom: 0
+
     .title
       line-height: .54rem
       background: $bgColor
       padding-left: .2rem
       color: #666
       font-size: .26rem
+
     .item
       line-height: .76rem
       margin: .2rem
+
       img
         float: left
         width: .8rem
         height: .8rem
         border-radius: .2rem
+
       .content
         padding-left: 1rem
         font-size: .4rem

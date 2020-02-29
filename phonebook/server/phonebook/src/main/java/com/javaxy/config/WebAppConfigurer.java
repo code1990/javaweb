@@ -4,6 +4,7 @@ import com.javaxy.interceptor.SysInterceptor;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 /**
@@ -12,7 +13,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
  * @date 2020/2/28
  */
 @Configuration
-public class WebAppConfigure implements WebMvcConfigurer {
+public class WebAppConfigurer implements WebMvcConfigurer {
     /*允许所有的跨域请求*/
     @Override
     public void addCorsMappings(CorsRegistry registry) {
@@ -33,6 +34,12 @@ public class WebAppConfigure implements WebMvcConfigurer {
         registry.addInterceptor(new SysInterceptor())
                 .addPathPatterns("/**")
                 .excludePathPatterns(patterns);
+    }
+
+    @Override
+    public void addResourceHandlers(ResourceHandlerRegistry registry) {
+        registry.addResourceHandler("/image/**").addResourceLocations("file:D:\\userImages\\");
+        // file:/home/userImages/
     }
 }
 
