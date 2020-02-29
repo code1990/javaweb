@@ -1,20 +1,23 @@
 <template>
-    <div class="list">
-      <div class="phoneBook"
-          v-for="(item,key) of phoneBooks"
-          :key="key">
-        <div class="title">{{key}}</div>
-        <div class="item"
-             v-for="innerItem of item"
-             :key="innerItem.id">
-          <img :src="getImageUrl(innerItem.image)" >
-          <div class="content border-bottom">{{innerItem.name}}</div>
+    <div class="list" ref="wrapper">
+      <div>
+        <div class="phoneBook"
+             v-for="(item,key) of phoneBooks"
+             :key="key">
+          <div class="title">{{key}}</div>
+          <div class="item"
+               v-for="innerItem of item"
+               :key="innerItem.id">
+            <img :src="getImageUrl(innerItem.image)" >
+            <div class="content border-bottom">{{innerItem.name}}</div>
+          </div>
         </div>
       </div>
     </div>
 </template>
 
 <script>
+    import Bscroll from 'better-scroll'
     import {getServerUrl} from '@/config/sys.js'
 
     export default {
@@ -26,6 +29,9 @@
           getImageUrl(image){
             return getServerUrl('image/'+image);
           }
+        },
+        mounted() {
+          this.scroll=new Bscroll(this.$refs.wrapper)
         }
     }
 </script>

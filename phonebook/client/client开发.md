@@ -111,5 +111,9 @@ router.js重新注册一个PhoneBook的组件
 
 测试：前台可以正常展示列表信息 说明列表的内容正常
 -----------
-
+### 12 better-scroll实现区域滚动
+安装：npm install --save better-scroll
+ https://github.com/ustbhuangyi/better-scroll
+测试：添加该依赖以后 修改list.vue页面 可以实现页面的上下滚动
+--------------
 
