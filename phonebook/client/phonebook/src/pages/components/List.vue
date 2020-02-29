@@ -2,8 +2,9 @@
     <div class="list" ref="wrapper">
       <div>
         <div class="phoneBook"
-             v-for="(item,key) of phoneBooks"
-             :key="key">
+            v-for="(item,key) of phoneBooks"
+            :key="key"
+            :ref="key">
           <div class="title">{{key}}</div>
           <div class="item"
                v-for="innerItem of item"
@@ -23,7 +24,8 @@
     export default {
         name: "List",
         props:{
-          phoneBooks:Object
+          phoneBooks:Object,
+          letter:String
         },
         methods:{
           getImageUrl(image){
@@ -32,7 +34,15 @@
         },
         mounted() {
           this.scroll=new Bscroll(this.$refs.wrapper)
-        }
+        },
+      watch:{
+          letter(){
+            if(this.letter){
+              const element=this.$refs[this.letter][0]
+              this.scroll.scrollToElement(element)
+            }
+          }
+      }
     }
 </script>
 

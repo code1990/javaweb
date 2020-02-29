@@ -2,8 +2,12 @@
   <div>
     <phone-book-header></phone-book-header>
     <phone-book-search></phone-book-search>
-    <phone-book-list :phoneBooks="phoneBooks"></phone-book-list>
-    <phone-book-alphabet :phoneBooks="phoneBooks"></phone-book-alphabet>
+    <phone-book-list
+      :letter="letter"
+      :phoneBooks="phoneBooks"></phone-book-list>
+    <phone-book-alphabet
+      @change="handleLetterChange"
+      :phoneBooks="phoneBooks"></phone-book-alphabet>
   </div>
 </template>
 
@@ -18,7 +22,8 @@
     name: "PhoneBook",
     data(){
       return{
-        phoneBooks:{}
+        phoneBooks:{},
+        letter:''
       }
     },
     components: {
@@ -46,11 +51,15 @@
         let url = getServerUrl("phoneBook/loadAll");
         axios.get(url)
           .then(response => {
-            console.log(response)
+            console.log(response);
             this.phoneBooks=response.data.data
           }).catch(error => {
             console.log(error)
         })
+      },
+      handleLetterChange(letter){
+        console.log("传递的字母:"+letter);
+        this.letter=letter;
       }
     },
     mounted() {

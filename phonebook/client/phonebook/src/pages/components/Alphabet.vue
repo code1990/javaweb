@@ -1,6 +1,7 @@
 <template>
     <ul class="list">
       <li class="item"
+          @click="handleLetterClick"
          v-for="(item,key) of letters">{{item}}</li>
     </ul>
 </template>
@@ -20,7 +21,13 @@
             }
             return lettes;
           }
-        }
+        },
+        methods:{
+          handleLetterClick(e){
+            console.log(e.target.innerText)
+            this.$emit("change",e.target.innerText)
+          }
+      }
     }
 </script>
 
