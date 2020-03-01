@@ -91,4 +91,20 @@ public class PhoneBookController {
         resultMap.put("phoneBook",phoneBook);
         return R.ok(resultMap);
     }
+
+    /**
+     * 根据id删除记录
+     * @param id
+     * @return
+     * @throws Exception
+     */
+    @RequestMapping("/delete")
+    public R delete(Integer id)throws Exception{
+        int resultTotal=phoneBookService.delete(id);
+        if(resultTotal>0){
+            return R.ok();
+        }else{
+            return R.error(-1,"删除失败，请联系管理员");
+        }
+    }
 }

@@ -46,7 +46,7 @@
         <a @click="updateInfo">保存</a>
       </div>
       <div class="item border-bottom">
-        <a >删除</a>
+        <a @click="deleteInfo">删除</a>
       </div>
     </div>
 
@@ -89,6 +89,28 @@
       },
       hideGalleryClick(){
         this.showGallery=false
+      },
+      deleteInfo(){
+        if(confirm("您确定要删除这条记录吗？")){
+          let url=getServerUrl('phoneBook/delete');
+          let token=window.localStorage.getItem('token')
+          axios.defaults.headers.common['token'] = token;
+          axios.get(url,{
+            params:{
+              id:this.phoneBook.id
+            }
+          }) .then(response=>{
+              if(response.data.code==0){
+                alert("删除成功")
+                PubSub.publish('refreshPhoneBook','')
+                this.$router.replace('/phoneBook')
+              }else{
+                alert(response.data.msg)
+              }
+            }).catch(error=>{
+            alert(error)
+          })
+        }
       },
       updateInfo(){
         let url=getServerUrl('phoneBook/save');

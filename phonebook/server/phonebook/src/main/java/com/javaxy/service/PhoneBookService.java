@@ -41,4 +41,11 @@ public interface PhoneBookService {
      * @return
      */
     PhoneBook findById(Integer id);
+
+    /**
+     * 删除信息
+     * @param id
+     * @return
+     */
+    Integer delete(Integer id);
 }

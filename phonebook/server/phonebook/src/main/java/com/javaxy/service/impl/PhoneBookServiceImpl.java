@@ -40,4 +40,9 @@ public class PhoneBookServiceImpl implements PhoneBookService {
     public PhoneBook findById(Integer id) {
         return phoneBookMapper.findById(id);
     }
+
+    @Override
+    public Integer delete(Integer id) {
+        return phoneBookMapper.delete(id);
+    }
 }
