@@ -179,9 +179,7 @@ search.vue组件的开发
 
 前端主要对于增加列表页面执行有关 的添加操作
 
-pubsub.js消息的发布订阅
 
-npm install --save pubsub-js
 
 根据这些操作 添加对应的数据校验行为
 
@@ -190,4 +188,16 @@ npm install --save pubsub-js
 前端测试 数据可以成功保存到数据库当中
 
 ---------------------
+
+### 22 性能优化
+
+1.引入keep-alive组件 实现数据缓存到内存当中
+
+2.引入pubsub.js 实现子类与父类之间的消息传递
+pubsub.js消息的发布订阅
+
+npm install --save pubsub-js
+
+------------
+
 

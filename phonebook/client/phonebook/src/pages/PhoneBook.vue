@@ -14,6 +14,7 @@
 
 <script>
   import axios from 'axios'
+  import PubSub from 'pubsub-js'
   import {getServerUrl} from '@/config/sys.js'
   import PhoneBookHeader from './components/Header'
   import PhoneBookSearch from './components/Search'
@@ -67,6 +68,11 @@
         mounted() {
           setInterval(this.refreshToken,1000*60*10); // 10分钟刷新一次token
           this.getPhoneBooks(); // 加载所有电话簿信息
+
+          PubSub.subscribe('refreshPhoneBook',(msg,data)=>{
+            console.log('收到消息 refreshPhoneBook')
+            this.getPhoneBooks()
+          })
         }
     }
 </script>

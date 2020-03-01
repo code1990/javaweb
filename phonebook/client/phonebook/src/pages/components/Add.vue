@@ -56,6 +56,7 @@
 
 <script>
     import axios from 'axios'
+    import PubSub from 'pubsub-js'
     import {getServerUrl} from '@/config/sys.js'
     import Gallery from '@/pages/common/Gallery'
 
@@ -109,6 +110,7 @@
               .then(response=>{
                 if(response.data.code==0){
                   alert("添加成功")
+                  PubSub.publish('refreshPhoneBook','')
                   this.$router.replace('/phoneBook')
                 }else{
                   alert(response.data.msg)
