@@ -220,5 +220,23 @@ npm install --save pubsub-js
 
 -----------------
 
+### 26 整合web项目
+sys.js注释原来的代码 添加ip地址
+
+npm run build
+
+copy dist下面的所有的内容 然后整合到javaweb项目当中
+
+### 26 前端开发完成以后 修改localhost为ip地址
+
+sys.js注释原来的代码 添加ip地址
+
+npm run build
+
+copy dist下面的所有的内容 然后整合到javaweb项目当中
+---------------
+
+
+
 
 
