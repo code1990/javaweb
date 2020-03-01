@@ -1,95 +1,112 @@
 <template>
-    <div class="detail">
-      <div class="header">
-        <router-link tag="div" to="/phoneBook" class="iconfont">&#xe667;</router-link>
-      </div>
-
-      <div class="image">
-        <div class="info">
-          <img :src="getImageUrl(phoneBook.image)" />
-        </div>
-        <div class="action">
-          <button @click="imageClick">修改头像</button>
-          <input type="file" name="file" accept="image/png,image/gif,image/jpeg,image/jpg" ref="file" @change="upload">
-        </div>
-      </div>
-
-      <div class="userInfo">
-        <div class="item border-bottom">
-          <span>姓名</span>
-          <input type="text">
-        </div>
-        <div class="item border-bottom">
-          <span>手机号码</span>
-          <input type="text">
-        </div>
-        <div class="item border-bottom">
-          <span>座机电话号码</span>
-          <input type="text">
-        </div>
-        <div class="item border-bottom">
-          <span>工作单位地址</span>
-          <textarea></textarea>
-        </div>
-        <div class="item border-bottom">
-          <span>家庭地址</span>
-          <textarea></textarea>
-        </div>
-        <div class="item border-bottom">
-          <span>备注</span>
-          <textarea></textarea>
-        </div>
-      </div>
-
-      <div class="action">
-        <div class="item border-bottom">
-          <a href="">保存</a>
-        </div>
-      </div>
-
+  <div class="detail">
+    <div class="header">
+      <router-link tag="div" to="/phoneBook" class="iconfont">&#xe667;</router-link>
     </div>
+
+    <div class="image">
+      <div class="info">
+        <img :src="getImageUrl(phoneBook.image)" @click="showGalleryClick"/>
+      </div>
+      <div class="action">
+        <button @click="imageClick">修改头像</button>
+        <input type="file" name="file" accept="image/png,image/gif,image/jpeg,image/jpg" ref="file" @change="upload">
+      </div>
+    </div>
+
+    <div class="userInfo">
+      <div class="item border-bottom">
+        <span>姓名</span>
+        <input type="text">
+      </div>
+      <div class="item border-bottom">
+        <span>手机号码</span>
+        <input type="text">
+      </div>
+      <div class="item border-bottom">
+        <span>座机电话号码</span>
+        <input type="text">
+      </div>
+      <div class="item border-bottom">
+        <span>工作单位地址</span>
+        <textarea></textarea>
+      </div>
+      <div class="item border-bottom">
+        <span>家庭地址</span>
+        <textarea></textarea>
+      </div>
+      <div class="item border-bottom">
+        <span>备注</span>
+        <textarea></textarea>
+      </div>
+    </div>
+
+    <div class="action">
+      <div class="item border-bottom">
+        <a href="">保存</a>
+      </div>
+    </div>
+
+    <gallery
+      v-show="showGallery"
+      :galleryImage="galleryImage"
+      @hideGalleryClick="hideGalleryClick"></gallery>
+  </div>
 </template>
 
 <script>
     import axios from 'axios'
     import {getServerUrl} from '@/config/sys.js'
+    import Gallery from '@/pages/common/Gallery'
 
-    export default {
-        name: "Add",
-        data(){
-          return{
-            phoneBook:{image:'default.jpg'}
-          }
-        },
-        methods:{
-          getImageUrl(image){
-            return getServerUrl('image/'+image);
-          },
-          imageClick(){
-            this.$refs.file.click();
-          },
-          upload(e){
-            let file=e.target.files[0];
-            let param=new FormData();
-            param.append('file',file,file.name);
-            console.log(param.get('file'));
+  export default {
+    name: "Add",
+    data() {
+      return {
+        phoneBook: {image: 'default.jpg'},
+        showGallery: false,
+        galleryImage: ''
+      }
+    },
+    components: {
+      Gallery
+    },
+    methods: {
+      getImageUrl(image) {
+        return getServerUrl('image/' + image);
+      },
+      imageClick() {
+        this.$refs.file.click();
+      },
+      showGalleryClick() {
+        this.galleryImage = getServerUrl('image/' + this.phoneBook.image);
+        this.showGallery = true
+      },
+      hideGalleryClick() {
+        this.showGallery = false
+      },
+      upload(e) {
+        let file = e.target.files[0];
+        let param = new FormData();
+        param.append('file', file, file.name);
+        console.log(param.get('file'));
 
-            let token=window.localStorage.getItem("token")
-            let url=getServerUrl("uploadImage");
-            let config={
-              headers:{'Content-Type':'multipart/form-data','token':token}
-            };
-            axios.post(url,param,config)
-              .then(response=>{
-                if(response.data.code==0){
-                  this.phoneBook.image=response.data.data.title;
-                }
-              }).catch(error=>{
-              console.log(error)
-            })
-          }
-        },
-    }
+        let token = window.localStorage.getItem("token")
+        let url = getServerUrl("uploadImage");
+        let config = {
+          headers: {'Content-Type': 'multipart/form-data', 'token': token}
+        };
+        axios.post(url, param, config)
+          .then(response => {
+            if (response.data.code == 0) {
+              this.phoneBook.image = response.data.data.title;
+            }
+          }).catch(error => {
+          console.log(error)
+        })
+      }
+    },
+  }
 </script>
 
 <style lang="stylus" scoped>
