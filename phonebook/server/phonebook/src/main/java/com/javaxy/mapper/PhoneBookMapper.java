@@ -17,5 +17,7 @@ public interface PhoneBookMapper {
      * @return
      */
     List<PhoneBook> loadByInitial(String initial);
+
+    Integer add(PhoneBook phoneBook);
 }
 

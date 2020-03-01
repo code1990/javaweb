@@ -27,9 +27,9 @@ public class ImagController {
     public Map<String,Object> uploadImage(MultipartFile file) throws Exception{
         Map<String,Object> map = new HashMap<>();
         if(!file.isEmpty()){
-            String fileName = file.getOriginalFilename();
-            String suffixName = fileName.substring(fileName.lastIndexOf("."));
-            String newFileName = DateUtil.getCurrentDateStr()+suffixName;
+            String fileName=file.getOriginalFilename();
+            String suffixName=fileName.substring(fileName.lastIndexOf('.')); // 图片后缀
+            String newFileName=DateUtil.getCurrentDateStr()+suffixName;
             FileUtils.copyInputStreamToFile(file.getInputStream(),new File(imageFilePath+newFileName));
             map.put("code",0);
             map.put("msg","上传成功");

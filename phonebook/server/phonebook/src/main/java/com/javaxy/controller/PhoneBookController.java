@@ -3,7 +3,10 @@ package com.javaxy.controller;
 import com.javaxy.entity.PhoneBook;
 import com.javaxy.entity.R;
 import com.javaxy.service.PhoneBookService;
+import com.javaxy.util.PinYinUtil;
+import com.javaxy.util.StringUtil;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -48,5 +51,30 @@ public class PhoneBookController {
         return R.ok(resultMap);
     }
 
+    /**
+     * 添加或者修改通讯记录
+     * @param phoneBook
+     * @return
+     * @throws Exception
+     */
+    @RequestMapping("/save")
+    public R save(@RequestBody PhoneBook phoneBook)throws Exception{
+        int resultTotal=0;
+        String initial=String.valueOf(PinYinUtil.getPinYin(phoneBook.getName()).charAt(0)).toUpperCase();
+        if(StringUtil.isAlpha(initial)){
+            phoneBook.setInitial(initial);
+        }else{
+            phoneBook.setInitial("#");
+        }
+        if(phoneBook.getId()==null){
+            resultTotal=phoneBookService.add(phoneBook);
+        }else{
 
+        }
+        if(resultTotal>0){
+            return R.ok();
+        }else{
+            return R.error(-1,"保存失败，请联系管理员");
+        }
+    }
 }

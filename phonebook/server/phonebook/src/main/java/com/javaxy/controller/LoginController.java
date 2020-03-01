@@ -5,11 +5,10 @@ import com.javaxy.entity.Admin;
 import com.javaxy.entity.R;
 import com.javaxy.service.AdminService;
 import com.javaxy.util.JwtUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import javax.annotation.Resource;
 
 /**
  * (Admin)表控制层
@@ -20,17 +19,14 @@ import javax.annotation.Resource;
 @RestController
 @RequestMapping("/")
 public class LoginController {
-    /**
-     * 服务对象
-     */
-    @Resource
+
+    @Autowired
     private AdminService adminService;
 
     /**
-     * 通过主键查询单条数据
-     *
-     * @param admin 主键
-     * @return 单条数据
+     * 管理员登录
+     * @return
+     * @throws Exception
      */
     @RequestMapping("/login")
     public R login(@RequestBody Admin admin)throws Exception{

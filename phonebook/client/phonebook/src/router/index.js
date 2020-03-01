@@ -4,7 +4,7 @@ import Login from '@/pages/Login'
 import PhoneBook from '@/pages/PhoneBook'
 import Add from '@/pages/components/Add'
 
-Vue.use(Router);
+Vue.use(Router)
 
 export default new Router({
   routes: [

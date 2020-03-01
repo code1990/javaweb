@@ -21,4 +21,10 @@ public interface PhoneBookService {
      */
     List<PhoneBook> loadByInitial(String initial);
 
+    /**
+     * 添加通讯记录
+     * @param phoneBook
+     * @return
+     */
+    Integer add(PhoneBook phoneBook);
 }

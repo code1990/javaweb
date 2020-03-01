@@ -21,45 +21,45 @@
 
 <script>
   import Bscroll from 'better-scroll'
-  import {getServerUrl} from "@/config/sys.js";
+  import {getServerUrl} from '@/config/sys.js'
 
-  export default {
-    name: "Search",
-    data() {
-      return {
-        keyword: "",
-        list: []
-      }
-    },
-    methods: {
-      getImageUrl(image) {
-        return getServerUrl("image/" + image);
-      }
-    },
-    props: {
-      phoneBooks: Object
-    },
-    watch: {
-      keyword() {
-        if (!this.keyword) {
-          this.list = []
-          return
-        }
-        const result = []
-        for (let i in this.phoneBooks) {
-          this.phoneBooks[i].forEach((value) => {
-            if (value.name.indexOf(this.keyword) > -1) {
-              result.push(value)
+    export default {
+        name: "Search",
+        data(){
+          return{
+            keyword:'',
+            list:[]
+          }
+        },
+        methods:{
+          getImageUrl(image){
+            return getServerUrl('image/'+image);
+          }
+        },
+        props:{
+          phoneBooks:Object
+        },
+        watch:{
+          keyword(){
+            if(!this.keyword){
+              this.list=[]
+              return
             }
-          })
+            const result=[]
+            for(let i in this.phoneBooks){
+              this.phoneBooks[i].forEach((value)=>{
+                if(value.name.indexOf(this.keyword)>-1){
+                  result.push(value)
+                }
+              })
+            }
+            this.list=result
+          }
+        },
+        mounted() {
+          this.scroll=new Bscroll(this.$refs.search)
         }
-        this.list = result
-      }
-    },
-    mounted() {
-      this.scroll = new Bscroll(this.$refs.search)
     }
-  }
 </script>
 
 <style lang="stylus" scoped>
