@@ -27,4 +27,11 @@ public interface PhoneBookService {
      * @return
      */
     Integer add(PhoneBook phoneBook);
+
+    /**
+     * 根据id查询通讯录记录
+     * @param id
+     * @return
+     */
+    PhoneBook findById(Integer id);
 }

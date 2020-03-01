@@ -6,13 +6,15 @@
             :key="key"
             :ref="key">
           <div class="title">{{key}}</div>
-          <div class="item"
+          <router-link class="item"
+                       :to="`/detail/${innerItem.id}`"
+                       tag="div"
                v-for="innerItem of item"
                :key="innerItem.id">
             <img :src="getImageUrl(innerItem.image)" >
             <div class="content border-bottom">{{innerItem.name}}</div>
-          </div>
-        </div>
+          </router-link>
+      </div>
       </div>
     </div>
 </template>
@@ -33,7 +35,7 @@
           }
         },
         mounted() {
-          this.scroll=new Bscroll(this.$refs.wrapper)
+          this.scroll=new Bscroll(this.$refs.wrapper,{click:true})
         },
       watch:{
           letter(){
