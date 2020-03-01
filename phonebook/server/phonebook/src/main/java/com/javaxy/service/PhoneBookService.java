@@ -29,6 +29,13 @@ public interface PhoneBookService {
     Integer add(PhoneBook phoneBook);
 
     /**
+     * 修改信息
+     * @param phoneBook
+     * @return
+     */
+    Integer update(PhoneBook phoneBook);
+
+    /**
      * 根据id查询通讯录记录
      * @param id
      * @return

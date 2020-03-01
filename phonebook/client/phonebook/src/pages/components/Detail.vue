@@ -43,10 +43,10 @@
 
     <div class="action">
       <div class="item border-bottom">
-        <a @click="addInfo">保存</a>
+        <a @click="updateInfo">保存</a>
       </div>
       <div class="item border-bottom">
-        <a @click="addInfo">删除</a>
+        <a >删除</a>
       </div>
     </div>
 
@@ -90,7 +90,7 @@
       hideGalleryClick(){
         this.showGallery=false
       },
-      addInfo(){
+      updateInfo(){
         let url=getServerUrl('phoneBook/save');
         let token=window.localStorage.getItem('token')
         axios.defaults.headers.common['token'] = token;
@@ -110,10 +110,10 @@
           alert('固定电话有误，请重填');
           return false;
         }
-        axios.post(url,{"name":this.phoneBook.name,"phoneNumber":this.phoneBook.phoneNumber,"teleNumber":this.phoneBook.teleNumber,"workAddress":this.phoneBook.workAddress,"homeAddress":this.phoneBook.homeAddress,"image":this.phoneBook.image,"remark":this.phoneBook.remark,"image":this.phoneBook.image})
+        axios.post(url,{"id":this.phoneBook.id,"name":this.phoneBook.name,"phoneNumber":this.phoneBook.phoneNumber,"teleNumber":this.phoneBook.teleNumber,"workAddress":this.phoneBook.workAddress,"homeAddress":this.phoneBook.homeAddress,"image":this.phoneBook.image,"remark":this.phoneBook.remark,"image":this.phoneBook.image})
           .then(response=>{
             if(response.data.code==0){
-              alert("添加成功")
+              alert("修改成功")
               PubSub.publish('refreshPhoneBook','')
               this.$router.replace('/phoneBook')
             }else{
