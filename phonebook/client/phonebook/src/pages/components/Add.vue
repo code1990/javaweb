@@ -9,8 +9,8 @@
           <img :src="getImageUrl(phoneBook.image)" />
         </div>
         <div class="action">
-          <button>修改头像</button>
-          <input type="file" name="file" accept="image/png,image/gif,image/jpeg,image/jpg">
+          <button @click="imageClick">修改头像</button>
+          <input type="file" name="file" accept="image/png,image/gif,image/jpeg,image/jpg" ref="file" @change="upload">
         </div>
       </div>
 
@@ -51,6 +51,7 @@
 </template>
 
 <script>
+    import axios from 'axios'
     import {getServerUrl} from '@/config/sys.js'
 
     export default {
@@ -63,6 +64,29 @@
         methods:{
           getImageUrl(image){
             return getServerUrl('image/'+image);
+          },
+          imageClick(){
+            this.$refs.file.click();
+          },
+          upload(e){
+            let file=e.target.files[0];
+            let param=new FormData();
+            param.append('file',file,file.name);
+            console.log(param.get('file'));
+
+            let token=window.localStorage.getItem("token")
+            let url=getServerUrl("uploadImage");
+            let config={
+              headers:{'Content-Type':'multipart/form-data','token':token}
+            };
+            axios.post(url,param,config)
+              .then(response=>{
+                if(response.data.code==0){
+                  this.phoneBook.image=response.data.data.title;
+                }
+              }).catch(error=>{
+              console.log(error)
+            })
           }
         },
     }
