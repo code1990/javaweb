@@ -116,4 +116,17 @@
 sys.js注释原来的代码 添加ip地址
 
 -----
+### 27 部署到centos7上去
+
+1.安装jdk
+2.安装mysql
+3.安装tomcat9
+4.上传代码 修改conf/server.xml　添加如下的内容
+<host>
+<Context path="" docBase="/home/apache-tomcat-9.0.31/webapps/phonebook-0.0.1-SNAPSHOT" debug="0" reloadable="true"/>
+</host>
+5.进入bin目录下方 启动如下的命令
+sh startup.sh
+
+----
 
