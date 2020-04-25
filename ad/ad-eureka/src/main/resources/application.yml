@@ -1,0 +1,55 @@
+# 注册中心多节点配置
+# 修改hosts文件 设置三个ip地址
+#127.0.0.1 server1
+#127.0.0.1 server2
+#127.0.0.1 server3
+# 项目打包如下所示 一个项目分别启动三次 实现多节点的注册集群
+# 使用java -jar ad_eureka.jar -spring.active.profiles=server1
+# 使用java -jar ad_eureka.jar -spring.active.profiles=server2
+# 使用java -jar ad_eureka.jar -spring.active.profiles=server3
+
+#访问127.0.0.1:8000 可以查看具体的注册情况
+
+spring:
+  application:
+    name: ad-eureka
+  profiles: server1
+server:
+  port: 8000
+eureka:
+  instance:
+    hostname: server1
+    prefer-ip-address: false
+  client:
+    service-url:
+      defaultZone: http://server2:8001/eureka/,http://server3:8002/eureka/
+
+---
+spring:
+  application:
+    name: ad-eureka
+  profiles: server2
+server:
+  port: 8001
+eureka:
+  instance:
+    hostname: server2
+    prefer-ip-address: false
+  client:
+    service-url:
+      defaultZone: http://server1:8000/eureka/,http://server3:8002/eureka/
+
+---
+spring:
+  application:
+    name: ad-eureka
+  profiles: server3
+server:
+  port: 8002
+eureka:
+  instance:
+    hostname: server3
+    prefer-ip-address: false
+  client:
+    service-url:
+      defaultZone: http://server1:8000/eureka/,http://server2:8001/eureka/
