@@ -2,47 +2,226 @@
 ### 第1章 课程简介
 #### 1-1 课程导学
 
-
+主要介绍项目的基本开发环境
 
 
 ### 第2章 广告系统概览与准备工作
 #### 2-1 广告系统概览
 
-
+介绍广告主的投放 与媒体的投放
 
 
 #### 2-2 广告系统架构
 
-
+springcloud+mysql+kafka
 
 
 #### 2-3 准备工作与系统目录结构
 
+jdk1.8+idea+maven3+mysql5.5
 
+主要包括如下的模块
+
+==Eureka:实现服务注册与服务发现
+gateway：利用Zuu|组件实现路由转发与请求信息记录(自定义过滤器)
+广告系统服务实现子模块:
+ad-common:通用代码，通用配置
+ad-dashboard: Hystrix监控
+ad-search:广告检索子系统
+ad-sponsor:广告投放子系统。==
 
 
 ### 第3章 广告系统骨架开发
 #### 3-1 Maven 基础知识
 
-
+简单介绍maven相关的知识内容
 
 
 #### 3-2 Maven 相关特性
 
-
-
+依赖排除
+短路优先
+声明优先
+多个模块聚合
+父类统一管理dependencyManagement
 
 #### 3-3 广告系统主工程
 
+--------
 
+新建一个空的module ad 并且整合如何的依赖
 
+```xml-dtd
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
+    <groupId>com.ad</groupId>
+    <artifactId>ad</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <packaging>pom</packaging>
+
+    <name>ad</name>
+    <description>parent empty module</description>
+    <!--定义父类工程的版本-->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.0.2.RELEASE</version>
+    </parent>
+
+    <properties>
+        <spring-cloud.version>Finchley.RELEASE</spring-cloud.version>
+    </properties>
+    <!--定义公共的依赖-->
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.18</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+    <!--定义子类的工程的依赖版本-->
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+    <!--定义远程仓库-->
+    <repositories>
+        <repository>
+            <id>spring-milestones</id>
+            <name>Spring Milestones</name>
+            <url>https://repo.spring.io/milestone</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+</project>
+```
 #### 3-4 单节点 Eureka Server 的开发
 
+```properties
+#注册中心单节点的配置指南
+#启动eurekaapplication.java
+
+#浏览器访问 127.0.0.1:8000 查看注册情况
+
+
+##设置应用名称
+#spring.application.name=ad-eureka
+##设置端口号
+#server.port=8000
+##设置访问地址
+#eureka.instance.hostname=localhost
+## 是否注册其他的组件 这里设置false单一的注册中心
+#eureka.client.fetch-registry=false
+## 是否把自己注册到注册中心 选择否 不注册自己
+#eureka.client.register-with-eureka=false
+##设置默认的访问地址
+#eureka.client.service-url.defaultZone=http://${eureka.instance.hostname}:${server.port}/eureka/
+#
+
+```
+
+```java
+@EnableEurekaServer
+@SpringBootApplication
+public class EurekaApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(EurekaApplication.class, args);
+    }
+}
+
+```
 
 
 
-#### 3-5 Eureka Server 的部署
+#### 3-5 多节点Eureka Server 的部署配置
+
+```properties
+# 注册中心多节点配置
+# 修改hosts文件 设置三个ip地址
+#127.0.0.1 server1
+#127.0.0.1 server2
+#127.0.0.1 server3
+# 项目打包如下所示 一个项目分别启动三次 实现多节点的注册集群
+# 使用java -jar ad_eureka.jar -spring.active.profiles=server1
+# 使用java -jar ad_eureka.jar -spring.active.profiles=server2
+# 使用java -jar ad_eureka.jar -spring.active.profiles=server3
+
+#访问127.0.0.1:8000 可以查看具体的注册情况
+
+spring:
+  application:
+    name: ad-eureka
+  profiles: server1
+server:
+  port: 8000
+eureka:
+  instance:
+    hostname: server1
+    prefer-ip-address: false
+  client:
+    service-url:
+      defaultZone: http://server2:8001/eureka/,http://server3:8002/eureka/
+
+---
+spring:
+  application:
+    name: ad-eureka
+  profiles: server2
+server:
+  port: 8001
+eureka:
+  instance:
+    hostname: server2
+    prefer-ip-address: false
+  client:
+    service-url:
+      defaultZone: http://server1:8000/eureka/,http://server3:8002/eureka/
+
+---
+spring:
+  application:
+    name: ad-eureka
+  profiles: server3
+server:
+  port: 8002
+eureka:
+  instance:
+    hostname: server3
+    prefer-ip-address: false
+  client:
+    service-url:
+      defaultZone: http://server1:8000/eureka/,http://server2:8001/eureka/
+```
+
+```java
+@EnableEurekaServer
+@SpringBootApplication
+public class EurekaApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(EurekaApplication.class, args);
+    }
+}
+
+```
 
 
 
