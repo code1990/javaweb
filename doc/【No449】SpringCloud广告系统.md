@@ -917,6 +917,8 @@ zuul.routes.search.strip-prefix=false
 ### 第6章 广告检索系统 - 微服务调用
 #### 6-1 创建广告检索系统子模块
 
+![](refer.png)
+
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
@@ -1178,27 +1180,26 @@ public class SponsorClientHystrix implements SponsorClient {
 ### 第7章 广告检索系统 - 广告数据索引的设计与实现
 #### 7-1 广告数据索引设计介绍
 
+![](11.png)
 
-
-
-#### 7-10 索引服务类缓存的实现
-
-
-
+![](12.png)
 
 #### 7-2 广告数据索引维护介绍
 
-
+![](13.png)
 
 
 #### 7-3 推广计划索引对象定义与服务实现
 
-
+IndexAware
+AdPlanObject
+AdPlanIndex
 
 
 #### 7-4 推广单元索引对象定义与服务实现
 
-
+AdUnitObject
+AdUnitIndex
 
 
 #### 7-5 关键词索引对象定义与服务实现
@@ -1222,6 +1223,12 @@ public class SponsorClientHystrix implements SponsorClient {
 
 
 #### 7-9 创意与推广单元关联索引对象定义与服务实现
+
+
+
+#### 7-10 索引服务类缓存的实现
+
+
 
 
 
