@@ -917,15 +917,260 @@ zuul.routes.search.strip-prefix=false
 ### 第6章 广告检索系统 - 微服务调用
 #### 6-1 创建广告检索系统子模块
 
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <!-- 指定父pom, 注意它是 ad-service 的子模块 -->
+    <parent>
+        <artifactId>ad-service</artifactId>
+        <groupId>com.ad</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- 当前项目/模块的坐标, groupId从父模块中继承 -->
+    <artifactId>ad-search</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <dependencies>
+        <!-- Hystrix 监控 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-hystrix-dashboard</artifactId>
+        </dependency>
+        <!-- 监控端点, 采集应用指标 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+        <!-- 引入 Web 功能 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <!--
+            Eureka 客户端, 客户端向 Eureka Server 注册的时候会提供一系列的元数据信息, 例如: 主机, 端口, 健康检查url等
+            Eureka Server 接受每个客户端发送的心跳信息, 如果在某个配置的超时时间内未接收到心跳信息, 实例会被从注册列表中移除
+        -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+        <!-- 引入 Feign, 可以以声明的方式调用微服务 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
+        <!-- 引入服务容错 Hystrix 的依赖 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+        </dependency>
+        <!-- 引入服务消费者 Ribbon 的依赖 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
+        </dependency>
+        <!-- Java Persistence API, ORM 规范 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+        <!-- 数据库连接 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
+        </dependency>
+        <!-- MySQL 驱动, 注意, 这个需要与 MySQL 版本对应 -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.12</version>
+            <scope>runtime</scope>
+        </dependency>
+        <!-- 通用模块 -->
+        <dependency>
+            <groupId>com.ad</groupId>
+            <artifactId>ad-common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <!-- apache 提供的一些工具类 -->
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+            <version>1.9</version>
+        </dependency>
+        <!-- 集合类操作 -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-collections4</artifactId>
+            <version>4.0</version>
+        </dependency>
+        <!-- binlog 监听与解析: https://github.com/shyiko/mysql-binlog-connector-java -->
+        <dependency>
+            <groupId>com.github.shyiko</groupId>
+            <artifactId>mysql-binlog-connector-java</artifactId>
+            <version>0.13.0</version>
+        </dependency>
+        <!-- 解析配置文件中的配置 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+        </dependency>
+        <!--kafka 依赖-->
+        <dependency>
+            <groupId>org.springframework.kafka</groupId>
+            <artifactId>spring-kafka</artifactId>
+            <version>2.1.5.RELEASE</version>
+        </dependency>
+    </dependencies>
+
+    <!--
+        SpringBoot的Maven插件, 能够以Maven的方式为应用提供SpringBoot的支持，可以将
+        SpringBoot应用打包为可执行的jar或war文件, 然后以通常的方式运行SpringBoot应用
+     -->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+
+</project>
+```
+
+```properties
+# 设置端口号
+server.port=7001
+#设置访问路径
+server.servlet.context-path=/ad-search
+#应用名称
+spring.application.name=eureka-client-ad-search
+# 查询显示SQL
+spring.jpa.show-sql=true
+#禁止ddl
+spring.jpa.hibernate.ddl-auto=none
+#//控制台是否打印
+spring.jpa.properties.hibernate.format_sql=true
+spring.jpa.open-in-view=false
+spring.datasource.url=jdbc:mysql://127.0.0.1:3306/ad_data?autoReconnect=true
+spring.datasource.username=root
+spring.datasource.password=123456
+spring.datasource.tomcat.max-active=4
+spring.datasource.tomcat.min-idle=4
+spring.datasource.tomcat.initial-size=4
+#配置eureka client
+eureka.client.service-url.defaultZone=http://localhost:8000/eureka/
+```
+
+```java
+@EnableFeignClients
+@EnableEurekaClient
+@EnableHystrix
+@EnableCircuitBreaker
+@EnableDiscoveryClient
+@EnableHystrixDashboard
+@SpringBootApplication
+public class SearchApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(SearchApplication.class, args);
+    }
+}
+```
+
 
 
 
 #### 6-2 基于 Ribbon 实现微服务调用
 
+```java
+	//1.resttemplate注册
+	//开启负载均衡
+    @Bean
+    @LoadBalanced
+    RestTemplate restTemplate() {
+        return new RestTemplate();
+    }
+```
+
+2.新增响应类 AdPlan  AdPlanGetRequest
+
+```java
+//3.定义一个searchController
+@Slf4j
+@RestController
+public class SearchController {
+    private final RestTemplate restTemplate;
+
+    @Autowired
+    public SearchController(RestTemplate restTemplate) {
+        this.restTemplate = restTemplate;
+    }
+
+    @IgnoreResponseAdvice
+    @PostMapping("/getAdPlansByRibbon")
+    public CommonResponse<List<AdPlan>> getAdPlansByRibbon(@RequestBody AdPlanGetRequest request) {
+        log.info("ad-search: getAdPlansByRibbon -> {}",
+                JSON.toJSONString(request));
+        return restTemplate.postForEntity(
+                "http://eureka-client-ad-sponsor/ad-sponsor/get/adPlan",
+                request,
+                CommonResponse.class
+        ).getBody();
+    }
+}
+```
+
 
 
 
 #### 6-3 基于 Feign 实现微服务调用
+
+```java
+//添加一个声明式接口
+//添加断路回调函数
+@FeignClient(value = "eureka-client-ad-sponsor",
+        fallback = SponsorClientHystrix.class)
+public interface SponsorClient {
+    
+    @RequestMapping(value = "/ad-sponsor/get/adPlan",
+            method = RequestMethod.POST)
+    CommonResponse<List<AdPlan>> getAdPlans(
+            @RequestBody AdPlanGetRequest request);
+}
+```
+
+```java
+	//具体的searchcontroller发出请求    
+	@IgnoreResponseAdvice
+    @PostMapping("/getAdPlans")
+    public CommonResponse<List<AdPlan>> getAdPlans(@RequestBody AdPlanGetRequest request) {
+        log.info("ad-search: getAdPlans -> {}",
+                JSON.toJSONString(request));
+        return sponsorClient.getAdPlans(request);
+    }
+```
+
+```java
+//添加异常回调函数
+@Component
+public class SponsorClientHystrix implements SponsorClient {
+
+    @Override
+    public CommonResponse<List<AdPlan>> getAdPlans(
+            AdPlanGetRequest request) {
+        return new CommonResponse<>(-1,
+                "eureka-client-ad-sponsor error");
+    }
+}
+```
 
 
 

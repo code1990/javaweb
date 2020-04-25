@@ -14,6 +14,7 @@
     <modules>
         <module>ad-common</module>
         <module>ad-sponsor</module>
+        <module>ad-search</module>
     </modules>
     <!--设置为pom聚合其他的模块-->
     <packaging>pom</packaging>
