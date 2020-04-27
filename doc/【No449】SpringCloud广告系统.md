@@ -1242,71 +1242,68 @@ CreativeUnitIndex
 ### 第8章 广告检索系统 - 加载全量索引
 #### 8-1 导出表数据字段定义（1）(1)
 
-
-
-
-#### 8-10 全量索引加载的实现（1）
-
-
-
-
-#### 8-11 全量索引加载的实现（2）
-
-
+DConstant
+AdPlanTable
+AdUnitTable
 
 
 #### 8-2 导出表数据字段定义（2）
 
-
+AdUnitKeyWordTable
+AdUnitItTable
+AdUnitDistrictTable
+AdUnitCreativeTable
+AdUnitCreativeUnitTable
 
 
 #### 8-3 表数据导出到文件功能实现（1）
 
-
+Application
+DumpDataService
 
 
 #### 8-4 表数据导出到文件功能实现（2）
 
-
+DumpDataService
 
 
 #### 8-5 表数据导出到文件功能实现（3）
 
-
+DumpDataService
 
 
 #### 8-6 索引操作Handler的定义与说明
 
-
+AdLevelDataHandler
+OpType
 
 
 #### 8-7 第二层级索引操作的实现
 
-
+AdLevelDataHandler
 
 
 #### 8-8 第三层级索引操作的实现
 
-
+AdLevelDataHandler
 
 
 #### 8-9 第四层级索引操作的实现
 
+AdLevelDataHandler
 
+#### 8-10 全量索引加载的实现（1）
+
+IndexFileLoader
+
+#### 8-11 全量索引加载的实现（2）
+
+IndexFileLoader
 
 
 ### 第9章 广告检索系统-监听Binlog构造增量数据
 #### 9-1 MySQL Binlog 的介绍
 
-
-
-
-#### 9-10 根据 Binlog 对象构造增量数据的实现
-
-
-
-
-#### 9-11 启动对 Binlog 的监听
 
 
 
@@ -1347,6 +1344,16 @@ CreativeUnitIndex
 
 
 #### 9-9 根据 Binlog 对象构造增量数据的准备工作
+
+
+
+#### 9-10 根据 Binlog 对象构造增量数据的实现
+
+
+
+
+#### 9-11 启动对 Binlog 的监听
+
 
 
 
