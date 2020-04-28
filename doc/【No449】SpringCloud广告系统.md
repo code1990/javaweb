@@ -1304,9 +1304,17 @@ IndexFileLoader
 ### 第9章 广告检索系统-监听Binlog构造增量数据
 #### 9-1 MySQL Binlog 的介绍
 
+![](binlog.png)
 
+![](binlog2.png)
 
+![](binlog3.png)
 
+![](binlog4.png)
+
+![](binlog5.png)
+
+![](binlog6.png)
 
 #### 9-2 使用开源工具监听 Binlog 的演示
 
