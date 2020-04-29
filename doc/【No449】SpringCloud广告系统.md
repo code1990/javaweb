@@ -1318,26 +1318,34 @@ IndexFileLoader
 
 #### 9-2 使用开源工具监听 Binlog 的演示
 
+添加binlog maven依赖
 
+BinlogServiceTest
 
 
 #### 9-3 构造解析 Binlog 使用到的模板文件
 
-
+JsonTable
+Template
+TableTemplate
 
 
 #### 9-4 实现对模板对象的解析
 
-
+ParseTemplate
 
 
 #### 9-5 载入模板文件并实现列索引到列名的映射
 
-
+TemplateHolder
 
 
 #### 9-6 关于 Binlog 监听与解析的说明
 
+BinarylogEvent
+Event
+BinlogRowData
+Ilistener
 
 
 
