@@ -1351,26 +1351,31 @@ Ilistener
 
 #### 9-7 Binlog 监听与解析的实现（1）
 
-
+AggregationListener
 
 
 #### 9-8 Binlog 监听与解析的实现（2）
 
-
+WriteRowEventData
+updateRowEventData
 
 
 #### 9-9 根据 Binlog 对象构造增量数据的准备工作
 
-
+MySqlRowData
 
 #### 9-10 根据 Binlog 对象构造增量数据的实现
 
-
+ISender
+IncrementListener
 
 
 #### 9-11 启动对 Binlog 的监听
 
-
+定义mysql配置
+BinlogConfig
+BinlogClient
+BinlogRunner
 
 
 ### 第10章 广告检索系统 - Binlog增量数据的投递
