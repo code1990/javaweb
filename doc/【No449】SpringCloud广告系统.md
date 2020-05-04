@@ -1382,128 +1382,154 @@ BinlogRunner
 
 #### 10-1 增量数据投递前的准备工作
 
-
+CommonUtils
+DataLevel
 
 #### 10-2 第二层级增量数据的投递
 
-
+IndexSender
 
 #### 10-3 第三层级增量数据的投递
 
-
+IndexSender
 
 #### 10-4 第四层级增量数据的投递
 
-
+IndexSender
 
 #### 10-5 将增量数据投递到Kafka
 
-
+KafkaSender
 
 ### 第11章 广告检索系统-广告检索服务
 
 #### 11-1 广告检索服务功能的介绍
 
-
+![](search.png)
 
 #### 11-2 媒体方请求对象的定义
 
-
+ISearch
+SearchRequest
+AdSlot
+App
+Geo
+Device
+KeywordFeature
+ItFeature
+DistrictFeature
+FeatureRelation
 
 #### 11-3 检索服务响应对象的定义
 
-
+SearchResponse
+Isearch
 
 #### 11-4 根据流量类型实现对推广单元的预筛选
 
-
+AdUintConstant
+SearchImpl
 
 #### 11-5 根据匹配信息实现对推广单元的再筛选
 
-
+UnitDistrictIndex
+SearchImpl
 
 #### 11-6 通过推广单元获取关联的创意实现
 
-
+createUnitIndex
+CommonStatus
 
 #### 11-7 填充检索服务响应对象
 
-
+SearchImpl
 
 #### 11-8 完善广告检索服务
 
+SearchController
+ad-gateway配置路由
 
 
 ### 第12章 Kafka的安装与使用
 
 #### 12-1 Kafka 基础知识的介绍
 
+![](msg1.png)
 
+![](kafka.png)
 
 #### 12-2 Kafka 的安装与使用
 
+![](kafka_install.png)
 
+![](kafka_use.png)
 
 #### 12-3 使用原生API发送消息（1）
 
-
+MyProducer
 
 #### 12-4 使用原生API发送消息（2）
 
-
+MyProducer
 
 #### 12-5 自定义分区分配器
 
+![](producer.png)
 
+CustomPatitioner
 
 #### 12-6 消费者与消费者组的概念
 
-
+![](comsumer_group.png)
 
 #### 12-7 使用原生API消费消息（1）
 
-
+MyConsumer
 
 #### 12-8 使用原生API消费消息（2）
 
-
+MyConsumer
 
 #### 12-9 使用原生API消费消息（3）
 
-
+MyConsumer
 
 ### 第13章 熔断监控Hystrix Dashboard
 
 #### 13-1 Hystrix Dashboard 的介绍
 
-
+SearchImpl 
+@HystrixCommand 单独使用很少
 
 #### 13-2 Dashboard 模块的实现
 
-
+ad-dashboard模块
 
 ### 第14章 广告系统的可用性测试
 
 #### 14-1 广告系统测试前的准备工作
 
-
+导入sql
 
 #### 14-2 编写广告投放系统的测试用例
 
-
+AdServiceTest
 
 #### 14-3 编写广告检索系统的测试用例（上）
 
-
+SearchTest
+新增测试配置
 
 #### 14-4 编写广告检索系统的测试用例（下）
 
-
+SearchTest
 
 #### 14-5 投放系统的 HTTP 接口测试
 
-
+postman接口测试
 
 ### 第15章 课程总结
 
 #### 15-1 课程总结
+
+![](ad_all.png)
