@@ -346,14 +346,102 @@ for(ProcessDefinition de : defs) {
 ```
 
 
-
-
 #### 09 API（4）任务操作
+
+```java
+//任务权限
+ProcessEngine engine = ProcessEngines.getDefaultProcessEngine();
+TaskService ts = engine.getTaskService();
+IdentityService is = engine.getIdentityService();
+// 创建任务
+String taskId = UUID.randomUUID().toString();
+Task task = ts.newTask(taskId);
+task.setName("测试任务");
+ts.saveTask(task);
+//  创建用户
+String userId = UUID.randomUUID().toString();
+User user = is.newUser(userId);
+user.setFirstName("angus");
+is.saveUser(user);
+//任务候选人（组）============================
+//任务持有人
+//任务代理人
+// 设置任务的候选用户组
+ts.addCandidateUser(taskId, userId);
+List<Task> tasks = ts.createTaskQuery().taskCandidateUser(userId).list();
+//====================================================
+// 设置任务的候选用户组
+ts.setOwner(taskId, userId);
+// 根据用户来查询他所持有的任务
+List<Task> tasks = ts.createTaskQuery().taskOwner(userId).list();
+//==================================
+is.saveUser(user);
+
+ts.claim(taskId, userId);
+ts.claim(taskId, "100");
+
+List<Task> tasks = ts.createTaskQuery().taskAssignee(userId).list();
+//==========================================
+//这个用户有权限处理的任务
+for(Task t : tasks) {
+    System.out.println(t.getName());
+}
+```
 
 
 
 
 #### 10 API（5）任务参数与附件
+
+```java
+//任务参数
+//基本数据类型参数
+Task task = ts.newTask(UUID.randomUUID().toString());
+task.setName("测试任务");
+ts.saveTask(task);
+
+ts.setVariable(task.getId(), "var1", "hello");
+//序列化参数
+Task task = ts.newTask(UUID.randomUUID().toString());
+task.setName("测试任务");
+ts.saveTask(task);
+
+Person p = new Person();
+p.setId(1);
+p.setName("angus");
+ts.setVariable(task.getId(), "person1", p);
+
+Person pr = ts.getVariable(task.getId(), "person1", Person.class);
+
+```
+
+```java
+//参数作用域
+//本地参数定义在var_local.bpmn
+Deployment dep = rs.createDeployment().addClasspathResource("var_local.bpmn").deploy();
+ProcessDefinition pd = rs.createProcessDefinitionQuery().deploymentId(dep.getId()).singleResult();
+
+ProcessInstance pi = runService.startProcessInstanceById(pd.getId());
+
+Task task = taskService.createTaskQuery().processInstanceId(pi.getId()).singleResult();
+taskService.setVariableLocal(task.getId(), "days", 3);
+System.out.println("当前任务：" + task.getName() + ", days参数：" + taskService.getVariableLocal(task.getId(), "days"));
+
+taskService.complete(task.getId());
+
+task = taskService.createTaskQuery().processInstanceId(pi.getId()).singleResult();
+System.out.println("当前任务：" + task.getName() + ", days参数：" + taskService.getVariableLocal(task.getId(), "days"));
+//全局参数定义在dataobject.bpmn
+Deployment dep = rs.createDeployment().addClasspathResource("dataobject.bpmn").deploy();
+ProcessDefinition pd = rs.createProcessDefinitionQuery().deploymentId(dep.getId()).singleResult();
+
+ProcessInstance pi = runService.startProcessInstanceById(pd.getId());
+
+Task task = taskService.createTaskQuery().processInstanceId(pi.getId()).singleResult();
+String var = taskService.getVariable(task.getId(), "personName", String.class);
+System.out.println(var);
+
+```
 
 
 
