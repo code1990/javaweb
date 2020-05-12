@@ -123,7 +123,7 @@ ACT_DMN
 ==Activiti6.0表结构.md==
 
 
-#### 06 API（1）Activiti数据查询
+#### 06 API（1）Activiti数据查询Query
 
 ```java
 
@@ -153,16 +153,197 @@ List<Group> groups = is.createGroupQuery().groupName("Group_1").groupType("TYPE_
         engine.close();
 ```
 
+#### 07 API（2）流程文件部署DeploymentBuilder
+addClasspathResource
+addInputStream
+addString
+addZipInputStream
+addBpmnModel
+addBytes
+deploy
 
+```java
+ProcessEngine engine = ProcessEngines.getDefaultProcessEngine();
+// 存储服务
+RepositoryService rs = engine.getRepositoryService();
 
+DeploymentBuilder builder = rs.createDeployment();
 
+FileInputStream fis = new FileInputStream(new File("resource/datas.zip"));
+ZipInputStream zis = new ZipInputStream(fis);
+//1添加一个压缩文件
+builder.addZipInputStream(zis);
 
-#### 07 API（2）流程文件部署
+//2添加一个Bpmn模型
+builder.addBpmnModel("My Process", createProcessModel());
 
+//部署文件
+builder.deploy();
+```
 
+```java
+//创建Bpmn模型的方法
+private static BpmnModel createProcessModel() {
+        // 创建BPMN模型对象
+        BpmnModel model = new BpmnModel();
+        // 创建一个流程定义
+        org.activiti.bpmn.model.Process process = new org.activiti.bpmn.model.Process();
+        model.addProcess(process);
+        process.setId("myProcess");
+        process.setName("My Process");
+        // 开始事件
+        StartEvent startEvent = new StartEvent();
+        startEvent.setId("startEvent");
+        process.addFlowElement(startEvent);
+        // 用户任务
+        UserTask userTask = new UserTask();
+        userTask.setName("User Task");
+        userTask.setId("userTask");
+        process.addFlowElement(userTask);
+        // 结束事件
+        EndEvent endEvent = new EndEvent();
+        endEvent.setId("endEvent");
+        process.addFlowElement(endEvent);
+        // 添加流程顺序
+        process.addFlowElement(new SequenceFlow("startEvent", "userTask"));
+        process.addFlowElement(new SequenceFlow("userTask", "endEvent"));
+        return model;
+    }
+```
+
+```java
+
+ProcessEngine engine = ProcessEngines.getDefaultProcessEngine();
+// 存储服务
+RepositoryService rs = engine.getRepositoryService();
+DeploymentBuilder builder = rs.createDeployment();
+//格式错误文件处理
+builder.addClasspathResource("error/schema_error.bpmn");
+//格式错误流程关闭验证
+builder.disableSchemaValidation();
+//流程错误文件处理
+builder.addClasspathResource("error/bpmn_error.bpmn");
+//关闭验证流程是否错误
+builder.disableBpmnValidation();
+builder.deploy();
+```
+
+查询部署资源
+
+```java
+ProcessEngine engine = ProcessEngines.getDefaultProcessEngine();
+// 存储服务
+RepositoryService rs = engine.getRepositoryService();
+
+DeploymentBuilder builder = rs.createDeployment();
+builder.addClasspathResource("my_text.txt");
+Deployment dep = builder.deploy();
+// 查询文件 begin
+InputStream is = rs.getResourceAsStream(dep.getId(), "my_text.txt");
+int count = is.available();
+byte[] contents = new byte[count];
+is.read(contents);
+String result = new String(contents);
+//查询文件 end
+
+// 部署一份流程文件 查询流程文件
+Deployment dep = repositoryService.createDeployment()
+    .addClasspathResource("gen.bpmn").deploy();
+// 查询流程定义
+//查询流程定义实体
+ProcessDefinition def = repositoryService.createProcessDefinitionQuery()
+    .deploymentId(dep.getId()).singleResult();
+// 查询资源文件
+InputStream is = repositoryService.getProcessModel(def.getId());
+// 读取输入流
+int count = is.available();
+byte[] contents = new byte[count];
+is.read(contents);
+String result = new String(contents);
+//输入输出结果 查询流程文件
+//
+//查询流程图
+
+//bpmn文件转流程图文件
+// 部署一份流程文件与相应的流程图文件
+Deployment dep = repositoryService.createDeployment()
+    .addClasspathResource("gen.bpmn").deploy();
+// 查询流程定义
+ProcessDefinition def = repositoryService.createProcessDefinitionQuery()
+    .deploymentId(dep.getId()).singleResult();
+// 查询资源文件
+InputStream is = repositoryService.getProcessDiagram(def.getId());
+// 将输入流转换为图片对象  
+BufferedImage image = ImageIO.read(is);
+// 保存为图片文件
+File file = new File("resource/result.png");
+if (!file.exists()) file.createNewFile();
+FileOutputStream fos = new FileOutputStream(file);
+ImageIO.write(image, "png", fos);
+fos.close();
+is.close();
+```
+
+**删除部署数据**
+
+1. 不管是否指定级联，都会删除部署相关的身份数据、流程定义数据、流程资源与部署数据。
+2. 如果设置为级联删除，则会将运行的流程实例、流程任务以及流程实例的历史数据删除。
+3. 如果不级联删除，但是存在运行时数据，例如还有流程实例，就会删除失败。
 
 
 #### 08 API（3）流程定义
+
+```java
+ProcessEngine engine = ProcessEngines.getDefaultProcessEngine();
+// 存储服务
+RepositoryService rs = engine.getRepositoryService();
+
+DeploymentBuilder builder = rs.createDeployment();
+//设置流程的所在位置
+builder.addClasspathResource("test1.bpmn");
+//指定流程图的位置 以及图片
+builder.addClasspathResource("test2.bpmn").addClasspathResource("test2.png");
+//中止与激活流程定义
+ProcessDefinition def = rs.createProcessDefinitionQuery()
+    .deploymentId(dep.getId()).singleResult();  
+
+System.out.println("id: " + def.getId());
+rs.suspendProcessDefinitionByKey(def.getKey());
+// 将会抛出异常，因为流程定义被中止了
+RuntimeService runService = engine.getRuntimeService();
+runService.startProcessInstanceByKey(def.getKey());
+//流程部署
+builder.deploy();
+//
+```
+
+```java
+//流程定义权限
+
+ProcessEngine engine = ProcessEngines.getDefaultProcessEngine();
+// 存储服务
+RepositoryService rs = engine.getRepositoryService();
+IdentityService is = engine.getIdentityService();
+
+User user = is.newUser(UUID.randomUUID().toString());
+user.setFirstName("Angus");
+is.saveUser(user);
+
+DeploymentBuilder builder = rs.createDeployment();
+builder.addClasspathResource("test3.bpmn");
+Deployment dep = builder.deploy();
+
+
+ProcessDefinition def = rs.createProcessDefinitionQuery()
+    .deploymentId(dep.getId()).singleResult();
+rs.addCandidateStarterUser(def.getId(), user.getId());
+
+
+List<ProcessDefinition> defs = rs.createProcessDefinitionQuery().startableByUser(user.getId()).list();
+for(ProcessDefinition de : defs) {
+    System.out.println(de.getId());
+}
+```
 
 
 
