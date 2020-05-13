@@ -448,24 +448,162 @@ System.out.println(var);
 
 #### 11 API（6）启动流程
 
+```java
+//执行流
+//ProcessInstance
+//Execution
+// 存储服务
+RepositoryService rs = engine.getRepositoryService();
+// 运行时服务
+RuntimeService runService = engine.getRuntimeService();
+// 任务服务
+TaskService taskService = engine.getTaskService();
+// 部署=================single  multi
+Deployment dep = rs.createDeployment().addClasspathResource("single.bpmn").deploy();
+Deployment dep = rs.createDeployment().addClasspathResource("multi.bpmn").deploy();
+//=================
+ProcessDefinition pd = rs.createProcessDefinitionQuery().deploymentId(dep.getId()).singleResult();
+// 启动流程
+ProcessInstance pi = runService.startProcessInstanceById(pd.getId());
+
+
+
+//启动流程
+//startProcessInstanceById
+//startProcessInstanceByKey
+//startProcessInstanceByMessage
+
+// 存储服务
+RepositoryService rs = engine.getRepositoryService();
+// 运行时服务
+RuntimeService runService = engine.getRuntimeService();
+// 任务服务
+TaskService taskService = engine.getTaskService();
+// 部署
+Deployment dep = rs.createDeployment().addClasspathResource("start.bpmn").deploy();
+ProcessDefinition pd = rs.createProcessDefinitionQuery().deploymentId(dep.getId()).singleResult();
+// 启动流程
+ProcessInstance pi = runService.startProcessInstanceById(pd.getId(), "abc");
+
+
+// 存储服务
+RepositoryService rs = engine.getRepositoryService();
+// 运行时服务
+RuntimeService runService = engine.getRuntimeService();
+// 任务服务
+TaskService taskService = engine.getTaskService();
+// 部署
+Deployment dep = rs.createDeployment().addClasspathResource("scope.bpmn").deploy();
+ProcessDefinition pd = rs.createProcessDefinitionQuery().deploymentId(dep.getId()).singleResult();
+// 启动流程
+ProcessInstance pi = runService.startProcessInstanceById(pd.getId());
+
+
+List<Task> tasks = taskService.createTaskQuery().processInstanceId(pi.getId()).list();
+for(Task task : tasks) {
+    Execution exe = runService.createExecutionQuery()
+        .executionId(task.getExecutionId()).singleResult();
+    if("TaskA".equals(task.getName())) {
+        runService.setVariableLocal(exe.getId(), "taskVarA", "varA");
+    } else {
+        runService.setVariable(exe.getId(), "taskVarB", "varB");
+    }
+}
+
+
+for(Task task : tasks) {
+    taskService.complete(task.getId());
+}
+
+
+Task taskC = taskService.createTaskQuery().processInstanceId(pi.getId()).singleResult();
+System.out.println(runService.getVariable(pi.getId(), "taskVarA"));
+System.out.println(runService.getVariable(pi.getId(), "taskVarB"));
+
+```
+
 
 
 
 #### 12 API（7）流程操作与数据查询
 
+```java
+//流程触发
+// 让它往前走
+runService.trigger(exe.getId());
+//触发信号事件
+runService.signalEventReceived("testSignal");
+//触发消息事件
+// 让它往前走
+runService.messageEventReceived("testMsg", exe.getId());
+```
 
 
 
 #### 13 API（8）历史数据
 
+```java
+//产生工作
+//异步任务
+
+//定时事件
+
+//暂停的工作
+runService.suspendProcessInstanceById(pi.getId());
+//无法执行的工作
+managementService.setJobRetries(job.getId(), 1);
+
+
+
+```
+
+
+
 #### 14 API（9）工作数据的产生
 
 #### 15 API（10）管理服务的使用
 
-
 #### 16 BPMN事件（1）事件的分类与定义
 
+```java
+//介绍事件的分类与定义
+//事件介绍
+//流对象
+//事件
+//活动
+//网关
+//数据
+//连接对象
+//泳道
+//制品
+//事件分类
+//位置事件
+//开始
+//中间
+//结束
+//边界
+//特性：
+//捕获
+//抛出
+```
+
+
+
 #### 17 BPMN事件（2）开始事件和结束事件
+
+```java
+//流程上报
+implements JavaDelegate
+//开始事件
+//无指定开始事件
+//定时器开始事件
+//消息开始事件
+//错误开始事件
+
+
+```
+
+
 
 #### 18 BMPN事件（3）边界事件与中间事件
 
