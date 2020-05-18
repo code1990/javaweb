@@ -600,6 +600,13 @@ implements JavaDelegate
 //消息开始事件
 //错误开始事件
 
+//结束事件
+//无指定结束事件
+//错误结束事件
+//取消结束事件
+//终止结束事件
+
+
 
 ```
 
@@ -607,15 +614,76 @@ implements JavaDelegate
 
 #### 18 BMPN事件（3）边界事件与中间事件
 
-#### 19 BPMN事件（4）中间事件
+```java
+//边界事件
+//定时器边界事件
+//错误边界事件
+//信号边界事件
+//补偿边界事件
+
+//中间事件
+//定时器中间事件
+//信号事件
+```
+
+
+
+#### 19 BPMN事件（4）补偿事件
+
+```java
+//补偿事件
+//补偿边界事件
+//事务子流程取消
+//补偿中间事件触发导致补偿边界事件触发
+//补偿中间事件
+
+```
+
+
 
 #### 20 BPMN任务（1）用户任务
+
+```java
+//用户任务
+//设置任务权限
+```
+
+
 
 #### 21 BPMN任务（2）脚本任务
 
 #### 22 BPMN任务（3）服务任务
 
+```java
+//服务任务分类
+//Java Service Task
+//Shell Task
+//Web Service Task
+
+activiti:class：JavaDelegate、ActivityBehavior
+activiti:delegateExpression
+activiti:expression
+
+```
+
+
+
 #### 23 BPMN任务（4）任务监听器与流程监听器
+
+```java
+//手工任务
+//接收任务: RuntimeService.trigger
+//邮件任务
+//Mule任务
+//业务规则任务
+
+//任务监听器
+//class
+//expression
+//delegateExpression
+```
+
+
 
 #### 24 BPMN其他元素（1）子流程
 
