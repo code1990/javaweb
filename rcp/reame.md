@@ -54,3 +54,19 @@ rcp04
 
 3.4 添加全局快捷键
 
+org.salever.rcp.tech.chapter3.keybinding
+
+如果想使用快捷键，必须新建一个Command，用于对应Action，这里并没有新建Action，而是采用了一种新的菜单扩展方法，handler
+
+M1在windows系统里代表Ctrl，详细参考api文档
+
+3.4.2 Action+Command+Binding绑定
+
+修改org.salever.rcp.tech.chapter3.ex
+
+添加command组件
+
+将Action与Command连接起来
+
+----------
+
