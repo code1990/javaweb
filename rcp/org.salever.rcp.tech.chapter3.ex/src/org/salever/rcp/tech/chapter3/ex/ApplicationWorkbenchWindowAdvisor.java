@@ -1,4 +1,4 @@
-package org.salever.rcp.tech.chapter3;
+package org.salever.rcp.tech.chapter3.ex;
 
 import org.eclipse.swt.graphics.Point;
 import org.eclipse.ui.application.ActionBarAdvisor;
@@ -19,8 +19,7 @@ public class ApplicationWorkbenchWindowAdvisor extends WorkbenchWindowAdvisor {
     public void preWindowOpen() {
         IWorkbenchWindowConfigurer configurer = getWindowConfigurer();
         configurer.setInitialSize(new Point(400, 300));
-        configurer.setShowCoolBar(true);
+        configurer.setShowCoolBar(false);
         configurer.setShowStatusLine(false);
-        configurer.setTitle("Hello RCP With Extension Menu");
     }
 }

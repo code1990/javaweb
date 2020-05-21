@@ -16,7 +16,11 @@ rcp01
 
 ----
 
-rcp02
+rcp02 
+
+3.2 通过编码添加
+
+org.salever.rcp.tech.chapter3
 
 actions来描述菜单及工具栏的
 
@@ -34,9 +38,19 @@ actions来描述菜单及工具栏的
 
 ----------
 
+rcp03 
+
+3.3 “扩展”方式添加菜单和工具栏
+
 org.salever.rcp.tech.chapter3.ex
 
+下面讲解一下Action set个元素的作用：
+ Menu，定义菜单栏，也就是菜单显示的位置，示例里面新建了一个Sample Menu菜单；
+ Action，定义菜单项，菜单项包含许多属性，其中比较重要的是id、label、menubar path、toolbar path、class等。label是显示在用户接口上的文字，要使action可见在菜单或者工具栏可见，menubarPath和toolbarPath是必须的
 
+-------------
 
+rcp04
 
+3.4 添加全局快捷键
 
