@@ -16,5 +16,27 @@ rcp01
 
 ----
 
+rcp02
+
+actions来描述菜单及工具栏的
+
+方法2种：
+
+1．编写代码
+2．扩展（Extensions
+
+----------
+
+```java
+//打开ApplicationActionBarAdvisor.java做如下更改
+
+```
+
+----------
+
+org.salever.rcp.tech.chapter3.ex
+
+
+
 
 
