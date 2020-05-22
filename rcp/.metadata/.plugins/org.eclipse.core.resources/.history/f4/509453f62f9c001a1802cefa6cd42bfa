@@ -1,0 +1,9 @@
+package org.salever.rcp.tech.chapter6.txtedit.editor;
+
+public class SampleTextEditor {
+
+	public static final String ID = "org.salever.rcp.tech.chapter6.txtedit.texteditor";
+	private Text text;
+	private boolean dirty;
+	private FileInput input;
+}

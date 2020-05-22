@@ -1,0 +1,9 @@
+package org.salever.rcp.tech.chapter6.editor;
+
+public class SampleEditor {
+
+	public SampleEditor() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

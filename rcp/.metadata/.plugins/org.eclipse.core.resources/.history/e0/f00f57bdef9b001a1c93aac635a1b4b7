@@ -1,0 +1,9 @@
+package org.salever.rcp.tech.chapter6.editor;
+
+public class SampleInput {
+
+	public SampleInput() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

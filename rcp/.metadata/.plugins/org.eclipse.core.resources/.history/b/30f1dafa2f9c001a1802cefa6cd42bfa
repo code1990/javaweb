@@ -1,0 +1,11 @@
+package org.salever.rcp.tech.chapter6.txtedit.editor;
+
+import org.eclipse.swt.widgets.Text;
+
+public class SampleTextEditor extends EditorPart implements ISaveablePart2{
+
+	public static final String ID = "org.salever.rcp.tech.chapter6.txtedit.texteditor";
+	private Text text;
+	private boolean dirty;
+	private FileInput input;
+}

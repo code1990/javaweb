@@ -1,0 +1,18 @@
+package org.salever.rcp.tech.chapter6.txtedit.action;
+
+import org.eclipse.jface.action.Action;
+import org.eclipse.ui.IWorkbenchWindow;
+
+public class OpenAction extends Action{
+	
+	private static final String ID = "org.salever.rcp.tech.chapter6.txtedit.action.open";
+
+	private IWorkbenchWindow window;
+	
+	public OpenAction(IWorkbenchWindow window){
+		this.window = window;
+		setText("&Open File");
+		setId(ID);
+		setImageDescriptor(Activator.getImageDescriptor("icons/open.gif"));
+	}
+}

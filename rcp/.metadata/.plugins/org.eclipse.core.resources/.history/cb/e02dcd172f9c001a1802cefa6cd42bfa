@@ -1,0 +1,5 @@
+package org.salever.rcp.tech.chapter6.txtedit.editor;
+
+public class FileInput {
+
+}

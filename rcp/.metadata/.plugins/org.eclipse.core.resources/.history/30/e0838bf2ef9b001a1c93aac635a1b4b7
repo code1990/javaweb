@@ -1,0 +1,11 @@
+package org.salever.rcp.tech.chapter6.editor;
+
+public class SampleInput {
+	
+	private String name="";
+
+	public SampleInput(String name) {
+		this.name = name;
+	}
+
+}

@@ -1,0 +1,40 @@
+package org.salever.rcp.tech.chapter6.txtedit;
+
+import org.eclipse.jface.action.Action;
+import org.eclipse.ui.IWorkbenchWindow;
+import org.eclipse.ui.actions.ActionFactory;
+import org.eclipse.ui.actions.ActionFactory.IWorkbenchAction;
+import org.eclipse.ui.application.ActionBarAdvisor;
+import org.eclipse.ui.application.IActionBarConfigurer;
+import org.salever.rcp.tech.chapter6.txtedit.action.OpenAction;
+
+/**
+ * An action bar advisor is responsible for creating, adding, and disposing of
+ * the actions added to a workbench window. Each window will be populated with
+ * new actions.
+ */
+public class ApplicationActionBarAdvisor extends ActionBarAdvisor {
+
+	private IWorkbenchAction iExitAction;
+	private IWorkbenchAction iAboutAction;
+	private IWorkbenchAction iSaveAsAction;
+	private IWorkbenchAction iSaveAction;
+	private Action openAction;
+
+	public ApplicationActionBarAdvisor(IActionBarConfigurer configurer) {
+		super(configurer);
+	}
+
+	protected void makeActions(IWorkbenchWindow window) {
+		iExitAction = ActionFactory.QUIT.create(window);
+		register(iExitAction);
+		iSaveAction = ActionFactory.SAVE.create(window);
+		register(iSaveAction);
+		iAboutAction = ActionFactory.ABOUT.create(window);
+		register(iAboutAction);
+		iSaveAsAction = ActionFactory.SAVE_AS.create(window);
+		register(iSaveAsAction);
+		openAction = new OpenAction(window);
+		register(openAction);
+	}
+}

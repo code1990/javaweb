@@ -91,3 +91,46 @@ org.salever.rcp.tech.chapter5.view
 
 -----
 
+rcp08
+
+编辑器（Editor）的使用是RCP开发中非常重要的一个环节
+
+org.salever.rcp.tech.chapter6
+
+------
+
+rcp09
+
+isDirty() ：在ISaveablePart中定义，用来表示编辑器是需要保存，返回true表明需要保存，否则不需要。与Eclipse内置的Save菜单绑定，当isDirty()返回true时候，Save菜单可用，否则不可用。
+ doSave(...) ：在ISaveablePart中定义，进行编辑器内容保存的方法，点击Save菜单将触发此方法。
+ doSaveAs()：在ISaveablePart中定义，用于另存文件，点击Save As菜单时触发此方法。
+ isSaveAsAllowed() ：在ISaveablePart中定义，用于启用或者禁用Save As菜单。
+ promptToSaveOnClose()：在ISaveablePart2定义，用于在关闭编辑器时候提示操作，这里在内容未保存的时候提示操作
+
+
+
+org.salever.rcp.tech.chapter6.txtedit
+
+----
+
+rcp10
+
+7 对话框
+
+对话框（Dialog），是Eclipse平台提供的最为灵活的组件之一
+
+FileDialog
+ColorDialog
+DirectoryDialog
+FontDialog
+PrintDialog
+ErrorDialog
+InputDialog
+MessageDialog
+
+org.salever.rcp.tech.chapter7
+
+----
+
+
+

@@ -1,0 +1,8 @@
+package org.salever.rcp.tech.chapter6.editor;
+
+public class SampleInput {
+
+	public SampleInput() {
+	}
+
+}
