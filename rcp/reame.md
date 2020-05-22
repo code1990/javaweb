@@ -74,5 +74,15 @@ rcp05
 
 4 系统托盘
 
+org.salever.rcp.tech.chapter4
+
 -----------------
+
+rcp06
+
+视图（View）可以为任务提供信息，查看通常为信息层次提供导航，打开编辑器，或者浏览属性
+
+org.salever.rcp.tech.chapter5
+
+------------
 
