@@ -31,13 +31,6 @@ actions来描述菜单及工具栏的
 
 ----------
 
-```java
-//打开ApplicationActionBarAdvisor.java做如下更改
-
-```
-
-----------
-
 rcp03 
 
 3.3 “扩展”方式添加菜单和工具栏
@@ -82,7 +75,19 @@ rcp06
 
 视图（View）可以为任务提供信息，查看通常为信息层次提供导航，打开编辑器，或者浏览属性
 
+org.salever.rcp.tech.chapter5.perspective
+
 org.salever.rcp.tech.chapter5
 
 ------------
+
+rcp07
+
+5.2 添加自定义视图
+
+org.salever.rcp.tech.chapter5.view
+
+==无法浮现业务逻辑==
+
+-----
 

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<map>
-	<bundle bundleID="445" class="org.salever.rcp.tech.chapter3.keybinding.Activator" localization="OSGI-INF/l10n/bundle" name="Keybinding" project="org.salever.rcp.tech.chapter3.keybinding"/>
-	<bundle bundleID="442" class="org.salever.rcp.tech.helloworld.Activator" localization="OSGI-INF/l10n/bundle" name="Helloworld" project="org.salever.rcp.tech.helloworld"/>
-	<bundle bundleID="446" class="org.salever.rcp.tech.chapter4.Activator" localization="OSGI-INF/l10n/bundle" name="Chapter4" project="org.salever.rcp.tech.chapter4"/>
-	<bundle bundleID="443" class="org.salever.rcp.tech.chapter3.Activator" localization="OSGI-INF/l10n/bundle" name="Chapter3" project="org.salever.rcp.tech.chapter3"/>
-	<bundle bundleID="447" class="org.salever.rcp.tech.chapter5.Activator" localization="OSGI-INF/l10n/bundle" name="Chapter5" project="org.salever.rcp.tech.chapter5"/>
-	<bundle bundleID="444" class="org.salever.rcp.tech.chapter3.ex.Activator" localization="OSGI-INF/l10n/bundle" name="Ex" project="org.salever.rcp.tech.chapter3.ex"/>
-</map>

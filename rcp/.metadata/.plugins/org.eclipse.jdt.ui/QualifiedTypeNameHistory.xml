@@ -9,7 +9,6 @@
 <fullyQualifiedTypeName name="org.eclipse.swt.graphics.Image"/>
 <fullyQualifiedTypeName name="org.eclipse.ui.IWorkbenchWindow"/>
 <fullyQualifiedTypeName name="org.salever.rcp.tech.chapter4.ApplicationWorkbenchAdvisor"/>
-<fullyQualifiedTypeName name="org.eclipse.swt.SWT"/>
 <fullyQualifiedTypeName name="org.eclipse.swt.widgets.Listener"/>
 <fullyQualifiedTypeName name="org.eclipse.jface.action.MenuManager"/>
 <fullyQualifiedTypeName name="org.eclipse.swt.widgets.Menu"/>
@@ -23,4 +22,16 @@
 <fullyQualifiedTypeName name="org.eclipse.ui.actions.ActionFactory.IWorkbenchAction"/>
 <fullyQualifiedTypeName name="com.sun.rmi.rmid.ExecOptionPermission"/>
 <fullyQualifiedTypeName name="org.eclipse.ui.actions.ActionFactory"/>
+<fullyQualifiedTypeName name="org.eclipse.jface.action.IToolBarManager"/>
+<fullyQualifiedTypeName name="org.eclipse.jface.action.ToolBarManager"/>
+<fullyQualifiedTypeName name="org.eclipse.jface.action.ToolBarContributionItem"/>
+<fullyQualifiedTypeName name="org.eclipse.ui.part.ViewPart"/>
+<fullyQualifiedTypeName name="com.sun.xml.internal.ws.policy.privateutil.PolicyUtils.Text"/>
+<fullyQualifiedTypeName name="org.eclipse.swt.SWT"/>
+<fullyQualifiedTypeName name="org.eclipse.ui.IPageLayout"/>
+<fullyQualifiedTypeName name="org.eclipse.ui.IViewActionDelegate"/>
+<fullyQualifiedTypeName name="org.salever.rcp.tech.chapter5.view.SampleViewPart"/>
+<fullyQualifiedTypeName name="org.eclipse.jface.dialogs.MessageDialog"/>
+<fullyQualifiedTypeName name="org.eclipse.swt.widgets.Composite"/>
+<fullyQualifiedTypeName name="org.eclipse.swt.widgets.Text"/>
 </qualifiedTypeNameHistroy>
