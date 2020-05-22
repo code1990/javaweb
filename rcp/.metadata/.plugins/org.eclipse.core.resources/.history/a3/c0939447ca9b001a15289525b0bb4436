@@ -67,4 +67,13 @@ public class ApplicationActionBarAdvisor extends ActionBarAdvisor {
     	
     }
     
+//    public void preWindowOpen(){
+//    	IWorkbenchWindoRwConfigurer configurer = getWindowConfigurer();
+//    	configurer.setInitialSize(new Point(400, 300));
+//    	configurer.setShowCoolBar(true);
+//    	configurer.setShowStatusLine(false);
+//    	configurer.setTitle("Hello RCP");
+//    	
+//    }
+    
 }

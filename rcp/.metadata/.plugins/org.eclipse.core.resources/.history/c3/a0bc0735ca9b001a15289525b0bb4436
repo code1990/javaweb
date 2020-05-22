@@ -1,14 +1,9 @@
 package org.salever.rcp.tech.chapter3;
 
 
-import org.eclipse.jface.action.ICoolBarManager;
 import org.eclipse.jface.action.IMenuManager;
-import org.eclipse.jface.action.IToolBarManager;
 import org.eclipse.jface.action.MenuManager;
 import org.eclipse.jface.action.Separator;
-import org.eclipse.jface.action.ToolBarContributionItem;
-import org.eclipse.jface.action.ToolBarManager;
-import org.eclipse.swt.SWT;
 import org.eclipse.ui.IWorkbenchActionConstants;
 import org.eclipse.ui.IWorkbenchWindow;
 import org.eclipse.ui.actions.ActionFactory;
@@ -59,12 +54,13 @@ public class ApplicationActionBarAdvisor extends ActionBarAdvisor {
     			
     }
     
-    public void fillCoolBar(ICoolBarManager coolBar){
-    	IToolBarManager toolBar = new ToolBarManager(SWT.FLAT|SWT.RIGHT);
-    	coolBar.add(new ToolBarContributionItem(toolBar,"main"));
-    	toolBar.add(iSaveAction);
-    	toolBar.add(iExitAction);
-    	
-    }
+//    public void preWindowOpen(){
+//    	IWorkbenchWindoRwConfigurer configurer = getWindowConfigurer();
+//    	configurer.setInitialSize(new Point(400, 300));
+//    	configurer.setShowCoolBar(true);
+//    	configurer.setShowStatusLine(false);
+//    	configurer.setTitle("Hello RCP");
+//    	
+//    }
     
 }
