@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="kaitone.wisp.kul.update.p2.feature"
+      label="Feature"
+      version="1.0.0.qualifier"
+      provider-name="Kaitone"
+      plugin="org.salever.rcp.update.p2"
+      image="alt_window_32.gif">
+
+   <description url="http://www.example.com/description">
+      [Enter Feature Description here.]
+   </description>
+
+   <copyright>
+      [Enter Copyright Description here.]
+   </copyright>
+
+   <license>
+      Copyright reserved.
+   </license>
+
+   <url>
+      <update label="update" url="http://eclipsercp.org/updates"/>
+      <discovery label="update" url="http://download.eclipse.org/eclipse/updates/3.4"/>
+   </url>
+
+   <requires>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.eclipse.osgi"/>
+   </requires>
+
+   <plugin
+         id="org.eclipse.ui.forms"
+         download-size="0"
+         install-size="0"
+         version="3.4.0.v20090526"
+         unpack="false"/>
+
+   <plugin
+         id="org.apache.commons.logging"
+         download-size="0"
+         install-size="0"
+         version="1.0.4.v200904062259"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.equinox.util"
+         download-size="0"
+         install-size="0"
+         version="1.0.100.v20090520-1800"
+         unpack="false"/>
+
+   <plugin
+         id="org.salever.rcp.update.p2"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.qualifier"
+         unpack="false"/>
+
+</feature>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;org.salever.rcp.tech.chapter18.maker.popup.actions.NewAction&apos; to &apos;TestMarkerAction&apos;&#x0D;&#x0A;- Original project: &apos;org.salever.rcp.tech.chapter18.maker&apos;&#x0D;&#x0A;- Original element: &apos;org.salever.rcp.tech.chapter18.maker.popup.actions.NewAction&apos;&#x0D;&#x0A;- Renamed element: &apos;org.salever.rcp.tech.chapter18.maker.popup.actions.TestMarkerAction&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;NewAction&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;org.salever.rcp.tech.chapter18.maker.popup.actions{NewAction.java[NewAction" matchStrategy="1" name="TestMarkerAction" qualified="false" references="true" similarDeclarations="false" stamp="1590228299889" textual="false" version="1.0"/>
+</session>

@@ -221,6 +221,77 @@ org.salever.rcp.examples.update.p2
 ==无法重现==
 
 -------
+rcp18
+
+产品（Product），Eclipse plugin 工程是以产品的方式打包和独立运行的
+
+
+-----
+
+rcp19
+
+org.salever.rcp.tech.chapter15
+
+product测试正常 ==导出异常==
+
+-------------
+rcp20
+
+org.salever.rcp.tech.chapter15.help
+
+==测试未达到预期==
+
+-----
+
+16专题
+
+eclipse 版本介绍
+
+--------
+
+rcp21
+
+
+org.salever.rcp.tech.chapter17
+
+，在运行的时候附上“-nl en_US”参数 指定英文
+
+
+Propedit工具 一个属性文件编辑工具
+
+Properties Editor
+
+https://zh.osdn.net/projects/propedit/
+
+-----
+
+
+-----------
+
+rcp22
+org.salever.rcp.tech.chapter18.decorator
+
+，decorator用来进行图标修饰
+
+------
+
+rcp23
+
+Marker用于标记，常见应用为TODO标记、错误标记等
+
+----
+rcp24
+
+19.1 Eclipse Run/Debug 实现流程
+
+org.salever.rcp.tech.chapter19
+
+----
+rcp25
+org.eclipse.update.example
+
+----
+
 
 
 

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;org.salever.rcp.tech.chapter19.launch&apos; to &apos;org.salever.rcp.tech.chapter19&apos;&#x0D;&#x0A;- Original project: &apos;org.salever.rcp.tech.chapter19&apos;&#x0D;&#x0A;- Original element: &apos;org.salever.rcp.tech.chapter19/src/org.salever.rcp.tech.chapter19.launch&apos;&#x0D;&#x0A;- Renamed element: &apos;org.salever.rcp.tech.chapter19/src/org.salever.rcp.tech.chapter19&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;org.salever.rcp.tech.chapter19.launch&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;org.salever.rcp.tech.chapter19.launch" name="org.salever.rcp.tech.chapter19" qualified="false" references="true" stamp="1590229004293" textual="false" version="1.0"/>
+</session>

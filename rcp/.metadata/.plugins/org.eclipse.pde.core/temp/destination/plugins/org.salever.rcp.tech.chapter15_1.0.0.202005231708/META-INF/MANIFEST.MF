@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: org.salever.rcp.tech.chapter15; singleton:=true
+Bundle-Name: Chapter15
+Bundle-Version: 1.0.0.202005231708
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime
+Bundle-ManifestVersion: 2
+Bundle-Activator: org.salever.rcp.tech.chapter15.Activator
+Bundle-ActivationPolicy: lazy
+
+
