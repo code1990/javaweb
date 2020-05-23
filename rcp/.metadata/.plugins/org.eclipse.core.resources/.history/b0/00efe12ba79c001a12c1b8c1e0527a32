@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         id="application"
+         point="org.eclipse.core.runtime.applications">
+      <application>
+         <run
+               class="org.salever.rcp.tech.chapter9.Application">
+         </run>
+      </application>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            name="RCP Perspective"
+            class="org.salever.rcp.tech.chapter9.Perspective"
+            id="org.salever.rcp.tech.chapter9.perspective">
+      </perspective>
+   </extension>
+   <extension
+         point="org.eclipse.ui.actionSets">
+      <actionSet
+            id="org.salever.rcp.tech.chapter9.actionSet"
+            label="Sample Action Set">
+         <menu
+               id="org.salever.rcp.tech.chapter9.menu2"
+               label="Sample &amp;Menu">
+         </menu>
+      </actionSet>
+   </extension>
+
+</plugin>

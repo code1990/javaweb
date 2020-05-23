@@ -153,5 +153,17 @@ Wizard类可以提供向导内容，WizardPages类提供向导页面的设计。
 
 -----
 
+rcp13
+
+Eclipse首选项和java.utils.prefs.Preferences非常相似。首选项对一些类似查找、存储的附加特征提供支持
+
+org.salever.rcp.tech.chapter9
+
+
+
+==无法重现业务逻辑==
+
+----
+
 
 

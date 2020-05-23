@@ -1,0 +1,5 @@
+package org.salever.rcp.tech.chapter9.actions;
+
+public class PreferenceAction {
+
+}

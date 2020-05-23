@@ -9,6 +9,7 @@
 	<bundle bundleID="494" class="org.salever.rcp.tech.chapter3.Activator" localization="OSGI-INF/l10n/bundle" name="Chapter3" project="org.salever.rcp.tech.chapter3"/>
 	<bundle bundleID="495" class="org.salever.rcp.tech.chapter5.Activator" localization="OSGI-INF/l10n/bundle" name="Chapter5" project="org.salever.rcp.tech.chapter5"/>
 	<bundle bundleID="496" class="org.salever.rcp.tech.chapter7.Activator" localization="OSGI-INF/l10n/bundle" name="Chapter7" project="org.salever.rcp.tech.chapter7"/>
+	<bundle bundleID="500" class="org.salever.rcp.tech.chapter9.Activator" localization="OSGI-INF/l10n/bundle" name="Chapter9" project="org.salever.rcp.tech.chapter9"/>
 	<bundle bundleID="497" class="org.salever.rcp.tech.chapter3.ex.Activator" localization="OSGI-INF/l10n/bundle" name="Ex" project="org.salever.rcp.tech.chapter3.ex"/>
 	<bundle bundleID="498" class="org.salever.rcp.tech.chapter5.view.Activator" localization="OSGI-INF/l10n/bundle" name="View" project="org.salever.rcp.tech.chapter5.view"/>
 </map>
