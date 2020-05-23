@@ -1,0 +1,16 @@
+【No620】技术胖flutter移动电商实战视频教程,https://www.javaxxz.com/forum.php?mod=viewthread&tid=387942&highlight=%E7%94%B5%E5%95%86,WEB前端
+【No967】Vue2.0与3.0开发电商系统教程,https://www.javaxxz.com/forum.php?mod=viewthread&tid=397487&highlight=%E7%94%B5%E5%95%86,WEB前端
+【No631】尚 大数据项目之开发电商数仓视频教程,https://www.javaxxz.com/forum.php?mod=viewthread&tid=388313&highlight=%E7%94%B5%E5%95%86,大数据
+【No868】2018 基于Flink流处理的动态实时电商实时分析系统课程,https://www.javaxxz.com/forum.php?mod=viewthread&tid=396517&highlight=%E7%94%B5%E5%95%86,大数据
+【No565】2019年最新Hadoop基础与电商行为日志分析视频教程（第一章1—2集缺失，介意的不要拍哦）,https://www.javaxxz.com/forum.php?mod=viewthread&tid=385413&highlight=%E7%94%B5%E5%95%86,大数据
+【No707】Java性能优化全面性能调优与电商项目调优实战MP3+PDF教程,https://www.javaxxz.com/forum.php?mod=viewthread&tid=390981&highlight=%E7%94%B5%E5%95%86,JAVAEE
+【No645】201906Java开发大型电商系统谷粒商城实战视频教程,https://www.javaxxz.com/forum.php?mod=viewthread&tid=388606&highlight=%E7%94%B5%E5%95%86,JAVAEE
+【No924】2020最新Java通用型支付与电商平台双系统实战视频教程,https://www.javaxxz.com/forum.php?mod=viewthread&tid=397364&highlight=%E7%94%B5%E5%95%86,JAVAEE
+【No605】爱旅行电商项目实战视频教程,https://www.javaxxz.com/forum.php?mod=viewthread&tid=387189&highlight=%E7%94%B5%E5%95%86,JAVAEE
+【No509】基于ssm框架大型分布式电商系统开发视频教程,https://www.javaxxz.com/forum.php?mod=viewthread&tid=382151&highlight=%E7%94%B5%E5%95%86,JAVAEE
+【No300】2018年 java入门进阶主流框架学习到架构与电商项目实战课程下载,https://www.javaxxz.com/forum.php?mod=viewthread&tid=369815&highlight=%E7%94%B5%E5%95%86,JAVAEE
+【No209】[全栈开发 ]Vue+Django REST framework 打造生鲜电商项目视频教程,https://www.javaxxz.com/forum.php?mod=viewthread&tid=359008&highlight=%E7%94%B5%E5%95%86,WEB前端
+【No141】Hadoop大数据视频教程-：真实电商数据仓库全流程开发详解(共46讲)视频教程下载,https://www.javaxxz.com/forum.php?mod=viewthread&tid=347179&highlight=%E7%94%B5%E5%95%86,大数据
+【No92】亿级流量电商系统大型高并发与高可用缓存架构实战,https://www.javaxxz.com/forum.php?mod=viewthread&tid=342911&highlight=%E7%94%B5%E5%95%86,JAVAEE
+【No91】2017Spark 2.0大型项目实战：移动电商app交互式数据分析,https://www.javaxxz.com/forum.php?mod=viewthread&tid=342714&highlight=%E7%94%B5%E5%95%86,大数据
+【No89】中国移动大型分布式redis,solr,Linux,nginx,springmvc,mybatis电商项目视频教程,https://www.javaxxz.com/forum.php?mod=viewthread&tid=342411&highlight=%E7%94%B5%E5%95%86,JAVAEE
