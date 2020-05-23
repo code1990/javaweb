@@ -165,5 +165,33 @@ org.salever.rcp.tech.chapter9
 
 ----
 
+rcp14
+
+状态栏（StatusLine），指的是RCP主界面下方的信息提示栏，这里可以提示一些正在运行的操作，系统状态等信息
+
+org.salever.rcp.tech.chapter10
+
+==无法重现业务逻辑==
+
+----
+
+rcp15
+
+透视图（Perspective）将相关的UI元素集合并组织起来，更适合特殊的任务及工作流程。
+
+org.salever.rcp.tech.chapter11
+
+----
+
+rcp16
+
+12 进度条
+
+org.salever.rcp.tech.chapter12
+
+
+
+-----
+
 
 

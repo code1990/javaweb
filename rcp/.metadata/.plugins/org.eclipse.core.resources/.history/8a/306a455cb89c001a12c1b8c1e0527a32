@@ -1,0 +1,5 @@
+package org.salever.rcp.tech.chapter10.views;
+
+public class SampleView {
+
+}
