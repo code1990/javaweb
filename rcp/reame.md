@@ -132,5 +132,15 @@ org.salever.rcp.tech.chapter7
 
 ----
 
+rcp11
+
+7.3 用户自定义对话框
+
+**笔者一般先用SWT Designer进行布局，然后再改写它自动生成的代码，这样可以提高开发效率。**
+
+org.salever.rcp.tech.chapter7.dialog
+
+------
+
 
 

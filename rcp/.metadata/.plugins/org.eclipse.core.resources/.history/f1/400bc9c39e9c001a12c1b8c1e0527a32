@@ -1,0 +1,96 @@
+package org.salever.rcp.tech.chapter7.dialog;
+
+import javax.swing.JPanel;
+
+import org.eclipse.jface.dialogs.Dialog;
+import org.eclipse.swt.SWT;
+import org.eclipse.swt.layout.GridData;
+import org.eclipse.swt.widgets.Button;
+import org.eclipse.swt.widgets.Combo;
+import org.eclipse.swt.widgets.Composite;
+import org.eclipse.swt.widgets.Control;
+import org.eclipse.swt.widgets.DateTime;
+import org.eclipse.swt.widgets.Label;
+import org.eclipse.swt.widgets.Scale;
+import org.eclipse.swt.widgets.Shell;
+import org.eclipse.swt.widgets.Slider;
+import org.eclipse.swt.widgets.Spinner;
+import org.eclipse.swt.widgets.Text;
+
+public class FirstDialog extends Dialog {
+	private Text text;
+	
+	public FirstDialog(Shell parentShell) {
+		super(parentShell);
+	}
+
+	private final JPanel contentPanel = new JPanel();
+
+	/**
+	 * Launch the application.
+	 */
+//	public static void main(String[] args) {
+//		try {
+//			FirstDialog dialog = new FirstDialog();
+//			dialog.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
+//			dialog.setVisible(true);
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//		}
+//	}
+
+	/**
+	 * Create the dialog.
+	 */
+//	public FirstDialog() {
+//		setBounds(100, 100, 450, 300);
+//		getContentPane().setLayout(new BorderLayout());
+//		contentPanel.setLayout(new FlowLayout());
+//		contentPanel.setBorder(new EmptyBorder(5, 5, 5, 5));
+//		getContentPane().add(contentPanel, BorderLayout.CENTER);
+//		{
+//			JPanel buttonPane = new JPanel();
+//			buttonPane.setLayout(new FlowLayout(FlowLayout.RIGHT));
+//			getContentPane().add(buttonPane, BorderLayout.SOUTH);
+//			{
+//				JButton okButton = new JButton("OK");
+//				okButton.setActionCommand("OK");
+//				buttonPane.add(okButton);
+//				getRootPane().setDefaultButton(okButton);
+//			}
+//			{
+//				JButton cancelButton = new JButton("Cancel");
+//				cancelButton.setActionCommand("Cancel");
+//				buttonPane.add(cancelButton);
+//			}
+//		}
+//	}
+
+	protected Control createDialogArea(Composite parent) {
+		Composite container = (Composite) super.createDialogArea(parent);
+		
+		Label label = new Label(container, SWT.NONE);
+		label.setText("New Label");
+		
+		text = new Text(container, SWT.BORDER);
+		text.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
+		
+		Button button = new Button(container, SWT.NONE);
+		button.setText("New Button");
+		
+		Combo combo = new Combo(container, SWT.NONE);
+		combo.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
+		
+		Spinner spinner = new Spinner(container, SWT.BORDER);
+		
+		DateTime dateTime = new DateTime(container, SWT.BORDER);
+		
+		Scale scale = new Scale(container, SWT.NONE);
+		
+		Slider slider = new Slider(container, SWT.NONE);
+
+		return container;
+	}
+	
+	
+}
