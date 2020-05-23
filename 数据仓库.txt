@@ -1,0 +1,6 @@
+【No631】尚 大数据项目之开发电商数仓视频教程	https://www.javaxxz.com/forum.php?mod=viewthread&tid=388313&highlight=%E4%BB%93	大数据
+【No799】2019年最新基于阿里云搭建数据仓库课程[离线]	https://www.javaxxz.com/forum.php?mod=viewthread&tid=393955&highlight=%E4%BB%93	数据库
+【No876】2019 基于阿里云搭建数据仓库项目	https://www.javaxxz.com/forum.php?mod=viewthread&tid=396769&highlight=%E4%BB%93	大数据
+【No957】秒级查询的数据仓库Kudu视频教程	https://www.javaxxz.com/forum.php?mod=viewthread&tid=397452&highlight=%E4%BB%93	大数据
+【No485】数据仓库建模指南系列视频教程 升级版	https://www.javaxxz.com/forum.php?mod=viewthread&tid=380999&highlight=%E4%BB%93	大数据
+【No141】Hadoop大数据视频教程-：真实电商数据仓库全流程开发详解(共46讲)视频教程下载	https://www.javaxxz.com/forum.php?mod=viewthread&tid=347179&highlight=%E4%BB%93	大数据
