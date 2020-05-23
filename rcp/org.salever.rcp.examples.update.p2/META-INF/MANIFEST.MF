@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: P2
+Bundle-SymbolicName: org.salever.rcp.examples.update.p2; singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: org.salever.rcp.examples.update.p2.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime
+Bundle-ActivationPolicy: lazy

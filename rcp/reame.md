@@ -192,6 +192,35 @@ org.salever.rcp.tech.chapter12
 Eclipse中还有一种方式实现进度条执行，那就是Job。在Samlpe Action Sets下面新建一个action，命名为JobAction
 
 -----
+rcp17
+13 使用第三方Jar
+
+为项目添加jar包
+
+如果你想向控制台输出eclipse日志。使用–consoleLog作为程序参数
+
+14.2 保存用户的布局
+
+ApplicationWorkbenchAdvisor 设置如下的布局
+
+```java
+public void initialize(IWorkbenchConfigurer configurer) {
+super.initialize(configurer);
+//保存用户的布局
+configurer.setSaveAndRestore(true);
+}
+
+````
+14.3 获得display
+使用getSite().getShell().getDisplay();可以获得display
+
+14.5 向你的程序添加错误日志视图
+
+org.salever.rcp.examples.update.p2
+
+==无法重现==
+
+-------
 
 
 

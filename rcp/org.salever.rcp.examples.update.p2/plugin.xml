@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         id="application"
+         point="org.eclipse.core.runtime.applications">
+      <application>
+         <run
+               class="org.salever.rcp.examples.update.p2.Application">
+         </run>
+      </application>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            name="RCP Perspective"
+            class="org.salever.rcp.examples.update.p2.Perspective"
+            id="org.salever.rcp.examples.update.p2.perspective">
+      </perspective>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            class="org.salever.rcp.examples.update.p2.View"
+            id="kaitone.wisp.kul.update.p2.view"
+            name="%view.name"
+            restorable="true">
+      </view>
+   </extension>
+
+</plugin>
