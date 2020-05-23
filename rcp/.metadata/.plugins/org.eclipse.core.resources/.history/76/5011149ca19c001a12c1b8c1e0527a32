@@ -1,0 +1,27 @@
+package org.salever.rcp.tech.chapter8.wizard;
+
+public class MyWizard  extends Wizard {
+
+	private MyPageOne one;
+	private MyPageTwo two;
+
+	public MyWizard() {
+		super();
+		setNeedsProgressMonitor(true);
+
+	}
+
+	public void addPages() {
+		one = new MyPageOne();
+		two = new MyPageTwo();
+		addPage(one);
+		addPage(two);
+
+	}
+
+	public boolean performFinish() {
+		MessageDialog.openInformation(getShell(), "ÐÅÏ¢",
+				"Ïòµ¼Ò³1ÄÚÌîÐ´ÁË" + one.getText1() + "\nÏòµ¼Ò³2ÄÚÌîÐ´ÁË" + two.getText1());
+		return true;
+	}
+}

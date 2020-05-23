@@ -142,5 +142,16 @@ org.salever.rcp.tech.chapter7.dialog
 
 ------
 
+rcp12
+
+org.salever.rcp.tech.chapter8
+
+向导框提供一个灵活的方法收集软件使用者系统的输入并且准确的执行输入
+
+WizardDialog类实现了一个向导框。
+Wizard类可以提供向导内容，WizardPages类提供向导页面的设计。
+
+-----
+
 
 
