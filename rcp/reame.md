@@ -189,7 +189,7 @@ rcp16
 
 org.salever.rcp.tech.chapter12
 
-
+Eclipse中还有一种方式实现进度条执行，那就是Job。在Samlpe Action Sets下面新建一个action，命名为JobAction
 
 -----
 

@@ -2,6 +2,7 @@
 <map>
 	<bundle bundleID="491" class="org.salever.rcp.tech.helloworld.Activator" localization="OSGI-INF/l10n/bundle" name="Helloworld" project="org.salever.rcp.tech.helloworld"/>
 	<bundle bundleID="493" class="org.salever.rcp.tech.chapter6.Activator" localization="OSGI-INF/l10n/bundle" name="Chapter6" project="org.salever.rcp.tech.chapter6"/>
+	<bundle bundleID="503" class="org.salever.rcp.tech.chapter12.Activator" localization="OSGI-INF/l10n/bundle" name="Chapter12" project="org.salever.rcp.tech.chapter12"/>
 	<bundle bundleID="495" class="org.salever.rcp.tech.chapter5.Activator" localization="OSGI-INF/l10n/bundle" name="Chapter5" project="org.salever.rcp.tech.chapter5"/>
 	<bundle bundleID="500" class="org.salever.rcp.tech.chapter9.Activator" localization="OSGI-INF/l10n/bundle" name="Chapter9" project="org.salever.rcp.tech.chapter9"/>
 	<bundle bundleID="489" class="org.salever.rcp.tech.chapter6.txtedit.Activator" localization="OSGI-INF/l10n/bundle" name="Txtedit" project="org.salever.rcp.tech.chapter6.txtedit"/>
