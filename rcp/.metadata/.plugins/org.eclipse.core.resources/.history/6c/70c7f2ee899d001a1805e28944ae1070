@@ -1,0 +1,7 @@
+package org.eclipse.rcp.intro.dialogs.custom.dialogs;
+
+import org.eclipse.core.commands.AbstractHandler;
+
+public class OpenMyDialog extends AbstractHandler {
+
+}

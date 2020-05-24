@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         id="application"
+         point="org.eclipse.core.runtime.applications">
+      <application>
+         <run
+               class="org.eclipse.intro.dialogs.standard.Application">
+         </run>
+      </application>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            name="RCP Perspective"
+            class="org.eclipse.intro.dialogs.standard.Perspective"
+            id="org.eclipse.intro.dialogs.standard.perspective">
+      </perspective>
+   </extension>
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="org.eclipse.intro.dialogs.standard.application"
+            name="Hello RCP">
+         <property
+               name="windowImages"
+               value="icons/alt_window_16.gif,icons/alt_window_32.gif">
+         </property>
+      </product>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            allPopups="false"
+            locationURI="org.eclipse.intro.dialogs.standard.menuContribution2">
+      </menuContribution>
+   </extension>
+
+</plugin>

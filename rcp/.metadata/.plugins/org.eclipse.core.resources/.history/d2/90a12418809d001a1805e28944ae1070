@@ -1,0 +1,32 @@
+package org.eclipse.rcp.intro.dialogs.standard.handler;
+
+import org.eclipse.core.commands.AbstractHandler;
+import org.eclipse.core.commands.ExecutionEvent;
+import org.eclipse.core.commands.ExecutionException;
+import org.eclipse.swt.widgets.DirectoryDialog;
+import org.eclipse.swt.widgets.FileDialog;
+import org.eclipse.swt.widgets.Shell;
+import org.eclipse.ui.handlers.HandlerUtil;
+
+public class OpenDialog extends AbstractHandler {
+
+	public Object execute(ExecutionEvent event) throws ExecutionException {
+		Shell shell = HandlerUtil.getActiveWorkbenchWindow(event).getShell();
+		FileDialog fileDialog = new FileDialog(shell);
+		fileDialog.setText("Select File");
+		fileDialog.setFilterExtensions(new String[] { "*.txt" });
+		fileDialog.setFilterNames(new String[] { "Textfiles(*.txt)" });
+		String selected = fileDialog.open();
+		System.out.println(selected);
+		DirectoryDialog dirDialog = new DirectoryDialog(shell);
+		dirDialog.setText("Select your home directory");
+		String selectedDir = dirDialog.open();
+		System.out.println(selectedDir);
+		FontDialog fontDialog = new FontDialog(shell);
+		fontDialog.setText("Select your favorite font");
+		FontData selectedFont = fontDialog.open();
+		System.out.println(selectedFont);
+		return null;
+	}
+
+}

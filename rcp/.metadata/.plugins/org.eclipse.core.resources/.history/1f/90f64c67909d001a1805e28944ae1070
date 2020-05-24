@@ -1,0 +1,21 @@
+package intro.wizards.wizard;
+
+import org.eclipse.jface.wizard.WizardPage;
+import org.eclipse.swt.widgets.Composite;
+import org.eclipse.swt.widgets.Text;
+
+public class MyPageOne extends WizardPage{
+	private Text text1;
+	private Composite container;
+
+	public MyPageOne() {
+		super("First Page");
+		setTitle("First Page2");
+		setDescription("This wizard does not really do anything. But this is the first page");
+	}
+
+	public void createControl(Composite parent) {
+		// TODO Auto-generated method stub
+		
+	}
+}

@@ -1,0 +1,12 @@
+package intro.wizards.wizard;
+
+public class MyWizard extends Wizard {
+	private MyPageOne one;
+	private MyPageTwo two;
+
+	public MyWizard() {
+		super();
+		setNeedsProgressMonitor(true);
+	}
+
+}

@@ -1,0 +1,7 @@
+package intro.filedassist;
+
+import org.eclipse.ui.part.ViewPart;
+
+public class StatusLineView extends ViewPart {
+
+}

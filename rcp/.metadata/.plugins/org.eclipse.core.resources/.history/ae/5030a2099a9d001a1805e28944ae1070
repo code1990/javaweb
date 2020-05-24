@@ -1,0 +1,5 @@
+package org.eclipse.rcp.intro.perspective;
+
+public class MyPerspective {
+
+}

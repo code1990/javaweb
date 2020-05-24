@@ -14,6 +14,10 @@ rcp01
 
 2.5配置 run as product 出现异常
 
+Run as product>>>==org.salever.rcp.tech.helloworld.product==
+
+否则出现异常
+
 ----
 
 rcp02 
@@ -87,8 +91,6 @@ rcp07
 
 org.salever.rcp.tech.chapter5.view
 
-==无法浮现业务逻辑==
-
 -----
 
 rcp08
@@ -159,10 +161,6 @@ Eclipse首选项和java.utils.prefs.Preferences非常相似。首选项对一些
 
 org.salever.rcp.tech.chapter9
 
-
-
-==无法重现业务逻辑==
-
 ----
 
 rcp14
@@ -170,8 +168,6 @@ rcp14
 状态栏（StatusLine），指的是RCP主界面下方的信息提示栏，这里可以提示一些正在运行的操作，系统状态等信息
 
 org.salever.rcp.tech.chapter10
-
-==无法重现业务逻辑==
 
 ----
 
@@ -218,13 +214,10 @@ configurer.setSaveAndRestore(true);
 
 org.salever.rcp.examples.update.p2
 
-==无法重现==
-
 -------
 rcp18
 
 产品（Product），Eclipse plugin 工程是以产品的方式打包和独立运行的
-
 
 -----
 
@@ -238,8 +231,6 @@ product测试正常 ==导出异常==
 rcp20
 
 org.salever.rcp.tech.chapter15.help
-
-==测试未达到预期==
 
 -----
 
@@ -265,7 +256,6 @@ https://zh.osdn.net/projects/propedit/
 
 -----
 
-
 -----------
 
 rcp22
@@ -278,6 +268,8 @@ org.salever.rcp.tech.chapter18.decorator
 rcp23
 
 Marker用于标记，常见应用为TODO标记、错误标记等
+
+org.salever.rcp.tech.chapter18.maker
 
 ----
 rcp24

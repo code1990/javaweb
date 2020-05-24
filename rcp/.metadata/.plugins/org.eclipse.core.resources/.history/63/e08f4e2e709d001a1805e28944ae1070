@@ -1,0 +1,9 @@
+package org.eclipse.rcp.intro.editor.provider;
+
+import java.beans.PropertyChangeListener;
+
+import org.eclipse.jface.viewers.IStructuredContentProvider;
+
+public class MyContentProvider implements IStructuredContentProvider, PropertyChangeListener {
+
+}

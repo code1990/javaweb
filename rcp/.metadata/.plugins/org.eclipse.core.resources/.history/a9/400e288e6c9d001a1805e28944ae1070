@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         id="application"
+         point="org.eclipse.core.runtime.applications">
+      <application>
+         <run
+               class="org.eclipse.rcp.first.Application">
+         </run>
+      </application>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            name="RCP Perspective"
+            class="org.eclipse.rcp.first.Perspective"
+            id="org.eclipse.rcp.first.perspective">
+      </perspective>
+   </extension>
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="org.eclipse.rcp.first.application"
+            name="Hello RCP">
+         <property
+               name="windowImages"
+               value="icons/alt_window_16.gif,icons/alt_window_32.gif">
+         </property>
+      </product>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            defaultHandler="org.eclipse.rcp.first.commands.ExitHandler"
+            id="org.eclipse.rcp.first.commands.Exit"
+            name="Exit">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            allPopups="false"
+            locationURI="menu:org.eclipse.ui.main.menu">
+         <menu
+               label="File">
+            <command
+                  commandId="org.eclipse.rcp.first.commands.Exit"
+                  label="Exit"
+                  style="push"
+                  tooltip="Exit the Application">
+            </command>
+         </menu>
+      </menuContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            class="org.eclipse.rcp.first.views.MyView"
+            id="org.eclipse.rcp.first.views.MyView"
+            name="myView"
+            restorable="true">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="*">
+         <view
+               closeable="true"
+               id="org.eclipse.rcp.first.views.MyView"
+               minimized="false"
+               moveable="true"
+               relationship="stack"
+               relative="org.eclipse.ui.editorss"
+               standalone="true"
+               visible="true">
+         </view>
+      </perspectiveExtension>
+   </extension>
+
+</plugin>

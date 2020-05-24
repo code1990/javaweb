@@ -1,0 +1,5 @@
+package org.eclipse.rcp.intro.editor.provider;
+
+public class MyLabelProvider {
+
+}

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config date="1590310516056" transient="true" version="3.0">
+<site enabled="true" list="rcp/org.eclipse.rcp.intro.deploy/" policy="USER-INCLUDE" updateable="true" url="file:/D:/github/javaweb/">
+</site>
+</config>

@@ -1,0 +1,46 @@
+package intro.filedassist;
+
+
+import org.eclipse.swt.SWT;
+import org.eclipse.swt.events.SelectionEvent;
+import org.eclipse.swt.events.SelectionListener;
+import org.eclipse.swt.widgets.Button;
+import org.eclipse.swt.widgets.Composite;
+import org.eclipse.ui.IActionBars;
+import org.eclipse.ui.part.ViewPart;
+import org.eclipse.swt.events.SelectionListener;
+public class StatusLineView extends ViewPart {
+	public static final String ID = "intro.filedAssist.StatusLineView";
+	boolean pressed = false;
+
+	public StatusLineView() {
+	}
+
+	@Override
+	public void createPartControl(Composite parent) {
+		Button setStatusLine = new Button(parent, SWT.PUSH);
+		setStatusLine.setText("Set Statusline ");
+		setStatusLine.addSelectionListener(new SelectionListener() {
+			public void widgetSelected(SelectionEvent e) {
+				IActionBars bars = getViewSite().getActionBars();
+				if (pressed) {
+					bars.getStatusLineManager().setMessage(
+							"I would like to say hello to you.");
+				} else {
+					bars.getStatusLineManager().setMessage(
+							"Thank you for using me");
+				}
+				pressed = !pressed;
+			}
+
+			public void widgetDefaultSelected(SelectionEvent e) {
+			}
+		});
+	}
+
+	@Override
+	public void setFocus() {
+
+	}
+
+}

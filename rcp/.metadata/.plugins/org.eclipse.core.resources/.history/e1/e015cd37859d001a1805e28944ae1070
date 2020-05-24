@@ -1,0 +1,13 @@
+package org.eclipse.rcp.intro.dialogs.custom.dialogs;
+
+import org.eclipse.swt.widgets.Shell;
+import org.eclipse.swt.widgets.Text;
+
+public class MyDialog extends TitleAreaDialog {
+	private Text text1;
+	private Text text2;
+
+	public MyDialog(Shell parentShell) {
+		super(parentShell);
+	}
+}

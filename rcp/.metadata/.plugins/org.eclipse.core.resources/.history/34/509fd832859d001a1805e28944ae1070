@@ -1,0 +1,5 @@
+package org.eclipse.rcp.intro.dialogs.custom.dialogs;
+
+public class TitleAreaDialog {
+
+}

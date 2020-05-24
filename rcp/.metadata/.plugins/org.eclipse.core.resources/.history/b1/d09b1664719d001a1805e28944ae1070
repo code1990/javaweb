@@ -1,0 +1,7 @@
+package org.eclipse.rcp.intro.editor;
+
+import org.eclipse.ui.IEditorInput;
+
+public class MyPersonEditorInput implements IEditorInput{
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;MyPageOne.java&apos; to &apos;intro.wizards.wizard.MyPageOne.java&apos;&#x0D;&#x0A;- Original project: &apos;org.eclipse.rcp.intro.wizards&apos;&#x0D;&#x0A;- Destination element: &apos;intro.wizards.wizard.MyPageOne.java&apos;&#x0D;&#x0A;- Original element: &apos;intro.wizards.wizard.MyPageOne.java&apos;" description="Copy compilation unit" destination="/src&lt;intro.wizards.wizard{MyPageOne.java" element1="/src&lt;intro.wizards.wizard{MyPageOne.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1590305705795" units="1" version="1.0"/>
+</session>

@@ -1,0 +1,28 @@
+package intro.wizards.wizard;
+
+import org.eclipse.jface.wizard.Wizard;
+
+public class MyWizard extends Wizard {
+	private MyPageOne one;
+	private MyPageTwo two;
+
+	public MyWizard() {
+		super();
+		setNeedsProgressMonitor(true);
+	}
+
+	@Override
+	public void addPages() {
+		one = new MyPageOne();
+		two = new MyPageTwo();
+		addPage(one);
+		addPage(two);
+	}
+
+	@Override
+	public boolean performFinish() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

@@ -1,0 +1,24 @@
+package org.eclipse.rcp.intro.dialogs.custom.dialogs;
+
+import org.eclipse.jface.dialogs.IMessageProvider;
+import org.eclipse.jface.dialogs.TitleAreaDialog;
+import org.eclipse.swt.widgets.Composite;
+import org.eclipse.swt.widgets.Control;
+import org.eclipse.swt.widgets.Shell;
+import org.eclipse.swt.widgets.Text;
+
+public class MyDialog extends TitleAreaDialog {
+	private Text text1;
+	private Text text2;
+
+	public MyDialog(Shell parentShell) {
+		super(parentShell);
+	}
+
+	protected Control createContents(Composite parent) {
+		Control contents = super.createContents(parent);
+		setTitle("This is my first own dialog");
+		setMessage("This is a TitleAreaDialog", IMessageProvider.INFORMATION);
+		return contents;
+	}
+}
