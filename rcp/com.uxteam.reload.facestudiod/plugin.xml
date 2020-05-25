@@ -64,5 +64,24 @@
 			id="org.uxteam.example.crm.customerview"
 			name="customerview"/>
    </extension>
-
+<extension point="org.eclipse.ui.actionSets">
+<actionSet
+id="org.uxteam.example.crm.actionSet"
+label="Open View Part Action Set"
+visible="true">
+<menu
+id="sampleMenu"
+label="Open View">
+<separator name="sampleGroup"/>
+</menu>
+<action
+class="org.uxteam.example.crm.actions.SampleAction"
+icon="icons/sample.gif"
+id="org.uxteam.example.crm.actions.SampleAction"
+label="&amp;Open Customer View"
+menubarPath="sampleMenu/sampleGroup"
+toolbarPath="sampleGroup"
+tooltip="Open the customer table viewpart"/>
+</actionSet>
+</extension>
 </plugin>

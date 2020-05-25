@@ -17,7 +17,6 @@
 <fullyQualifiedTypeName name="org.eclipse.core.internal.content.Activator"/>
 <fullyQualifiedTypeName name="org.osgi.service.prefs.BackingStoreException"/>
 <fullyQualifiedTypeName name="org.eclipse.core.runtime.Preferences"/>
-<fullyQualifiedTypeName name="org.eclipse.jface.action.Action"/>
 <fullyQualifiedTypeName name="org.eclipse.swt.widgets.Menu"/>
 <fullyQualifiedTypeName name="org.eclipse.jface.action.Separator"/>
 <fullyQualifiedTypeName name="org.salever.rcp.tech.chapter11.View"/>
@@ -60,4 +59,5 @@
 <fullyQualifiedTypeName name="com.sun.glass.ui.View"/>
 <fullyQualifiedTypeName name="org.eclipse.ui.part.ViewPart"/>
 <fullyQualifiedTypeName name="org.eclipse.swt.widgets.Label"/>
+<fullyQualifiedTypeName name="org.eclipse.jface.action.Action"/>
 </qualifiedTypeNameHistroy>
