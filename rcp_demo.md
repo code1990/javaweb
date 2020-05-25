@@ -104,9 +104,11 @@ ContentProvider，这个内容提供者其实就相当于MVC 模式
 
 
 
+org.eclipse.ui.actionSets 的扩展点，这个
+扩展点是让我们在Eclipse 的workbench 上注册我们的Action，即在Toolbar 和
+ActionBar 上注册一个按钮。
 
-
-
+fillMenuBar ， 这个方法是覆盖了父类ActionBarAdvisor 的方法，它的作用是在RCP 启动的时候去填充Workbench 的菜单项。
 
 ----------------
 
