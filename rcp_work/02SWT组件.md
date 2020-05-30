@@ -276,13 +276,123 @@ FillLayout 可以将组件充满整个窗体
 
 FillLayout 支持的样式类型为SWT.HORIZONTAL、SWT.VERTICAL 两种
 
-```
-
+```java
+shell.setLayout(new FillLayout(SWT.HORIZONTAL)); 
+new Text(shell,SWT.BORDER); 
+//====
+FillLayout fillLayout = new FillLayout(); 
+fillLayout.type = SWT.VERTICAL; 
+shell.setLayout(fillLayout); 
 ```
 
 -------
 
+FillLayout 的属性有 marginWidth、marginHeight、Spacing 
 
+FillLayoutExample4.java 7.3.png
+
+----------------
+
+#### 7.2 网格式布局（GridLayout）
+
+网格布局（GridLayout）相对其他布局类型比较复杂，该布局的功能相当强大，并且应 用灵活
+
+new GridLayout()构造方法为 GridLayout 的默认布局，即将容器设置成为一列，所有组件在 容器中从上至下均排成一列。
+new GriLayout(int numColumns,boolean makeColumnsEqualWidth) 中的参数 numColumns 用来表示容器（一般为窗口）设置的列数，makeColumnsEqualWidth 为 boolean 型的参数，==**当设置为 true 时则组件以等宽度按照指定列数排列在容器中**==
+
+-----------
+
+GridLayout有很多重要属性，主要包括numColunms、 makeColumnsEqualWidth、marginWidth、marginHeight、 verticalSpacing、horizontalSpacing 等
+
+numColumns 属性用来设置容器的列数目，此实例设置为 3 列。  
+horizontalSpacing 属性用来控制各行组件之间横向的间距（以像素为单位）。  
+verticalSpacing 属性用来控制各列组件之间纵向的距离（以像素为单位）。  
+make ColumnsEqualWidth=true 使组件各列等距离分开。  
+marginWidth属性用来控制最左边组件和最右边组件与边框的距离（以像素为单位）。
+marginHeight 属性用来控制顶部组件和底部组件与边框的距离（以像素为单位）。 
+
+-------------
+
+GridLayoutExample3 7.3.png
+
+**GridData 的对象只能应用在一个组件上**
+
+----
+
+GriData.GRAB_HORIZONTAL 设置组件布局时，被设组件所在列的横向空间距 离随着容器（窗体）大小而变化，
+
+GridData.GRAB_VERTICAL 设置组件布局时，被设组件所在行的纵向空间距离 随着容器（窗体）大小而变化
+
+public GridData(int width,int height) 方法用来指定组件的宽度和高度。
+
+ griddata.horizontalSpan=3 设置组件占有 3 列，但组件本身大小不变，
+
+verticalSpan 属性用来设置组件占 有的行数目
+
+horizontalIndent属性设置组件向右移动的距离
+
+verticalIndent 属性设置组件向下移动的距离
+
+widthHint 属性用来设置组件的宽
+
+GridDataExample5 7.15
+
+----------------------
+
+#### 7.3 行布局（RowLayout） 
+
+RowLayout 布局支持自动换行。它的功能不如 GridLayout 布局强大。RowLayout 布局与 GridLayout 布局类似
+
+当窗体宽度不 足时，窗体上的组件自动折行
+
+---------
+
+常用的属性 有 boolean justify、boolean pack、int spacing、int marginBottom、 int marginLeft、int marginRight、int marginTop、boolean warp
+
+rowlayout.justify=true 使组件等距离的分配所在行 空间
+
+rowlayout.pack=false 设置组件的大小相等
+
+rowlayout.wrap=false 控制当窗口宽度不足时强制组件不自动折行
+
+int spacing、int marginLeft、int marginTop 属性用来设置组件布局
+
+**RowData** 类只是起 到控制组件大小的作用
+
+RowDataExample 7.31
+
+-----------
+
+#### 7.4 表格式布局(FormLayout) 
+
+FormLayout 布局允许用户相 对于其他控件来安排每个控件，允许将控件的任意一边（左边、顶部、右边或底部）附着到 另一个控件的（通常相对的）边上，或者附着到容器的某一边上
+
+ FormLayout 与 **FormData** 配合可以对组件 大小进行设置
+
+FormDataExample.java 7.36
+
+-------------------
+
+用 **FomAttachment** 与 FormData 配合使用来控制复杂的布局
+
+FormAttachmentExample1.java 
+
+----------------
+
+#### 7.5 堆栈式布局(StackLayout)
+
+StackLayout是一个类似 没有选项卡的 TabFolder
+可以用它在一次只显示一个 GUI 的 TabFolder 的顶部放置多个 GUI
+
+StackLayoutExample 7.47
+
+------
+
+#### 7.6 一个类似 Google Talk 设置对话框的综合布局
+
+
+
+-----
 
 ### 第 8 章 SW T 的复杂组件
 
