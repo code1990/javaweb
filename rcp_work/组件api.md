@@ -761,3 +761,115 @@ dispose()释放与 Cursor 相关联的操作系统资源。
 
  win32_new(Device device, int handle)执行平台指定功能部署的鼠标游标。 
 
+----------------
+
+#### 12.1  TextViewer 类、SourceViewer 类 
+
+1．TextViewer 常用 API  
+addTextInputListener(ITextInputListener listener)添加输入文本监听器。  
+addTextListener(ITextListener listener) 添加文本监听器。  
+canDoOperation(int operation)返回由给定的操作代码是否能执行指定操作。  
+copyMarkedRegion(boolean delete)拷贝/粘贴标记区域。  
+disableRedrawing()不能重绘 TextViewer。  
+doOperation(int operation)操作代码在目标上执行指定的操作。  
+enabledRedrawing()使 TextViewer 能重绘。  
+enableOperation(int operation, boolean enable)使给定的文本能够被操作或不能被操 作。参数 enabel 为 true 表示能够被操作；否则不能被操作。  
+getDocument()获得 TextViewer 的输入文档。  
+getSelectedRange()获得在查看器的文档坐标中的当前选择范围。  
+getSelection()获得提供者的当前选择。  
+getUndoManager()获得查看器的 Undo 管理器。  
+getVisibleDocument()获得查看器的可见文档。  
+setDocument(IDocument document)将给定的文档设置为文本查看器模型，并更新相 应的表达式。  
+setEditable(boolean editable)设置可编辑状态。  
+setInput(Object input)设置或清除查看器。  
+setRedraw(boolean redraw)启用/禁用文本查看器的重绘。  
+setSelectedRange(int selectionOffset, int selectionLength)设置选择的指定范围。  
+setSelection(ISelection selection, boolean reveal)为查看器设置新的选择，并选择性的 使它可见。  
+setTextColor(Color color)将给定颜色作为前景色应用到查看器的选择。  
+setUndoManager(IUndoManager undoManager)设置查看器的 undo 管理器。 
+ setVisibleDocument(IDocument document)设置查看器的文档可见。 
+2．SourceViewer 常用 API  
+createControl(Composite parent, int styles)建立查看器的窗口部件。  
+doOperation(int operation) 操作代码在目标上执行指定的操作。  
+enableOperation(int operation, boolean enable)启用/禁止给定文本操作。  
+getVerticalRuler()获得垂直标尺。  
+handleDispose()释放在查看器上部署的所有资源。  
+rememberSelection()记住并且返回当前选择。  
+setDocument(IDocument document)将给定的文档设置为文本查看器模型，并更新相 应的表达式。 
+
+-----------------------
+
+#### 12.2  TableViewer 类 
+
+add(Object element)将指定元素添加到表格查看器（TableViewer）。  
+add(Object[] elements)将指定元素添加到表格查看器（TableViewer）。  
+cancelEditing()取消当前活动的单元格编辑器。  
+clear(int index)清除指定索引的表项。  
+editElement(Object element, int column)开始编辑指定元素。  
+getCellEditors()返回表格查看器的单元格编辑器。  
+getCellModifier()返回表格查看器的单元格修改器。  
+getColumnProperties()返回表格查看器的列属性。  
+getElementAt(int index)从表格查看器中获得给定索引的元素。  
+getTable()获得表格查看器的表控件。  
+insert(Object element, int position)将给定元素插入到表格查看器的给定位置。  
+remove(Object element)从表格查看器中移除给定元素。  
+remove(Object[] elements) 从表格查看器中移除给定元素。  
+setCellEditors(CellEditor[] editors)设置表格查看器的单元格编辑器。  
+setCellModifier(ICellModifier modifier)设置表格查看器的单元格修改器。  
+setColumnProperties(String[] columnProperties)设置表格查看器的单元格列属性。 
+
+------------------
+
+getElements(Object inputElement)当查看器的输入设置为给定元素时，返回查看器显 示的元素。  
+dispose()释放资源，即释放这个内容提供器。  
+inputChanged(Viewer viewer, Object oldInput, Object newInput)通知这个内容提供器， 已给定的查看器的输入已经被切换到不同的元素
+getColumnText(Object element, int columnIndex)返回给定元素的给定列的标签文本。  
+getColumnImage(Object element, int columnIndex) 返回给定元素的给定列的图像文本。  
+addListener(ILabelProviderListener listener)添加标签提供器的监听器。  
+dispose()释放标签提供器。  
+isLabelProperty(Object element, String property)返回给定元素的给定属性被改变时， 标签是否将被影响。  
+removeListener(ILabelProviderListener listener)移除标签提供器的监听器
+setColumnProperties(String[] columnProperties)设置 TableViewer 的列属性。  
+setCellEditors(CellEditor[] editors)设置 TableViewer 的单元格编辑器。  
+setCellModifier(ICellModifier modifier)设置 TableViewer 的单元格修改器
+表格单元编辑器（CellEditor）通过数组来实现，并且数组的索引号与表格的列号一一对 应。TextCellEditor 类实现文本单元格编辑；ComboBoxCellEditor 类实现以列表框样式进行编 辑；ColorCellEditor 类实现颜色值的编辑。  
+setColumnProperties(String[] columnProperties)设置 TableViewer 的列属性。  
+setCellEditors(CellEditor[] editors)设置 TableViewer 的单元格编辑器。  
+setCellModifier(ICellModifier modifier)设置 TableViewer 的单元格修改器。 
+ICellModifier 用来检查模型元素是否可被修改；恢复一个模型元素的属性值；存储一个 单元编辑值返回模式元素的属性。  
+canModify(Object element, String property)检查给定元素的给定属性是否能被修改。 如果能被修改，则返回 true；否则，返回 false。  
+getValue(Object element, String property)返回给定元素的给定属性值。如果给定元素 没有给定属性，则返回 null。  
+modify(Object element, String property, Object value)修改给定元素的给定属性值。
+查看过滤器（ViewerFilter）用于显示内容提供器提供返回对象的子集。 
+select(Viewer viewer, Object parent, Object element)返回给定元素是否可以通过过滤。 
+查看排序器（ViewerSort）用来对内容提供器提供的内容元素进行排序。  
+compare(Viewer viewer, Object e1, Object e2)比较第一个元素与第二个元素是小于还是等 于或大于，将对应返回负数、零或正数。 
+
+-------------------
+
+#### 12.3  ListViewer 类 
+
+getList()获得列表查看器的下拉列表控件。  
+reveal(Object element)确定给定元素是可见的，必要时可滚动查看器。  
+getControl()获得与这个查看器相关的控件。  
+listRemoveAll()移除所有的项。
+
+---
+
+12.4  TreeViewer 类 
+
+editElement(Object element, int column)开始编辑给定元素。  
+getCellEditors()获得这个树查看器的单元编辑器。  
+getCellModifier()获得这个树查看器的单元修改器。  
+getControl()获得与这个查看器相关的控件。  
+getTree()获得树查看器的树控件。  
+getExpanded(Item item)返回给定的 SWT 项是否展开或收缩。  
+showItem(Item item)显示给定项。  
+isExpandable(Object element)返回代表给定元素的树的节点是展开还是收缩。  
+setSelection(List items)设置选择给定的列表项。  
+setCellEditors(CellEditor[] editors)为树查看器设置单元格编辑器。  
+removeAll(Control widget)从给定的控件中移除所有项。  
+setCellModifier(ICellModifier modifier)为树查看器设置单元格修改器。  
+setLabelProvider(IBaseLabelProvider labelProvider)设置标签提供器。  
+setExpanded(Item node, boolean expand)设置给定项的展开状态。 
+
