@@ -181,8 +181,78 @@ shell.addListener(SWT.MouseDown, listener);
 
 ### 第 6 章 SWT 的对话框
 
+#### 6.1 Shell 类
 
+SWT 支持两种不同Shell 类型：一是用于实现主窗口的顶级Shell；二是用于实现对话框的Shell
 
+ShellDialogExample.java 6.2.png
+
+----
+
+#### 6.2 MessageBox 控件
+
+MessageBox 类是Dialog 的子类
+
+MessageBox 控件是用来请求用户选择信息处理方式的控件
+
+MessageBoxExample.java 6.5.png
+
+-----
+
+#### 6.3 文件选择对话框
+
+FileDialog 类是Dialog 类的子类，文件选择对话框为用户提供了对文件的操作功能（打开、保存
+
+OpenFileDialogExample1.java
+
+SaveFileDialogExample1.java
+
+SaveFileDialogExample2.java 6.7
+
+-----------------
+
+#### 6.4 字体选择对话框
+
+FontDialog 类与FileDialog 类同是Dialog 的子类，用户可以通过字体选择对话框从系统字体库中选择所需字体
+
+FontDialogExample1.java
+
+FontDialogExample2.java 6.11
+
+-----------
+
+#### 6.5 颜色选择对话框
+
+ColorDialog 类与FileDialog 类、FontDialog 类同是Dialog 类的子类
+
+ColorDialogExample1.java
+
+ColorDialogExample2.java 6.14
+
+----------
+
+#### 6.6 打印设置对话框
+
+PrintDialog 类继承Dialog 类
+
+打印输出功能主要是由PrintDialog、PrintData、Printer 这三个类来完成的。
+PrintDialog 类提供了本地操作系统的打印设置对话框，返回所有的用户在对话框中选择的信息，即PrintData 对象。
+PrintData 类包含用户在打印设置对话框中所要设置的所有信息。
+Printer 类在打印过程中，由PrintData 得到starJob()方法创建的打印任务
+
+PrintDialogExample.java 6.17
+
+-----------
+
+#### 6.7 目录选择对话框
+
+DirectoryDialog 类谱系图 目录选择对话框在实际软件开发中经常用到
+
+DirectoryDialogExample1.java 
+
+DirectoryDialogExample2.java 
+
+-----------
 ### 第 7 章 布局管理器
 
 
@@ -192,3 +262,4 @@ shell.addListener(SWT.MouseDown, listener);
 
 
 ### 第 9 章 其他组件类用法
+
