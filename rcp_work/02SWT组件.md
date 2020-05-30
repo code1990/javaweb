@@ -255,6 +255,33 @@ DirectoryDialogExample2.java
 -----------
 ### 第 7 章 布局管理器
 
+采用了绝对定位的方式setBounds()
+
+使用布局管理器可对窗体上的组件进行有效的管理。一方面使窗口界面更加友好美观；另一方面使用布局管理器提供的
+程序跨平台性，在不同系统平台下都能保持界面的稳定性
+
+AWT/Swing 中采用了布局管理器，主要有流式布局（FlowLayout）、边界布局（BorderLayout）、框式布局（BoxLayout）、网格布局（GridLayout）和网格包布局（GridBagLayout）等类型。
+
+----
+
+SWT/JFace 中也存在类似的布局，主要有充满式布局（FillLayout）、表格布局（FormLayout）、行列布局（RowLayout）、网格布局（GridLayout）、堆栈布局（StackLayout）
+
+
+
+------
+
+#### 7.1 充满式布局（FillLayout）
+
+FillLayout 可以将组件充满整个窗体
+
+FillLayout 支持的样式类型为SWT.HORIZONTAL、SWT.VERTICAL 两种
+
+```
+
+```
+
+-------
+
 
 
 ### 第 8 章 SW T 的复杂组件
@@ -263,3 +290,8 @@ DirectoryDialogExample2.java
 
 ### 第 9 章 其他组件类用法
 
+
+
+
+
+---
