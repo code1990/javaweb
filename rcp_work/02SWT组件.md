@@ -1,6 +1,6 @@
 ## SWT 组件
 
-### 第 4 章 几种常用的 SW T 组件和容器
+### 第 4 章 SWT 组件和容器
 
 标签（Label）、按钮（Button）、微调 控制（Spinner）、分组框（Group）、面板（Composite）
 
@@ -70,11 +70,116 @@ ViewFormExample3.java
 
 ---------------
 
-### 第 5 章 窗口小部件事件
+### 第 5 章 事件
+
+SWT 是通过display 管理事件循环。一旦启动SWT 应用程序，SWT 使用readAndDispath()方法从系统平台的事件队列中读取事件，并把读取的事件分配给适当的接收者。
+
+每种事件有与之对应的Listener类，如果一个事件为X，那么对应的监听器（Listener）类就是XListener，它的添加监听方法为addXListener，
+
+-------
+
+#### 5.1 基本事件机制
+
+##### 5.1.1 监听器
+
+SelectionEvent 事件当某个GUI 元素被选中时发生
+
+````java
+button.addSelectionListener(new SelectionListener() {
+    public void widgetSelected(SelectionEvent e) {
+    MessageDialog.openInformation(shell, null, "HelloWorld!!");
+    }
+    public void widgetDefaultSelected(SelectionEvent e) {
+    }
+});
+````
+
+##### 5.1.2 适配器
+
+适配器是包含若干个在接口中定义的空方法，它是某种接口的标准实现。使用适配器的总体思想是为了方便程序员编写事件处理程序
+
+```java
+button.addSelectionListener(new SelectionAdapter() {
+public void widgetSelected(SelectionEvent e) {
+MessageDialog.openInformation(shell, null, "HelloWorld!!");
+}
+});
+```
 
 
 
-### 第 6 章 SW T 的对话框
+#### 5.2 无类型事件机制
+
+##### 5.2.1 无类型监听器概述
+
+SWT 提供了无类型（UnType）监听器，它通过调用它的handleEvent()方法来获知事件（HandleEvent()为Listener 类的方法），该方法能够处理任何的事件
+
+```java
+Listener listener = new Listener() {
+public void handleEvent(Event e) {
+switch (e.type) {
+case SWT.MouseDown:
+MessageDialog.openInformation(shell, null, "MouseDown!!");
+break;
+case SWT.Resize:
+MessageDialog.openInformation(shell, null, "Shell Resize!!");
+break;
+}
+}
+};
+shell.addListener(SWT.MouseDown, listener);
+shell.addListener(SWT.Resize, listener);
+```
+
+```java
+widget.addListener(int eventType, new Listener() {
+public void handleEvent(Event event) {
+．．．
+}
+});
+```
+
+#### 5.3 键盘和鼠标事件
+
+##### 5.3.1 键盘事件
+
+在本节中介绍键盘事件（KeyEvent），当键被按下或释放时触发键盘事件
+
+KeyEvent 包含4 个属性，分别为character、doit、keyCode 和stateMask
+
+character 按键对应字符（Unicode 值，如Tab 键为"\t"）
+keyCode 键的代码(如SWT.ESC、SWT.SHIFT)
+doit 表示操作是否被允许，当为false 时操作被取消
+stateMask 检测Alt，Shift，Ctrl 键是否同时按下
+
+```java
+text.addKeyListener(new KeyAdapter() {
+public void keyPressed(KeyEvent e) {
+e.doit = false;
+}
+});
+
+```
+
+##### 5.3.2 鼠标事件
+
+鼠标事件操作包括：鼠标键的按下、释放、双击和鼠标光标在GUI 上移动或位于其上方
+而触发。
+
+```java
+Listener listener = new Listener() {
+public void handleEvent(Event e) {
+String string = "";
+switch (e.type) {
+case SWT.MouseDown:
+string += "DOWN";
+break;
+}
+};
+shell.addListener(SWT.MouseDown, listener);        
+```
+
+### 第 6 章 SWT 的对话框
 
 
 
