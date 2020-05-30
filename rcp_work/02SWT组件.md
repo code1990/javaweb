@@ -396,12 +396,93 @@ StackLayoutExample 7.47
 
 ### 第 8 章 SW T 的复杂组件
 
+#### 8.1 刻度条(Scale 类) 
 
+#### 8.2 滑动条(Slider 类) 
+
+#### 8.3 进度条(ProgressBar 类) 
+
+#### 8.4 扩展栏(ExpandBar 类、ExpandItem 类) 
+
+#### 8.5 选项卡(TabFolder 类、TabItem 类) 
+
+#### 8.6 自定义选项卡(CTabFolder 类、CTabItem 类) CTabFolder 是 TabFolder 的增强版
+
+#### 8.7 分割框格(Sash 类) 
+
+用 Sash 可以对一个 容器进行分区(分成若干个区域)，并可以手动调整框 格分离的区域大
+
+#### 8.8 分割窗(SashForm 类) 
+
+SashForm 为容器类，所以可以将一 些组件定义在 SashForm 
+
+----
+
+#### 8.9 画布(Canvas 类) 
+
+#### 8.10 菜单（Menu 类、MenuItem 类） 
+
+菜单是动态呈现的选择列 
+
+#### 8.11 工具栏(ToolBar 类、ToolItem 类) 
+
+ToolBar 用 ToolItem 来设定工具栏上的控 件，ToolItem 可以用文本或图片作按钮
+
+#### 8.12 动态工具栏（CoolBar 类、CoolItem 类） 
+
+CoolBar 与 ToolBar 类似，不同的是用户可以通过拖动 CoolBar 的工具栏来改变工具栏的 位置。
+
+#### 8.13 表(Table 类、TableItem 类、TableColumn 类) 
+
+#### 8.14  树（Tree 类） 
+
+树是用来显示分层信息的列表
+
+#### 8.15 表格树(TableTree 类、TableTreeItem 类） 
+
+Table 和 Tree 的结合体
 
 ### 第 9 章 其他组件类用法
 
+#### 9.1 浏览器部件(Browser 类)
 
+在 Windows 平台下，Browser 类实现了一个IE 浏览器的 OLE 客户端
 
+#### 9.2 链接控件(Link 类) 
 
+Link 控件类似于浏览器的超文本链接
 
----
+#### 9.3 Tracker 控件
+
+Tracker 用来修改控件大小或移动控件时给用户提供反馈信息
+
+#### 9.4 剪贴板(Clipboard 类)
+
+剪贴板所涉及的操作包括复制、粘贴、剪切操作
+
+#### 9.5 拖放（DragSource 类、DropTarget 类） 
+
+所谓 拖放就是允许用户将数据从当前位置拖动到目标位置，当前位置通过 DragSource 类来实现， 目标位置通过 DropTarget 类来实现
+
+#### 9.6 图形上下文(GC 类) 
+
+GC 提供了 大量的基本图形功能。 
+
+#### 9.7 颜色(Color 类)
+
+#### 9.8 字体(Font 类) 
+
+#### 9.9 图像(Image 类)
+
+#### 9.10 文本风格(StyledText 类) 
+
+更高级的文本表示形式，如定义字体和颜色， 则需要 StyledText
+
+#### 9.11 系统托盘(Tray 类、TrayItem 类) 
+
+都提供了与系统状态关联的特殊形式的工具栏，称为托盘（Tray
+
+#### 9.12 鼠标游标(Cursor 类) 
+
+该类表示系统鼠标光标指针，但鼠标光标的形 状依赖于所应用的平台
+
