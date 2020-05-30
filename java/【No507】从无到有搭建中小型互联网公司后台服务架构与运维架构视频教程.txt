@@ -1,0 +1,154 @@
+|____xxxx-dubbo-master.zip
+|____课件
+          |____第99节：运维架构服务监控Open-Falcon：邮件、短信、电话发送接口.doc
+          |____第98节：运维架构服务监控Open-Falcon：告警处理-Alarm.doc
+          |____第97节：运维架构服务监控Open-Falcon：告警判断-Judge.doc
+          |____第96节：运维架构服务监控Open-Falcon：心跳服务-HBS.doc
+          |____第96节：运维架构服务监控Open-Falcon：安装查询组件-API.doc
+          |____第95节：运维架构服务监控Open-Falcon：安装绘图数据的组件- Graph.doc
+          |____第94节：运维架构服务监控Open-Falcon：安装数据转发服务-Transfer.doc
+          |____第93节：运维架构服务监控Open-Falcon：安装-Agent.doc
+          |____第92节：运维架构服务监控Open-Falcon：前端安装.doc
+          |____第91节：运维架构服务监控Open-Falcon：后端服务安装并启动.doc
+          |____第90节：运维架构服务监控Open-Falcon：单机安装和分布式安装说明.doc
+          |____第89节：运维架构服务监控Open-Falcon：环境准备.doc
+          |____第88节：运维架构服务监控Open-Falcon：介绍.doc
+          |____第79节：运维架构日志管理ELK：Elasticsearch 、 Logstash 和 kibana
+          |____第77节：后台服务于工具消息中间件Kafka：高可用集群安装.doc
+          |____第76节：后台服务于工具消息中间件kafka：架构介绍.doc
+          |____第73节：运维架构持续集成jenkins：安装以及相关插件安装.doc
+          |____第71节：后台服务工具tomcat：安装以及使用，同服务器多tomcat端口配置.doc
+          |____第70节：后台服务工具git：git介绍以及各种命令操作演示.doc
+          |____第68节：后台服务工具gitlab：版本管理工具gitlab安装以及配置介绍.doc
+          |____第67节：后台服务代码架构：项目实际应用中分布式锁介绍.doc
+          |____第66节：后台服务代码架构：项目实际应用中redis缓存与数据库一致性问题解决.doc
+          |____第63节：后台服务工具redis：详解redis操作命令.doc
+          |____第58节：java虚拟机介绍：java程序启动参数设置优化.doc
+          |____第52节：后台服务于工具消息中间件：rabbitmq安装.doc
+          |____第32节：结合spring-boot实现多环境配置以及解决读取配置文件中文乱码问题.doc
+          |____第28节：后台服务代码架构：基于spring-security-oauth2的mysql数据表设计.doc
+          |____第26节：后台服务代码架构：基于spring-ladp的统一用户中心结构设计以及代码结构设计.doc
+          |____第25节：后台服务工具ldap：统一用户中心ldap工具使用以及安装.doc
+          |____第11节：后台服务代码架构：利用MyBatis生成器自动生成实体类、DAO接口和Mapping映射文件.rar
+          |____第110节：运维架构服务监控Open-Falcon：nginx监控.doc
+          |____第109节：运维架构服务监控Open-Falcon：Rabbitmq监控.doc
+          |____第108节：运维架构服务监控Open-Falcon：MongoDB监控.doc
+          |____第107节：运维架构服务监控Open-Falcon：Redis监控.doc
+          |____第107节：运维架构服务docker：docker入门.doc
+          |____第106节：运维架构服务监控Open-Falcon：Mysql监控.doc
+          |____第106节：运维架构服务docker：docker安装.doc
+          |____第105节运维架构服务docker：docker简介.doc
+          |____第101节：运维架构服务监控Open-Falcon：集群聚合模块-Aggregator.doc
+          |____第100节：运维架构服务监控Open-Falcon：检测监控数据上报异常-Nodata.doc
+          |____第08节：后台服务nosql数据库mongodb：高可用讲解以及安装.doc
+          |____第07节：后台服务数据库工具mysql：mysql安装.doc
+          |____第06节：后台服务工具Eclipse：Eclipse导入jdk1.doc
+          |____第05节：后台服务工具maven：使用Nexus配置Maven私有仓库.doc
+          |____第04节：后台服务工具maven：maven本地资源库设置.doc
+          |____第03节：后台服务工具maven：maven安装配置.doc
+          |____第02节：服务器统一规划配置安装.doc
+          |____java虚拟机介绍.rar
+          |____java虚拟机介绍(1).rar
+|____从无到有搭建中小型互联网公司后台服务架构与运维架构
+          |____第9节后台服务代码架构：早期基于spring mvc后台服务搭建及演示.mp4
+          |____第8节后台服务nosql数据库mongodb：高可用讲解以及安装.mp4
+          |____第7节后台服务数据库工具mysql：mysql安装.mp4
+          |____第6节后台服务工具Eclipse： Eclipse导入jdk1.8.mp4
+          |____第5节后台服务工具maven：使用Nexus配置Maven私有仓库.mp4
+          |____第57节java虚拟机介绍：一张图详解GC.mp4
+          |____第56节java虚拟机介绍：一张图详解JVM内存运行机制以及参数配置.mp4
+          |____第55节java虚拟机介绍：一张图详解虚拟机类加载机制.mp4
+          |____第54节后代服务代码架构：spring-boot+dubbo生产者与消费者配置.mp4
+          |____第53节后代服务代码架构：spring-boot使用消息中间件.mp4
+          |____第52节后台服务于工具消息中间件：rabbitmq安装.mp4
+          |____第51节后代服务代码架构：spring-boot实现邮件发送.mp4
+          |____第50节后代服务代码架构：spring-boot使用Redis做集中式缓存.mp4
+          |____第4节后台服务工具maven：maven本地资源库设置.mp4
+          |____第49节后代服务代码架构：spring-boot使用EhCache做集中式缓存.mp4
+          |____第48节后代服务代码架构：spring-boot整合spring-security.mp4
+          |____第47节后代服务代码架构：spring-boot中将日志记录到mongodb中.mp4
+          |____第46节后代服务代码架构：spring-boot日志配置详解.mp4
+          |____第45节后代服务代码架构：spring-boot实现异步调用.mp4
+          |____第44节后代服务代码架构：spring-boot创建定时任务.mp4
+          |____第43节后代服务代码架构：spring-boot使用事务管理.mp4
+          |____第42节后代服务代码架构：项目应用中spring-boot整合mongodb.mp4
+          |____第41节后代服务代码架构：项目应用中spring-boot整合Redis.mp4
+          |____第40节后代服务代码架构：项目应用中spring-boot-MyBatis注解配置详解增删改查.mp4
+          |____第39节后代服务代码架构：项目应用中spring-boot整合mybatis.mp4
+          |____第38节后代服务代码架构：Spring Boot中使用Spring-data-jpa访问数据库实现分页.mp4
+          |____第37节后代服务代码架构：Spring Boot中多数据源配置2.mp4
+          |____第36节后代服务代码架构：Spring Boot中多数据源配置1.mp4
+          |____第35节后代服务代码架构：Spring Boot中使用Spring-data-jpa访问数据库.mp4
+          |____第34节后代服务代码架构：Spring Boot中使用JdbcTemplate访问数据库.mp4
+          |____第33节后代服务代码架构：spring-boot实现统一异常处理.mp4
+          |____第32节后代服务代码架构：结合spring-boot实现多环境配置以及解决读取配置文件中文乱码问题.mp4
+          |____第31节后代服务代码架构：spring-boot结合Swagger2构建RESTful API测试体系.mp4
+          |____第30节后代服务代码架构：spring-boot简单介绍以及基于restful的web服务快速搭建.mp4
+          |____第2节服务器统一规划配置安装.mp4
+          |____第29节后台服务代码架构：基于spring-security-oauth2实现接口token访问验证.mp4
+          |____第28节后台服务代码架构：基于spring-security-oauth2的mysql数据表设计.mp4
+          |____第27节后台服务代码架构：基于spring-data的mongodb连接以及配置.mp4
+          |____第26节后台服务代码架构：基于spring-ladp的统一用户中心结构设计以及代码结构设计.mp4
+          |____第25节后台服务工具ldap：统一用户中心ldap工具使用以及安装.mp4
+          |____第24节后台服务代码架构：基于assembly结合maven插件实现代码压缩打包.mp4
+          |____第23节后台服务代码架构：基于restful实现接口json数据解析.mp4
+          |____第22节后台服务工具postman：postman介绍以及使用.mp4
+          |____第21节后台服务代码架构：实现开发、测试、生产环境区分运行配置.mp4
+          |____第20节后台服务代码架构：dubbo协议讲解以及选择.mp4
+          |____第1节课程内容介绍.mp4
+          |____第19节后台服务代码架构：duboo直连、只订阅、只注册设置.mp4
+          |____第18节后台服务代码架构：dubbo启动时检查、集群容错、负载均衡、线程模型的设置以及选择.mp4
+          |____第17节后台服务代码架构：dubbo集成restful协议实现post、delete、get请求.mp4
+          |____第16节后台服务代码架构：dubbo+spring XML配置及属性设置.mp4
+          |____第15节后台服务代码架构：dubbo控制台及监控台安装部署.mp4
+          |____第14节后台服务代码架构：duboo集群部署安装.mp4
+          |____第13节后台服务代码架构：log4j详细配置及解释.mp4
+          |____第12节后台服务代码架构：基于spring的后台代码结构设计及搭建.mp4
+          |____第11节后台服务代码架构：利用mybatis生成器自动生成实体类、DAO接口和Mapping映射文件.mp4
+          |____99运维架构服务监控Open-Falcon：Mysql监控.mp4
+          |____98运维架构服务监控Open-Falcon：进程端口监控.mp4
+          |____97运维架构服务监控Open-Falcon：集群监控.mp4
+          |____96运维架构服务监控Open-Falcon：Nodata配置.mp4
+          |____95运维架构服务监控Open-Falcon：快速使用介绍.mp4
+          |____94运维架构服务监控Open-Falcon：集群聚合模块- Aggregator.mp4
+          |____93运维架构服务监控Open-Falcon：检测监控数据上报异常- Nodata.mp4
+          |____92运维架构服务监控Open-Falcon：邮件、短信、电话发送接口.mp4
+          |____91运维架构服务监控Open-Falcon：告警处理-Alarm.mp4
+          |____90运维架构服务监控Open-Falcon：告警判断-Judge.mp4
+          |____89运维架构服务监控Open-Falcon：心跳服务- HBS.mp4
+          |____88运维架构服务监控Open-Falcon：安装查询组件-API.mp4
+          |____87运维架构服务监控Open-Falcon：安装绘图数据的组件- Graph.mp4
+          |____86运维架构服务监控Open-Falcon：安装数据转发服务-Transfer.mp4
+          |____85运维架构服务监控Open-Falcon：安装客户端数据采集插件-Agent.mp4
+          |____84运维架构服务监控Open-Falcon：前端安装.mp4
+          |____83运维架构服务监控Open-Falcon：后端服务安装并启动.mp4
+          |____82运维架构服务监控Open-Falcon：单机安装和分布式安装说明.mp4
+          |____81运维架构服务监控Open-Falcon：环境准备.mp4
+          |____80运维架构服务监控Open-Falcon：介绍以及安装.mp4
+          |____79运维架构日志管理ELK：ElasticSearch 、 Logstash 和 Kibana 介绍，结合redis安装配置及展示.mp4
+          |____78后台服务于工具消息中间件kafka：发送与接收代码.mp4
+          |____77后台服务于工具消息中间件kafka：高可用集群安装.mp4
+          |____76后台服务于工具消息中间件kafka：架构介绍.mp4
+          |____75运维架构持续集成jenkins：代码持续集成部署.mp4
+          |____74运维架构持续集成jenkins：权限控制管理.mp4
+          |____73运维架构持续集成jenkins：安装以及相关插件安装.mp4
+          |____72后台服务工具nginx：安装以及反向代理设置及参数设置优化.mp4
+          |____71后台服务工具tomcat：安装以及使用，同服务器多tomcat端口配置.mp4
+          |____70后台服务工具git：git介绍以及各种命令操作演示.mp4
+          |____69后台服务工具git：git安装及本地仓库对应gitlab仓库.mp4
+          |____68后台服务工具gitlab：版本管理工具gitlab安装以及配置介绍.mp4
+          |____67后台服务代码架构：项目实际应用中redis实现分布式操作锁.mp4
+          |____66后台服务代码架构：项目实际应用中redis缓存与数据库一致性问题解决.mp4
+          |____65后台服务代码架构：基于jedis连接redis集群.mp4
+          |____64后台服务工具redis：redis之管道模式.mp4
+          |____63后台服务工具redis：详解redis操作命令.mp4
+          |____62后台服务工具redis：AOF与RDB持久化存储以及备份和恢复.mp4
+          |____61后台服务工具redis：高可用redis集群搭建及原理详解.mp4
+          |____60使用线程池与CountDownLatch多线程提升系统性能.mp4
+          |____59基于ThreadPoolTaskExecutor类的线程池讲解以及代码中配置使用详解.mp4
+          |____58java虚拟机介绍：java程序启动参数设置优化.mp4
+          |____3后台服务工具maven：maven安装配置.mp4
+          |____10后台服务代码架构：基于spring的mybatis代码结构配置使用.mp4
+          |____108运维架构服务docker：docker镜像和仓库.mp4
+
+后台服务, 数据库, java, dubbo, 缓存

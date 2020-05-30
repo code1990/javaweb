@@ -1,0 +1,33 @@
+dubbo是目前分布式系统开发里面使用非常多的一个RPC框架。本套视频从分布式系统的基本概念出发，由浅入深，讲解了RPC原理，Dubbo基本使用，Dubbo高可用场景以及Dubbo原理，涉及了分布式系统中服务注册、服务发现、负载均衡、灰度发布、集群容错、服务降级等核心概念的讲解及演示。
+
+01、Dubbo_概念_分布式系统定义.avi
+02、Dubbo_概念_应用的架构演变.avi
+03、Dubbo_概念_RPC简介.avi
+04、Dubbo_概念_简介.avi
+05、Dubbo_概念_设计架构.avi
+06、Dubbo_环境搭建_ZooKeeper注册中心.avi
+07、Dubbo_环境搭建_管理控制台.avi
+08、Dubbo_环境搭建_创建提供者消费者工程.avi
+09、Dubbo_服务提供者配置&amp;测试.avi
+10、Dubbo_服务消费者配置&amp;测试.avi
+11、Dubbo_监控中心_Simple Monitor安装配置.avi
+12、Dubbo_与Springboot整合.avi
+13、Dubbo_配置_dubbo.properties&amp;属性加载顺序.avi
+14、Dubbo_配置_启动检查.avi
+15、Dubbo_配置_超时&amp;配置覆盖关系.avi
+16、Dubbo_配置_重试次数.avi
+17、Dubbo_配置_多版本.avi
+18、Dubbo_配置_本地存根.avi
+19、Dubbo_配置_与SpringBoot整合的三种方式.avi
+20、Dubbo_高可用_ZooKeeper宕机与Dubbo直连.avi
+21、Dubbo_高可用_负载均衡机制.avi
+22、Dubbo_高可用_服务降级.avi
+23、Dubbo_高可用_服务容错&amp;Hystrix.avi
+24、Dubbo_原理_RPC&amp;Netty原理.avi
+25、Dubbo_原理_框架设计.avi
+26、Dubbo_原理_标签解析.avi
+27、Dubbo_原理_服务暴露流程.avi
+28、Dubbo_原理_服务引用流程.avi
+29、Dubbo_原理_服务调用流程.avi
+30、Dubbo_结束语.avi
+RPC, ZooKeeper, dubbo

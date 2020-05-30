@@ -1,0 +1,19 @@
+Chapter01:微服务介绍
+Chapter02:MyBatis框架入门与搭建电影网脚手架
+Chapter03:用户与公共模块组件化封装
+Chapter04:Eureka介绍与注册中心各项配置
+Chapter05:Eureka开发电影介绍模块
+Chapter06:Eureka开发电影播放模块
+Chapter07:Ribbon开发负载均衡器
+Chapter08:Hystrix开发高可用及熔断器
+Chapter09:Feign组件介绍与实践应用
+Chapter10:zuul组件开发微服务网关
+Chapter11:微服务安全与jwt技术
+Chapter12:自动化测试
+Chapter13:虚拟化技术Docker构建容器
+Chapter14:服务器配置与项目部署
+课件
+代码
+
+微服务, 项目部署
+本主题由 admin 于 2020-3-27 10:40 置顶

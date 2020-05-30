@@ -1,0 +1,10 @@
+python编程实践视频教程+教材 27集 《Python开发技术详解》书籍+配套Python视频教程文件目录：
+    Python(1-5).rar
+    Python(10-15).rar
+    python(16-27).rar
+    Python(6-9).rar
+    Python开发技术详解.pdf
+    源文件.rar
+
+
+python

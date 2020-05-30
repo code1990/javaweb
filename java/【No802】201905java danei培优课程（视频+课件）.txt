@@ -1,0 +1,284 @@
+每个视频时长约1-3个小时
+├─01入门
+│      day01pm.mp4
+│      day02am.mp4
+│      day02am加时.mp4
+│      day02pm.mp4
+│      day03am.mp4
+│      day03pm.mp4
+│      day04am.mp4
+│      day04pm.mp4
+│      
+├─02爬虫
+│      java爬虫day01am.mp4
+│      java爬虫day01pm.mp4
+│      java爬虫day02am.mp4
+│      java爬虫day02pm.mp4
+│      java爬虫day03am.mp4
+│      java爬虫day03pm.mp4
+│      笔记+相关文件.rar
+│      
+├─03数据库
+│  ├─1.创建数据库，创建表
+│  │      day01am.mp4
+│  │      day01pm.mp4
+│  │      
+│  └─2.基础增删改查操作
+│          day02am.mp4
+│          day02pm.mp4
+│         
+├─04Java基础
+│  │  学习资料.rar
+│  │   
+│  ├─1.变量、基本类型、运算符、循环等
+│  │      day01am.mp4
+│  │      day01pm.mp4
+│  │      day02am.mp4
+│  │      day02pm.mp4
+│  │      day03am.mp4
+│  │      day03pm.mp4
+│  │      day04am.mp4
+│  │      day04pm.mp4
+│  │      笔记+相关文件.rar
+│  │      
+│  ├─2.对象和类、数组、继承、抽象等
+│  │      day05am.mp4
+│  │      day05pm.mp4
+│  │      day06am.mp4
+│  │      day06pm.mp4
+│  │      day07am.mp4
+│  │      day07pm.mp4
+│  │      day08am.mp4
+│  │      day08pm.mp4
+│  │      笔记+相关文件.rar
+│  │      
+│  └─3.API、正则表达式、文件IO流等
+│          day09am.mp4
+│          day09pm.mp4
+│          day10am.mp4
+│          day10pm.mp4
+│          day11am.mp4
+│          day11pm.mp4
+│          day12am.mp4
+│          day12pm.mp4
+│          day13am.mp4
+│          day13pm.mp4
+│          day14am.mp4
+│          day14pm.mp4
+│          day15am.mp4
+│          day15pm.mp4
+│          day16am.mp4
+│          day16pm.mp4
+│          day17am.mp4
+│          day17pm.mp4
+│          笔记+相关文件.rar
+│         
+├─05.JDBCAPI、JDBC增删改查、连接池和JAVAWEB
+│      1.JDBCday01am.mp4
+│      10.JavaWebday05pm.mp4
+│      2.JDBCday01pm.mp4
+│      3.JDBCday02am.mp4
+│      4.JDBCday02pm.mp4
+│      5.JavaWebday03am.mp4
+│      6.JavaWebday03pm.mp4
+│      7.JavaWebday04am.mp4
+│      8.JavaWebday04pm.mp4
+│      9.JavaWebday05am.mp4
+│      笔记+相关文件.rar
+│      
+├─06HTML和css
+│      1.htmlday01am.mp4
+│      2.htmlday01pm.mp4
+│      3.cssday02am.mp4
+│      5.css+jsday03am.mp4
+│      6.css+jsday03pm.mp4
+│      笔记+相关文件.zip
+│      
+├─07.javaScript语法、对象等，jQuery语法等
+│      1.JQueryday01am.mp4
+│      10.JQuery+jsday05pm.mp4
+│      2.JQueryday01pm.mp4
+│      3.JQueryday02am.mp4
+│      4.JQueryday02pm.mp4
+│      5.JQueryday03am.mp4
+│      6.JQueryday03pm.mp4
+│      7.JQueryday04am.mp4
+│      8.JQueryday04pm.mp4
+│      9.JQuery+jsday05am.mp4
+│      笔记+相关文件.rar
+│      
+├─08.Servlet、tomcat安装、request、response、cookie等
+│      servletday01am.mp4
+│      servletday01pm.mp4
+│      servletday02am.mp4
+│      servletday02pm.mp4
+│      servletday03am.mp4
+│      servletday03pm.mp4
+│      servletday04am.mp4
+│      servletday04pm.mp4
+│      servletday05am.mp4
+│      servletday05pm.mp4
+│      servletday06am.mp4
+│      servletday06pm.mp4
+│      servletday07am.mp4
+│      servletday07pm.mp4
+│      servletday08am.mp4
+│      servletday08pm.mp4
+│      笔记+相关文件.rar
+│     
+├─09.maven
+│      mavenday01am.mp4
+│      mavenday01pm.mp4
+│      笔记+相关文件.zip
+│      
+├─10.MyBatis
+│      mybatisday01am.mp4
+│      mybatisday01pm.mp4
+│      mybatisday02am.mp4}
+│      mybatisday02pm.mp4
+│      mybatisday03am.mp4
+│      mybatisday03pm.mp4
+│      笔记+相关文件.rar
+│   
+├─11.Spring
+│      springday01am.mp4
+│      springday01pm.mp4
+│      springday02am.mp4
+│      springday02pm.mp4
+│      springday03am.mp4
+│      springday03pm.mp4
+│      springday04am.mp4
+│      springday04pm.mp4
+│      笔记+相关文件.rar
+│     
+├─12.SpringMVC+SSM
+│      SpringMVCday01am.mp4
+│      SpringMVCday01pm.mp4
+│      SpringMVCday02pm.mp4
+│      SpringMVCday03am.mp4
+│      SpringMVCday03pm.mp4
+│      ssm整合day04am.mp4
+│      ssm整合day04pm.mp4
+│      笔记+相关文件.zip
+│      
+├─13.百万级并发
+│      day01am.mp4
+│      day01pm.mp4
+│      day02am.mp4
+│      day02pm.mp4
+│      day03am.mp4
+│      day03pm.mp4
+│      day04am.mp4
+│      day04pm.mp4
+│      day05am.mp4
+│      day05pm.mp4
+│      day06am.mp4
+│      day06pm.mp4
+│      day07am.mp4
+│      day07pm.mp4
+│      day08am.mp4
+│      day08pm.mp4
+│      day08pm6.30加课.mp4
+│      day09am.mp4
+│      day09pm.mp4
+│      笔记+相关文件.zip
+│      
+├─14.亿级并发
+│  │  day12am.mp4
+│  │  day12pm.mp4
+│  │  day12pm6.30加课.mp4
+│  │  day13am.mp4
+│  │  day13pm.mp4
+│  │  day14am.mp4
+│  │  day14pm.mp4
+│  │  day15am.mp4
+│  │  day15pm.mp4
+│  │  day16am.mp4
+│  │  day16pm.mp4
+│  │  day17am.mp4
+│  │  day17pm.mp4
+│  │  day18am.mp4
+│  │  day18pm.mp4
+│  │  day19am.mp4
+│  │  day19pm.mp4+
+│  │  day20am.mp4
+│  │  day20pm.mp4
+│  │  
+│  └─笔记+相关文件
+│      │  day01-20课件代码.rar
+│      │  京淘课前资料下发-1.zip
+│      │  京淘课前资料下发-2.zip
+│      │  培优讲义2018-09-30.doc
+│      │  
+│      └─课前资料
+│              Android Studio2.2.3.rar
+│              android-sdk-windows.rar
+│              AndroidStudio开发环境搭建步骤详解(1).doc
+│              京淘项目每日课前资料day15-18.rar
+│              
+├─15.Springboot+springcloud
+│  │  springbootday01am.mp4
+│  │  springbootday01pm.mp4
+│  │  springbootday02am.mp4
+│  │  springbootday02pm.mp4
+│  │  springcloudday03am.mp4
+│  │  springcloudday03pm.mp4
+│  │  springcloudday04am.mp4
+│  │  springcloudday05am.mp4
+│  │  springcloudday05pm.mp4
+│  │  springcloudday06am.mp4
+│  │  springcloudday06pm.mp4
+│  │  
+│  └─day04
+│          cgb18061109am.ts
+│          cgb18061109pm.ts
+│          反馈有day04pm残缺补上1806 的.txt
+│         
+├─16.6天大数据课程
+│  │  大数据day01am.mp4
+│  │  大数据day01pm.mp4
+│  │  大数据day02am.mp4
+│  │  大数据day02pm.mp4
+│  │  大数据day03am.mp4
+│  │  大数据day03pm.mp4
+│  │  大数据day04am.mp4
+│  │  大数据day04pm.mp4
+│  │  大数据day05am.mp4
+│  │  大数据day05pm.mp4
+│  │  大数据day06am.mp4
+│  │  大数据day06pm.mp4
+│  │
+│  └─笔记+相关文件
+│      │  day01.zip
+│      │  day03.zip
+│      │  day04.zip
+│      │  day05.zip
+│      │  day06.zip
+│      │  
+│      └─day02
+│              day02笔记.docx
+│              jt-logserver.zip
+│              完整版大数据课前资料.zip
+│              
+├─串讲内容
+│      串讲内容1.mp4
+│      串讲内容2.mp4
+│      串讲内容3.mp4
+│      串讲内容4.mp4
+│      串讲内容5.mp4
+│      串讲内容资料.rar
+│     
+└─课程软件
+        64位eclipse，jdk，配置文档，安装教程.zip
+        apache-tomcat-7.0.73-no-cache.rar
+        EverEdit v3.4.1-x86.rar
+        EverEdit v3.4.1.zip
+        HttpWatch.zip
+        jdk-7u79-windows-x64.exe
+        jdk-8u73-windows-x64.exe
+        jt_db.sql
+        mysql-connector-java-5.1.10-bin.jar
+        MySQL安装.rar
+
+大数据, java, SpringMVC, 数据库, SSM
+本主题由 admin 于 2019-11-10 15:51 加入精华

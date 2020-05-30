@@ -1,0 +1,97 @@
+Spring Boot是由Pivotal团队提供的全新框架，其设计目的是用来简化新Spring应用的初始搭建以及开发过程。该框架使用了特定的方式来进行配置，从而使开发人员不再需要定义样板化的配置。通过这种方式，Boot致力于在蓬勃发展的快速应用开发领域（rapid application development）成为领导者。
+    教程由浅入深，一步一步学习Spring Boot，最后学到的不单单是基础！ 使用Spring Boot 进行Web 开发、数据访问、安全控制、批处理、异步消息、系统集成、开发与部署、应用监控、分布式系统开发等，该课程让你能够快速搭建企业级应用的框架，该课程将会以spring mvc开始学习，从而引入spring boot，创建独立的Spring项目，内置Tomcat和Jetty容器提供一个starter POMs来简化Maven配置，同时提供了一系列大型项目中常见的非功能性特性，如安全、指标，健康检测、外部配置等完全没有代码生成和xml配置文件。
+
+课程目录：
+第1讲-Spring4.x
+1.1-课程整体规划计划
+1.2-Spring模块
+1.3-项目管理工具
+1.4-myeclipse配置Maven
+1.5-项目建设
+1.6-新建spring项目
+1.7-依赖注入
+1.8-xml文件配置测试
+1.9-@Autowired
+1.10-Bean的唯一性
+1.11-@Resource
+1.12-@Component 组件
+
+第2讲-Spring Boot自定义自动配置
+2.1-spring Boot核心
+2.2-spring boot环境搭建
+2.3-@SpringbootApplication及Banner
+2.4-常规属性配置
+2.5-类型安全的配置
+2.6-核心注解
+2.7-web开发
+2.8-数据处理
+2.9-Thymeleaf实战
+
+第3讲-Spring Boot配置Web
+3.1-通用配置服务
+3.2-配置SSL
+3.3-websocket
+3.4-广播式
+3.5-广播式接口
+3.6-广播式前台页面开发
+3.7-http监控
+3.8-jpa
+3.9-实战项目
+
+第4讲-Spring boot企业级开发
+4.1-定义映射实体
+4.2-数据访问接口
+4.3-定义查询方法
+4.4-spring security
+4.5-security实战_jq
+4.6-环境搭建
+4.7-发送类
+4.8-消息接受实战
+4.9整合spring boot
+4.10-文件上传
+
+第5讲-Spring boot实战案例
+5.1-文件批量上传开发
+5.2-集成shiro
+5.3-注册过滤器
+5.4-用户加盐处理
+5.5-动态生成表
+5.6-Repository类开发
+5.7-身份校验核心类
+5.8-登录权限设置_jq
+5.9-多数据源配置
+5.10-多数据源配置测试
+
+第6讲-Spring boot整合加密算法
+6.1-cacheManager缓存技术
+6.2-缓存测试
+6.3-读取环境变量信息
+6.4-测试获取配置文件
+6.5-环境搭建
+6.6-MD系列介绍
+6.7-MD—4
+6.8-MD4案例开发
+6.9-Commons Codec MD5
+6.10-MD、SHA算法消息传递
+6.11-SHA系列案例
+6.12-SHA算法实现测试用例
+6.13-SHA224Hex
+6.14-SHA算法 实现
+6.15-SHA系列加密
+6.16-SHA测试系列测试
+
+第7讲-基于Spring boot整合bootstrap及angular js
+7.1-angular js web
+7.2-语法
+7.3-指令控制
+7.4-指令
+7.5-作用域
+7.6-控制器
+7.7-service
+7.8-事件
+7.9--表单
+7.10-数据验证
+7.11-选项框
+7.12-实战web应用
+
+缓存, Spring4, spring security

@@ -1,0 +1,28 @@
+课时1、思维导图梳理知识、网站发展历程梳理.mp4
+课时2、持久层框架MyBatis篇与mybatis-plus使用.mp4
+课时3、spring boot运行原理、装配模式.mp4
+课时4、Springboot集成主流框架.mp4
+课时5、redis的缓存，以及主从、高可用配置.mp4
+课时6、redis的缓存使用实例分析、分布式锁运用.mp4
+课时7、接口文档swagger2与接口调试工具postman.mp4
+课时8、开源框架-快速开发平台renren-fast解读（上）.mp4
+课时9、开源框架-快速开发平台renren-fast解读（下）.mp4
+课时10、操作存储介质，spring data jpa的运用.mp4
+课程11、权限框架shiro介绍与使用.mp4
+课时12、基于spring security OAuth2.0实现单点登录.mp4
+课时13、持续集成工具jenkins的安装与运用.mp4
+课时14、nginx负载均衡工具介绍与运用.mp4
+课时15、websocket协议介绍，学会即时通讯.mp4
+课时16、百万级网络通讯框架t-io介绍与项目实战.mp4
+课时17、开源项目-秒杀、抢购解决方案秒杀解读.mp4
+课时18、消息队列RabbitMq的使用.mp4
+课时19、微服务套装Spring Cloud篇（上）.mp4
+课时20、微服务套装spring cloud篇（中）.mp4
+课时21、微服务套装spring cloud篇（下）.mp4
+课时22、分布式搜索引擎Elasticsearch入门.mp4
+课时23、综合开源项目解读（一）.mp4
+课时24、综合开源项目解读（二）.mp4
+课时25、课程回顾与大总结.mp4
+
+微服务, 缓存, nginx, Elasticsearch
+本主题由 admin 于 2020-3-2 22:11 置顶

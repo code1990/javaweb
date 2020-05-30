@@ -1,0 +1,137 @@
+这是一套java菜鸟到大牛的学习路线之高级教程，由本站工作了10年的资深Java架构师整理。   
+
+    01-java高级架构师设计-基础深入
+        J2SE深入讲解
+        Java多线程与并发库高级应用视频教程下载
+        java反射机制
+        java设计模式视频
+        数据结构视频教程
+        Eclipse视频教程.zip
+        MyEclipse视频教程.zip
+    02-java高级架构师设计-javaEE拓展
+        Activiti工作流视频（企业开发实例讲解）
+        apache服务器配置
+        drools规则引擎
+        dwr
+        EasyUI教程
+        EJB3.0
+        extjs
+        fckeditor
+        Flex
+        freemarker
+        github专题
+        javascript --岳英俊
+        JBPM视频教程
+        JPA视频
+        Maven学习教程分享
+        OSGI视频教程
+        Quartz Job
+        SpringMVC+MyBatis由浅入深全套视频教程video
+        SpringMvc+Spring+MyBatis+Maven整合视频
+        struts2整合freemarker.rar
+    03-java高级架构师设计-大数据
+        hadoop教程
+        Spark大数据平台新
+        storm
+        删除：大数据取舍之道（英）维克托·迈尔-舍恩伯格.pdf
+    04-java高级架构师设计-架构设计高级
+        01-ActiveMQ
+        02-groovy视频
+        03-lucene检索引擎
+        04-MongoDB技术
+        05-nginx网站架构实战（web）
+        06-node.js 教程
+        07-NoSql视频教程-Memcached-redis-mongodb
+        08-Memcached分布式集群
+        09-nutch技术
+        10-OpenStack
+        11-oracle高可用
+        12-oracle性能优化
+        13-Redis从入门到精通
+        14-rest原则
+        15-R语言里面的七种武器
+        16-Solr千万级海量搜索技术
+        17-spark
+        18-百度、阿里、腾讯是如何承载PB级别大数据的
+        19-大数据的矩阵计算基础
+        20-大数据相关技术电子书英文原版
+        21-大型电商分布式系统实践
+        22-大型网站架构设计
+        23-高并发下的数据库设计
+        24高可用可扩展网站技术实践
+        25-海量数据库架构设计
+        26-互联网公司技术架构资料-新浪.百度.腾讯.淘宝
+        27-互联网企业高并发解决方案
+        28-基于案例学习数据挖掘
+        29-京东内部技术
+        30-快速数据挖掘平台
+        31-数据库引擎开发
+        32-深度揭秘服务器端内幕
+        33-深入JVM内核—原理、诊断与优化
+        34-数据引擎开发系列教程
+        35-数据优化技术Redis视频教程
+        36-算法导论
+        37-系统架构设计师视频教程
+        38-云计算架构文档
+        39-中间件
+        40-dubbo全套视频教程
+        30种java技术框架图.pdf
+        40-淘宝是如何承载海量商品图片的？.zip
+        41-Nginx大型网站优化技术资料.rar
+        42-Java虚拟机调优
+        CDN技术详解(雷葆华,孙颖).pdf
+        CentOS+Jdk+Jboss+dubbo+ZooKeeper集群配置教程.docx
+        Getting Real中文版.pdf
+        Java程序性能优化 让你的Java程序更快、更稳定.pdf
+        Java事务设计策略.pdf
+        Memcached.pdf
+        NoSQL精粹_中文完整版.pdf
+        NoSQL数据库之Redis数据库管理五(Redis的常用命令及高级应用之安全性、主从复制).zip
+        REWORK 重来 .pdf
+        Web信息架构：设计大型网站（第三版）.pdf
+        [firelen.com].互联网运营智慧-高可用可扩展网站技术实战.pdf
+        《大型分布式网站架构设计与实践》.pdf
+        阿里分布式数据库服务实践wangjingyu.pdf
+        大规模分布式存储系统：原理解析与架构实战.pdf
+        豆瓣数据架构实践-员旭鹏.pdf
+        分布式Java应用.pdf
+        高性能高并发服务器架构.pdf
+        构建高性能Web站点.pdf
+        了不起的NodeJS.pdf
+        淘宝技术架构.pdf
+        淘宝技术这十年，完整最终确认版.pdf.pdf
+        系统架构设计师教程.pdf
+    05-java高级架构师设计-linux运维
+        2015老男孩linux高级架构1-7
+        Linux
+        赶星作品：Linux开源集群架构视频教程（31课全）解压密码：makee869426503.rar
+    06-java高级架构师设计-数据库
+        (完)oracle深入
+        (完)oracle引航
+        DB2 视频
+        mysql安装包
+        mysql数据库简明教程
+        mysql特级课视频教程
+        Oracle安装包
+        oracle开发
+        oracle视频教程及OCP认证教程
+        oracle数据库sql
+        Oracle学习视频
+        ORACL视频教程
+        大型网站提速之MySQL优化-表的设计和慢查询定位video
+        第二版Mysql优化
+        基于案例学习的sql优化
+        价值1.67万的Oracle视频课程
+        MySQL入门到精通经典教程.pdf
+        让Oracle跑得更快.pdf
+        让Oracle跑得更快2 基于海量数据的数据库设计与优化.pdf
+    其他机构技术
+        高性能缓存Memcached服务深度原理及实战视频课程
+        mysql优化.rar
+        nginx.rar
+    学习专题
+        activiti 工作流学习专题
+        JAVA编程高级知识
+        webservice视频教程
+        设计模式视频教程
+java, 数据库, 架构师, 大数据, 高并发

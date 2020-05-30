@@ -1,0 +1,35 @@
+课程目录：黑马乐优商城19天(全)+配套笔记
+资料
+乐优商城《项目笔记》
+Day68 - 支付
+Day67 - 订单
+Day66 - 购物车
+Day65 - 授权中心
+Day64 - Redis
+Day63 - RabbitMQ
+Day62 - 商品详情页 Day61 - 搜索过滤
+Day60 - 全文检索
+Day59 - Elasticsearch
+
+Day58 - 商品功能实现
+Day57 - 商品表结构
+Day56 - 品牌管理
+Day55 - nginx和品牌管理
+Day54 - 项目环境搭建
+Day53 - ES6  Veu
+Day52 - SpringCloud
+Day51 - SpringCloud
+Day50 - Springboot
+
+2018Java基础+就业课程
+十次方
+笔记课件
+4.项目实战
+3.框架
+2.javaweb
+1.基础班
+
+
+
+
+java, nginx, 购物车, Java基础

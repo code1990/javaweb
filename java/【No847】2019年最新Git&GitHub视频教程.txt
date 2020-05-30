@@ -1,0 +1,107 @@
+├─简介版
+│  └─Git&nginx
+│          01.Git-简史.avi
+│          02.Git-工作机制.avi
+│          03.Git-代码托管中心-团队内协作机制.avi
+│          04.Git-代码托管中心-跨团队协作机制.avi
+│          05.Git-安装过程介绍.avi
+│          06.Git-初始化本地库.avi
+│          07.Git-命令行-基本操作-上.avi
+│          08.Git-命令行-基本操作-中.avi
+│          09.Git-命令行-基本操作-下.avi
+│          10.Git-命令行-分支-介绍.avi
+│          11.Git-命令行-分支-基本操作.avi
+│          12.Git-命令行-分支-解决冲突.avi
+│          13.Git-命令行-GitHub-创建远程库.avi
+│          14.Git-命令行-GitHub-团队内协作.avi
+│          15.Git-命令行-GitHub-跨团队协作.avi
+│          16.Git-命令行-GitHub-SSH免密登录.avi
+│          17.Git-Eclipse-配置文件忽略.avi
+│          18.Git-Eclipse-将工程初始化为本地库.avi
+│          19.Git-Eclipse-添加和提交操作.avi
+│          20.Git-Eclipse-推送.avi
+│          21.Git-Eclipse-克隆工程到Eclipse工作区.avi
+│          22.Git-Eclipse-解决冲突和其他基本操作.avi
+│          23.Git-Eclipse-分支-分支使用方式介绍.avi
+│          24.Git-Eclipse-分支-分支使用方式实战.avi
+│          25.持续集成相关概念介绍.avi
+│          26.Nginx-准备Tomcat集群.avi
+│          27.Nginx-简介.avi
+│          28.Nginx-安装-安装C的库.avi
+│          29.Nginx-安装-编译安装.avi
+│          30.Nginx-安装-启动停止Nginx.avi
+│          31.Nginx-配置文件-server节点语法.avi
+│          32.Nginx-配置文件-配置负载均衡.avi
+│          33.Nginx-配置文件-指定pid文件位置.avi
+│          全部代码.zip
+│         
+└─详细版
+    ├─视频
+    │      01.前面的话.avi
+    │      02.为什么要使用版本控制.avi
+    │      03.版本控制介绍.avi
+    │      04.Git简史.avi
+    │      05.Git优势.avi
+    │      06.Git程序安装过程.avi
+    │      07.Git结构.avi
+    │      08.Git和代码托管中心.avi
+    │      09.本地库和远程库的交互方式.avi
+    │      10.本地库初始化.avi
+    │      11.设置签名.avi
+    │      12.添加提交以及查看状态操作.avi
+    │      13.添加提交命令小结.avi
+    │      14.版本穿梭测试的准备工作.avi
+    │      15.查看历史记录的几种不同方式.avi
+    │      16.前进后退历史版本操作的本质.avi
+    │      17.基于索引值前进后退版本.avi
+    │      18.前进后退版本的其他方式.avi
+    │      19.hard和soft以及mixed参数对比.avi
+    │      20.永久删除文件后找回.avi
+    │      21.添加到暂存区的删除文件找回.avi
+    │      22.删除文件找回方式的小结.avi
+    │      23.比较文件.avi
+    │      24.分支概述.avi
+    │      25.分支操作.avi
+    │      26.解决合并分支后产生的冲突.avi
+    │      27.Hash算法简介.avi
+    │      28.Git版本数据管理机制.avi
+    │      29.Git分支管理的本质是创建和移动指针.avi
+    │      30.GitHub账号注册.avi
+    │      31.修改GitHub账号头像.avi
+    │      32.本地库和远程库交互方式回顾.avi
+    │      33.为了测试远程交互初始化新的本地库.avi
+    │      34.创建远程库.avi
+    │      35.在本地创建远程库地址别名.avi
+    │      36.推送操作.avi
+    │      37.克隆操作.avi
+    │      38.邀请令狐冲加入团队成员.avi
+    │      39.远程库修改的拉取.avi
+    │      40.协同开发时冲突的解决.avi
+    │      42.SSH免密登录.avi
+    │      43.Eclipse中Git插件简介.avi
+    │      44.Eclipse中把工程初始化为本地库.avi
+    │      45.在Eclipse中设置本地库范围签名.avi
+    │      46.Eclipse中Git图标的介绍.avi
+    │      47.Eclipse特定文件介绍以及为什么要忽略它们.avi
+    │      48.忽略Eclipse中的特定文件.avi
+    │      49.Eclipse中本地库基本操作.avi
+    │      50.将本地工程推送到远程库.avi
+    │      51.将远程库的工程克隆到本地.avi
+    │      52.在Kepler Eclipse中导入远程库工程.avi
+    │      53.在Eclipse中解决冲突.avi
+    │      54.Git工作流介绍.avi
+    │      55.分支实战说明.avi
+    │      56.分支实战操作.avi
+    │      57.安装CentOS7.avi
+    │      58.安装Gitlab前的准备和介绍.avi
+    │      59.Gitlab安装.avi
+    │      60.配置并启动Gitlab服务器.avi
+    │      61.浏览器访问Gitlab首页.avi
+    │      62.总结.avi
+    │      
+    └─资料
+            Git&GitHub.bmp
+            Git&GitHub.pdf
+
+SSH
+本主题由 admin 于 2019-12-8 19:22 设置高亮

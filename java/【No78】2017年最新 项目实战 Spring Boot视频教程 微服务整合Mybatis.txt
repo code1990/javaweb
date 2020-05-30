@@ -1,0 +1,22 @@
+【课程内容】
+
+视频、资料、代码、课件齐全
+Spring的发展
+Spring的java配置方式
+实战-读取外部的配置文件
+Springboot简介
+第一个SpringBoot应用
+核心注解、自动配置、自定义banner
+全局配置文件
+starter pom、xml配置、日志
+SpringBoot的自动配置
+自动配置静态资源
+SpringBoot的web开发
+通过SpringBoot改造购物车（SpringBoot和MyBatis的整合）
+SpringBoot的事务管理
+整合Redis、Httpclient、RabbitMQ
+SpringBoot设置SpringMVC的配置
+启动测试
+SpringBoot发布到独立的tomcat
+
+购物车, SpringMVC, 静态资源

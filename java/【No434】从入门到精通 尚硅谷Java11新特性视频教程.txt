@@ -1,0 +1,25 @@
+本套视频语调轻快、讲解深入，带你一睹java11的风采：新的局部变量的语法、更方便的调试运行程序的方式jshell及直接运行源代码、令人瞩目的ZGC, JFR、全新HttpClient API、兼容Unicode10的新的字符串API等。
+
+【目录】
+00_尚硅谷_Java11_笔记、源码
+01_尚硅谷_Java11_简介.mp4
+02_尚硅谷_Java11_官方更新列表.mp4
+03_尚硅谷_Java11_Shell.mp4
+04_尚硅谷_Java11_集合中的新API1.mp4
+05_尚硅谷_Java11_局部变量类型推断.mp4
+06_尚硅谷_Java11_集合中的新API2.mp4
+07_尚硅谷_Java11_流中的新API1.mp4
+08_尚硅谷_Java11_流中的新API2.mp4
+09_尚硅谷_Java11_字符串和Optional的新API.mp4
+10_尚硅谷_Java11_字符串和输入流的新API.mp4
+11_尚硅谷_Java11_Http客户端API.mp4
+12_尚硅谷_Java11_Java11废弃的内容.mp4
+13_尚硅谷_Java11_Epsilon垃圾收集器.mp4
+14_尚硅谷_Java11_ZGC垃圾收集器.mp4
+15_尚硅谷_Java11_FightRecorder1.mp4
+16_尚硅谷_Java11_FightRecorder2.mp4
+
+
+
+
+尚硅谷

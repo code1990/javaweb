@@ -1,0 +1,183 @@
+│  java面试题01.面试的整体流程（更多请关注花姐学编程公众号）.mp4
+│  Java面试题02.java的垮平台原理（更多请关注花姐学编程公众号）.mp4
+│  Java面试题03.搭建一个java的开发环境.mp4
+│  Java面试题04.java中int占几个字节.mp4
+│  Java面试题05.java面向对象的特征.mp4
+│  Java面试题06.装箱和拆箱.mp4
+│  Java面试题07.==和equals的区别.mp4
+│  Java面试题08.String.mp4
+│  Java面试题09.讲一下java中的集合.mp4
+│  Java面试题10.ArrayList LinkedList.mp4
+│  Java面试题11.HashMap和HashTable的区别.mp4
+│  Java面试题12.实现一个拷贝文件的类使用字节流还是字符串.mp4
+│  Java面试题13.线程的实现方式 怎么启动线程怎么区分线程.mp4
+│  Java面试题14.线程并发库和线程池的作用？.mp4
+│  Java面试题15.设计模式和常用的设计模式.mp4
+│  Java面试题16.http get post请求的区别.mp4
+│  Java面试题17.说说你对Servlet的理解.mp4
+│  Java面试题18.Servlet的生命周期.mp4
+│  Java面试题19.forward和redirect的区别.mp4
+│  Java面试题20.jsp和Servlet的相同点和不同点？.mp4
+│  Java面试题21.内置对象和四大作用域和页面传值.mp4
+│  Java面试题22.Session和Cookie的区别.mp4
+│  Java面试题23.mvc模式和mvc各部分的实现.mp4
+│  Java面试题24.数据库分类和常用数据库.mp4
+│  Java面试题25.关系型数据库的三范式.mp4
+│  Java面试题26.事务的四大特征.mp4
+│  Java面试题27.mysql数据库最大连接数.mp4
+│  Java面试题28.mysql和oracle的分页语句（着重说思路）.mp4
+│  Java面试题29.触发器的使用场景.mp4
+│  Java面试题30.存储过程的优点.mp4
+│  Java面试题31.jdbc调用存储过程.mp4
+│  Java面试题32.简单说一下你对jdbc的理解.mp4
+│  Java面试题33.写一个jdbc的访问oracle的列子.mp4
+│  Java面试题34.jdbc中preparedStatement比Statement的好处.mp4
+│  Java面试题35.数据库连接池的作用.mp4
+│  Java面试题36.HTML.mp4
+│  Java面试题37.简单介绍了一下Ajax.mp4
+│  Java面试题38.js和JQuery的关系.mp4
+│  Java面试题39.jQuery中的常用选择器.mp4
+│  Java面试题40.jQuery中页面加载完毕事件.mp4
+│  Java面试题41.jQuery中Ajax和原生js实现Ajax的关系.mp4
+│  Java面试题42.简单说一下html5.mp4
+│  Java面试题43.简单说一下css3.mp4
+│  Java面试题44.bootstrap的是什么.mp4
+│  Java面试题45.什么是框架.mp4
+│  Java面试题46.简单介绍一下MVC模式.mp4
+│  Java面试题47.简单说一下对mvc框架的理解.mp4
+│  Java面试题48.struts2的执行流程或者struts2的原理.mp4
+│  Java面试题49.Struts2的拦截器是什么？你都用它干什么？.mp4
+│  Java面试题50.Spring MVC的执行流程.mp4
+│  Java面试题51.SpringMVC和Struts2的不同.mp4
+│  Java面试题52.简单介绍一下Spring或者Spring的两大核心.mp4
+│  Java面试题53.AOP是什么？都用它做什么？.mp4
+│  Java面试题54.Spring事务的传播特性和隔离级别.mp4
+│  Java面试题55.ORM是什么？ORM框架是什么？.mp4
+│  Java面试题56.ibatis和hibernate有什么不同.mp4
+│  Java面试题57.hibernate对象状态及其转换.mp4
+│  Java面试题58：hibernate的缓存.mp4
+│  Java面试题59.webservice的使用场景.mp4
+│  Java面试题60.Activiti的简单介绍.mp4
+│  Java面试题61.linux的使用场景.mp4
+│  Java面试题62.linux常用命令.mp4
+│  Java面试题63：怎么操作linux服务器.mp4
+│  Java面试题64：有没有使用过云主机.mp4
+│  Java面试题65：数据库优化方面的事情.mp4
+│  Java面试题66：如果查询和定位慢查询.mp4
+│  Java面试题67：数据库优化之数据库表设计遵循范式.mp4
+│  Java面试题68：选择合适的数据库引擎.mp4
+│  Java面试题69：选择合适的索引.mp4
+│  Java面试题70：使用索引的一些技巧.mp4
+│  Java面试题71：数据库优化之分表.mp4
+│  Java面试题72：数据库的读写分离.mp4
+│  Java面试题73：数据库优化之缓存.mp4
+│  Java面试题74：sql语句优化小技巧.mp4
+│  Java面试题75：批量插入几百万条数据.mp4
+│  Java面试题76：有没有使用过redis.mp4
+│  Java面试题77：redis的使用场景.mp4
+│  Java面试题78：redis存储对象的方式.mp4
+│  Java面试题79：redis数据淘汰机制.mp4
+│  Java面试题80：java访问redis级redis集群？.mp4
+│  Java面试题81：微信公众号分类和微信开发原理.mp4
+│  Java面试题82：怎么把微信和业务平台进行绑定.mp4
+│  Java面试题83：项目的分类和项目参与者.mp4
+│  Java面试题84：项目流程和业务注意事项.mp4
+│  面试必问-Mysql索引背后的故事
+│
+├─java面试专属
+│  ├─1.面试必考之HashMap源码分析与实现
+│  │      1.面试必考之HashMap源码分析与实现.mp4
+│  │   
+│  ├─2.探索JVM底层奥秘ClassLoader源码分析与案例讲解
+│  │      2.探索JVM底层奥秘ClassLoader源码分析与案例讲解.wmv
+│  │   
+│  ├─3.锁、分布式锁、无锁实战全局性ID-悟空
+│  │      3.锁、分布式锁、无锁实战全局性ID-悟空.mp4
+│  │   
+│  ├─4.SpringMvc深入理解源码分析
+│  │      4.SpringMvc深入理解源码分析-悟空.mp4
+│  │   
+│  ├─5.Nosql Redis Jedis常用命令
+│  │      5.Nosql Redis Jedis常用命令-悟空.mp4
+│  │
+│  ├─6.互联网系统垂直架构之Session解决方案
+│  │      6.互联网系统垂直架构之Session解决方案.mp4
+│  │
+│  ├─7.分布式框架ZooKeeper之服务注册与订阅
+│  │      7.分布式框架Zookeeper之服务注册与订阅.mp4
+│  │     
+│  ├─8.高性能网络编程必备技能之IO与NIO阻塞分析
+│  │      8.高性能网络编程必备技能之IO与NIO阻塞分析.mp4
+│  │  
+│  ├─9.JAVA并发编程之多线程并发同步业务场景与解决方案
+│  │      9.JAVA并发编程之多线程并发同步业务场景与解决方案.wmv
+│  │  
+│  ├─10.微服务架构之Spring Cloud Eureka 场景分析与实战
+│  │      10.微服务架构之Spring Cloud Eureka 场景分析与实战.wmv
+│  │  
+│  ├─11.高性能必学之Mysql主从架构实践
+│  │      11.高性能必学之Mysql主从架构实践.mp4
+│  │
+│  ├─12.架构师不得不知道的Spring事物不能回滚的深层次原因
+│  │      12.架构师不得不知道的Spring事物不能回滚的深层次原因.mp4
+│  │
+│  ├─13.RPC底层通讯原理之Netty线程模型源码分析
+│  │      13.RPC底层通讯原理之Netty线程模型源码分析.wmv
+│  │     
+│  ├─14.分库分表之后分布式下如何保证ID全局唯一性
+│  │      14.分库分表之后分布式下如何保证ID全局唯一性.mp4
+│  │   
+│  └─15.大型公司面试必答之数据结构与算法精讲
+│         大型公司面试必答之数据结构与算法（一）-达摩老师.mp4
+│         大型公司面试必答之数据结构与算法（二）.mp4
+│         
+├─面试必问-JVM性能调优
+│      JVM性能调优 2018-10-25.mp4
+│   
+├─面试必问-mybaits源码分析
+│  │  鲁班学院-上课笔记mybaits源码分析9-05.docx
+│  │
+│  └─mybaits源码分析
+│          mybaits源码分析.mp4
+│         
+├─面试必问-springcloud架构微服务项目
+│      springcloud架构微服务项目.mp4
+│     
+├─面试必问-SpringMVC源码分析
+│      SpringMVC源码分析.mp4
+│     
+├─面试必问-webservice原理分析
+│      webservice原理分析.mp4
+│
+├─面试必问-使用Springboot快速搭建SSM框架
+│      使用SpringBoot快速搭建SSM框架.mp4
+│     
+├─面试必问-双十一系统架构之Mysql索引技术剖析
+│      双十一系统架构之Mysql索引技术剖析.mp4
+│      
+├─面试必问-大牛带你手写dubbo框架
+│      大牛带你手写Dubbo框架.mp4
+│
+├─面试必问-实战分布式之手写分布式事务框架
+│      实战分布式之手写分布式事务框架.mp4
+│
+├─面试必问-带你精通springAOP—面试无忧虑
+│      带你精通AOP——面试无忧虑.mp4
+│     
+├─面试必问-微服务架构深入浅出讲解springcloud
+│      微服务架构 --深入浅出讲解springcloud.mp4
+│
+├─面试必问-教你手写MyBatis框架
+│      一小时教你手写MyBatis框架.mp4
+│     
+├─面试必问-架构杀手锏——java混乱的日志体系
+│      java混亂日志体系源码揭秘.mp4
+│
+├─面试必问-深入微服务之SpringBoot&Docker1
+│      深入微服务之SpringBoot&Docker.mp4
+│
+└─面试必问-聊聊哈希算法与HashMap
+聊聊哈希算法与HashMap.mp4
+
+面试, 数据库, java, 微服务, 微服务架构
+本主题由 admin 于 2020-3-14 15:36 置顶

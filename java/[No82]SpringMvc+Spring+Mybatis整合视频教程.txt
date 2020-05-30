@@ -1,0 +1,7 @@
+[No82]SpringMVC+Spring+MyBatis整合视频教程
+    generator
+    SpringMvc+Spring+Mybatis+Maven整合视频教程3.avi
+    SpringMvc+Spring+Mybatis+Maven整合视频教程2.avi
+    SpringMvc+Spring+Mybatis+Maven整合视频教程1.avi
+    SpringMvc+Spring+Mybatis+Maven整合视频教程.docx
+    SpringMvc+Spring+Mybatis+Maven整合示例源码.7z

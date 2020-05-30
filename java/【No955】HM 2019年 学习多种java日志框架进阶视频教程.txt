@@ -1,0 +1,63 @@
+│  日志课程大纲.xlsx
+│  
+├─day01
+│  │  day01资料
+│  │  
+│  ├─代码
+│  │      代码.rar
+│  │     
+│  ├─视频
+│  │      01-今日目标.mp4
+│  │      02-日志介绍.mp4
+│  │      03-日志框架介绍.mp4
+│  │      04-JUL日志快速入门.mp4
+│  │      05-JUL日志级别介绍.mp4
+│  │      06-JUL硬编码配置.mp4
+│  │      07-Logger对象父子关系.mp4
+│  │      08-JUL配置文件入门.mp4
+│  │      09-JUL配置文件详解.mp4
+│  │      10-JUL执行原理和流程.mp4
+│  │      11-Log4j的快速入门.mp4
+│  │      12-Log4j的组件和配置文件介绍.mp4
+│  │      13-Log4j的内置日志记录.mp4
+│  │      14-Log4j的layout配置.mp4
+│  │      15-Log4j的FileAppender配置.mp4
+│  │      16-Log4j的JDBCAppender配置.mp4
+│  │      17-Log4j的自定义logger.mp4
+│  │      18-JCL入门介绍.mp4
+│  │      19-JCL原理介绍.mp4
+│  │      
+│  └─讲义
+│          日志技术
+│        
+└─day02
+    │  day02资料
+    │  
+    ├─代码
+    │      代码.rar
+    │      
+    ├─视频
+    │      01-今日目标.mp4
+    │      02-日志门面介绍.mp4
+    │      03-slf4j入门.mp4
+    │      04-slf4j日志绑定.mp4
+    │      05-slf4j日志绑定原理.mp4
+    │      06-fl4j日志桥接器.mp4
+    │      07-logback入门.mp4
+    │      08-logback基础配置文件.mp4
+    │      09-logback的FileAppender.mp4
+    │      10-logback 的拆分 Appender.mp4
+    │      11-logback 的过滤器和异步日志和自定义 logger.mp4
+    │      12-logback 的 access 模块.mp4
+    │      13-log4j2 入门.mp4
+    │      14-log4j2 配置文件.mp4
+    │      15-log4j2 异步日志.mp4
+    │      16-log4j2 无垃圾模式.mp4
+    │      17-Springboot 日志设计结构.mp4
+    │      18-springboot日志配置.mp4
+    │      19-springboot 切换日志实现.mp4
+    │      
+    └─讲义
+            日志技术 （下）.pdf
+
+本主题由 admin 于 2020-3-26 18:38 置顶

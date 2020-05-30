@@ -1,0 +1,39 @@
+├─第1节 项目展示和配置
+│      1ReactNative项目的演示.mp4
+│      2ReactNative学习的步骤.mp4
+│      3ReactNative开发准备工作-配置.mp4
+│      4初始化RN项目并解读提示面板的信.mp4
+│      5使用react-native start重启packag.mp4
+│      6修改RN项目的主页面.mp4
+│      7TextInput文本框的基本使用.mp4
+│      8使用Image引入图片资源的两种.mp4
+│      9Button组件和ActivityIndicator.mp4
+│      10ScrollView组件实现页面滚动.mp4
+│      
+├─第2节 Tab栏效果
+│      1实现简单的Tab栏切换.mp4
+│      2安装图标插件并配置插件选项.mp4
+│      3安装图标插件并配置插件选项.mp4
+│     
+├─第3节 首页效果
+│      1实现首页的轮播图.mp4
+│      2实现首页的6宫格布局.mp4
+│
+├─第4节 ReactNative路由配置
+│      1为ReactNative配置路由.mp4
+│      2使用路由的Actions组件实现编程(1).mp4
+│
+├─第5节 电影列表和详情页效果
+│      1使用fetch获取电影列表数据.mp4
+│      2移动App开发视频-渲染电影列表数.mp4
+│      3美化列表布局并绘制分割线.mp4
+│      4实现电影列表下拉加载更多.mp4
+│      5实现电影详情页面的制作.mp4
+│
+├─第6节 ReactNative电影项目发布
+│       1发布安卓项目的Release版本.mp4
+│       2完成拍照功能并重新发布Rele.mp4
+│
+└─笔记+源码.zip)
+
+本主题由 admin 于 2019-9-23 18:34 加入精华

@@ -1,0 +1,92 @@
+│  1026美团架构师解密千万级高并发红包系统架构-20191026.mp4
+│  1028性能调优专题-java虚拟机性能调优与底层原理分析-1028.mp4
+│  1029手写同步器锁反推AQS核心实现与中断原理.mp4
+│  1029深入理解Java内存模型JMM与volatile关键字-1029.mp4
+│  JAVA核心面试知识整理.pdf
+│  Java虚拟机：JVM高级特性与最佳实践（最新第二版）.pdf
+│  JVM.pdf
+│  JVM内存区域划分.pdf
+│  JVM和性能优化.xmind
+│  JVM性能优化相关问题.pdf
+│  JVM性能调优-JVM内存整理及GC回收.pdf
+│  JVM执行子系统.pdf
+│  JVM指令手册.pdf
+│  JVM面试专题.pdf
+│  JVM面试专题及答案.pdf
+│  
+├─Java基础
+│      基础一（JAVA基础部分）.doc
+│      基础二（JAVA基础部分）.doc
+│      基础三（Java基础部分）.docx
+│      基础四（前端JSP部分）.doc
+│      基础五（前端AJAX部分）.docx
+│      基础六（框架部分）.doc
+│      基础七（框架部分）.doc
+│      基础八（数据库部分）.doc
+│      数据库题目.docx
+│      
+├─Spring面试题
+│      第一题.pdf
+│      第二题 Exception Error区别.pdf
+│      第三题 对比HashTable HashMap TreeMap有什么不同.pdf
+│      第四题 ArrayList LinkedList Vector的区别.pdf
+│      第五题 如何保证集合是线程安全的.pdf
+│      第六题 synchronized和ReentLock有什么区别.pdf
+│      第七题 谈谈MySQL支持的事务隔离级别 (1).pdf
+│      第八题 Java并发类库提供的线程池有哪几种 分别有什么特点.pdf
+│      MyBatis部分.docx
+│      SpringMVC部分.docx
+│      Spring部分.docx
+│      
+├─微服务面试题
+│      docker讲得最清楚.doc
+│      dubbo是什么？能做什么？.doc
+│      java 基于TCP协议的Socket编程和通信.doc
+│      Java面试高级篇―说说TCP,UDP和socket,Http之间联系和区别.doc
+│      MySQL千万级的大表要怎么优化（读写分离、水平拆分、垂直拆分）.doc
+│      redis缓存雪崩、缓存穿透、缓存预热、缓存更新、缓存降级.doc
+│      RPC (Remote Procedure Call)即远程过程调用.doc
+│      Spring 面试问题 TOP 50（干货推荐收藏必备）.doc
+│      Springboot常见面试题.doc
+│      svn和git的区别及适用场景.doc
+│      ZooKeeper.doc
+│      为什么分布式一定要有Redis.doc
+│      分布式、高并发、多线程，到底有什么区别.doc
+│      分布式事务.doc: C2 O2 F5 o' T
+│      四款消息队列大比拼.docx
+│      多台web服务器之间共享session.docx
+│      消息中间件Kafka与RabbitMQ.doc
+│      电商项目描述注意点.doc
+│      秒杀业务的流量削峰场景如何解决.doc
+│      面试题：Kafka、ActiveMQ、RabbitMQ、RocketMQ 有什么优缺点.doc
+│      
+└─面试题解析
+    │  24 个MySQL面试题.doc
+    │  JAVA核心知识点整理.jpg
+    │  redis面试题.doc
+    │  zookeeper.doc
+    │  分布式服务接口的幂等性如何设计.docx
+    │  如何设计一个百万级用户的抽奖系统？.doc
+    │  由 HashMap .doc
+    │  积分系统.doc
+    │  聊聊常见的数据库架构设计方案？.doc
+    │  除了负载均衡，nginx还可以做很多，限流、缓存、黑白名单等.doc
+    │  
+    ├─分布式消息队列
+    │      1.doc
+    │      2.doc
+    │      3.doc
+    │      4.doc
+    │      5.doc
+    │      6.doc
+    │      7.doc
+    │      
+    └─搜索引擎
+            1.doc
+            2.doc
+            3.doc
+            4.doc
+            5.doc
+
+面试, JVM, 缓存, 数据库, 性能调优
+本主题由 admin 于 2019-12-2 16:15 置顶

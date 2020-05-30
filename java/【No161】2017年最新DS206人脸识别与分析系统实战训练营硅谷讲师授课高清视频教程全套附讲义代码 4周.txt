@@ -1,0 +1,132 @@
+【No161】2017年最新DS206人脸识别与分析系统实战训练营硅谷讲师授课高清视频教程全套附讲义代码 4周
+课程目录：
+
+第一节课
+
+人工智能：从科幻到现实的发展
+A. 人工智能技术的现状
+B. 人工智能的市场需求
+C. 机器学习的技术框架
+
+深度学习：你也可以掌握的科技前沿
+A. 深度学习的基本原理
+B. 深度学习的重要算法和应用场景
+C. 课程安排
+VIEW LESS
+第一周
+学习目标：
+    1. 了解机器学习基本概念和方法，了解计算机视觉主要研究的问题
+    2. Linear regression 和 Logistic regression的原理，细节，以及编程实现。
+
+具体理论课程安排：
+
+    1. 机器的力量：将数据转化为知识
+A. 机器学习的整体概念
+B. 监督学习，非监督学习，增强学习
+C. 机器学习系统的Roadmap
+    2. Machine learning 经典算法: 机器学习≠深度学习
+A. K-means clustering
+B. K-NN, SVM
+C. Regression
+
+项目课程安排：
+
+    1.python编程语言入门实践
+A. Python 基础
+B. Python Data structure & Algorithm
+    2. Logistic and Softmax regression 编程实现
+A. Linear Regression 讲解
+B. 使用python sklearn 实现 linear regression
+C. Softmax Regression 和 Vectorization 讲解
+D. 使用 python sklearn 实现 Softmax
+E. 模型训练、测试
+VIEW LESS
+第二周
+学习目标：
+    1. 理解神经元作为神经网络基本计算单元的结构，了解前向计算、反向传播。掌握卷积网络的组成结构，熟悉各个部分的功能。
+    2. 编程实现perceptron learning， 熟悉caffe框架，实际操作训练CNN网络。
+
+具体理论课程安排：
+
+    1. Multi Layer Neural Network
+A. Network architecture
+B. Forward propagation
+C. Backward propagation
+    2. Deep Convolutional Neural Network
+A. Convolution layer, pooling layer
+B. Activation function: sigmoid, relu, etc.
+    3. 深度学习框架介绍
+A. Caffe 介绍
+B. Tensorflow 与 Keras 介绍
+C. Torch 与 lua 编程语言介绍
+
+项目课程安排：
+
+    1. 实现 perceptron learning algorithm
+A. 编程实现 perceptron learning algorithm in Python
+B. 利用 Iris 实际数据集训练模型 perceptron in Iris database
+    3. 实战深度网络： Artificial Neural Networks for Digits Recognition
+A. 安装配置环境 Caffe install,
+B. 数据预处理 data preparation
+C. 设计网络结构 Design network architecture
+D. Caffe Prototxt 使用
+E. 参数调整和网络训练 Apply training and validation procedure
+VIEW LESS
+第三周
+学习目标：
+    1. 熟悉若干流行的深度学习网络，了解其框架结构、各组件和功能单元
+    2. 介绍CNN相关高级模块的功能与应用
+    3. 掌握人脸识别系统基本架构
+    4. 实现人脸检测功能，数据读取、展示功能，实践深度卷积网络可视化
+
+具体理论课程安排：
+
+    1. 流行深度学习网络结构，组件和功能单元
+A. VGG, Googlenet, ResNet, etc.
+B. Dropout, prelu, maxout, etc.
+C. Advanced loss functions
+    2. 人脸识别系统的体系结构
+A. Face detection
+B. Face identification and face verification
+C. Performance measures for face recognition problem.
+    3. PyQt 库介绍
+A.PyQt 的基本组成
+B. Signal Slot 机制介绍
+
+项目课程安排：
+
+    1. 利用机器学习库实现 Face detection 功能，学习使用OpenCV，Dlib
+    2. 利用PyQt库signal slot 机制实现主要框架
+    3. 利用PyQt实现操作界面
+    4. 系统模块实现： 数据输入，数据处理，功能接口
+VIEW LESS
+第四周
+学习目标：
+    1. 通过人脸关键点定位问题，理解深度学习在regression问题中的应用。了解深度学习中的高级算法和前沿研究方向。
+    2. 理解并实践pretrain model 和 finetuning 等工程实践技术。增强项目上手能力。完成课程项目各组件的连接，测试项目performance。
+
+具体理论课程安排：
+
+    1. Face landmark detection using CNN
+A. CNN regression
+B. landmark detection
+    2. Gender Classification on Face image using CNN
+    3. Advanced Topics
+A. RNN/LSTM in computer vision
+B. Cutting edge techniques in deep learning
+C. Summary
+
+项目课程安排：
+
+    1. 利用人脸数据实际操作深度神经网络的训练
+A. 如何使用caffe pretrain model
+B. 对已有的深度model 做 Fine-tuning
+    2. 实际操作将 model 部署到人脸系统
+A. 利用 Caffe 提 Feature
+B. 部署 caffe model 到 python 端
+C.实现 Feature Matching
+    3. 项目模块的组织与调试
+A. 整合视频输入、人脸检测、人脸识别等模块
+B. 调试系统
+
+深度学习, 机器学习, python, 人工智能, 神经网络

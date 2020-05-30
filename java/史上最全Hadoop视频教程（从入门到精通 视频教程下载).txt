@@ -1,0 +1,48 @@
+史上最全hadoop视频教程（从入门到精通 视频教程下载)
+
+Cloudera Hadoop 4系列实战课程视频教程
+Cloudera Hadoop 4系列实战课程视频教程1.part1.rar
+Cloudera Hadoop 4系列实战课程视频教程1.part2.rar
+Cloudera Hadoop 4系列实战课程视频教程1.part3.rar
+Cloudera Hadoop 4系列实战课程视频教程2.part1.rar
+Cloudera Hadoop 4系列实战课程视频教程2.part2.rar
+Cloudera Hadoop 4系列实战课程视频教程2.part3.rar
+
+Greenplum Hadoop分布式平台的大数据解决方案及商业应用案例剖析
+Greenplum Hadoop商业应用案例视频教程第1部分.rar
+Greenplum Hadoop商业应用案例视频教程第2部分.rar
+Greenplum Hadoop商业应用案例视频教程第3部分.rar
+Greenplum Hadoop商业应用案例视频教程第4部分.rar
+Greenplum Hadoop商业应用案例视频教程第5部分.rar
+Greenplum Hadoop商业应用案例视频教程第6部分.rar
+Greenplum Hadoop商业应用案例视频教程第7部分.rar
+Greenplum Hadoop商业应用案例视频教程第8部分.rar
+Greenplum Hadoop商业应用案例视频教程第9部分.rar
+
+Hadoop高级应用实战视频教程
+第一部分、hadoop高级应用视频教程.part1.rar
+第一部分、hadoop高级应用视频教程.part2.rar
+第一部分、hadoop高级应用视频教程.part3.rar
+第二部分、hadoop高级应用视频教程.part1.rar
+第二部分、hadoop高级应用视频教程.part2.rar
+第二部分、hadoop高级应用视频教程.part3.rar
+第二部分、hadoop高级应用视频教程.part4.rar
+第三部分、hadoop高级应用视频教程.part1.rar
+第三部分、hadoop高级应用视频教程.part2.rar
+第三部分、hadoop高级应用视频教程.part3.rar
+
+Hadoop由浅入深实战开发
+Hadoop由浅入深实战开发1.rar
+Hadoop由浅入深实战开发2.rar
+Hadoop由浅入深实战开发3.rar
+
+Hive企业级架构优化、 Sql优化、压缩和分布式缓存视频教程
+Hive企业级架构优化、 Sql优化、压缩和分布式缓存视频教程1.rar
+Hive企业级架构优化、 Sql优化、压缩和分布式缓存视频教程2.rar
+Hive企业级架构优化、 Sql优化、压缩和分布式缓存视频教程3.rar
+Hive企业级架构优化、 Sql优化、压缩和分布式缓存视频教程4.rar
+Hive企业级架构优化、 Sql优化、压缩和分布式缓存视频教程5.rar
+Hive企业级架构优化、 Sql优化、压缩和分布式缓存视频教程6.rar
+Hive企业级架构优化、 Sql优化、压缩和分布式缓存视频教程7.rar
+
+hadoop, Hive, 缓存, 大数据

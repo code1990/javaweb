@@ -1,0 +1,788 @@
+│  ├─day00_编程入门
+│  │      02-资料文件结构2.avi
+│  │      03-入门概述.avi
+│  │      04-冯诺依曼体系结构.avi
+│  │      05-CPU和IT行业三大定律.avi
+│  │      06-持久化存储设备.avi
+│  │      07-bit与byte.avi
+│  │      08-内存.avi
+│  │      09-输入输出设备和网络连接设备.avi
+│  │      10-计算机史上的两个鼻祖.avi
+│  │      11-操作系统.avi
+│  │      12-万维网与软件架构方式.avi
+│  │      13-职业发展与提升.avi
+│  │      14-学习经验探讨.avi
+│  │      
+│  ├─day01_java语言概述
+│  │      01-Java基础阶段目录概述.avi
+│  │      02-Java后续学习大纲简述.avi ^
+│  │      03-Java主要应用场景.avi
+│  │      04-Java基础图谱及基础阶段项目说明.avi
+│  │      05-每天授课须知.avi
+│  │      06-图形化界面操作与命令行操作介绍.avi
+│  │      07-常用的命令行指令.avi
+│  │      08-计算机语言的划分.avi
+│  │      09-不同编程语言的介绍.avi
+│  │      10-Java语言的历史及技术体系平台.avi
+│  │      11-Java语言的特点.avi
+│  │      12-JVM与垃圾收集机制.avi
+│  │      13-JDK、JRE、JVM的关系.avi
+│  │      14-JDK与JRE的安装.avi
+│  │      15-环境变量的配置.avi
+│  │      16-配置环境变量中几个问题的解决.avi
+│  │      17-第一个Java程序：HelloWorld.avi
+│  │      18-几个常见的bug的解决.avi
+│  │      19-EditPlus的安装和配置.avi
+│  │      20-单行注释与多行注释.avi
+│  │      21-文档注释的使用.avi
+│  │      22-多行注释使用的一个注意点.avi
+│  │      23-API文档的说明.avi
+│  │      24-第一个Java程序的总结.avi
+│  │      25-Java开发工具的说明.avi
+│  │   
+│  ├─day02_Java基本语法
+│  │      01-每天一考.avi
+│  │      02-复习1.avi
+│  │      03-复习2.avi
+│  │      04-关键字和保留字的说明.avi
+│  │      05-标识符及命名规则.avi
+│  │      06-标识符的命名规范.avi
+│  │      07-变量的定义.avi
+│  │      08-定义变量的注意点.avi
+│  │      09-变量的分类.avi
+│  │      10-整型变量的使用说明.avi
+│  │      11-浮点型变量的使用说明.avi
+│  │      12-char型变量的使用说明.avi
+│  │      13-乱码的情况和字符集的说明.avi
+│  │      14-boolean型变量的使用.avi
+│  │      15-自动类型提升运算1.avi
+│  │      16-自动类型提升运算2.avi
+│  │      17-强制类型转换运算.avi
+│  │      18-变量运算规则的两个特殊情况.avi
+│  │      19-String类型变量的使用.avi
+│  │      20-两个关于String的练习题.avi
+│  │      21-String使用的强化说明.avi
+│  │      22-不同进制的表示方式.avi
+│  │      23-二进制转换为十进制的说明.avi
+│  │      24-二进制转换为十进制的练习.avi
+│  │      25-十进制转二进制的操作.avi
+│  │      26-二进制与八进制十六进制间的转换.avi
+│  │      
+│  ├─day03_Java基本语法
+│  │      01-每天一考.avi
+│  │      02-复习1.avi
+│  │      03-复习2：变量的定义.avi
+│  │      04-复习3：变量的运算规则.avi
+│  │      05-算术运算符的使用1.avi
+│  │      06-算术运算符的使用2.avi
+│  │      07-算术运算符的练习.avi
+│  │      08-关于敲代码和练指法.avi
+│  │      09-赋值运算符的使用.avi
+│  │      10-赋值运算符的课后练习.avi
+│  │      11-比较运算符的使用.avi
+│  │      12-逻辑运算符的使用说明.avi
+│  │      13-逻辑运算符的使用测试.avi
+│  │      14-逻辑运算符的课后练习.avi
+│  │      15-左移右移位运算符的使用.avi
+│  │      16-其它位运算符的使用.avi
+│  │      17-位运算符的练习.avi
+│  │      18-三元运算符的使用.avi
+│  │      19-三元运算符与if-else的转换.avi
+│  │      20-运算符的优先级.avi
+│  │      21-关于流程控制的说明.avi
+│  │      22-if-else结构的基本使用.avi
+│  │     
+│  ├─day04_Java基本语法
+│  │      01-每天一考.avi
+│  │      02-复习1：算术与比较运算符.avi
+│  │      03-复习2：比较与逻辑运算符.avi
+│  │      04-复习3：位运算符与三元运算符.avi
+│  │      05-使用Scannner从键盘获取int型数据.avi
+│  │      06-使用Scannner从键盘获取多种类型数据.avi
+│  │      07-if-else的例题1.avi
+│  │      08-if-else的例题2.avi
+│  │      09-if-else课后练习1：笔试题.avi
+│  │      10-if-else课后练习2：狗的年龄.avi
+│  │      11-if-else课后练习3：彩票问题.avi
+│  │      12-if-else课后练习4：高富帅.avi
+│  │      13-switch-case结构的基本使用.avi
+│  │      14-switch-case结构的使用说明.avi
+│  │      15-switch-case的例题1.avi
+│  │      16-switch-case的例题2.avi
+│  │      17-switch-case课后练习：日期累积.avi
+│  │      18-switch-case与if-else的转换说明.avi
+│  │      19-循环结构及for循环的理解.avi
+│  │      20-for循环结构的使用.avi
+│  │      21-for循环的例题.avi
+│  │      
+│  ├─day05_Java基本语法与项目一
+│  │      01-每天一考.avi
+│  │      02-复习.avi
+│  │      03-for循环的例题.avi
+│  │      04-for循环课后练习.avi
+│  │      05-while循环的基本使用.avi
+│  │      06-do-while循环的基本使用.avi
+│  │      07-while(true)结构的使用.avi
+│  │      08-嵌套循环的使用1.avi
+│  │      09-嵌套循环的使用2.avi
+│  │      10-嵌套循环练习：九九乘法表.avi
+│  │      11-质数输出的实现方式一.avi
+│  │      12-质数输出的算法优化一.avi
+│  │      13-质数输出的算法优化二.avi
+│  │      14-break和continue的基本使用.avi
+│  │      15-带标签的break和continue的使用.avi
+│  │      16-质数输出的实现方式二.avi
+│  │      17-项目一的演示.avi
+│  │      18-项目一中Utility工具类的说明.avi
+│  │      19-项目一整体框架的搭建.avi
+│  │      20-项目一退出功能的实现.avi
+│  │      21-项目一收支明细功能的实现.avi
+│  │      22-项目二登记收入功能的实现.avi
+│  │      23-项目一登记支出功能的实现.avi
+│  │     
+│  ├─day06_Eclipse的使用与数组
+│  │      01-每天一考.avi
+│  │      02-复习.avi
+│  │      03-Eclipse首次启动的设置.avi
+│  │      04-HelloWorld程序的编写和执行.avi
+│  │      05-Eclipse使用的常见问题1.avi
+│  │      06-Eclipse使用的常见问题2.avi
+│  │      07-数组的概述.avi
+│  │      08-一维数组的初始化.avi
+│  │      09-数组元素的调用.avi
+│  │      10-数组的长度与遍历.avi
+│  │      11-数组元素的默认初始化值.avi
+│  │      12-内存结构的简单说明.avi
+│  │      13-一维数组的内存解析.avi
+│  │      14-一维数组的课后练习1.avi
+│  │      15-一维数组的课后练习2.avi
+│  │      16-二维数组的理解和初始化.avi
+│  │      17-二维数组元素的调用.avi
+│  │      18-二维数组的长度和遍历.avi
+│  │      19-二维数组元素默认初始化值.avi
+│  │      20-二维数组的内存解析.avi
+│  │      
+│  ├─day07_数组
+│  │      01-每天一考.avi
+│  │      02-复习：Eclipse的使用.avi
+│  │      03-复习：数组的概述_数据结构概述.avi
+│  │      04-复习：一维数组与二维数组.avi
+│  │      05-二维数组练习：基本操作.avi
+│  │      06-二维数组练习：杨辉三角.avi
+│  │      07-算法：数组元素的赋值.avi
+│  │      08-算法：数值型数组元素的操作.avi
+│  │      09-课后练习：数组赋值.avi
+│  │      10-算法：数组的复制.avi
+│  │      11-算法：数组元素的反转.avi
+│  │      12-算法：线性查找.avi
+│  │      13-算法：二分法查找.avi
+│  │      14-算法和排序算法的概述.avi
+│  │      15-算法：冒泡排序的实现.avi
+│  │      16-算法：快速排序的说明.avi
+│  │      17-排序算法的横向对比.avi
+│  │      18-Arrays工具类的使用.avi
+│  │      19-数组中的常见异常.avi
+│  │      20-数组的总结.avi
+│  │      
+│  ├─day08_面向对象(上)
+│  │      01-每天一考.avi
+│  │      02-复习.avi
+│  │      03-面向对象编程学习的主线.avi
+│  │      04-理解面向过程与面向对象.avi
+│  │      05-两个要素：类和对象.avi
+│  │      06-类的结构：属性和方法.avi
+│  │      07-类和对象的创建.avi
+│  │      08-对类和对象创建的再理解.avi
+│  │      09-体会类的多个对象的关系.avi
+│  │      10-对象的内存解析.avi
+│  │      11-属性与局部变量的对比1.avi
+│  │      12-属性与局部变量的对比2.avi
+│  │      13-方法举例与声明的格式.avi
+│  │      14-方法声明的说明1.avi
+│  │      15-方法声明的说明2.avi
+│  │      16-return关键字的使用.avi
+│  │      17-方法使用中的注意点.avi
+│  │      18-课后练习1：类的设计.avi
+│  │      19-课后练习2：类的设计.avi
+│  │      20-课后练习3：方法声明.avi
+│  │      21-课后练习4：对象数组.avi
+│  │      22-课后练习4：对象数组的改进.avi
+│  │   
+│  ├─day09_面向对象(上)
+│  │      01-每天一考1.avi
+│  │      02-每天一考2.avi
+│  │      03-复习：类与对象.avi
+│  │      04-复习：JVM内存结构与对象内存解析.avi
+│  │      05-复习：属性与方法.avi
+│  │      06-理解“万事万物皆对象”.avi
+│  │      07-对象数组的内存解析.avi
+│  │      08-匿名对象的使用.avi
+│  │      09-自定义数组的工具类.avi
+│  │      10-理解方法的重载.avi
+│  │      11-方法重载的细节说明.avi
+│  │      12-重载的举例与判断练习.avi
+│  │      13-重载的练习：编码实践.avi
+│  │      14-新特性：可变个数形参的方法.avi
+│  │      15-理解变量的赋值.avi
+│  │      16-值传递机制：针对基本数据类型.avi
+│  │      17-值传递机制：针对引用数据类型.avi
+│  │      18-值传递机制的练习.avi
+│  │      19-探讨几道网红问题.avi
+│  │      20-参数传递的编码练习.avi
+│  │      21-递归方法的使用.avi
+│  │      22-递归方法的举例.avi
+│  │      
+│  ├─day10_面向对象(上)
+│  │      01-每天一考.avi
+│  │      02-复习：重载与可变形参.avi
+│  │      03-复习：值传递与递归方法.avi
+│  │      04-封装性的引入.avi
+│  │      05-封装性的体现.avi
+│  │      06-四种权限修饰的理解.avi
+│  │      07-四种权限修饰的测试.avi
+│  │      08-封装性练习：基本使用.avi
+│  │      09-构造器的基本理解.avi
+│  │      10-构造器使用的细节说明.avi
+│  │      11-构造器练习：基本使用.avi
+│  │      12-构造器练习：三角形.avi
+│  │      13-总结属性赋值的过程.avi
+│  │      14-JavaBean的使用.avi
+│  │      15-介绍UML类图.avi
+│  │      16-this调用属性和方法.avi
+│  │      17-this调用构造器.avi
+│  │      18-this练习：Boy和Girl.avi
+│  │      19-综合练习1：Account和Customer.avi
+│  │      20-综合练习2：对象数组.avi
+│  │      21-package关键字的使用.avi
+│  │      22-MVC设计模式的理解.avi
+│  │      23-import关键字的使用.avi
+│  │   
+│  ├─day11_项目二与面向对象(中)
+│  │      01-每天一考.avi
+│  │      02-复习：封装性与构造器.avi
+│  │      03-复习：this_package_import.avi
+│  │      04-Eclipse常用快捷键1.avi
+│  │      05-Eclipse常用快捷键2.avi
+│  │      06-Eclipse常用快捷键3.avi
+│  │      07-回顾Bank练习的难点.avi
+│  │      08-项目二功能演示.avi
+│  │      09-项目二软件结构设计.avi
+│  │      10-项目二CMUtility工具类的功能介绍.avi
+│  │      11-项目二：Customer类的设计.avi
+│  │      12-项目二：CustomerList类的设计.avi
+│  │      13-项目二：CustomerView的整体框架的搭建.avi
+│  │      14-项目二：CustomerView退出功能的实现.avi
+│  │      15-项目二：CustomerView客户列表功能的实现.avi
+│  │      16-项目二：CustomerView添加客户功能的实现.avi
+│  │      17-项目二：CustomerView修改客户功能的实现.avi
+│  │      18-项目二：CustomerView删除客户功能的实现.avi
+│  │      19-项目二：总结.avi
+│  │      20-继承性的理解.avi
+│  │      21-继承性的使用.avi
+│  │      22-继承性的再说明.avi
+│  │      23-Object类的理解.avi
+│  │     
+│  ├─day12_面向对象(中)
+│  │      01-每天一考.avi
+│  │      02-复习：项目二.avi
+│  │      03-复习：继承性.avi
+│  │      04-继承性练习1：基本操作.avi
+│  │      05-继承性练习2：基本操作.avi
+│  │      06-Eclipse Debug的使用.avi
+│  │      07-项目二中使用Debug调试.avi
+│  │      08-解决Debug中step into功能失灵问题.avi
+│  │      09-方法重写的理解.avi
+│  │      10-方法重写的细节.avi
+│  │      11-方法重写的练习.avi
+│  │      12-测试4种不同的权限修饰.avi
+│  │      13-super调用属性和方法.avi
+│  │      14-super调用构造器.avi
+│  │      15-子类对象实例化的全过程.avi
+│  │      16-继承和super课后练习.avi
+│  │      17-多态性的使用.avi
+│  │      18-多态性使用举例.avi
+│  │      19-多态性不适用于属性.avi
+│  │      20-虚拟方法调用的再理解.aviL
+│  │   
+│  ├─day13_面向对象(中)
+│  │      01-每天一考.avi
+│  │      02-复习：重写与super.avi
+│  │      03-复习：子类对象实例化过程及多态性.avi
+│  │      04-向下转型的使用.avi
+│  │      05-instanceof关键字的使用.avi
+│  │      06-向下转型的几个常见问题.avi
+│  │      07-多态练习：调用方法和属性.avi
+│  │      08-多态性练习：基本操作.avi
+│  │      09-多态性练习：几何图形.avi
+│  │      10-多态性练习：重写方法.avi
+│  │      11-Object类结构的剖析.avi
+│  │      12-==运算符的回顾.avi
+│  │      13-equals()的使用.avi
+│  │      14-重写equals().avi
+│  │      15-总结==与equals().avi
+│  │      16-equals()练习1：代码实现.avi
+│  │      17-equals()练习2：代码实现.avi
+│  │      18-toString()的使用.avi
+│  │      19-Object类综合练习.avi
+│  │      20-单元测试方法的使用.avi
+│  │      21-包装类的理解.avi
+│  │      22-基本数据类型转换为包装类.avi
+│  │      23-包装类转换为基本数据类型.avi
+│  │      24-新特性：自动装箱与自动拆箱.avi
+│  │      25-基本数据类型包装类与String的相互转换.avi
+│  │      26-包装类常见面试题.avi
+│  │      27-包装类的课后练习.avi
+│  │     
+│  ├─day14_面向对象(下)
+│  │      01-每天一考.avi
+│  │      02-复习：多态性.avi
+│  │      03-复习：Object类及内部方法.avi
+│  │      04-复习：单元测试与包装类.avi
+│  │      05-static关键字的引入.avi
+│  │      06-静态变量与实例变量的对比.avi
+│  │      07-static修饰属性的其它说明.avi
+│  │      08-类变量和实例变量的内存解析.avi
+│  │      09-static修饰方法.avi
+│  │      10-属性或方法是否应该static的经验之谈.avi
+│  │      11-自定义ArrayUtil工具类的优化.avi
+│  │      12-static的应用举例.avi
+│  │      13-static课后练习：账户信息.avi
+│  │      14-设计模式与单例设计模式.avi
+│  │      15-单例的饿汉式实现.avi
+│  │      16-单例的懒汉式实现.avi
+│  │      17-饿汉式和懒汉式的对比.avi
+│  │      18-单例模式的使用场景.avi
+│  │      19-理解main()方法的语法.avi
+│  │      20-类中代码块结构的使用.avi
+│  │      21-开发中代码块的使用举例.avi
+│  │      22-代码块的课后练习.avi
+│  │      23-属性赋值的先后顺序(完结篇).avi
+│  │      24-final修饰类和方法.avi
+│  │      25-final修饰属性.avi
+│  │      26-final修饰局部变量.avi
+│  │      27-final课后练习.avi
+│  │     
+│  ├─day15_面向对象(下)
+│  │      01-每天一考.avi
+│  │      02-复习：static.avi
+│  │      03-复习：单例模式.avi
+│  │      04-复习：main().avi
+│  │      05-复习：代码块和final.avi
+│  │      06-抽象类与抽象方法的使用.avi
+│  │      07-抽象的应用场景举例.avi
+│  │      08-abstract使用中的注意点.avi
+│  │      09-抽象性的练习：基本操作.avi
+│  │      10-创建抽象类的匿名子类对象.avi
+│  │      11-模板方法的设计模式及应用场景.avi
+│  │      12-抽象类的课后练习.avi
+│  │      13-接口的理解.avi
+│  │      14-接口的定义与使用.avi
+│  │      15-接口的多实现与接口的继承性.avi
+│  │      16-实例演示接口是一种规范.avi
+│  │      17-创建接口匿名实现类的对象.avi
+│  │      18-接口应用：代理模式.avi
+│  │      19-接口应用：工厂模式.avi
+│  │      20-接口课后两道笔试题.avi
+│  │      21-接口练习：比较对象大小.avi
+│  │      22-Java8中接口的新特性.avi
+│  │      23-Java8接口新特性的应用.avi
+│  │      24-内部类的分类.avi
+│  │      25-成员内部类的特点.avi
+│  │      26-如何实例化成员内部类.avi
+│  │      27-成员内部类中调用外部类的结构.avi
+│  │      28-局部内部类的使用.avi
+│  │      
+│  ├─day16_异常处理
+│  │      01-每天一考.avi
+│  │      02-复习：抽象类.avi
+│  │      03-复习：接口.avi
+│  │      04-复习：内部类.avi
+│  │      05-局部内部类使用的一个注意点.avi
+│  │      06-异常概述.avi
+│  │      07-异常的分类.avi
+│  │      08-常见异常的举例.avi
+│  │      09-异常处理方式概述.avi
+│  │      10-处理异常：try-catch方式.avi
+│  │      11-finally的使用.avi
+│  │      12-编译时异常和运行时异常的不同处理.avi
+│  │      13-处理异常：throws方式.avi
+│  │      14-重写方法异常抛出的规则.avi
+│  │      15-开发中如何选择哪种方式处理异常.avi
+│  │      16-手动抛出异常对象.avi
+│  │      17-如何自定义异常.avi
+│  │      18-异常处理练习：基本使用.avi
+│  │      19-异常处理练习：综合练习.avi
+│  │      20-异常处理章节总结.avi
+│  │      
+│  ├─day17_项目三
+│  │      01-Java语言基础部分小结.avi
+│  │      02-项目三介绍与演示.avi
+│  │      03-项目三软件架构.avi
+│  │      04-项目三TSUtility和Data类的说明.avi
+│  │      05-项目三中Equipment及其实现类的完成.avi
+│  │      06-项目三中Employee及其子类的实现.avi
+│  │      07-项目三NameListService属性和构造器的实现.avi
+│  │      08-项目三NameListService中两个方法及TeamException的完成.avi
+│  │      09-项目三测试NameListService的getAllEmployees().avi
+│  │      10-项目三测试NameListService的getEmployee().avi
+│  │      11-项目三TeamService中属性和getTeam()的完成.avi
+│  │      12-项目三TeamService中addMember()的完成.avi
+│  │      13-项目三TeamService中三个小问题的理解.avi
+│  │      14-项目三TeamService中removeMember()的实现.avi
+│  │      15-项目三TeamView整体框架的搭建.avi
+│  │      16-项目三TeamView退出功能的实现.avi
+│  │      17-项目三TeamView中显示所有员工的功能.avi
+│  │      18-项目三TeamView中显示开发团队成员.avi
+│  │      19-项目三TeamView中添加开发团队成员.avi
+│  │      20-项目三TeamView中删除开发团队成员.avi
+│  │     
+│  ├─day18_IDEA的使用与多线程
+│  │      01-Java语言高级的概述.avi
+│  │      02-IDEA的卸载.avi
+│  │      03-IDEA的介绍.avi
+│  │      04-IDEA的安装.avi
+│  │      05-启动IDEA并完成HelloWorld.avi
+│  │      06-Module的理解和创建.avi
+│  │      07-IDEA的常用设置.avi
+│  │      08-快捷键的设置.avi
+│  │      09-模板的使用和设置.avi
+│  │      10-章节概述_程序进程线程的概念.avi
+│  │      11-单核与多核CPU的任务执行_并行与并发.avi
+│  │      12-多线程的优点等.avi
+│  │      13-创建多线程方式一：继承Thread类.avi
+│  │      14-创建过程中两个问题的说明.avi
+│  │      15-继承方式的课后练习.avi
+│  │      16-线程的常用方法.avi
+│  │      17-线程优先级的设置.avi
+│  │      18-例题：继承Thread方式，多窗口卖票.avi
+│  │      19-创建多线程的方式二：实现Runnable接口.avi
+│  │      20-例题：实现Runnable方式，多窗口卖票.avi
+│  │      21-两种创建方式的对比.avi
+│  │      
+│  ├─day19_多线程
+│  │      01-每天一考.avi
+│  │      02-复习：IDEA使用与多线程基本概念.avi
+│  │      03-复习：线程的创建与常用方法.avi
+│  │      04-线程的生命周期.avi
+│  │      05-理解线程的安全问题.avi
+│  │      06-线程安全问题的举例和解决措施.avi
+│  │      07-同步代码块处理实现Runnable的线程安全问题.avi
+│  │      08-同步代码块处理继承Thread类的线程安全问题.avi
+│  │      09-同步方法处理实现Runnable的线程安全问题.avi
+│  │      10-同步方法处理继承Thread类的线程安全问题.avi
+│  │      11-线程安全的单例模式之懒汉式.avi
+│  │      12-死锁的问题.avi
+│  │      13-Lock锁方式解决线程安全问题.avi
+│  │      14-同步机制的课后练习.avi
+│  │      15-线程通信的例题.avi
+│  │      16-sleep()和wait()的异同.avi
+│  │      17-线程通信：生产者消费者例题.avi
+│  │      18-创建多线程的方式三：实现Callable接口.avi
+│  │      19-使用线程池的好处.avi
+│  │      20-创建多线程的方式四：使用线程池.avi
+│  │      
+│  ├─day20_常用类
+│  │      01-每天一考.avi
+│  │      02-复习：生命周期与同步机制.avi
+│  │      03-复习：线程通信和新的线程创建方式等.avi
+│  │      04-Java常用类的概述.avi
+│  │      05-String类的概述.avi
+│  │      06-理解String的不可变性.avi
+│  │      07-String不同实例化方式的对比.avi
+│  │      08-String不同拼接操作的对比.avi
+│  │      09-String的一道面试题.avi
+│  │      10-JVM中涉及字符串的内存结构.avi
+│  │      11-String的常用方法1.avi
+│  │      12-String的常用方法2.avi
+│  │      13-String的常用方法3.avi
+│  │      14-回顾String与基本数据类型包装类的转换.avi
+│  │      15-String与char[]之间的转换.avi
+│  │      16-String与byte[]之间的转换.avi
+│  │      17-解决一个拼接问题.avi
+│  │      18-面试中String算法考查的说明.avi
+│  │      19-StringBuffer和StringBuilder的介绍.avi
+│  │      20-StringBuffer的源码分析.avi
+│  │      21-StringBuffer中的常用方法.avi
+│  │      22-String、StringBuffer、StringBuilder效率对比.avi
+│  │      23-System类中获取时间戳的方法.avi
+│  │      24-Java中两个Date类的使用.avi
+│  │      
+│  ├─day21_常用类
+│  │      01-每天一考.avi
+│  │      02-复习：String类.avi
+│  │      03-复习：StringBuffer、StringBuilder.avi
+│  │      04-复习：日期时间的API.avi
+│  │      05-String课后算法题目1.avi
+│  │      06-String课后算法题目2.avi
+│  │      07-String课后算法题目3.avi
+│  │      08-String课后算法题目3拓展.avi
+│  │      09-IDEA中Debug调试.avi
+│  │      10-SimpleDateFormat的使用.avi
+│  │      11-SimpleDateFormat的课后练习1.avi
+│  │      12-SimpleDateFormat的课后练习2.avi
+│  │      13-Calendar日历类的使用.avi
+│  │      14-JDK8中日期时间API的介绍.avi
+│  │      15-LocalDate、LocalTime、LocalDateTime的使用.avi
+│  │      16-Instant类的使用.avi
+│  │      17-DateTimeFormatter的使用.avi
+│  │      18-其它日期时间相关API的使用.avi
+│  │      19-IDEA的使用：导入Module.avi
+│  │      20-Java比较器概述.avi
+│  │      21-Comparable自然排序举例.avi
+│  │      22-自定义类实现Comparable自然排序.avi
+│  │      23-使用Comparator实现定制排序.avi
+│  │      24-System、Math、BigInteger、BigDecimal的使用.avi
+│  │      
+│  ├─day22_枚举类与注解
+│  │      01-每天一考.avi
+│  │      02-复习：日期时间API.avi
+│  │      03-复习：Java比较器等.avi
+│  │      04-枚举类的理解.avi
+│  │      05-自定义枚举类.avi
+│  │      06-使用enum关键字定义枚举类.avi
+│  │      07-Enum类中的常用方法.avi
+│  │      08-使用enum关键字定义的枚举类实现接口.avi
+│  │      09-IDEA中导入Eclipse项目三修改Status为enum的定义.avi
+│  │      10-注解的理解.avi
+│  │      11-Annotation的使用示例.avi
+│  │      12-JDK内置的三个基本注解.avi
+│  │      13-如何自定义注解.avi
+│  │      14-jdk中4个基本的元注解的使用1.avi
+│  │      15-jdk中4个基本的元注解的使用2.avi
+│  │      16-jdk8新特性：可重复注解.avi
+│  │      17-jdk8新特性：类型注解.avi
+│  │      18-可重复注解中元注解不一致的问题解决.avi
+│  │      19-集合框架与数组的对比及概述.avi
+│  │      20-集合框架涉及到的API.avi
+│  │      21-Collection接口中的常用方法1.avi
+│  │      
+│  ├─day23_集合
+│  │      01-每天一考.avi
+│  │      02-复习：枚举类.avi
+│  │      03-复习：注解.avi
+│  │      04-复习：Collection.avi
+│  │      05-Collection接口的常用方法2.avi
+│  │      06-Collection接口的常用方法3.avi
+│  │      07-Collection接口的常用方法4.avi
+│  │      08-使用Iterator遍历Collection.avi
+│  │      09-迭代器Iterator的执行原理.avi
+│  │      10-Iterator遍历集合的两种错误写法.avi
+│  │      11-Iterator迭代器remove()的使用.avi
+│  │      12-新特性foreach循环遍历集合或数组.avi
+│  │      13-List接口常用实现类的对比.avi
+│  │      14-ArrayList的源码分析.avi
+│  │      15-LinkedList的源码分析.avi
+│  │      16-Vector的源码分析.avi
+│  │      17-List接口中的常用方法测试.avi
+│  │      18-List遍历及方法总结.avi
+│  │      19-List的一个面试小题.avi
+│  │      20-Set接口实现类的对比.avi
+│  │      21-Set的无序性与不可重复性的理解.avi
+│  │      22-HashSet中元素的添加过程.avi
+│  │      23-关于hashCode()和equals()的重写.avi
+│  │      24-LinkedHashSet的使用.avi
+│  │      25-TreeSet的自然排序.avi
+│  │      26-TreeSet的定制排序.avi
+│  │      
+│  ├─day24_集合
+│  │      01-每天一考.avi
+│  │      02-复习：Collection及Collection的遍历.avi
+│  │      03-复习：List接口.avi
+│  │      04-复习：Set接口.avi
+│  │      05-TreeSet的课后练习.avi
+│  │      06-Set课后两道面试题.avi
+│  │      07-Map接口及其多个实现类的对比.avi
+│  │      08-Map中存储的key-value的特点.avi
+│  │      09-HashMap在JDK7中的底层实现原理.avi
+│  │      10-HashMap在JDK8中的底层实现原理.avi
+│  │      11-HashMap在JDK7中的源码分析.avi
+│  │      12-HashMap在JDK8中的源码分析.avi
+│  │      13-LinkedHashMap的底层实现.avi
+│  │      14-Map中的常用方法1.avi
+│  │      15-Map中的常用方法2.avi
+│  │      16-TreeMap两种添加方式的使用.avi
+│  │      17-Properties处理属性文件.avi
+│  │      18-Collections工具类常用方法的测试.avi
+│  │      19-集合课后几道练习题说明.avi
+│  │      20-Java版数据结构简述.avi
+│  │      
+│  ├─day25_泛型与File
+│  │      01-每天一考.avi
+│  │      02-复习1：Map.avi
+│  │      03-复习2：Collections和数据结构.avi
+│  │      04-为什么要使用泛型.avi
+│  │      05-集合中使用泛型举例.avi
+│  │      06-集合中使用泛型的练习.avi
+│  │      07-自定义泛型类举例.avi
+│  │      08-自定义泛型类泛型接口的注意点.avi
+│  │      09-自定义泛型方法举例.avi
+│  │      10-举例泛型类和泛型方法的使用情境.avi
+│  │      11-泛型在继承方面的体现.avi
+│  │      12-通配符的使用.avi
+│  │      13-使用通配符后数据的读取和写入要求.avi
+│  │      14-有限制条件的通配符的使用.avi
+│  │      15-自定义泛型类练习.avi
+│  │      16-File类的实例化.avi
+│  │      17-File类的常用方法1.avi
+│  │      18-File类的常用方法2.avi
+│  │      19-File类的课后练习.avi
+│  │     
+│  ├─day26_IO流
+│  │      01-每天一考.avi
+│  │      02-复习：集合中使用泛型.avi
+│  │      03-复习：自定义泛型结构与通配符.avi
+│  │      04-复习：File类的使用.avi
+│  │      05-IO流概述与流的分类.avi
+│  │      06-IO流的体系结构.avi
+│  │      07-FileReader读入数据的基本操作.avi
+│  │      08-FileReader中使用read(char[] cbuf)读入数据.avi
+│  │      09-FileWriter写出数据的操作.avi( m8 h) V6 f+ v5 e
+│  │      10-使用FileReader和FileWriter实现文本文件的复制.avi
+│  │      11-字符流不能处理图片文件的测试.avi
+│  │      12-使用FileInputStream不能读取文本文件的测试.avi
+│  │      13-使用FileInputStream和FileOutputStream读写非文本文件.avi
+│  │      14-使用FileInputStream和FileOutputStream复制文件的方法测试.avi
+│  │      15-缓冲流(字节型)实现非文本文件的复制.avi
+│  │      16-缓冲流与节点流读写速度对比.avi
+│  │      17-缓冲流(字符型)实现文本文件的复制.avi
+│  │      18-缓冲流课后练习1.avi
+│  │      19-缓冲流课后练习2.avi
+│  │      20-转换流概述与InputStreamReader的使用.avi
+│  │      21-转换流实现文件的读入和写出.avi
+│  │      22-多种字符编码集的说明.avi
+│  │      23-标准的输入、输出流.avi
+│  │      24-打印流的使用.avi
+│  │      25-数据流的使用.avi
+│  │      
+│  ├─day27_IO流与网络编程
+│  │      01-每天一考.avi
+│  │      02-复习：IO流概述.avi
+│  │      03-复习：节点流.avi
+│  │      04-复习：缓冲流与转换流.avi
+│  │      05-复习：其它几个处理流.avi
+│  │      06-对象序列化机制的理解.avi
+│  │      07-对象流序列化与反序列化字符串操作.avi
+│  │      08-自定义类实现序列化与反序列化操作.avi
+│  │      09-serialVersionUID的理解.avi
+│  │      10-自定义类可序列化的其它要求.avi
+│  │      11-RandomAccessFile实现数据的读写操作.avi
+│  │      12-RandomAccessFile实现数据的插入.avi
+│  │      13-NIO介绍及NIO2中Path、Paths、Files的介绍.avi
+│  │      14-使用第三方jar包实现数据读写.avi
+│  │      15-网络编程概述.avi
+│  │      16-IP的理解与InetAddress类的实例化.avi
+│  │      17-端口号的理解.avi
+│  │      18-TCP和UDP网络通信协议的对比.avi
+│  │      19-TCP网络编程例题1.avi
+│  │      20-TCP网络编程例题2.avi
+│  │      21-TCP网络编程例题3.avi
+│  │      22-浏览器访问Tomcat服务器资源操作.avi
+│  │      23-UDP网络编程举例.avi
+│  │      24-URL类的理解与实例化.avi
+│  │      25-URL网络编程实现Tomcat服务端数据下载.avi
+│  │     
+│  ├─day28_反射
+│  │      01-每天一考.avi
+│  │      02-复习：对象序列化机制.avi
+│  │      03-复习：其他IO流内容.avi
+│  │      04-复习：网络通信要素.avi
+│  │      05-复习：TCP、UDP、URL网络编程.avi
+│  │      06-反射的概述.avi
+│  │      07-反射之前，类的实例化等操作.avi
+│  │      08-使用反射，实现同上的操作.avi
+│  │      09-反射的强大：调用类的私有结构.avi
+│  │      10-如何看待反射和封装性两个技术.avi
+│  │      11-Class类的理解.avi
+│  │      12-获取Class实例的4种方式.avi
+│  │      13-Class实例对应的结构的说明.avi
+│  │      14-理解类的加载过程.avi
+│  │      15-ClassLoader的理解.avi
+│  │      16-使用ClassLoader加载配置文件.avi
+│  │      17-通过反射，创建运行时类的对象.avi
+│  │      18-举例体会反射的动态性.avi
+│  │      19-提供结构丰富Person类.avi
+│  │      20-获取运行时类的属性结构及其内部结构.avi
+│  │      21-获取运行时类的方法结构.avi
+│  │      22-获取运行时类的方法的内部结构.avi
+│  │      23-获取运行时类的构造器结构.avi
+│  │      24-获取运行时类的父类及父类的泛型.avi
+│  │      25-获取运行时类的接口、所在包、注解等.avi
+│  │      26-调用运行时类中的指定属性.avi
+│  │      27-调用运行时类中的指定方法.avi
+│  │      28-调用运行时类中的指定构造器.avi
+│  │     
+│  ├─day29_动态代理与Java8新特性
+│  │      01-每天一考.avi
+│  │      02-复习：反射与Class.avi
+│  │      03-复习：ClassLoader与反射的应用.avi
+│  │      04-代理模式与动态代理.avi
+│  │      05-静态代理举例.avi
+│  │      06-动态代理举例.avi
+│  │      07-AOP与动态代理的举例.avi
+│  │      08-Java8新特性内容概述.avi
+│  │      09-Java8新特性的好处.avi
+│  │      10-Lambda表达式使用举例.avi
+│  │      11-Lambda表达式语法的使用1.avi
+│  │      12-Lambda表达式语法的使用2.avi
+│  │      13-函数式接口的介绍.avi
+│  │      14-Java内置的函数式接口介绍及使用举例.avi
+│  │      15-方法引用的使用情况1.avi
+│  │      16-方法引用的使用情况2.avi
+│  │      17-方法引用的使用情况3.avi
+│  │      18-构造器引用与数组引用的使用.avi
+│  │      19-Stream API的概述.avi
+│  │      20-Stream的实例化.avi
+│  │      21-Stream的中间操作：筛选与切片.avi
+│  │      22-Stream的中间操作：映射.avi
+│  │      23-Stream的中间操作：排序.avi
+│  │      24-Stream的终止操作：匹配与查找.avi
+│  │      25-Stream的终止操作：归约.avi
+│  │      26-Stream的终止操作：收集.avi
+│  │      27-Optional类的介绍.avi
+│  │      28-Optional类的使用举例.avi
+│  │      
+│  └─day30_java9&10&11新特性
+│          01-复习：动态代理.avi
+│          02-复习：Lambda表达式.avi
+│          03-复习：函数式接口.avi
+│          04-复习：方法引用与构造器引用.avi
+│          05-复习：Stream API.avi
+│          06-复习：Optional类的使用.avi
+│          07-jdk版本更新的说明.avi
+│          08-新版本jdk的下载与IDEA开发环境的设置.avi
+│          09-java9新特性：jdk目录结构的改变.avi
+│          10-java9新特性：模块化系统.avi
+│          11-java9新特性：Java的REPL工具：jshell.avi
+│          12-java9新特性：接口中声明私有方法.avi
+│          13-java9新特性：钻石操作符的语法升级.avi
+│          14-java9新特性：try结构的语法升级.avi
+│          15-java9新特性：String底层存储结构的变更.avi
+│          16-java9新特性：集合工厂方法创建只读集合.avi
+│          17-java9新特性：InputStream中的transferTo()方法.avi
+│          18-java9新特性：StreamAPI新增的4个方法.avi
+│          19-java9新特性：Optional的新方法stream().avi
+│          20-java9新特性：升级的Nashorn引擎.avi
+│          21-java10新特性的概述.avi
+│          22-java10新特性：局部变量类型推断.avi
+│          23-java10新特性：集合新增创建不可变集合的方法.avi
+│          24-java11新特性的概述.avi
+│          25-java11新特性：String新增的方法.avi
+│          26-java11新特性：Optional新增的方法.avi
+│          27-java11新特性：局部变量类型推断的升级.avi
+│          28-java11新特性：HttpClient.avi
+│          29-java11新特性：更简化的编译运行程序.avi
+│          30-java11新特性：其它新特性.avi
+│          31-jdk后续更新的展望.avi
+│         
+└─课件笔记源码资料
+        0_编程入门
+        1_课件
+        2_项目
+        3_软件
+        4_文档资料
+        5_代码
+        6_每日一考与复习
+        授课须知.pdf
+
+新特性, java, java9, 面向对象, Java8
+本主题由 admin 于 2019-6-18 13:58 置顶

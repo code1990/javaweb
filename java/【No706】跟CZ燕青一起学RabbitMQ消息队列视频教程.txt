@@ -1,0 +1,22 @@
+│  01.RabbitMQ研究-RabbitMQ介绍.avi
+│  02.RabbitMQ研究-工作原理.avi
+│  03.RabbitMQ研究-安装RabbitMQ.avi
+│  04.RabbitMQ研究-入门程序-生产者.avi
+│  05.RabbitMQ研究-入门程序-消费者.avi
+│  06.RabbitMQ研究-工作模式-工作队列模式.avi
+│  07.RabbitMQ研究-工作模式-发布订阅模式-生产者.avi
+│  08.RabbitMQ研究-工作模式-发布订阅模式-消费者.avi
+│  09.RabbitMQ研究-工作模式-路由工作模式介绍.avi
+│  10.RabbitMQ研究-工作模式-路由工作模式测试.avi
+│  11.RabbitMQ研究-工作模式-统配符工作模式测试.avi
+│  12.RabbitMQ研究-工作模式-header和RPC工作模式.avi
+│  13.RabbitMQ研究-与Springboot整合-搭建环境.avi
+│  14.RabbitMQ研究-与springboot整合-声明交换机和队列.avi
+│  15.RabbitMQ研究-与springboot整合-生产者代码.avi
+│  16.RabbitMQ研究-与springboot整合-消费者代码.avi
+│  
+└─代码讲义
+         RabbitMQ研究讲义.pdf
+        test-rabbitmq.zip
+
+本主题由 admin 于 2019-9-13 16:19 设置高亮

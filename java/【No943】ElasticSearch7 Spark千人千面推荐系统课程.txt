@@ -1,0 +1,17 @@
+chapter 1: 背景知识与架构设计方案
+chapter 2: 推荐系统设计方案与流程分析
+chapter 3: Springboot与MyBatis初步搭建系统
+chapter 4: 构建多商家电商平台的管理、用户商户功能
+chapter 5: 开发品类与商户门店管理功能
+chapter 6: 开发商户推荐与搜索功能
+chapter 7: Elasticsearch7构建搜索引擎
+chapter 8: ES7搜索功能查询优化
+chapter 9: 基于分词器构建增量与全量索引
+chapter 10: 商户搜索功能接口化改造
+chapter 11: 构建搜索词的相关性品类推荐功能
+chapter 12: 利用cannal中间件实现搜索词实时索引
+chapter 13: 结合算法构建推荐体系完成用户个性化推荐系统
+源码资料软件.rar
+
+推荐系统, Springboot
+本主题由 admin 于 2020-3-13 13:35 置顶

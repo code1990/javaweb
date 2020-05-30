@@ -1,0 +1,105 @@
+视频：
+      1-课程介绍.mp4
+      2-系统架构演变-上.avi
+      3-系统架构演变-中.avi
+      4-系统架构演变-下.avi
+      5-微服务架构的常见问题和解决思路.avi
+      6 微服务解决方案.avi
+      7-环境搭建--上.avi
+      8-环境搭建--下.avi
+      9-微服务调用--上.avi
+      10-微服务调用--下.avi
+      11-服务治理介绍.mp4
+      12-nacos实现服务调用.avi
+      13-负载均衡介绍.avi
+      14-自定义实现负载均衡.avi
+      15-基于ribbon实现负载均衡.avi
+      16-基于fegin实现服务调用.avi
+      17-高并发带来的问题.avi
+      18-服务雪崩效应.avi
+      19-服务容错思路和组件.avi
+      20-Sentinel使用入门.avi
+      21 Sentinel概念和功能.mp4
+      22-流控规则-基本配置.avi
+      23-流控规则-流控模式.avi
+      24-流控规则-流控效果.avi
+      25-降级规则.avi
+      26-热点规则.avi
+      27-授权规则.avi
+      28-系统规则.avi
+      29-自定义规则异常返回.avi
+      30-@SentinelResource注解讲解.avi
+      31-Sentinel规则持久化.avi
+      32-fegin整合sentinel实现容错.avi
+      33-实现FallbackFactory容错获取异常.avi
+      34-服务网关介绍.avi
+      35-SpringCloud Gateway介绍.avi
+      36-Gateway入门案例.avi
+      37-Gateway从nacos中获取服务信息.avi
+      38-Gateway概念及执行流程.avi
+      39 Gateway内置路由断言.avi
+      40 Gateway自定义路由断言.avi
+      41-Gateway过滤器简介.avi
+      42-Gateway局部过滤器.mp4
+      43-Gateway全局过滤器.avi
+      44-网关限流-路由维度.avi
+      45-网关限流-API分组维度.avi
+      46-链路追踪技术介绍.avi
+      47-Sleuth介绍.avi
+      48-Sleuth使用.avi
+      49-Zipkin介绍和使用.avi
+      50-zipkin数据持久化.avi
+      51-MQ介绍..avi
+      52-RocketMQ环境搭建.avi
+      53-RocketMQ核心架构和概念.avi
+      54-RocketMQ控制台安装.avi
+      55-java实现消息发送.avi
+      56-Java实现消息消费.avi
+      57-下单消息的发送和接收案例.avi
+      58-消息类型-普通消息.mp4
+      59-消息类型-顺序消息.avi
+      60-消息类型-事务消息.avi
+      61-消息消费要注意的细节.avi
+      62-短信服务介绍.avi
+      63-短信服务准备工作.avi
+      64-短信服务Api介绍.avi
+      65-发送下单成功短信案例.avi
+      66-服务配置中心介绍.avi
+      67-nacos config入门案例.avi
+      68-读取nacos配置(自动刷新).avi
+      69-配置共享.avi
+      70-nacos的几个概念.mp4
+      71-分布式事务理论.avi
+      72-分布式事务解决方案-全局事务.avi
+      73-分布式事务解决方案-消息中间件.avi
+      74-分布式事务解决方案-最大努力通知.avi
+      75-分布式事务解决方案-TCC.avi
+      76-Seata介绍.avi
+      77-Seata案例--完成下单和扣除库存代码.avi
+      78-Seata案例-异常模拟.avi
+      79-Seata案例-seata使用.avi
+      80-Seata案例-运行流程分析.avi
+      81-SpringCloud Alibaba dubbo使用.mp4
+
+工具
+     apache-jmeter-5.2.1.zip
+
+源码
+
+dubbo演示.zip
+    springcloud-alibaba.zip
+
+笔记
+    springcloud alibaba.pdf
+
+素材
+    code.png
+    Elasticsearch-6.8.4.zip
+    nacos-server-1.1.4.zip
+    rocketmq-all-4.4.0-bin-release.zip
+    rocketmq-externals-rocketmq-console-1.0.0.zip
+    seata-server-0.9.0.zip
+    sentinel-dashboard-1.7.0.jar
+    zipkin-server-2.12.9-exec.jar
+
+分布式事务, 微服务, RocketMQ, dubbo, 高并发

@@ -1,0 +1,104 @@
+01丨课程介绍.mp4
+02丨内容综述及学习建议.mp4
+03丨Elasticsearch简介及其发展历史.mp4
+04丨ElasticStack家族成员及其应用场景.mp4
+05丨Elasticsearch的安装与简单配置.mp4
+06丨kibana的安装与界面快速浏览.mp4
+07丨在Docker容器中运行ElasticsearchKibana和Cerebro.mp4
+08丨Logstash安装与导入数据.mp4
+09丨基本概念（1）：索引，文档和RESTAPI.mp4
+10丨基本概念：节点、集群、分片及副本.mp4
+11丨文档的基本CRUD与批量操作.mp4
+12丨倒排索引介绍.mp4
+13丨通过Analyzer进行分词.mp4
+14丨SearchAPI概览.mp4
+15丨URISearch详解.mp4
+16丨RequestBody与QueryDSL简介.mp4
+17丨QueryString&SimpleQueryString查询.mp4
+18丨DynamicMapping和常见字段类型.mp4
+19丨显式Mapping设置与常见参数介绍.mp4
+20丨多字段特性及Mapping中配置自定义Analyzer.mp4
+21丨IndexTemplate和DynamicTemplate.mp4
+22丨Elasticsearch聚合分析简介.mp4
+23丨第一部分总结.mp4
+24丨基于词项和基于全文的搜索.mp4
+25丨结构化搜索.mp4
+26丨搜索的相关性算分.mp4
+27丨Query&Filtering与多字符串多字段查询.mp4
+28丨单字符串多字段查询：DisMaxQuery.mp4
+29丨单字符串多字段查询：MultiMatch.mp4
+30丨多语言及中文分词与检索.mp4
+31丨Space Jam，一次全文搜索的实例.mp4
+32丨使用Search Template和Index Alias查询.mp4
+33丨综合排序：Function Score Query优化算分.mp4
+34丨Term&Phrase Suggester.mp4
+35丨自动补全与基于上下文的提示.mp4
+36丨配置跨集群搜索.mp4
+37丨集群分布式模型及选主与脑裂问题.mp4
+38丨分片与集群的故障转移.mp4
+39丨文档分布式存储.mp4
+40丨分片及其生命周期.mp4
+41丨剖析分布式查询及相关性算分.mp4
+42丨排序及DocValues&Fielddata.mp4
+43丨分页与遍历：From,Size,SearchAfter&ScrollAPI.mp4
+44丨处理并发读写操作.mp4
+45丨Bucket&Metric聚合分析及嵌套聚合.mp4
+46丨Pipeline聚合分析.mp4
+47丨作用范围与排序.mp4
+48丨聚合分析的原理及精准度问题.mp4
+49丨对象及Nested对象.mp4
+50丨文档的父子关系.mp4
+51丨UpdateByQuery&ReindexAPI.mp4
+52丨IngestPipeline&PainlessScript.mp4
+53丨Elasticsearch数据建模实例.mp4
+54丨Elasticsearch数据建模最佳实践.mp4
+55丨第二部分总结回顾.mp4
+56丨集群身份认证与用户鉴权.mp4
+57丨集群内部安全通信.avi
+58丨集群与外部间的安全通信.mp4
+59丨常见的集群部署方式.mp4
+60丨Hot & Warm架构与Shard Filtering.mp4
+61丨分片设计及管理.mp4
+62丨如何对集群进行容量规划.mp4
+63丨在私有云上管理Elasticsearch集群的一些方法.mp4
+64丨在公有云上管理与部署Elasticsearch集群.mp4
+65丨生产环境常用配置与上线清单.mp4
+66丨监控Elasticsearch集群.mp4
+67丨诊断集群的潜在问题.mp4
+68丨解决集群Yellow与Red的问题.mp4
+69丨提升集群写性能.mp4
+70丨提升进群读性能.mp4
+71丨集群压力测试.mp4
+72丨段合并优化及注意事项.mp4
+73丨缓存及使用Breaker限制内存使用.mp4
+74丨一些运维的相关建议.MP4
+75丨使用Shrink与Rollover API有效管理时间序列索引.MP4
+76丨索引全生命周期管理及工具介绍.mp4
+77丨Logstash入门及架构介绍.MP4
+78丨利用JDBC插件导入数据到Elasticsearch.MP4
+79丨Beats介绍.MP43 V: |) j# Q7 X* o
+80丨使用Index Pattern配置数据.MP4
+81丨使用Kibana Discover探索数据.MP4
+82丨基本可视化组件介绍.MP4
+83丨构建Dashboard.MP4
+84丨用Monitoring和Alerting监控Elasticsearch集群.mp4
+85丨用APM进行程序性能监控.MP4
+86丨用机器学习实现时序数据的异常检测（上）.MP4
+87丨用机器学习实现时序数据的异常检测（下）.MP4
+88丨用ELK进行日志管理.MP4
+89丨用Canvas做数据演示.MP4
+90丨项目需求分析及架构设计.mp4
+91丨将电影数据导入Elasticsearch.mp4
+92丨搭建你的电影搜索服务.mp4
+93丨需求分析及架构设计.mp4
+94丨数据Extract & Enrichment.mp4
+95丨构建Insights Dashboard.mp4
+96丨Elastic认证介绍.mp4
+97丨考点梳理.mp4
+98丨集群数据备份.mp4
+99丨基于java和Elasticseach构建应用.mp4
+100丨结束语.mp4
+课件.zip
+
+Elasticsearch, Logstash, 机器学习, ELK, 缓存
+本主题由 admin 于 2019-10-26 22:44 置顶

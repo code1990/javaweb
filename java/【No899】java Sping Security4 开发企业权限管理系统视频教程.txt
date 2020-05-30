@@ -1,0 +1,43 @@
+课时1 spring security入门篇课程简介 05:51
+课时2 Spring Security框架简介和功能说明 05:11
+课时3 Spring Security和Shiro的区别 04:58
+课时4 搭建Spring Security开发环境（一）07:42
+课时5 搭建Spring Security开发环境（二）07:12
+课时6 搭建Spring Security开发环境（三）08:11
+课时7 HttpBasic方式权限实现-准备访问资源 13:16
+课时8 HttpBasic方式权限实现-httpBasic配置 10:41
+课时9 FormLogin方式权限实现 10:41
+课时10 Spring Security执行原理分析 07:32
+课时11 Spring Security执行原理代码调试分析 08:51
+课时12 自定义登录页面和登录请求url 12:37
+课时13 配置方式提供用户认证信息 09:23
+课时14 自定义UserDetailService实现用户认证 11:39
+课时15 自定义登录成功与失败处理逻辑 13:08
+课时16 源码分析用户认证流程 12:39
+课时17 UserDetail接口方法的作用 04:59
+课时18 RBAC权限模型 02:47
+课时19 基于RBAC设计权限表结构 05:27
+课时20 搭建Spring Security+SSM开发环境 12:38
+课时21 MyBatis整合Spring 11:30
+课时22 编写实体类和Mapper接口 11:15
+课时23 实现用户查询和用户权限查询方法 14:44
+课时24 拦截请求资源及实现用户基本登录 15:07
+课时25 定义UserDetailService动态查询权用户和权限数据 13:00
+课时26 同步方式处理登录成功与登录失败 03:40
+课时27 异步方式处理登录成功与登录失败 16:48
+课时28 使用PasswordEncoder进入密码加密 10:51
+课时29 图形验证码-生成随机验证码和分析校验思路 10:24
+课时30 图形验证码-自定义过滤器实现验证码校验 19:56
+课时31 修复登录失败信息为null的错误 02:21
+课时32 实现rememberMe记住我功能 12:24
+课时33 Spring Security权限JSP标签使用 08:37
+课时34 获取登录的用户信息 07:40
+课时35 快速搭建Springboot开发环境 06:59
+课时36 准备项目的待拦截资源 06:12
+课时37 SpringBoot整合SpringSecurity实现httpBasic登录 10:03
+课时38 formLogin方式进行权限控制 09:17
+课时39 自定义登录页面[完] 04:15
+笔记源码.rar
+
+用户认证, SSM, MyBatis
+本主题由 admin 于 2020-1-28 09:33 置顶

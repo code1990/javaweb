@@ -1,0 +1,124 @@
+第一套：
+001_OOAD详解.rar
+002_UML简介.rar
+003_用例图.rar
+004_类图1.rar
+005_类图2.rar   
+006_对象图.rar
+007_组件图.rar
+008_部署图.rar
+009_时序图.rar
+010_协作图.rar
+011_类图3.rar
+012_状态图.rar
+013_包.rar
+014_使用UML分析十种设计模式.rar
+课件笔记及工具.rar
+
+第二套：
+├─阶段1 - UML基本概念
+│      1--目标及准备工作.mp4
+│      10--时序图2(SequenceDiagram).mp4
+│      11--时序图3(SequenceDiagram).mp4
+│      12--活动图1(ActivityDiagram).mp4
+│      13--活动图2(ActivityDiagram).mp4
+│      14--类图1(ClassDiagram).mp4
+│      15--类图2(ClassDiagram).mp4
+│      16--类图3(ClassDiagram).mp4
+│      17--类图4(ClassDiagram).mp4
+│      18--类图5(ClassDiagram).mp4
+│      19--类图6(ClassDiagram).mp4
+│      2--例子入手为何用UML.mp4
+│      20--组件图(ComponentDiagram).mp4
+│      21--部署图(DeploymentDiagram).mp4
+│      3--UML三八视图图形架构.mp4
+│      4--用例图1(UsecaseDiagram).mp4
+│      5--用例图2(UsecaseDiagram).mp4
+│      6--用例图3(UsecaseDiagram).mp4
+│      7--状态图1(StatechartDiagram).mp4
+│      8--状态图2(StatechartDiagram).mp4
+│      9--时序图1(SequenceDiagram).mp4
+│      
+├─阶段2 - 软件工程概述
+│      22--软件工程软件概述及RU.mp4
+│      23--软件工程软件概述-模型W模型.mp4
+│      24--软件工程软件概述-WRUP最佳实践模型.mp4
+│      25--开发工作流1(9条).mp4
+│      26--开发工作流2(9条.mp4
+│      27--开发工作流3(9条).mp4
+│      28--案例贯穿.mp4
+│      29--UML需求分析-项目评估及需求阶段划分.mp4
+│      30--迭代式需求(需求四要素，五原则).mp4
+│      31--迭代需求步骤1.mp4
+│      32--迭代需求步骤2.mp4
+│      33--界面原型.mp4
+│      34--需求成文.mp4
+│      35--案例展示.mp4
+│      
+├─阶段3 - 移动点菜系统需求
+│      36--移动点菜系统现场需求Case1.mp4
+│      37--移动点菜系统现场需求Case2.mp4
+│      38--移动点菜系统现场需求Case3.mp4
+│      39--移动点菜系统现场需求Case4.mp4
+│      40--移动点菜系统现场需求Case5.mp4
+│      41--移动点菜系统现场需求Case6.mp4
+│      
+└─阶段4 - 软件设计基本策略
+        42--UML软件设计-设计基本策略.mp4
+        43--架构架构师的两个层次.mp4
+        44--设计三轴线.mp4
+        45--设计的基本武器：高层模式与低层模式.mp4
+        46--设计矩阵(四要素,五原则).mp4
+        47--设计矩阵(数据持久化设计及界面设计).mp4
+        48--Sample.mp4
+
+第三套：
+│  RedBaby.rar
+│  UML2.0.ppt
+│  UML笔记.mdl
+│  商城全部项目代码.zip
+│  团队开发须知.txt
+│  用例.mdl
+│  类图.mdl
+│  邱志迪-购物车.mdl
+│  项目组成员注意事项.txt
+│
+├─day1
+│      1、项目开发概述.avi
+│      2、用例图.avi
+│      3、简单类图.avi
+│      4、类与类之间的关系.avi
+│      UML笔记.mdl
+│      
+├─day2
+│      1、SVN操作（服务器）.avi
+│      2、SVN操作Eclipse.avi
+│      3、服务器数据处理——数据库.avi
+│      4、3、服务器数据处理——假数据.avi
+│      
+├─day3
+│      1、手机端帮助模块网络链接.avi
+│      2、帮助模块业务操作.avi
+│      3、帮助模块的数据持久化.avi
+│      
+├─day4
+│  │  1、支付方式.avi
+│  │  2、支付细节.avi
+│  │  UML笔记.mdl
+│  │  
+│  └─支付
+│      │  支付.doc
+│      │  支付宝客户端支付.rar
+│      │  
+│      └─WS_SECURE_PAY(20120419)
+│          │                     
+│          └─服务端验签文档及demo
+│                                    
+├─day5
+│      1组.wmv
+│      2组.wmv
+│      5组.wmv
+│      
+└─demo
+
+数据持久化, 购物车, 服务端, 架构师, 数据库

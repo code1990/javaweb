@@ -1,0 +1,42 @@
+Java8实战视频-01让方法参数具备行为能力.avi
+java8实战视频-02Lambda表达式初探.avi
+Java8实战视频-03Lambda语法精讲.avi
+Java8实战视频-04Lambda使用深入解析.avi
+Java8实战视频-05Lambda方法推导详细解析-上.avi
+Java8实战视频-06Lambda方法推导详细解析-下.avi
+Java8实战视频-07Stream入门及Stream在JVM中的线程表现.avi
+Java8实战视频-08Stream知识点总结Stream源码阅读.avi
+Java8实战视频-09如何创建Stream上集.avi
+Java8实战视频-10如何创建Stream下集.avi
+Java8实战视频-11Stream之filter，distinct，skip，limit，map，flatmap详细介绍.avi
+Java8实战视频-12Stream之Find，Match，Reduce详细介绍.avi
+Java8实战视频-13NumericStream的详细介绍以及和Stream之间的相互转换.avi
+Java8实战视频-14Stream综合练习，熟练掌握API的用法.avi
+Java8实战视频-15在Optional出现之前经常遇到的空指针异常.avi
+Java8实战视频-16Optional的介绍以及API的详解.avi
+Java8实战视频-17Optional之flatMap，综合练习，Optional源码剖析.avi
+Java8实战视频-18初识Collector体会Collector的强大.avi
+Java8实战视频-19Collector使用方法深入详细介绍-01.avi
+Java8实战视频-20Collector使用方法深入详细介绍-02.avi
+Java8实战视频-21Collector使用方法深入详细介绍-03.avi
+Java8实战视频-22Collector使用方法深入详细介绍-04.avi_
+Java8实战视频-23Collector原理讲解，JDK自带Collector源码深度剖析.avi
+Java8实战视频-24自定义Collector，结合Stream的使用详细介绍.avi
+Java8实战视频-25Parallel Stream编程体验，充分利用多核机器加快计算速度.avi
+Java8实战视频-26Fork Join框架实例深入讲解.avi
+Java8实战视频-27Spliterator接口源码剖析以及自定义Spliterator实现一个Stream.avi
+Java8实战视频-28Default方法的介绍和简单的例子.avi
+Java8实战视频-29Default方法解决多重继承冲突的三大原则详细介绍.avi
+Java8实战视频-30多线程Future设计模式原理详细介绍，并且实现一个Future程序.avi
+Java8实战视频-31JDK自带Future,Callable,ExecutorService介绍.avi
+Java8实战视频-32实现一个异步基于事件回调的Future程序.avi
+Java8实战视频-33CompletableFuture用法入门介绍.avi
+Java8实战视频-34CompletableFuture之supplyAsync详细介绍.avi
+Java8实战视频-35CompletableFuture流水线工作，join多个异步任务详细讲解.avi
+Java8实战视频-36CompletableFuture常用API的重点详解-上.avi
+Java8实战视频-37CompletableFuture常用API的重点详解-下.avi
+Java8实战视频-38JDK老DateAPI存在的问题，新的DateAPI之LocalDate用法及其介绍.avi
+Java8实战视频-39New Date API之LocalTime，LocalDateTime，Instant，Duration，Period详细介绍.avi
+Java8实战视频-40New Date API之format和parse介绍.avi
+源码
+Java8, JVM

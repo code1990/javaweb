@@ -1,0 +1,10 @@
+一 项目介绍
+二 入门RabbitMQ核心概念
+三 深入RabbitMQ高级特性
+四 整合RabbitMQ&Spring家族
+五 构建RabbitMQ集群架构
+六 SET化架构衍化与设计
+七 拓展基础组件封装思路
+八 总结
+
+RabbitMQ, Spring, Spring

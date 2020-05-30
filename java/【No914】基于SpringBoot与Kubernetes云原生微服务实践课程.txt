@@ -1,0 +1,98 @@
+01 课程介绍.mp4
+02 背景说明.mp4
+03 课程目标和主要内容.mp4
+04 课程案例需求.mp4
+05 课程补充说明.mp4
+06 为何采用微服务架构？.mp4
+07 架构设计和技术栈选型.mp4
+08 数据和接口模型设计：账户服务.mp4
+09 数据和接口模型设计：业务服务.mp4
+10 dubbo、Spring Cloud和KUbernetes该如何选型（上）.mp4
+11 Dubbo、Spring Cloud和Kubernetes该如何选型（中）.mp4
+12 Dubbo、Spring Cloud和Kubernetes该如何选型（下）.mp4
+13 技术中台到底讲什么？.mp4
+14 Staffjoy项目结构组织.mp4
+15 谷歌为何采用单体仓库（Mono-Repo）？.mp4
+16 微服务接口参数校验为何重要？.mp4
+17 如何实现统一异常处理？.mp4
+18 DTO和DMO为什么要互转？.mp4
+19 如何实现基于Feign的强类型接口？.mp4
+20 为什么框架层就要考虑分环境配置？.mp4
+21 异步处理为何要复制线程上下文信息？.mp4
+22 为你的接口添加Swagger文档.mp4
+23 主流微服务框架概览.mp4
+24 网关和BFF是如何演化出来的（上）.mp4
+25 网关和BFF是如何演化出来的（下）.mp4
+26 网关和反向代理是什么关系？.mp4
+27 网关需要分集群部署吗？.mp4
+28 如何设计一个最简网关？.mp4
+29 Faraday网关代码解析（上）.mp4
+30 Faraday网关代码解析（下）.mp4
+31 生产级网关需要考虑哪些环节？.mp4
+32 主流开源网关概览.mp4
+33 安全认证架构演进：单块阶段（上）.mp4
+34 安全认证架构演进：单块阶段（下）.mp4
+35 安全认证架构演进：微服务阶段.mp4
+36 基于JWT令牌的安全认证架构.mp4
+37 JWT的原理是什么？.mp4
+38 JWT有哪两种主要流程？.mp4
+39 Staffjoy安全认证架构和SSO.mp4
+40 用户认证代码剖析.mp4
+41 服务调用鉴权代码剖析.mp4
+42 如何设计用户角色鉴权？.mp4
+43 Springboot微服务测试该如何分类？.mp4
+44 什么是契约驱动测试？.mp4
+45 什么是测试金字塔？.mp4
+46 单元测试案例分析.mp4
+47 集成测试案例分析.mp4
+48 组件测试案例分析.mp4
+49 Mock vs Spy.mp4
+50 何谓生产就绪(Production Ready)？.mp4
+51 SpringBoot如何实现分环境配置.mp4
+52 Apollo vs SpringCloudConfig vs K8s ConfigMap.mp4
+53 CAT vs Zipkin vs Skywalking(上).mp4
+54 CAT vs Zipkin vs Skywalking(下).mp4
+55 结构化日志和业务审计日志.mp4
+56 集中异常监控和Sentry.mp4
+57 EFK & Prometheus & Skywalking + K8s 集成架构.mp4
+58 本地开发部署架构和软件需求.mp4
+59 手工服务部署和测试(上).mp4
+60 手工服务部署和测试(中).mp4
+61 手工服务部署和测试(下).mp4
+62 SkyWalking调用链监控实验.mp4
+63 Docker和Docker Compose简介.mp4
+64 容器镜像构建Dockerfile解析.mp4
+65 Docker Compose服务部署文件剖析.mp4
+66 将Staffjoy部署到本地Docker Compose环境(上).mp4
+67 将Staffjoy部署到本地Docker Compose环境(下).mp4
+68 到底什么是云原生架构？.mp4
+69 Kubernetes背景和架构.mp4
+70 Kubernetes有哪些基本概念？(上).mp4
+71 Kubernetes有哪些基本概念？(下).mp4
+72 理解Kubernetes节点网络和Pod网络.mp4
+73 深入理解Service和ServiceDiscovery.mp4
+74 NodePort-vs-LoadBalancer-vs-Ingress.mp4
+75 本地测试Kubernetes部署文件剖析.mp4
+76 本地测试Kubernetes环境搭建.mp4
+77 将Staffjoy部署到本地Kubernetes环境(上).mp4
+78 将Staffjoy部署到本地Kubernetes环境(下).mp4
+79 生产环境Kubernetes部署文件剖析.mp4
+80 阿里云Kubernetes环境创建.mp4
+81 将Staffjoy部署到阿里云Kubernetes环境.mp4
+82 Kubernetes应用动态配置实验.mp4
+83 Kubernetes应用金丝雀发布实验.mp4
+84 阿里云资源释放.mp4
+85 课程复盘.mp4
+86 项目扩展和应用.mp4
+87 Account服务CodeReview.mp4
+88 Company服务CodeReview.mp4
+89 Mail_SMS_Bot服务CodeReview.mp4
+90 Faraday服务CodeReview.mp4
+91 WhoAmI服务CodeReview.mp4
+92 WWW服务CodeReview.mp4
+93 前端应用CodeReview.mp4
+94 完结篇.mp4
+源码课件.rar+
+
+微服务, Spring Cloud, 微服务架构, 用户认证
+本主题由 admin 于 2020-2-10 18:05 置顶

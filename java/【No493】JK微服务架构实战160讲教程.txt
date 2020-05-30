@@ -1,0 +1,190 @@
+│  intro.mp4
+│  
+├─第一模块 ：微服务安全架构与实践
+│      01.第一模块课程介绍.mp4
+│      02.微服务安全要解决什么问题.mp4
+│      03.白话 OAuth2.mp4
+│      04.OAuth2 的正式定义.mp4
+│      05.OAuth2 有哪些典型模式.mp4
+│      06.OAuth2 模式该如何选型.mp4
+│      07.spring security OAuth2 架构简介.mp4
+│      08.【实验】授权码模式授权服务器.mp4
+│      09.【实验】简化模式授权服务器.mp4
+│      10.【实验】密码模式授权服务器.mp4
+│      11.【实验】客户端模式授权服务器.mp4
+│      12.实验一扩展环节.mp4
+│      13.【实验】Web 应用接入授权服务器.mp4
+│      14.实验二扩展环节.mp4
+│      15.什么是 JWT 令牌.mp4
+│      16.【实验】授权服务器支持 JWT 令牌.mp4
+│      17.实验三扩展环节.mp4
+│      18.【实验】Android 无线应用接入授权服务器.mp4
+│      19.【实验】AngularJS 单页应用实验和课后扩展.mp4
+│      20.【实验】GitHub社交登录实验和课后扩展.mp4
+│      21.【实验】OAuth2安全风险CSRF实验.mp4
+│      22.OpenId Connect简介.mp4
+│      23.下一代微服务安全架构.mp4  
+│      24.参考资源和后续课程预览.mp4
+│   
+├─第二模块 ：微服务配置中心Apollo架构和实践
+│      25.Apollo作者的产品介绍.mp4
+│      26.第二模块课程介绍.mp4
+│      27.课程概述.mp4
+│      28.业务需求.mp4
+│      29.配置定义和场景.mp4
+│      30.开关驱动开发原理.mp4
+│      31.携程 Apollo 配置中心介绍.mp4
+│      32.Apollo核心概念.mp4
+│      33.Apollo快速起步(Lab01).mp4
+│      34.Apollo快速起步扩展实验.mp4
+│      35.Apollo架构设计之服务器端.mp4
+│      36.Apollo架构设计之客户端.mp4
+│      37.Apollo架构设计之高可用和监控.mp4
+│      38.Apollo分布式部署指南.mp4
+│      39.Apollo java客户端和多语言接入.mp4
+│      40.Apollo Client API实操(Lab02).mp4
+│      41.Apollo Client和Spring集成~XML方式(Lab03).mp4
+│      42.Apollo Client和Spring集成~代码方式(Lab04).mp4
+│      43.Apollo Client和Spring Boot集成(Lab05).mp4
+│      44.Apollo开放平台接入实操(Lab06).mp4
+│      45.Spring Cloud Config简介.mp4
+│      46.Apollo vs Spring Cloud Config.mp4
+│      47.Apollo FAQ和开发常见问题.mp4
+│      48.参考资源和后续课程预览.mp4
+│        
+├─第三模块 ：微服务网关Zuul架构和实践
+│      49.第三模块课程介绍.mp4
+│      50.Zuul网关和基本应用场景.mp4
+│      51.Zuul网关高级应用场景.mp4
+│      52.Zuul网关架构剖析.mp4
+│      53.Zuul网关代码剖析(Code Review).mp4
+│      54.Zuul网关过滤器管理工具(Code Review).mp4
+│      55.前置过滤器实验(Lab01).mp4
+│      56.路由过滤器实验(Lab02).mp4
+│      57.后置过滤器实验(Lab03).mp4
+│      58.Zuul网关对接Apollo(Lab04).mp4
+│      59.Zuul网关生产部署实践.mp4
+│      60.Zuul网关路由管理实践.mp4
+│      61.基于网关的两层路由体系.mp4
+│      62.Spring Cloud Zuul(Lab05).mp4
+│      63.Zuul2.0简介.mp4
+│      64.Zuul网关生产最佳实践.mp4
+│      65.参考资源和后续课程预览.mp4
+│
+├─第四模块 ：微服务调用链监控CAT架构和实践
+│       66.第四模块课程介绍.mp4
+│       67.调用链监控业务需求.mp4
+│       68.调用链监控原理.mp4
+│       69.调用链监控产品和比较.mp4
+│       70.点评 CAT 背景介绍.mp4
+│       71.CAT 典型报表.mp4
+│       72.CAT 告警简介.mp4
+│       73.CAT 架构设计.mp4
+│       74.【实验】CAT 本地部署.mp4
+│       75.CAT 埋点案例和代码剖析（Code Review）.mp4
+│       76.【实验】CAT 埋点案例.mp4
+│       77.Zuul 网关集成 CAT 代码剖析（Code Review）.mp4
+│       78.【实验】Zuul 网关集成 CAT.mp4
+│       79.CAT 生产埋点实践.mp4
+│       80.CAT 生产部署实践.mp4
+│       81.CAT 生产治理实践.mp4
+│       82.Spring Cloud Sleuth 简介.mp4
+│       83.【实验】Spring Cloud Sleuth.mp4
+│       84.参考资源和后续课程预览.mp4
+│
+│      
+├─第五模块 ：微服务容错限流Hystrix架构和实践
+│      100.Hystrix 生产最佳实践.mp4
+│      101.参考资源和后续课程预览.mp4
+│      85.第五模块课程介绍.mp4
+│      86.容错限流需求.mp4
+│      87.容错限流原理.mp4
+│      88.Netflix Hystrix 背景介绍.mp4
+│      89.Hystrix 设计原理.mp4
+│      90.Hystrix 主要概念.mp4
+│      91.信号量 vs 线程池隔离.mp4
+│      92.Hystrix 主要配置项.mp4
+│      93.【实验】Hystrix 基础实验.mp4
+│      94.Hystrix 模拟案例分析 (Code Review).mp4_
+│      95.【实验】Hystrix + Dashboard 实验（上）.mp4
+│      96.【实验】Hystrix + Dashboard 实验（下）.mp4
+│      97.网关集成 Hystrix (Code Review).mp4
+│      98.【实验】Spring Cloud Hystrix 实验.mp4
+│      99.Netflix Turbine 简介.mp4
+│   
+├─第六模块 ：微服务注册发现Eureka Ribbon架构和实践
+│      104.服务发现需求和模式（下）.mp4
+│      105.Netflix Eureka 和 Ribbon 背景介绍.mp4
+│      106.Eureka 和 Ribbon 架构设计原理.mp4
+│      107.【实验】Spring Cloud Eureka 和 Ribbon 基础实战.mp4
+│      108.【实验】Spring Cloud Eureka 和 Ribbon 高级实验.mp4
+│      109.Spring Cloud Eureka 和 Ribbon 主要配置项.mp4
+│      110.Eureka进阶：自保护模式.mp4
+│      111.Eureka进阶：健康检查和蓝绿部署.mp4
+│      112.【实验】Spring Cloud Zuul、Eureka 和 Ribbon 集成实验（上）.mp4
+│      113.【实验】Spring Cloud Zuul、Eureka 和 Ribbon 集成实验（下）.mp4
+│      114.常用服务发现组件比较.mp4
+│      115.ServiceMesh 和 Istio 简介.mp4
+│      116.基于 Eureka、Zuul 和容器云的持续交付架构.mp4
+│      117.参考资源和后续课程预览.mp4
+│
+├─第七模块 ：微服务监控告警Prometheus架构和实践
+│      119.监控模式分类.mp4
+│      120.BusDevOps 和测量驱动开发 MDD.mp4
+│      121.Prometheus 简介.mp4
+│      122.Prometheus 架构设计.mp4
+│      123.Prometheus 基本概念.mp4
+│      124.【实验】Prometheus 起步查询实验（上）.mp4
+│      125.【实验】Prometheus起步查询实验（中）.mp4
+│      126.【实验】Prometheus起步查询实验（下）.mp4
+│      127.【实验】Prometheus + Grafana 展示实验（上）.mp4
+│      128.【实验】Prometheus + Grafana 展示实验（下）.mp4
+│      129.【实验】Prometheus + Alertmanager 告警实验（上）.mp4
+│      130.【实验】Prometheus + Alertmanager 告警实验（下）.mp4
+│      131.【实验】Java 应用埋点和监控实验.mp4
+│      132.【实验】NodeExporter 系统监控实验.mp4
+│      133.【实验】Spring Boot Actuator 监控实验.mp4
+│      134.Prometheus 监控最佳实践.mp4
+│      135.主流开源时序数据库比较.mp4
+│      136.开源分布式监控平台 ZMon 简介.mp4
+│      137.微服务监控体系总结.mp4
+│      138.参考资源和后续课程预览.mp4
+│   
+├─第八模块 ： 构建OAuth2服务器 - Golang语言实现
+│      139.课程概述和背景.mp4
+│      140.架构和设计.mp4
+│      141.开发环境搭建.mp4
+│      142.基础代码(code review).mp4
+│      143.数据访问模块(code review).mp4
+│      144.OAuth2服务模块(code review).mp4
+│      145.Web服务模块(code review).mp4
+│      146.启动流程(code review).mp4
+│      147.起步准备实验(lab02).mp4
+│      148.OAuth2授权码模式实验(lab03).mp4
+│      149.OAuth2简化模式实验(lab04).mp4
+│      150.OAuth2用户名密码模式实验(lab05).mp4
+│      151.OAuth2客户端模式实验(lab06).mp4
+│      152.OAuth2令牌校验实验(lab07).mp4
+│      153.OAuth2令牌刷新实验(lab08).mp4
+│      154.项目复盘和扩展环节.mp4
+│      155.参考资源和后续课程预览.mp4      
+│      
+└──第九模块：微服务架构综合案例分析
+       156.课程概述和背景.mp4
+       157.需求和架构设计.mp4
+       158.开发环境搭建(lab01)（上）.mp4
+       159.开发环境搭建(lab01)（下）.mp4
+       160.项目业务代码(Code Review).mp4
+       161.Apollo配置中心集成(lab02).mp4
+       162.Zuul-Eureka-Ribbon-Hystrix集成(Code Review).mp4
+       163.Gravitee OAuth2集成(lab03).mp4
+       164.Zuul网关集中令牌校验(Code Review).mp4
+       165.CAT调用链集成(lab04)（上）.mp4
+       166.CAT调用链集成(lab04)（下）.mp4
+       167.Demo展示(lab05)（上）.mp4
+       168.Demo展示(lab05)（下）.mp4
+       169.Prometheus监控集成(Code Review).mp4
+       170.生产扩展环节.mp4
+       171.课程复盘总结.mp4
+
+微服务, Spring Cloud, 微服务架构, 数据库

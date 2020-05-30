@@ -1,0 +1,33 @@
+第1节：ActiveMQ入门和消息中间件.avi
+第2节：JMS基本概念和模型.avi
+第3节：JMS的可靠性机制.avi
+第4节：JMS的API结构和开发步骤.flv
+第5节：Broker的启动方式吖.avi
+第6节：ActiveMQ结合Spring开发吖.avi
+第7节：ActiveMQ支持的传输协议吖.avi
+第8节：ActiveMQ消息存储持久化.flv
+第9节：ActiveMQ的静态网络链接吖.avi
+第10节：多线程Consumer访问集群.avi
+第11节：集群下的消息回流功能.avi
+第12节：容错的链接和动态网络连接.avi
+第13节：ActiveMQ的集群.avi
+第14节：Destination高级特性一.avi
+第15节：Destination高级特性二.flv
+第16节：MessageDispatch高级特性一.avi
+第17节：MessageDispatch高级特性二.avi
+第18节：MessageDispatch高级特性三.avi
+第19节：Message高级特性一.avi
+第20节：Message高级特性二.flv
+第21节：Consumer高级特性一.avi
+第22节：Consumer高级特性二.avi
+第23节：集成ActiveMQ和Tomcat.avi
+第24节：AMQ优化和使用建议.avi
+第25节：AMQ结合业务功能的开发一.avi
+第26节：AMQ结合业务功能的开发二.avi
+第27节：AMQ结合业务功能的开发三.flv
+第28节：AMQ和业务功能组合测试.avi
+第29节：基本的性能测试.avi
+第30节：应用上AMQ后的体系结构.avi
+
+ActiveMQ, Consumer
+本主题由 admin 于 2019-9-28 19:32 设置高亮

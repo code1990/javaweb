@@ -1,0 +1,21 @@
+课程目录
+01.Netty实现高性能分布式RPC架构介绍.avi
+02.分布式rpc架构的整个架构图.avi
+03.采用netty编写java服务器.avi
+04.ZooKeeper安装与操作.avi
+05.服务器注册到zookeeper上.avi
+06.netty客户端编写.avi
+07.netty长连接心跳包设置.avi
+08.netty客户端长连接异步获取响应.avi
+09.netty长连接异步得到响应结果.avi
+10.与最新版spring整合.avi
+11.服务器架构实现.avi
+12.客户端与服务器架构通信.avi
+13.优化服务器.avi
+14.客户端加上动态代理.avi
+15.优化netty客户端.avi
+16.netty客户端加上zk,监听服务器变化.avi
+17.netty客户端动态管理连接.avi
+18.演示分布式rpc连接管理以及实现服务器加权管理.avi
+19.课程总结以及下期预告.avi
+服务器架构, RPC, java

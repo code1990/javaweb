@@ -1,0 +1,185 @@
+第7章 项目实战（105集）
+          99.首页.mp4
+          98.登录页.mp4
+          97.测试 JRebel 热部署.mp4
+          96.服务消费者.mp4
+          95.服务提供者.mp4
+          94.系统后台管理-修改所需依赖.mp4
+          93.dubbo Admin 管理控制台.mp4
+          92.ZooKeeper 集群模式.mp4
+          91.Zookeeper 应用举例.mp4
+          90.Zookeeper 简介.mp4
+          89.Dubbo 组件角色.mp4
+          88.Dubbo 服务治理.mp4
+          87.Dubbo 简介.mp4
+          86.再谈微服务-RPC 对比 REST.mp4
+          85.再谈微服务-服务框架对比.mp4
+          84.再谈微服务-服务框架对比.mp4
+          83.再谈微服务-面向服务架构与微服务架构.mp4
+          82.再谈微服务-背景介绍.mp4
+          81.为什么要使用 Dubbo.mp4
+          80.创建管理后台实现项目.mp4
+          79.创建领域模型项目.mp4
+          78.创建数据库管理项目.mp4
+          77.创建通用工具项目.mp4
+          76.创建依赖管理项目.mp4
+          75.项目简介.mp4
+          179.GitLab CI.mp4
+          178.操作流程.mp4
+          177.基本概念.mp4
+          176.项目的容器化部署.mp4
+          175.项目的容器化部署.mp4
+          174.项目的容器化部署.mp4
+          173.项目的容器化部署.mp4
+          172.项目的容器化部署.mp4
+          171.Docker 私服搭建.mp4
+          170.Spring Boot 启用 Profile.mp4
+          169.Solr 全文搜索引擎-实现搜索接口.mp4
+          168.Solr 全文搜索引擎-完成测试类 CRUD 功能.mp4
+          167.Solr 全文搜索引擎-Spring Boot 集成 Solr.mp4
+          166.Solr 全文搜索引擎-Solr 查询与高亮显示.mp4
+          165.Solr 全文搜索引擎-Solr 维护功能.mp4
+          164.Solr 全文搜索引擎-Solr 配置字段域.mp4
+          163.Solr 全文搜索引擎-Solr 服务器部署.mp4
+          162.Solr 全文搜索引擎-Solr 简介.mp4
+          161.HBuilder 客户端-前端功能编码演示（可略过）.mp4
+          160.HBuilder 客户端-前端功能编码演示（可略过）.mp4
+          159.HBuilder 客户端-前端功能编码演示（可略过）.mp4
+          158.HBuilder 客户端-前端功能编码演示（可略过）.mp4
+          157.HBuilder 客户端-前端功能编码演示（可略过）.mp4
+          156.HBuilder 客户端-前端功能编码演示（可略过）.mp4
+          155.HBuilder 客户端-前端功能编码演示（可略过）.mp4
+          154.HBuilder 客户端-前端功能编码演示（可略过）.mp4
+          153.Redis 为数据添加缓存-Spring Boot 集成 Redis.mp4
+          152.Redis 为数据添加缓存-Spring Boot 集成 Redis.mp4
+          151.Redis 为数据添加缓存-Redis 客户端的使用.mp4
+          150.Redis 为数据添加缓存-Redis Sentinel 高可用集群部署.mp4
+          149.Redis 为数据添加缓存-Redis HA 简介.mp4
+          148.客户端与服务端通信-解决跨域问题.mp4
+          147.客户端与服务端通信-客户端封装 Ajax 请求.mp4
+          146.客户端与服务端通信-客户端封装 Ajax 请求.mp4
+          145.客户端与服务端通信-客户端封装数据结构.mp4
+          144.客户端与服务端通信-服务端封装响应结构.mp4
+          143.客户端与服务端通信-客户端请求服务端.mp4
+          142.使用 API Gateway 统一服务接口-完善 API 网关代码.mp4
+          141.使用 API Gateway 统一服务接口-Swagger2 生成接口文档.mp4
+          140.使用 API Gateway 统一服务接口-创建 API Gateway.mp4
+          139.使用 API Gateway 统一服务接口-创建文章服务.mp4
+          138.使用 API Gateway 统一服务接口-创建频道服务.mp4
+          137.使用 API Gateway 统一服务接口-API Gateway 简介.mp4
+          136.HBuilder 客户端-打开新窗口.mp4
+          135.HBuilder 客户端-HBuilder 自定义代码块.mp4
+          134.HBuilder 客户端-实现底部选项卡切换.mp4
+          133.创建管理后台接口项目.mp4
+          132.HBuilder 客户端-实现底部选项卡切换.mp4
+          131.HBuilder 客户端-HBuilder Manifest 文件说明.mp4
+          130.HBuilder 客户端-使用自定义图标.mp4
+          129.HBuilder 客户端-HBuilder 的基本使用.mp4
+          128.HBuilder 客户端-真机运行项目.mp4
+          127.HBuilder 客户端-创建移动 APP 项目.mp4
+          126.文章管理功能-前端 WangEditor 上传图片.mp4
+          125.文章管理功能-前端 Dropzone 上传图片.mp4
+          124.文章管理功能-前端 Dropzone 上传图片.mp4
+          123.文章管理功能-实现 FastDFS 客户端.mp4
+          122.文章管理功能-实现字典标签.mp4
+          121.文章管理功能-实现字典标签.mp4
+          120.文章管理功能-Thymeleaf 自定义标签.mp4
+          119.文章管理功能-Thymeleaf 自定义标签.mp4
+          118.文章管理功能-补充内容（关于 PageHelper 的依赖问题）.mp4
+          117.文章管理功能-前端 Datatable 控件分页处理.mp4
+          116.文章管理功能-前端 Datatable 控件分页处理.mp4
+          115.文章管理功能-使用 PageHelper 进行分页查询.mp4
+          114.文章管理功能-新增文章.mp4
+          113.文章管理功能-改造树控件.mp4
+          112.文章管理功能-改造树控件.mp4
+          111.FastDFS 分布式文件系统安装.mp4
+          110.FastDFS 分布式文件系统简介.mp4
+          109.列表页的树表格.mp4
+          108.表单页的树控件.mp4
+          107.选择父级频道.mp4
+          106.选择父级频道.mp4
+          105.频道列表.mp4
+第6章 集成 MyBatis（7集）
+          74.集成 MyBatis-测试查询.mp4
+          73.使用 MyBatis Maven Plugin 自动生成代码.mp4
+          72.集成 PageHelper 分页插件.mp4
+          71.集成 TkMyBatis 简化 MyBatis 操作.mp4
+          70.集成 Druid 数据源.mp4
+          69.第一个 Thymeleaf 模板页.mp4
+          68.Thymeleaf 简介.mp4
+第5章 Spring Boot（7集）
+          67.Spring Boot 日志配置.mp4
+          66.Spring Boot Starter POM.mp4
+          65.Spring Boot 配置.mp4
+          64.Spring Boot 自定义 Banner.mp4
+          63.第一个 Spring Boot 应用程序.mp4
+          62.Spring Boot 简介.mp4
+          61.Spring 简史.mp4
+第4章 使用 GitLab 托管代码（6集）
+          60.GitLab 使用-SSH.mp4
+          59.GitLab 使用-HTTP.mp4
+          58.GitLab 账户管理.mp4
+          57.GitLab 设置.mp4
+          56.GitLab 安装.mp4
+          55.GitLab 简介.mp4
+第3章 Docker实战开发（31集）
+          54.部署项目.mp4
+          53.运行 MySQL.mp4
+          52.运行 Tomcat.mp4
+          51.Docker Compose-使用.mp4
+          50.Docker Compose-安装.mp4
+          49.恢复数据卷.mp4
+          48.备份数据卷.mp4
+          47.创建数据卷.mp4
+          46.数据卷简介.mp4
+          45.部署项目.mp4
+          44.安装 MySQL.mp4
+          43.安装 Tomcat.mp4
+          42.设置镜像标签.mp4
+          41.创建和移除镜像.mp4
+          40.更新镜像.mp4
+          39.查找镜像.mp4
+          38.获取镜像.mp4
+          37.Docker Hub 镜像仓库.mp4
+          36.批量移除容器.mp4
+          35.查看容器状态.mp4
+          34.查看容器进程.mp4
+          33.指定 Web 容器映射端口.mp4
+          32.运行 Web 容器.mp4
+          31.Docker 客户端帮助命令.mp4
+          30.后台运行与停止容器.mp4
+          29.运行交互式的容器.mp4
+          28.第一个 Docker 应用程序.mp4
+          27.Docker 安装.mp4
+          26.Docker 系统架构.mp4
+          25.Docker 功能特点.mp4
+          24.Docker 简介.mp4
+第2章 Linux使用（19集）
+          23.部署项目.mp4
+          22.安装 MySQL.mp4
+          21.安装 Tomcat.mp4
+          20.安装 java.mp4
+          19.更改操作权限.mp4
+          18.查看目录和文件的权限.mp4
+          17.Linux 用户和组管理.mp4
+          16.常用 APT 命令.mp4
+          15.修改数据源.mp4
+          14.Linux 编辑器.mp4
+          13.压缩命令.mp4
+          12.开关机命令.mp4
+          11.系统管理命令.mp4
+          10.操作文件目录.mp4
+          09.Linux 目录结构.mp4
+          08.Linux 远程控制管理.mp4
+          07.安装 Linux.mp4
+          06.Linux 与 Windows 比较.mp4
+          05.Linux 简介.mp4
+第1章 微服务简介（4集）
+          04.微服务的缺点.mp4
+          03.微服务的优点.mp4
+          02.微服务解决复杂问题.mp4
+          01.构建单体应用.mp4
+
+
+微服务, 服务端, 全文搜索, 缓存, MyBatis
+本主题由 admin 于 2019-9-11 14:03 设置高亮

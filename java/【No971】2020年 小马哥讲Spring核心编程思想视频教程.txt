@@ -1,0 +1,144 @@
+├─第01章：Spring Framework总览 (12讲)
+│      01丨课程介绍.mp4
+│      02丨内容综述.mp4
+│      03丨课前准备：学习三件套（工具、代码与大脑）.mp4
+│      04丨特性总览：核心特性、数据存储、Web技术、框架整合与测试.mp4
+│      05丨Spring版本特性：Spring各个版本引入了哪些新特性？.mp4
+│      06丨Spring模块化设计：Spring功能特性如何在不同模块中组织？.mp4
+│      07丨java语言特性运用：各种Java语法特性是怎样被Spring各种版本巧妙运用的？.mp4
+│      08丨JDK API实践：Spring怎样取舍Java I-O、集合、反射、动态代理等API的使用.mp4
+│      09丨Java EE API整合：为什么Spring要与“笨重”的Java EE共舞？.mp4
+│      10丨Spring编程模型：Spring实现了哪些编程模型？.mp4
+│      11丨Spring核心价值：我们能从Spring Framework中学到经验和教训呢？.mp4
+│      12丨面试题精选.mp4
+│      
+├─第02章：重新认识IoC (9讲)
+│      13丨IoC发展简介：你可能对IoC有些误会？.mp4
+│      14丨IoC主要实现策略：面试官总问IoC和DI的区别，他真的理解吗？.mp4
+│      15丨IoC容器的职责：IoC除了依赖注入，还涵盖哪些职责呢？.mp4
+│      16丨IoC容器的实现：IoC容器是开源框架的专利吗？.mp4
+│      17丨传统IoC容器实现：JavaBeans也是IoC容器吗？.mp4
+│      18丨轻量级IoC容器：如何界定IoC容器的“轻重”？.mp4
+│      19丨依赖查找 VS.mp4
+│      20丨构造器注入 VS.mp4
+│      21丨面试题精选.mp4
+│      
+├─第03章：Spring IoC容器概述 (9讲)
+│      22丨Spring IoC依赖查找：依赖注入还不够吗？依赖查找存在的价值几何？.mp4
+│      23丨Spring IoC依赖注入：Spring提供了哪些依赖注入模式和类型呢？.mp4
+│      24丨Spring IoC依赖来源：依赖注入和查找的对象来自于哪里？.mp4
+│      25丨Spring IoC配置元信息：Spring IoC有哪些配置元信息？它们的进化过程是怎样的？.mp4
+│      26丨Spring IoC容器：BeanFactory和ApplicationContext谁才是Spring IoC容器？.mp4
+│      27丨Spring应用上下文：ApplicationContext除了IoC容器角色，还提供哪些特性？.mp4
+│      28丨使用Spring IoC容器：选BeanFactory还是ApplicationContext？.mp4
+│      29丨Spring IoC容器生命周期：IoC容器启停过程中发生了什么？.mp4
+│      30丨面试题精选.mp4
+│      
+├─第04章：Spring Bean基础 (11讲)
+│      31丨定义Bean：什么是BeanDefinition？.mp4
+│      32丨BeanDefinition元信息：除了Bean名称和类名，还有哪些Bean元信息值得关注？.mp4
+│      33丨命名Spring Bean：id和name属性命名Bean，哪个更好？.mp4
+│      34丨Spring Bean的别名：为什么命名Bean还需要别名？.mp4
+│      35丨注册Spring Bean：如何将BeanDefinition注册到IoC容器？.mp4
+│      36丨实例化Spring Bean：Bean实例化的姿势有多少种？.mp4
+│      37丨初始化Spring Bean：Bean初始化有哪些方式？.mp4
+│      38丨延迟初始化Spring Bean：延迟初始化的Bean会影响依赖注入吗？.mp4
+│      39丨销毁Spring Bean： 销毁Bean的基本操作有哪些？.mp4
+│      40丨回收Spring Bean：Spring IoC容器管理的Bean能够被垃圾回收吗？.mp4
+│      41丨面试题精选.mp4
+│      
+├─第05章：Spring IoC依赖查找（Dependency Lookup） (9讲)
+│      42丨依赖查找的今世前生：Spring IoC容器从Java标准中学到了什么？.mp4
+│      43丨单一类型依赖查找：如何查找已知名称或类型的Bean对象？.mp4
+│      44丨集合类型依赖查找：如何查找已知类型多个Bean集合？.mp4
+│      45丨层次性依赖查找：依赖查找也有双亲委派？.mp4
+│      46丨延迟依赖查找：非延迟初始化Bean也能实现延迟查找？.mp4
+│      47丨安全依赖查找.mp4
+│      48丨内建可查找的依赖：哪些Spring IoC容器内建依赖可供查找？.mp4
+│      49丨依赖查找中的经典异常：Bean找不到？Bean不是唯一的？Bean创建失败？.mp4
+│      50丨面试题精选.mp4
+│      
+├─第06章：Spring IoC依赖注入（Dependency Injection） (20讲)
+│      51丨依赖注入的模式和类型：Spring提供了哪些依赖注入的模式和类型？.mp4
+│      52丨自动绑定（Autowiring）：为什么Spring会引入Autowiring？.mp4
+│      53丨自动绑定（Autowiring）模式：各种自动绑定模式的使用场景是什么？.mp4
+│      54丨自动绑定（Autowiring）限制和不足：如何理解和挖掘官方文档中深层次的含义？.mp4
+│      55丨Setter方法依赖注入：Setter注入的原理是什么？.mp4
+│      56丨构造器依赖注入：官方为什么推荐使用构造器注入？.mp4
+│      57丨字段注入：为什么Spring官方文档没有单独列举这种注入方式？.mp4
+│      58丨方法注入：方法注入是@Autowired专利吗？.mp4
+│      59丨接口回调注入：回调注入的使用场景和限制有哪些？.mp4
+│      60丨依赖注入类型选择：各种依赖注入有什么样的使用场景？.mp4
+│      61丨基础类型注入：String和Java原生类型也能注入Bean的属性，它们算依赖注入吗？.mp4
+│      62丨集合类型注入：注入Collection和Map类型的依赖区别？还支持哪些集合类型？.mp4
+│      63丨限定注入：如何限定Bean名称注入？如何实现Bean逻辑分组注入？.mp4
+│      64丨延迟依赖注入：如何实现延迟执行依赖注入？与延迟依赖查找是类似的吗？.mp4
+│      65丨依赖处理过程：依赖处理时会发生什么？其中与依赖查找的差异在哪？.mp4
+│      66丨@Autowired注入：@Autowired注入的规则和原理有哪些？.mp4
+│      67丨JSR-330 @Inject注入：@Inject与@Autowired的注入原理有怎样的联系？.mp4
+│      68丨Java通用注解注入原理：Spring是如何实现@Resource和@EJB等注解注入的？.mp4
+│      69丨自定义依赖注入注解：如何最简化实现自定义依赖注入注解？.mp4
+│      70丨面试题精选.mp4
+│      
+├─第07章：Spring IoC依赖来源（Dependency Sources） (8讲)
+│      71丨依赖查找的来源：除容器内建和自定义Spring Bean之外，还有其他来源提供依赖查找吗？.mp4
+│      72丨依赖注入的来源：难道依赖注入的来源与依赖查找的不同吗？.mp4
+│      73丨Spring容器管理和游离对象：为什么会有管理对象和游离对象？.mp4
+│      74丨Spring Bean Definition作为依赖来源：Spring Bean的来源.mp4
+│      75丨单例对象作为依赖来源：单体对象与普通Spring Bean存在哪些差异？.mp4
+│      76丨非Spring容器管理对象作为依赖来源：如何理解ResolvableDependency？.mp4
+│      77丨外部化配置作为依赖来源：@Value是如何将外部化配置注入Spring Bean的？.mp4
+│      78丨面试题精选.mp4
+│      
+├─第08章：Spring Bean作用域（Scopes） (9讲)
+│      79丨Spring Bean作用域：为什么Spring Bean需要多种作用域？.mp4
+│      80丨singleton Bean作用域：单例Bean在当前Spring应用真是唯一的吗？.mp4
+│      81丨prototype Bean作用域：原型Bean在哪些场景下会创建新的实例？.mp4
+│      82丨request Bean作用域：request Bean会在每次HTTP请求创建新的实例吗？.mp4
+│      83丨sessionBean作用域：sessionBean在SpringMVC场景下存在哪些局限性？.mp4
+│      84丨applicationBean作用域：applicationBean是否真的有必要？.mp4
+│      85丨自定义Bean作用域：设计Bean作用域应该注意哪些原则？.mp4
+│      86丨课外资料：SpringCloudRefreshScope是如何控制Bean的动态刷新？.mp4
+│      87丨面试题精选.mp4
+│      
+├─第09章：Spring Bean生命周期（Bean Lifecycle） (18讲)
+│      88丨SpringBean元信息配置阶段：BeanDefinition配置与扩展.mp4
+│      89丨SpringBean元信息解析阶段：BeanDefinition的解析.mp4
+│      90丨SpringBean注册阶段：BeanDefinition与单体Bean注册.mp4
+│      91丨SpringBeanDefinition合并阶段：BeanDefinition合并过程是怎样出现的？.mp4
+│      92丨SpringBeanClass加载阶段：BeanClassLoader能够被替换吗.mp4
+│      93丨SpringBean实例化前阶段：Bean的实例化能否被绕开？.mp4
+│      94丨SpringBean实例化阶段：Bean实例是通过Java反射创建吗？.mp4
+│      95丨SpringBean实例化后阶段：Bean实例化后是否一定被是使用吗？.mp4
+│      96丨SpringBean属性赋值前阶段：配置后的PropertyValues还有机会修改吗？.mp4
+│      97丨Aware接口回调阶段：众多Aware接口回调的顺序是安排的？.mp4
+│      98丨SpringBean初始化前阶段：BeanPostProcessor.mp4
+│      99丨SpringBean初始化阶段：@PostConstruct、InitializingBean以及自定义方法.mp4
+│      100丨SpringBean初始化后阶段：BeanPostProcessor.mp4
+│      101丨SpringBean初始化完成阶段：SmartInitializingSingleton.mp4
+│      102丨SpringBean销毁前阶段：DestructionAwareBeanPostProcessor用在怎样的场景.mp4
+│      103丨SpringBean销毁阶段：@PreDestroy、DisposableBean以及自定义方法.mp4
+│      104丨SpringBean垃圾收集（GC）：何时需要GCSpringBean？.mp4
+│      105丨面试题精选.mp4
+│      
+└─第10章：Spring配置元信息（Configuration Metadata） (17讲)
+        106丨Spring配置元信息：Spring存在哪些配置元信息？它们分别用在什么场景？.mp4
+        107丨Spring Bean配置元信息：BeanDefinition.mp4
+        108丨Spring Bean属性元信息：PropertyValues.mp4
+        109丨Spring容器配置元信息.mp4
+        110丨基于XML资源装载Spring Bean配置元信息.mp4
+        111丨基于Properties资源装载Spring Bean配置元信息：为什么Spring官方不推荐？.mp4
+        112丨基于Java注解装载Spring Bean配置元信息.mp4
+        113丨Spring Bean配置元信息底层实现之XML资源.mp4
+        114丨Spring Bean配置元信息底层实现之Properties资源.mp4
+        115丨Spring Bean配置元信息底层实现之Java注解.mp4
+        116丨基于XML资源装载Spring IoC容器配置元信息.mp4
+        117丨基于Java注解装载Spring IoC容器配置元信息.mp4
+        118丨基于Extensible XML authoring 扩展Spring XML元素.mp4
+        119丨Extensible XML authoring扩展原理.mp4
+        120丨基于Properties资源装载外部化配置.mp4
+        121丨基于YAML资源装载外部化配置.mp4
+        122丨面试题.mp4
+
+面试, SpringMVC, 新特性, 数据存储
+本主题由 admin 于 2020-4-14 21:00 设置高亮

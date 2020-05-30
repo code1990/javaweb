@@ -1,0 +1,215 @@
+共25G
+├─十次方微服务day01
+│      01资料介绍.avi
+│      02项目架构介绍.avi
+│      03uml建模说明.avi
+│      04项目介绍.avi
+│      05restful风格说明.avi4
+│      06docker创建mysql微服务.avi
+│      07创建项目所用数据库.avi
+│      08搭建父工程.avi
+│      09搭建公用模块创建返回值对象.avi
+│      10分布式id生成器.avi
+│      11base模块导入jar包坐标.avi
+│      12base模块准备工作.avi
+│      13编写简单的CRUD.avi
+│      14postman测试效果.avi
+│      15异常处理.avi
+│      项目流程.png
+│     
+├─十次方微服务day02
+│      01反馈.avi
+│      02springdatajpa条件查询.avi
+│      03springdatajpa分页条件查询.avi
+│      04招聘模块代码生成.avi
+│      05招聘模块业务说明.avi
+│      06查询热门企业.avi
+│      07推荐职位和最新职位查询.avi
+│      08问答微服务代码生成.avi
+│      09问答微服务业务说明.avi
+│      10问答三个列表代码编写.avi
+│      11文章模块代码生成.avi
+│      12文章审核和文章点赞.avi
+│      13制作一个redis容器.avi
+│      14把数据存入redis.avi
+│      15删除reids中缓存数据.avi
+│      16redis设置过期时间.avi
+│      17活动模块代码生成.avi
+│      18springcache的使用.avi
+│      
+├─十次方微服务day03
+│      01反馈.avi
+│      02课程介绍.avi
+│      03MongoDB的介绍.avi
+│      04mongodb体系结构.avi
+│      05mongodb的数据类型介绍.avi
+│      06安装mongodb的本地客户端.avi
+│      07创建mongodb远程服务.avi
+│      08吐槽模块业务说明.avi
+│      09创建数据库和集合.avi
+│      10mongodb查询命令.avi
+│      11mongodb简单修改和删除.avi
+│      12查询总数据量和模糊查询.avi
+│      13mongodb复杂命令操作.avi
+│      14java驱动操作mongo之简单查询.avi
+│      15java驱动操作mongo之复杂查询.avi
+│      16java驱动操作mongo之添加数据.avi
+│      17springdatamongo准备工作.avi
+│      18springdatamongo增删改查.avi
+│      19根据父节点查询吐槽.avi
+│      20点赞操作效率问题.avi
+│      21吐槽点赞效率优化.avi
+│      22控制不能重复点赞.avi
+│      23完善添加吐槽.avi
+│      tensquare_parent52
+│   
+├─十次方微服务day04
+│      01反馈.avi
+│      02当天内容介绍.avi
+│      03搜索流程说明.avi
+│      04es结构说明.avi
+│      05es的安装.avi
+│      06restful风格操作es.avi
+│      07安装head插件.avi
+│      08解决es跨域访问问题.avi
+│      09head插件的安装和使用.avi
+│      10ik分词器的使用.avi
+│      11文章模块准备工作.avi
+│      12文章保存到索引库.avi
+│      13从索引库中搜索文章.avi
+│      14Logstash的安装.avi
+│      15logstash的同步数据库.avi
+│      16logstash同步数据的特征.avi
+│      17在docker中安装es.avi
+│      18让容器中es的9300端口可用.avi
+│      19docker中ik分词器的安装.avi
+│      20安装header插件.avi
+│     
+├─十次方微服务day05
+│      01反馈.avi
+│      02当天内容介绍.avi
+│      03rabbitmq介绍.avi
+│      04rabbitmq架构介绍.avi
+│      05window下安装rabbitmq.avi
+│      06创建ranbbitmq的docker容器.avi
+│      07rabbitmq的直接模式.avi
+│      08rabbitmq分裂模式.avi
+│      09主题模式分析.avi
+│      10主题模式测试.avi
+│      11普通用户和后台用户的区别.avi
+│      12代码生成.avi
+│      13注册发送短信验证码.avi
+│      14用户注册的业务编写.avi
+│      15消息队列消费者环境搭建.avi
+│      16阿里云短信服务使用说明.avi
+│      17完善消息队列消费者发短信功能.avi
+│      18测试功能.avi
+│      
+├─十次方微服务day06
+│      01反馈.avi
+│      02当天内容说明.avi
+│      03使用security加盐加密算法准备工作.avi
+│      04Springboot实现原理.avi
+│      05加密添加admin用户.avi
+│      06admin的登录.avi
+│      07user用户的加密注册和登录.avi
+│      08常见的认证机制.avi
+│      09token验证的优势.avi
+│      10jwt生成token的规则.avi
+│      11jjwt生成令牌.avi
+│      12token验证.avi
+│      13token设置过期时间.avi
+│      14token添加自定义属性.avi
+│      15token工具类说明.avi
+│      16admin登录生成token.avi
+│      17点错了.avi
+│      18token验证删除用户.avi
+│      19拦截器的配置.avi
+│      20拦截器验证token.avi
+│      21使用拦截器验证token测试.avi
+│      22token添加问题验证.avi
+│   
+├─十次方微服务day07
+│      01反馈.avi
+│      02当天内容介绍.avi
+│      03springcloud的介绍.avi
+│      04eureka介绍.avi
+│      05eureka服务器搭建.avi
+│      06eureka客户端注册.avi
+│      07eureka服务之间的调用.avi
+│      08eureka负载均衡.avi
+│      09交友微服务业务说明.avi
+│      10交友微服务准备工作.avi
+│      11添加好友业务编写.avi
+│      12添加好友测试.avi
+│      13添加非好友.avi
+│      14在用户模块添加更新关注数和粉丝数.avi
+│      15添加好友更新关注和粉丝数.avi
+│      16删除好友.avi
+│      tensquare_parent84
+│      
+├─十次方微服务day08
+│      01反馈.avi
+│      02熔断器.avi
+│      03网关介绍.avi
+│      04后台访问网关搭建.avi
+│      05前台网关搭建.avi
+│      06网关过滤器介绍.avi
+│      07经过网关的头信息丢失问题.avi
+│      08web网关转发hearder.avi
+│      09后台网关验证权限.avi
+│      10集中配置中心微服务作用说明.avi
+│      11把配置文件上传到gitee.avi
+│      12搭建配置中心微服务.avi
+│      13基础微服务使用配置中心获取配置文件.avi
+│      14让eureka和网关都去配置中心去配置文件.avi
+│      15bus消息总件.avi
+│      16自定义配置文件的更新.avi
+│      tensquare_parent84
+│      zuul图.png
+│      集中配置微服务说明.png
+│      
+├─十次方微服务day09
+│      01反馈.avi
+│      02当天内容介绍.avi
+│      03dockfile常用命令.avi
+│      04dockerfile构建jdk镜像.avi
+│      05搭建私有仓库的容器.avi
+│      06上次jdk镜像到私有仓库.avi
+│      07修改配置让本地电脑可以直接修改宿主机上的docker.avi
+│      08把配置中心发布到服务器.avi
+│      09持续集成步骤说明.avi
+│      10安装gogs.avi
+│      11把本地代码上传到gogs.avi
+│      12jenkins的安装.avi
+│      13安装maven和git插件.avi
+│      14安装maven.avi
+│      15jenkins去链接需要的软件.avi
+│      16使用持续集成发布eureka.avi
+│      17使用持续集成发布base微服务.avi
+│      18作业.avi
+│      tensquare_parent843
+│      作业.txt
+│      
+├─十次方微服务day10
+│      01当天内容介绍.avi
+│      02安装rancher然后添加一个环境.avi
+│      03添加镜像库和主机.avi
+│      04添加应用.avi
+│      05使用ranchar创建mysql微服务.avi
+│      06创建配置中心微服务.avi
+│      07容器扩容缩容准备工作.avi
+│      08容器的扩容和缩容.avi
+│      09influxdb的安装和使用.avi
+│      10cadvisor的安装和使用.avi
+│      11grafana的安装.avi
+│      12在granfana中关联数据库.avi
+│      13设置基础微服务的监控平台.avi
+│      14给基础微服务设置预警线.avi
+│      
+└─十次方资料
+        微服务讲义
+        微服务资料
+        通用资料
+
+微服务, 数据库, java, 缓存

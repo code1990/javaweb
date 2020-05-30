@@ -1,0 +1,83 @@
+2018年新版本Springboot2.0完整版视频教程:
+│  01第一节-SpringBoot2.0课程介绍.mp4
+│  02第二节-为什么要用SpringBoot.mp4
+│  03第三节-SpringCloud与SpringBoot关系.mp4
+│  04第四节-SpringBoot关系与SpringMVC关系.mp4
+│  05第五节-创建第一个SpringBoot项目).mp4
+│  06第六节-@EnableAutoConfiguration作用.mp4
+│  07第七节-使用@ComponentScan方式启动.mp4
+│  08第八节-使用@SpringBootApplication方式启动.mp4
+│  09第九节-SpringBoot静态资源访问.mp4
+│  10第十节-整合freemarker视图层.mp4
+│  11第十一节-SpringBoot整合jsp视图层.mp4
+│  12第十二节-SpringBoot整合全局捕获异常.mp4
+│  13第十三节-SpringBoot整合log4j日志记录.mp4
+│  14第十四节-使用AOP统一处理Web请求日志.mp4
+│  15第十五节-集成lombok让代码更简洁.mp4
+│  16第十六节-安装lombok注意事项.mp4
+│  17第十七节-@Async异步执行方法).mp4
+│  18第十八节-@Value自定义参数.mp4
+│  19第十九节-区分不同环境配置文件.mp4
+│  20第二十节-SpringBoot整合MyBatis.mp4
+│  21第二十一节-整合@Transactional注解.mp4
+│  22第二十二节-SpringBoot-整合多数据源拆分思路.mp4
+│  23第二十三节-使用分包方式拆分数据源.mp4
+│  24第二十四节-SpringBoot多数据源事务管理机制.mp4
+│  25第二十五节-多数据源分布式事务问题.mp4
+│  26第二十六节-使用jta+atomikos解决分布式事务.mp4
+│  27第二十七节-Mybatis集成分页插件pageHelper.mp4
+│  28第二十八节-SpringBoot热部署原理分析.mp4
+│  29第二十九节-热部署Devtools.mp4
+│  30第三十节-SpringBoot性能优化之扫包优化.mp4
+│  31第三十一节-性能优化之内部运行JVM参数调优.mp4
+│  32第三十二节-性能优化之外部运行JVM参数调优.mp4
+│  33第三十三节-将Servlet容器变成Undertow测试Tomcat吞吐量.mp4
+│  34第三十四节-将Servlet容器变成Undertow测试Undertow吞吐量.mp4
+│  35第三十五节-SpringBootyml用法.mp4
+│  36第三十六节-SpringBootJar打包方式).mp4
+│  37第三十七节-外部Tomcat运行SpringBoot项目.mp4
+│  38第三十八节-SpringBoot监控中心概述.mp4
+│  39第三十九节-监控中心之搭建Actuator监控中心.mp4
+│  40第四十节-SpringBootActuator监控接口.mp4
+│  41第四十一节-AdminUI平台原理&amp;AdminUIServer端搭建.mp4
+│  42第四十二节(新版本SpringBoot-AdminUIClient使用.mp4
+│  43第四十三节-纯手写SpringBoot框架之项目演示.mp4
+│  44第四十四节-纯手写SpringBoot框架之原生环境搭建.mp4
+│  45第四十五节-纯手写SpringBoot框架之原理剖析.mp4
+│  46第四十六节-纯手写SpringBoot框架之创建内置Tomcat容器.mp4
+│  47第四十七节-纯手写SpringBoot框架之注解方式启动SpringMVC.mp4
+│  48第四十八节-纯手写SpringBoot框架之整合jsp视图展示.mp4
+│  49第四十九节-纯手写SpringBoot框架之整合业务逻辑层.mp4
+│  97后IT天才个人简介.mp4
+│  原创制作SpringBoot教学文档.docx
+│
+├─news
+│      02第二节-为什么要用SpringBoot.mp4
+│      03第三节-SpringCloud与SpringBoot关系 (1).mp4
+│      04第四节-SpringBoot关系与SpringMVC关系.mp4
+│      05第五节-创建第一个SpringBoot项目).mp4
+│      06第六节-@EnableAutoConfiguration作用.mp4
+│      07第七节-使用@ComponentScan方式启动.mp4
+│      08第八节-使用@SpringBootApplication方式启动.mp4
+│      09第九节-SpringBoot静态资源访问.mp4
+├─视频整合
+│      01.mp4
+│      01第一节-SpringBoot2.0介绍.mp4
+│      02第二节-为什么要用SpringBoot.mp4
+│      03第三节-SpringCloud与SpringBoot关系.mp4
+│      04第三节-SpringBoot关系与SpringMVC关系.mp4
+│      05(第四节-创建第一个SpringBoot项目).mp4
+│      06第六节-@EnableAutoConfiguration作用.mp4
+│      07第七节-使用@ComponentScan方式启动.mp4
+│      08第八节-使用@SpringBootApplication方式启动.mp4
+│      09第九节-SpringBoot静态资源访问.mp4
+└─上课代码
+   ├─第一天
+   ├─第二天
+   ├─第三天
+   ├─第四天
+   ├─第五天
+   ├─第六天
+   └─第七天
+
+SpringMVC, 静态资源, JVM, Servlet, JVM参数

@@ -1,0 +1,15 @@
+一、 前提知识和课程概要
+二、 Netty基本组件案例
+三、 Netty服务端启动流程及实践
+四、 NioEventLoop线程,事件,任务
+五、 新连接创建及接入
+六、 pipeline的创建,增删改及传播机制
+七、 ByteBuf内存分配及缓存详细解读
+八、 Netty解码原理与分析以及常见的解码器
+九、 Netty编码及writeAndFlush详细分析
+十、 Netty性能优化FastThreadLocal，Recycler等工具类解析
+十一、 Netty设计模式分析及应用
+十二、 从系统层面到应用层面实现百万级Netty高并发连接
+十三、 课程回顾
+
+缓存, 服务端, 高并发

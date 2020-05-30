@@ -1,0 +1,33 @@
+【No0262】最新Shiro权限管理专讲视频教程下载
+1. Shiro_简介.avi
+2. Shiro_HelloWorld.avi
+3. Shiro_集成 Spring.avi
+4. Shiro_工作流程(1).avi
+5. Shiro_DelegatingFilterProxy.avi
+6. Shiro_权限 URL 配置细节.avi
+7. Shiro_认证思路分析.avi
+8. Shiro_实现认证流程.avi
+9. Shiro_实现认证 Realm.avi
+10. Shiro_密码的比对.avi
+11. Shiro_密码的MD5加密.avi
+12. Shiro_密码的MD5盐值加密.avi
+13. Shiro_多 Realm 验证.avi
+14. Shiro_认证策略.avi
+15. Shiro_把 realms 配置给 SecurityManager.avi
+16. Shiro_权限配置.avi
+17. Shiro_授权流程分析.avi
+18. Shiro_多 Realm 授权的通过标准.avi
+19. Shiro_实现授权 Realm.avi
+20. Shiro_标签.avi
+21. Shiro_权限注解.avi
+22. Shiro_从数据表中初始化资源和权限.avi
+23. Shiro_会话管理.avi
+24. Shiro_SessionDao.avi
+25. Shiro_缓存.avi
+26. Shiro_认证和记住我的区别.avi
+27. Shiro_实现Rememberme.avi
+源码、课件.zip
+
+
+
+缓存, 权限管理

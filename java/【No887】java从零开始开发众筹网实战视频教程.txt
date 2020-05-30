@@ -1,0 +1,706 @@
+├─众筹网单一架构阶段(一)
+│  │  资料.rar
+│  │
+│  └─视频
+│      ├─2019年4月20日
+│      │      01.尚筹起步-从0到1-发心.avi
+│      │      02.众筹起步-从0到1-瀑布模型.avi
+│      │      03.众筹起步-从0到1-互联网项目特点.avi
+│      │      04.众筹起步-从0到1-敏捷开发.avi
+│      │      05.众筹起步-从0到1-原型页面-前台功能演示.avi
+│      │      06.众筹起步-从0到1-原型页面-后台功能演示.avi
+│      │      07.众筹起步-从0到1-架构设计.avi
+│      │      08.众筹起步-从0到1-后台架构-工程间关系.avi
+│      │      09.众筹起步-从0到1-后台架构-单一架构概念介绍.avi
+│      │      10.众筹起步-从0到1-后台架构-创建工程.avi
+│      │      11.众筹起步-从0到1-后台架构-建立工程之间的依赖关系.avi
+│      │      12.众筹起步-从0到1-后台架构-父工程依赖管理.avi
+│      │      13.众筹起步-从0到1-后台架构-需要确认的Maven设置.avi
+│      │      14.众筹起步-从0到1-数据库建模-PowerDesigner使用.avi
+│      │      15.众筹起步-从0到1-数据库建模-创建t_admin表.avi
+│      │      16.众筹起步-从0到1-逆向工程-创建工程配置pom.avi
+│      │      17.众筹起步-从0到1-逆向工程-配置generatorConfig.xml并执行逆向生成.avi
+│      │      18.众筹起步-从0到1-逆向工程-各归各位.avi
+│      │      19.众筹起步-从0到1-逆向工程-注意不要重复生成.avi
+│      │      20.众筹起步-从0到1-Spring整合MyBatis-Service接口和类.avi
+│      │      21.众筹起步-从0到1-Spring整合MyBatis-思路.avi
+│      │      22.众筹起步-从0到1-Spring整合MyBatis-思路扩展.avi
+│      │      23.众筹起步-从0到1-Spring整合MyBatis-配置数据源.avi
+│      │      24.众筹起步-从0到1-Spring整合MyBatis-测试数据源获取数据库连接.avi
+│      │      25.众筹起步-从0到1-Spring整合MyBatis-配置SqlSessionFactoryBean.avi
+│      │      26.众筹起步-从0到1-Spring整合MyBatis-测试整合效果.avi
+│      │      27.众筹起步-从0到1-声明式事务-配置.avi
+│      │      28.众筹起步-从0到1-声明式事务-测试.avi
+│      │      29.众筹起步-从0到1-SpringMVC-spring-web-mvc.xml配置.avi
+│      │      30.众筹起步-从0到1-SpringMVC-web.xml.avi
+│      │      31.众筹起步-从0到1-SpringMVC-伪静态.avi
+│      │      32.众筹起步-从0到1-SpringMVC-测试.avi
+│      │      代码.rar
+│      │      众筹网[2019年4月20日].docx
+│      │      项目开发目标.txt
+│      │      
+│      ├─2019年4月22日
+│      │  │  01.JDBC URL地址参数.avi
+│      │  │  02.Maven jar包下载失败-明显表现.avi
+│      │  │  03.Maven jar包下载失败-内部损坏.avi
+│      │  │  04.Maven jar包下载失败-HASH算法介绍.avi
+│      │  │  05.Maven jar包下载失败-定位jar包位置.avi  
+│      │  │  06.Maven jar包下载失败-强制重新下载.avi
+│      │  │  07.显示首页-执行流程.avi
+│      │  │  08.显示首页-创建index-page.avi
+│      │  │  09.显示首页-调整index-page.avi
+│      │  │  10.显示首页-调整index-page样式.avi
+│      │  │  11.显示首页-使用base标签规范路径写法.avi
+│      │  │  12.登录功能-跳转到登录页面-修改登录超链接.avi
+│      │  │  13.登录功能-跳转到登录页面-配置view-controller.avi
+│      │  │  14.登录功能-跳转到登录页面-登录页面代码.avi
+│      │  │  15.登录功能-核心操作-时序图分析.avi
+│      │  │  16.登录功能-核心操作-加密的工具方法.avi
+│      │  │  17.登录功能-核心操作-验证字符串、集合、Map是否有效的工具方法.avi
+│      │  │  18.登录功能-核心操作-在md5工具方法中验证字符串.avi
+│      │  │  19.登录功能-核心操作-准备后台主页面.avi
+│      │  │  20.登录功能-核心操作-handler方法.avi
+│      │  │  21.登录功能-核心操作-service方法.avi
+│      │  │  22.登录功能-核心操作-测试确认.avi
+│      │  │  23.登录功能-核心操作-小结.avi
+│      │  │  24.登录功能-辅助功能-声明常量.avi
+│      │  │  25.登录功能-辅助功能-使用常量.avi
+│      │  │  26.登录功能-辅助功能-退出.avi
+│      │  │  27.登录功能-辅助功能-登录拦截器-类.avi
+│      │  │  28.登录功能-辅助功能-登录拦截器-注册.avi
+│      │  │  clearLastUpdated.bat
+│      │  │  代码.rar
+│      │  │  众筹网[2019年4月22日].docx
+│      │  │  文件校验工具.exe
+│      │  │  项目开发目标.txt
+│      │  │  
+│      │  └─时序图
+│      │          190105登录功能.oob
+│      │          190105登录功能.oom
+│      │         
+│      ├─2019年4月23日
+│      │  │  01.Admin维护-显示后台主页面.avi
+│      │  │  02.Admin维护-后台主页面提取公共部分.avi
+│      │  │  03.Admin维护-后台JSP页面模板.avi
+│      │  │  04.Admin维护-修改登录后跳转方式.avi
+│      │  │  05.Admin维护-功能清单.avi
+│      │  │  06.Admin维护-分页-分析.avi
+│      │  │  07.Admin维护-分页-SQL.avi
+│      │  │  08.Admin维护-分页-AdminMapper.avi
+│      │  │  09.Admin维护-分页-AdminService.avi
+│      │  │  10.Admin维护-分页-AdminHandler.avi
+│      │  │  11.Admin维护-分页-PageHelper插件配置.avi
+│      │  │  12.Admin维护-分页-后端程序测试.avi
+│      │  │  13.Admin维护-分页-页面显示-加入原型主体结构.avi
+│      │  │  14.Admin维护-分页-页面显示-主体数据显示.avi3 F7 \6 w4 x* a$ t
+│      │  │  15.Admin维护-分页-页面显示-导航条-Pagination功能演示.avi
+│      │  │  16.Admin维护-分页-页面显示-导航条-加入Pagination的样式和JS文件.avi
+│      │  │  17.Admin维护-分页-页面显示-导航条-加入Pagination的jQuery代码.avi
+│      │  │  18.Admin维护-分页-页面显示-导航条-Pagination修改源码.avi
+│      │  │  19.Admin维护-分页-页面显示-测试.avi
+│      │  │  20.Admin维护-分页-关键词查询.avi
+│      │  │  21.Admin维护-批量删除-全选全不选功能.avi
+│      │  │  22.Admin维护-批量删除-点击批量删除按钮收集adminId.avi
+│      │  │  23.Admin维护-批量删除-发送adminIdArray到handler.avi
+│      │  │  24.Admin维护-批量删除-封装ResultEntity.avi
+│      │  │  25.Admin维护-批量删除-@RequestBody注解和@ResponseBody注解对比.avi
+│      │  │  26.Admin维护-批量删除-handler和service方法.avi
+│      │  │  27.Admin维护-批量删除-出现问题.avi
+│      │  │  众筹网[2019年4月23日].docx
+│      │  │  提升思维能力.avi
+│      │  │  源码.rar
+│      │  │  
+│      │  └─时序图
+│      │          190105Admin分页.oob
+│      │          190105Admin分页.oom
+│      │         
+│      ├─2019年4月24日
+│      │  │  01.遗留问题-jackson和spring依赖版本不兼容问题.avi
+│      │  │  02.遗留问题-jackson和spring依赖版本确定.avi
+│      │  │  03.批量删除-勾选检查.avi
+│      │  │  04.批量删除-删除前确认.avi
+│      │  │  05.批量删除-删除善后.avi
+│      │  │  06.单条删除-标记删除按钮并绑定单击响应函数.avi
+│      │  │  07.单条删除-删除前确认.avi
+│      │  │  08.单条删除-执行删除.avi
+│      │  │  09.javaScript函数提取到外部文件[暂缓]-EL表达式分析.avi
+│      │  │  10.JavaScript函数提取到外部文件[暂缓]-全局变量分析.avi
+│      │  │  11.JavaScript函数提取到外部文件[暂缓]-在JSP页面上引入外部JS文件.avi
+│      │  │  12.JavaScript函数提取到外部文件[暂缓]-初始化全局变量以及修改全局变量.avi
+│      │  │  13.JavaScript函数提取到外部文件[暂缓]-测试.avi
+│      │  │  14.新增-流程分析.avi
+│      │  │  15.新增-跳转到表单页面.avi
+│      │  │  16.新增-执行保存操作.avi
+│      │  │  17.新增-转换异常类型.avi
+│      │  │  18.新增-立即看到最新记录.avi
+│      │  │  19.更新-流程分析.avi
+│      │  │  20.更新-前往更新页面-上.avi
+│      │  │  21.更新-前往更新页面-下.avi
+│      │  │  22.更新-执行更新.avi
+│      │  │  23.HTTP协议复习-请求报文.avi
+│      │  │  24.HTTP协议复习-响应报文.avi
+│      │  │  25.同步请求和异步请求-创建测试工程.avi
+│      │  │  26.同步请求和异步请求-测试结果和代码对应说明.avi
+│      │  │  27.同步请求和异步请求-画图分析.avi
+│      │  │  众筹网[2019年4月24日].docx
+│      │  │  源码.rar
+│      │  │
+│      │  └─时序图
+│      │          190105同步器请求.oom
+│      │          190105异步请求.oob
+│      │          190105异步请求.oom
+│      │          190105更新.oob
+│      │          190105更新.oom
+│      │          ObjectOrientedModel_1.oob
+│      │          ObjectOrientedModel_1.oom
+│      │         
+│      ├─2019年4月26日
+│      │  │  01.角色维护-功能演示.avi
+│      │  │  02.角色维护-权限概念-总体概念+资源概念.avi
+│      │  │  03.角色维护-权限概念-狭义权限概念.avi
+│      │  │  04.角色维护-权限概念-角色概念.avi
+│      │  │  05.角色维护-权限概念-用户概念.avi
+│      │  │  06.角色维护-权限概念-权限到资源的关联关系.avi
+│      │  │  07.角色维护-权限概念-角色到权限的关联关系.avi
+│      │  │  08.角色维护-权限概念-用户到角色的关联关系.avi
+│      │  │  09.角色维护-权限概念-数据库表示多对多.avi
+│      │  │  10.Ajax操作强化-模拟表单提交-Employee实体类.avi
+│      │  │  11.Ajax操作强化-模拟表单提交-准备工作.avi
+│      │  │  12.Ajax操作强化-模拟表单提交-jQuery代码.avi
+│      │  │  13.Ajax操作强化-模拟表单提交-handler代码.avi
+│      │  │  14.Ajax操作强化-发送JSON数据-jQuery代码.avi
+│      │  │  15.Ajax操作强化-发送JSON数据-handler代码.avi
+│      │  │  16.Ajax操作强化-模拟表单发送list数据.avi
+│      │  │  17.Ajax操作强化-小结.avi
+│      │  │  18.前后端对接方式-服务器端渲染模式.avi
+│      │  │  19.前后端对接方式-前后端分离.avi
+│      │  │  20.角色维护-准备工作-layer弹层组件使用.avi
+│      │  │  21.角色维护-准备工作-操作模态框.avi
+│      │  │  22.角色维护-创建模型和组件.avi
+│      │  │  23.角色维护-跳转到角色维护主页面.avi
+│      │  │  24.角色维护-分页-流程分析.avi
+│      │  │  25.角色维护-分页-后端-持久化层.avi
+│      │  │  26.角色维护-分页-后端-业务逻辑层.avi
+│      │  │  27.角色维护-分页-后端-控制层.avi
+│      │  │  28.角色维护-分页-后端-代码测试.avi
+│      │  │  29.角色维护-分页-前端-创建外部JavaScript文件.avi
+│      │  │  30.角色维护-分页-前端-将显示分页数据功能拆分成四个小功能.avi
+│      │  │  31.角色维护-分页-前端-获取PageInfo-上.avi
+│      │  │  32.角色维护-分页-前端-获取PageInfo-下.avi
+│      │  │  33.角色维护-分页-前端-页面初始化函数调整.avi
+│      │  │  34.角色维护-分页-前端-生成主体数据函数.avi
+│      │  │  35.角色维护-分页-前端-显示分页页码导航条.avi
+│      │  │  代码.rar
+│      │  │  众筹网[2019年4月26日].docx
+│      │  │  
+│      │  └─时序图
+│      │          190105角色分页.oob
+│      │          190105角色分页.oom
+│      │         
+│      ├─2019年4月27日
+│      │      01.HTML和json扩展名问题.avi
+│      │      02.角色维护-分页回顾.avi
+│      │      03.角色维护-关键词查询功能.avi
+│      │      04.角色维护-批量删除-全选全不选.avi
+│      │      05.角色维护-批量删除-大致思路.avi
+│      │      06.角色维护-批量删除-检查是否选择了itemBox.avi
+│      │      07.角色维护-批量删除-显示确认模态框-思路.avi
+│      │      08.角色维护-批量删除-显示确认模态框-准备模态框.avi
+│      │      09.角色维护-批量删除-显示确认模态框-getRoleListByRoleIdArray()函数.avi
+│      │      10.角色维护-批量删除-显示确认模态框-根据roleIdList获取roleList的后端代码.avi
+│      │      11.角色维护-批量删除-显示确认模态框-showRemoveConfirmModal()函数.avi
+│      │      12.角色维护-批量删除-显示确认模态框-代码完成.avi
+│      │      13.角色维护-批量删除-显示确认模态框-测试.avi_
+│      │      14.角色维护-批量删除-执行删除-jQuery代码.avi
+│      │      15.角色维护-批量删除-执行删除-后端代码.avi
+│      │      16.角色维护-批量删除-执行删除-测试并完善后续操作.avi
+│      │      17.角色维护-单条删除-关于动态元素事件绑定.avi
+│      │      18.角色维护-单条删除-执行删除.avi
+│      │      19.角色维护-单条删除-修改事件绑定方式.avi
+│      │      20.角色维护-新增-大致步骤.avi
+│      │      21.角色维护-新增-给新增按钮绑定单击响应函数.avi
+│      │      22.角色维护-新增-打开模态框.avi
+│      │      23.角色维护-新增-给保存按钮绑定单击响应函数.avi
+│      │      24.角色维护-新增-后端代码编写和测试.avi
+│      │      25.角色维护-更新-大致步骤.avi
+│      │      26.角色维护-更新-打开模态框并回显表单.avi
+│      │      27.角色维护-更新-执行更新-前端代码.avi
+│      │      28.角色维护-更新-执行更新-后端代码.avi
+│      │      29.代码改进-@RestController.avi
+│      │      30.代码改进-异常映射改进-提出问题.avi
+│      │      31.代码改进-异常映射改进-解决思路.avi
+│      │      32.代码改进-异常映射改进-异步请求特点.avi
+│      │      33.代码改进-异常映射改进-判断异步请求的工具方法.avi
+│      │      34.代码改进-异常映射改进-升级异常处理器.avi
+│      │      35.代码改进-异常映射改进-解决Gson问题并改进提示消息.avi
+│      │      36.代码改进-登录拦截器改进.avi
+│      │      代码.rar
+│      │      众筹网[2019年4月27日].docx
+│      │      
+│      ├─2019年4月28日
+│      │      01.菜单维护-功能演示.avi
+│      │      02.菜单维护-建模-创建数据库表.avi
+│      │      03.菜单维护-建模-自关联.avi
+│      │      04.菜单维护-建模-逆向工程.avi
+│      │      05.菜单维护-建模-创建handler和service.avi
+│      │      06.菜单维护-tree显示-后端代码-旧.avi
+│      │      07.菜单维护-tree显示-后端代码-性能逻辑分析.avi
+│      │      08.菜单维护-tree显示-后端代码-新.avi
+│      │      09.菜单维护-tree显示-前端代码-跳转到menu-page.jsp.avi
+│      │      10.菜单维护-tree显示-前端代码-加入zTree环境基于假数据显示tree.avi
+│      │      11.菜单维护-tree显示-前端代码-使用真实数据显示tree.avi
+│      │      12.菜单维护-tree显示-前端代码-修改图标-声明函数设置setting.view.addDiyDom属性.avi
+│      │      13.菜单维护-tree显示-前端代码-修改图标-思路分析.avi
+│      │      14.菜单维护-tree显示-前端代码-修改图标-具体实现.avi
+│      │      15.菜单维护-tree显示-前端代码-阻止点击节点时跳转页面.avi
+│      │      16.菜单维护-tree显示-前端代码-小结.avi
+│      │      17.菜单维护-tree显示-封装initWholeTree函数.avi
+│      │      18.菜单维护-按钮组-生成规则.avi
+│      │      19.菜单维护-按钮组-generateBtnGrp(treeNode)函数.avi
+│      │      20.菜单维护-按钮组-声明addHoverDom和removeHoverDom函数.avi
+│      │      21.菜单维护-按钮组-执行按钮组添加和移除-上.avi
+│      │      22.菜单维护-按钮组-执行按钮组添加和移除-下.avi
+│      │      23.菜单维护-添加-准备模态框.avi
+│      │      24.菜单维护-添加-showAddModal()函数.avi
+│      │      25.菜单维护-添加-给保存按钮绑定单击响应函数.avi
+│      │      26.菜单维护-添加-后端代码.avi
+│      │      27.菜单维护-更新-showEditModal()函数.avi
+│      │      28.菜单维护-更新-根据id查询Menu后端代码.avi
+│      │      29.菜单维护-更新-给更新按钮绑定单击响应函数.avi
+│      │      30.菜单维护-更新-执行更新的后端代码.avi
+│      │      代码.rar
+│      │      众筹网[2019年4月28日].docx
+│      │     
+│      ├─2019年4月29日
+│      │      01.权限验证相关概念.avi
+│      │      02.admin分配role-建表.avi
+│      │      03.admin分配role-思路.avi
+│      │      04.admin分配role-创建handler(1).avi
+│      │      05.admin分配role-查询已分配未分配角色的SQL.avi
+│      │      06.admin分配role-创建assign-role.jsp页面.avi
+│      │      07.admin分配role-执行分配-handler方法.avi
+│      │      08.admin分配role-执行分配-service方法.avi
+│      │      09.admin分配role-执行分配-SQL和左右移动option.avi
+│      │      10.admin分配role-执行分配-填坑.avi
+│      │      11.role分配auth-建表.avi
+│      │      12.role分配auth-显示auth树-查询全部auth.avi
+│      │      13.role分配auth-显示auth树-显示模态框.avi
+│      │      14.role分配auth-显示auth树-完成.avi
+│      │      15.role分配auth-回显已分配auth-后端代码.avi
+│      │      16.role分配auth-回显已分配auth-前端代码.avi
+│      │      17.role分配auth-执行分配-前端代码.avi
+│      │      18.role分配auth-执行分配-后端代码.avi
+│      │      19.role分配auth-执行分配-测试.avi
+│      │      20.SpringSecurity-@Configuration注解.avi
+│      │      21.SpringSecurity-SpringMVC环境.avi
+│      │      22.SpringSecurity-SpringSecurity环境.avi
+│      │      23.SpringSecurity-实验1-放行首页和静态资源.avi
+│      │      24.SpringSecurity-实验2-未认证请求跳转到登录页面.avi
+│      │      25.SpringSecurity-实验3-设置登录账号和密码.avi
+│      │      26.SpringSecurity-跨站请求伪造介绍.avi
+│      │      27.SpringSecurity-实验4-退出登录.avi
+│      │      28.SpringSecurity-实验5-设置角色要求.avi
+│      │      29.SpringSecurity-实验6-使用指定页面代替403页面.avi
+│      │      SpringSecurity.docx
+│      │      SpringSecurity代码.zip
+│      │      众筹网[2019年4月29日].docx
+│      │      源码.rar
+│      │      
+│      └─2019年4月30日
+│              01.SpringSecurity-实验7-记住我-内存版.avi
+│              02.SpringSecurity-实验8-记住我-数据库版.avi
+│              03.SpringSecurity-实验9-数据库认证-SpringSecurity默认实现[了解].avi
+│              04.SpringSecurity-实验9-数据库认证-自定义UserDetailsService.avi
+│              05.SpringSecurity-实验9-数据库认证-使用自定义UserDetailsService.avi
+│              06.SpringSecurity-ROLE_前缀问题-代码部分.avi
+│              07.SpringSecurity-ROLE_前缀问题-小结.avi
+│              08.SpringSecurity-实验10-自定义加密.avi
+│              09.SpringSecurity-实验10-自定义加密使用.avi
+│              10.SpringSecurity-BCryptPasswordEncoder介绍.avi
+│              11.SpringSecurity-补充-基于权限验证.avi
+│              12.项目权限-思路.avi
+│              13.项目权限-环境-加入SpringSecurity环境.avi
+│              14.项目权限-环境-IOC容器问题-问题表现.avi
+│              15.项目权限-环境-IOC容器问题-问题解决.avi
+│              16.项目权限-环境-放行首页和静态资源.avi
+│              17.项目权限-登录-前往登录页面.avi
+│              18.项目权限-登录-提交登录表单.avi
+│              19.项目权限-登录-登录后显示用户名.avi
+│              20.项目权限-登录-退出登录.avi
+│              21.项目权限-登录-登录页面显示提示消息的EL表达式.avi
+│              22.项目权限-登录-数据库登录.avi
+│              23.项目权限-登录-封装从数据库查询的角色、权限信息-Service代码.avi
+│              24.项目权限-登录-封装从数据库查询的角色、权限信息-Mapper代码.avi
+│              25.项目权限-登录-封装SecurityAdmin扩展User.avi
+│              26.项目权限-登录-在页面上访问用户昵称.avi
+│              27.项目权限-登录-使用BCryptPasswordEncoder进行加密.avi
+│              28.项目权限-权限控制-使用antMatcher和注解控制权限.avi
+│              29.项目权限-权限控制-使用标签控制页面元素显示.avi
+│              30.后台功能-单一架构阶段-技术点总结.avi
+│              SpringSecurity.docx
+│              SpringSecurity代码.zip
+│              代码.rar
+│              单一架构阶段-技术点总结.txt
+│              
+└─众筹网分布式架构阶段(二)
+    │  资料.rar
+    │  
+    └─视频_
+        ├─2019年5月05日
+        │      01.分布式架构-单一架构和分布式架构概念.avi
+        │      02.分布式架构-方法远程调用-概念.avi
+        │      03.分布式架构-方法远程调用-技术-WebService.avi
+        │      04.分布式架构-方法远程调用-技术-dubbo+ZooKeeper.avi
+        │      05.分布式架构-方法远程调用-技术-Springboot+SpringCloud.avi
+        │      06.分布式架构-方法远程调用-意义.avi
+        │      07.分布式架构-优缺点.avi
+        │      08.分布式架构-服务-接口概念.avi
+        │      09.分布式架构-服务-服务概念.avi
+        │      10.分布式架构-服务-SOA.avi
+        │      11.分布式架构-服务-微服务.avi
+        │      12.分布式架构-中间件介绍.avi
+        │      13.分布式架构-了解介绍分布式系统.avi
+        │      14.Redis-NoSQL介绍.avi
+        │      15.Redis-Redis介绍.avi
+        │      16.Redis-安装-上传并解压.avi
+        │      17.Redis-安装-安装gcc-c++.avi
+        │      18.Redis-安装-Redis编译安装.avi
+        │      19.Redis-配置-默认配置启动.avi
+        │      20.Redis-配置-指定配置文件启动.avi
+        │      21.Redis-常用命令-客户端登录.avi
+        │      22.Redis-常用命令-常用数据结构介绍.avi
+        │      23.Redis-常用命令-key命令.avi
+        │      24.Redis-常用命令-string命令.avi
+        │      25.Redis-常用命令-list命令.avi
+        │      26.Redis-常用命令-set命令.avi
+        │      27.Redis-常用命令-hash命令.avi
+        │      28.Redis-常用命令-zset命令.avi
+        │      众筹网[2019年5月5日].docx
+        │      
+        ├─2019年5月07日
+        │      01.Redis-持久化-概述.avi
+        │      02.Redis-持久化-RDB-触发时机.avi
+        │      03.Redis-持久化-RDB-相关配置.avi
+        │      04.Redis-持久化-RDB-绝对安全探讨.avi
+        │      05.Redis-持久化-AOF-介绍.avi
+        │      06.Redis-持久化-AOF-效果.avi
+        │      07.Redis-持久化-AOF-重写.avi
+        │      08.Redis-持久化-AOF-修复.avi
+        │      09.Redis-事务-上.avi
+        │      10.Redis-事务-下.avi
+        │      11.Redis-事务-悲观锁和乐观锁.avi
+        │      12.Redis-主从复制集群-介绍.avi
+        │      13.Redis-主从复制集群-准备配置文件.avi
+        │      14.Redis-主从复制集群-启动集群服务器实例.avi
+        │      15.Redis-主从复制集群-建立主从关系.avi
+        │      16.Redis-主从复制集群-初步测试.avi
+        │      17.Redis-哨兵模式-介绍主观和客观下线.avi
+        │      18.Redis-哨兵模式-测试.avi
+        │      19.Redis-发布订阅.avi
+        │      20.Redis-Jedis-Redis端配置bind.avi
+        │      21.Redis-Jedis-Jedis.avi
+        │      22.Redis-Jedis-JedisPool.avi
+        │      23.Zookeeper-引入.avi
+        │      24.Zookeeper-简介.avi
+        │      25.Zookeeper-安装-确认安装JDK.avi
+        │      26.Zookeeper-安装-解压与配置.avi
+        │      27.Zookeeper-安装-启动Zookeeper并使用客户端登录.avi
+        │      28.Zookeeper-常用命令-客户端命令.avi
+        │      29.Zookeeper-常用命令-状态信息介绍.avi
+        │      30.Zookeeper-常用命令-四字命令.avi
+        │      31.Zookeeper-异步通知机制-Java客户端基本操作.avi
+        │      32.Zookeeper-异步通知机制-一次性通知.avi
+        │      33.Zookeeper-异步通知机制-持续通知.avi
+        │      34.Zookeeper-异步通知机制-递归调用中内存问题以及异步体现.avi
+        │      笔记代码.rar
+        │      
+        ├─2019年5月08日
+        │      01.Zookeeper-集群-工作机制.avi
+        │      02.Zookeeper-集群-具体配置-zkOne.avi
+        │      03.Zookeeper-集群-具体配置-zkTwo和zkThree.avi
+        │      04.Zookeeper-集群-启动、停止以及查看状态的脚本.avi
+        │      05.Zookeeper-集群-测试.avi
+        │      06.Zookeeper-集群-集群数量单数探讨.avi
+        │      07.Dubbo-简介.avi
+        │      08.Dubbo-注册中心介绍.avi
+        │      09.Dubbo-创建工程-Common工程.avi
+        │      10.Dubbo-创建工程-Provider工程.avi
+        │      11.Dubbo-创建工程-测试Provider工程.avi
+        │      12.Dubbo-创建工程-Consumer工程-上.avi
+        │      13.Dubbo-创建工程-Consumer工程-下.avi
+        │      14.Dubbo-小结.avi
+        │      15.SpringBoot-简介.avi
+        │      16.SpringBoot-创建Web工程.avi
+        │      17.SpringBoot-启动Web工程.avi
+        │      18.SpringBoot-阅读Web工程启动日志.avi
+        │      19.SpringBoot-使用Eclipse中的Spring插件创建SpringBoot工程.avi
+        │      20.SpringBoot-相关注解介绍.avi
+        │      21.SpringBoot-扫描包相关.avi
+        │      22.SpringBoot-properties配置文件.avi
+        │      23.SpringBoot-yml配置文件.avi
+        │      24.SpringBoot-整合MyBatis-依赖.avi
+        │      25.SpringBoot-整合MyBatis-Java代码.avi
+        │      26.SpringBoot-整合MyBatis-测试.avi
+        │      27.SpringBoot-视图技术.avi
+        │      代码.rar
+        │      作业.txt
+        │      
+        ├─2019年5月10日
+        │      01.测试工程-工程之间关系.avi
+        │      02.测试工程-parent.avi
+        │      03.测试工程-API.avi
+        │      04.测试工程-dept8001-上.avi
+        │      05.测试工程-dept8001-中.avi
+        │      06.测试工程-dept8001-下.avi
+        │      07.测试工程-dept8001-测试.avi
+        │      08.测试工程-consumer80-创建工程.avi
+        │      09.测试工程-consumer80-测试.avi
+        │      10.注册中心-介绍.avi
+        │      11.注册中心-创建Eureka工程.avi
+        │      12.注册中心-注册provider.avi
+        │      13.注册中心-在Consumer中根据服务名调用服务.avi
+        │      14.注册中心-集群-配置域名.avi
+        │      15.注册中心-集群-创建工程并测试.avi
+        │      16.负载均衡-概念.avi
+        │      17.负载均衡-反向代理.avi
+        │      18.负载均衡-nginx和Ribbon对比.avi
+        │      19.负载均衡-Ribbon工作机制.avi
+        │      20.Ribbon-创建provider集群.avi
+        │      21.Ribbon-测试负载均衡效果.avi
+        │      22.Feign-API工程修改.avi
+        │      23.Feign-创建Feign工程.avi
+        │      24.Feign-测试Feign工程.avi
+        │      代码.rar  
+        │      笔记[2019年5月10日].docx
+        │      
+        ├─2019年5月11日
+        │      01.Hystrix-服务雪崩.avi
+        │      02.Hystrix-服务熔断机制介绍.avi
+        │      03.Hystrix-服务降级机制介绍.avi
+        │      04.Hystrix-熔断功能-代码.avi
+        │      05.Hystrix-熔断功能-测试.avi
+        │      06.Hystrix-降级功能-代码.avi
+        │      07.Hystrix-降级功能-测试.avi
+        │      08.Hystrix-监控功能-代码.avi
+        │      09.Hystrix-监控功能-测试.avi
+        │      10.Zuul-简介.avi
+        │      11.Zuul-创建工程.avi
+        │      12.Zuul-配置.avi
+        │      13.SpringCloud-理论-微服务理念介绍.avi
+        │      14.SpringCloud-理论-其他.avi
+        │      15.众筹网-功能演示.avi
+        │      16.众筹网-项目架构-介绍.avi
+        │      17.众筹网-创建数据库-Linux安装MySQL.avi
+        │      18.众筹网-创建数据库-MySQL设置访问授权.avi
+        │      19.众筹网-创建数据库-MySQL设置服务器端字符集.avi
+        │      20.众筹网-创建数据库-创建完成.avi
+        │      21.众筹网-创建工程-父工程.avi
+        │      22.众筹网-创建工程-公共工程.avi
+        │      23.众筹网-创建工程-注册中心.avi
+        │      24.众筹网-创建工程-数据库工程-创建.avi
+        │      25.众筹网-创建工程-数据库工程-测试.avi
+        │      26.众筹网-创建工程-Redis工程-创建工程并测试RedisTemplate.avi
+        │      27.众筹网-创建工程-Redis工程-测试StringRedisTemplate.avi
+        │      28.众筹网-创建工程-用户管理工程.avi
+        │      29.众筹网-创建工程-consumer调用provider梳理.avi
+        │      30.lombok-效果演示.avi
+        │      31.lombok-原理说明.avi
+        │      32.lombok-实际使用.avi
+        │      33.实体类封装方式进阶.avi
+        │      笔记代码.rar
+        │      软件.rar
+        │      
+        ├─2019年5月13日
+        │      01.注册功能-总体思路.avi
+        │      02.注册功能-建模-创建数据库表t_member.avi
+        │      03.注册功能-建模-逆向工程生成资源.avi
+        │      04.注册功能-建模-远程Service和本地Service对比.avi
+        │      05.注册功能-发送验证码-阿里云短信API-介绍.avi
+        │      06.注册功能-发送验证码-阿里云短信API-测试.avi
+        │      07.注册功能-发送验证码-阿里云短信API-工具方法.avi
+        │      08.注册功能-发送验证码-HttpClient版本修正.avi
+        │      09.注册功能-发送验证码-将验证码存入Redis-创建ResultEntity类.avi
+        │      10.注册功能-发送验证码-将验证码存入Redis-设计Key.avi
+        │      11.注册功能-发送验证码-将验证码存入Redis-远程方法接口.avi
+        │      12.注册功能-发送验证码-将验证码存入Redis-远程方法实现-保存操作.avi
+        │      13.注册功能-发送验证码-将验证码存入Redis-远程方法实现-获取和删除操作.avi
+        │      14.注册功能-发送验证码-将验证码存入Redis-远程方法实现-测试.avi
+        │      15.注册功能-发送验证码-member-manager中的handler方法.avi
+        │      16.注册功能-发送验证码-引申-分布式事务.avi
+        │      17.注册功能-发送验证码-引申-@Value注解提取appCode到yml.avi
+        │      18.注册功能-执行注册-具体流程.avi
+        │      19.注册功能-执行注册-创建MemberVO.avi
+        │      20.注册功能-执行注册-database-provider-查询登录账号数量.avi
+        │      21.注册功能-执行注册-database-provider-保存MemberPO.avi
+        │      22.注册功能-执行注册-BCryptPasswordEncoder.avi
+        │      23.注册功能-执行注册-member-manager中的handler方法.avi
+        │      24.注册功能-执行注册-测试.avi
+        │      笔记源码.rar
+        │     
+        ├─2019年5月14日
+        │      01.用户模块-登录功能-令牌机制-介绍.avi
+        │      02.用户模块-登录功能-令牌机制-登录成功信息存储方式-Session.avi
+        │      03.用户模块-登录功能-令牌机制-登录成功信息存储方式-H5对象.avi
+        │      04.用户模块-登录功能-流程分析.avi
+        │      05.用户模块-登录功能-具体实现-准备工作-根据账号查询Member对象.avi
+        │      06.用户模块-登录功能-具体实现-准备工作-生成token的工具方法.avi
+        │      07.用户模块-登录功能-具体实现-准备工作-封装MemberSignSuccessVO对象.avi
+        │      08.用户模块-登录功能-具体实现-主体逻辑.avi
+        │      09.用户模块-登录功能-测试.avi
+        │      10.用户模块-退出登录.avi
+        │      11.项目模块-OSS对象存储-SpringMVC文件上传回顾.avi
+        │      12.项目模块-OSS对象存储-传统文件存储方式弊端.avi
+        │      13.项目模块-OSS对象存储-文件存储两种解决方案介绍.avi
+        │      14.项目模块-OSS对象存储-开通服务.avi
+        │      15.项目模块-OSS对象存储-创建存储空间并上传文件.avi
+        │      16.项目模块-OSS对象存储-创建AccessKey.avi
+        │      17.项目模块-OSS对象存储-示例代码介绍.avi
+        │      18.项目模块-OSS对象存储-示例代码测试.avi
+        │      19.项目模块-创建项目-大体思路.avi
+        │      20.项目模块-创建项目-创建数据库表.avi
+        │      21.项目模块-创建项目-创建VO模型对象.avi
+        │      22.项目模块-创建项目-逆向工程.avi
+        │      ak.rar
+        │      笔记源码.rar
+        │      阅读异常信息要着重关注最下面的根本原因.avi
+        │      
+        ├─2019年5月15日
+        │      01.项目模块-创建项目-创建工程.avi
+        │      02.项目模块-创建项目-初始化-检查是否登录.avi
+        │      03.项目模块-创建项目-初始化-在Redis保存初始化信息.avi
+        │      04.项目模块-创建项目-初始化-测试.avi
+        │      05.项目模块-创建项目-图片保存-操作方式探讨.avi
+        │      06.项目模块-创建项目-图片保存-操作流程.avi
+        │      07.项目模块-创建项目-图片保存-头图-代码.avi
+        │      08.项目模块-创建项目-图片保存-头图-测试.avi
+        │      09.项目模块-创建项目-图片保存-详情图片-代码和测试.avi
+        │      10.项目模块-创建项目-项目信息保存-代码和测试.avi
+        │      11.项目模块-创建项目-保存回报-代码和测试.avi
+        │      12.项目模块-创建项目-保存确认信息-代码和测试.avi
+        │      13.项目模块-创建项目-数据库保存-project-manager方法.avi
+        │      14.项目模块-创建项目-数据库保存-database-provider的Service方法步骤.avi
+        │      15.项目模块-创建项目-数据库保存-保存ProjectPO代码.avi
+        │      16.项目模块-创建项目-数据库保存-保存typeIdList.avi
+        │      17.项目模块-创建项目-数据库保存-保存tagIdList.avi
+        │      18.项目模块-创建项目-数据库保存-保存详情图片List.avi
+        │      19.项目模块-创建项目-数据库保存-保存发起人信息.avi
+        │      20.项目模块-创建项目-数据库保存-保存回报信息.avi
+        │      21.项目模块-创建项目-数据库保存-保存确认信息.avi
+        │      22.项目模块-创建项目-数据库保存-测试.avi
+        │      23.项目模块-创建项目-数据库保存-[设置ProjectPO的money类型][给ProjectPO设置memberId].avi
+        │      24.项目模块-创建项目-数据库保存-保存成功后删除Redis中临时数据.avi
+        │      25.项目模块-创建项目-数据库保存-代码加固.avi
+        │      26.项目模块-创建项目-数据库保存-笔记总结.avi
+        │      笔记源码.rar
+        │      
+        ├─2019年5月17日
+        │      01.回顾-前端交互方式.avi
+        │      02.回顾-会话控制.avi
+        │      03.分布式环境Session共享-提出问题和解决方案.avi
+        │      04.分布式环境Session共享-创建测试工程.avi
+        │      05.分布式环境Session共享-编写测试代码.avi
+        │      06.分布式环境Session共享-效果测试.avi
+        │      07.分布式环境Session共享-原理大致说明.avi
+        │      08.分布式环境Session共享-原理探究-Filter.avi
+        │      09.分布式环境Session共享-原理探究-Request等对象的包装以及装饰模式.avi
+        │      10.SpringBoot环境-静态资源存放.avi
+        │      11.Thymeleaf-JSP的致命缺陷.avi
+        │      12.Thymeleaf-HelloWorld.avi
+        │      13.Thymeleaf-表达式是否转义区别.avi
+        │      14.Thymeleaf-@{}获取contextPath.avi
+        │      15.Thymeleaf-在HTML标签内使用Thymeleaf属性.avi
+        │      16.Thymeleaf-三种包含外部片段方式.avi
+        │      17.前端工程-创建工程显示首页.avi
+        │      18.前端工程-通过后端handler方法前往首页.avi
+        │      19.调用member-manager-确认在注册中心注册.avi
+        │      20.调用member-manager-抽取接口.avi
+        │      21.登录功能-跳转到登录页面-在配置类中使用view-controller.avi
+        │      22.登录功能-整理登录页面.avi
+        │      23.登录功能-webui工程-Controller方法.avi
+        │      24.登录功能-common工程-实体类序列化问题.avi
+        │      25.登录功能-个人中心页面-显示用户昵称.avi
+        │      26.登录功能-个人中心页面-整理.avi
+        │      27.退出登录.avi
+        │      代码.zip
+        │      笔记.rar
+        │      面试必成攻略.avi
+        │      面试必成攻略.png
+        │      
+        ├─2019年5月18日
+        │      01.前端工程-项目创建功能.avi
+        │      02.前端工程-项目创建-跳转到同意协议页面.avi
+        │      03.前端工程-项目创建-针对project-manager抽取接口.avi
+        │      04.前端工程-项目创建-执行Project初始化操作.avi
+        │      05.前端工程-项目创建-超时问题.avi
+        │      06.前端工程-项目创建-测试项目初始化操作.avi
+        │      07.前端工程-项目创建-之前保存项目数据功能调整-删除旧发起人信息.avi
+        │      08.前端工程-项目创建-查询MemberLaunchInfo-思路.avi
+        │      09.前端工程-项目创建-查询MemberLaunchInfo-根据memberId查询.avi
+        │      10.前端工程-项目创建-查询MemberLaunchInfo-在member-manager查询.avi
+        │      11.前端工程-项目创建-查询MemberLaunchInfo-webui.avi
+        │      12.前端工程-项目创建-查询MemberLaunchInfo-在页面显示.avi
+        │      13.前端工程-项目创建-显示项目创建页面.avi
+        │      14.前端工程-项目创建-上传头图-点上传按钮打开文件选择框.avi
+        │      15.前端工程-项目创建-上传头图-jQuery代码部分.avi
+        │      16.前端工程-项目创建-上传文件到OSS-工具方法.avi
+        │      17.前端工程-项目创建-上传文件到OSS-yml中管理参数.avi
+        │      18.前端工程-项目创建-上传文件到OSS-handler方法-上.avi
+        │      19.前端工程-项目创建-上传文件到OSS-handler方法-下.avi
+        │      20.前端工程-项目创建-上传文件到OSS-测试.avi
+        │      21.前端工程-项目创建-上传详情图片-jQuery代码部分.avi
+        │      22.前端工程-项目创建-上传详情图片-handler代码部分.avi
+        │      23.前端工程-项目创建-上传详情图片-测试.avi
+        │      24.前端工程-项目创建-后续操作说明.avi
+        │      25.前端工程-支付功能-蚂蚁金服文档简介.avi
+        │      26.前端工程-支付功能-沙箱环境简介.avi
+        │      27.前端工程-支付功能-支付流程介绍.avi
+        │      28.前端工程-支付功能-内网穿透-概念介绍.avi
+        │      29.前端工程-支付功能-内网穿透-使用NATAPP实现内网穿透.avi
+        │      30.前端工程-支付功能-密钥-对称加密.avi
+        │      31.前端工程-支付功能-密钥-非对称加密.avi
+        │      32.前端工程-支付功能-密钥-在沙箱环境中设置应用公钥.avi
+        │      33.前端工程-支付功能-官方demo-下载和配置.avi
+        │      34.前端工程-支付功能-官方demo-运行和调试.avi
+        │      alipay.trade.page.pay-JAVA-UTF-8.zip
+        │      distribution-crowd-parent.zip
+        │      rmsportal_6680_alipay.trade.page.pay-JAVA-UTF-8.rar
+        │      rmsportal_6680_secret_key_tools_RSA_win.zip
+        │      笔记.rar
+        │      
+        └─2019年5月20日
+                01.项目引入支付-加入配置类.avi
+                02.项目引入支付-PayHanlder-doPay()方法.avi
+                03.项目引入支付-PayHandler-doPay()方法响应页面内容.avi
+                04.项目引入支付-PayHandler-在浏览器显示支付界面.avi
+                05.项目引入支付-PayHandler-doPay()方法前面的操作路径.avi
+                06.项目引入支付-PayHandler-returnUrl和notifyUrl方法.avi
+                07.项目引入支付-PayHandler-测试.avi
+                08.项目引入支付-将配置参数转移到yml.avi
+                09.swagger-引入.avi
+                10.swagger-在类和方法上标记注解.avi
+                11.swagger-测试.avi
+                12.项目部署相关-开发流程.avi
+                13.项目部署相关-手动部署.avi
+                14.项目部署相关-自动化部署.avi
+                15.项目总结.avi
+                16.版本控制-引入.avi
+                17.版本控制-SVN-工作机制介绍.avi
+                18.版本控制-SVN-服务器端程序安装.avi
+                19.版本控制-SVN-创建版本库.avi
+                20.版本控制-SVN-服务器端其他设置.avi
+                21.版本控制-SVN-安装Eclipse插件.avi
+                22.版本控制-SVN-Eclipse操作-创建资源库位置.avi
+                23.版本控制-SVN-Eclipse操作-指出Eclipse特定文件.avi
+                24.版本控制-SVN-Eclipse操作-全局忽略配置.avi
+                25.版本控制-SVN-Eclipse操作-分享工程到SVN.avi
+                26.版本控制-SVN-Eclipse操作-检查工程到Eclipse.avi
+                27.版本控制-SVN-Eclipse操作-基本操作展示.avi
+                28.版本控制-SVN-Eclipse操作-冲突-文件过时.avi
+                29.版本控制-SVN-Eclipse操作-冲突-制造冲突以及冲突表现.avi
+                30.版本控制-SVN-Eclipse操作-冲突-冲突解决.avi
+                swagger.docx
+                代码.rar
+                尚筹网分布式阶段课件[完整版].rar
+
+数据库, MyBatis, SpringMVC, 静态资源, 项目部署
+本主题由 admin 于 2020-1-11 21:09 设置高亮

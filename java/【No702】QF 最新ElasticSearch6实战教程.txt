@@ -1,0 +1,69 @@
+|   1.Elasticsearch概述.mp4
+|   2.Restfull风格和Curl命令.mp4
+|   3.CentOS7下安装ElasticSearch6.2.4（上）.mp4
+|   3.CentOS7下安装ElasticSearch6.2.4（下）.mp4
+|   4.安装ElasticSearch-Head插件.mp4
+|   5.安装kibana.mp42 J( j# x) y& R* @
+|   6.倒排索引.mp4
+|   7.倒排索引_2.mp4
+|   8.分词器介绍及内置分词器.mp4
+|   9.配置中文分词器.mp4
+|   10.使用Kibana实现基本的增删改查操作.mp4
+|   11.使用MultiGet实现批量获取文档.mp4
+|   12.使用Bulk实现批量操作.mp4
+|   13.版本控制.mp4
+|   14.什么是mapping.mp4
+|   15.Object数据类型及手动创建mapping.mp4
+|   16.基本查询(英文)1.mp4
+|   16.基本查询(英文)2.mp4
+|   17.基本查询(中文).mp4
+|   18.Filter查询.mp4
+|   19.聚合查询.mp4
+|   20.复合查询.mp4
+|   21.解析Elastic分布式架构.mp4
+|   22.分片和副本机制以及单节点环境中创建index解析.mp4
+|   23.两个节点环境下replica shard是如何分配的.mp4
+|   24.水平扩容的过程.mp4
+|   25.ElasticSearch的容错机制.mp4
+|   26.文档的核心元数据解析.mp4
+|   27.文档id的两种生成方式解析.mp4
+|   28._source元数据解析.mp4
+|   29.文档修改，删除原理解析.mp4
+|   30.基于groovy脚本执行partial update.mp4
+|   31.更新文档对并发问题的处理.mp4
+|   32.文档数据路由原理.mp4
+|   33.文档增删改原理.mp4
+|   34.写一致性原理和quorum机制.mp4
+|   35.文档查询原理.mp4
+|   36.bulk语法格式解析.mp4
+|   37.查询结果分析.mp4
+|   38.多index,多type查询.mp4
+|   39.分页查询中的deep paging问题.mp4
+|   40.query string查询及copy_to的使用.mp4
+|   41.字符串排序问题.mp4
+|   42.如何计算相关度分数.mp4
+|   43.DocValues解析.mp4
+|   44.使用scroll滚动技术实现大数据量搜锁.mp4
+|   45.dynamic mapping策略.mp4
+|   46.重建索引且保证应用程序不用重启.mp4
+|   47.索引不可变的原因.mp4
+|   48.在java应用中实现查询文档.mp4
+|   49.在Java应用中实现文档的添加和删除.mp4
+|   50.在Java应用中实现更新文档.mp4
+|   51.在Java应用中实现批量操作(mget&bulk).mp4
+|   52.在Java应用中实现查询删除和查询所有.mp4
+|   53.在Java应用中实现match查询和multimath查询.mp4
+|   54.在Java应用中实现term查询和terms查询.mp4
+|   55.在Java应用中实现range,prefix,wildcard,fuzzy,type,ids查询.mp4
+|   56.在Java应用中实现聚合查询.mp4
+|   57.在Java应用中实现query string.mp4
+|   58.在Java应用中实现组合查询.mp4
+|   59.在Java应用中实现桶聚合.mp4
+|   60.在Java应用中实现集群管理.mp4
+|
+└─资料
+ElasticSearch介绍.txt
+ElasticSearch文档.md
+
+大数据
+本主题由 admin 于 2019-9-11 09:13 设置高亮

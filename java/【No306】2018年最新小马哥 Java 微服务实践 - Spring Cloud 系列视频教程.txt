@@ -1,0 +1,18 @@
+java 微服务实践 - Spring Cloud 系列（一）云原生应用.wmv
+Java 微服务实践 - Spring Cloud 系列（二）配置客户端.wmv
+Java 微服务实践 - Spring Cloud 系列（三）配置服务器.mp4
+Java 微服务实践 - Spring Cloud 系列（四）服务发现注册.wmv
+Java 微服务实践 - Spring Cloud 系列（五）高可用服务治理.mp4
+Java 微服务实践 - Spring Cloud 系列（六）负载均衡.mp4
+Java 微服务实践 - Spring Cloud 系列（七）Ribbon 源码.mp4
+Java 微服务实践 - Spring Cloud 系列（八）服务短路.mp4
+Java 微服务实践 - Spring Cloud 系列（九）Hystrix源码.mp4
+Java 微服务实践 - Spring Cloud 系列（十）服务调用.mp4
+Java 微服务实践 - Spring Cloud 系列（十一）服务网关.mp4
+Java 微服务实践 - Spring Cloud 系列（十二）消息驱动整合.mp4
+Java 微服务实践 - Spring Cloud 系列（十三）Binder实现.mp4
+Java 微服务实践 - Spring Cloud 系列（十四）消息总线.mp4
+Java 微服务实践 - Spring Cloud 系列（十五）分布式应用跟踪.mp4
+Java 微服务实践 - Spring Cloud 系列（十六）系列回顾.mp4
+github地址
+Spring Cloud, 微服务, 消息驱动

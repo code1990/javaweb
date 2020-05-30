@@ -1,0 +1,20 @@
+【No56】全网首套Spring Boot视频教程下载带源码
+课程目录：
+    01、Spring Boot之Hello World_高清.mp4
+    02、spring boot返回json数据_高清.mp4
+    03、Spring Boot完美使用FastJson解析JSON数据_高清.mp4
+    04、Spring Boot热部署(springloader)_高清.mp4
+    05、Springboot + devtools（热部署）_标清.flv
+    06、Spring Boot JPAHibernateSpring Data概念_标清.flv
+    07、Spring Boot JPA-Hibernate_标清.flv
+    08、Spring Boot Spring Data JPA介绍_标清.flv
+    09、Spring Boot JdbcTemplate_标清.flv
+    10、全局异常捕捉_标清.flv
+    11、Spring Boot之Hello World访问404_标清.flv
+    12、 配置server信息_标清.flv
+    13、spring boot使用thymeleaf_标清.flv
+    14、Spring Boot 使用freemarker_标清.flv
+    15、Spring Boot添加JSP支持_标清.flv
+    16、Spring Boot集成MyBatis_标清.flv
+
+MyBatis, freemarker
