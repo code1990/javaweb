@@ -1,6 +1,3 @@
-/**
- *@author: WangJinTao,MengQingChang 2006
- */
 package chapter12;
 
 public class Entity {
@@ -26,31 +23,31 @@ public class Entity {
 
 	public static Entity[] node() {
 		return new Entity[] {
-				new Entity("ï¿½Ð¹ï¿½", new Entity[] {
+				new Entity("ÖÐ¹ú", new Entity[] {
 
-						new Entity("ï¿½ï¿½ï¿½ï¿½", new Entity[] { new Entity("ï¿½å»ªï¿½ï¿½Ñ§"),
-								new Entity("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ§") }),
-						new Entity("ï¿½Ïºï¿½", new Entity[] { new Entity("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ§"),
-								new Entity("ï¿½Ïºï¿½ï¿½ï¿½ï¿½ï¿½") }),
-						new Entity("ï¿½ï¿½ï¿½", new Entity[] { new Entity("ï¿½Ï¿ï¿½ï¿½ï¿½Ñ§"),
-								new Entity("ï¿½ï¿½ï¿½ï¿½Ñ§") }) }),
+						new Entity("±±¾©", new Entity[] { new Entity("Çå»ª´óÑ§"),
+								new Entity("±±¾©´óÑ§") }),
+						new Entity("ÉÏº£", new Entity[] { new Entity("¸´µ©´óÑ§"),
+								new Entity("ÉÏº£½»´ó") }),
+						new Entity("Ìì½ò", new Entity[] { new Entity("ÄÏ¿ª´óÑ§"),
+								new Entity("Ìì½ò´óÑ§") }) }),
 
-				new Entity("ï¿½ï¿½ï¿½ï¿½",
+				new Entity("ÃÀ¹ú",
 						new Entity[] {
-								new Entity("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", new Entity[] {
-										new Entity("ï¿½ï¿½ï¿½ï¿½ï¿½Ñ§"),
-										new Entity("ï¿½ï¿½Ê¡ï¿½ï¿½Ñ§Ôº") }),
-								new Entity("ï¿½ï¿½ï¿½ï¿½ï¿½Ò¸ï¿½ï¿½ï¿½", new Entity[] { new Entity(
-										"Ò®Â³ï¿½ï¿½Ñ§") }),
-								new Entity("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", new Entity[] { new Entity(
-										"ï¿½ï¿½ï¿½ï¿½Ë¹ï¿½Ù´ï¿½Ñ§") }) }),
+								new Entity("ÂíÈøÖîÈûÖÝ", new Entity[] {
+										new Entity("¹þ·ð´óÑ§"),
+										new Entity("ÂéÊ¡Àí¹¤Ñ§Ôº") }),
+								new Entity("¿µÄùµÒ¸ñÖÝ", new Entity[] { new Entity(
+										"Ò®Â³´óÑ§") }),
+								new Entity("ÐÂÔóÎ÷ÖÝ", new Entity[] { new Entity(
+										"ÆÕÁÖË¹¶Ù´óÑ§") }) }),
 
-				new Entity("Ó¢ï¿½ï¿½",
+				new Entity("Ó¢¹ú",
 						new Entity[] {
-								new Entity("Å£ï¿½ï¿½ï¿½ï¿½", new Entity[] { new Entity(
-										"Å£ï¿½ï¿½ï¿½Ñ§") }),
-								new Entity("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", new Entity[] { new Entity(
-										"ï¿½ï¿½ï¿½Å´ï¿½Ñ§") }) }) };
+								new Entity("Å£½òÊÐ", new Entity[] { new Entity(
+										"Å£½ò´óÑ§") }),
+								new Entity("½£ÇÅÊÐ", new Entity[] { new Entity(
+										"½£ÇÅ´óÑ§") }) }) };
 	}
 
 }

@@ -1,5 +1,3 @@
-/**@author WangJinTao,MengQingChang 2006
- */
 package chapter06.swt.dialog;
 
 import org.eclipse.swt.*;
@@ -16,23 +14,23 @@ public class DirectoryDialogExample2 {
 		final Display display = Display.getDefault();
 		shell = new Shell(new Shell());
 		shell.setSize(300, 70);
-		shell.setText("Ä¿Â¼Ñ¡ï¿½ï¿½Ô»ï¿½ï¿½ï¿½Êµï¿½ï¿½");
-		// ï¿½ï¿½Shellï¿½ï¿½Ê¹ï¿½ï¿½ï¿½ï¿½ï¿½ñ²¼¾Ö£ï¿½ï¿½ï¿½ï¿½ï¿½shellï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îª5ï¿½ï¿½
+		shell.setText("Ä¿Â¼Ñ¡Ôñ¶Ô»°¿òÊµÀý");
+		// ÔÚShellÉÏÊ¹ÓÃÍø¸ñ²¼¾Ö£¬²¢½«shellÈÝÆ÷ÉèÖÃÎª5ÁÐ
 		shell.setLayout(new GridLayout(5, false));
-		// ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Ç©
-		new Label(shell, SWT.NONE).setText("Ä¿Â¼ï¿½ï¿½");
+		// ¶¨ÒåÒ»¸ö±êÇ©
+		new Label(shell, SWT.NONE).setText("Ä¿Â¼£º");
 		text = new Text(shell, SWT.BORDER);
-		// ï¿½ï¿½ï¿½ï¿½GridDataï¿½ï¿½ï¿½Æ¸ï¿½ï¿½Ó²ï¿½ï¿½Ö£ï¿½GridData.FILL_HORIZONTALÎªË®Æ½ï¿½ï¿½ï¿½ï¿½
+		// ²ÉÓÃGridData¿ØÖÆ¸´ÔÓ²¼¾Ö£¬GridData.FILL_HORIZONTALÎªË®Æ½³äÂú
 		GridData data = new GridData(GridData.FILL_HORIZONTAL);
-		// Ê¹ï¿½Ä±ï¿½ï¿½ï¿½Ë®Æ½ï¿½ï¿½Õ¼3ï¿½ï¿½
+		// Ê¹ÎÄ±¾¿òË®Æ½ÇÀÕ¼3ÁÐ
 		data.horizontalSpan = 3;
 		text.setLayoutData(data);
 		Button button = new Button(shell, SWT.PUSH);
-		button.setText("ï¿½ï¿½ï¿½....");
-		// buttonÊ¹ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½Â¼ï¿½
+		button.setText("ä¯ÀÀ....");
+		// buttonÊ¹ÓÃÑ¡ÔñÊÂ¼þ
 		button.addSelectionListener(new SelectionAdapter() {
 			public void widgetSelected(SelectionEvent e) {
-				// ï¿½ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½å·½ï¿½ï¿½
+				// µ÷ÓÃ×Ô¶¨Òå·½·¨
 				ShowDirectoryDialog();
 			}
 		});
@@ -46,15 +44,15 @@ public class DirectoryDialogExample2 {
 	}
 
 	public void ShowDirectoryDialog() {
-		// ï¿½ï¿½ï¿½ï¿½Ä¿Â¼Ñ¡ï¿½ï¿½Ô»ï¿½ï¿½ï¿½
+		// ¶¨ÒåÄ¿Â¼Ñ¡Ôñ¶Ô»°¿ò
 		DirectoryDialog dlg = new DirectoryDialog(shell);
-		// ï¿½ï¿½ï¿½Ã±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
-		dlg.setText("Ä¿Â¼Ñ¡ï¿½ï¿½Ô»ï¿½ï¿½ï¿½");
-		// ï¿½ï¿½Ä¿Â¼Ñ¡ï¿½ï¿½Ô»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
-		dlg.setMessage("Ñ¡ï¿½ï¿½Ä¿Â¼ï¿½ï¿½");
+		// ÉèÖÃ±êÌâÎÄ×Ö
+		dlg.setText("Ä¿Â¼Ñ¡Ôñ¶Ô»°¿ò");
+		// ÔÚÄ¿Â¼Ñ¡Ôñ¶Ô»°¿òÉÏÉèÖÃÐÅÏ¢
+		dlg.setMessage("Ñ¡ÔñÄ¿Â¼£º");
 		String dir = dlg.open();
 		if (dir != null) {
-			// ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã·ï¿½ï¿½Øµï¿½Â·ï¿½ï¿½
+			// ÔÚÎÄ±¾ÉÏÉèÖÃ·µ»ØµÄÂ·¾¶
 			text.setText(dir);
 		}
 	}

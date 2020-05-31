@@ -15,12 +15,12 @@ public class InputDialogClass {
 	public InputDialogClass() {
 		final Display display = Display.getDefault();
 		final Shell shell = new Shell();
-		// ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô»ï¿½ï¿½ï¿½
-		InputDialog dlg = new InputDialog(shell, "InputDialogÊµï¿½ï¿½", "ï¿½ï¿½ï¿½ï¿½ï¿½ë£º5-10Î»",
+		// ¶¨ÒåÒ»¸öÊäÈë¶Ô»°¿ò
+		InputDialog dlg = new InputDialog(shell, "InputDialogÊµÀı", "ÇëÊäÈë£º5-10Î»",
 				"This is InputDialog", new InputValidator());
 		if (dlg.open() == InputDialog.OK) {
-			// ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½OKï¿½ï¿½Å¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½Ê¾ï¿½Ô»ï¿½ï¿½ï¿½
-			MessageDialog.openInformation(shell, "ï¿½ï¿½Ê¾ï¿½ï¿½Ï¢", "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢Îªï¿½ï¿½"
+			// ÓÃ»§µ¥»÷OK°´Å¥µ¯³öĞÅÏ¢ÌáÊ¾¶Ô»°¿ò
+			MessageDialog.openInformation(shell, "ÌáÊ¾ĞÅÏ¢", "ÄúÊäÈëµÄĞÅÏ¢Îª£º"
 					+ dlg.getValue() + "!");
 		}
 		shell.layout();
@@ -30,15 +30,15 @@ public class InputDialogClass {
 		}
 	}
 
-	// ï¿½ï¿½Ö¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½
+	// ÑéÖ¤ÊäÈëĞÅÏ¢Àà
 	class InputValidator implements IInputValidator {
 		public String isValid(String newText) {
 			int length = newText.length();
-			// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½Ä³ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½Ï±ï¿½×¼
+			// ¶¨ÒåÊäÈëÖµµÄ³¤¶ÈÊÇ·ñ·ûºÏ±ê×¼
 			if (length < 5)
-				return "ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½";
+				return "ÊäÈëµÄÎ»Êı²»×ã";
 			if (length > 10)
-				return "ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½";
+				return "ÊäÈëµÄÎ»Êı¹ı³¤";
 			else
 				return null;
 		}

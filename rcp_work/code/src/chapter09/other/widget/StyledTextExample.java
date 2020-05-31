@@ -18,43 +18,43 @@ public class StyledTextExample {
 		final Display display = Display.getDefault();
 		final Shell shell = new Shell();
 		shell.setSize(350, 230);
-		shell.setText("StyledTextÊµï¿½ï¿½");
+		shell.setText("StyledTextÊµÀý");
 		shell.setLayout(new FillLayout());
 		styledText = new StyledText(shell, SWT.WRAP | SWT.READ_ONLY);
 		styledText.setText(text);
-		// ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½style1ï¿½ï¿½ï¿½ï¿½
+		// ¶¨ÒåÒ»¸östyle1¶ÔÏó
 		StyleRange style1 = new StyleRange();
-		// ï¿½Óµï¿½Ò»ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½Ê¼
+		// ´ÓµÚÒ»¸ö×Ö·û¿ªÊ¼
 		style1.start = 0;
-		// ï¿½ï¿½3ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â»ï¿½ï¿½ï¿½,ï¿½ï¿½SWT/JFaceï¿½Â¼ï¿½ï¿½ï¿½ï¿½Â»ï¿½ï¿½ï¿½
+		// ½«3¸ö×Ö·ûÉèÖÃÏÂ»®Ïß,¼´SWT/JFaceÏÂ¼ÓÁËÏÂ»®Ïß
 		style1.length = 9;
 		style1.underline = true;
-		// ï¿½ï¿½SWT/JFaceï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½É«
+		// ½«SWT/JFaceÉèÖÃÎªºìÑÕÉ«
 		style1.foreground = display.getSystemColor(SWT.COLOR_RED);
 		styledText.setStyleRange(style1);
-		// ÎªAWT/Swingï¿½Ó¡ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// ÎªAWT/Swing¼Ó¡°È¡Ïû¡±»®Ïß
 		StyleRange style2 = new StyleRange();
 		style2.start = 10;
 		style2.length = 9;
 		style2.strikeout = true;
 		styledText.setStyleRange(style2);
-		// ÎªEclipseï¿½Ó±ï¿½ï¿½ï¿½ï¿½ï¿½É«ï¿½ï¿½ï¿½ï¿½"ï¿½ï¿½ï¿½ï¿½Ç¿ï¿½ï¿½ï¿½ï¿½ï¿½"
+		// ÎªEclipse¼Ó±³¾°ÑÕÉ«£¬¼´"×ÅÖØÇ¿µ÷±ê¼Ç"
 		StyleRange style3 = new StyleRange();
 		style3.start = 20;
 		style3.length = 7;
 		style3.background = display.getSystemColor(SWT.COLOR_YELLOW);
 		styledText.setStyleRange(style3);
-		// Îªï¿½Ä±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É«ï¿½ï¿½ï¿½ï¿½
+		// ÎªÎÄ±¾ÉèÖÃÑÕÉ«½¥±ä
 		styledText.addListener(SWT.Resize, new Listener() {
 			public void handleEvent(Event event) {
 				Rectangle rect = styledText.getClientArea();
 				Image image = new Image(display, 1, Math.max(1, rect.height));
 				GC gc = new GC(image);
-				// ï¿½Ó°ï¿½É«ï¿½ï¿½ï¿½ï¿½É«ï¿½ï¿½ï¿½ï¿½
+				// ´Ó°×É«µ½À¶É«½¥±ä
 				gc.setForeground(display.getSystemColor(SWT.COLOR_WHITE));
 				gc.setBackground(display.getSystemColor(SWT.COLOR_BLUE));
 				gc.fillGradientRectangle(rect.x, rect.y, 1, rect.height, true);
-				// gcï¿½ï¿½ï¿½ï¿½ï¿½Í·ï¿½
+				// gcÓÃÍêÊÍ·Å
 				gc.dispose();
 				styledText.setBackgroundImage(image);
 			}

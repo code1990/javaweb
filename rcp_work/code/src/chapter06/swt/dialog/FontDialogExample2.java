@@ -1,5 +1,3 @@
-/**@author WangJinTao,MengQingChang 2006
- */
 package chapter06.swt.dialog;
 
 import org.eclipse.swt.*;
@@ -12,14 +10,14 @@ public class FontDialogExample2 {
 		final Display display = Display.getDefault();
 		final Shell shell = new Shell(new Shell());
 		shell.setSize(383, 225);
-		shell.setText("FontDialogÊµï¿½ï¿½");
+		shell.setText("FontDialogÊµÀý");
 		text = new Text(shell, SWT.BORDER | SWT.MULTI | SWT.H_SCROLL
 				| SWT.V_SCROLL);
 		text.setBounds(5, 5, 365, 150);
 		text.setText("SWT/JFace");
 		Button button = new Button(shell, SWT.PUSH);
 		button.setBounds(250, 165, 120, 20);
-		button.setText("ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½Ô»ï¿½ï¿½ï¿½");
+		button.setText("×ÖÌåÑ¡Ôñ¶Ô»°¿ò");
 		button.addSelectionListener(new SelectionAdapter() {
 			public void widgetSelected(SelectionEvent e) {
 				FontDialog fontdialog = new FontDialog(shell, SWT.NONE);

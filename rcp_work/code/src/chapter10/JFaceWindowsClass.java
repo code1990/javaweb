@@ -7,22 +7,22 @@ import org.eclipse.swt.widgets.*;
 
 public class JFaceWindowsClass extends ApplicationWindow {
 	JFaceWindowsClass() {
-		super(null); // ï¿½ï¿½ï¿½ð´°¿ï¿½
+		super(null); // ²¿Êð´°¿Ú
 	}
 
 	public void run() {
-		//ï¿½ï¿½ï¿½Ü´ï¿½open()ï¿½ï¿½ï¿½Ø£ï¿½Öªï¿½ï¿½ï¿½ï¿½ï¿½Ú¹Ø±Õ¡ï¿½
+		//²»ÄÜ´Óopen()·µ»Ø£¬ÖªµÀ´°¿Ú¹Ø±Õ¡£
 		setBlockOnOpen(true);
-		//ï¿½ò¿ª´ï¿½ï¿½ï¿½
+		//´ò¿ª´°¿Ú
 		open();
 		Display.getCurrent().dispose();
 	}
 
 	public Control createContents(Composite parent) {
-		// ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½ï¿½Ð¡
+		// ÉèÖÃ´°Ìå´óÐ¡
 		parent.getShell().setSize(500, 375);
-		// ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
-		parent.getShell().setText("JFace ApplicationWidowsÊµï¿½ï¿½");
+		// ÉèÖÃ´°Ìå±êÌâ
+		parent.getShell().setText("JFace ApplicationWidowsÊµÀý");
 		return parent;
 	}
 

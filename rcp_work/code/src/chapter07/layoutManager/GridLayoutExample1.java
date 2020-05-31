@@ -12,7 +12,7 @@ public class GridLayoutExample1 {
 		final Display display = Display.getDefault();
 		final Shell shell = new Shell();
 		shell.setSize(300, 225);
-		shell.setText("GridLayoutÊµï¿½ï¿½");
+		shell.setText("GridLayoutÊµÀý");
 		GridLayout gridlayout = new GridLayout();
 		shell.setLayout(gridlayout);
 		new Text(shell, SWT.BORDER);

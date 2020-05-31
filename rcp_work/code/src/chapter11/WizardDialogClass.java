@@ -16,7 +16,7 @@ public class WizardDialogClass extends ApplicationWindow {
 	private Table table;
 
 	public WizardDialogClass() {
-		// ï¿½ï¿½ï¿½ð´°¿ï¿½
+		// ²¿Êð´°¿Ú
 		
 		super(null);
 	}
@@ -28,70 +28,69 @@ public class WizardDialogClass extends ApplicationWindow {
 	}
 
 	protected Control createContents(Composite parent) {
-		// ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
-		getShell().setText("ï¿½òµ¼¶Ô»ï¿½ï¿½ï¿½Êµï¿½ï¿½");
-		// /ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½ï¿½Ð¡
+		// ÉèÖÃ´°Ìå±êÌâ
+		getShell().setText("Ïòµ¼¶Ô»°¿òÊµÀý");
+		// /ÉèÖÃ´°Ìå´óÐ¡
 		getShell().setSize(400, 200);
 		Composite comp = new Composite(parent, SWT.NONE);
 		comp.setLayoutData(new GridData(GridData.FILL_BOTH));
 		comp.setLayout(new GridLayout(2, false));
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// ¶¨Òå±í¸ñ
 		table = new Table(comp, SWT.MULTI | SWT.FULL_SELECTION);
-		// Ê¹ï¿½ï¿½Í·ï¿½É¼ï¿½
+		// Ê¹±íÍ·¿É¼û
 		table.setHeaderVisible(true);
-		// Ê¹ï¿½ï¿½ï¿½ï¿½ß¿É¼ï¿½
+		// Ê¹±í¸ñÏß¿É¼û
 		table.setLinesVisible(true);
-		// ï¿½Ô±ï¿½ï¿½ï¿½ï¿½Ð²ï¿½ï¿½ï¿½
+		// ¶Ô±í¸ñ½øÐÐ²¼¾Ö
 		GridData grid = new GridData(GridData.FILL_BOTH);
 		grid.horizontalSpan = 2;
 		table.setLayoutData(grid);
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÐµÄ¿ï¿½ï¿½
+		// ¶¨Òå±íµÄÁÐ²¢ÉèÖÃÁÐµÄ¿í¶È
 		TableColumn col1 = new TableColumn(table, SWT.NONE);
-		col1.setText("Ñ§ï¿½ï¿½");
+		col1.setText("Ñ§ºÅ");
 		col1.setWidth(80);
 		TableColumn col2 = new TableColumn(table, SWT.NONE);
-		col2.setText("ï¿½ï¿½ï¿½ï¿½");
+		col2.setText("ÐÕÃû");
 		col2.setWidth(80);
 		TableColumn col3 = new TableColumn(table, SWT.NONE);
-		col3.setText("ï¿½Ô±ï¿½");
+		col3.setText("ÐÔ±ð");
 		col3.setWidth(80);
 		TableColumn col4 = new TableColumn(table, SWT.NONE);
-		col4.setText("ï¿½ï¿½ï¿½ï¿½");
+		col4.setText("ÓÊÏä");
 		col4.setWidth(120);
 		TableColumn col5 = new TableColumn(table, SWT.NONE);
-		col5.setText("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+		col5.setText("×ÔÎÒÆÀ¼Û");
 		col5.setWidth(120);
 		Button addButton = new Button(comp, SWT.PUSH);
-		addButton.setText("×¢ï¿½ï¿½ï¿½ï¿½Ï¢");
+		addButton.setText("×¢²áÐÅÏ¢");
 		addButton.addSelectionListener(new SelectionAdapter() {
 			public void widgetSelected(SelectionEvent e) {
 				item = new TableItem(table, SWT.NONE);
 				StudentWizardInformation wizard = new StudentWizardInformation(
 						item);
 				WizardDialog dialog = new WizardDialog(getShell(), wizard);
-				// ï¿½ï¿½ï¿½Ã¶Ô»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò³ï¿½Ä´ï¿½Ð¡ï¿½ï¿½
+				// ÉèÖÃ¶Ô»°¿òËùÓÐÒ³µÄ´óÐ¡£¬
 				dialog.setPageSize(-1, 105);
 				dialog.open();
 			}
 		});
-		// ï¿½Ô¡ï¿½×¢ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½Å¥ï¿½ï¿½ï¿½Ð²ï¿½ï¿½ï¿½
+		// ¶Ô¡°×¢²áÐÅÏ¢¡±°´Å¥½øÐÐ²¼¾Ö
 		GridData gridAdd = new GridData(GridData.HORIZONTAL_ALIGN_END);
 		gridAdd.widthHint = 100;
 		addButton.setLayoutData(gridAdd);
 		Button ExitButton = new Button(comp, SWT.PUSH);
-		ExitButton.setText("ï¿½Ë³ï¿½");
+		ExitButton.setText("ÍË³ö");
 		ExitButton.addSelectionListener(new SelectionAdapter() {
 			public void widgetSelected(SelectionEvent e) {
 				getShell().dispose();
 			}
 		});
-		// ï¿½Ô¡ï¿½ï¿½Ë³ï¿½ï¿½ï¿½ï¿½ï¿½Å¥ï¿½ï¿½ï¿½Ð²ï¿½ï¿½ï¿½
+		// ¶Ô¡°ÍË³ö¡±°´Å¥½øÐÐ²¼¾Ö
 		GridData gridExit = new GridData();
 		gridExit.widthHint = 100;
 		ExitButton.setLayoutData(gridExit);
 		return comp;
 	}
-
 	public static void main(String[] args) {
 		new WizardDialogClass().run();
 	}

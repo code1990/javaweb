@@ -17,43 +17,43 @@ public class TableEditorExample {
 	public TableEditorExample() {
 		Display display = new Display();
 		Shell shell = new Shell(display);
-		shell.setText("TableEditorÊµï¿½ï¿½");
+		shell.setText("TableEditorÊµÀý");
 		shell.setLayout(new FillLayout());
-		// ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½tableï¿½ï¿½ï¿½ï¿½
+		// ¶¨ÒåÒ»¸ötable¶ÔÏó
 		table = new Table(shell, SWT.SINGLE | SWT.FULL_SELECTION
 				| SWT.HIDE_SELECTION);
-		// ï¿½ï¿½ï¿½Ã±ï¿½Í·ï¿½É¼ï¿½
+		// ÉèÖÃ±íÍ·¿É¼û
 		table.setHeaderVisible(true);
-		// ï¿½ï¿½ï¿½Ã±ï¿½ï¿½É¼ï¿½
+		// ÉèÖÃ±í¸ñ¿É¼û
 		table.setLinesVisible(true);
-		// ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½
+		// ¶¨ÒåÒ»¸öÁÐ
 		TableColumn tableColumnone = new TableColumn(table, SWT.LEFT);
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
-		tableColumnone.setText("Ñ§ï¿½ï¿½");
-		// ï¿½ï¿½ï¿½ï¿½Ã¿Ò»ï¿½ÐµÄ¿ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½Î»ï¿½ï¿½
+		// ÉèÖÃÁÐÃû
+		tableColumnone.setText("Ñ§ºÅ");
+		// ÉèÖÃÃ¿Ò»ÁÐµÄ¿í¶È(ÒÔÏñËØÎªµ¥Î»£©
 		tableColumnone.setWidth(100);
 		TableColumn tableColumntwo = new TableColumn(table, SWT.LEFT);
-		tableColumntwo.setText("ï¿½ï¿½ï¿½ï¿½");
+		tableColumntwo.setText("ÐÕÃû");
 		tableColumntwo.setWidth(100);
 		TableColumn tableColumnthree = new TableColumn(table, SWT.LEFT);
-		tableColumnthree.setText("ï¿½Ô±ï¿½");
+		tableColumnthree.setText("ÐÔ±ð");
 		tableColumnthree.setWidth(100);
 		TableColumn tableColumnfour = new TableColumn(table, SWT.LEFT);
-		tableColumnfour.setText("ï¿½ï¿½ï¿½ï¿½");
+		tableColumnfour.setText("ÄêÁä");
 		tableColumnfour.setWidth(100);
-		// ï¿½ï¿½ï¿½ï¿½Itemï¿½ï¿½ï¿½ï¿½
+		// ¶¨ÒåItem¶ÔÏó
 		TableItem Item = new TableItem(table, SWT.LEFT);
-		// ï¿½ï¿½ï¿½Ã±ï¿½ï¿½ï¿½Ðµï¿½ï¿½ï¿½ï¿½ï¿½
-		Item.setText(new String[] { "20020001", "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", "Å®", "23" });
+		// ÉèÖÃ±í¸ñÖÐµÄÊý¾Ý
+		Item.setText(new String[] { "20020001", "ÀîÏþÀò", "Å®", "23" });
 		new TableItem(table, SWT.LEFT).setText(new String[] { "20020002",
-				"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", "Å®", "23" });
+				"ÍõÏþÁÕ", "Å®", "23" });
 		new TableItem(table, SWT.LEFT).setText(new String[] { "20020003",
-				"ï¿½ï¿½Ö¾ï¿½ï¿½", "ï¿½ï¿½", "22" });
+				"ÔøÖ¾¹ã", "ÄÐ", "22" });
 		new TableItem(table, SWT.LEFT).setText(new String[] { "20020004",
-				"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", "Å®", "24" });
+				"³ÂÐãÁá", "Å®", "24" });
 		new TableItem(table, SWT.LEFT).setText(new String[] { "20020005",
-				"ï¿½Å·Ü¶ï¿½", "ï¿½ï¿½", "23" });
-		// ï¿½ï¿½ï¿½ï¿½editorï¿½ï¿½ï¿½ï¿½
+				"ÕÅ·Ü¶·", "ÄÐ", "23" });
+		// ¶¨Òåeditor¶ÔÏó
 		editor = new TableEditor(table);
 		editor.horizontalAlignment = SWT.LEFT;
 		editor.grabHorizontal = true;
@@ -69,34 +69,34 @@ public class TableEditorExample {
 	}
 
 	private void createEditorContents() {
-		// ï¿½ï¿½ï¿½ï¿½Â¼ï¿½
+		// Êó±êÊÂ¼þ
 		table.addMouseListener(new MouseAdapter() {
 			public void mouseDown(MouseEvent event) {
-				// ï¿½ï¿½ï¿½Ô­ï¿½ï¿½ï¿½ï¿½tableï¿½à¼­ï¿½ï¿½ï¿½ï¿½
+				// Çå³ýÔ­À´µÄtable±à¼­¿ØÖÆ
 				Control old = editor.getEditor();
 				if (old != null)
 					old.dispose();
-				// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½êµ¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½Î»ï¿½ï¿½
+				// ¾ö¶¨Êó±êµ¥»÷Ëù»ñÈ¡µÄÎ»ÖÃ
 				Point point = new Point(event.x, event.y);
-				// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½Ð±ï¿½Ñ¡ï¿½ï¿½
+				// ¾ö¶¨ÄÄÒ»ÐÐ±»Ñ¡ÖÐ
 				final TableItem item = table.getItem(point);
 				if (item != null) {
-					// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½Ð±ï¿½Ñ¡ï¿½ï¿½
+					// ¾ö¶¨ÄÄÒ»ÁÐ±»Ñ¡ÖÐ
 					int column = -1;
 					for (int i = 2, n = table.getColumnCount(); i < n; i++) {
 						Rectangle rect = item.getBounds(i);
 						if (rect.contains(point)) {
-							// ï¿½ï¿½ï¿½Ã±ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½
+							// ÉèÖÃ±»Ñ¡ÔñµÄÁÐ
 							column = i;
 							break;
 						}
 					}
-					// ï¿½ï¿½3ï¿½Ð±ï¿½Ñ¡ï¿½ï¿½Ê±
+					// µÚ3ÁÐ±»Ñ¡ÖÐÊ±
 					if (column == 2) {
-						// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð±ï¿½ï¿½ï¿½ï¿½
+						// ¶¨ÒåÏÂÀ­ÁÐ±í¶ÔÏó
 						final Combo combo = new Combo(table, SWT.READ_ONLY);
-						// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð±ï¿½ï¿½ï¿½ï¿½ï¿½
-						combo.setItems(new String[] { "ï¿½ï¿½", "Å®" });
+						// ÉèÖÃÏÂÀ­ÁÐ±íÄÚÈÝ
+						combo.setItems(new String[] { "ÄÐ", "Å®" });
 						editor.setEditor(combo, item, column);
 						final int col = column;
 						combo.addSelectionListener(new SelectionAdapter() {
@@ -106,7 +106,7 @@ public class TableEditorExample {
 							}
 						});
 					} else if (column > 2) {
-						// ï¿½ï¿½ï¿½ï¿½4ï¿½Ð±ï¿½Ñ¡ï¿½ï¿½Ê±ï¿½Þ¸Äµï¿½4ï¿½ï¿½ï¿½ï¿½Ä³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+						// µ±µÚ4ÁÐ±»Ñ¡ÖÐÊ±ÐÞ¸ÄµÚ4ÁÐÖÐÄ³ÐÐÊý¾Ý
 						final Text text = new Text(table, SWT.NONE);
 						text.setText(item.getText(column));
 						text.selectAll();

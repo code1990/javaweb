@@ -13,7 +13,7 @@ public class FormDataExample {
 		final Display display = Display.getDefault();
 		final Shell shell = new Shell();
 		shell.setSize(300, 200);
-		shell.setText("FormDataÊµï¿½ï¿½");
+		shell.setText("FormDataÊµÀý");
 		FormLayout formlayout = new FormLayout();
 		shell.setLayout(formlayout);
 		final Text text = new Text(shell, SWT.BORDER);

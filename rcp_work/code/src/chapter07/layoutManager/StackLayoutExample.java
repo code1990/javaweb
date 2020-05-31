@@ -15,38 +15,38 @@ public class StackLayoutExample {
 		final Display display = new Display();
 		final Shell shell = new Shell(display);
 		shell.setSize(500, 375);
-		shell.setText("StackLayoutÊµï¿½ï¿½");
-		// ï¿½ï¿½shellÓ¦ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½Ö£ï¿½ï¿½ï¿½shellï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îª2ï¿½ï¿½
+		shell.setText("StackLayoutÊµÀý");
+		// ÔÚshellÓ¦ÓÃÍø¸ñÊ½²¼¾Ö£¬°ÑshellÈÝÆ÷ÉèÖÃÎª2ÁÐ
 		shell.setLayout(new GridLayout(2, false));
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Stacklayoutï¿½ï¿½ï¿½ï¿½
+		// ¶¨ÒåÁËStacklayout¶ÔÏó
 		final StackLayout stacklayout = new StackLayout();
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// ¶¨ÒåÁËÃæ°åÈÝÆ÷
 		final Composite composite = new Composite(shell, SWT.BORDER);
-		// Ê¹ï¿½ï¿½GriDataï¿½ï¿½ï¿½Æ²ï¿½ï¿½Ö£ï¿½Ê¹ï¿½ï¿½ï¿½Ë«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// Ê¹ÓÃGriData¿ØÖÆ²¼¾Ö£¬Ê¹Ãæ°åË«Ïò³äÂúÈÝÆ÷
 		GridData gridData = new GridData(GridData.FILL_BOTH);
-		// Ê¹composite1Ë®Æ½ï¿½ï¿½Õ¼2ï¿½ï¿½
+		// Ê¹composite1Ë®Æ½ÇÀÕ¼2ÁÐ
 		gridData.horizontalSpan = 2;
 		composite.setLayoutData(gridData);
-		// ï¿½ï¿½composite1ï¿½ï¿½Ó¦ï¿½ï¿½stacklayout
+		// ÔÚcomposite1ÉÏÓ¦ÓÃstacklayout
 		composite.setLayout(stacklayout);
 
 		final Text text = new Text(composite, SWT.NONE);
-		text.setText("ï¿½Ä±ï¿½ ");
+		text.setText("ÎÄ±¾ ");
 
 		final Button button = new Button(composite, SWT.NONE);
-		button.setText("ï¿½ï¿½Å¥");
+		button.setText("°´Å¥");
 
 		final Button button1 = new Button(shell, SWT.NONE);
-		button1.setText("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½Ä±ï¿½");
+		button1.setText("µ¥»÷ÏÔÊ¾ÎÄ±¾");
 		button1.addSelectionListener(new SelectionAdapter() {
 			public void widgetSelected(SelectionEvent e) {
-				// ï¿½ï¿½topControlÊ¹ï¿½Ä±ï¿½ï¿½ï¿½textï¿½ï¿½ï¿½ï¿½Ê¾ï¿½Ú¶ï¿½Õ»ï¿½Ä¶ï¿½ï¿½ï¿½
+				// ÓÃtopControlÊ¹ÎÄ±¾¿ò£¨text£©ÏÔÊ¾ÔÚ¶ÑÕ»µÄ¶¥¶Ë
 				stacklayout.topControl = text;
 				composite.layout();
 			}
 		});
 		final Button button2 = new Button(shell, SWT.NONE);
-		button2.setText("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½Å¥");
+		button2.setText("µ¥»÷ÏÔÊ¾°´Å¥");
 		button2.addSelectionListener(new SelectionAdapter() {
 			public void widgetSelected(SelectionEvent e) {
 				stacklayout.topControl = button;

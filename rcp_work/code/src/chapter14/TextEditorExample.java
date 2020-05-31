@@ -1,6 +1,3 @@
-/**
- *@author: WangJinTao,MengQingChang2006
- */
 package chapter14;
 
 import java.io.*;
@@ -55,7 +52,7 @@ public class TextEditorExample extends ApplicationWindow {
 	boolean changes;;
 
 	TextEditorExample() {
-		// ï¿½ï¿½ï¿½ð´°¿ï¿½
+		// ²¿Êð´°¿Ú
 		super(null);
 		newCreate = new NewCreateAction();
 		openFile = new OpenFileAction();
@@ -82,10 +79,10 @@ public class TextEditorExample extends ApplicationWindow {
 	}
 
 	public Control createContents(Composite parent) {
-		// ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½ï¿½Ð¡
+		// ÉèÖÃ´°Ìå´óÐ¡
 		parent.getShell().setSize(520, 370);
-		// ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
-		parent.getShell().setText("TextEditorÊµï¿½ï¿½");
+		// ÉèÖÃ´°Ìå±êÌâ
+		parent.getShell().setText("TextEditorÊµÀý");
 		Composite composite = new Composite(parent, SWT.NONE);
 		composite.setLayout(new GridLayout(1, true));
 		text = new StyledText(composite, SWT.BORDER | SWT.V_SCROLL
@@ -101,10 +98,10 @@ public class TextEditorExample extends ApplicationWindow {
 
 	protected MenuManager createMenuManager() {
 		MenuManager menuBar = new MenuManager();
-		MenuManager fileMenu = new MenuManager("ï¿½Ä¼ï¿½(&F)");
-		MenuManager editorMenu = new MenuManager("ï¿½à¼­(&E)");
-		MenuManager helpMenu = new MenuManager("ï¿½ï¿½ï¿½ï¿½(&H)");
-		// ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½Ëµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ëµï¿½
+		MenuManager fileMenu = new MenuManager("ÎÄ¼þ(&F)");
+		MenuManager editorMenu = new MenuManager("±à¼­(&E)");
+		MenuManager helpMenu = new MenuManager("°ïÖú(&H)");
+		// ÔÚÎÄ¼þ²Ëµ¥ÏîÌí¼ÓÏÂÀ­²Ëµ¥
 		fileMenu.add(newCreate);
 		fileMenu.add(openFile);
 		fileMenu.add(new Separator());
@@ -112,7 +109,7 @@ public class TextEditorExample extends ApplicationWindow {
 		fileMenu.add(saveAsFile);
 		fileMenu.add(new Separator());
 		fileMenu.add(exit);
-		// ï¿½Ú±à¼­ï¿½Ëµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ëµï¿½
+		// ÔÚ±à¼­²Ëµ¥ÏÂÌí¼ÓÏÂÀ­²Ëµ¥
 		editorMenu.add(copyFile);
 		editorMenu.add(pasteFile);
 		editorMenu.add(cutFile);
@@ -123,14 +120,14 @@ public class TextEditorExample extends ApplicationWindow {
 		editorMenu.add(selectAll);
 		editorMenu.add(formate);
 		helpMenu.add(about);
-		// ï¿½ï¿½menuBarï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½Ëµï¿½ï¿½ï¿½ï¿½à¼­ï¿½Ëµï¿½ï¿½Í°ï¿½ï¿½ï¿½ï¿½Ëµï¿½
+		// ÔÚmenuBarÉÏÌí¼ÓÎÄ¼þ²Ëµ¥¡¢±à¼­²Ëµ¥ºÍ°ïÖú²Ëµ¥
 		menuBar.add(fileMenu);
 		menuBar.add(editorMenu);
 		menuBar.add(helpMenu);
 		return menuBar;
 	}
 
-	// ï¿½Ú¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å¥
+	// ÔÚ¹¤¾ßÀ¸ÉÏÌí¼Ó¹¤¾ßÀ¸°´Å¥
 	protected ToolBarManager createToolBarManager(int style) {
 		ToolBarManager toolBarManager = new ToolBarManager(style);
 		toolBarManager.add(new NewCreateAction());
@@ -150,9 +147,9 @@ public class TextEditorExample extends ApplicationWindow {
 	class NewCreateAction extends Action {
 		public NewCreateAction() {
 			super("NewCreateAction@Ctrl+N", Action.AS_PUSH_BUTTON);
-			setText("ï¿½Â½ï¿½");
+			setText("ÐÂ½¨");
 			try {
-				// ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½
+				// ÔØÈëÍ¼Ïñ
 				ImageDescriptor icon = ImageDescriptor.createFromURL(new URL(
 						"file:icons/new.gif"));
 				setImageDescriptor(icon);
@@ -162,7 +159,7 @@ public class TextEditorExample extends ApplicationWindow {
 		}
 
 		public void run() {
-			// ï¿½ï¿½ï¿½Â½ï¿½ï¿½Ä±ï¿½Ö®Ç°ï¿½ï¿½ï¿½Ð¶Ïµï¿½Ç°ï¿½Ä±ï¿½ï¿½Ç·ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½
+			// ÔÚÐÂ½¨ÎÄ±¾Ö®Ç°£¬ÅÐ¶Ïµ±Ç°ÎÄ±¾ÊÇ·ñÐèÒª±£´æ
 			if (judgeTextSave()) {
 				text.setText("");
 			}
@@ -172,9 +169,9 @@ public class TextEditorExample extends ApplicationWindow {
 	class OpenFileAction extends Action {
 		public OpenFileAction() {
 			super("OpenFileAction@Ctrl+O", Action.AS_PUSH_BUTTON);
-			setText("ï¿½ï¿½");
+			setText("´ò¿ª");
 			try {
-				// ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½
+				// ÔØÈëÍ¼Ïñ
 				ImageDescriptor icon = ImageDescriptor.createFromURL(new URL(
 						"file:icons/open.gif"));
 				setImageDescriptor(icon);
@@ -184,7 +181,7 @@ public class TextEditorExample extends ApplicationWindow {
 		}
 
 		public void run() {
-			// ï¿½Ú´ï¿½ï¿½Âµï¿½ï¿½Ä¼ï¿½Ö®Ç°ï¿½ï¿½ï¿½Ð¶ï¿½ï¿½Ç·ñ±£´æµ±Ç°ï¿½Ä¼ï¿½
+			// ÔÚ´ò¿ªÐÂµÄÎÄ¼þÖ®Ç°£¬ÅÐ¶ÏÊÇ·ñ±£´æµ±Ç°ÎÄ¼þ
 			if (judgeTextSave())
 				OpenTextFile();
 		}
@@ -193,9 +190,9 @@ public class TextEditorExample extends ApplicationWindow {
 	class SaveFileAction extends Action {
 		public SaveFileAction() {
 			super("SaveFileAction@Ctrl+S", Action.AS_PUSH_BUTTON);
-			setText("ï¿½ï¿½ï¿½ï¿½");
+			setText("±£´æ");
 			try {
-				// ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½
+				// ÔØÈëÍ¼Ïñ
 				ImageDescriptor icon = ImageDescriptor.createFromURL(new URL(
 						"file:icons/save.gif"));
 				setImageDescriptor(icon);
@@ -211,7 +208,7 @@ public class TextEditorExample extends ApplicationWindow {
 
 	class SaveAsFileAction extends Action {
 		public SaveAsFileAction() {
-			super("ï¿½ï¿½ï¿½Îª@Ctrl+A", Action.AS_PUSH_BUTTON);
+			super("Áí´æÎª@Ctrl+A", Action.AS_PUSH_BUTTON);
 		}
 
 		public void run() {
@@ -221,7 +218,7 @@ public class TextEditorExample extends ApplicationWindow {
 
 	class ExitAction extends Action {
 		public ExitAction() {
-			super("ï¿½Ë³ï¿½@Ctrl+E", Action.AS_PUSH_BUTTON);
+			super("ÍË³ö@Ctrl+E", Action.AS_PUSH_BUTTON);
 		}
 
 		public void run() {
@@ -232,9 +229,9 @@ public class TextEditorExample extends ApplicationWindow {
 	class CopyFileAction extends Action {
 		public CopyFileAction() {
 			super("CopyFileAction@Ctrl+C", Action.AS_PUSH_BUTTON);
-			setText("ï¿½ï¿½ï¿½ï¿½");
+			setText("¸´ÖÆ");
 			try {
-				// ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½
+				// ÔØÈëÍ¼Ïñ
 				ImageDescriptor icon = ImageDescriptor.createFromURL(new URL(
 						"file:icons/copy.gif"));
 				setImageDescriptor(icon);
@@ -251,9 +248,9 @@ public class TextEditorExample extends ApplicationWindow {
 	class PasteFileAction extends Action {
 		public PasteFileAction() {
 			super("PasteFileAction@Ctrl+V", Action.AS_PUSH_BUTTON);
-			setText("Õ³ï¿½ï¿½");
+			setText("Õ³Ìù");
 			try {
-				// ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½
+				// ÔØÈëÍ¼Ïñ
 				ImageDescriptor icon = ImageDescriptor.createFromURL(new URL(
 						"file:icons/paste.gif"));
 				setImageDescriptor(icon);
@@ -270,9 +267,9 @@ public class TextEditorExample extends ApplicationWindow {
 	class CutFileAction extends Action {
 		public CutFileAction() {
 			super("CutFileAction @Ctrl+X", Action.AS_PUSH_BUTTON);
-			setText("ï¿½ï¿½ï¿½ï¿½");
+			setText("¼ôÇÐ");
 			try {
-				// ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½
+				// ÔØÈëÍ¼Ïñ
 				ImageDescriptor icon = ImageDescriptor.createFromURL(new URL(
 						"file:icons/cut.gif"));
 				setImageDescriptor(icon);
@@ -289,7 +286,7 @@ public class TextEditorExample extends ApplicationWindow {
 
 	class SetFontAction extends Action {
 		public SetFontAction() {
-			super("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½@Alt+F", Action.AS_PUSH_BUTTON);
+			super("ÉèÖÃ×ÖÌå@Alt+F", Action.AS_PUSH_BUTTON);
 		}
 
 		public void run() {
@@ -310,31 +307,31 @@ public class TextEditorExample extends ApplicationWindow {
 
 	class SetColorAction extends Action {
 		public SetColorAction() {
-			super("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É«@Alt+C", Action.AS_PUSH_BUTTON);
+			super("ÉèÖÃÑÕÉ«@Alt+C", Action.AS_PUSH_BUTTON);
 		}
 
 		public void run() {
-			// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É«Ñ¡ï¿½ï¿½Ô»ï¿½ï¿½ï¿½
+			// ¶¨ÒåÑÕÉ«Ñ¡Ôñ¶Ô»°¿ò
 			ColorDialog dlg = new ColorDialog(getShell());
-			// ï¿½ò¿ª¶Ô»ï¿½ï¿½ï¿½
+			// ´ò¿ª¶Ô»°¿ò
 			RGB rgb = dlg.open();
 			if (rgb != null) {
-				// ï¿½ï¿½ï¿½ï¿½colorï¿½ï¿½ï¿½ï¿½
+				// ¶¨Òåcolor¶ÔÏó
 				color = new Color(getShell().getDisplay(), rgb);
-				// ï¿½ï¿½ï¿½ï¿½pointï¿½ï¿½ï¿½ó£¬»ï¿½È¡Ñ¡ï¿½ï¿½Î§ï¿½ï¿½
+				// ¶¨Òåpoint¶ÔÏó£¬»ñÈ¡Ñ¡Ôñ·¶Î§¡£
 				Point point = text.getSelectionRange();
 				for (int i = point.x; i < point.x + point.y; i++) {
-					// ï¿½ï¿½ï¿½Ñ¡ï¿½Ðµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ï¿½Í·ï¿½Î§
+					// »ñµÃÑ¡ÖÐµÄ×ÖÌåÑùÊ½ºÍ·¶Î§
 					range = text.getStyleRangeAtOffset(i);
-					// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½(ï¿½ï¿½Ó´Ö¡ï¿½Ð±ï¿½å¡¢ï¿½ï¿½ï¿½Â»ï¿½ï¿½ï¿½)
+					// Èç¹û×ÖÌåÉèÖÃÁËÆäËüÑùÊ½(Èç¼Ó´Ö¡¢Ð±Ìå¡¢¼ÓÏÂ»®Ïß)
 					if (range != null) {
 				 		/**
-						 * ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Ô­ï¿½ï¿½StyleRangeï¿½ï¿½Öµï¿½ï¿½Í¬ï¿½ï¿½StyleRange
+						 * ÉèÖÃÒ»¸öÓëÔ­À´StyleRangeµÄÖµÏàÍ¬µÄStyleRange
 						 */
 						 style = (StyleRange) range.clone();
 						 style.start = i;
 						 style.length = 1;
-						// ï¿½ï¿½ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½É«
+						// ÉèÖÃÇ°¾°ÑÕÉ«
 						 style.foreground = color;
 					} else {
 						
@@ -360,7 +357,7 @@ public class TextEditorExample extends ApplicationWindow {
 
 	class FormateAction extends Action {
 		public FormateAction() {
-			super("ï¿½ï¿½Ê½ï¿½ï¿½@Ctrl+W", Action.AS_CHECK_BOX);
+			super("¸ñÊ½»¯@Ctrl+W", Action.AS_CHECK_BOX);
 		}
 
 		public void run() {
@@ -370,22 +367,22 @@ public class TextEditorExample extends ApplicationWindow {
 
 	class AboutAction extends Action {
 		public AboutAction() {
-			super("ï¿½ï¿½ï¿½ï¿½@Ctrl+H", Action.AS_PUSH_BUTTON);
+			super("¹ØÓÚ@Ctrl+H", Action.AS_PUSH_BUTTON);
 		}
 
 		public void run() {
 			MessageBox messageBox = new MessageBox(getShell(),
 					SWT.ICON_INFORMATION | SWT.OK);
-			messageBox.setMessage("ï¿½Ä±ï¿½ï¿½à¼­ï¿½ï¿½2.0ï¿½æ±¾ï¿½ï¿½");
+			messageBox.setMessage("ÎÄ±¾±à¼­Æ÷2.0°æ±¾£¡");
 			messageBox.open();
 		}
 	}
 
 	class BlodAction extends Action {
 		public BlodAction() {
-			setText("ï¿½Ó´ï¿½");
+			setText("¼Ó´Ö");
 			try {
-				// ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½
+				// ÔØÈëÍ¼Ïñ
 				ImageDescriptor icon = ImageDescriptor.createFromURL(new URL(
 						"file:icons/blod.bmp"));
 				setImageDescriptor(icon);
@@ -406,7 +403,7 @@ public class TextEditorExample extends ApplicationWindow {
 					style = new StyleRange(i, 1, null, null, SWT.NORMAL);
 				}
 				
-				//ï¿½Ó´ï¿½ï¿½ï¿½ï¿½ï¿½
+				//¼Ó´Ö×ÖÌå
 				style.fontStyle ^= SWT.BOLD;
 
 				text.setStyleRange(style);
@@ -418,9 +415,9 @@ public class TextEditorExample extends ApplicationWindow {
 
 	class ItalicAction extends Action {
 		public ItalicAction() {
-			setText("Ð±ï¿½ï¿½");
+			setText("Ð±Ìå");
 			try {
-				// ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½
+				// ÔØÈëÍ¼Ïñ
 				ImageDescriptor icon = ImageDescriptor.createFromURL(new URL(
 						"file:icons/italic.bmp"));
 				setImageDescriptor(icon);
@@ -442,7 +439,7 @@ public class TextEditorExample extends ApplicationWindow {
 				} else {
 					style = new StyleRange(i, 1, null, null, SWT.NORMAL);
 				}
-				//ï¿½ï¿½ï¿½ï¿½ÎªÐ±ï¿½ï¿½
+				//ÉèÖÃÎªÐ±Ìå
 				style.fontStyle ^= SWT.ITALIC;
 
 				text.setStyleRange(style);
@@ -454,9 +451,9 @@ public class TextEditorExample extends ApplicationWindow {
 
 	class UnderlineAction extends Action {
 		public UnderlineAction() {
-			setText("ï¿½Â»ï¿½ï¿½ï¿½");
+			setText("ÏÂ»®Ïß");
 			try {
-				// ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½
+				// ÔØÈëÍ¼Ïñ
 				ImageDescriptor icon = ImageDescriptor.createFromURL(new URL(
 						"file:icons/underline.bmp"));
 				setImageDescriptor(icon);
@@ -476,7 +473,7 @@ public class TextEditorExample extends ApplicationWindow {
 				} else {
 					style = new StyleRange(i, 1, null, null, SWT.NORMAL);
 				}
-                //ï¿½ï¿½ï¿½ï¿½ï¿½Â»ï¿½ï¿½ï¿½
+                //ÉèÖÃÏÂ»®Ïß
 				style.underline = !style.underline;
 
 				text.setStyleRange(style);
@@ -491,8 +488,8 @@ public class TextEditorExample extends ApplicationWindow {
 			return true;
 		MessageBox messageBox = new MessageBox(getShell(), SWT.ICON_WARNING
 				| SWT.YES | SWT.NO | SWT.CANCEL);
-		messageBox.setMessage("ï¿½Ç·ñ±£´ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½Ä¸ï¿½ï¿½Ä£ï¿½");
-		messageBox.setText("ï¿½Ä±ï¿½ï¿½à¼­ï¿½ï¿½V2.0");
+		messageBox.setMessage("ÊÇ·ñ±£´æ¶ÔÎÄ¼þµÄ¸ü¸Ä£¿");
+		messageBox.setText("ÎÄ±¾±à¼­Æ÷V2.0");
 		int message = messageBox.open();
 		if (message == SWT.YES) {
 			return saveTextFile();
@@ -504,49 +501,49 @@ public class TextEditorExample extends ApplicationWindow {
 	}
 
 	boolean OpenTextFile() {
-		// ï¿½ï¿½ï¿½ï¿½Ô»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½
+		// ¶¨Òå¶Ô»°¿ò£¬ÀàÐÍÎª´ò¿ªÐÍ
 		FileDialog dialog = new FileDialog(getShell(), SWT.OPEN);
-		// ï¿½ï¿½ï¿½Ã¶Ô»ï¿½ï¿½ï¿½ò¿ªµï¿½ï¿½Þ¶ï¿½ï¿½ï¿½ï¿½ï¿½
+		// ÉèÖÃ¶Ô»°¿ò´ò¿ªµÄÏÞ¶¨ÀàÐÍ
 		dialog.setFilterExtensions(new String[] { "*.txt", "*.*" });
-		// ï¿½ò¿ª¶Ô»ï¿½ï¿½ò£¬²ï¿½ï¿½ï¿½ï¿½Ø´ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½Â·ï¿½ï¿½
+		// ´ò¿ª¶Ô»°¿ò£¬²¢·µ»Ø´ò¿ªÎÄ¼þµÄÂ·¾¶
 		String openFile = dialog.open();
 		if (openFile == null) {
 			return false;
 		}
 		/**
-		 * java.ioï¿½ï¿½ï¿½ï¿½Fileï¿½ï¿½×¨ï¿½Å´ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½
-		 * Fileï¿½ï¿½Ä¹ï¿½ï¿½ì·½ï¿½ï¿½ï¿½ï¿½ public File(String pathnames)
-		 * ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½File file=new(D:\my.java)
+		 * java.io°üµÄFileÀà×¨ÃÅ´¦ÀíÎÄ¼þ£¬²¢»ñÈ¡ÎÄ¼þÏà¹ØÐÅÏ¢¡£
+		 * FileÀàµÄ¹¹Ôì·½·¨£º public File(String pathnames)
+		 * ÀýÈç £ºFile file=new(D:\my.java)
 		 * public File(File parent,String child)
-		 * ï¿½ï¿½ï¿½ç£º File file=new(parent,"my.java")
-		 * parentÖ¸ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿Â¼ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ 
+		 * ÀýÈç£º File file=new(parent,"my.java")
+		 * parentÖ¸ÎÄ¼þËùÔÚÄ¿Â¼µÄÎÄ¼þ¶ÔÏó 
 		 * public File(String parent,String child) 
-		 * ï¿½ï¿½ï¿½ï¿½:File file=new(dir,"my.java")
-		 * dirÖ¸ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿Â¼ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
+		 * ÀýÈç:File file=new(dir,"my.java")
+		 * dirÖ¸ÎÄ¼þËùÔÚÄ¿Â¼µÄ×Ö·û´®
 		 */
 		file = new File(openFile);
 		try {
 			/**
-			 * FileReaderï¿½Ä¼ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ 
-			 * ï¿½ï¿½ï¿½ì·½ï¿½ï¿½ï¿½ï¿½ public FileReader(File file)
-			 * ï¿½ï¿½ï¿½ç£ºFileReader fileReade=new FileReader(file) 
+			 * FileReaderÎÄ¼þ×Ö·ûÁ÷ 
+			 * ¹¹Ôì·½·¨£º public FileReader(File file)
+			 * ÀýÈç£ºFileReader fileReade=new FileReader(file) 
 			 * public FileReader(String filenames)
-             * filenamesÎªï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
+             * filenamesÎª°üº¬ÎÄ¼þÃûµÄ×Ö·û´®
 			 */
 			FileReader fileReader = new FileReader(file);
 			/**
-			 * BufferedReaderï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ë»ºï¿½ï¿½ï¿½ï¿½
+			 * BufferedReaderÀàÓÃÀ´°Ñ×Ö·ûÁ÷µÄ×Ö·û¶ÁÈë»º³åÇø
 			 */
 			BufferedReader reader = new BufferedReader(fileReader);
 			/**
-			 * ï¿½ï¿½Stringbufferï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½
+			 * ¶ÔStringbuffer×Ö·û´®»º³åÊµÀý»¯
 			 */
 			StringBuffer sb = new StringBuffer();
 			String line = null;
 			while ((line = reader.readLine()) != null) {
 				/**
-				 * Í¨ï¿½ï¿½append()ï¿½ï¿½ï¿½ï¿½Êµï¿½Ö½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½Óµï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 
-				 * Ò²ï¿½ï¿½ï¿½ï¿½Í¨ï¿½ï¿½insert()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ë»ºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+				 * Í¨¹ýappend()·½·¨ÊµÏÖ½«×Ö·û´®Ìí¼Óµ½×Ö·û»º³åÇø¡£ 
+				 * Ò²¿ÉÒÔÍ¨¹ýinsert()·½·¨½«×Ö·û´®²åÈë»º³åÇøÖÐ
 				 */
 				sb.append(line);
 				sb.append("\r\n");
@@ -560,13 +557,13 @@ public class TextEditorExample extends ApplicationWindow {
 
 	boolean saveTextFile() {
 		if (file == null) {
-			// ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½Ñ¡ï¿½ï¿½Ô»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+			// ¶¨ÒåÎÄ¼þÑ¡Ôñ¶Ô»°¿ò£¬ÀàÐÍÎª±£´æÐÍ
 			FileDialog dialog = new FileDialog(getShell(), SWT.SAVE);
-			dialog.setText("ï¿½ï¿½ï¿½ï¿½");
-			// ï¿½ï¿½ï¿½Ã¶Ô»ï¿½ï¿½ò±£´ï¿½ï¿½ï¿½Þ¶ï¿½ï¿½ï¿½ï¿½ï¿½
+			dialog.setText("±£´æ");
+			// ÉèÖÃ¶Ô»°¿ò±£´æµÄÏÞ¶¨ÀàÐÍ
 			dialog.setFilterExtensions(new String[] { "*.txt", "*.doc",
 					"*.xls", "*.*" });
-			// ï¿½ò¿ª¶Ô»ï¿½ï¿½ò£¬²ï¿½ï¿½ï¿½ï¿½Ø±ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½Â·ï¿½ï¿½
+			// ´ò¿ª¶Ô»°¿ò£¬²¢·µ»Ø±£´æÎÄ¼þµÄÂ·¾¶
 			String saveFile = dialog.open();
 			if (saveFile == null) {
 				return false;
@@ -613,22 +610,22 @@ public class TextEditorExample extends ApplicationWindow {
 			String fileName = null;
 			boolean done = false;
 			while (!done) {
-				// ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½Ô»ï¿½ï¿½ò£¬²ï¿½ï¿½ï¿½ï¿½Ø±ï¿½ï¿½ï¿½Â·ï¿½ï¿½
+				// ´ò¿ªÁí´æÎª¶Ô»°¿ò£¬²¢·µ»Ø±£´æÂ·¾¶
 				fileName = dlg.open();
 				if (fileName == null) {
 					done = true;
 				} else {
-					// ï¿½Ð¶Ï±ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½Ç·ï¿½ï¿½Ñ¾ï¿½ï¿½ï¿½ï¿½ï¿½
+					// ÅÐ¶Ï±£´æµÄÎÄ¼þÊÇ·ñÒÑ¾­´æÔÚ
 					File file = new File(fileName);
 					if (file.exists()) {
-						// ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½Ú£ï¿½ï¿½òµ¯³ï¿½ï¿½ï¿½Ê¾ï¿½ÔµÄ¶Ô»ï¿½ï¿½ï¿½
+						// ÈôÎÄ¼þ´æÔÚ£¬Ôòµ¯³öÌáÊ¾ÐÔµÄ¶Ô»°¿ò
 						MessageBox mb = new MessageBox(dlg.getParent(),
 								SWT.ICON_WARNING | SWT.YES | SWT.NO);
-						// ï¿½ï¿½Ê¾ï¿½Ôµï¿½ï¿½ï¿½Ï¢
-						mb.setMessage(fileName + "ï¿½Ñ¾ï¿½ï¿½ï¿½ï¿½Ú£ï¿½ï¿½Ç·ñ½«¸ï¿½ï¿½Ä¼ï¿½ï¿½æ»»?");
+						// ÌáÊ¾ÐÔµÄÐÅÏ¢
+						mb.setMessage(fileName + "ÒÑ¾­´æÔÚ£¬ÊÇ·ñ½«¸ÃÎÄ¼þÌæ»»?");
 						/**
-						 * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½yesï¿½ï¿½ï¿½ï¿½Å¥ï¿½â½«ï¿½ï¿½ï¿½ï¿½ï¿½Ïµï¿½ï¿½Ä¼ï¿½ï¿½æ»» 
-						 * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð´ï¿½Ä¼ï¿½ï¿½ï¿½
+						 * µ¥»÷¡°yes¡±°´Å¥Õâ½«´ÅÅÌÉÏµÄÎÄ¼þÌæ»» 
+						 * ·ñÔòÖØÐÂÌîÐ´ÎÄ¼þÃû
 						 */
 						done = mb.open() == SWT.YES;
 					} else {

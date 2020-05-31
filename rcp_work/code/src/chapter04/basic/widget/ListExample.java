@@ -1,5 +1,4 @@
-/**@author WangJinTao,MengQingChang 2006
- */
+
 package chapter04.basic.widget;
 
 import org.eclipse.swt.*;
@@ -11,12 +10,12 @@ public class ListExample {
 		final Display display = Display.getDefault();
 		final Shell shell = new Shell();
 		shell.setSize(260, 170);
-		shell.setText("ListÊµï¿½ï¿½");
+		shell.setText("ListÊµÀý");
 		final List list1 = new List(shell, SWT.MULTI | SWT.BORDER
 				| SWT.H_SCROLL | SWT.V_SCROLL);
 		list1.setBounds(30, 25, 80, 80);
 		for (int i = 1; i < 12; i++) {
-			list1.add("SWT/JFaceï¿½ï¿½UIï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½" + i + "ï¿½ï¿½");
+			list1.add("SWT/JFaceµÄUI¿ª·¢Ö¸ÄÏ" + i + "ÕÂ");
 		}
 		final List list2 = new List(shell, SWT.NONE | SWT.BORDER | SWT.V_SCROLL);
 		list2.setBounds(130, 25, 80, 60);

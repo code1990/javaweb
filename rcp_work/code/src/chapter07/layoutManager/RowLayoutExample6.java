@@ -14,7 +14,7 @@ public class RowLayoutExample6 {
 		final Display display = Display.getDefault();
 		final Shell shell = new Shell();
 		shell.setSize(400, 150);
-		shell.setText("RowLayoutÊµï¿½ï¿½");
+		shell.setText("RowLayoutÊµÀý");
 		RowLayout rowlayout = new RowLayout();
 		rowlayout.marginLeft = 50;
 		// rowlayout.marginRight=50;

@@ -1,6 +1,3 @@
-/**
- * @author: WangJinTao,MengQingChang 2006 
- */
 package chapter12;
 import org.eclipse.jface.window.*;
 import org.eclipse.jface.viewers.*;
@@ -20,37 +17,37 @@ public class TableViewer1Class extends ApplicationWindow {
 	}
 	protected void configureShell(Shell shell) {
 		super.configureShell(shell);
-		shell.setText("TableViewerÊµï¿½ï¿½");
+		shell.setText("TableViewerÊµÀý");
 		shell.setSize(400, 200);
 	}
 	protected Control createContents(Composite parent) {
 		Composite composite = new Composite(parent, SWT.NONE);
 		composite.setLayout(new GridLayout(1, false));
-		//ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½TableViewerï¿½ï¿½ï¿½ï¿½
+		//¶¨ÒåÒ»¸öTableViewer¶ÔÏó
 		TableViewer tv = new TableViewer(composite, SWT.FULL_SELECTION);
-		// ï¿½ï¿½ï¿½ï¿½Table
+		// ÉèÖÃTable
 		 Table table = tv.getTable();
 		table.setLayoutData(new GridData(GridData.FILL_BOTH));
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ðµï¿½ï¿½ï¿½
+		// ¶¨Òå±íÖÐµÄÁÐ
 		TableColumn Col1 = new TableColumn(table, SWT.LEFT);
-		Col1.setText("Ñ§ï¿½ï¿½");
-		// ï¿½ï¿½ï¿½ï¿½ï¿½Ð¿ï¿½ï¿½
+		Col1.setText("Ñ§ºÅ");
+		// ÉèÖÃÁÐ¿í¶È
 		Col1.setWidth(60);
 		TableColumn Col2 = new TableColumn(table, SWT.LEFT);
-		Col2.setText("ï¿½ï¿½ï¿½ï¿½");
+		Col2.setText("ÐÕÃû");
 		Col2.setWidth(60);
 		TableColumn Col3 = new TableColumn(table, SWT.LEFT);
-		Col3.setText("ï¿½Ô±ï¿½");
+		Col3.setText("ÐÔ±ð");
 		Col3.setWidth(60);
 		TableColumn Col4 = new TableColumn(table, SWT.LEFT);
-		Col4.setText("ï¿½ï¿½ï¿½ï¿½");
+		Col4.setText("ÄêÁä");
 		Col4.setWidth(60);
 		TableColumn Col5 = new TableColumn(table, SWT.LEFT);
-		Col5.setText("Ï²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É«");
+		Col5.setText("Ï²»¶µÄÑÕÉ«");
 		Col5.setWidth(80);
-		// ï¿½ï¿½Ê¾ï¿½ï¿½Í·
+		// ÏÔÊ¾±íÍ·
 		table.setHeaderVisible(true);
-		// ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½ï¿½
+		// ÏÔÊ¾±í¸ñÏß
 		table.setLinesVisible(true);
 		return composite;
 	}

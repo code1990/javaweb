@@ -23,13 +23,13 @@ public class ErrorDialog2Class extends ApplicationWindow {
 	}
 
 	protected Control createContents(Composite parent) {
-		parent.getShell().setText("ErrorDialogÊµï¿½ï¿½");
+		parent.getShell().setText("ErrorDialogÊµÀý");
 		parent.getShell().setSize(300, 200);
 		Composite composite = new Composite(parent, SWT.NONE);
 		composite.setLayout(new GridLayout(1, false));
 
 		Button button = new Button(composite, SWT.PUSH);
-		button.setText("ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½");
+		button.setText("ÏÔÊ¾´íÎó");
 		button.addSelectionListener(new SelectionAdapter() {
 			public void widgetSelected(SelectionEvent event) {
 				ErrorDialog.openError(Display.getCurrent().getActiveShell(),

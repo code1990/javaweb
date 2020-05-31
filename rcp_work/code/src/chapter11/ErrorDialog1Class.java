@@ -17,13 +17,13 @@ public class ErrorDialog1Class {
 	 * @param args
 	 */
 	public ErrorDialog1Class() {
-	
+		
 		final Shell shell = new Shell();
 		Status status = new Status(IStatus.ERROR, "MyPlugin", 0,
 				"An Error Operate occurred", null);
 
 		ErrorDialog errorDialog = new ErrorDialog(shell
-				, "ErrorDialogÊµï¿½ï¿½", "This is ErrorDialog",
+				, "ErrorDialogÊµÀý", "This is ErrorDialog",
 				status, IStatus.ERROR | IStatus.INFO);
 		errorDialog.open();
 

@@ -1,5 +1,3 @@
-/**@author WangJinTao,MengQingChang 2006
- */
 package chapter04.basic.widget;
 
 import org.eclipse.swt.*;
@@ -11,21 +9,21 @@ public class ScrolledCompositeExample {
 		final Display display = Display.getDefault();
 		final Shell shell = new Shell();
 		shell.setSize(360, 180);
-		shell.setText("ScrolledCompositeÊµï¿½ï¿½");
+		shell.setText("ScrolledCompositeÊµÀý");
 		final ScrolledComposite scrolledcomposite = new ScrolledComposite(
 				shell, SWT.BORDER | SWT.H_SCROLL | SWT.V_SCROLL);
 		scrolledcomposite.setBounds(30, 20, 300, 100);
-		// ï¿½ï¿½ï¿½ï¿½Å¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Óµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// ½«°´Å¥¶ÔÏóÌí¼Óµ½»¬¶¯Ãæ°åÉÏ
 		Button button1 = new Button(scrolledcomposite, SWT.PUSH);
 
-		button1.setText("ScrolledCompositeÊµï¿½ï¿½");
+		button1.setText("ScrolledCompositeÊµÀý");
 		 
 		  button1.setSize(370,100);
 		  
 		 scrolledcomposite.setMinWidth(10);
 		/**
-		 * ï¿½ï¿½È»ï¿½ï¿½ï¿½ï¿½Å¥ï¿½ï¿½ï¿½ï¿½Óµï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï£ï¿½ 
-		 * ï¿½ï¿½ï¿½ï¿½ÒªÍ¨ï¿½ï¿½setContent()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Óµï¿½ï¿½ï¿½Ð§ï¿½ï¿½
+		 * ËäÈ»½«°´Å¥¶ÔÏó¼Óµ½ÁË»¬¶¯Ãæ°åÉÏ£¬ 
+		 * µ«»¹ÒªÍ¨¹ýsetContent()·½·¨ÉèÖÃÌí¼ÓµÄÓÐÐ§ÐÔ
 		 */
 		scrolledcomposite.setContent(button1);
          

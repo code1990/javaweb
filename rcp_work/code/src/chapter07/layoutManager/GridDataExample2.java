@@ -12,7 +12,7 @@ public class GridDataExample2{
 		final Display display = Display.getDefault();
 		final Shell shell = new Shell();
 		shell.setSize(360, 200);
-		shell.setText("GridDataÊµï¿½ï¿½");
+		shell.setText("GridDataÊµÀý");
 		GridLayout gridlayout = new GridLayout(2,false);
         shell.setLayout(gridlayout);
 		new Button(shell, SWT.PUSH).setText("Button1");

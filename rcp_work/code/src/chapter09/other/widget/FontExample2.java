@@ -17,31 +17,31 @@ public class FontExample2 {
 		final Display display = Display.getDefault();
 		final Shell shell = new Shell();
 		shell.setSize(400, 260);
-		shell.setText("FontÊµï¿½ï¿½");
+		shell.setText("FontÊµÀı");
 		shell.setLayout(new GridLayout(3, false));
 		Editortext = new Text(shell, SWT.MULTI | SWT.BORDER | SWT.H_SCROLL
 				| SWT.V_SCROLL);
 		GridData gridEditortext = new GridData();
-		// Ë®Æ½Ç¿Õ¼2ï¿½ï¿½
+		// Ë®Æ½Ç¿Õ¼2ÁĞ
 		gridEditortext.horizontalSpan = 2;
-		// ï¿½ï¿½ï¿½ï¿½Editortextï¿½Ä±ï¿½ï¿½ï¿½ï¿½Îª250ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// ÉèÖÃEditortextÎÄ±¾¿í¶ÈÎª250¸öÏñËØ
 		gridEditortext.widthHint = 250;
-		// ï¿½ï¿½ï¿½ï¿½Editortextï¿½Ä±ï¿½ï¿½ß¶ï¿½Îª195ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// ÉèÖÃEditortextÎÄ±¾¸ß¶ÈÎª195¸öÏñËØ
 		gridEditortext.heightHint = 195;
 		Editortext.setLayoutData(gridEditortext);
 
 		Composite composite = new Composite(shell, SWT.NONE);
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã³ï¿½ÎªË«ï¿½ï¿½ï¿½ï¿½ï¿½
+		// ½«Ãæ°åÉèÖÃ³ÉÎªË«Ïò³äÂú
 		GridData gridcomposite = new GridData(GridData.FILL_BOTH);
 		composite.setLayoutData(gridcomposite);
-		// Compositeï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½
+		// Composite²ÉÓÃÍø¸ñÊ½²¼¾Ö
 		composite.setLayout(new GridLayout());
-		// ï¿½ï¿½ï¿½ï¿½ï¿½Ç©
+		// ¶¨Òå±êÇ©
 		Label label = new Label(composite, SWT.NONE);
-		label.setText("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÖºÅ´ï¿½Ğ¡:");
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ò£¬¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÎªÖ»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		label.setText("ÇëÉèÖÃ×ÖºÅ´óĞ¡:");
+		// ¶¨ÒåÏÂÀ­¿ò£¬¸ÃÏÂÀ­¿òÉèÖÃÎªÖ»¶ÁÀàĞÍ
 		combo = new Combo(composite, SWT.READ_ONLY);
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// ÉèÖÃÏÂÀ­Ïî
 		combo.setItems(new String[] { "7", "8", "9", "10", "12", "14", "16",
 				"18", "20", "22", "24", "26", "28", "36", "48", "72" });
 		GridData gridcombo = new GridData();
@@ -49,7 +49,7 @@ public class FontExample2 {
 		combo.setLayoutData(gridcombo);
 
 		Button button = new Button(composite, SWT.NONE);
-		button.setText("È·ï¿½ï¿½");
+		button.setText("È·¶¨");
 		GridData gridbutton = new GridData();
 		gridbutton.widthHint = 80;
 		gridbutton.horizontalIndent = 5;
@@ -61,19 +61,19 @@ public class FontExample2 {
 				if (getText == null || getText.equals("")) {
 					MessageBox messageBox = new MessageBox(shell,
 							SWT.ICON_INFORMATION | SWT.OK);
-					messageBox.setMessage("ï¿½Ä±ï¿½ï¿½ï¿½ï¿½İ²ï¿½ï¿½ï¿½Îªï¿½ï¿½" + '\n'
-							+ "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½Òªï¿½ï¿½ï¿½Ãµï¿½ï¿½Öºï¿½!!!");
+					messageBox.setMessage("ÎÄ±¾ÄÚÈİ²»ÄÜÎª¿Õ" + '\n'
+							+ "ÇëÔÚÏÂÀ­¿òÖĞÑ¡ÔñÒªÉèÖÃµÄ×ÖºÅ!!!");
 					messageBox.open();
-				} else {//ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½ï¿½ï¿½Stringï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½ÎªInt
+				} else {//½«»ñÈ¡µÄÎÄ±¾ÄÚÈİStringÀàĞÍ×ª»»ÎªInt
 					final int intStr = new Integer(getText).intValue();
 					Font initialFont = Editortext.getFont();
 					FontData[] fontData = initialFont.getFontData();
 					for (int i = 0; i < fontData.length; i++) {
 						fontData[i].setHeight(intStr);
 					}
-					// ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+					// ¶¨ÒåÒ»¸ö×ÖÌå¶ÔÏó
 					Font newFont = new Font(display, fontData);
-					// ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+					// ÔÚÎÄ±¾ÉÏÉèÖÃ×ÖÌå
 					Editortext.setFont(newFont);
 				}
 			}

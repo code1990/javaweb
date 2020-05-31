@@ -11,31 +11,31 @@ public class GCExample1 {
 		final Display display = Display.getDefault();
 		final Shell shell = new Shell();
 		shell.setSize(350, 230);
-		shell.setText("GCÊµï¿½ï¿½");
+		shell.setText("GCÊµÀý");
 		shell.setLayout(new FillLayout());
-		// ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// ¶¨ÒåÒ»¸ö»­²¼¶ÔÏó
 		Canvas canvas = new Canvas(shell, SWT.BORDER);
 		shell.open();
-		// ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½GCï¿½ï¿½ï¿½ï¿½
+		// ¶¨ÒåÒ»¸öGC¶ÔÏó
 		GC gc = new GC(canvas);
-		// ï¿½ï¿½ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½É«Îªï¿½ï¿½É«
+		// ÉèÖÃÇ°¾°ÑÕÉ«ÎªÀ¶É«
 		gc.setForeground(display.getSystemColor(SWT.COLOR_BLUE));
-		// ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½
+		// »­Ò»ÌõÏß
 		gc.drawLine(180, 10, 220, 150);
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô²ï¿½ï¿½ï¿½Ë´ï¿½Width=HightÎªÔ²ï¿½ï¿½
+		// »­¸öÍÖÔ²£¬´Ë´¦Width=HightÎªÔ²ÐÎ
 		gc.drawOval(95, 20, 80, 80);
-		// ï¿½ï¿½ï¿½ï¿½Ô²ï¿½Î±ï¿½ï¿½ï¿½ï¿½ï¿½É«Îªï¿½ï¿½É«
+		// ÉèÖÃÔ²ÐÎ±³¾°ÑÕÉ«ÎªºìÉ«
 		gc.setBackground(display.getSystemColor(SWT.COLOR_RED));
 		// gc.drawOval(95, 20, 80, 80);
-		// ï¿½ï¿½ï¿½Ô²ï¿½ï¿½
+		// Ìî³äÔ²ÐÎ
 		gc.fillOval(92, 19, 85, 85);
-		// ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½
+		// »­Ò»¸öµã
 		gc.drawPoint(300, 10);
-		// ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// »­Ò»¸ö¾ØÐÎ
 		gc.drawRectangle(70, 60, 130, 100);
-		// ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î£ï¿½ï¿½Ë´ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// »­Ò»¸ö¶à±ßÐÎ£¬´Ë´¦ÎªÈý½ÇÐÎ
 		gc.drawPolygon(new int[] { 250, 30, 220, 100, 300, 150 });
-		// ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ß²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// »­Ò»¸ö¶à±ß²»¹æÔòµÄÏß
 		gc.drawPolyline(new int[] { 10, 80, 70, 10, 90, 80, 60, 125, 160,150 });
 		gc.dispose();
 		shell.layout();

@@ -1,6 +1,3 @@
-/**
- * @author: WangJinTao,MengQingChang 2006 
-*/
 package chapter14;
 
 	public class Employee  {
@@ -17,62 +14,62 @@ package chapter14;
 		private int salary;
 		 
 
-		// ï¿½ï¿½ï¿½ï¿½id
+		// ·µ»Øid
 		public int getID() {
 			return id;
 		}
 
-		// ï¿½ï¿½ï¿½ï¿½id
+		// ÉèÖÃid
 		public void setID(int  id) {
 			this.id = id;
 		}
 
-		// ï¿½ï¿½ï¿½ï¿½name
+		// ·µ»Øname
 		public String getName() {
 			return name;
 		}
 
-		// ï¿½ï¿½ï¿½ï¿½name
+		// ÉèÖÃname
 		public void setName(String name) {
 			this.name = name;
 		}
 
-		// ï¿½ï¿½ï¿½ï¿½male
+		// ·µ»Ømale
 		public String getSex() {
 			return sex;
 		}
 
-		// ï¿½ï¿½ï¿½ï¿½ male
+		// ÉèÖÃ male
 		public void setSex(String sex) {
 			this.sex=sex;
 		}
 
-		// ï¿½ï¿½ï¿½ï¿½age
+		// ÉèÖÃage
 		public int getAge() {
 			return age;
 		}
 
-		// ï¿½ï¿½ï¿½ï¿½age
+		// ·µ»Øage
 		public void setAge(int age) {
 			this.age = age;
 		}
 
-		// ï¿½ï¿½ï¿½ï¿½position
+		// ·µ»Øposition
 		public String getPosition() {
 			return position;
 		}
 
-		// ï¿½ï¿½ï¿½ï¿½position
+		// ÉèÖÃposition
 		public void setPosition(String position) {
 			this.position = position;
 		}
 
-		// ï¿½ï¿½ï¿½ï¿½color
+		// ·µ»Øcolor
 		public int  getSalary() {
 			return salary;
 		}
 
-		// ï¿½ï¿½ï¿½ï¿½color
+		// ÉèÖÃcolor
 		public void setSalary(int salary) {
 			this.salary = salary;
 		}

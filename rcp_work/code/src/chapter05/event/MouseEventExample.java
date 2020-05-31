@@ -1,5 +1,4 @@
-/**@author WangJinTao,MengQingChang 2006
- */
+
 package chapter05.event;
 
 import org.eclipse.swt.*;
@@ -10,7 +9,7 @@ public class MouseEventExample {
 		final Display display = Display.getDefault();
 		final Shell shell = new Shell();
 		shell.setSize(500, 375);
-		shell.setText("MouseEventÊµï¿½ï¿½");
+		shell.setText("MouseEventÊµÀý");
 		Listener listener = new Listener() {
 			public void handleEvent(Event e) {
 				String string = "";

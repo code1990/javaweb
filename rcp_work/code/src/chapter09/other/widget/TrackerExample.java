@@ -11,7 +11,7 @@ public class TrackerExample {
 		final Display display = Display.getDefault();
 		final Shell shell = new Shell();
 		shell.setSize(400, 300);
-		shell.setText("TrackerÊµï¿½ï¿½");
+		shell.setText("TrackerÊµÀý");
 	    tracker = new Tracker(shell, SWT.RESIZE);
 		shell.addMouseListener(new MouseAdapter() {
 			

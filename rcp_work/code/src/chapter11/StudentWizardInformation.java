@@ -25,18 +25,18 @@ public class StudentWizardInformation extends Wizard {
 		String sex = pageOne.getCombo();
 		String Email = pageOne.getEmail();
 		String comment = pageTwo.getComment();
-		// ï¿½ï¿½ï¿½Õ¼ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// ½«ÊÕ¼¯µÄĞÅÏ¢ÏÔÊ¾À´±í¸ñÏîÖĞ
 		item.setText(new String[] { id, name, sex, Email, comment });
 		return true;
 	}
 
-	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò³
+	// ÉèÖÃÏòµ¼Ò³
 	public void addPages() {
-		// ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Ò³
+		// ¶¨ÒåµÚÒ»¸öÏòµ¼Ò³
 		pageOne = new WizardPageOne();
-		// ï¿½ï¿½ï¿½ï¿½Ú¶ï¿½ï¿½ï¿½ï¿½ï¿½Ò³
+		// ¶¨ÒåµÚ¶ş¸öÏòµ¼Ò³
 		pageTwo = new WizardPageTwo();
-		// ï¿½ï¿½ï¿½ï¿½ï¿½Ò³
+		// Ìí¼ÓÏòµ¼Ò³
 		addPage(pageOne);
 		addPage(pageTwo);
 	}

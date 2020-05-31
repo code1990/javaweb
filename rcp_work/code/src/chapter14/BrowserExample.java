@@ -1,6 +1,3 @@
-/**
- *@author: WangJinTao,MengQingChang2006
- */
 package chapter14;
 
 import java.net.*;
@@ -35,15 +32,15 @@ public class BrowserExample extends ApplicationWindow {
 
 	protected void configureShell(Shell shell) {
 		super.configureShell(shell);
-		// ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½ï¿½Ð¡
+		// ÉèÖÃ´°Ìå´óÐ¡
 		shell.setSize(550, 350);
-		shell.setText("BrowserÊµï¿½ï¿½");
+		shell.setText("BrowserÊµÀý");
 	}
 
 	protected Control createContents(Composite parent) {
 		Composite composite = new Composite(parent, SWT.NONE);
 		composite.setLayout(new GridLayout(1, false));
-		// ï¿½ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½å·½ï¿½ï¿½
+		// µ÷ÓÃ×Ô¶¨Òå·½·¨
 		createBrowser(composite);
 		return composite;
 	}
@@ -52,34 +49,34 @@ public class BrowserExample extends ApplicationWindow {
 		Composite composite = new Composite(comp, SWT.NONE);
 		composite.setLayoutData(new GridData(GridData.FILL_BOTH));
 		composite.setLayout(new GridLayout(3, false));
-		// ï¿½ï¿½ï¿½Ãµï¿½Ö·ï¿½ï¿½Ç©
+		// ÉèÖÃµØÖ·±êÇ©
 		labelAddress = new Label(composite, SWT.NONE);
-		labelAddress.setText("ï¿½ï¿½Ö·(&D)");
-		// ï¿½ï¿½ï¿½Ãµï¿½Ö·ï¿½Ä±ï¿½ï¿½ï¿½
+		labelAddress.setText("µØÖ·(&D)");
+		// ÉèÖÃµØÖ·ÎÄ±¾¿ò
 		text = new Text(composite, SWT.BORDER);
 		GridData gridText = new GridData(GridData.FILL_HORIZONTAL);
 		text.setLayoutData(gridText);
-		// ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½Å¥
+		// ÉèÖÃ×ªµ½°´Å¥
 		Button buttonRun = new Button(composite, SWT.NULL);
 		buttonRun.setImage(new Image(comp.getShell().getDisplay(),
 				"icons/run.gif"));
-		buttonRun.setToolTipText("×ªï¿½ï¿½");
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		buttonRun.setToolTipText("×ªµ½");
+		// ÉèÖÃä¯ÀÀÆ÷×é¼þ
 		browser = new Browser(composite, SWT.BORDER);
 		GridData gridBrowser = new GridData(GridData.FILL_BOTH);
 		gridBrowser.horizontalSpan = 3;
 		browser.setLayoutData(gridBrowser);
-		// ï¿½ï¿½ï¿½ï¿½×´Ì¬ï¿½ï¿½Ç©
+		// ÉèÖÃ×´Ì¬±êÇ©
 		labelStatus = new Label(composite, SWT.NULL);
-		labelStatus.setText("×¼ï¿½ï¿½");
+		labelStatus.setText("×¼±¸");
 		GridData gridlabelStatus = new GridData(GridData.FILL_HORIZONTAL);
 		gridlabelStatus.horizontalSpan = 2;
 		labelStatus.setLayoutData(gridlabelStatus);
-		// ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// ¶¨ÒåÒ»¸ö½ø¶ÈÌõ
 		final ProgressBar progressBar = new ProgressBar(composite, SWT.SMOOTH);
 		Listener openURLListener = new Listener() {
 			public void handleEvent(Event event) {
-				// Browserï¿½ï¿½È¡ï¿½Ä±ï¿½ï¿½ï¿½ï¿½Ý£ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·
+				// Browser»ñÈ¡ÎÄ±¾ÄÚÈÝ£¬¼´»ñÈ¡ÓÃ»§ÊäÈëµÄÍøÖ·
 				browser.setUrl(text.getText());
 			}
 		};
@@ -87,14 +84,14 @@ public class BrowserExample extends ApplicationWindow {
 		text.addListener(SWT.DefaultSelection, openURLListener);
 		browser.addLocationListener(new LocationListener() {
 			public void changing(LocationEvent event) {
-				// ï¿½ï¿½Ê¾ï¿½ï¿½Ö·ï¿½Ä¶ï¿½Î»ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½Ö·ï¿½Ä±ï¿½ï¿½ï¿½
+				// ÏÔÊ¾ÍøÖ·µÄ¶¨Î»ÔÚÎÄ±¾µØÖ·ÎÄ±¾¿ò
 				text.setText(event.location);
 			}
 
 			public void changed(LocationEvent event) {
 			}
 		});
-		// ï¿½Ã½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò³ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½×´Ì¬
+		// ÓÃ½ø¶ÈÌõÉèÖÃÍøÒ³ÏÔÊ¾½ø¶È×´Ì¬
 		browser.addProgressListener(new ProgressListener() {
 			public void changed(ProgressEvent event) {
 				progressBar.setMaximum(event.total);
@@ -105,7 +102,7 @@ public class BrowserExample extends ApplicationWindow {
 				progressBar.setSelection(0);
 			}
 		});
-		// ï¿½ï¿½Ç©ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½Ò³ï¿½ï¿½Ê¾×´Ì¬
+		// ±êÇ©ÓÃÓÚÏÔÊ¾ÍøÒ³ÏÔÊ¾×´Ì¬
 		browser.addStatusTextListener(new StatusTextListener() {
 			public void changed(StatusTextEvent event) {
 				labelStatus.setText(event.text);
@@ -115,12 +112,12 @@ public class BrowserExample extends ApplicationWindow {
 
 	protected ToolBarManager createToolBarManager(int style) {
 		ToolBarManager toolBarManager = new ToolBarManager(style);
-		// Í¨ï¿½ï¿½Actionï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å¥ï¿½ï¿½Ó¦ï¿½Ä¹ï¿½ï¿½ï¿½
+		// Í¨¹ýAction¶¯×÷À´ÉèÖÃ¹¤¾ßÀ¸°´Å¥ÏàÓ¦µÄ¹¦ÄÜ
 		toolBarManager.add(new backwardAction());
 		toolBarManager.add(new forwardAction());
 		toolBarManager.add(new stopAction());
 		toolBarManager.add(new refreshAction());
-		// Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó·Ö¸ï¿½ï¿½ï¿½
+		// Îª¹¤¾ßÀ¸Ìí¼Ó·Ö¸ô·û
 		toolBarManager.add(new Separator());
 		toolBarManager.add(new homeAction());
 		return toolBarManager;
@@ -128,10 +125,10 @@ public class BrowserExample extends ApplicationWindow {
 
 	class backwardAction extends Action {
 		public backwardAction() {
-			// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½Ô±ï¿½Ç©
-			setToolTipText("ï¿½ï¿½ï¿½ï¿½");
+			// ÉèÖÃÌáÊ¾ÐÔ±êÇ©
+			setToolTipText("ºóÍË");
 			try {
-				// ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½
+				// ÔØÈëÍ¼Ïñ
 				ImageDescriptor icon = ImageDescriptor.createFromURL(new URL(
 						"file:icons/backward.gif"));
 				setImageDescriptor(icon);
@@ -147,7 +144,7 @@ public class BrowserExample extends ApplicationWindow {
 
 	class forwardAction extends Action {
 		public forwardAction() {
-			setToolTipText("Ç°ï¿½ï¿½");
+			setToolTipText("Ç°½ø");
 			try {
 				ImageDescriptor icon = ImageDescriptor.createFromURL(new URL(
 						"file:icons/forward.gif"));
@@ -181,7 +178,7 @@ public class BrowserExample extends ApplicationWindow {
 
 	class refreshAction extends Action {
 		public refreshAction() {
-			setToolTipText("Ë¢ï¿½ï¿½");
+			setToolTipText("Ë¢ÐÂ");
 			try {
 				ImageDescriptor icon = ImageDescriptor.createFromURL(new URL(
 						"file:icons/refresh.gif"));
@@ -198,7 +195,7 @@ public class BrowserExample extends ApplicationWindow {
 
 	class homeAction extends Action {
 		public homeAction() {
-			setToolTipText("ï¿½ï¿½Ò³");
+			setToolTipText("Ö÷Ò³");
 			try {
 				ImageDescriptor icon = ImageDescriptor.createFromURL(new URL(
 						"file:icons/home.gif"));

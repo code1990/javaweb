@@ -11,27 +11,27 @@ public class TreeExample {
 		final Display display = Display.getDefault();
 		final Shell shell = new Shell();
 		shell.setSize(500, 375);
-		shell.setText("TreeÊµï¿½ï¿½");
+		shell.setText("TreeÊµÀý");
 		shell.setLayout(new FillLayout());
-		// ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// ¶¨ÒåÒ»¸öÊ÷¶ÔÏó
 		final Tree tree = new Tree(shell, SWT.SINGLE);
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Úµï¿½
+		// ´´½¨Ê÷½Úµã
 		final TreeItem treeItemGoogle = new TreeItem(tree, SWT.NONE);
-		treeItemGoogle.setText("Googleï¿½ï¿½Ë¾");
+		treeItemGoogle.setText("Google¹«Ë¾");
 		new TreeItem(treeItemGoogle, SWT.NULL).setText("Google Earth");
 		new TreeItem(treeItemGoogle, SWT.NULL).setText("Google ToolBar");
 		new TreeItem(treeItemGoogle, SWT.NULL).setText("Google Talk");
 		new TreeItem(treeItemGoogle, SWT.NULL).setText("Google Desk");
 
 		final TreeItem treeItemMicrosoft = new TreeItem(tree, SWT.NONE);
-		treeItemMicrosoft.setText("Microsoftï¿½ï¿½Ë¾");
+		treeItemMicrosoft.setText("Microsoft¹«Ë¾");
 		new TreeItem(treeItemMicrosoft, SWT.NULL).setText("Windows 98");
 		new TreeItem(treeItemMicrosoft, SWT.NULL).setText("Windows NT");
 		new TreeItem(treeItemMicrosoft, SWT.NULL).setText("Windows XP");
 		new TreeItem(treeItemMicrosoft, SWT.NULL).setText("Windows Vista");
 
 		final TreeItem treeItemIBM = new TreeItem(tree, SWT.NONE);
-		treeItemIBM.setText("IBMï¿½ï¿½Ë¾");
+		treeItemIBM.setText("IBM¹«Ë¾");
 		new TreeItem(treeItemIBM, SWT.NULL).setText("Lotus Software");
 		new TreeItem(treeItemIBM, SWT.NULL).setText("Tivoli Software");
 		new TreeItem(treeItemIBM, SWT.NULL).setText("WebSphere Software");

@@ -1,6 +1,3 @@
-/**
- * @author: WangJinTao,MengQingChang 2006 
- */
 package chapter14;
 
 import java.sql.*;
@@ -10,7 +7,7 @@ import java.util.List;
 import org.eclipse.swt.widgets.*;
 
 public class DbOperate {
-	// ï¿½ï¿½Ñ¯Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½
+	// ²éÑ¯Ô±¹¤»ù±¾ÐÅÏ¢²Ù×÷
 	public static List BasicInfor() throws SQLException {
 		List list = new ArrayList();
 		String name, sex, position;
@@ -26,14 +23,14 @@ public class DbOperate {
 			Connection con = DriverManager.getConnection("jdbc:odbc:ygDB");
 			Statement sql = con.createStatement();
 
-			ResultSet rs = sql.executeQuery("select * from Ô±ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½");
+			ResultSet rs = sql.executeQuery("select * from Ô±¹¤ÐÅÏ¢±í");
 			while (rs.next()) {
-				id = rs.getInt("Ô±ï¿½ï¿½ï¿½ï¿½");
-				name = rs.getString("ï¿½ï¿½ï¿½ï¿½");
-				sex = rs.getString("ï¿½Ô±ï¿½");
-				age = rs.getInt("ï¿½ï¿½ï¿½ï¿½");
+				id = rs.getInt("Ô±¹¤ºÅ");
+				name = rs.getString("ÐÕÃû");
+				sex = rs.getString("ÐÔ±ð");
+				age = rs.getInt("ÄêÁä");
 				position = rs.getString("Ö°Î»");
-				salary = rs.getInt("ï¿½ï¿½Ð½");
+				salary = rs.getInt("ÔÂÐ½");
 				Employee people = new Employee();
 				people.setID(id);
 
@@ -57,7 +54,7 @@ public class DbOperate {
 
 	}
 
-	// ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½ï¿½ï¿½Ñ¯Ô±ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½
+	// °´Ô±¹¤ºÅÄ£ºý²éÑ¯Ô±¹¤ÐÅÏ¢²Ù×÷
 	public static List SearchId(Text text1) throws SQLException {
 		List list = new ArrayList();
 		String name, sex, position;
@@ -74,15 +71,15 @@ public class DbOperate {
 		Connection con = DriverManager.getConnection("jdbc:odbc:ygDB");
 		Statement sql = con.createStatement();
 
-		ResultSet rs = sql.executeQuery("select * from Ô±ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ where Ô±ï¿½ï¿½ï¿½ï¿½ like'%"
+		ResultSet rs = sql.executeQuery("select * from Ô±¹¤ÐÅÏ¢±í where Ô±¹¤ºÅ like'%"
 				+ text1.getText().trim() + "%'");
 		while (rs.next()) {
-			id = rs.getInt("Ô±ï¿½ï¿½ï¿½ï¿½");
-			name = rs.getString("ï¿½ï¿½ï¿½ï¿½");
-			sex = rs.getString("ï¿½Ô±ï¿½");
-			age = rs.getInt("ï¿½ï¿½ï¿½ï¿½");
+			id = rs.getInt("Ô±¹¤ºÅ");
+			name = rs.getString("ÐÕÃû");
+			sex = rs.getString("ÐÔ±ð");
+			age = rs.getInt("ÄêÁä");
 			position = rs.getString("Ö°Î»");
-			salary = rs.getInt("ï¿½ï¿½Ð½");
+			salary = rs.getInt("ÔÂÐ½");
 			Employee people = new Employee();
 			people.setID(id);
 			people.setName(name);
@@ -99,7 +96,7 @@ public class DbOperate {
 
 	}
 
-	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½ï¿½ï¿½Ñ¯Ô±ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½
+	// °´ÐÕÃûÄ£ºý²éÑ¯Ô±¹¤ÐÅÏ¢²Ù×÷
 	public static List SearchName(Text text2) throws SQLException {
 		List list = new ArrayList();
 		String name, sex, position;
@@ -116,15 +113,15 @@ public class DbOperate {
 		Connection con = DriverManager.getConnection("jdbc:odbc:ygDB");
 		Statement sql = con.createStatement();
 
-		ResultSet rs = sql.executeQuery("select * from Ô±ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ where ï¿½ï¿½ï¿½ï¿½ like'%"
+		ResultSet rs = sql.executeQuery("select * from Ô±¹¤ÐÅÏ¢±í where ÐÕÃû like'%"
 				+ text2.getText().trim() + "%'");
 		while (rs.next()) {
-			id = rs.getInt("Ô±ï¿½ï¿½ï¿½ï¿½");
-			name = rs.getString("ï¿½ï¿½ï¿½ï¿½");
-			sex = rs.getString("ï¿½Ô±ï¿½");
-			age = rs.getInt("ï¿½ï¿½ï¿½ï¿½");
+			id = rs.getInt("Ô±¹¤ºÅ");
+			name = rs.getString("ÐÕÃû");
+			sex = rs.getString("ÐÔ±ð");
+			age = rs.getInt("ÄêÁä");
 			position = rs.getString("Ö°Î»");
-			salary = rs.getInt("ï¿½ï¿½Ð½");
+			salary = rs.getInt("ÔÂÐ½");
 			Employee people = new Employee();
 			people.setID(id);
 			people.setName(name);
@@ -141,7 +138,7 @@ public class DbOperate {
 
 	}
 
-	// ï¿½ï¿½ï¿½Ô±ï¿½Ä£ï¿½ï¿½ï¿½ï¿½Ñ¯Ô±ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½
+	// °´ÐÔ±ðÄ£ºý²éÑ¯Ô±¹¤ÐÅÏ¢²Ù×÷
 	public static List SearchSex(Text text3) throws SQLException {
 		List list = new ArrayList();
 		String name, sex, position;
@@ -158,15 +155,15 @@ public class DbOperate {
 		Connection con = DriverManager.getConnection("jdbc:odbc:ygDB");
 		Statement sql = con.createStatement();
 
-		ResultSet rs = sql.executeQuery("select * from Ô±ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ where ï¿½Ô±ï¿½='"
+		ResultSet rs = sql.executeQuery("select * from Ô±¹¤ÐÅÏ¢±í where ÐÔ±ð='"
 				+ text3.getText().trim() + "'");
 		while (rs.next()) {
-			id = rs.getInt("Ô±ï¿½ï¿½ï¿½ï¿½");
-			name = rs.getString("ï¿½ï¿½ï¿½ï¿½");
-			sex = rs.getString("ï¿½Ô±ï¿½");
-			age = rs.getInt("ï¿½ï¿½ï¿½ï¿½");
+			id = rs.getInt("Ô±¹¤ºÅ");
+			name = rs.getString("ÐÕÃû");
+			sex = rs.getString("ÐÔ±ð");
+			age = rs.getInt("ÄêÁä");
 			position = rs.getString("Ö°Î»");
-			salary = rs.getInt("ï¿½ï¿½Ð½");
+			salary = rs.getInt("ÔÂÐ½");
 			Employee people = new Employee();
 			people.setID(id);
 			people.setName(name);
@@ -183,7 +180,7 @@ public class DbOperate {
 
 	}
 
-	// É¾ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½
+	// É¾³ýÔ±¹¤ÐÅÏ¢²Ù×÷
 	public boolean removeEmployee(Employee employee) throws SQLException {
 		try {
 			Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
@@ -194,7 +191,7 @@ public class DbOperate {
 
 		Statement sql = con.createStatement();
 
-		sql.executeUpdate("delete from  Ô±ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ where Ô±ï¿½ï¿½ï¿½ï¿½='" + employee.getID()
+		sql.executeUpdate("delete from  Ô±¹¤ÐÅÏ¢±í where Ô±¹¤ºÅ='" + employee.getID()
 				+ "'");
 
 		return true;

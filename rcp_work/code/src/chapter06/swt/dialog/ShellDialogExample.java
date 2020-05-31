@@ -1,5 +1,3 @@
-/**@author WangJinTao,MengQingChang 2006
- */
 package chapter06.swt.dialog;
 
 import org.eclipse.swt.*;
@@ -9,18 +7,18 @@ import org.eclipse.swt.layout.*;
 public class ShellDialogExample {
 	public ShellDialogExample() {
 		final Display display = new Display();
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã³É¶Ô»ï¿½ï¿½ï¿½
+		// ½«´°¿ÚÉèÖÃ³É¶Ô»°¿ò
 		final Shell shell = new Shell(display, SWT.DIALOG_TRIM);
-		// ï¿½ï¿½Shellï¿½ï¿½ï¿½ï¿½ï¿½Ï²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç²ï¿½ï¿½Ö£ï¿½
+		// ÔÚShellÈÝÆ÷ÉÏ²ÉÓÃÍø¸ñÊÇ²¼¾Ö£¬
 		GridLayout grid = new GridLayout();
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã³ï¿½Ò»ï¿½ï¿½
+		// ½«ÈÝÆ÷ÉèÖÃ³ÉÒ»ÁÐ
 		grid.numColumns = 1;
 		shell.setLayout(grid);
-		shell.setText("Shellï¿½Ô»ï¿½ï¿½ï¿½Êµï¿½ï¿½");
+		shell.setText("Shell¶Ô»°¿òÊµÀý");
 		shell.setSize(270, 190);
 		Label label1 = new Label(shell, SWT.NONE);
 		label1.setImage(display.getSystemImage(SWT.ICON_ERROR));
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½Ô±ï¿½ï¿½ï¿½ï¿½
+		// ÉèÖÃÌáÊ¾ÐÔ±íÇé·û
 		Label label2 = new Label(shell, SWT.NONE);
 		label2.setImage(display.getSystemImage(SWT.ICON_INFORMATION));
 		Label label3 = new Label(shell, SWT.NONE);

@@ -1,5 +1,4 @@
-/**@author WangJinTao,MengQingChang 2006
- */
+
 package chapter04.basic.widget;
 
 import org.eclipse.swt.*;
@@ -10,20 +9,20 @@ public class LabelExample {
 		final Display display = Display.getDefault();
 		final Shell shell = new Shell();
 		/**
-		 * ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½ï¿½Ð¡,ï¿½ï¿½Ê½Îªï¿½ï¿½shell.setSize(int x,int y) "x"ÎªXï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,"y"ÎªYï¿½ï¿½ï¿½ï¿½ï¿½ê¡£
+		 * ÉèÖÃ´°Ìå´óÐ¡,¸ñÊ½Îª£ºshell.setSize(int x,int y) "x"ÎªXÖá×ø±ê,"y"ÎªYÖá×ø±ê¡£
 		 */
 		shell.setSize(500, 375);
-		// ï¿½ï¿½ï¿½Ã´ï¿½ï¿½Ú±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¡ï¿½
-		shell.setText("LabelÊµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
-		// ï¿½ï¿½ï¿½ï¿½ï¿½Ç©ï¿½ï¿½ï¿½ï¿½label1ï¿½ï¿½
+		// ÉèÖÃ´°¿Ú±êÌâÎÄ×Ö¡£
+		shell.setText("LabelÊµÀý½çÃæ");
+		// ¶¨Òå±êÇ©¶ÔÏólabel1¡£
 		final Label label1 = new Label(shell, SWT.NONE);
 		/**
-		 * ï¿½ï¿½ï¿½ï¿½labelï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ÃºÍ´ï¿½Ð¡ 
-		 * ï¿½ï¿½ï¿½Ê½Îªï¿½ï¿½setBoundsï¿½ï¿½int x ï¿½ï¿½int y ï¿½ï¿½int width ï¿½ï¿½int heightï¿½ï¿½
-		 * "x"ÎªXï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,"y"ÎªYï¿½ï¿½ï¿½ï¿½ï¿½ê¡£"wighth"ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½È£ï¿½ "height"ï¿½ï¿½ï¿½ï¿½Ä¸ß¶È¡ï¿½
+		 * ÉèÖÃlabel×é¼þµÄÎ»ÖÃºÍ´óÐ¡ 
+		 * Æä¸ñÊ½Îª£ºsetBounds£¨int x £¬int y £¬int width £¬int height£©
+		 * "x"ÎªXÖá×ø±ê,"y"ÎªYÖá×ø±ê¡£"wighth"×é¼þµÄ¿í¶È£¬ "height"×é¼þµÄ¸ß¶È¡£
 		 */
 		label1.setBounds(20, 15, 30, 15);
-		// setTextï¿½ï¿½String string)ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä±ï¿½Ç©ï¿½ï¿½ï¿½Ö¡ï¿½
+		// setText£¨String string)ÓÃÀ´ÉèÖÃ×é¼þµÄ±êÇ©ÎÄ×Ö¡£
 		label1.setText("Label");
 	  
 		final Label label2 = new Label(shell, SWT.SEPARATOR | SWT.HORIZONTAL);
@@ -32,7 +31,7 @@ public class LabelExample {
 		label3.setBounds(65, 0, 9, 350);
 		final Label label4 = new Label(shell, SWT.NONE);
 		label4.setBounds(80, 70, 40, 40);
-		// setBackground(Color color)ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã±ï¿½ï¿½ï¿½ï¿½ï¿½É«
+		// setBackground(Color color)·½·¨ÓÃÀ´ÉèÖÃ±³¾°ÑÕÉ«
 		label4.setBackground(display.getSystemColor(SWT.COLOR_BLUE));
 
 		shell.open();
@@ -47,3 +46,4 @@ public class LabelExample {
 		new LabelExample();
 	}
 }
+

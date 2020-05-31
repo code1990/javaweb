@@ -1,5 +1,3 @@
-/**@author WangJinTao,MengQingChang 2006
- */
 package chapter06.swt.dialog;
 
 import org.eclipse.swt.*;
@@ -10,7 +8,7 @@ public class FontDialogExample1 {
 		final Display display = Display.getDefault();
 		final Shell shell = new Shell();
 		FontDialog fontdialog = new FontDialog(shell, SWT.NONE);
-		fontdialog.setFontData (new FontData("����", 14, SWT.BOLD | SWT.ITALIC));
+		fontdialog.setFontData (new FontData("ו", 14, SWT.BOLD | SWT.ITALIC));
 		fontdialog.setRGB(new RGB(255, 0, 0));
 		FontData fontdata = fontdialog.open();
 		if (fontdata != null) {

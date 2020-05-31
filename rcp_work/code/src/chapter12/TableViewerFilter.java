@@ -1,6 +1,3 @@
-/**
- * author: WangJinTao,MengQingChang 2006
- */
 package chapter12;
 
 import java.net.*;
@@ -25,17 +22,17 @@ public class TableViewerFilter extends ApplicationWindow {
 
 	private AgeFilter ageFilter;
 
-	public static final String ID = "Ñ§ï¿½ï¿½";
+	public static final String ID = "Ñ§ºÅ";
 
-	public static final String NAME = "ï¿½ï¿½ï¿½ï¿½";
+	public static final String NAME = "ÐÕÃû";
 
-	public static final String MALE = "ï¿½Ô±ï¿½";
+	public static final String MALE = "ÐÔ±ð";
 
-	public static final String AGE = "ï¿½ï¿½ï¿½ï¿½";
+	public static final String AGE = "ÄêÁä";
 
 	public static final String POSITION = "Ö°Î»";
 
-	public static final String COLOR = "Ï²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É«";
+	public static final String COLOR = "Ï²»¶µÄÑÕÉ«";
 
 	public TableViewerFilter() {
 		super(null);
@@ -50,16 +47,16 @@ public class TableViewerFilter extends ApplicationWindow {
 	}
 
 	protected Control createContents(Composite parent) {
-		getShell().setText("TableViwerFilterÊµï¿½ï¿½");
+		getShell().setText("TableViwerFilterÊµÀý");
 		getShell().setSize(480, 250);
 		Composite composite = new Composite(parent, SWT.NONE);
 		composite.setLayout(new GridLayout(1, false));
 		createTableViewer(composite);
 		peopleList = createPeopleList();
 		tv.setContentProvider(new PeopleContentProvider());
-		// ï¿½ï¿½setInput()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// ÓÃsetInput()·½·¨Íù±í¸ñÖÐ¶ÁÈëÊý¾Ý
 		tv.setInput(peopleList);
-		// ï¿½ï¿½ï¿½Ã±ï¿½Ç©ï¿½ï¿½
+		// ÉèÖÃ±êÇ©Æ÷
 		tv.setLabelProvider(new PeopleLabelProvider());
 		ageFilter = new AgeFilter();
 
@@ -71,37 +68,37 @@ public class TableViewerFilter extends ApplicationWindow {
 
 	private void createTableViewer(Composite comp) {
 
-		// ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½TableViewerï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½Îªï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// ¶¨ÒåÒ»¸öTableViewer¶ÔÏó£¬ÑùÊ½Îª£ºÑ¡ÔñÕûÐÐ
 		tv = new TableViewer(comp, SWT.FULL_SELECTION);
 
-		// ï¿½ï¿½ï¿½ï¿½Table
+		// ÉèÖÃTable
 		table = tv.getTable();
 
 		table.setLayoutData(new GridData(GridData.FILL_BOTH));
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ðµï¿½ï¿½ï¿½
+		// ¶¨Òå±íÖÐµÄÁÐ
 		TableColumn Col1 = new TableColumn(table, SWT.LEFT);
-		Col1.setText("Ô±ï¿½ï¿½ï¿½ï¿½");
-		// ï¿½ï¿½ï¿½ï¿½ï¿½Ð¿ï¿½ï¿½
+		Col1.setText("Ô±¹¤ºÅ");
+		// ÉèÖÃÁÐ¿í¶È
 		Col1.setWidth(70);
 		TableColumn Col2 = new TableColumn(table, SWT.LEFT);
-		Col2.setText("ï¿½ï¿½ï¿½ï¿½");
+		Col2.setText("ÐÕÃû");
 		Col2.setWidth(60);
 		TableColumn Col3 = new TableColumn(table, SWT.LEFT);
-		Col3.setText("ï¿½Ô±ï¿½");
+		Col3.setText("ÐÔ±ð");
 		Col3.setWidth(50);
 		TableColumn Col4 = new TableColumn(table, SWT.LEFT);
-		Col4.setText("ï¿½ï¿½ï¿½ï¿½");
+		Col4.setText("ÄêÁä");
 		Col4.setWidth(50);
 		TableColumn Col5 = new TableColumn(table, SWT.LEFT);
 		Col5.setText("Ö°Î»");
 		Col5.setWidth(100);
 		TableColumn Col6 = new TableColumn(table, SWT.LEFT);
-		Col6.setText("Ï²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É«");
+		Col6.setText("Ï²»¶µÄÑÕÉ«");
 		Col6.setWidth(128);
 
-		// ï¿½ï¿½Ê¾ï¿½ï¿½Í·
+		// ÏÔÊ¾±íÍ·
 		table.setHeaderVisible(true);
-		// ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½ï¿½
+		// ÏÔÊ¾±í¸ñÏß
 		table.setLinesVisible(true);
 
 	}
@@ -111,10 +108,10 @@ public class TableViewerFilter extends ApplicationWindow {
 		{
 			People p1 = new People();
 			p1.setID(20020001);
-			p1.setName("ï¿½ï¿½Ö¾ï¿½ï¿½");
+			p1.setName("ÍõÖ¾»Ô");
 			p1.setMale(true);
 			p1.setAge(34);
-			p1.setPosition("ï¿½Ü¾ï¿½ï¿½ï¿½");
+			p1.setPosition("×Ü¾­Àí");
 			p1.setColor(new RGB(255, 0, 0));
 
 			peopleList.add(p1);
@@ -124,10 +121,10 @@ public class TableViewerFilter extends ApplicationWindow {
 		{
 			People p2 = new People();
 			p2.setID(20020002);
-			p2.setName("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+			p2.setName("ÀîÏþ¾ê");
 			p2.setMale(false);
 			p2.setAge(27);
-			p2.setPosition("ï¿½ï¿½ï¿½ï¿½ï¿½Ü¼ï¿½");
+			p2.setPosition("ÉÌÎñ×Ü¼à");
 			p2.setColor(new RGB(255, 255, 0));
 
 			peopleList.add(p2);
@@ -137,10 +134,10 @@ public class TableViewerFilter extends ApplicationWindow {
 		{
 			People p3 = new People();
 			p3.setID(20020003);
-			p3.setName("ï¿½ï¿½Ö¾Ç¿");
+			p3.setName("ÀîÖ¾Ç¿");
 			p3.setMale(true);
 			p3.setAge(29);
-			p3.setPosition("ï¿½ï¿½ï¿½ï¿½ï¿½Ü¼ï¿½");
+			p3.setPosition("ÐÐÕþ×Ü¼à");
 			p3.setColor(new RGB(255, 255, 255));
 
 			peopleList.add(p3);
@@ -149,10 +146,10 @@ public class TableViewerFilter extends ApplicationWindow {
 		{
 			People p4 = new People();
 			p4.setID(20020004);
-			p4.setName("ï¿½Îºï¿½Ï¼");
+			p4.setName("ÈÎºèÏ¼");
 			p4.setMale(false);
 			p4.setAge(31);
-			p4.setPosition("ï¿½ï¿½ï¿½ñ²¿¾ï¿½ï¿½ï¿½");
+			p4.setPosition("²ÆÎñ²¿¾­Àí");
 			p4.setColor(new RGB(0, 255, 255));
 
 			peopleList.add(p4);
@@ -177,7 +174,7 @@ public class TableViewerFilter extends ApplicationWindow {
 		public filterAction() {
 			super("PUSH", Action.AS_PUSH_BUTTON);
 
-			setToolTipText("ï¿½ï¿½ï¿½Ëµï¿½ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½30ï¿½ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½Â¼");
+			setToolTipText("¹ýÂËµôÄêÁäÐ¡ÓÚ30ËêµÄÔ±¹¤¼ÇÂ¼");
 			try {
 				ImageDescriptor icon = ImageDescriptor.createFromURL(new URL(
 						"file:icons/filter.gif"));
@@ -188,7 +185,7 @@ public class TableViewerFilter extends ApplicationWindow {
 		}
 
 		public void run() {
-			label.setText("ï¿½ï¿½ï¿½Ëµï¿½ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½30ï¿½ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½");
+			label.setText("¹ýÂËµôÄêÁäÐ¡ÓÚ30ËêµÄÔ±¹¤¼ÇÂ¼½á¹û");
 			tv.addFilter(ageFilter);
 		}
 	}
@@ -196,7 +193,7 @@ public class TableViewerFilter extends ApplicationWindow {
 	class recoverAction extends Action {
 		public recoverAction() {
 
-			setToolTipText("ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç°ï¿½Ä½ï¿½ï¿½");
+			setToolTipText("»Ö¸´µ½¹ýÂËÇ°µÄ½á¹û");
 			try {
 				ImageDescriptor icon = ImageDescriptor.createFromURL(new URL(
 						"file:icons/eclipse0.gif"));
@@ -208,7 +205,7 @@ public class TableViewerFilter extends ApplicationWindow {
 		}
 
 		public void run() {
-			label.setText("ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç°ï¿½Ä½ï¿½ï¿½");
+			label.setText("»Ö¸´µ½¹ýÂËÇ°µÄ½á¹û");
 			tv.removeFilter(ageFilter);
 
 		}
@@ -216,7 +213,7 @@ public class TableViewerFilter extends ApplicationWindow {
 
 	class refreshAction extends Action {
 		public refreshAction() {
-			setToolTipText("Ë¢ï¿½Â¼ï¿½Â¼");
+			setToolTipText("Ë¢ÐÂ¼ÍÂ¼");
 			try {
 				ImageDescriptor icon = ImageDescriptor.createFromURL(new URL(
 						"file:icons/refresh.gif"));
@@ -228,7 +225,7 @@ public class TableViewerFilter extends ApplicationWindow {
 		}
 
 		public void run() {
-			label.setText("Ë¢ï¿½Âºï¿½Ä½ï¿½ï¿½");
+			label.setText("Ë¢ÐÂºóµÄ½á¹û");
 			tv.refresh();
 
 		}
@@ -237,7 +234,7 @@ public class TableViewerFilter extends ApplicationWindow {
 	class removeAction extends Action {
 		public removeAction() {
 
-			setToolTipText("É¾ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½Ð¼ï¿½Â¼");
+			setToolTipText("É¾³ýËùÑ¡ÔñµÄÐÐ¼ÇÂ¼");
 
 			try {
 				ImageDescriptor icon = ImageDescriptor.createFromURL(new URL(
@@ -250,13 +247,13 @@ public class TableViewerFilter extends ApplicationWindow {
 		}
 
 		public void run() {
-			label.setText("É¾ï¿½ï¿½ï¿½Ä½ï¿½ï¿½");
+			label.setText("É¾³ýµÄ½á¹û");
 			table.remove(table.getSelectionIndices());
 
 		}
 	}
 
-	// ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ëµï¿½ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½30ï¿½ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½Â¼
+	// ±í¸ñ¼ÇÂ¼¹ýÂËÆ÷£¬¹ýÂËµôÄêÁäÐ¡ÓÚ30ËêµÄÔ±¹¤¼ÇÂ¼
 	class AgeFilter extends ViewerFilter {
 		public boolean select(Viewer viewer, Object parent, Object element) {
 
@@ -265,9 +262,9 @@ public class TableViewerFilter extends ApplicationWindow {
 		}
 	}
 
-	// ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½Þ¸Ä±ï¿½ï¿½Ôªï¿½ï¿½ï¿½ï¿½
+	// ×Ô¶¨ÒåÐÞ¸Ä±í¸ñµ¥Ôª·½·¨
 	public void modifyTableViewerCell() {
-		// ï¿½ï¿½ï¿½ï¿½Ã¿Ò»ï¿½ÐµÄ±ï¿½ï¿½Ôªï¿½à¼­ï¿½ï¿½
+		// ½¨Á¢Ã¿Ò»ÁÐµÄ±í¸ñµ¥Ôª±à¼­Æ÷
 		CellEditor[] editors = new CellEditor[6];
 		editors[0] = null;
 		editors[1] = new TextCellEditor(table);
@@ -277,12 +274,12 @@ public class TableViewerFilter extends ApplicationWindow {
 				SWT.READ_ONLY);
 
 		editors[5] = new ColorCellEditor(table);
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// ÉèÖÃÁÐÊôÐÔ
 		tv.setColumnProperties(new String[] { ID, NAME, MALE, AGE, POSITION,
 				COLOR });
-		// ï¿½ï¿½ï¿½Ã±ï¿½ï¿½Ôªï¿½ï¿½ï¿½Þ¸ï¿½
+		// ÉèÖÃ±í¸ñµ¥ÔªµÄÐÞ¸Ä
 		tv.setCellModifier(new TableViewerCellModifier(tv));
-		// ï¿½ï¿½ï¿½Ãµï¿½Ôªï¿½ï¿½Ä±à¼­
+		// ÉèÖÃµ¥Ôª¸ñµÄ±à¼­
 		tv.setCellEditors(editors);
 	}
 

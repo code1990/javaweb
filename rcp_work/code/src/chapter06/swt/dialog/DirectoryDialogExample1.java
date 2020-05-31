@@ -1,5 +1,3 @@
-/**@author WangJinTao,MengQingChang 2006
- */
 package chapter06.swt.dialog;
 
 
@@ -11,9 +9,9 @@ public class DirectoryDialogExample1 {
 
 		final Shell shell = new Shell();
 		DirectoryDialog dirctorydialog = new DirectoryDialog(shell);
-		dirctorydialog.setText("Ä¿Â¼Ñ¡ï¿½ï¿½Ô»ï¿½ï¿½ï¿½");
+		dirctorydialog.setText("Ä¿Â¼Ñ¡Ôñ¶Ô»°¿ò");
 		dirctorydialog.setFilterPath("C:\\");
-		dirctorydialog.setMessage("Ñ¡ï¿½ï¿½ÒªÊ¹ï¿½ÃµÄ¹ï¿½ï¿½ï¿½ï¿½Õ¼ï¿½Ä¿Â¼:");
+		dirctorydialog.setMessage("Ñ¡ÔñÒªÊ¹ÓÃµÄ¹¤×÷¿Õ¼äÄ¿Â¼:");
 		String dirctory = dirctorydialog.open();
 		if (dirctory != null) {
 			System.out.println(dirctory);

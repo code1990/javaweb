@@ -12,12 +12,12 @@ public class CoolBarExample {
 		final Display display = Display.getDefault();
 		final Shell shell = new Shell();
 		shell.setSize(500, 375);
-		shell.setText("CoolBarÊµï¿½ï¿½");
-		// shellï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Formlayoutï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½
+		shell.setText("CoolBarÊµÀý");
+		// shellÈÝÆ÷²ÉÓÃFormlayout·½Ê½²¼¾Ö
 		shell.setLayout(new FormLayout());
-		// ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½CoolBarï¿½ï¿½shellï¿½ï¿½
+		// ¶¨ÒåÒ»¸öCoolBarÔÚshellÉÏ
 		CoolBar coolBar = new CoolBar(shell, SWT.NONE);
-		// ï¿½ï¿½CoolBarï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¶ï¿½ï¿½ï¿½
+		// ½«CoolBar²¼¾Öµ½ÈÝÆ÷µÄ¶¥¶Ë
 		FormData coolData = new FormData();
 		coolData.left = new FormAttachment(0);
 		coolData.right = new FormAttachment(100);
@@ -26,17 +26,17 @@ public class CoolBarExample {
 		{
 			final ToolBar toolBar = new ToolBar(coolBar, SWT.FLAT | SWT.WRAP);
 			ToolItem itemcopy = new ToolItem(toolBar, SWT.PUSH);
-			itemcopy.setToolTipText("ï¿½ï¿½ï¿½ï¿½");// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ÔµÄ±ï¿½Ç©ï¿½ï¿½ï¿½ï¿½
-			// ï¿½Ú¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä°ï¿½Å¥ï¿½ï¿½ï¿½ï¿½ï¿½Í¼Æ¬
+			itemcopy.setToolTipText("¸´ÖÆ");// ÉèÖÃÌáÊ¾ÐÔµÄ±êÇ©ÎÄ×Ö
+			// ÔÚ¹¤¾ßÀ¸µÄ°´Å¥ÉÏÌí¼ÓÍ¼Æ¬
 			itemcopy.setImage(new Image(display, "icons/copy.gif"));
-			// ï¿½Ã·Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¡ï¿½ï¿½ï¿½Å¥ï¿½ë¡°Õ³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å¥ï¿½Ö¿ï¿½
+			// ÓÃ·Ö¸ô·û½«¡°¸´ÖÆ¡±°´Å¥Óë¡°Õ³Ìù¡±°´Å¥·Ö¿ª
 			new ToolItem(toolBar, SWT.SEPARATOR);
 			ToolItem itempaste = new ToolItem(toolBar, SWT.PUSH);
-			itempaste.setToolTipText("Õ³ï¿½ï¿½");
+			itempaste.setToolTipText("Õ³Ìù");
 			itempaste.setImage(new Image(display, "icons/paste.gif"));
 			CoolItem coolitem1 = new CoolItem(coolBar, SWT.DROP_DOWN);
 			coolitem1.setControl(toolBar);
-			// ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½Ê±Í¨ï¿½ï¿½tooBarï¿½ï¿½ï¿½ï¿½ï¿½ï¿½coolItem1ï¿½ï¿½Î»ï¿½ÃºÍ³ß´ï¿½
+			// Êó±êÍÏ¶¯Ê±Í¨¹ýtooBarÀ´µ÷ÕûcoolItem1µÄÎ»ÖÃºÍ³ß´ç
 			toolBar.pack();
 			Point point = new Point(toolBar.getSize().x, toolBar.getSize().y);
 			coolitem1.setSize(point);
@@ -45,7 +45,7 @@ public class CoolBarExample {
 		{
 			ToolBar toolBarsave = new ToolBar(coolBar, SWT.FLAT | SWT.WRAP);
 			ToolItem itemsave = new ToolItem(toolBarsave, SWT.PUSH);
-			itemsave.setToolTipText("ï¿½ï¿½ï¿½ï¿½");
+			itemsave.setToolTipText("±£´æ");
 			itemsave.setImage(new Image(display, "icons/save.gif"));
 			CoolItem coolitem2 = new CoolItem(coolBar, SWT.DROP_DOWN);
 			coolitem2.setControl(toolBarsave);
@@ -59,7 +59,7 @@ public class CoolBarExample {
 			final ToolBar toolBaropen = new ToolBar(coolBar, SWT.FLAT
 					| SWT.WRAP);
 			ToolItem itemopen = new ToolItem(toolBaropen, SWT.PUSH);
-			itemopen.setToolTipText("ï¿½ï¿½");
+			itemopen.setToolTipText("´ò¿ª");
 			itemopen.setImage(new Image(display, "icons/open.gif"));
 			CoolItem coolitem3 = new CoolItem(coolBar, SWT.DROP_DOWN);
 			coolitem3.setControl(toolBaropen);
@@ -77,7 +77,7 @@ public class CoolBarExample {
 		textData.bottom = new FormAttachment(100);
 		text.setLayoutData(textData);
 		/**
-		 * ï¿½ï¿½ï¿½ï¿½ï¿½Ä¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½ï¿½Ä±ï¿½ï¿½Ó¹ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½Ê±ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½shellï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½
+		 * ¼àÌýµÄ¹¦ÄÜÊÇÊó±êÍÏ¶¯¸Ä±ä×Ó¹¤¾ßÀ¸Î»ÖÃÊ±£¬ ÖØÐÂÉèÖÃshellÈÝÆ÷ÉÏ×é¼þµÄÎ»ÖÃ
 		 */
 		coolBar.addListener(SWT.Resize, new Listener() {
 			public void handleEvent(Event event) {

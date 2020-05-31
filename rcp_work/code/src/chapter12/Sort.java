@@ -1,18 +1,15 @@
-/**
- * @author: WangJinTao,MengQingChang 2006 
- */
 package chapter12;
 
 import org.eclipse.jface.viewers.*;
 
-// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Sortï¿½Ì³ï¿½ViewerSorterï¿½ï¿½
+// ÅÅÐòÆ÷ÀàSort¼Ì³ÐViewerSorterÀà
 public class Sort extends ViewerSorter {
 
 	private int column;
 
 	/**
-	 * ï¿½ï¿½ï¿½ï¿½TableViewerSortï¿½ï¿½ï¿½ï¿½((Sort) tv.getSorter()).doSort()ï¿½ï¿½ï¿½ï¿½ï¿½
-	 * doSort()ï¿½ï¿½ï¿½ï¿½ï¿½ÐµÄ²ï¿½ï¿½ï¿½È¡Öµï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½Îªï¿½Ðºï¿½ ï¿½ï¿½
+	 * ½ÓÊÜTableViewerSortÀàÖÐ((Sort) tv.getSorter()).doSort()Óï¾äÖÐ
+	 * doSort()·½·¨ÖÐµÄ²ÎÊýÈ¡Öµ£¬¸ÃÖµ¼´ÎªÁÐºÅ £¬
 	 */
 	public void doSort(int column) {
 		this.column = column;
@@ -22,21 +19,21 @@ public class Sort extends ViewerSorter {
 
 		People p1 = (People) e1;
 		People p2 = (People) e2;
-		// ï¿½ï¿½ï¿½ï¿½ï¿½Ðµï¿½È¡Öµï¿½ï¿½ï¿½ï¿½ï¿½Ð¶ï¿½Ó¦ï¿½ÐµÄ½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð±ï¿½ï¿½Â¼
+		// ¸ù¾ÝÁÐµÄÈ¡ÖµÀ´½øÐÐ¶ÔÓ¦ÁÐµÄ½µÐò¡¢ÉýÐòÅÅÁÐ±í¼ÇÂ¼
 		switch (column) {
 		case 1: {
-			Integer str1 = p1.getID();
-			Integer str2 = p2.getID();
-			int IDDesc = str2.compareTo(str1);
-			return IDDesc;
+//			Integer str1 = p1.getID();
+//			Integer str2 = p2.getID();
+//			int IDDesc = str2.compareTo(str1);
+			return 0;
 		}
 
 		case -1: {
-			Integer str1 = p1.getID();
-			Integer str2 = p2.getID();
-			int IDAsc = str1.compareTo(str2);
+//			Integer str1 = p1.getID();
+//			Integer str2 = p2.getID();
+//			int IDAsc = str1.compareTo(str2);
 
-			return IDAsc;
+			return 0;
 		}
 
 		case 2: {
@@ -55,32 +52,32 @@ public class Sort extends ViewerSorter {
 		}
 
 		case 3: {
-			Boolean str1 = p1.getMale();
-			Boolean str2 = p2.getMale();
-			int MaleDesc = str2.compareTo(str1);
-			return MaleDesc;
+//			Boolean str1 = p1.getMale();
+//			Boolean str2 = p2.getMale();
+//			int MaleDesc = str2.compareTo(str1);
+			return 0;
 		}
 
 		case -3: {
-			Boolean str1 = p1.getMale();
-			Boolean str2 = p2.getMale();
-			int MaleAsc = str1.compareTo(str2);
+//			Boolean str1 = p1.getMale();
+//			Boolean str2 = p2.getMale();
+//			int MaleAsc = str1.compareTo(str2);
 
-			return MaleAsc;
+			return 0;
 		}
 		case 4: {
-			Integer str1 = p1.getAge();
-			Integer str2 = p2.getAge();
-			int AgeDesc = str2.compareTo(str1);
-			return AgeDesc;
+//			Integer str1 = p1.getAge();
+//			Integer str2 = p2.getAge();
+//			int AgeDesc = str2.compareTo(str1);
+			return 0;
 		}
 
 		case -4: {
-			Integer str1 = p1.getAge();
-			Integer str2 = p2.getAge();
-			int AgeAsc = str1.compareTo(str2);
+//			Integer str1 = p1.getAge();
+//			Integer str2 = p2.getAge();
+//			int AgeAsc = str1.compareTo(str2);
 
-			return AgeAsc;
+			return 0;
 		}
 
 		case 5: {

@@ -1,5 +1,3 @@
-/**@author WangJinTao,MengQingChang 2006
- */
 package chapter04.basic.widget;
 
 import org.eclipse.swt.*;
@@ -8,7 +6,7 @@ public class SpinnerExample {
 	public SpinnerExample() {
 		Display display = new Display();
 		Shell shell = new Shell(display);
-		shell.setText("SpinnerÊµï¿½ï¿½ ");
+		shell.setText("SpinnerÊµÀý ");
 		shell.setSize(200, 100);
 		final Spinner spinner = new Spinner(shell, SWT.BORDER);
 		spinner.setBounds(30, 20, 60, 20);

@@ -1,6 +1,3 @@
-/**
-*@author: WangJinTao,MengQingChang2006
-*/
 package chapter07.layoutManager;
 
  
@@ -15,7 +12,7 @@ public class FillLayoutExample1 {
 		final Display display = Display.getDefault();
 		final Shell shell = new Shell();
 		shell.setSize(500, 375);
-		shell.setText("FillLayoutÊµï¿½ï¿½");
+		shell.setText("FillLayoutÊµÀý");
 		shell.setLayout(new FillLayout()); 
 		final Text text = new Text(shell, SWT.BORDER);
 		shell.open();

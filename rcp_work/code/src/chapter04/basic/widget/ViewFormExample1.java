@@ -1,5 +1,3 @@
-/**@author WangJinTao,MengQingChang 2006
- */
 package chapter04.basic.widget;
 
 import org.eclipse.swt.*;
@@ -12,21 +10,21 @@ public class ViewFormExample1 {
 		final Display display = Display.getDefault();
 		final Shell shell = new Shell();
 		shell.setSize(300, 190);
-		shell.setText("ViewForm实锟斤拷");
-		// 锟斤拷Shell锟斤拷使锟矫筹拷锟斤拷锟角诧拷锟斤拷
+		shell.setText("ViewForm实例");
+		// 在Shell上使用充满是布局
 		shell.setLayout(new FillLayout());
-		// 锟斤拷锟斤拷ViewForm
+		// 定义ViewForm
 		final ViewForm viewForm = new ViewForm(shell, SWT.BORDER);
-		// 锟斤拷ViewForm锟斤拷使锟矫筹拷锟斤拷式锟斤拷锟斤拷
+		// 在ViewForm上使用充满式布局
 		viewForm.setLayout(new FillLayout());
-		// 锟斤拷viewForm锟斤拷锟斤拷锟较讹拷锟斤拷Text
+		// 在viewForm容器上定义Text
 		Text text = new Text(viewForm, SWT.NONE);
-		// 锟斤拷ViewForm锟较讹拷锟斤拷Label
+		// 在ViewForm上定义Label
 		Label labelLeft = new Label(viewForm, SWT.NONE);
 		labelLeft.setText("Left");
 		Label labelRight = new Label(viewForm, SWT.NONE);
 		labelRight.setText("Right");
-		// 锟斤拷setContent()锟斤拷锟斤拷锟斤拷锟斤拷text
+		// 用setContent()方法控制text
 		viewForm.setContent(text);
 		viewForm.setTopLeft(labelLeft);
 		viewForm.setTopRight(labelRight);
@@ -38,6 +36,8 @@ public class ViewFormExample1 {
 				display.sleep();
 		}
 	}
+	
+	
 
 	public static void main(String[] args) {
 		new ViewFormExample1();

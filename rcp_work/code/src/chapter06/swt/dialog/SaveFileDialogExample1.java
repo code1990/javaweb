@@ -1,5 +1,3 @@
-/**@author WangJinTao,MengQingChang 2006
- */
 package chapter06.swt.dialog;
 
 import org.eclipse.swt.SWT;
@@ -8,11 +6,11 @@ public class SaveFileDialogExample1 {
 	public static void main(String[] args) {
 		final Shell shell = new Shell();
 		FileDialog SaveFileDialog = new FileDialog(shell, SWT.SAVE);
-		SaveFileDialog.setText("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½Ñ¡ï¿½ï¿½Ô»ï¿½ï¿½ï¿½");
+		SaveFileDialog.setText("±£´æÐÍÎÄ¼þÑ¡Ôñ¶Ô»°¿ò");
 		SaveFileDialog.setFilterExtensions(new String[] { "*.*", "*.psd",
 				"*.jpg", "*.txt", "*.doc", "*.exe" });
-		SaveFileDialog.setFilterNames(new String[] { "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(*.*)",
-				"potoshopï¿½ï¿½Ê½(*.psd)", "ï¿½Ä±ï¿½ï¿½ï¿½Ê½(*.txt)" });
+		SaveFileDialog.setFilterNames(new String[] { "ËùÓÐÀàÐÍ(*.*)",
+				"potoshop¸ñÊ½(*.psd)", "ÎÄ±¾¸ñÊ½(*.txt)" });
 		SaveFileDialog.setFileName("book");
 		SaveFileDialog.setFilterPath("D:\\");
 		SaveFileDialog.open();

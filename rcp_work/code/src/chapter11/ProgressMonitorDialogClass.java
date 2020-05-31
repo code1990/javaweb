@@ -20,7 +20,7 @@ import org.eclipse.swt.*;
 public class ProgressMonitorDialogClass extends ApplicationWindow {
 
 	public ProgressMonitorDialogClass() {
-		// ï¿½ï¿½ï¿½ð´°¿ï¿½
+		// ²¿Êð´°¿Ú
 		super(null);
 
 	}
@@ -29,26 +29,26 @@ public class ProgressMonitorDialogClass extends ApplicationWindow {
 
 		setBlockOnOpen(true);
 
-		// ï¿½ò¿ª´ï¿½ï¿½ï¿½
+		// ´ò¿ª´°Ìå
 		open();
 
-		// ï¿½ï¿½ï¿½ï¿½ display
+		// Ïû³ý display
 		Display.getCurrent().dispose();
 	}
 
 	protected void configureShell(Shell shell) {
 		super.configureShell(shell);
-		// ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½ï¿½Ð¡
+		// ÉèÖÃ´°Ìå´óÐ¡
 		shell.setSize(300, 150);
-		// ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
-		shell.setText("ProgressMonitorDialogÊµï¿½ï¿½");
+		// ÉèÖÃ´°Ìå±êÌâ
+		shell.setText("ProgressMonitorDialogÊµÀý");
 	}
 
 	public Control createContents(Composite parent) {
 		Composite composite = new Composite(parent, SWT.NONE);
 		composite.setLayout(new GridLayout());
 		Button button = new Button(composite, SWT.PUSH);
-		button.setText("ï¿½ï¿½ï¿½ï¿½ ProgressMonitorDialog");
+		button.setText("Æô¶¯ ProgressMonitorDialog");
 		GridData grid = new GridData(200, 25);
 		grid.verticalSpan = 20;
 		grid.horizontalIndent = 40;
@@ -57,38 +57,38 @@ public class ProgressMonitorDialogClass extends ApplicationWindow {
 			public void handleEvent(Event event) {
 
 				/*
-				 * Í¨ï¿½ï¿½IRunnableWithProgressï¿½Ó¿ï¿½Êµï¿½Ö´ï¿½ï¿½ï¿½Ä¹ï¿½ï¿½Ì¡ï¿½
+				 * Í¨¹ýIRunnableWithProgress½Ó¿ÚÊµÏÖ´¦ÀíµÄ¹ý³Ì¡£
 				 */
 
 				IRunnableWithProgress runnableWithProgress = new IRunnableWithProgress() {
-					// runï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½IProgressMonitorï¿½Ä¶ï¿½ï¿½ï¿½monitorï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½
+					// run·½·¨½ÓÊÜIProgressMonitorµÄ¶ÔÏómonitor×÷Îª²ÎÊý
 					public void run(IProgressMonitor monitor)
 							throws InvocationTargetException,
 							InterruptedException {
 
-						monitor.beginTask("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú½ï¿½ï¿½ï¿½.......", 10);
+						monitor.beginTask("²Ù×÷ÕýÔÚ½øÐÐ.......", 10);
 						for (int i = 0; i < 10; i++) {
 							if (monitor.isCanceled()) {
 								monitor.done();
 								return;
 							}
-							// Ö´ï¿½Ð¼ï¿½ï¿½
-							monitor.setTaskName("Ñ­ï¿½ï¿½" + (i + 1) + "ï¿½ï¿½");
-							// ï¿½ï¿½ï¿½ï¿½Ç°ï¿½ï¿½Ò»ï¿½ï¿½
+							// Ö´ÐÐ¼à¿Ø
+							monitor.setTaskName("Ñ­»·" + (i + 1) + "´Î");
+							// ½ø¶ÈÇ°½øÒ»²½
 							monitor.worked(1);
-							// Ã¿ï¿½Î¼ï¿½ï¿½1ï¿½ï¿½
+							// Ã¿´Î¼ä¸ô1Ãë
 							Thread.sleep(1000);
 						}
-						// ï¿½ï¿½ï¿½ï¿½Ö´ï¿½Ðµï¿½ï¿½ï¿½ï¿½ï¿½
+						// ½ø¶ÈÖ´ÐÐµ½½áÊø
 						monitor.done();
 					}
 				};
-				// ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½È¶Ô»ï¿½ï¿½ï¿½
+				// ¶¨ÒåÒ»¸ö½ø¶È¶Ô»°¿ò
 				ProgressMonitorDialog dialog = new ProgressMonitorDialog(
 						getShell());
 				try {
 					/*
-					 * ï¿½ï¿½ï¿½ï¿½ï¿½Ú¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½trueï¿½ï¿½ï¿½ï¿½Îªfalseï¿½ï¿½Ô»ï¿½ï¿½ï¿½Å¥"Cancel"ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½ï¿½ï¿½×´Ì¬
+					 * Èô½«µÚ¶þ¸ö²ÎÊýtrueÉèÖÃÎªfalseÕâ¶Ô»°¿ò°´Å¥"Cancel"´¦ÓÚ²»¿ÉÓÃ×´Ì¬
 					 */
 					dialog.run(true, true, runnableWithProgress);
 				} catch (InvocationTargetException e) {

@@ -5,17 +5,17 @@ package chapter10;
 import org.eclipse.jface.action.*;
 public class StatusActionClass extends Action {
 	StatusLineManager statmanger;
-	// ï¿½ï¿½ï¿½å´¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
-	int Count = 0;
-	public StatusActionClass(StatusLineManager status) {
-		super("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½@Ctrl+T", AS_PUSH_BUTTON);
-		statmanger = status;
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½Ç©
-		setToolTipText("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
-	}
-	public void run() {
-		int triggercount = Count++;
-		statmanger.setMessage("ï¿½ï¿½Ç°ï¿½ï¿½Å¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä´ï¿½ï¿½ï¿½Îª:" + triggercount);
+	// ¶¨Òå´¥·¢´ÎÊý±äÁ¿
+		int Count = 0;
+		public StatusActionClass(StatusLineManager status) {
+			super("µ¥»÷´¥·¢@Ctrl+T", AS_PUSH_BUTTON);
+			statmanger = status;
+			// ÉèÖÃÌáÊ¾±êÇ©
+			setToolTipText("µ¥»÷´¥·¢");
 		}
+		public void run() {
+			int triggercount = Count++;
+			statmanger.setMessage("µ±Ç°°´Å¥±»´¥·¢µÄ´ÎÊýÎª:" + triggercount);
+			}
 }
 

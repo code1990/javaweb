@@ -1,5 +1,3 @@
-/**@author WangJinTao,MengQingChang 2006
- */
 package chapter04.basic.widget;
  
 import org.eclipse.swt.*;
@@ -11,57 +9,57 @@ public class TextExample {
 		final Display display = Display.getDefault();
 		final Shell shell = new Shell();
 		shell.setSize(370, 235);
-		shell.setText("Textï¿½Ûºï¿½Êµï¿½ï¿½");
+		shell.setText("Text×ÛºÏÊµÀý");
 		final Label label1 = new Label(shell, SWT.NONE);
 		label1.setBounds(25, 25, 60, 25);
 		label1.setText("User Name:");
 		final Text text1 = new Text(shell, SWT.BORDER);
 		text1.setBounds(90, 20, 80, 20);
-        // ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½ï¿½ï¿½Ú¸ï¿½ï¿½Ä±ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½Ï¢
-		text1.setToolTipText("ï¿½Ä±ï¿½ï¿½î²»ï¿½ï¿½Îªï¿½ï¿½");
+        // µ±Êó±êÍ£ÁôÔÚ¸ÃÎÄ±¾¿òÊ±½«³öÏÖÌáÊ¾ÐÅÏ¢
+		text1.setToolTipText("ÎÄ±¾Ïî²»ÄÜÎª¿Õ");
 		
 		final Label labe2 = new Label(shell, SWT.NONE);
 		labe2.setBounds(190, 25, 55, 25);
 		labe2.setText("PassWord:");
 		final Text text2 = new Text(shell, SWT.PASSWORD | SWT.BORDER);
 		text2.setBounds(250, 20, 80, 20);
-        // setTextLimit(int x)Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½
+        // setTextLimit(int x)Îª³£ÓÃ×é¼þ·½·¨£¬ÓÃÀ´ÉèÖÃÎÄ±¾¿òÖÐ×î¶à¿ÉÊäÈëµÄ×Ö·ûÊý¡£
 		text2.setTextLimit(8);
 		
-		text2.setToolTipText("ï¿½Ä±ï¿½ï¿½î²»ï¿½ï¿½Îªï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½ï¿½ë²»ï¿½ï¿½ï¿½ï¿½8Î»ï¿½ï¿½ï¿½ï¿½");
+		text2.setToolTipText("ÎÄ±¾Ïî²»ÄÜÎª¿Õ,ÇÒÊäÈë²»³¬¹ý8Î»ÃÜÂë");
 		final Text text3 = new Text(shell, SWT.V_SCROLL | SWT.H_SCROLL
 				| SWT.BORDER);
 		text3.setBounds(50, 55, 250, 90);
 		final Button button1 = new Button(shell, SWT.NONE);
 		button1.setBounds(140, 160, 80, 20);
 		button1.setText("OK");
-		button1.setToolTipText("ï¿½ï¿½ï¿½ï¿½OKï¿½ï¿½Å¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½");
+		button1.setToolTipText("µ¥»÷OK°´Å¥ÐÕÃû½«ÏÔÊ¾ÔÚÏÂÃæµÄÎÄ±¾ÖÐ");
 		button1.addSelectionListener(new SelectionAdapter() {
 			public void widgetSelected(SelectionEvent e) {
-				String AD = text1.getText();// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½ï¿½Ý¡ï¿½
+				String AD = text1.getText();// »ñµÃÊäÈëµÄÎÄ±¾ÄÚÈÝ¡£
 				String BD = text2.getText();
-                // ï¿½Ð¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä±ï¿½ï¿½Ç·ï¿½Îªï¿½ï¿½
+                // ÅÐ¶ÏÊäÈëÎÄ±¾ÊÇ·ñÎª¿Õ
 				if (AD == null || AD.equals("") || BD == null || BD.equals(""))
 				
 				{
-					MessageDialog.openInformation(shell, " ï¿½ï¿½Ï¢ï¿½ï¿½Ê¾", "Ê§ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½"
-					+ '\n' + '\n' + "  ×¢ï¿½â£ºï¿½Ä±ï¿½ï¿½î²»ï¿½ï¿½Îªï¿½Õ£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+					MessageDialog.openInformation(shell, " ÐÅÏ¢ÌáÊ¾", "Ê§°ÜÐÅÏ¢£¡"
+					+ '\n' + '\n' + "  ×¢Òâ£ºÎÄ±¾Ïî²»ÄÜÎª¿Õ£¡£¡£¡£¡¡£¡£¡£¡£¡£¡£");
 				} else
 					text3.append("User Name: " + '\n' + "" + AD + '\n'
 							+ "PassWord:" + '\n' + "" + BD);
 				/**
-				 * appendï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½Ý¡ï¿½
-				 *  ï¿½ï¿½append()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªinsert()ï¿½ï¿½ï¿½ï¿½ï¿½É´ïµ½Í¬ï¿½ï¿½ï¿½ï¿½Ð§ï¿½ï¿½
+				 * append£¨£©·½·¨ÓÃÀ´ÔÚÎÄ±¾¿òÖÐÏÔÊ¾ÄÚÈÝ¡£
+				 *  ½«append()·½·¨¸ÄÎªinsert()·½·¨¿É´ïµ½Í¬ÑùµÄÐ§¹û
 				 */
 			}
 		});
 		final Button button2 = new Button(shell, SWT.NONE);
 		button2.setBounds(250, 160, 80, 20);
 		button2.setText("Cancel");
-		button2.setToolTipText("ï¿½ï¿½ï¿½ï¿½Cancelï¿½ï¿½Å¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä±ï¿½ï¿½Ðµï¿½ï¿½ï¿½ï¿½ï¿½");
+		button2.setToolTipText("µ¥»÷Cancel°´Å¥½«Çå³ýÎÄ±¾ÖÐµÄÄÚÈÝ");
 		button2.addSelectionListener(new SelectionAdapter() {
 			public void widgetSelected(SelectionEvent e) {
-				text1.setText("");// ï¿½ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½ï¿½Ý·ï¿½ï¿½ï¿½
+				text1.setText("");// Çå³ýÎÄ±¾ÄÚÈÝ·½·¨
 				text2.setText("");
 				text3.setText("");
 				
@@ -79,3 +77,4 @@ public class TextExample {
 		new TextExample();
 	}
 }
+

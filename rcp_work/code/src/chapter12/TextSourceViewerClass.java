@@ -1,69 +1,66 @@
-/*author: WangJinTao,MengQingChang 2006-10-12
- */
-package chapter12;
-
-import org.eclipse.swt.*;
-import org.eclipse.swt.custom.*;
-import org.eclipse.swt.layout.*;
-import org.eclipse.swt.widgets.*;
-import org.eclipse.jface.text.*;
-import org.eclipse.jface.text.source.*;
-import org.eclipse.jface.window.*;
-
-public class TextSourceViewerClass extends ApplicationWindow {
-
-	public TextSourceViewerClass() {
-		super(null);
-	}
-
-	public void run() {
-		setBlockOnOpen(true);
-		open();
-		Display.getCurrent().dispose();
-	}
-
-	protected Control createContents(Composite parent) {
-		getShell().setText("TextViewerÊµï¿½ï¿½");
-		getShell().setSize(400, 200);
-		Display display = getShell().getDisplay();
-		Composite compoiste = new Composite(parent, SWT.NONE);
-		compoiste.setLayout(new FillLayout());
-		SashForm sashForm = new SashForm(compoiste, SWT.HORIZONTAL);
-		Document doc = new Document();
-		// ï¿½ï¿½ï¿½Ã´ï¿½Ö±ï¿½ÐºÅ±ï¿½×¢
-		CompositeRuler ruler = new CompositeRuler();
-
-		LineNumberRulerColumn lineCol = new LineNumberRulerColumn();
-		lineCol.setBackground(display.getSystemColor(SWT.COLOR_GREEN));
-
-		ruler.addDecorator(0, lineCol);
-
-		SourceViewer sourceViewer = new SourceViewer(sashForm, ruler,
-				SWT.BORDER | SWT.V_SCROLL | SWT.H_SCROLL);
-
-		sourceViewer.setDocument(doc);
-		TextViewer text = new TextViewer(sashForm, SWT.MULTI | SWT.BORDER
-				| SWT.V_SCROLL);
-		text.setDocument(doc);
-		final StyledText styledText = text.getTextWidget();
-
-		// ï¿½ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½
-		styledText.setWordWrap(true);
-
-		// ï¿½ï¿½ï¿½Ã±ï¿½ï¿½ï¿½ï¿½ï¿½É«Îªï¿½ï¿½É«
-		text.getTextWidget().setBackground(
-				display.getSystemColor(SWT.COLOR_BLACK));
-		// ï¿½ï¿½ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½É«Îªï¿½ï¿½É«
-		text.getTextWidget().setForeground(
-				display.getSystemColor(SWT.COLOR_WHITE));
-		// TextViewerï¿½ï¿½SourceViewerï¿½ï¿½Õ¼ï¿½ï¿½ï¿½ÚµÄ±ï¿½ï¿½ï¿½Îª1:1
-		sashForm.setWeights(new int[] { 1, 1 });
-
-		return compoiste;
-	}
-
-	public static void main(String[] args) {
-		new TextSourceViewerClass().run();
-
-	}
-}
+//
+//import org.eclipse.swt.*;
+//import org.eclipse.swt.custom.*;
+//import org.eclipse.swt.layout.*;
+//import org.eclipse.swt.widgets.*;
+//import org.eclipse.jface.text.*;
+//import org.eclipse.jface.text.source.*;
+//import org.eclipse.jface.window.*;
+//
+//public class TextSourceViewerClass extends ApplicationWindow {
+//
+//	public TextSourceViewerClass() {
+//		super(null);
+//	}
+//
+//	public void run() {
+//		setBlockOnOpen(true);
+//		open();
+//		Display.getCurrent().dispose();
+//	}
+//
+//	protected Control createContents(Composite parent) {
+//		getShell().setText("TextViewerÊµÀý");
+//		getShell().setSize(400, 200);
+//		Display display = getShell().getDisplay();
+//		Composite compoiste = new Composite(parent, SWT.NONE);
+//		compoiste.setLayout(new FillLayout());
+//		SashForm sashForm = new SashForm(compoiste, SWT.HORIZONTAL);
+//		Document doc = new Document();
+//		// ÉèÖÃ´¹Ö±ÐÐºÅ±ê×¢
+//		CompositeRuler ruler = new CompositeRuler();
+//
+//		LineNumberRulerColumn lineCol = new LineNumberRulerColumn();
+//		lineCol.setBackground(display.getSystemColor(SWT.COLOR_GREEN));
+//
+//		ruler.addDecorator(0, lineCol);
+//
+//		SourceViewer sourceViewer = new SourceViewer(sashForm, ruler,
+//				SWT.BORDER | SWT.V_SCROLL | SWT.H_SCROLL);
+//
+//		sourceViewer.setDocument(doc);
+//		TextViewer text = new TextViewer(sashForm, SWT.MULTI | SWT.BORDER
+//				| SWT.V_SCROLL);
+//		text.setDocument(doc);
+//		final StyledText styledText = text.getTextWidget();
+//
+//		// ÉèÖÃ×Ô¶¯»»ÐÐ
+//		styledText.setWordWrap(true);
+//
+//		// ÉèÖÃ±³¾°ÑÕÉ«ÎªºÚÉ«
+//		text.getTextWidget().setBackground(
+//				display.getSystemColor(SWT.COLOR_BLACK));
+//		// ÉèÖÃÇ°¾°ÑÕÉ«Îª°×É«
+//		text.getTextWidget().setForeground(
+//				display.getSystemColor(SWT.COLOR_WHITE));
+//		// TextViewerÓëSourceViewerËùÕ¼´°¿ÚµÄ±ÈÀýÎª1:1
+//		sashForm.setWeights(new int[] { 1, 1 });
+//
+//		return compoiste;
+//	}
+//
+//	public static void main(String[] args) {
+//		new TextSourceViewerClass().run();
+//
+//	}
+//}

@@ -22,26 +22,27 @@ public class ShowMyTitleAreaDialogClass extends ApplicationWindow {
 
 	protected Control createContents(Composite parent) {
 		parent.getShell().setSize(300, 100);
-		parent.getShell().setText("TitleAreaDialogÊµï¿½ï¿½");
+		parent.getShell().setText("TitleAreaDialogÊµÀý");
 		Composite composite = new Composite(parent, SWT.NONE);
 		composite.setLayout(new GridLayout());
 		Button button = new Button(composite, SWT.PUSH);
-		button.setText("ï¿½ï¿½Ê¾TitleAreaDialog");
+		button.setText("ÏÔÊ¾TitleAreaDialog");
 		GridData grid = new GridData(200, 25);
 		grid.horizontalIndent = 40;
 		grid.verticalIndent = 15;
 		button.setLayoutData(grid);
 		final Shell shell = parent.getShell();
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾TitleAreaDialog
+		// µ¥»÷ÏÔÊ¾TitleAreaDialog
 		button.addSelectionListener(new SelectionAdapter() {
 			public void widgetSelected(SelectionEvent event) {
-				// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½Ô»ï¿½ï¿½ï¿½
+				// ½¨Á¢²¢ÏÔÊ¾¶Ô»°¿ò
 				MyTitleAreaDialogClass dlg = new MyTitleAreaDialogClass(shell);
 				dlg.open();
 			}
 		});
 		return composite;
 	}
+
 
 	public static void main(String[] args) {
 		new ShowMyTitleAreaDialogClass().run();

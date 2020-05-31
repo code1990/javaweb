@@ -8,7 +8,7 @@ import org.eclipse.swt.*;
 
 public class JFaceWindows1Class extends ApplicationWindow {
 	JFaceWindows1Class() {
-		// ï¿½ï¿½ï¿½ð´°¿ï¿½
+		// ²¿Êð´°¿Ú
 		super(null);
 	}
 
@@ -19,19 +19,19 @@ public class JFaceWindows1Class extends ApplicationWindow {
 	}
 
 	public Control createContents(Composite parent) {
-		// ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½ï¿½Ð¡
+		// ÉèÖÃ´°Ìå´óÐ¡
 		parent.getShell().setSize(250, 290);
-		// ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
-		parent.getShell().setText("JFace Ó¦ï¿½Ã´ï¿½ï¿½ï¿½Êµï¿½ï¿½");
+		// ÉèÖÃ´°Ìå±êÌâ
+		parent.getShell().setText("JFace Ó¦ÓÃ´°¿ÚÊµÀý");
 		Composite composite = new Composite(parent, SWT.NONE);
-		// ï¿½ï¿½Ò»ï¿½ï¿½Ñ¡ï¿½î¿¨
+		// µÚÒ»¸öÑ¡Ïî¿¨
 		final TabFolder tabFolder = new TabFolder(composite, SWT.NONE);
 		tabFolder.setBounds(20, 10, 200, 200);
 		final TabItem item1 = new TabItem(tabFolder, SWT.NONE);
 		item1.setText("Item1");
-		// ï¿½ï¿½Ñ¡ï¿½î¿¨ï¿½Ï¶ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// ÔÚÑ¡Ïî¿¨ÉÏ¶¨ÒåÒ»¸ö·Ö×é¿ò
 		final Group group = new Group(tabFolder, SWT.NONE);
-		group.setText("ï¿½ï¿½ï¿½ï¿½ï¿½");
+		group.setText("·Ö×é¿ò");
 		item1.setControl(group);
 
 		final TabItem item2 = new TabItem(tabFolder, SWT.NONE);

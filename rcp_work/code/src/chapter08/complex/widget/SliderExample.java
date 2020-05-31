@@ -20,14 +20,14 @@ public class SliderExample {
 		shell.setSize(320, 150);
 		slider = new Slider(shell, SWT.SMOOTH);
 		slider.setBounds(50, 10, 200, 20);
-		shell.setText("SliderÊµï¿½ï¿½");
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ
+		shell.setText("SliderÊµÀý");
+		// ÉèÖÃ×î´óÖµ
 		slider.setMaximum(80);
         slider.setPageIncrement(50);
         
-		// ï¿½ï¿½ï¿½sliderï¿½ï¿½ï¿½ï¿½ï¿½Öµ
+		// »ñµÃsliderµÄ×î´óÖµ
 		max = slider.getMaximum();
-		// ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ß³ï¿½
+		// ´´½¨Ò»¸öÏß³Ì
 		 new Thread() {
 			public void run() {
 				for (i = 0; i <= max; i++) {
@@ -40,14 +40,14 @@ public class SliderExample {
 							slider.setSelection(i);
 							int Value = slider.getMaximum()
 									- slider.getSelection() - slider.getThumb();
-							// ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½Ç°Öµ
-							text.setText("ï¿½ï¿½Ç°ÖµÎª:" + Value);
+							// ÔÚÎÄ±¾ÉÏÏÔÊ¾µ±Ç°Öµ
+							text.setText("µ±Ç°ÖµÎª:" + Value);
 							 
 						}
 					});
 				}
 			}
-		}.start();// ï¿½ï¿½ï¿½ï¿½ï¿½ß³ï¿½ 
+		}.start();// Æô¶¯Ïß³Ì 
 		text = new Text(shell, SWT.BORDER);
 		text.setBounds(100, 60, 100, 25);
 		text.setEditable(false);

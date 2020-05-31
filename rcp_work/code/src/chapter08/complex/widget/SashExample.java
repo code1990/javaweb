@@ -17,21 +17,21 @@ public class SashExample {
 	public SashExample() {
 		Display display = new Display();
 		Shell shell = new Shell(display);
-		shell.setText("SashÊµï¿½ï¿½");
+		shell.setText("SashÊµÀý");
 		shell.setSize(300, 200);
 		shell.setLayout(new FormLayout());
-		// ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Sashï¿½ï¿½ï¿½ó²¢¶ï¿½ï¿½ï¿½ï¿½ï¿½Ð²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// ¶¨ÒåÒ»¸öSash¶ÔÏó²¢¶ÔÆä½øÐÐ²¼¾ÖÉèÖÃ
 		sash = new Sash(shell, SWT.VERTICAL);
 		FormData data = new FormData();
-		// Ê¹Sashï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Shellï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë¾ï¿½ï¿½ï¿½Îª0
+		// Ê¹Sash¶¥¶ËÓëShellÈÝÆ÷¶¥¶Ë¾àÀëÎª0
 		data.top = new FormAttachment(0, 0);
-		// Ê¹Sashï¿½×¶ï¿½ï¿½ï¿½shellï¿½ï¿½ï¿½ï¿½ï¿½×¶Ë¾ï¿½ï¿½ï¿½Îª0
+		// Ê¹Sashµ×¶ËÓëshellÈÝÆ÷µ×¶Ë¾àÀëÎª0
 		data.bottom = new FormAttachment(100, 0);
-		// Ê¹Sashï¿½ï¿½ß¿ï¿½Shellï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß¿ï¿½ï¿½ï¿½ï¿½Õ¼ï¿½ï¿½ï¿½ï¿½Shellï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Èµï¿½30%
+		// Ê¹Sash×ó±ß¿òµ½ShellÈÝÆ÷×ó±ß¿ò¾àÀëÕ¼Õû¸öShellÈÝÆ÷¿í¶ÈµÄ30%
 		data.left = new FormAttachment(30, 0);
 
 		sash.setLayoutData(data);
-		// ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½Ã¿ï¿½Ê¹ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä´ï¿½Ð¡
+		// ¸ÃÊÂ¼þ×÷ÓÃ¿ÉÊ¹·Ö¸î¿ò¸ñ±»Êó±êÍÏ¶¯À´µ÷Õû±»Æä·Ö¸î×óÓÒÁ½²¿·ÖÇøÓòµÄ´óÐ¡
 		sash.addSelectionListener(new SelectionAdapter() {
 			public void widgetSelected(SelectionEvent event) {
 				((FormData) sash.getLayoutData()).left = new FormAttachment(0,
@@ -39,32 +39,32 @@ public class SashExample {
 				sash.getParent().layout();
 			}
 		});
-		// ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ð±ï¿½ï¿½Î»ï¿½Ú·Ö¸ï¿½ï¿½ï¿½(Sash)ï¿½ï¿½ï¿½
+		// ½¨Á¢Ò»¸öÁÐ±í¿òÎ»ÓÚ·Ö¸î¿ò¸ñ(Sash)×ó±ß
 		list = new List(shell, SWT.BORDER | SWT.V_SCROLL | SWT.HORIZONTAL);
-		list.setItems(new String[] { "ï¿½ï¿½1ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", "ï¿½ï¿½2ï¿½ï¿½ ï¿½ï¿½×°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",
-				"ï¿½ï¿½3ï¿½ï¿½ SWT/JFaceï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", "ï¿½ï¿½4ï¿½ï¿½ ï¿½ï¿½ï¿½Ö³ï¿½ï¿½Ãµï¿½SWTï¿½ï¿½ï¿½", "ï¿½ï¿½5ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½",
-				"ï¿½ï¿½6ï¿½ï¿½ SWTï¿½Ä¶Ô»ï¿½ï¿½ï¿½", "ï¿½ï¿½7ï¿½ï¿½ ï¿½ï¿½ï¿½Ö¹ï¿½ï¿½ï¿½ï¿½ï¿½", "ï¿½ï¿½8ï¿½ï¿½ SWTï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", "ï¿½ï¿½9ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã·ï¿½" });
+		list.setItems(new String[] { "µÚ1ÕÂ »ù´¡¸ÅÊö", "µÚ2ÕÂ °²×°ÓëÅäÖÃ",
+				"µÚ3ÕÂ SWT/JFace¿ª·¢¹ý³Ì", "µÚ4ÕÂ ¼¸ÖÖ³£ÓÃµÄSWT×é¼þ", "µÚ5ÕÂ ´°¿ÚÐ¡²¿¼þÊÂ¼þ",
+				"µÚ6ÕÂ SWTµÄ¶Ô»°¿ò", "µÚ7ÕÂ ²¼¾Ö¹ÜÀíÆ÷", "µÚ8ÕÂ SWT¸´ÔÓ×é¼þ", "µÚ9ÕÂ ÆäËü×é¼þÀàÓÃ·¨" });
 		list.addSelectionListener(new SelectionAdapter() {
 			public void widgetSelected(SelectionEvent e) {
 				int selectionIndex = list.getSelectionIndex();
 				if (selectionIndex == 0) {
-					text.setText("1.1ï¿½ï¿½ï¿½ï¿½" + '\n' + "1.2 Eclipseï¿½Ü¹ï¿½");
+					text.setText("1.1ÒýÑÔ" + '\n' + "1.2 Eclipse¼Ü¹¹");
 				} else if (selectionIndex == 1) {
-					text.setText("ï¿½Ú¶ï¿½ï¿½ï¿½Ä¿Â¼ï¿½ï¿½....");
+					text.setText("µÚ¶þÕÂÄ¿Â¼ÂÔ....");
 				} else if (selectionIndex == 2) {
-					text.setText("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿Â¼ï¿½ï¿½....");
+					text.setText("µÚÈýÕÂÄ¿Â¼ÂÔ....");
 				} else if (selectionIndex == 3) {
-					text.setText("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿Â¼ï¿½ï¿½....");
+					text.setText("µÚËÄÕÂÄ¿Â¼ÂÔ....");
 				} else if (selectionIndex == 4) {
-					text.setText("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿Â¼ï¿½ï¿½....");
+					text.setText("µÚÎåÕÂÄ¿Â¼ÂÔ....");
 				} else if (selectionIndex == 5) {
-					text.setText("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿Â¼ï¿½ï¿½....");
+					text.setText("µÚÁùÕÂÄ¿Â¼ÂÔ....");
 				} else if (selectionIndex == 6) {
-					text.setText("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿Â¼ï¿½ï¿½....");
+					text.setText("µÚÆßÕÂÄ¿Â¼ÂÔ....");
 				} else if (selectionIndex == 7) {
-					text.setText("ï¿½Ú°ï¿½ï¿½ï¿½Ä¿Â¼ï¿½ï¿½....");
+					text.setText("µÚ°ËÕÂÄ¿Â¼ÂÔ....");
 				} else if (selectionIndex == 8) {
-					text.setText("ï¿½Ú¾ï¿½ï¿½ï¿½Ä¿Â¼ï¿½ï¿½....");
+					text.setText("µÚ¾ÅÕÂÄ¿Â¼ÂÔ....");
 				}
 			}
 		});
@@ -74,7 +74,7 @@ public class SashExample {
 		data.left = new FormAttachment(0, 0);
 		data.right = new FormAttachment(sash, 0);
 		list.setLayoutData(data);
-		// ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½Î»ï¿½Ú·Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½Ò±ï¿½
+		// ½¨Á¢Ò»¸öÎÄ±¾¿òÎ»ÓÚ·Ö¸î¿ò¸ñµÄÓÒ±ß
 		text = new Text(shell, SWT.BORDER | SWT.HORIZONTAL | SWT.V_SCROLL);
 		data = new FormData();
 		data.top = new FormAttachment(0, 0);

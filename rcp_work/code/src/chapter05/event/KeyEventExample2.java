@@ -1,5 +1,4 @@
-/**@author WangJinTao,MengQingChang 2006
- */
+
 package chapter05.event;
 
 import org.eclipse.swt.widgets.*;

@@ -1,5 +1,4 @@
-/**@author WangJinTao,MengQingChang 2006
- */
+
 package chapter04.basic.widget;
 
 import org.eclipse.swt.*;
@@ -9,31 +8,31 @@ public class CompositeExample {
 		final Display display = Display.getDefault();
 		final Shell shell = new Shell();
 		shell.setSize(260, 310);
-		shell.setText("CompositeÊµï¿½ï¿½");
-		shell.setToolTipText("Shellï¿½ï¿½ï¿½ï¿½");
+		shell.setText("CompositeÊµÀý");
+		shell.setToolTipText("ShellÈÝÆ÷");
 		final Composite composite = new Composite(shell, SWT.BORDER);
 		composite.setBounds(20, 25, 210, 220);
-		composite.setToolTipText("Compositeï¿½ï¿½ï¿½ï¿½");
+		composite.setToolTipText("CompositeÈÝÆ÷");
 		final Group group = new Group(composite, SWT.NONE);
 		group.setBounds(20, 20, 160, 160);
-		group.setText("ï¿½ï¿½ï¿½ï¿½ï¿½ë£º");
-		group.setToolTipText("Groupï¿½ï¿½ï¿½ï¿½");
+		group.setText("ÇëÊäÈë£º");
+		group.setToolTipText("GroupÈÝÆ÷");
 		final Label label1 = new Label(group, SWT.NONE);
 		label1.setBounds(10, 30, 45, 20);
-		label1.setText("ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½");
+		label1.setText("ÓÃ»§Ãû£º");
 		final Text text1 = new Text(group, SWT.BORDER);
 		text1.setBounds(65, 25, 80, 25);
 		final Label label2 = new Label(group, SWT.NONE);
 		label2.setBounds(10, 70, 45, 20);
-		label2.setText("ï¿½ï¿½  ï¿½ë£º");
+		label2.setText("ÃÜ  Âë£º");
 		final Text text2 = new Text(group, SWT.BORDER | SWT.PASSWORD);
 		text2.setBounds(65, 65, 80, 25);
 		final Button button1 = new Button(group, SWT.NONE);
 		button1.setBounds(40, 120, 50, 25);
-		button1.setText("È·ï¿½ï¿½");
+		button1.setText("È·¶¨");
 		final Button button2 = new Button(group, SWT.NONE);
 		button2.setBounds(95, 120, 50, 25);
-		button2.setText("È¡ï¿½ï¿½");
+		button2.setText("È¡Ïû");
 		shell.open();
 		shell.layout();
 		while (!shell.isDisposed()) {

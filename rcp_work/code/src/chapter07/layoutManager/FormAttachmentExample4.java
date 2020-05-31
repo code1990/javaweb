@@ -13,7 +13,7 @@ public class FormAttachmentExample4 {
 		final Display display = Display.getDefault();
 		final Shell shell = new Shell();
 		shell.setSize(300, 240);
-		shell.setText("FormAttachmentÊµï¿½ï¿½");
+		shell.setText("FormAttachmentÊµÀý");
 		shell.setLayout(new FormLayout());
 		FormData formdata1 = new FormData();
 		FormAttachment formattachment = new FormAttachment(20);

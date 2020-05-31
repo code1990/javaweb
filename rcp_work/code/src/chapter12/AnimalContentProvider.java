@@ -1,6 +1,3 @@
-/**
- *@author: WangJinTao,MengQingChang 2006 
- */
 package chapter12;
 
 import java.util.*;

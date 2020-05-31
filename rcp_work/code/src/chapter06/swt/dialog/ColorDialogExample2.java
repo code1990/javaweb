@@ -1,5 +1,4 @@
-/**@author WangJinTao,MengQingChang 2006
- */
+
 package chapter06.swt.dialog;
 
 import org.eclipse.swt.*;
@@ -16,26 +15,26 @@ public class ColorDialogExample2 {
 		final Display display = Display.getDefault();
 		final Shell shell = new Shell(new Shell());
 		shell.setSize(383, 225);
-		shell.setText("ColorDialogʵ��");
+		shell.setText("ColorDialog实例");
 		text = new Text(shell, SWT.BORDER);
 		text.setBounds(5, 5, 365, 150);
 		text.setText("SWT/JFace");
 		color = new Color(shell.getDisplay(), new RGB(0, 255, 0));
 		Button button = new Button(shell, SWT.PUSH);
 		button.setBounds(250, 165, 120, 20);
-		button.setText("��ɫѡ��Ի���");
+		button.setText("颜色选择对话框");
 		button.addSelectionListener(new SelectionAdapter() {
 			public void widgetSelected(SelectionEvent e) {
-				// ������ɫѡ��Ի���
+				// 定义颜色选择对话框
 				ColorDialog dlg = new ColorDialog(shell);
-				// �򿪶Ի���
+				// 打开对话框
 				RGB rgb = dlg.open();
 				if (rgb != null) {
 					color = new Color(shell.getDisplay(), rgb);
-					// ����ǰ����ɫ
+					// 设置前景颜色
 					text.setForeground(color);
 					/**
-					 * ���ñ�����ɫ text.setBackground(color);
+					 * 设置背景颜色 text.setBackground(color);
 					 */
 				}
 			}

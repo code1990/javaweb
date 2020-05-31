@@ -13,7 +13,7 @@ public class GridLayoutExample2 {
 		final Display display = Display.getDefault();
 		final Shell shell = new Shell();
 		shell.setSize(300, 200);
-		shell.setText("GridLayoutÊµï¿½ï¿½");
+		shell.setText("GridLayoutÊµÀý");
 		GridLayout gridlayout = new GridLayout(3, true);
 
 		shell.setLayout(gridlayout);

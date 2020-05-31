@@ -10,7 +10,7 @@ public class JFaceMenuToolBarClass extends ApplicationWindow {
 	private ExitActionClass exitAction;
 	public JFaceMenuToolBarClass() {
 		super(null);
-		// ï¿½ï¿½ApplicationWindowï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// ½«ApplicationWindowÀàÊµÀý×÷Îª²ÎÊý´«¹ýÀ´
 		exitAction = new ExitActionClass(this);
 		this.addMenuBar();
 		this.addStatusLine();
@@ -28,17 +28,17 @@ public class JFaceMenuToolBarClass extends ApplicationWindow {
 		setStatus("This is StatusLine");
 		return parent;
 	}
-	// ï¿½ï¿½ï¿½ï¿½ï¿½Ëµï¿½
+	// ´´½¨²Ëµ¥
 	protected MenuManager createMenuManager() {
 		MenuManager menuBar = new MenuManager("");
-		MenuManager fileMenu = new MenuManager("ï¿½Ä¼ï¿½(&F)");
-		MenuManager selectMenu = new MenuManager("Ñ¡ï¿½ï¿½");
+		MenuManager fileMenu = new MenuManager("ÎÄ¼þ(&F)");
+		MenuManager selectMenu = new MenuManager("Ñ¡Ïî");
 		menuBar.add(fileMenu);
 		fileMenu.add(selectMenu);
 		selectMenu.add(exitAction);
 		return menuBar;
 	}
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// ´´½¨¹¤¾ßÀ¸
 	protected ToolBarManager createToolBarManager(int style) {
 		ToolBarManager toolBarManager = new ToolBarManager(style);
 		toolBarManager.add(exitAction);

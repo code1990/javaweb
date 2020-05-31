@@ -1,6 +1,3 @@
-/**
- *@ author: WangJinTao,MengQingChang 2006 
- */
 package chapter14;
 
 import java.sql.*;
@@ -38,7 +35,7 @@ public class SWTJFaceDataBase extends ApplicationWindow {
 
 	private Table table;
 
-	private Boolean a = true;
+	private boolean a = true;
 
 	private Text text1;
 
@@ -63,15 +60,15 @@ public class SWTJFaceDataBase extends ApplicationWindow {
 
 	protected void configureShell(Shell shell) {
 		super.configureShell(shell);
-		// ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½ï¿½Ð¡
+		// ÉèÖÃ´°Ìå´óÐ¡
 		shell.setSize(700, 500);
-		shell.setText("SWT/JFaceï¿½ï¿½ï¿½ï¿½ï¿½Ý¿ï¿½Êµï¿½ï¿½");
+		shell.setText("SWT/JFaceÓëÊý¾Ý¿âÊµÀý");
 	}
 
 	protected Control createContents(Composite parent) {
 		Composite composite = new Composite(parent, SWT.NONE);
 		composite.setLayout(new GridLayout(1, false));
-		// ï¿½ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½å·½ï¿½ï¿½
+		// µ÷ÓÃ×Ô¶¨Òå·½·¨
 		createSurface(composite);
 		return composite;
 	}
@@ -80,25 +77,25 @@ public class SWTJFaceDataBase extends ApplicationWindow {
 		Composite composite = new Composite(comp, SWT.NONE);
 		composite.setLayoutData(new GridData(GridData.FILL_BOTH));
 		composite.setLayout(new FillLayout());
-		// ï¿½ï¿½ï¿½ï¿½Ö¸î´°
+		// ¶¨Òå·Ö¸î´°
 		SashForm sashForm = new SashForm(composite, SWT.NONE);
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ¹ï¿½ï¿½
+		// ¶¨ÒåÀ©Õ¹À¸
 		ExpandBar expandbar = new ExpandBar(sashForm, SWT.V_SCROLL);
-		{ // /ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ¹ï¿½ï¿½Item1
+		{ // /ÉèÖÃÀ©Õ¹ÏîItem1
 			comp1 = new Composite(expandbar, SWT.NONE);
 			comp1.setLayoutData(new GridData(GridData.FILL_BOTH));
 			comp1.setLayout(new GridLayout());
 			ExpandItem item1 = new ExpandItem(expandbar, SWT.NONE);
-			item1.setText("ï¿½ï¿½Ñ¯Ô±ï¿½ï¿½ï¿½ï¿½Ï¢");
+			item1.setText("²éÑ¯Ô±¹¤ÐÅÏ¢");
 			item1.setHeight(40);
 			item1.setControl(comp1);
-			// ï¿½ï¿½ï¿½ï¿½link
+			// ¶¨Òålink
 			Link link = new Link(comp1, SWT.NONE);
 			GridData grid = new GridData();
 			grid.horizontalIndent = 30;
 			grid.verticalIndent = 10;
 			link.setLayoutData(grid);
-			link.setText(" <a>Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½Ñ¯</a>    ");
+			link.setText(" <a>Ô±¹¤»ù±¾ÐÅÏ¢²éÑ¯</a>    ");
 			link.addListener(SWT.Selection, new Listener() {
 				public void handleEvent(Event event) {
 
@@ -110,17 +107,17 @@ public class SWTJFaceDataBase extends ApplicationWindow {
 			});
 
 		}
-		{ // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ¹ï¿½ï¿½Item2
+		{ // ÉèÖÃÀ©Õ¹ÏîItem2
 			comp2 = new Composite(expandbar, SWT.NONE);
 			comp2.setLayoutData(new GridData(GridData.FILL_BOTH));
 			comp2.setLayout(new GridLayout(2, false));
 			ExpandItem item2 = new ExpandItem(expandbar, SWT.NONE);
-			item2.setText("ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¯Ô±ï¿½ï¿½ï¿½ï¿½Ï¢");
+			item2.setText("·ÖÀà²éÑ¯Ô±¹¤ÐÅÏ¢");
 			item2.setHeight(150);
 			item2.setControl(comp2);
 
 			final Label label1 = new Label(comp2, SWT.NONE);
-			label1.setText("ï¿½ï¿½Ô±ï¿½ï¿½ï¿½Å²ï¿½Ñ¯ï¿½ï¿½");
+			label1.setText("°´Ô±¹¤ºÅ²éÑ¯£º");
 			GridData grid0 = new GridData();
 			grid0.horizontalSpan = 2;
 			label1.setLayoutData(grid0);
@@ -129,16 +126,16 @@ public class SWTJFaceDataBase extends ApplicationWindow {
 			gridId.widthHint = 80;
 			text1.setLayoutData(gridId);
 			final Button button1 = new Button(comp2, SWT.PUSH);
-			button1.setText("ï¿½ï¿½Ñ¯");
+			button1.setText("²éÑ¯");
 			button1.addSelectionListener(new SelectionAdapter() {
 				public void widgetSelected(SelectionEvent e) {
 
 					try {
 						String Atr = text1.getText();
-						// ï¿½ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½ï¿½Ç·ï¿½Îªï¿½ï¿½
+						// ¼ì²éÎÄ±¾ÏîÊÇ·ñÎª¿Õ
 						if (Atr == null || Atr.equals("")) {
-							MessageDialog.openInformation(null, null, "ï¿½ï¿½Ñ¯Ê§ï¿½Ü£ï¿½"
-									+ '\n' + '\n' + "  ×¢ï¿½â£ºï¿½Ä±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½Õ£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+							MessageDialog.openInformation(null, null, "²éÑ¯Ê§°Ü£¡"
+									+ '\n' + '\n' + "  ×¢Òâ£ºÎÄ±¾Ïî¾ù²»ÄÜÎª¿Õ£¡£¡£¡£¡");
 						} else {
 							tv.setInput(DbOperate.SearchId(text1));
 						}
@@ -154,22 +151,22 @@ public class SWTJFaceDataBase extends ApplicationWindow {
 			button1.setLayoutData(grid1);
 
 			final Label label2 = new Label(comp2, SWT.NONE);
-			label2.setText("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¯ï¿½ï¿½");
+			label2.setText("°´ÐÕÃû²éÑ¯£º");
 			label2.setLayoutData(grid0);
 			text2 = new Text(comp2, SWT.BORDER);
 			text2.setLayoutData(gridId);
 			final Button button2 = new Button(comp2, SWT.PUSH);
-			button2.setText("ï¿½ï¿½Ñ¯");
+			button2.setText("²éÑ¯");
 			button2.setLayoutData(grid1);
 			button2.addSelectionListener(new SelectionAdapter() {
 				public void widgetSelected(SelectionEvent e) {
 
 					try {
 						String Btr = text2.getText();
-						// ï¿½ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½ï¿½Ç·ï¿½Îªï¿½ï¿½
+						// ¼ì²éÎÄ±¾ÏîÊÇ·ñÎª¿Õ
 						if (Btr == null || Btr.equals("")) {
-							MessageDialog.openInformation(null, null, "ï¿½ï¿½Ñ¯Ê§ï¿½Ü£ï¿½"
-									+ '\n' + '\n' + "  ×¢ï¿½â£ºï¿½Ä±ï¿½ï¿½î²»ï¿½ï¿½Îªï¿½Õ£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+							MessageDialog.openInformation(null, null, "²éÑ¯Ê§°Ü£¡"
+									+ '\n' + '\n' + "  ×¢Òâ£ºÎÄ±¾Ïî²»ÄÜÎª¿Õ£¡£¡£¡£¡");
 						} else {
 							tv.setInput(DbOperate.SearchName(text2));
 						}
@@ -180,22 +177,22 @@ public class SWTJFaceDataBase extends ApplicationWindow {
 			});
 
 			final Label label3 = new Label(comp2, SWT.NONE);
-			label3.setText("ï¿½ï¿½ï¿½Ô±ï¿½ï¿½Ñ¯ï¿½ï¿½");
+			label3.setText("°´ÐÔ±ð²éÑ¯£º");
 			label3.setLayoutData(grid0);
 			text3 = new Text(comp2, SWT.BORDER);
 			text3.setLayoutData(gridId);
 			final Button button3 = new Button(comp2, SWT.PUSH);
-			button3.setText("ï¿½ï¿½Ñ¯");
+			button3.setText("²éÑ¯");
 			button3.setLayoutData(grid1);
 			button3.addSelectionListener(new SelectionAdapter() {
 				public void widgetSelected(SelectionEvent e) {
 
 					try {
 						String Ctr = text3.getText();
-						// ï¿½ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½ï¿½Ç·ï¿½Îªï¿½ï¿½
+						// ¼ì²éÎÄ±¾ÏîÊÇ·ñÎª¿Õ
 						if (Ctr == null || Ctr.equals("")) {
-							MessageDialog.openInformation(null, null, "ï¿½ï¿½Ñ¯Ê§ï¿½Ü£ï¿½"
-									+ '\n' + '\n' + "  ×¢ï¿½â£ºï¿½Ä±ï¿½ï¿½î²»ï¿½ï¿½Îªï¿½Õ£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+							MessageDialog.openInformation(null, null, "²éÑ¯Ê§°Ü£¡"
+									+ '\n' + '\n' + "  ×¢Òâ£ºÎÄ±¾Ïî²»ÄÜÎª¿Õ£¡£¡£¡£¡");
 						} else {
 							tv.setInput(DbOperate.SearchSex(text3));
 						}
@@ -205,12 +202,12 @@ public class SWTJFaceDataBase extends ApplicationWindow {
 				}
 			});
 		}
-		{// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ¹ï¿½ï¿½Item3
+		{// ÉèÖÃÀ©Õ¹ÏîItem3
 			comp3 = new Composite(expandbar, SWT.NONE);
 			comp3.setLayoutData(new GridData(GridData.FILL_BOTH));
 			comp3.setLayout(new GridLayout(2, false));
 			ExpandItem item3 = new ExpandItem(expandbar, SWT.NONE);
-			item3.setText("ï¿½ï¿½Ñ¯Ëµï¿½ï¿½");
+			item3.setText("²éÑ¯ËµÃ÷");
 			item3.setHeight(100);
 			item3.setControl(comp3);
 
@@ -222,34 +219,34 @@ public class SWTJFaceDataBase extends ApplicationWindow {
 		sashForm.setWeights(new int[] { 2, 8 });
 		{
 			CTab = new CTabFolder(container, SWT.BORDER);
-			// ï¿½ï¿½ï¿½ï¿½CTabItemï¿½ï¿½ï¿½ï¿½Item1
+			// ¶¨ÒåCTabItem¶ÔÏóItem1
 			CTab.setLayoutData(new GridData(GridData.FILL, GridData.FILL, true,
 					false));
 			CTab.setSimple(false);
 
 			Item = new CTabItem(CTab, SWT.NONE, 0);
-			Item.setText(" Ô±ï¿½ï¿½ï¿½ï¿½Ï¢");
-			// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ó»¯±ï¿½Ç©ï¿½É¼ï¿½
+			Item.setText(" Ô±¹¤ÐÅÏ¢");
+			// ÉèÖÃ×îÐ¡»¯£¬×î´ó»¯±êÇ©¿É¼û
 			CTab.setSelection(Item);
 			CTab.setMinimizeVisible(true);
 			CTab.setMaximizeVisible(true);
 			CTab.setMaximized(true);
-			// ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½î¿¨ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ó»¯ºÍ»Ö¸ï¿½ï¿½ï¿½ï¿½Ü¡ï¿½
+			// ÉèÖÃÑ¡Ïî¿¨µÄ×îÐ¡»¯£¬×î´ó»¯ºÍ»Ö¸´¹¦ÄÜ¡£
 			CTab.addCTabFolder2Listener(new CTabFolder2Adapter() {
-				// Ê¹Ñ¡ï¿½î¿¨ï¿½ï¿½Ð¡ï¿½ï¿½
+				// Ê¹Ñ¡Ïî¿¨×îÐ¡»¯
 				public void minimize(CTabFolderEvent event) {
 					CTab.setMinimized(true);
 					container.layout(true);
 				}
 
-				// ï¿½ï¿½Ñ¡ï¿½î¿¨ï¿½ï¿½ï¿½
+				// ÊÇÑ¡Ïî¿¨×î´ó»¯
 				public void maximize(CTabFolderEvent event) {
 					CTab.setMaximized(true);
 					CTab.setLayoutData(new GridData(GridData.FILL_BOTH));
 					container.layout(true);
 				}
 
-				// ï¿½ï¿½Ñ¡ï¿½î¿¨ï¿½Ö¸ï¿½
+				// ÊÇÑ¡Ïî¿¨»Ö¸´
 				public void restore(CTabFolderEvent event) {
 					CTab.setMinimized(false);
 					CTab.setMaximized(false);
@@ -258,28 +255,28 @@ public class SWTJFaceDataBase extends ApplicationWindow {
 					container.layout(true);
 				}
 			});
-			// ï¿½ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½å·½ï¿½ï¿½
+			// µ÷ÓÃ×Ô¶¨Òå·½·¨
 			createTableViewer(CTab);
-			// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½á¹©ï¿½ï¿½
+			// ÉèÖÃÄÚÈÝÌá¹©Æ÷
 			tv.setContentProvider(new EmployeeContentProvider());
-			// ï¿½ï¿½ï¿½Ã±ï¿½Ç©ï¿½á¹©ï¿½ï¿½
+			// ÉèÖÃ±êÇ©Ìá¹©Æ÷
 			tv.setLabelProvider(new EmployeeLabelProvider());
-			// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+			// ÉèÖÃÅÅÐòÆ÷
 			tv.setSorter(new Sort());
 		}
 
 	}
 
 	private void createTableViewer(CTabFolder ctabFolder) {
-		// ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½TableViewerï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð±ï¿½Ñ¡ï¿½ï¿½
+		// ¶¨ÒåÒ»¸öTableViewer¶ÔÏó£¬ÑùÊ½Îª£º¿ÉÒÔÕûÐÐ±»Ñ¡Ôñ
 		tv = new TableViewer(ctabFolder, SWT.FULL_SELECTION);
-		// ï¿½ï¿½ï¿½ï¿½Table
+		// ÉèÖÃTable
 		table = tv.getTable();
 		Item.setControl(table);
 		table.setLayoutData(new GridData(GridData.FILL_BOTH));
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ðµï¿½ï¿½ï¿½
+		// ¶¨Òå±íÖÐµÄÁÐ
 		TableColumn Col1 = new TableColumn(table, SWT.LEFT);
-		Col1.setText("Ô±ï¿½ï¿½ï¿½ï¿½");
+		Col1.setText("Ô±¹¤ºÅ");
 		Col1.addSelectionListener(new SelectionAdapter() {
 			public void widgetSelected(SelectionEvent event) {
 				a = !a;
@@ -287,10 +284,10 @@ public class SWTJFaceDataBase extends ApplicationWindow {
 				tv.refresh();
 			}
 		});
-		// ï¿½ï¿½ï¿½ï¿½ï¿½Ð¿ï¿½ï¿½
+		// ÉèÖÃÁÐ¿í¶È
 		Col1.setWidth(70);
 		TableColumn Col2 = new TableColumn(table, SWT.LEFT);
-		Col2.setText("ï¿½ï¿½ï¿½ï¿½");
+		Col2.setText("ÐÕÃû");
 
 		Col2.setWidth(80);
 		Col2.addSelectionListener(new SelectionAdapter() {
@@ -301,7 +298,7 @@ public class SWTJFaceDataBase extends ApplicationWindow {
 			}
 		});
 		TableColumn Col3 = new TableColumn(table, SWT.LEFT);
-		Col3.setText("ï¿½Ô±ï¿½");
+		Col3.setText("ÐÔ±ð");
 		Col3.setWidth(50);
 		Col3.addSelectionListener(new SelectionAdapter() {
 			public void widgetSelected(SelectionEvent event) {
@@ -311,7 +308,7 @@ public class SWTJFaceDataBase extends ApplicationWindow {
 			}
 		});
 		TableColumn Col4 = new TableColumn(table, SWT.LEFT);
-		Col4.setText("ï¿½ï¿½ï¿½ï¿½");
+		Col4.setText("ÄêÁä");
 		Col4.setWidth(50);
 		Col4.addSelectionListener(new SelectionAdapter() {
 			public void widgetSelected(SelectionEvent event) {
@@ -331,7 +328,7 @@ public class SWTJFaceDataBase extends ApplicationWindow {
 			}
 		});
 		TableColumn Col6 = new TableColumn(table, SWT.LEFT);
-		Col6.setText("ï¿½ï¿½Ð½(ï¿½ï¿½ï¿½ï¿½ï¿½Ôª)");
+		Col6.setText("ÔÂÐ½(ÈËÃñ±ÒÔª)");
 		Col6.setWidth(128);
 		Col6.addSelectionListener(new SelectionAdapter() {
 			public void widgetSelected(SelectionEvent event) {
@@ -340,18 +337,18 @@ public class SWTJFaceDataBase extends ApplicationWindow {
 				tv.refresh();
 			}
 		});
-		// ï¿½ï¿½Ê¾ï¿½ï¿½Í·
+		// ÏÔÊ¾±íÍ·
 		table.setHeaderVisible(true);
-		// ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½ï¿½
+		// ÏÔÊ¾±í¸ñÏß
 		table.setLinesVisible(true);
 
 	}
 
-	// ï¿½ï¿½ï¿½Ã²Ëµï¿½
+	// ÉèÖÃ²Ëµ¥
 	protected MenuManager createMenuManager() {
 		MenuManager menuBar = new MenuManager();
-		MenuManager fileMenu = new MenuManager("ï¿½Ä¼ï¿½(&F)");
-		MenuManager helpMenu = new MenuManager("ï¿½ï¿½ï¿½ï¿½(&H)");
+		MenuManager fileMenu = new MenuManager("ÎÄ¼þ(&F)");
+		MenuManager helpMenu = new MenuManager("°ïÖú(&H)");
 		fileMenu.add(exit);
 		helpMenu.add(about);
 		menuBar.add(fileMenu);
@@ -359,10 +356,10 @@ public class SWTJFaceDataBase extends ApplicationWindow {
 		return menuBar;
 	}
 
-	// ï¿½ï¿½ï¿½Ã¹ï¿½ï¿½ï¿½ï¿½ï¿½
+	// ÉèÖÃ¹¤¾ßÀ¸
 	protected ToolBarManager createToolBarManager(int style) {
 		ToolBarManager toolBarManager = new ToolBarManager(style);
-		// Í¨ï¿½ï¿½Actionï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å¥ï¿½ï¿½Ó¦ï¿½Ä¹ï¿½ï¿½ï¿½
+		// Í¨¹ýAction¶¯×÷À´ÉèÖÃ¹¤¾ßÀ¸°´Å¥ÏàÓ¦µÄ¹¦ÄÜ
 		toolBarManager.add(new findAction());
 		toolBarManager.add(new Separator());
 		toolBarManager.add(new removeAction());
@@ -371,9 +368,9 @@ public class SWTJFaceDataBase extends ApplicationWindow {
 
 	class findAction extends Action {
 		public findAction() {
-			setToolTipText("ï¿½ï¿½Ñ¯");
+			setToolTipText("²éÑ¯");
 			try {
-				// ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½
+				// ÔØÈëÍ¼Ïñ
 				ImageDescriptor icon = ImageDescriptor.createFromURL(new URL(
 						"file:icons/filter.gif"));
 				setImageDescriptor(icon);
@@ -382,7 +379,7 @@ public class SWTJFaceDataBase extends ApplicationWindow {
 			}
 		}
 
-		// ï¿½ï¿½Ñ¯Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½
+		// ²éÑ¯Ô±¹¤»ù±¾ÐÅÏ¢²Ù×÷
 		public void run() {
 
 			try {
@@ -404,18 +401,18 @@ public class SWTJFaceDataBase extends ApplicationWindow {
 			}
 		}
 
-		// É¾ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½
+		// É¾³ýÔ±¹¤ÐÅÏ¢²Ù×÷
 		public void run() {
 			DbOperate deleteId = new DbOperate();
 			IStructuredSelection selection = (IStructuredSelection) tv
 					.getSelection();
 			Employee employee = (Employee) selection.getFirstElement();
-			if (MessageDialog.openConfirm(null, null, "ï¿½ï¿½ï¿½É¾ï¿½ï¿½ï¿½ï¿½")) {
+			if (MessageDialog.openConfirm(null, null, "ÕæµÄÉ¾³ýÂð£¿")) {
 				try {
 					if (deleteId.removeEmployee(employee)) {
 						List list = (List) tv.getInput();
-						list.remove(employee);// É¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ðµï¿½ï¿½ï¿½ï¿½ï¿½
-						tv.remove(employee);// É¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ðµï¿½ï¿½ï¿½ï¿½ï¿½
+						list.remove(employee);// É¾³ýÈÝÆ÷ÖÐµÄÊý¾Ý
+						tv.remove(employee);// É¾³ý±í¸ñÖÐµÄÊý¾Ý
 					}
 				} catch (SQLException e) {
 				}
@@ -427,7 +424,7 @@ public class SWTJFaceDataBase extends ApplicationWindow {
 	class exitAction extends Action {
 		public exitAction() {
 
-			super("ï¿½Ë³ï¿½@Ctrl+E", null);
+			super("ÍË³ö@Ctrl+E", null);
 		}
 
 		public void run() {
@@ -437,7 +434,7 @@ public class SWTJFaceDataBase extends ApplicationWindow {
 
 	class aboutAction extends Action {
 		public aboutAction() {
-			super("ï¿½ï¿½ï¿½ï¿½@Ctrl+A", null);
+			super("¹ØÓÚ@Ctrl+A", null);
 
 		}
 
@@ -445,7 +442,7 @@ public class SWTJFaceDataBase extends ApplicationWindow {
 			MessageBox messageBox = new MessageBox(getShell(), SWT.ICON_WARNING
 					| SWT.YES);
 
-			messageBox.setMessage("ï¿½ï¿½Ó­Ê¹ï¿½Ã¡ï¿½Ô±ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½V2.0");
+			messageBox.setMessage("»¶Ó­Ê¹ÓÃ¡°Ô±¹¤ÐÅÏ¢¹ÜÀíÆ÷¡±V2.0");
 			messageBox.open();
 		}
 	}

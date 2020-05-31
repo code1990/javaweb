@@ -11,9 +11,9 @@ public class ImageExample {
 		final Display display = Display.getDefault();
 		final Shell shell = new Shell();
 		shell.setSize(300, 180);
-		shell.setText("ImageÊµï¿½ï¿½");
+		shell.setText("ImageÊµÀı");
 		Image image = new Image(display, "icons/eclipse0.gif");
-		// ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½
+		// ÉèÖÃ´°Ìå±êÌâÍ¼±ê
 		shell.setImage(image);
 		Button buttona = new Button(shell, SWT.NONE);
 		buttona.setBounds(10, 20, 80, 30);

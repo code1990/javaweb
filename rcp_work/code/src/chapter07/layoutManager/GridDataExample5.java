@@ -12,7 +12,7 @@ public class GridDataExample5 {
 		final Display display = Display.getDefault();
 		final Shell shell = new Shell();
 		shell.setSize(300, 150);
-		shell.setText("GridData实锟斤拷");
+		shell.setText("GridData实例");
 		shell.setLayout(new GridLayout(3, false));
 		new Button(shell, SWT.NONE).setText("Button1");
 		new Button(shell, SWT.NONE).setText("Button2");
@@ -22,7 +22,7 @@ public class GridDataExample5 {
 		button.setText("Button4");
 
 		GridData griddata = new GridData();
-		// 水平锟斤拷占3锟斤拷
+		// 水平抢占3列
 		griddata.horizontalSpan = 3;
 		button.setLayoutData(griddata);
 		new Button(shell, SWT.NONE).setText("Button5");

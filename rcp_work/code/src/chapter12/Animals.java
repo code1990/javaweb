@@ -1,6 +1,3 @@
-/**
- *@author: WangJinTao,MengQingChang2006
- */
 
 package chapter12;
 

@@ -24,68 +24,68 @@ public class PreferenceDialogClass extends ApplicationWindow {
 	}
 
 	protected Control createContents(Composite parent) {
-		getShell().setText("ï¿½ï¿½Ñ¡ï¿½ï¿½");
+		getShell().setText("Ê×Ñ¡Ïî");
 		getShell().setSize(200, 80);
 		Composite composite = new Composite(parent, SWT.NONE);
 		composite.setLayoutData(new GridData(GridData.FILL_BOTH));
 		composite.setLayout(new GridLayout());
 		Button openbutton = new Button(composite, SWT.PUSH);
-		openbutton.setText("ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½");
+		openbutton.setText("´ò¿ªÊ×Ñ¡Ïî");
 		openbutton.addSelectionListener(new SelectionAdapter() {
 			public void widgetSelected(SelectionEvent e) {
 				openPreferenceDialog();
 			}
 		});
-		// ï¿½Ô´ï¿½ï¿½ï¿½Ñ¡ï¿½î°´Å¥ï¿½ï¿½ï¿½ï¿½
+		// ¶Ô´ò¿ªÊ×Ñ¡Ïî°´Å¥²¼¾Ö
 		GridData grid = new GridData(GridData.FILL_HORIZONTAL);
 		openbutton.setLayoutData(grid);
 		return composite;
 	}
 
 	private void openPreferenceDialog() {
-		// ï¿½ï¿½ï¿½ï¿½PreferenceManagerï¿½ï¿½ï¿½ï¿½ï¿½
+		// ¶¨ÒåPreferenceManagerÀà¶ÔÏó
 		PreferenceManager pm = new PreferenceManager();
-		// ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½PreferenceNodeï¿½ï¿½ï¿½ï¿½ó£¬¼ï¿½ï¿½Úµï¿½ï¿½ï¿½ï¿½
+		// ¶¨ÒåÒ»¸öPreferenceNodeÀà¶ÔÏó£¬¼´½Úµã¶ÔÏó
 		PreferenceNode nodeA = new PreferenceNode("NODEA");
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÎªnodeAï¿½ï¿½Ò³ï¿½æ¼´ï¿½ï¿½ï¿½ï¿½nodeAï¿½Úµï¿½Ê±ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½Ò³ï¿½ï¿½
+		// ½«³£¹æÒ³ÃæÉèÖÃÎªnodeAµÄÒ³Ãæ¼´µ¥»÷nodeA½ÚµãÊ±ÏÔÊ¾³£¹æÒ³Ãæ
 		nodeA.setPage(new PreferencePageOne());
-		// ï¿½ï¿½ï¿½Úµï¿½nodeAï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½Úµï¿½
+		// ½«½ÚµãnodeAÉèÖÃÎª¸ù½Úµã
 		pm.addToRoot(nodeA);
-		// ï¿½ï¿½ï¿½ï¿½Úµï¿½nodea
+		// ¶¨Òå½Úµãnodea
 		PreferenceNode nodea = new PreferenceNode("NODEa");
 		nodea.setPage(new PreferencePageTwo());
-		// ï¿½ï¿½ï¿½Úµï¿½nodeaï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½nodeAï¿½ï¿½ï¿½Ó½Úµï¿½
+		// ½«½ÚµãnodeaÉèÖÃÎª¸ùnodeAµÄ×Ó½Úµã
 		pm.addTo("NODEA", nodea);
-		// ï¿½ï¿½ï¿½ï¿½Úµï¿½nodeB
+		// ¶¨Òå½ÚµãnodeB
 		PreferenceNode nodeB = new PreferenceNode("NODEB");
 		nodeB.setPage(new PreferencePageThree());
-		// ï¿½ï¿½ï¿½Úµï¿½ nodeBï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½Úµï¿½
+		// ½«½Úµã nodeBÉèÖÃÎª¸ù½Úµã
 		pm.addToRoot(nodeB);
-		// ï¿½ï¿½ï¿½ï¿½Úµï¿½nodeb
+		// ¶¨Òå½Úµãnodeb
 		PreferenceNode nodeb = new PreferenceNode("NODEb");
 		nodeb.setPage(new PreferencePageFour());
-		// ï¿½ï¿½ï¿½Úµï¿½nodebï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½Úµï¿½nodeBï¿½ï¿½ï¿½Ó½Úµï¿½
+		// ½«½ÚµãnodebÉèÖÃÎª¸ù½ÚµãnodeBµÄ×Ó½Úµã
 		pm.addTo("NODEB", nodeb);
-		// ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½PreferenceDialogï¿½ï¿½ï¿½ï¿½
+		// ¶¨ÒåÒ»¸öPreferenceDialog¶ÔÏó£¬
 		PreferenceDialog dialog = new PreferenceDialog(getShell(), pm);
-		// ï¿½ï¿½ï¿½ï¿½preferencestoreï¿½ï¿½ï¿½ï¿½
+		// ÉèÖÃpreferencestore¶ÔÏó
 		PreferenceStore ps = new PreferenceStore("showprefs.properties");
 		try {
 			ps.load();
 		} catch (IOException e) {
 		}
 		dialog.setPreferenceStore(ps);
-		// ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½Ô»ï¿½ï¿½ï¿½
+		// ´ò¿ªÊ×Ñ¡Ïî¶Ô»°¿ò
 		dialog.open();
 		try {
-			// ï¿½ï¿½ï¿½ï¿½ preferences
+			// ±£´æ preferences
 			ps.save();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 	}
 
-	// ï¿½ï¿½ï¿½ï¿½Ò³ï¿½ï¿½
+	// ³£¹æÒ³Ãæ
 	class PreferencePageOne extends PreferencePage {
 		private Button CheckOne;
 
@@ -116,63 +116,63 @@ public class PreferenceDialogClass extends ApplicationWindow {
 		private static final String SEVEN = "seven";
 
 		public PreferencePageOne() {
-			setTitle("ï¿½ï¿½ï¿½ï¿½");
-			setMessage("ï¿½ï¿½ï¿½ï¿½");
+			setTitle("³£¹æ");
+			setMessage("³£¹æ");
 		}
 
-		// /ï¿½Ú³ï¿½ï¿½ï¿½Ò³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// /ÔÚ³£¹æÒ³ÃæÉÏÌí¼Ó×é¼þ
 		protected Control createContents(Composite parent) {
 			Composite comp = new Composite(parent, SWT.NONE);
 			comp.setLayout(new GridLayout(1, true));
 			IPreferenceStore preferenceStore = getPreferenceStore();
 			CheckOne = new Button(comp, SWT.CHECK);
-			CheckOne.setText("Ê¼ï¿½ï¿½ï¿½Úºï¿½Ì¨ï¿½ï¿½ï¿½ï¿½(&U)");
+			CheckOne.setText("Ê¼ÖÕÔÚºóÌ¨ÔËÐÐ(&U)");
 			CheckOne.setSelection(preferenceStore.getBoolean(ONE));
 
 			CheckTwo = new Button(comp, SWT.CHECK);
-			CheckTwo.setText("ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½/ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú¶Ô»ï¿½ï¿½ï¿½ï¿½(&N)");
+			CheckTwo.setText("ÈÃÏÂÒ»¸ö/ÉÏÒ»¸ö²¿¼þÔÚ¶Ô»°¿ò´ò¿ª(&N)");
 			CheckTwo.setSelection(preferenceStore.getBoolean(TWO));
 
 			CheckThree = new Button(comp, SWT.CHECK);
-			CheckThree.setText("ï¿½ï¿½Ê¾ï¿½ï¿½×´Ì¬(&W)");
+			CheckThree.setText("ÏÔÊ¾¶Ñ×´Ì¬(&W)");
 			CheckThree.setSelection(preferenceStore.getBoolean(THREE));
-			// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+			// ¶¨Òå·Ö×é¿ò
 			final Group group = new Group(comp, SWT.NONE);
-			group.setText("ï¿½ò¿ª·ï¿½Ê½");
+			group.setText("´ò¿ª·½Ê½");
 			GridData grid = new GridData(GridData.FILL_HORIZONTAL);
 			group.setLayoutData(grid);
 			group.setLayout(new GridLayout());
-			// ï¿½Ú·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+			// ÔÚ·Ö×é¿òÉÏÌí¼Ó×é¼þ
 			RadioOne = new Button(group, SWT.RADIO);
-			RadioOne.setText("Ë«ï¿½ï¿½(&O)");
+			RadioOne.setText("Ë«»÷(&O)");
 			RadioOne.setSelection(preferenceStore.getBoolean(SIX));
 
 			RadioTwo = new Button(group, SWT.RADIO);
-			RadioTwo.setText("ï¿½ï¿½ï¿½ï¿½(&S)");
+			RadioTwo.setText("µ¥»÷(&S)");
 			RadioTwo.setSelection(preferenceStore.getBoolean(SEVEN));
 
 			CheckFour = new Button(group, SWT.CHECK);
-			CheckFour.setText("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾Ñ¡ï¿½ï¿½(&H)");
+			CheckFour.setText("¸ù¾ÝÐü¸¡ÌáÊ¾Ñ¡Ôñ(&H)");
 			CheckFour.setSelection(preferenceStore.getBoolean(FOUR));
-			// ï¿½ï¿½CheckFourï¿½ï¿½Å¥ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×´Ì¬
+			// ½«CheckFour°´Å¥ÉèÖÃÎª²»¿ÉÓÃ×´Ì¬
 			CheckFour.setEnabled(false);
-			// ï¿½ï¿½CheckFourï¿½ï¿½Å¥ï¿½ï¿½ï¿½Ð²ï¿½ï¿½ï¿½
+			// ¶ÔCheckFour°´Å¥½øÐÐ²¼¾Ö
 			GridData buttongrid = new GridData();
 			buttongrid.horizontalIndent = 20;
 			CheckFour.setLayoutData(buttongrid);
 
 			CheckFive = new Button(group, SWT.CHECK);
-			CheckFive.setText("Ê¹ï¿½Ã¼ï¿½Í·ï¿½ï¿½Ê±ï¿½ï¿½(&K)");
+			CheckFive.setText("Ê¹ÓÃ¼âÍ·¼üÊ±´ò¿ª(&K)");
 			CheckFive.setSelection(preferenceStore.getBoolean(FIVE));
-			// ï¿½ï¿½CheckFiveï¿½ï¿½Å¥ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×´Ì¬
+			// ½«CheckFive°´Å¥ÉèÖÃÎª²»¿ÉÓÃ×´Ì¬
 			CheckFive.setEnabled(false);
 			CheckFive.setLayoutData(buttongrid);
-			// ï¿½ï¿½groupï¿½Ï¶ï¿½ï¿½ï¿½ï¿½Ç©
-			new Label(group, SWT.NONE).setText("×¢ï¿½â£ºï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½Ü²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½Ð§");
+			// ÔÚgroupÉÏ¶¨Òå±êÇ©
+			new Label(group, SWT.NONE).setText("×¢Òâ£º´ËÑ¡Ïî¿ÉÄÜ²¢²»¶ÔËùÓÐÊÓÍ¼¶¼ÓÐÐ§");
 			RadioTwo.addSelectionListener(new SelectionAdapter() {
 				public void widgetSelected(SelectionEvent e) {
-					// ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½RadioTwoï¿½ï¿½Å¥ï¿½ï¿½CheckFourï¿½ï¿½CheckFiveï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
-					// ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½ï¿½ï¿½×´Ì¬
+					// µ±Ñ¡ÔñÁËRadioTwo°´Å¥ºó£¬CheckFourºÍCheckFive½«±»¼¤»î·ñÔò
+					// ´¦ÓÚ²»¿ÉÓÃ×´Ì¬
 					if (RadioTwo.getSelection() == true) {
 						CheckFour.setEnabled(true);
 						CheckFive.setEnabled(true);
@@ -187,7 +187,7 @@ public class PreferenceDialogClass extends ApplicationWindow {
 
 		protected void performDefaults() {
 			IPreferenceStore preferenceStore = getPreferenceStore();
-			// ï¿½ï¿½ï¿½ï¿½Å¥×´Ì¬ï¿½ï¿½ï¿½ï¿½
+			// ½«°´Å¥×´Ì¬ÖØÖÃ
 			CheckOne.setSelection(preferenceStore.getDefaultBoolean(ONE));
 			CheckTwo.setSelection(preferenceStore.getDefaultBoolean(TWO));
 			CheckThree.setSelection(preferenceStore.getDefaultBoolean(THREE));
@@ -209,11 +209,11 @@ public class PreferenceDialogClass extends ApplicationWindow {
 		}
 	}
 
-	// ï¿½ï¿½ï¿½ï¿½ï¿½Ò³ï¿½ï¿½
+	// ä¯ÀÀÆ÷Ò³Ãæ
 	class PreferencePageTwo extends PreferencePage {
 		public PreferencePageTwo() {
-			setTitle("Webï¿½ï¿½ï¿½ï¿½ï¿½");
-			setMessage("Webï¿½ï¿½ï¿½ï¿½ï¿½");
+			setTitle("Webä¯ÀÀÆ÷");
+			setMessage("Webä¯ÀÀÆ÷");
 		}
 
 		protected Control createContents(Composite parent) {
@@ -234,7 +234,7 @@ public class PreferenceDialogClass extends ApplicationWindow {
 		}
 	}
 
-	// AntÒ³ï¿½ï¿½
+	// AntÒ³Ãæ
 	class PreferencePageThree extends PreferencePage {
 		public PreferencePageThree() {
 			setTitle("Ant");
@@ -259,11 +259,11 @@ public class PreferenceDialogClass extends ApplicationWindow {
 		}
 	}
 
-	// /ï¿½à¼­ï¿½ï¿½Ò³ï¿½ï¿½
+	// /±à¼­Æ÷Ò³Ãæ
 	class PreferencePageFour extends PreferencePage {
 		public PreferencePageFour() {
-			setTitle("ï¿½à¼­ï¿½ï¿½");
-			setMessage("ï¿½à¼­ï¿½ï¿½");
+			setTitle("±à¼­Æ÷");
+			setMessage("±à¼­Æ÷");
 		}
 
 		protected Control createContents(Composite parent) {

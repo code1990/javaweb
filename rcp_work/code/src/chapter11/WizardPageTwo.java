@@ -12,14 +12,14 @@ public class WizardPageTwo extends WizardPage {
 	private GridData grid;
 	protected WizardPageTwo() {
 		super("");
-		setTitle("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
-		setMessage("ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½Ð´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+		setTitle("×ÔÎÒÆÀ¼Û");
+		setMessage("ÇëÕæÊµÌîÐ´£¡£¡£¡");
 		setPageComplete(true);
 	}
 	public void createControl(Composite parent) {
 		Composite comp = new Composite(parent, SWT.NONE);
 		comp.setLayout(new GridLayout(1, false));
-		new Label(comp, SWT.NONE).setText("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Û£ï¿½");
+		new Label(comp, SWT.NONE).setText("×ÔÎÒÆÀ¼Û£º");
 		textComment = new Text(comp, SWT.BORDER );
 		grid = new GridData(GridData.FILL_HORIZONTAL);
 		textComment.setLayoutData(grid);

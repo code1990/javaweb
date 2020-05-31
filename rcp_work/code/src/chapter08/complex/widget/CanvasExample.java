@@ -1,5 +1,3 @@
-/**@author WangJinTao,MengQingChang 2006
- */
 package chapter08.complex.widget;
 
 import org.eclipse.swt.*;
@@ -11,10 +9,10 @@ public class CanvasExample {
 	static Image image;
 	public CanvasExample() {
 		final Display display = Display.getDefault();
-		// /����һ��Shell�Ի���
+		// /定义一个Shell对话框
 		final Shell shell = new Shell(SWT.DIALOG_TRIM | SWT.ON_TOP);
 		shell.setSize(300, 360);
-		shell.setText("Canvasʵ��");
+		shell.setText("Canvas实例");
 		shell.setLayout(new GridLayout(4, false));
 		final Canvas canvas = new Canvas(shell, SWT.BORDER);
 		GridData gridA = new GridData();
@@ -24,18 +22,18 @@ public class CanvasExample {
 		gridA.horizontalSpan = 4;
 		gridA.verticalIndent = 15;
 		canvas.setLayoutData(gridA);
-		// ����canvas�ػ��¼�
+		// 监听canvas重绘事件
 		canvas.addPaintListener(new PaintListener() {
 			public void paintControl(final PaintEvent event) {
 				if (image != null)
-					// ����ͼ����ʾ��canvas�ϣ�ͼ����ʾ��canvas�ϵ�����Ϊ(0,0)
+					// 将其图像显示在canvas上，图像显示在canvas上的坐标为(0,0)
 					event.gc.drawImage(image, 0, 0);
 				image = null;
 			}
 		});
 		final List list = new List(shell, SWT.BORDER | SWT.V_SCROLL);
-		list.setItems(new String[] { "����ɫ", "����ɫ", "����ɫ", "����ɫ", "����ɫ",
-                              "����ɫ","���켴��", "ľ����", "��ʳ" });
+		list.setItems(new String[] { "黄颜色", "蓝颜色", "红颜色", "绿颜色", "黑颜色",
+                              "青颜色","秋天即景", "木卫四", "日食" });
 		GridData gridB = new GridData();
 		gridB.horizontalIndent = 15;
 		gridB.widthHint = 100;
@@ -43,7 +41,7 @@ public class CanvasExample {
 		gridB.verticalIndent = 10;
 		list.setLayoutData(gridB);
 		Button buttonB = new Button(shell, SWT.NONE);
-		buttonB.setText("���");
+		buttonB.setText("浏览");
 		GridData gridD = new GridData();
 		gridD.horizontalIndent = 90;
 		gridD.widthHint = 80;
@@ -79,7 +77,7 @@ public class CanvasExample {
 			}
 		});
 		Button buttonC = new Button(shell, SWT.NONE);
-		buttonC.setText("�˳�");
+		buttonC.setText("退出");
 		GridData gridE = new GridData();
 		gridE.horizontalIndent = 15;
 		gridE.widthHint = 80;

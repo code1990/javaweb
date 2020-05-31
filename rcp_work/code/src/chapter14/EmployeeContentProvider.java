@@ -1,13 +1,10 @@
-/**
- * @author: WangJinTao,MengQingChang 2006 
- */
 package chapter14;
 
 import java.util.List;
 
 import org.eclipse.jface.viewers.*;
 
-// 通锟斤拷IStructuredContentProvider锟接匡拷实锟斤拷
+// 通过IStructuredContentProvider接口实现
 public class EmployeeContentProvider implements IStructuredContentProvider {
 
 	public Object[] getElements(Object inputElement) {

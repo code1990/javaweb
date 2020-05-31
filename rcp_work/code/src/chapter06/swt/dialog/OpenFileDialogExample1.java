@@ -1,5 +1,3 @@
-/**@author WangJinTao,MengQingChang 2006
- */
 package chapter06.swt.dialog;
 
 import org.eclipse.swt.*;
@@ -9,11 +7,11 @@ public class OpenFileDialogExample1 {
 	public OpenFileDialogExample1() {
 		final Shell shell = new Shell();
 		FileDialog OpenFileDialog = new FileDialog(shell, SWT.OPEN);
-		OpenFileDialog.setText("ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½Ñ¡ï¿½ï¿½Ô»ï¿½ï¿½ï¿½");
+		OpenFileDialog.setText("´ò¿ªÐÍÎÄ¼þÑ¡Ôñ¶Ô»°¿ò");
 		OpenFileDialog.setFilterExtensions(new String[] { "*.*", "*.psd",
 				"*.jpg", "*.txt", "*.doc", "*.exe" });
-		OpenFileDialog.setFilterNames(new String[] { "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(*.*)",
-				"potoshopgï¿½ï¿½Ê½(*.psd)", "ï¿½Ä±ï¿½ï¿½ï¿½Ê½(*.txt)" });
+		OpenFileDialog.setFilterNames(new String[] { "ËùÓÐÀàÐÍ(*.*)",
+				"potoshopg¸ñÊ½(*.psd)", "ÎÄ±¾¸ñÊ½(*.txt)" });
 		OpenFileDialog.setFilterPath("C:\\");
 		OpenFileDialog.open();
 		System.out.println(OpenFileDialog.getFileName() );

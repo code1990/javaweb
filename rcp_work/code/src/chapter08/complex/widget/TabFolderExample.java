@@ -11,34 +11,34 @@ public class TabFolderExample {
 		final Display display = Display.getDefault();
 		final Shell shell = new Shell(new Shell());
 		shell.setSize(220, 250);
-		shell.setText("TabFolderÊµï¿½ï¿½");
-		// shellï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½
+		shell.setText("TabFolderÊµÀý");
+		// shell²ÉÓÃÍø¸ñÊ½²¼¾Ö
 		shell.setLayout(new GridLayout(2, false));
 		final TabFolder tabFolder = new TabFolder(shell, SWT.NONE);
 		GridData gridTab = new GridData(GridData.FILL_BOTH);
-		gridTab.horizontalSpan = 2;// Ë®Æ½ï¿½ï¿½Õ¼ï¿½ï¿½ï¿½ï¿½
+		gridTab.horizontalSpan = 2;// Ë®Æ½ÇÀÕ¼Á½ÁÐ
 		tabFolder.setLayoutData(gridTab);
-		// ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ñ¡ï¿½î¿¨ï¿½ï¿½
+		// ¶¨ÒåµÚÒ»¸öÑ¡Ïî¿¨Ïî
 		final TabItem item1 = new TabItem(tabFolder, SWT.NONE);
 		item1.setText("Item1");
 		{
 			Composite comp1 = new Composite(tabFolder, SWT.BORDER);
 			item1.setControl(comp1);
 			comp1.setLayout(new GridLayout());
-			new Slider(comp1, SWT.NONE);// ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
-			new Scale(comp1, SWT.NONE);// ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ì¶ï¿½ï¿½ï¿½
-			new ProgressBar(comp1, SWT.INDETERMINATE);// ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+			new Slider(comp1, SWT.NONE);// ¶¨ÒåÒ»¸ö»¬¶¯Ìõ
+			new Scale(comp1, SWT.NONE);// ¶¨ÒåÒ»¸ö¿Ì¶ÈÌõ
+			new ProgressBar(comp1, SWT.INDETERMINATE);// ¶¨ÒåÒ»¸ö½ø¶ÈÌõ
 		}
-		// /ï¿½ï¿½ï¿½ï¿½Ú¶ï¿½ï¿½ï¿½Ñ¡ï¿½î¿¨ï¿½ï¿½
+		// /¶¨ÒåµÚ¶þ¸öÑ¡Ïî¿¨Ïî
 		final TabItem item2 = new TabItem(tabFolder, SWT.NONE);
 		item2.setText("Item2");
 		{
 			Composite comp2 = new Composite(tabFolder, SWT.BORDER);
 			item2.setControl(comp2);
-			// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½å±³ï¿½ï¿½ï¿½ï¿½É«Îªï¿½ï¿½É«
+			// ÉèÖÃÃæ°å±³¾°ÑÕÉ«ÎªÀ¶É«
 			comp2.setBackground(display.getSystemColor(SWT.COLOR_BLUE));
 		}
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½î¿¨ï¿½ï¿½
+		// ¶¨ÒåµÚÈý¸öÑ¡Ïî¿¨Ïî
 		final TabItem item3 = new TabItem(tabFolder, SWT.NONE);
 		item3.setText("Item3");
 		{
@@ -46,9 +46,9 @@ public class TabFolderExample {
 			item3.setControl(comp3);
 
 		}
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å¥
-		new Button(shell, SWT.NONE).setText("È·ï¿½ï¿½");
-		new Button(shell, SWT.NONE).setText("È¡ï¿½ï¿½");
+		// ¶¨ÒåÁ½¸ö°´Å¥
+		new Button(shell, SWT.NONE).setText("È·¶¨");
+		new Button(shell, SWT.NONE).setText("È¡Ïû");
 		shell.open();
 		shell.layout();
 		while (!shell.isDisposed()) {

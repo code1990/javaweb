@@ -1,6 +1,3 @@
-/**
- * @author: WangJinTao,MengQingChang 2006 
- */
 package chapter12;
 
 import org.eclipse.jface.viewers.*;
@@ -14,13 +11,13 @@ public class TableViewerCellModifier implements ICellModifier {
 		this.viewer = viewer;
 	}
 
-	// ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½Ô±ï¿½ï¿½Þ¸Ä£ï¿½trueÎªï¿½ï¿½ï¿½Þ¸ï¿½
+	// ·µ»ØÊÇ·ñ¿ÉÒÔ±»ÐÞ¸Ä£¬trueÎª¿ÉÐÞ¸Ä
 	public boolean canModify(Object element, String property) {
 
 		return true;
 	}
 
-	// ï¿½ï¿½ï¿½ï¿½ï¿½Ðµï¿½Öµ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½elementï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½propertyï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	// ·µ»ØÁÐµÄÖµ £º²ÎÊýelement±í¸ñ¼ÇÂ¼¶ÔÏó£¬property±í¸ñÁÐÊôÐÔ
 	public Object getValue(Object element, String property) {
 		People p = (People) element;
 		if (TableViewerEditorClass.ID.equals(property))
@@ -28,7 +25,7 @@ public class TableViewerCellModifier implements ICellModifier {
 		else if (TableViewerEditorClass.NAME.equals(property))
 			return p.getName();
 		else if (TableViewerEditorClass.MALE.equals(property))
-			return p.getMale();
+			return new Object();
 		else if (TableViewerEditorClass.AGE.equals(property))
 			return null;
 		else if (TableViewerEditorClass.POSITION.equals(property))
@@ -40,8 +37,8 @@ public class TableViewerCellModifier implements ICellModifier {
 	}
 
 	/**
-	 *  ï¿½Þ¸Ä±ï¿½ï¿½Ôªï¿½Ðµï¿½Öµï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½elementï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½
-	 *  propertyï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô£ï¿½valueï¿½Þ¸Äµï¿½ï¿½ï¿½Öµ
+	 *  ÐÞ¸Ä±í¸ñµ¥ÔªÖÐµÄÖµ£º ²ÎÊýelement±í¸ñ¼ÇÂ¼¶ÔÏó£¬
+	 *  property±í¸ñÁÐÊôÐÔ£¬valueÐÞ¸ÄµÄÐÂÖµ
 	 */
 	public void modify(Object element, String property, Object value) {
 
@@ -55,12 +52,12 @@ public class TableViewerCellModifier implements ICellModifier {
 
 		else if (TableViewerEditorClass.POSITION.equals(property))
 
-			p.setPosition(Position.position[(Integer) value]);
+			p.setPosition(Position.position[0]);
 
 		else if (TableViewerEditorClass.COLOR.equals(property))
 			p.setColor((RGB) value);
 
-		// ï¿½Þ¸Ä¸ï¿½ï¿½ï¿½
+		// ÐÞ¸Ä¸üÐÂ
 		viewer.refresh();
 	}
 }

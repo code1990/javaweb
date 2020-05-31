@@ -17,12 +17,12 @@ public class MessageDialog1Class {
 		shell.setSize(300, 170);
 		shell.setText("SWT Application");
 		Button button = new Button(shell, SWT.NONE);
-		button.setText("È·ï¿½ï¿½");
+		button.setText("È·¶¨");
 		button.setBounds(20, 30, 80, 25);
 		button.addSelectionListener(new SelectionAdapter() {
 			public void widgetSelected(SelectionEvent e) {
 				MessageDialog messageDialog = new MessageDialog(null,
-						"MessageDialogï¿½Ô»ï¿½ï¿½ï¿½", null,
+						"MessageDialog¶Ô»°¿ò", null,
 						"Welcome to use MessageDialog!!!",
 						MessageDialog.QUESTION,
 						new String[] { "OK", "Cancel" }, 0);

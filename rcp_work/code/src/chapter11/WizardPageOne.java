@@ -17,38 +17,38 @@ public class WizardPageOne extends WizardPage implements ModifyListener {
 	private GridData grid;
 	protected WizardPageOne() {
 		super("");
-		setTitle("ï¿½ï¿½ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢");
-		setMessage("×¢ï¿½â£ºï¿½ï¿½ï¿½ï¿½È·ï¿½ï¿½Ð´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½", IMessageProvider.INFORMATION);
+		setTitle("Ìí¼ÓÑ§Éú»ù±¾ÐÅÏ¢");
+		setMessage("×¢Òâ£ºÇëÕýÈ·ÌîÐ´ÈçÏÂÐÅÏ¢£¡", IMessageProvider.INFORMATION);
 	
 	}
 	public void createControl(Composite parent) {
 		Composite comp = new Composite(parent, SWT.NONE);
 		comp.setLayoutData(new GridData(GridData.FILL_BOTH));
 		comp.setLayout(new GridLayout(2, false));
-		// ï¿½ï¿½ï¿½Æ¡ï¿½Ñ§ï¿½Å¡ï¿½ï¿½ï¿½Ç©
-		new Label(comp, SWT.NONE).setText("Ñ§ï¿½Å£ï¿½");
-		// ï¿½ï¿½ï¿½Æ¡ï¿½Ñ§ï¿½Å¡ï¿½ï¿½Ä±ï¿½ï¿½ï¿½
+		// ¶¨ÖÆ¡°Ñ§ºÅ¡±±êÇ©
+		new Label(comp, SWT.NONE).setText("Ñ§ºÅ£º");
+		// ¶¨ÖÆ¡°Ñ§ºÅ¡±ÎÄ±¾¿ò
 		textID = new Text(comp, SWT.BORDER);
 		grid = new GridData(GridData.FILL_HORIZONTAL);
 		textID.setLayoutData(grid);
 		textID.addModifyListener(this);
-		// ï¿½ï¿½ï¿½Æ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç©
-		new Label(comp, SWT.NONE).setText("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
-		// ï¿½ï¿½ï¿½Æ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½
+		// ¶¨ÖÆ¡°ÐÕÃû¡±±êÇ©
+		new Label(comp, SWT.NONE).setText("ÐÕÃû£º");
+		// ¶¨ÖÆ¡°ÐÕÃû¡±ÎÄ±¾¿ò
 		textName = new Text(comp, SWT.BORDER);
 		grid = new GridData(GridData.FILL_HORIZONTAL);
 		textName.setLayoutData(grid);
 		textName.addModifyListener(this);
-		// ï¿½ï¿½ï¿½Æ¡ï¿½ï¿½Ô„eï¿½ï¿½ï¿½ï¿½Ç©
-		new Label(comp, SWT.NONE).setText("ï¿½Ô„eï¿½ï¿½");
+		// ¶¨ÖÆ¡°ÐÔ„e¡±±êÇ©
+		new Label(comp, SWT.NONE).setText("ÐÔ„e£º");
 		combo = new Combo(comp, SWT.DROP_DOWN | SWT.READ_ONLY);
-		combo.setItems(new String[] { "ï¿½ï¿½", "Å®" });
+		combo.setItems(new String[] { "ÄÐ", "Å®" });
 		grid = new GridData(GridData.FILL_HORIZONTAL);
 		combo.setLayoutData(grid);
 		combo.addModifyListener(this);
-		// ï¿½ï¿½ï¿½Æ¡ï¿½Emailï¿½ï¿½ï¿½ï¿½Ç©
+		// ¶¨ÖÆ¡°Email¡±±êÇ©
 		new Label(comp, SWT.None).setText("Email:");
-		// ï¿½ï¿½ï¿½Æ¡ï¿½Emailï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½
+		// ¶¨ÖÆ¡°Email¡±ÎÄ±¾¿ò
 		textEmail = new Text(comp, SWT.BORDER);
 		grid = new GridData(GridData.FILL_HORIZONTAL);
 		textEmail.setLayoutData(grid);
@@ -71,27 +71,27 @@ public class WizardPageOne extends WizardPage implements ModifyListener {
 	public String getEmail() {
 		return textEmail.getText();
 	}
-	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï·ï¿½ï¿½ï¿½
+	// ¼àÌýÊý¾ÝÊäÈëºÏ·¨ÐÔ
 	public void modifyText(ModifyEvent e) {
 		if (getID().length() == 0) {
-			setMessage("×¢ï¿½â£ºÑ§ï¿½ï¿½ï¿½î²»ï¿½ï¿½Îªï¿½Õ£ï¿½ï¿½ï¿½ï¿½ï¿½", IMessageProvider.WARNING);
+			setMessage("×¢Òâ£ºÑ§ºÅÏî²»ÄÜÎª¿Õ£¡£¡£¡", IMessageProvider.WARNING);
 			return;
 		}
 		if (getName().length() == 0) {
-			setMessage("×¢ï¿½â£ºï¿½ï¿½ï¿½ï¿½ï¿½î²»ï¿½ï¿½Îªï¿½Õ£ï¿½ï¿½ï¿½ï¿½ï¿½", IMessageProvider.WARNING);
+			setMessage("×¢Òâ£ºÐÕÃûÏî²»ÄÜÎª¿Õ£¡£¡£¡", IMessageProvider.WARNING);
 			return;
 		}
 		if (getCombo().length() == 0) {
-			setMessage("×¢ï¿½â£ºï¿½Ô„eï¿½î²»ï¿½ï¿½Îªï¿½Õ£ï¿½ï¿½ï¿½ï¿½ï¿½", IMessageProvider.WARNING);
+			setMessage("×¢Òâ£ºÐÔ„eÏî²»ÄÜÎª¿Õ£¡£¡£¡", IMessageProvider.WARNING);
 			return;
 		}
 		if (getEmail().length() == 0 || getEmail().indexOf("@") < 0) {
-			setMessage("×¢ï¿½â£ºEmailï¿½ï¿½Ê½ï¿½ï¿½ï¿½Emailï¿½ï¿½Îªï¿½ï¿½", IMessageProvider.ERROR);
+			setMessage("×¢Òâ£ºEmail¸ñÊ½´í»òEmailÏîÎª¿Õ", IMessageProvider.ERROR);
 			return;
 		}
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½Ï¢
+		// Ïû³ý´íÎóÌáÊ¾ÐÅÏ¢
 		 setMessage(null);
-		// Ê¹ï¿½ï¿½É°ï¿½Å¥ï¿½ï¿½ï¿½Ú¼ï¿½ï¿½ï¿½×´Ì¬
+		// Ê¹Íê³É°´Å¥´¦ÓÚ¼¤»î×´Ì¬
 		setPageComplete(true);
 	}
 }

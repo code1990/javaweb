@@ -12,28 +12,28 @@ public class MenuExample1 {
 		final Display display = Display.getDefault();
 		final Shell shell = new Shell();
 		shell.setSize(500, 375);
-		shell.setText("ï¿½Ëµï¿½Êµï¿½ï¿½");
-		// ï¿½ï¿½ï¿½Ëµï¿½ï¿½ï¿½ï¿½ï¿½SWT.BARï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ëµï¿½ï¿½ï¿½
+		shell.setText("²Ëµ¥ÊµÀı");
+		// Ö÷²Ëµ¥À¸£¬SWT.BARÓÃÓÚÖ÷²Ëµ¥À¸
 		Menu menu = new Menu(shell, SWT.BAR);
-		// ï¿½ï¿½Óµï¿½shellï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// Ìí¼Óµ½shellÈİÆ÷ÉÏ
 		shell.setMenuBar(menu);
 		/**
-		 * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ëµï¿½ï¿½ï¿½"ï¿½Ã»ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½"ï¿½Ëµï¿½ï¿½ï¿½ 
-		 * SWT.CASCADE Ó¦ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ÖµÄ²Ëµï¿½ï¿½ï¿½
+		 * ÉèÖÃÖ÷²Ëµ¥µÄ"ÓÃ»§ĞÅÏ¢¹ÜÀí"²Ëµ¥Ïî 
+		 * SWT.CASCADE Ó¦ÓÃÓÚÒÔÏÂÀ­·½Ê½³öÏÖµÄ²Ëµ¥¡£
 		 */
 		MenuItem item1 = new MenuItem(menu, SWT.CASCADE);
-		item1.setText("ï¿½Ã»ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½");
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ëµï¿½ï¿½ï¿½""Ñ§ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½"ï¿½Ëµï¿½ï¿½ï¿½
+		item1.setText("ÓÃ»§ĞÅÏ¢¹ÜÀí");
+		// ÉèÖÃÖ÷²Ëµ¥µÄ""Ñ§ÉúĞÅÏ¢¹ÜÀí"²Ëµ¥Ïî
 		MenuItem item2 = new MenuItem(menu, SWT.CASCADE);
-		item2.setText("Ñ§ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½");
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ëµï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ëµï¿½
+		item2.setText("Ñ§ÉúĞÅÏ¢¹ÜÀí");
+		// ÉèÖÃÖ÷²Ëµ¥µÄÒ»¼¶ÏÂÀ­²Ëµ¥
 		Menu newFile = new Menu(shell, SWT.DROP_DOWN);
 		item1.setMenu(newFile);
 		MenuItem itemA = new MenuItem(newFile, SWT.CASCADE);
-		itemA.setText("ï¿½Ã»ï¿½ï¿½ï¿½Ï¢");
+		itemA.setText("ÓÃ»§ĞÅÏ¢");
 		MenuItem itemB = new MenuItem(newFile, SWT.CASCADE);
-		itemB.setText("ï¿½Ë³ï¿½");
-		// ï¿½ï¿½ï¿½Ë³ï¿½ï¿½Ëµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½
+		itemB.setText("ÍË³ö");
+		// ¸øÍË³ö²Ëµ¥ÏîÌí¼ÓÊÂ¼ş´¦Àí
 		itemB.addSelectionListener(new SelectionAdapter() {
 			public void widgetSelected(SelectionEvent e) {
 				System.exit(0);
@@ -41,23 +41,23 @@ public class MenuExample1 {
 		});
 		Menu File = new Menu(shell, SWT.DROP_DOWN);
 		itemA.setMenu(File);
-		// ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½Í£ï¿½Ñ¡ï¿½Ğºï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ğ¡ï¿½ï¿½ï¿½ï¿½
+		// ¸´Ñ¡ÀàĞÍ£¬Ñ¡ÖĞºóÇ°Ãæ»á´øÓĞÒ»¸öĞ¡¹´¡£
 		MenuItem itema = new MenuItem(File, SWT.CHECK);
-		itema.setText("ï¿½Ã»ï¿½ï¿½ï¿½Ï¢×¢ï¿½ï¿½");
+		itema.setText("ÓÃ»§ĞÅÏ¢×¢²á");
 		itema.addSelectionListener(new SelectionAdapter() {
 			public void widgetSelected(SelectionEvent e) {
 				MessageDialog
-						.openInformation(shell, " ï¿½ï¿½Ï¢ï¿½ï¿½Ê¾", "ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½Ë¡ï¿½ï¿½Ã»ï¿½ï¿½ï¿½Ï¢×¢ï¿½á¡±ï¿½Ëµï¿½ï¿½ï¿½");
+						.openInformation(shell, " ĞÅÏ¢ÌáÊ¾", "ÄúÑ¡ÔñÁË¡°ÓÃ»§ĞÅÏ¢×¢²á¡±²Ëµ¥Ïî");
 			}
 		});
-		// ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½Í£ï¿½Ñ¡ï¿½Ğºï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ô²ï¿½ã¡£
+		// µ¥Ñ¡ÀàĞÍ£¬Ñ¡ÖĞºóÇ°Ãæ»á´øÓĞÒ»¸öÔ²µã¡£
 		MenuItem itemb = new MenuItem(File, SWT.RADIO);
-		itemb.setText("É¾ï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½Ï¢");
-		// ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Í£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ëµï¿½ï¿½Ï²ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½
+		itemb.setText("É¾³ıÓÃ»§ĞÅÏ¢");
+		// ·Ö¸îÀàĞÍ£¬ÔÚÏÂÀ­²Ëµ¥ÉÏ²úÉú·Ö¸î·û¡£
 		new MenuItem(File, SWT.SEPARATOR);
-		// ï¿½ï¿½Í¨ï¿½ï¿½ï¿½Í£ï¿½Ñ¡ï¿½Ğºï¿½Ö±ï¿½Ó²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä·ï¿½ï¿½ï¿½
+		// ÆÕÍ¨ÀàĞÍ£¬Ñ¡ÖĞºóÖ±½Ó²úÉú¶¯×÷µÄ·¢Éú
 		MenuItem itemd = new MenuItem(File, SWT.PUSH);
-		itemd.setText("ï¿½Ş¸ï¿½ï¿½Ã»ï¿½ï¿½ï¿½Ï¢");
+		itemd.setText("ĞŞ¸ÄÓÃ»§ĞÅÏ¢");
 		shell.open();
 		shell.layout();
 		while (!shell.isDisposed()) {

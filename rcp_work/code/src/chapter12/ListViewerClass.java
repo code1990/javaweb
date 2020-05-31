@@ -1,6 +1,3 @@
-/**
- * @author: WangJinTao,MengQingChang 2006
- */
 package chapter12;
 
 import java.util.ArrayList;
@@ -33,7 +30,7 @@ public class ListViewerClass extends ApplicationWindow {
 	protected void configureShell(Shell shell) {
 		super.configureShell(shell);
 		shell.setSize(210, 250);
-		shell.setText("ListViewerÊµï¿½ï¿½");
+		shell.setText("ListViewerÊµÀý");
 	}
 
 	protected Control createContents(Composite parent) {
@@ -54,44 +51,44 @@ public class ListViewerClass extends ApplicationWindow {
 
 		{
 			Animals elephant = new Animals();
-			elephant.setAnimal("ï¿½ï¿½ï¿½ï¿½");
+			elephant.setAnimal("´óÏó");
 			animalList.add(elephant);
 
 		}
 
 		{
 			Animals cetacean = new Animals();
-			cetacean.setAnimal("ï¿½ï¿½ï¿½ï¿½");
+			cetacean.setAnimal("¾¨Óã");
 			animalList.add(cetacean);
 
 		}
 		{
 			Animals leopard = new Animals();
-			leopard.setAnimal("ï¿½Ô±ï¿½");
+			leopard.setAnimal("ÁÔ±ª");
 			animalList.add(leopard);
 
 		}
 		{
 			Animals tiger = new Animals();
-			tiger.setAnimal("ï¿½Ï»ï¿½");
+			tiger.setAnimal("ÀÏ»¢");
 			animalList.add(tiger);
 
 		}
 		{
 			Animals shark = new Animals();
-			shark.setAnimal("ï¿½ï¿½ï¿½ï¿½");
+			shark.setAnimal("öèÓã");
 			animalList.add(shark);
 
 		}
 		{
 			Animals turtle = new Animals();
-			turtle.setAnimal("ï¿½ï¿½ï¿½ï¿½");
+			turtle.setAnimal("º£¹ê");
 			animalList.add(turtle);
 
 		}
 		{
 			Animals lion = new Animals();
-			lion.setAnimal("Ê¨ï¿½ï¿½");
+			lion.setAnimal("Ê¨×Ó");
 			animalList.add(lion);
 
 		}

@@ -33,29 +33,29 @@ public class JFaceMenuManager extends ApplicationWindow {
 
 	protected Control createContents(Composite parent) {
 		getShell().setSize(400, 250);
-		getShell().setText("MenuManagerÊµï¿½ï¿½");
+		getShell().setText("MenuManagerÊµÀý");
 		Composite composite = new Composite(parent, SWT.NONE);
 		composite.setLayout(new GridLayout(1, true));
 		Text text = new Text(composite, SWT.BORDER);
 		text.setLayoutData(new GridData(GridData.FILL_BOTH));
 		label = new Label(composite, SWT.NONE);
 		label.setLayoutData(new GridData(GridData.FILL_HORIZONTAL));
-		label.setText("ï¿½ï¿½Ï¢ï¿½ï¿½Ê¾");
+		label.setText("ÐÅÏ¢ÌáÊ¾");
 		return composite;
 	}
 
 	protected MenuManager createMenuManager() {
 		MenuManager menuBar = new MenuManager();
-		MenuManager fileMenu = new MenuManager("ï¿½Ä¼ï¿½(&F)");
+		MenuManager fileMenu = new MenuManager("ÎÄ¼þ(&F)");
 		MenuManager newMenu = new MenuManager("&New");
 		fileMenu.add(newMenu);
-		// ï¿½ï¿½ï¿½pushActionï¿½ï¿½ï¿½ï¿½
+		// Ìí¼ÓpushAction¶¯×÷
 		newMenu.add(pushAction);
-		// ï¿½Ö¸ï¿½ï¿½ï¿½
+		// ·Ö¸îÏß
 		fileMenu.add(new Separator());
-		// ï¿½ï¿½ï¿½checkBoxAcionï¿½ï¿½ï¿½ï¿½
+		// Ìí¼ÓcheckBoxAcion¶¯×÷
 		fileMenu.add(checkBoxAction);
-		// ï¿½ï¿½ï¿½radioActionï¿½ï¿½ï¿½ï¿½
+		// Ìí¼ÓradioAction¶¯×÷
 		fileMenu.add(radioAction);
 		menuBar.add(fileMenu);
 		return menuBar;
@@ -68,7 +68,7 @@ public class JFaceMenuManager extends ApplicationWindow {
 		}
 
 		public void run() {
-			label.setText("PushÐ§ï¿½ï¿½");
+			label.setText("PushÐ§¹û");
 		}
 	}
 
@@ -79,7 +79,7 @@ public class JFaceMenuManager extends ApplicationWindow {
 		}
 
 		public void run() {
-			label.setText("ï¿½ï¿½Ñ¡ï¿½ï¿½Å¥Ð§ï¿½ï¿½");
+			label.setText("¸´Ñ¡°´Å¥Ð§¹û");
 		}
 	}
 
@@ -90,7 +90,7 @@ public class JFaceMenuManager extends ApplicationWindow {
 		}
 
 		public void run() {
-			label.setText("ï¿½ï¿½Ñ¡ï¿½ï¿½Å¥Ð§ï¿½ï¿½");
+			label.setText("µ¥Ñ¡°´Å¥Ð§¹û");
 		}
 	}
 

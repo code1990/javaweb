@@ -17,12 +17,12 @@ public class ScaleExample {
 	public ScaleExample() {
 		final Display display = Display.getDefault();
 		final Shell shell = new Shell(new Shell());
-		shell.setText("ScaleÊµï¿½ï¿½");
+		shell.setText("ScaleÊµÀý");
 		shell.setSize(180, 260);
 		shell.setLayout(new GridLayout(3, true));
 		{
 			label = new Label(shell, SWT.NONE);
-			label.setText("ï¿½ï¿½ï¿½ï¿½:");
+			label.setText("ÒôÁ¿:");
 			GridData gridlabel = new GridData();
 			gridlabel.horizontalSpan = 3;
 			gridlabel.horizontalIndent = 30;
@@ -42,7 +42,7 @@ public class ScaleExample {
 			scale.addSelectionListener(new SelectionAdapter() {
 				public void widgetSelected(SelectionEvent e) {
 					int Value = scale.getMaximum() - scale.getSelection();
-					text.setText("ï¿½ï¿½ï¿½ï¿½Öµ:" + Value);
+					text.setText("ÒôÁ¿Öµ:" + Value);
 				}
 			});
 		}

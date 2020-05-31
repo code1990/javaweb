@@ -16,7 +16,7 @@ public class JFaceTriggerClass extends ApplicationWindow {
 
 	public JFaceTriggerClass() {
 		super(null);
-		// ï¿½ï¿½ï¿½×´Ì¬ï¿½ï¿½
+		// Ìí¼Ó×´Ì¬Ïß
 		addStatusLine();
 	}
 
@@ -27,11 +27,11 @@ public class JFaceTriggerClass extends ApplicationWindow {
 	}
 
 	protected Control createContents(Composite parent) {
-		// ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
-		getShell().setText("ActionÊµï¿½ï¿½");
-		// ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½ï¿½Ğ¡
+		// ÉèÖÃ´°Ìå±êÌâ
+		getShell().setText("ActionÊµÀı");
+		// ÉèÖÃ´°Ìå´óĞ¡
 		parent.setSize(350, 240);
-		// ï¿½Ú´ï¿½ï¿½å½¨ï¿½ï¿½ï¿½ï¿½Å¥
+		// ÔÚ´°Ìå½¨Á¢°´Å¥
 		actionContributonItem.fill(parent);
 		return parent;
 	}

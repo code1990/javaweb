@@ -19,28 +19,28 @@ public class CTabFolderExample {
 		final Display display = Display.getDefault();
 		final Shell shell = new Shell();
 		shell.setSize(400, 300);
-		shell.setText("CTabFolderÊµï¿½ï¿½");
-		shell.setLayout(new GridLayout(7, false));// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îª7ï¿½ï¿½
+		shell.setText("CTabFolderÊµÀý");
+		shell.setLayout(new GridLayout(7, false));// ÉèÖÃÈÝÆ÷Îª7ÁÐ
 		{
 			list = new List(shell, SWT.BORDER);
 			list.setItems(new String[] { "Item1", "Item2", "Item3", "Item4",
 					"Item5" });
 			GridData gridA = new GridData(GridData.FILL_VERTICAL);
-			gridA.horizontalSpan = 4;// Ë®Æ½Ç¿Õ¼4ï¿½ï¿½
-			gridA.widthHint = 60;// Ê¹ï¿½ï¿½ï¿½Îª60ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
-			gridA.horizontalIndent = 5;// ï¿½ï¿½ï¿½ï¿½Listï¿½ï¿½ï¿½ï¿½shellï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß¿ï¿½Îª5ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+			gridA.horizontalSpan = 4;// Ë®Æ½Ç¿Õ¼4ÁÐ
+			gridA.widthHint = 60;// Ê¹¿í¶ÈÎª60¸öÏñËØ
+			gridA.horizontalIndent = 5;// ÉèÖÃList¾àÀëshellÈÝÆ÷×ó±ß¿òÎª5¸öÏñËØ
 			list.setLayoutData(gridA);
 		}
 		{
 			comp = new Composite(shell, SWT.BORDER);
 			GridData gridB = new GridData(GridData.FILL_BOTH);
-			// Ê¹compï¿½ï¿½ï¿½Ë«ï¿½ï¿½ï¿½ï¿½ï¿½
+			// Ê¹compÃæ°åË«Ïò³äÂú
 			gridB.horizontalSpan = 3;
 			comp.setLayoutData(gridB);
 			comp.setLayout(new GridLayout());
 		}
 		CTab = new CTabFolder(comp, SWT.BORDER);
-		// ï¿½ï¿½ï¿½ï¿½CTabItemï¿½ï¿½ï¿½ï¿½Item1
+		// ¶¨ÒåCTabItem¶ÔÏóItem1
 		CTab.setLayoutData(new GridData(GridData.FILL, GridData.FILL, true,
 				false));
 		CTab.setSimple(false);
@@ -48,12 +48,12 @@ public class CTabFolderExample {
 		Item1.setText("Item1");
 		Text text1 = new Text(CTab, SWT.MULTI);
 		Item1.setControl(text1);
-		// ï¿½ï¿½ï¿½ï¿½text1ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É«
+		// ÉèÖÃtext1±³¾°ÑÕÉ«
 		text1.setBackground(display.getSystemColor(SWT.COLOR_YELLOW));
 		final CTabItem Item2 = new CTabItem(CTab, SWT.CLOSE, 1);
 		Item2.setText("Item2");
 		Text text2 = new Text(CTab, SWT.MULTI);
-		// ï¿½ï¿½ï¿½ï¿½text2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É«
+		// ÉèÖÃtext2±³¾°ÑÕÉ«
 		text2.setBackground(display.getSystemColor(SWT.COLOR_BLUE
 				| SWT.COLOR_BLACK));
 		Item2.setControl(text2);
@@ -72,27 +72,27 @@ public class CTabFolderExample {
 		Text text5 = new Text(CTab, SWT.MULTI);
 		text5.setBackground(display.getSystemColor(SWT.COLOR_CYAN));
 		Item5.setControl(text5);
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ó»¯±ï¿½Ç©ï¿½É¼ï¿½
+		// ÉèÖÃ×îÐ¡»¯£¬×î´ó»¯±êÇ©¿É¼û
 		CTab.setMinimizeVisible(true);
 		CTab.setMaximizeVisible(true);
 		CTab.setMaximized(true);
 		 
-		// ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½î¿¨ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ó»¯ºÍ»Ö¸ï¿½ï¿½ï¿½ï¿½Ü¡ï¿½
+		// ÉèÖÃÑ¡Ïî¿¨µÄ×îÐ¡»¯£¬×î´ó»¯ºÍ»Ö¸´¹¦ÄÜ¡£
 		CTab.addCTabFolder2Listener(new CTabFolder2Adapter() {
-			// Ê¹Ñ¡ï¿½î¿¨ï¿½ï¿½Ð¡ï¿½ï¿½
+			// Ê¹Ñ¡Ïî¿¨×îÐ¡»¯
 			public void minimize(CTabFolderEvent event) {
 				CTab.setMinimized(true);
 				comp.layout(true);
 			}
 
-			// Ê¹Ñ¡ï¿½î¿¨ï¿½ï¿½ï¿½
+			// Ê¹Ñ¡Ïî¿¨×î´ó»¯
 			public void maximize(CTabFolderEvent event) {
 				CTab.setMaximized(true);
 				CTab.setLayoutData(new GridData(GridData.FILL_BOTH));
 				comp.layout(true);
 			}
 
-			// Ê¹Ñ¡ï¿½î¿¨ï¿½Ö¸ï¿½
+			// Ê¹Ñ¡Ïî¿¨»Ö¸´
 			public void restore(CTabFolderEvent event) {
 				CTab.setMinimized(false);
 				CTab.setMaximized(false);
@@ -105,10 +105,10 @@ public class CTabFolderExample {
 			public void widgetSelected(SelectionEvent e) {
 				int selectionIndex = list.getSelectionIndex();
 				if (selectionIndex == 0) {
-					// ï¿½ï¿½Item1Îªï¿½ï¿½Ç°Ñ¡ï¿½ï¿½ï¿½ï¿½
+					// ÉèItem1Îªµ±Ç°Ñ¡ÔñÏî
 					CTab.setSelection(Item1);
 				} else if (selectionIndex == 1) {
-					// ï¿½ï¿½Item2Îªï¿½ï¿½Ç°Ñ¡ï¿½ï¿½ï¿½ï¿½
+					// ÉèItem2Îªµ±Ç°Ñ¡ÔñÏî
 					CTab.setSelection(Item2);
 				} else if (selectionIndex == 2) {
 					CTab.setSelection(Item3);

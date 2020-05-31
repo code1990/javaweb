@@ -18,118 +18,118 @@ public class TableExample3 {
 
 	private long time;
 
-	// ï¿½è¶¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îª5,ï¿½ï¿½ï¿½ï¿½Îª100
-	static final int COLUMNS = 5, ROWS = 1000;
+	// Éè¶¨±íµÄÁÐÊýÎª5,ÐÐÊýÎª100
+		static final int COLUMNS = 5, ROWS = 1000;
 
-	// ï¿½ï¿½ï¿½ï¿½ï¿½Î¬ï¿½ï¿½ï¿½ï¿½
-	static final String[][] DATA = new String[ROWS][COLUMNS];
-	static {// Ê¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½100ï¿½ï¿½5ï¿½ï¿½
-		for (int i = 0; i < ROWS; i++) {
-			for (int j = 0; j < COLUMNS; j++) {
-				DATA[i][j] = "Item " + i + "-" + j;
+		// ¶¨Òå¶þÎ¬Êý×é
+		static final String[][] DATA = new String[ROWS][COLUMNS];
+		static {// Ê¹Êý×éÓÐ100ÐÐ5ÁÐ
+			for (int i = 0; i < ROWS; i++) {
+				for (int j = 0; j < COLUMNS; j++) {
+					DATA[i][j] = "Item " + i + "-" + j;
+				}
 			}
 		}
-	}
 
-	// ï¿½ï¿½ï¿½ì·½ï¿½ï¿½
-	public TableExample3() {
-		final Display display = Display.getDefault();
-		final Shell shell = new Shell(SWT.MIN);
-		shell.setSize(470, 280);
-		shell.setText("TableÊµï¿½ï¿½");
-		shell.setLayout(new GridLayout(3, false));
-		table = new Table(shell, SWT.MULTI | SWT.BORDER | SWT.FULL_SELECTION);
-		GridData gridtable = new GridData();
-		gridtable.horizontalSpan = 3;
-		gridtable.horizontalIndent = 15;
-		gridtable.verticalIndent = 15;
-		gridtable.heightHint = 100;
-		gridtable.widthHint = 400;
-		table.setLayoutData(gridtable);
-		table.setHeaderVisible(true);
-		table.setLinesVisible(true);
-		for (int i = 0; i < COLUMNS; i++) {
-			TableColumn column = new TableColumn(table, SWT.NONE);
-			column.setText("Column" + i);
-			column.setWidth(80);
-		}
-		progressBar = new ProgressBar(shell, SWT.SMOOTH);
-		GridData gridprogressBar = new GridData();
-		gridprogressBar.horizontalSpan = 3;
-		gridprogressBar.horizontalIndent = 15;
-		gridprogressBar.widthHint = 422;
-		progressBar.setLayoutData(gridprogressBar);
-		progressBar.setMaximum(ROWS - 1);
-		Button addButton = new Button(shell, SWT.PUSH);
-		addButton.setText("ï¿½ï¿½ï¿½");
-		GridData gridaddButton = new GridData();
-		gridaddButton.horizontalIndent = 147;
-		gridaddButton.verticalIndent = 30;
-		gridaddButton.widthHint = 80;
-		addButton.setLayoutData(gridaddButton);
-		addButton.addSelectionListener(new SelectionAdapter() {
-			public void widgetSelected(SelectionEvent e) {
-				// ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ß³ï¿½
-				Thread thread = new Thread() {
-					public void run() {
-						for (i = 0; i < ROWS; i++) {
-							try {
+		// ¹¹Ôì·½·¨
+		public TableExample3() {
+			final Display display = Display.getDefault();
+			final Shell shell = new Shell(SWT.MIN);
+			shell.setSize(470, 280);
+			shell.setText("TableÊµÀý");
+			shell.setLayout(new GridLayout(3, false));
+			table = new Table(shell, SWT.MULTI | SWT.BORDER | SWT.FULL_SELECTION);
+			GridData gridtable = new GridData();
+			gridtable.horizontalSpan = 3;
+			gridtable.horizontalIndent = 15;
+			gridtable.verticalIndent = 15;
+			gridtable.heightHint = 100;
+			gridtable.widthHint = 400;
+			table.setLayoutData(gridtable);
+			table.setHeaderVisible(true);
+			table.setLinesVisible(true);
+			for (int i = 0; i < COLUMNS; i++) {
+				TableColumn column = new TableColumn(table, SWT.NONE);
+				column.setText("Column" + i);
+				column.setWidth(80);
+			}
+			progressBar = new ProgressBar(shell, SWT.SMOOTH);
+			GridData gridprogressBar = new GridData();
+			gridprogressBar.horizontalSpan = 3;
+			gridprogressBar.horizontalIndent = 15;
+			gridprogressBar.widthHint = 422;
+			progressBar.setLayoutData(gridprogressBar);
+			progressBar.setMaximum(ROWS - 1);
+			Button addButton = new Button(shell, SWT.PUSH);
+			addButton.setText("Ìí¼Ó");
+			GridData gridaddButton = new GridData();
+			gridaddButton.horizontalIndent = 147;
+			gridaddButton.verticalIndent = 30;
+			gridaddButton.widthHint = 80;
+			addButton.setLayoutData(gridaddButton);
+			addButton.addSelectionListener(new SelectionAdapter() {
+				public void widgetSelected(SelectionEvent e) {
+					// ´´½¨Ò»¸öÏß³Ì
+					Thread thread = new Thread() {
+						public void run() {
+							for (i = 0; i < ROWS; i++) {
+								try {
 
-								time = -System.currentTimeMillis();
-							} catch (Throwable e) {
-							}
-							display.asyncExec(new Runnable() {// ï¿½ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½
-										public void run() {
-											item = new TableItem(table,
-													SWT.NULL);
-											// /ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
-											for (int j = 0; j < COLUMNS; j++) {
-												item.setText(j, DATA[i][j]);
+									time = -System.currentTimeMillis();
+								} catch (Throwable e) {
+								}
+								display.asyncExec(new Runnable() {// ÄäÃûÄÚ²¿Àà
+											public void run() {
+												item = new TableItem(table,
+														SWT.NULL);
+												// /Ïò±í¸ñÖÐÌí¼ÓÊý¾Ý
+												for (int j = 0; j < COLUMNS; j++) {
+													item.setText(j, DATA[i][j]);
+												}
+												// ¿ØÖÆ½ø¶ÈÌõµÄ½ø¶È
+												progressBar.setSelection(i);
 											}
-											// ï¿½ï¿½ï¿½Æ½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä½ï¿½ï¿½ï¿½
-											progressBar.setSelection(i);
-										}
-									});
+										});
+							}
 						}
-					}
-				};
-				thread.start();// ï¿½ï¿½ï¿½ï¿½ï¿½ß³ï¿½
+					};
+					thread.start();// Æô¶¯Ïß³Ì
+				}
+			});
+			Button deleteButton = new Button(shell, SWT.PUSH);
+			deleteButton.setText("É¾³ý");
+			GridData gridedeleteButton = new GridData();
+			gridedeleteButton.horizontalIndent = 20;
+			gridedeleteButton.verticalIndent = 30;
+			gridedeleteButton.widthHint = 80;
+			deleteButton.setLayoutData(gridedeleteButton);
+			deleteButton.addSelectionListener(new SelectionAdapter() {
+				public void widgetSelected(SelectionEvent e) {
+					// É¾³ý±íÖÐÑ¡ÖÐµÄÐÐ
+					table.remove(table.getSelectionIndices());
+				}
+			});
+			Button exitButton = new Button(shell, SWT.PUSH);
+			exitButton.setText("ÍË³ö");
+			GridData gridexitButton = new GridData();
+			gridexitButton.horizontalIndent = 20;
+			gridexitButton.verticalIndent = 30;
+			gridexitButton.widthHint = 80;
+			exitButton.setLayoutData(gridexitButton);
+			exitButton.addSelectionListener(new SelectionAdapter() {
+				public void widgetSelected(SelectionEvent e) {
+					shell.dispose();
+				}
+			});
+			shell.open();
+			shell.layout();
+			while (!shell.isDisposed()) {
+				if (!display.readAndDispatch())
+					display.sleep();
 			}
-		});
-		Button deleteButton = new Button(shell, SWT.PUSH);
-		deleteButton.setText("É¾ï¿½ï¿½");
-		GridData gridedeleteButton = new GridData();
-		gridedeleteButton.horizontalIndent = 20;
-		gridedeleteButton.verticalIndent = 30;
-		gridedeleteButton.widthHint = 80;
-		deleteButton.setLayoutData(gridedeleteButton);
-		deleteButton.addSelectionListener(new SelectionAdapter() {
-			public void widgetSelected(SelectionEvent e) {
-				// É¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½Ðµï¿½ï¿½ï¿½
-				table.remove(table.getSelectionIndices());
-			}
-		});
-		Button exitButton = new Button(shell, SWT.PUSH);
-		exitButton.setText("ï¿½Ë³ï¿½");
-		GridData gridexitButton = new GridData();
-		gridexitButton.horizontalIndent = 20;
-		gridexitButton.verticalIndent = 30;
-		gridexitButton.widthHint = 80;
-		exitButton.setLayoutData(gridexitButton);
-		exitButton.addSelectionListener(new SelectionAdapter() {
-			public void widgetSelected(SelectionEvent e) {
-				shell.dispose();
-			}
-		});
-		shell.open();
-		shell.layout();
-		while (!shell.isDisposed()) {
-			if (!display.readAndDispatch())
-				display.sleep();
 		}
-	}
 
-	public static void main(String[] args) {
-		new TableExample3();// ï¿½ï¿½ï¿½Ã¹ï¿½ï¿½ì·½ï¿½ï¿½
-	}
+		public static void main(String[] args) {
+			new TableExample3();// µ÷ÓÃ¹¹Ôì·½·¨
+		}
 }

@@ -12,29 +12,29 @@ public class VirtualLazyTreeExample {
 		final Display display = Display.getDefault();
 		final Shell shell = new Shell();
 		shell.setSize(500, 300);
-		shell.setText("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½");
-		// ï¿½ï¿½ï¿½Ã³ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½
+		shell.setText("ÐéÄâÀÁ¶èÊ÷ÊµÀý");
+		// ²ÉÓÃ³äÂúÊ½²¼¾Ö
 		shell.setLayout(new FillLayout());
-		// ï¿½ï¿½ï¿½ï¿½Treeï¿½ï¿½ï¿½ï¿½
+		// ´´½¨Tree¶ÔÏó
 		final Tree tree = new Tree(shell, SWT.VIRTUAL);
 		tree.addListener(SWT.SetData, new Listener() {
 			public void handleEvent(Event e) {
 				TreeItem treeItem = (TreeItem) e.item;
-				// ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ä¸ï¿½ï¿½ï¿½
+				// »ñµÃÒ»¸ö½áµãµÄ¸¸Ïî
 				TreeItem treeItemparent = treeItem.getParentItem();
-				// ï¿½ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½å·½ï¿½ï¿½
+				// µ÷ÓÃ×Ô¶¨Òå·½·¨
 				String name = getName(treeItem, treeItemparent);
-				treeItem.setText("ï¿½ï¿½ï¿½ " + name);
-				// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó½ï¿½ï¿½
+				treeItem.setText("½áµã " + name);
+				// ´´½¨Á½¸ö×Ó½áµã
 				treeItem.setItemCount(2);
 			}
 
 			private String getName(TreeItem treeItem, TreeItem treeItemparent) {
-				// ï¿½ï¿½ï¿½Ã½ï¿½ï¿½Ã»ï¿½Ð¸ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½0ï¿½ï¿½ï¿½ï¿½ï¿½Ë½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½0ï¿½ï¿½
+				// µ±¸Ã½áµãÃ»ÓÐ¸¸ÏîÊ±·µ»Ø0£¬¼´´Ë½áµãÎª¸ù½áµã,¸ù½áµãÃû×ÖÎª¡°½áµã0¡±
 				if (treeItemparent == null) {
 					return "0";
 				} else {
-					// ï¿½ï¿½ï¿½ï¿½ï¿½Ç¸ï¿½ï¿½ï¿½ã£¬ï¿½ò·µ»ï¿½Öµï¿½ï¿½Îªï¿½Ó½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+					// Èô²»ÊÇ¸ù½áµã£¬Ôò·µ»ØÖµ×÷Îª×Ó½áµãµÄÃû×Ö
 					int i = treeItemparent.indexOf(treeItem);
 					return getName(treeItemparent, treeItemparent
 							.getParentItem())

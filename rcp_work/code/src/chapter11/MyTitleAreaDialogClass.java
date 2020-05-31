@@ -8,80 +8,80 @@ import org.eclipse.swt.*;
 import org.eclipse.swt.layout.*;
 import org.eclipse.swt.widgets.*;
 /**
- * ï¿½ï¿½ï¿½ï¿½MyTitleAreaDialogClassï¿½ï¿½Ê¹ï¿½ï¿½ï¿½Ì³ï¿½ TitleAreaDialog ï¿½à£¬Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô»ï¿½ï¿½ï¿½ï¿½ Í¨ï¿½Ã¸ï¿½Ê½
+ * ½¨Á¢MyTitleAreaDialogClassÀàÊ¹Ëü¼Ì³Ð TitleAreaDialog Àà£¬Îª´´½¨±êÌâÇøÓò¶Ô»°¿òµÄ Í¨ÓÃ¸ñÊ½
  */
 public class MyTitleAreaDialogClass extends TitleAreaDialog {
 	public MyTitleAreaDialogClass(Shell shell) {
 		super(shell);
 	}
 	/**
-	 * ï¿½ï¿½ï¿½ï¿½ï¿½Ô»ï¿½ï¿½ï¿½ï¿½Ïµï¿½ï¿½ï¿½ï¿½ï¿½
+	 * ½¨Á¢¶Ô»°¿òÉÏµÄÄÚÈÝ
 	 * 
 	 */
 	protected Control createContents(Composite parent) {
 		Control contents = super.createContents(parent);
-		// ï¿½ï¿½ï¿½Ã±ï¿½ï¿½ï¿½
-		setTitle("ï¿½ï¿½ï¿½ï¿½");
-		// ï¿½ï¿½ï¿½Ã¶Ô»ï¿½ï¿½ï¿½ï¿½ï¿½Ê½Ð§ï¿½ï¿½
-		setMessage("ï¿½ï¿½ï¿½ï¿½TitleAreaDialog", IMessageProvider.INFORMATION);
-		// setErrorMessage("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½");
-		// setMessage("ï¿½ï¿½ï¿½ï¿½TitleAreaDialog", IMessageProvider.ERROR);
-		// setMessage("ï¿½ï¿½ï¿½ï¿½TitleAreaDialog", IMessageProvider.WARNING);
-		// setMessage("ï¿½ï¿½ï¿½ï¿½TitleAreaDialog", IMessageProvider.NONE);
+		// ÉèÖÃ±êÌâ
+		setTitle("±êÌâ");
+		// ÉèÖÃ¶Ô»°¿òÑùÊ½Ð§¹û
+		setMessage("ÕâÊÇTitleAreaDialog", IMessageProvider.INFORMATION);
+		// setErrorMessage("Çë¼ì²éÊä³öÊÇ·ñ³ö´í£¿");
+		// setMessage("ÕâÊÇTitleAreaDialog", IMessageProvider.ERROR);
+		// setMessage("ÕâÊÇTitleAreaDialog", IMessageProvider.WARNING);
+		// setMessage("ÕâÊÇTitleAreaDialog", IMessageProvider.NONE);
 		return contents;
 	}
 	protected Control createDialogArea(Composite parent) {
 		Composite composite = (Composite) super.createDialogArea(parent);
-		// ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½î¿¨
+		// ½¨Á¢Ñ¡Ïî¿¨
 		TabFolder tableFolder = new TabFolder(composite, SWT.NONE);
 		tableFolder.setLayoutData(new GridData(GridData.FILL_BOTH));
 		TabItem tabItem1 = new TabItem(tableFolder, SWT.NONE);
 		tabItem1.setText("Item1");
 		TabItem tabItem2 = new TabItem(tableFolder, SWT.NONE);
 		tabItem2.setText("Item2");
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// ½¨Á¢±í¸ñ
 		Table table = new Table(tableFolder, SWT.FULL_SELECTION | SWT.BORDER);
 		table.setLayoutData(new GridData(GridData.FILL_BOTH));
-		// ï¿½ï¿½Ê¾ï¿½ï¿½Í·ï¿½Í±ï¿½ï¿½ï¿½ï¿½
+		// ÏÔÊ¾±íÍ·ºÍ±í¸ñÏß
 		table.setHeaderVisible(true);
 		table.setLinesVisible(true);
 		tabItem1.setControl(table);
-		// ï¿½ï¿½ï¿½ï¿½ï¿½Ð¿ï¿½ï¿½Îª80ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// ½¨Á¢ÁÐ¿í¶ÈÎª80¸öÏñËØ
 		TableColumn one = new TableColumn(table, SWT.LEFT);
-		one.setText("Ô±ï¿½ï¿½ï¿½ï¿½");
+		one.setText("Ô±¹¤ºÅ");
 		one.setWidth(80);
 		TableColumn two = new TableColumn(table, SWT.LEFT);
-		two.setText("ï¿½ï¿½ï¿½ï¿½");
+		two.setText("ÐÕÃû");
 		two.setWidth(80);
 		TableColumn three = new TableColumn(table, SWT.LEFT);
 		three.setText("Ö°Î»");
 		three.setWidth(80);
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// Ìí¼ÓÊý¾Ý
 		TableItem item = new TableItem(table, SWT.NONE);
 		item.setText(0, "20020001");
-		item.setText(1, "ï¿½ï¿½Ö¾ï¿½ï¿½");
-		item.setText(2, "ï¿½ï¿½ï¿½ñ²¿¾ï¿½ï¿½ï¿½");
+		item.setText(1, "ÔøÖ¾¹â");
+		item.setText(2, "ÉÌÎñ²¿¾­Àí");
 		
 item = new TableItem(table, SWT.NONE);
 		item.setText(0, "20020002");
-		item.setText(1, "ï¿½ï¿½Ö¾Ç¿");
-		item.setText(2, "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+		item.setText(1, "ÕÅÖ¾Ç¿");
+		item.setText(2, "¼¼Êõ²¿¾­Àí");
 
 		item = new TableItem(table, SWT.NONE);
 		item.setText(0, "20020003");
-		item.setText(1, "ï¿½ï¿½ï¿½Ã·");
-		item.setText(2, "ï¿½ï¿½ï¿½ñ²¿¾ï¿½ï¿½ï¿½");
+		item.setText(1, "ÀîºèÃ·");
+		item.setText(2, "²ÆÎñ²¿¾­Àí");
 
 		return composite;
 	}
 	 /**
-	  * ï¿½ï¿½SWT.RESIZEï¿½ï¿½SWT.MAXï¿½ï¿½SWT.MINï¿½Ö±ï¿½ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½Ô±ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ó»¯¡ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½
+	  * ÓÃSWT.RESIZE¡¢SWT.MAX¡¢SWT.MIN·Ö±ðÉèÖÃ´°¿ÚÎª¿ÉÒÔ±ä´óÐ¡¡¢´°¿Ú¿É×î ´ó»¯¡¢×îÐ¡»¯
 	  */
 	protected int getShellStyle() {
 		return super.getShellStyle() | SWT.RESIZE | SWT.MAX | SWT.MIN;
 	}
 	/**
-	 * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å¥ï¿½ï¿½ï¿½ï¿½È·ï¿½Ï¡ï¿½È¡ï¿½ï¿½ï¿½ï¿½Å¥
+	 * ½¨Á¢°´Å¥¡ª¡ªÈ·ÈÏ¡¢È¡Ïû°´Å¥
 	 */
 	protected void createButtonsForButtonBar(Composite parent) {
 		createButton(parent, IDialogConstants.OK_ID, IDialogConstants.OK_LABEL,

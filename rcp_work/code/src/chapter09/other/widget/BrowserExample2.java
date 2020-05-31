@@ -9,9 +9,9 @@ import org.eclipse.swt.widgets.*;
 public class BrowserExample2 {
 	String html;
 	public BrowserExample2() {
-		// ï¿½ï¿½ï¿½Ãµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// ÉèÖÃµ¼º½¿ò¼Ü
 		html = "</html></head>";
-		// ï¿½ï¿½ï¿½Ã¿ï¿½Ü±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ¼25%ï¿½ï¿½ï¿½Ò±ï¿½Õ¼75%
+		// ÉèÖÃ¿ò¼Ü±ÈÀý×ó±ßÕ¼25%£¬ÓÒ±ßÕ¼75%
 		html += "<frameset cols=\"25%,*\">";
 		html += "<frame  src=\"E://index.html\">";
 		html += "<frame src=\"E://display.html\" name=\"showframe\">";
@@ -19,10 +19,10 @@ public class BrowserExample2 {
 
 		Display display = new Display();
 		Shell shell = new Shell(display);
-		shell.setText("HTMLï¿½ï¿½SWTï¿½Ðµï¿½Ç¶ï¿½ï¿½Êµï¿½ï¿½");
+		shell.setText("HTMLÔÚSWTÖÐµÄÇ¶ÈëÊµÀý");
 		shell.setSize(450, 300);
 		shell.setLayout(new FillLayout());
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// ¶¨Òåä¯ÀÀÆ÷¶ÔÏó
 		Browser browser = new Browser(shell, SWT.NONE);
 		browser.setText(html);
 		shell.open();

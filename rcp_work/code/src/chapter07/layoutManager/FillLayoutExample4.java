@@ -1,6 +1,3 @@
-/**
- *@author: WangJinTao,MengQingChang 2006
- */
 package chapter07.layoutManager;
 
 import org.eclipse.swt.*;
@@ -13,7 +10,7 @@ public class FillLayoutExample4 {
 		final Display display = Display.getDefault();
 		final Shell shell = new Shell();
 		shell.setSize(460, 140);
-		shell.setText("FillLayoutï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+		shell.setText("FillLayoutÊôÐÔÀý");
 		FillLayout fillLayout = new FillLayout();
 		fillLayout.marginHeight = 40;
 		fillLayout.marginWidth = 50;

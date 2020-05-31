@@ -1,6 +1,3 @@
-/**
- * @author: WangJinTao,MengQingChang 2006
- */
 package chapter12;
 
 import java.util.*;
@@ -32,7 +29,7 @@ public class TableViewer2Class extends ApplicationWindow {
 
 	protected void configureShell(Shell shell) {
 		super.configureShell(shell);
-		shell.setText("TableViewerÊµï¿½ï¿½");
+		shell.setText("TableViewerÊµÀý");
 		shell.setSize(460, 200);
 	}
 
@@ -40,69 +37,69 @@ public class TableViewer2Class extends ApplicationWindow {
 
 		Composite composite = new Composite(parent, SWT.NONE);
 		composite.setLayout(new GridLayout(1, false));
-		// ï¿½ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½å´´ï¿½ï¿½ï¿½ï¿½ñ·½·ï¿½
+		// µ÷ÓÃ×Ô¶¨Òå´´½¨±í¸ñ·½·¨
 		createTableViewer(composite);
-		// ï¿½ï¿½ï¿½ï¿½createPeopleList()ï¿½ï¿½ï¿½ï¿½
+		// µ÷ÓÃcreatePeopleList()·½·¨
 		peopleList = createPeopleList();
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// ÉèÖÃÄÚÈÝÆ÷
 		tv.setContentProvider(new PeopleContentProvider());
-		// ï¿½ï¿½setInput()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// ÓÃsetInput()·½·¨Íù±í¸ñÖÐ¶ÁÈëÊý¾Ý
 		tv.setInput(peopleList);
-		// ï¿½ï¿½ï¿½Ã±ï¿½Ç©ï¿½ï¿½
+		// ÉèÖÃ±êÇ©Æ÷
 		tv.setLabelProvider(new PeopleLabelProvider());
 		return composite;
 	}
 
 	private void createTableViewer(Composite comp) {
 
-		// ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½TableViewerï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½Îªï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// ¶¨ÒåÒ»¸öTableViewer¶ÔÏó£¬ÑùÊ½Îª£ºÑ¡ÔñÕûÐÐ
 		tv = new TableViewer(comp, SWT.FULL_SELECTION);
 
-		// ï¿½ï¿½ï¿½ï¿½Table
+		// ÉèÖÃTable
 		Table table = tv.getTable();
 
 		table.setLayoutData(new GridData(GridData.FILL_BOTH));
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ðµï¿½ï¿½ï¿½
+		// ¶¨Òå±íÖÐµÄÁÐ
 		TableColumn Col1 = new TableColumn(table, SWT.LEFT);
-		Col1.setText("Ô±ï¿½ï¿½ï¿½ï¿½");
-		// ï¿½ï¿½ï¿½ï¿½ï¿½Ð¿ï¿½ï¿½
+		Col1.setText("Ô±¹¤ºÅ");
+		// ÉèÖÃÁÐ¿í¶È
 		Col1.setWidth(80);
 		TableColumn Col2 = new TableColumn(table, SWT.LEFT);
-		Col2.setText("ï¿½ï¿½ï¿½ï¿½");
+		Col2.setText("ÐÕÃû");
 		Col2.setWidth(80);
 		TableColumn Col3 = new TableColumn(table, SWT.LEFT);
-		Col3.setText("ï¿½Ô±ï¿½");
+		Col3.setText("ÐÔ±ð");
 		Col3.setWidth(80);
 		TableColumn Col4 = new TableColumn(table, SWT.LEFT);
-		Col4.setText("ï¿½ï¿½ï¿½ï¿½");
+		Col4.setText("ÄêÁä");
 		Col4.setWidth(80);
 		TableColumn Col5 = new TableColumn(table, SWT.LEFT);
 		Col5.setText("Ö°Î»");
 		Col5.setWidth(70);
 		TableColumn Col6 = new TableColumn(table, SWT.LEFT);
-		Col6.setText("Ï²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É«");
+		Col6.setText("Ï²»¶µÄÑÕÉ«");
 		Col6.setWidth(128);
 
-		// ï¿½ï¿½Ê¾ï¿½ï¿½Í·
+		// ÏÔÊ¾±íÍ·
 		table.setHeaderVisible(true);
-		// ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½ï¿½
+		// ÏÔÊ¾±í¸ñÏß
 		table.setLinesVisible(true);
 
 	}
 
 	/**
-	 * ArrayListï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Vectorï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î¬ï¿½ï¿½ï¿½ï¿½Ï£ï¿½
-	 * ï¿½ï¿½ï¿½ï¿½ï¿½Ú±ï¿½Ä²ï¿½ï¿½ë¡¢É¾ï¿½ï¿½Ê±Ê¹ï¿½Ã¡ï¿½
+	 * ArrayListÊý×é±í¹¦ÄÜÀàËÆVector£¬ÓÃÓÚËõ·ÅÊý×éÎ¬»¤×éºÏ£¬
+	 * ¾­³£ÔÚ±íµÄ²åÈë¡¢É¾³ýÊ±Ê¹ÓÃ¡£
 	 */
 	private ArrayList createPeopleList() {
 		peopleList = new ArrayList();
 		{
 			People p1 = new People();
 			p1.setID(20020001);
-			p1.setName("ï¿½ï¿½Ö¾ï¿½ï¿½");
+			p1.setName("ÍõÖ¾»Ô");
 			p1.setMale(true);
 			p1.setAge(34);
-			p1.setPosition("ï¿½Ü¾ï¿½ï¿½ï¿½");
+			p1.setPosition("×Ü¾­Àí");
 			p1.setColor(new RGB(255, 0, 0));
 
 			peopleList.add(p1);
@@ -111,10 +108,10 @@ public class TableViewer2Class extends ApplicationWindow {
 		{
 			People p2 = new People();
 			p2.setID(20020002);
-			p2.setName("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+			p2.setName("ÀîÏþ¾ê");
 			p2.setMale(false);
 			p2.setAge(27);
-			p2.setPosition("ï¿½ï¿½ï¿½ï¿½ï¿½Ü¼ï¿½");
+			p2.setPosition("ÉÌÎñ×Ü¼à");
 			p2.setColor(new RGB(255, 255, 0));
 
 			peopleList.add(p2);
@@ -123,10 +120,10 @@ public class TableViewer2Class extends ApplicationWindow {
 		{
 			People p3 = new People();
 			p3.setID(20020003);
-			p3.setName("ï¿½ï¿½Ö¾Ç¿");
+			p3.setName("ÀîÖ¾Ç¿");
 			p3.setMale(true);
 			p3.setAge(29);
-			p3.setPosition("ï¿½ï¿½ï¿½ï¿½ï¿½Ü¼ï¿½");
+			p3.setPosition("ÐÐÕþ×Ü¼à");
 			p3.setColor(new RGB(255, 255, 255));
 
 			peopleList.add(p3);

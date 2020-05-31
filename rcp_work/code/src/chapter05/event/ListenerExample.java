@@ -1,5 +1,4 @@
-/**@author WangJinTao,MengQingChang 2006
- */
+
 package chapter05.event;
 
 import org.eclipse.swt.widgets.*;
@@ -13,10 +12,10 @@ public class ListenerExample {
 		final Display display = Display.getDefault();
 		final Shell shell = new Shell();
 		shell.setSize(200, 120);
-		shell.setText("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½");
+		shell.setText("¼àÌýÆ÷ÊµÀý");
 		Button button = new Button(shell, SWT.PUSH);
 		button.setBounds(35, 25, 120, 25);
-		button.setText("È·ï¿½ï¿½");
+		button.setText("È·¶¨");
 		button.addSelectionListener(new SelectionListener() {
 			public void widgetSelected(SelectionEvent e) {
 				MessageDialog.openInformation(shell, null, "HelloWorld!!");

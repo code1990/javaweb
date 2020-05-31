@@ -17,11 +17,11 @@ public class GCExample2 {
 		display = Display.getDefault();
 		final Shell shell = new Shell();
 		shell.setSize(260, 130);
-		shell.setText("GCÊµï¿½ï¿½");
+		shell.setText("GCÊµÀý");
 		shell.setLayout(new FillLayout());
 		shell.open();
 		composite = new Composite(shell, SWT.NONE);
-		// ï¿½ï¿½paintEventï¿½ï¿½ï¿½Â¼ï¿½ï¿½Ð½ï¿½ï¿½Ð»ï¿½Í¼ï¿½ï¿½ï¿½ï¿½
+		// ÔÚpaintEventµÄÊÂ¼þÖÐ½øÐÐ»æÍ¼´¦Àí
 		composite.addPaintListener(new PaintListener() {
 			public void paintControl(final PaintEvent event) {
 				Display display = event.display;

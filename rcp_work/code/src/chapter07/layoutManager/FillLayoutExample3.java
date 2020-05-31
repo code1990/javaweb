@@ -1,6 +1,3 @@
-/**
- *@author: WangJinTao,MengQingChang2006
- */
 package chapter07.layoutManager;
 
 import org.eclipse.swt.SWT;
@@ -15,7 +12,7 @@ public class FillLayoutExample3 {
 		final Display display = Display.getDefault();
 		final Shell shell = new Shell();
 		shell.setSize(300, 200);
-		shell.setText("ï¿½ï¿½Ö±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½");
+		shell.setText("´¹Ö±³äÂú²¼¾ÖÊµÀý");
 		FillLayout fillLayout = new FillLayout();
 		fillLayout.type = SWT.VERTICAL;
 		shell.setLayout(fillLayout);

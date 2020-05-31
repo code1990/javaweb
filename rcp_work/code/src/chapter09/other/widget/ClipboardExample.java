@@ -15,12 +15,12 @@ public class ClipboardExample {
 		final Clipboard clipboard = new Clipboard(display);
 		final Shell shell = new Shell(display);
 		shell.setSize(500, 375);
-		shell.setText("ClipboardÊµï¿½ï¿½");
-		// shellï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Formlayoutï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½
+		shell.setText("ClipboardÊµÀı");
+		// shellÈİÆ÷²ÉÓÃFormlayout·½Ê½²¼¾Ö
 		shell.setLayout(new FormLayout());
-		// ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½CoolBarï¿½ï¿½shellï¿½ï¿½
+		// ¶¨ÒåÒ»¸öCoolBarÔÚshellÉÏ
 		CoolBar coolBar = new CoolBar(shell, SWT.NONE);
-		// ï¿½ï¿½CoolBarï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¶ï¿½ï¿½ï¿½
+		// ½«CoolBar²¼¾Öµ½ÈİÆ÷µÄ¶¥¶Ë
 		FormData coolData = new FormData();
 		coolData.left = new FormAttachment(0);
 		coolData.right = new FormAttachment(100);
@@ -29,35 +29,35 @@ public class ClipboardExample {
 		{
 			final ToolBar toolBar = new ToolBar(coolBar, SWT.FLAT | SWT.WRAP);
 			ToolItem itemcopy = new ToolItem(toolBar, SWT.PUSH);
-			itemcopy.setToolTipText("ï¿½ï¿½ï¿½ï¿½");// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ÔµÄ±ï¿½Ç©ï¿½ï¿½ï¿½ï¿½
-			// ï¿½Ú¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä°ï¿½Å¥ï¿½ï¿½ï¿½ï¿½ï¿½Í¼Æ¬
+			itemcopy.setToolTipText("¸´ÖÆ");// ÉèÖÃÌáÊ¾ĞÔµÄ±êÇ©ÎÄ×Ö
+			// ÔÚ¹¤¾ßÀ¸µÄ°´Å¥ÉÏÌí¼ÓÍ¼Æ¬
 			itemcopy.setImage(new Image(display, "icons/copy.gif"));
-			// ï¿½ï¿½ï¿½Ã¸ï¿½ï¿½Æ¹ï¿½ï¿½Ü£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½İ¸ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+			// ÉèÖÃ¸´ÖÆ¹¦ÄÜ£¬½«Êı¾İ¸´ÖÆµ½¼ôÌù°åÉÏ
 			itemcopy.addSelectionListener(new SelectionAdapter() {
 				public void widgetSelected(SelectionEvent e) {
-					// ï¿½ï¿½Ã±ï¿½Ñ¡ï¿½Ğµï¿½ï¿½Ä±ï¿½ï¿½ï¿½ï¿½ï¿½
+					// »ñµÃ±»Ñ¡ÖĞµÄÎÄ±¾Êı¾İ
 					String textData = text.getSelectionText();
 					if (textData.length() == 0)
 						return;
 					else if (textData.length() > 0) {
-						// ï¿½ï¿½ï¿½ï¿½ï¿½Ä±ï¿½×ªï¿½Æ¶ï¿½ï¿½ï¿½
+						// ¶¨ÒåÎÄ±¾×ªÒÆ¶ÔÏó
 						TextTransfer textTransfer = TextTransfer.getInstance();
-						// ï¿½ï¿½Òªï¿½ï¿½ï¿½Æµï¿½ï¿½Ä±ï¿½ï¿½ï¿½ï¿½İ·Åµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+						// ½«Òª¸´ÖÆµÄÎÄ±¾Êı¾İ·Åµ½¼ôÌù°åÉÏ
 						clipboard.setContents(new Object[] { textData },
 								new Transfer[] { textTransfer });
 					}
 				}
 			});
-			// ï¿½Ã·Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¡ï¿½ï¿½ï¿½Å¥ï¿½ë¡°Õ³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å¥ï¿½Ö¿ï¿½
+			// ÓÃ·Ö¸ô·û½«¡°¸´ÖÆ¡±°´Å¥Óë¡°Õ³Ìù¡±°´Å¥·Ö¿ª
 			new ToolItem(toolBar, SWT.SEPARATOR);
 			ToolItem itempaste = new ToolItem(toolBar, SWT.PUSH);
-			itempaste.setToolTipText("Õ³ï¿½ï¿½");
+			itempaste.setToolTipText("Õ³Ìù");
 			itempaste.setImage(new Image(display, "icons/paste.gif"));
-			// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ïµï¿½ï¿½Ä±ï¿½ï¿½ï¿½ï¿½İ¸ï¿½ï¿½Æµï¿½ï¿½Ä±ï¿½ï¿½ï¿½ï¿½ï¿½
+			// ½«¼ôÌù°åÉÏµÄÎÄ±¾Êı¾İ¸´ÖÆµ½ÎÄ±¾¿òÖĞ
 			itempaste.addSelectionListener(new SelectionAdapter() {
 				public void widgetSelected(SelectionEvent e) {
 					TextTransfer transfer = TextTransfer.getInstance();
-					// È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ïµï¿½ï¿½Ä±ï¿½ï¿½ï¿½ï¿½ï¿½
+					// È¡³ö¼ôÌù°åÉÏµÄÎÄ±¾Êı¾İ
 					String data = (String) clipboard.getContents(transfer);
 					if (data != null) {
 						text.insert(data);
@@ -66,7 +66,7 @@ public class ClipboardExample {
 			});
 			CoolItem coolitem1 = new CoolItem(coolBar, SWT.DROP_DOWN);
 			coolitem1.setControl(toolBar);
-			// ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½Ê±Í¨ï¿½ï¿½tooBarï¿½ï¿½ï¿½ï¿½ï¿½ï¿½coolItem1ï¿½ï¿½Î»ï¿½ÃºÍ³ß´ï¿½
+			// Êó±êÍÏ¶¯Ê±Í¨¹ıtooBarÀ´µ÷ÕûcoolItem1µÄÎ»ÖÃºÍ³ß´ç
 			toolBar.pack();
 			Point point = new Point(toolBar.getSize().x, toolBar.getSize().y);
 			coolitem1.setSize(point);
@@ -75,8 +75,8 @@ public class ClipboardExample {
 		{
 			ToolBar toolBarcut = new ToolBar(coolBar, SWT.FLAT | SWT.WRAP);
 			ToolItem itemcut = new ToolItem(toolBarcut, SWT.PUSH);
-			itemcut.setToolTipText("ï¿½ï¿½ï¿½ï¿½");
-			//ï¿½ï¿½ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½ï¿½ï¿½
+			itemcut.setToolTipText("¼ôÇĞ");
+			//¼ôÇĞÎÄ±¾ÄÚÈİ
 			itemcut.addSelectionListener(new SelectionAdapter() {
 				public void widgetSelected(SelectionEvent e) {
 					text.cut();
@@ -99,33 +99,33 @@ public class ClipboardExample {
 		textData.top = new FormAttachment(coolBar);
 		textData.bottom = new FormAttachment(100);
 		text.setLayoutData(textData);
-		// ï¿½ï¿½ï¿½ï¿½ï¿½Ä¹ï¿½ï¿½ï¿½ï¿½Ç¶ï¿½ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½ï¿½Ä±ï¿½ï¿½Ó¹ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½Ê±ï¿½ï¿½
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½shellï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½
+		// ¼àÌıµÄ¹¦ÄÜÊÇ¶¯Êó±êÍÏ¶¯¸Ä±ä×Ó¹¤¾ßÀ¸Î»ÖÃÊ±£¬
+		// ÖØĞÂÉèÖÃshellÈİÆ÷ÉÏ×é¼şµÄÎ»ÖÃ
 		coolBar.addListener(SWT.Resize, new Listener() {
 			public void handleEvent(Event event) {
 				shell.layout();
 			}
 		});
-		{// /ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ëµï¿½
+		{// /ÉèÖÃÊó±êÓÒ¼üµ¯³öÏÂÀ­²Ëµ¥
 			Menu menu = new Menu(shell, SWT.POP_UP);
 			final MenuItem copyItem = new MenuItem(menu, SWT.NONE);
-			copyItem.setText("ï¿½ï¿½ï¿½ï¿½");
+			copyItem.setText("¸´ÖÆ");
 			copyItem.addSelectionListener(new SelectionAdapter() {
 				public void widgetSelected(SelectionEvent e) {
 					String selection = text.getSelectionText();
 					if (selection.length() == 0)
 						return;
 					else if (selection.length() > 0) {
-						// ï¿½ï¿½ï¿½ï¿½ï¿½Ä±ï¿½×ªï¿½Æ¶ï¿½ï¿½ï¿½
+						// ¶¨ÒåÎÄ±¾×ªÒÆ¶ÔÏó
 						TextTransfer textTransfer = TextTransfer.getInstance();
-						// ï¿½ï¿½Òªï¿½ï¿½ï¿½Æµï¿½ï¿½Ä±ï¿½ï¿½ï¿½ï¿½İ·Åµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+						// ½«Òª¸´ÖÆµÄÎÄ±¾Êı¾İ·Åµ½¼ôÌù°åÉÏ
 						clipboard.setContents(new Object[] { selection },
 								new Transfer[] { textTransfer });
 					}
 				}
 			});
 			final MenuItem pasteItem = new MenuItem(menu, SWT.NONE);
-			pasteItem.setText("Õ³ï¿½ï¿½");
+			pasteItem.setText("Õ³Ìù");
 			pasteItem.addSelectionListener(new SelectionAdapter() {
 				public void widgetSelected(SelectionEvent e) {
 					String string = (String) (clipboard
@@ -136,7 +136,7 @@ public class ClipboardExample {
 			});
 			new MenuItem(menu, SWT.SEPARATOR);
 			final MenuItem cutItem = new MenuItem(menu, SWT.NONE);
-			cutItem.setText("ï¿½ï¿½ï¿½ï¿½");
+			cutItem.setText("¼ôÇĞ");
 			cutItem.addSelectionListener(new SelectionAdapter() {
 				public void widgetSelected(SelectionEvent e) {
 					text.cut();
@@ -145,11 +145,11 @@ public class ClipboardExample {
 			menu.addMenuListener(new MenuAdapter() {
 				public void menuShown(MenuEvent e) {
 					String selection = text.getSelectionText();
-					// ï¿½ï¿½ï¿½Ã¿ï¿½ï¿½ï¿½ï¿½Ëµï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½
+					// ÉèÖÃ¿½±´²Ëµ¥ÏîÊÇ·ñ¿ÉÓÃ
 					copyItem.setEnabled(selection.length() > 0);
-					// ï¿½ï¿½ï¿½Ã¼ï¿½ï¿½Ğ²Ëµï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½
+					// ÉèÖÃ¼ôÇĞ²Ëµ¥ÏîÊÇ·ñ¿ÉÓÃ
 					cutItem.setEnabled(selection.length() > 0);
-					// ï¿½ï¿½ï¿½Ã¸ï¿½ï¿½Æ²Ëµï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½
+					// ÉèÖÃ¸´ÖÆ²Ëµ¥ÏîÊÇ·ñ¿ÉÓÃ
 					TransferData[] available = clipboard.getAvailableTypes();
 					boolean enabled = false;
 					for (int i = 0; i < available.length; i++) {

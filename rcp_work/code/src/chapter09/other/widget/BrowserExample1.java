@@ -8,36 +8,36 @@ import org.eclipse.swt.browser.*;
 import org.eclipse.swt.layout.*;
 public class BrowserExample1 {
 	private Browser browser;
-	// ï¿½ï¿½ï¿½ì·½ï¿½ï¿½
-	public BrowserExample1() {
-		final Display display = Display.getDefault();
-		final Shell shell = new Shell();
-		shell.setSize(500, 375);
-		shell.setText("BrowserÊµï¿½ï¿½");
-		shell.setLayout(new FillLayout());
-		try {
-			// ï¿½ï¿½ï¿½ï¿½browserï¿½ï¿½ï¿½ï¿½
-			browser = new Browser(shell, SWT.NONE);
-		} catch (SWTError e) {
-			// ï¿½ï¿½ï¿½ï¿½ï¿½ì³£ï¿½ï¿½ï¿½ï¿½
-			MessageBox messageBox = new MessageBox(shell, SWT.ICON_ERROR
-					| SWT.OK);
-			messageBox.setMessage("BrowserÃ»ï¿½Ð±ï¿½Ô¤ï¿½ï¿½");
-			messageBox.setText("Exit");
-			messageBox.open();
-			System.exit(-1);
+	// ¹¹Ôì·½·¨
+		public BrowserExample1() {
+			final Display display = Display.getDefault();
+			final Shell shell = new Shell();
+			shell.setSize(500, 375);
+			shell.setText("BrowserÊµÀý");
+			shell.setLayout(new FillLayout());
+			try {
+				// ¶¨Òåbrowser¶ÔÏó
+				browser = new Browser(shell, SWT.NONE);
+			} catch (SWTError e) {
+				// ´íÎóÒì³£´¦Àí
+				MessageBox messageBox = new MessageBox(shell, SWT.ICON_ERROR
+						| SWT.OK);
+				messageBox.setMessage("BrowserÃ»ÓÐ±»Ô¤ÖÃ");
+				messageBox.setText("Exit");
+				messageBox.open();
+				System.exit(-1);
+			}
+			if (browser != null) {
+				// ÉèÖÃµ±Ç°µÄURL
+				browser.setUrl("http://www.google.cn");
+			}
+			shell.open();
+			shell.layout();
+			while (!shell.isDisposed()) {
+				if (!display.readAndDispatch())
+					display.sleep();
+			}
 		}
-		if (browser != null) {
-			// ï¿½ï¿½ï¿½Ãµï¿½Ç°ï¿½ï¿½URL
-			browser.setUrl("http://www.google.cn");
-		}
-		shell.open();
-		shell.layout();
-		while (!shell.isDisposed()) {
-			if (!display.readAndDispatch())
-				display.sleep();
-		}
-	}
 	public static void main(String[] args) {
 		new BrowserExample1();
 	}

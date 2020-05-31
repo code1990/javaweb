@@ -1,5 +1,3 @@
-/**@author WangJinTao,MengQingChang 2006
- */
 package chapter07.layoutManager;
 
 import org.eclipse.swt.*;
@@ -30,34 +28,34 @@ public class GoogleTalkExample {
 		final Display display = Display.getDefault();
 		final Shell shell = new Shell(new Shell());
 		shell.setSize(500, 460);
-		shell.setText("GoogleTalk���öԻ���ʵ��");
-		// ��������Ϊ7��
+		shell.setText("GoogleTalk设置对话框实例");
+		// 设置容器为7列
 		shell.setLayout(new GridLayout(7, false));
-		// ��Shell�϶���List������List���в���
+		// 在Shell上定义List，并对List进行布局
 		{
 			list = new List(shell, SWT.BORDER);
-			// �����б���
-			list.setItems(new String[] { "����", "��Ƶ", "����", "֪ͨ", "����" });
-			// ʹList��ֱ����
+			// 设置列表项
+			list.setItems(new String[] { "常规", "音频", "被拒", "通知", "链接" });
+			// 使List垂直充满
 			GridData gridList = new GridData(GridData.FILL_VERTICAL);
-			gridList.horizontalSpan = 3;// ˮƽǿռ3��
-			gridList.widthHint = 100;// ʹ���Ϊ100������
-			// ����List����shell������߿�Ϊ5������
+			gridList.horizontalSpan = 3;// 水平强占3列
+			gridList.widthHint = 100;// 使宽度为100个像素
+			// 设置List距离shell容器左边框为5个像素
 			gridList.horizontalIndent = 5;
 			list.setLayoutData(gridList);
 		}
-		// ��Shell�϶���Composite������Composite���в���
+		// 在Shell上定义Composite，并对Composite进行布局
 		{
 			composite = new Composite(shell, SWT.BORDER);
-			// ʹcomposite���˫�����
+			// 使composite面板双向充满
 			GridData gridComposite = new GridData(GridData.FILL_BOTH);
-			gridComposite.horizontalSpan = 3;// ˮƽǿռ3��
+			gridComposite.horizontalSpan = 3;// 水平强占3列
 			composite.setLayoutData(gridComposite);
-			// ����һ����ջ����
+			// 定义一个堆栈布局
 			stacklayout = new StackLayout();
-			// ��composite�����Ӧ�ö�ջ����
+			// 在composite面板上应用堆栈布局
 			composite.setLayout(stacklayout);
-			// �����Զ��巽��
+			// 调用自定义方法
 			comp1Content();
 			comp2Content();
 			comp3Content();
@@ -65,21 +63,21 @@ public class GoogleTalkExample {
 			comp5Content();
 
 		}
-		// ��Shell�϶��嵥����ť����������в���
+		// 在Shell上定义单个按钮，并对其进行布局
 		{
 			final Button helpButton = new Button(shell, SWT.NONE);
-			helpButton.setText("����");
+			helpButton.setText("帮助");
 			GridData gridHelp = new GridData();
-			// ʹhelp��ťˮƽ��ռ3��
+			// 使help按钮水平抢占3列
 			gridHelp.horizontalSpan = 3;
-			// ʹ���Ϊ90������
+			// 使宽度为90个像素
 			gridHelp.widthHint = 90;
-			// ���ð�����ť����shell������߿�Ϊ5������
+			// 设置帮助按钮距离shell容器左边框为5个像素
 			gridHelp.horizontalIndent = 5;
 			helpButton.setLayoutData(gridHelp);
 
 			final Button okButton = new Button(shell, SWT.NONE);
-			okButton.setText("ȷ��");
+			okButton.setText("确定");
 			GridData gridOk = new GridData();
 			gridOk.horizontalIndent = 180;
 			gridOk.horizontalSpan = 2;
@@ -87,13 +85,13 @@ public class GoogleTalkExample {
 			okButton.setLayoutData(gridOk);
 
 			final Button cancelButton = new Button(shell, SWT.NONE);
-			cancelButton.setText("ȡ��");
+			cancelButton.setText("取消");
 			GridData gridCancel = new GridData();
 			gridCancel.horizontalSpan = 2;
 			gridCancel.widthHint = 90;
 			cancelButton.setLayoutData(gridCancel);
 		}
-		// ��comp1�������Ϊ������Ϊ��ջ�������ʾ
+		// 将comp1面板设置为最设置为堆栈的最顶端显示
 		stacklayout.topControl = comp1;
 
 		list.addSelectionListener(new SelectionAdapter() {
@@ -120,100 +118,100 @@ public class GoogleTalkExample {
 		}
 	}
 
-	// �������Ĳ�������
+	// 常规面板的布局设置
 	private void comp1Content() {
-		// ��composite����϶���comp1���
+		// 在composite面板上定义comp1面板
 		comp1 = new Composite(composite, SWT.BORDER);
-		// ��comp1�ϲ���GridLayout���֣���comp1��������5��
+		// 在comp1上采用GridLayout布局，将comp1容器设置5列
 		comp1.setLayout(new GridLayout(5, false));
-		// ���峣���ǩ����������в���
+		// 定义常规标签，并对其进行布局
 		{
 			final Label labRoutine = new Label(comp1, SWT.NONE);
-			labRoutine.setText("����");
-			// ��GridData��labRoutine���в���
+			labRoutine.setText("常规");
+			// 用GridData对labRoutine进行布局
 			GridData gridRoutine = new GridData();
-			// ˮƽ��ռ2��
+			// 水平抢占2列
 			gridRoutine.horizontalSpan = 2;
-			// ����comp1����10������
+			// 距离comp1顶端10个像素
 			gridRoutine.verticalIndent = 10;
 			labRoutine.setLayoutData(gridRoutine);
 		}
-		// ����labSeparator�ָ�����ǩ����������в���
+		// 定义labSeparator分隔符标签，并对其进行布局
 		{
 			final Label labSeparator = new Label(comp1, SWT.SEPARATOR
 					| SWT.HORIZONTAL);
 			GridData gridSeparator = new GridData(GridData.FILL_HORIZONTAL);
 			gridSeparator.horizontalSpan = 5;
-			// ��ֱ��ռ5��
+			// 垂直抢占5列
 			gridSeparator.verticalSpan = 5;
 			labSeparator.setLayoutData(gridSeparator);
 		}
-		// ����button1��button2��ѡ��ť����������в���
+		// 定义button1、button2复选框按钮，并对其进行布局
 		{
 			/**
-			 * ��Ϊbutton1��button2��comp1�ϵĲ�����ͬ 
-			 * ���Բ��������ͬһ���ַ�ʽ������ͬ�����Բ������в���
+			 * 因为button1、button2在comp1上的布局相同 
+			 * 所以采用下面的同一布局方式设置相同的属性参数进行布局
 			 */
 			GridData gridButton = new GridData(GridData.FILL_HORIZONTAL);
-			// ˮƽ��ռ5��
+			// 水平抢占5列
 			gridButton.horizontalSpan = 5;
-			// ��ֱ��ռ5��
+			// 垂直抢占5列
 			gridButton.verticalSpan = 5;
-			// ����comp1��߿�20������
+			// 距离comp1左边框20个像素
 			gridButton.horizontalIndent = 20;
 			final Button button1 = new Button(comp1, SWT.CHECK);
-			button1.setText("����Windows���Զ�����(&S)");
-			// ��button1���в���
+			button1.setText("启动Windows会自动运行(&S)");
+			// 对button1进行布局
 			button1.setLayoutData(gridButton);
-			// ����button2��ѡ��ť����������в���
+			// 定义button2复选框按钮，并对其进行布局
 			final Button button2 = new Button(comp1, SWT.CHECK);
-			button2.setText("���������ʼ�����ʱ��Gmail(  &U  )");
+			button2.setText("单击电子邮件链接时打开Gmail(  &U  )");
 			/**
-			 * ����button1��button2������ȫ��ͬ���Կ���ͨ��
-			 * button2.setLayoutData(gridDataC)������button2 �Ĳ���
+			 * 由于button1和button2布局完全相同所以可以通过
+			 * button2.setLayoutData(gridDataC)来设置button2 的布局
 			 */
 			button2.setLayoutData(gridButton);
 		}
-		// ����Group����򣬲�������в���
+		// 定义Group分组框，并对其进行布局
 		{
 			final Group group = new Group(comp1, SWT.NONE);
-			group.setText("�����б�");
+			group.setText("好友列表");
 			GridData gridGroup = new GridData(GridData.FILL_HORIZONTAL);
 	
 			gridGroup.horizontalSpan = 3;
 			gridGroup.verticalSpan = 5;
 			gridGroup.horizontalIndent = 20;
 			group.setLayoutData(gridGroup);
-			// ����group����������,����������в���
+			// 设置group分组框上组件,并对组件进行布局
 			{
 				group.setLayout(new GridLayout());
 				/**
-				 * �ĸ���ѡ��ť��group������ϲ�����ȫ��ͬ��
-				 * �ʴ˿�������ͬһ�ֲ��ַ�ʽ������ͬ�����Բ������в���
+				 * 四个复选按钮在group分组框上布局完全相同，
+				 * 故此可用下面同一种布局方式设置相同的属性参数进行布局
 				 */
 				GridData gridDataButton = new GridData(GridData.FILL_HORIZONTAL);
 				gridDataButton.verticalSpan = 6;
 				gridDataButton.horizontalIndent = 6;
 				final Button buttonOne = new Button(group, SWT.CHECK);
-				buttonOne.setText("����������(&N)");
+				buttonOne.setText("按姓名排列(&N)");
 				buttonOne.setLayoutData(gridDataButton);
 				final Button buttonTwo = new Button(group, SWT.CHECK);
-				buttonTwo.setText("�������ߺ���(&H)");
+				buttonTwo.setText("隐藏离线好友(&H)");
 				buttonTwo.setLayoutData(gridDataButton);
 				final Button buttonThree = new Button(group, SWT.CHECK);
-				buttonThree.setText("���غ����б������Gmail��ϵ��(&C)");
+				buttonThree.setText("隐藏好友列表以外的Gmail联系人(&C)");
 				buttonThree.setLayoutData(gridDataButton);
 				final Button buttonFour = new Button(group, SWT.CHECK);
-				buttonFour.setText("������ͨѶ���˼�������б�(&A))");
+				buttonFour.setText("将经常通讯的人加入好友列表(&A))");
 				buttonFour.setLayoutData(gridDataButton);
 			}
 		}
 
 		{
 			/**
-			 * ���塰�������尴ť���͡��˻����á���ť����������в���
-			 * ��������ť��comp1����ϲ��ַ�ʽ��ͬ������ͬ���Ĳ��ַ�ʽ
-			 * ������ͬ�Ĳ������в���
+			 * 定义“更改字体按钮”和“账户设置”按钮，并对其进行布局
+			 * 这两个按钮在comp1面板上布局方式相同可以用同样的布局方式
+			 * 设置相同的参数进行布局
 			 */
 			GridData gridDataButton = new GridData();
 			gridDataButton.horizontalSpan = 5;
@@ -221,16 +219,16 @@ public class GoogleTalkExample {
 			gridDataButton.horizontalIndent = 20;
 			gridDataButton.widthHint = 120;
 			final Button buttonModify = new Button(comp1, SWT.NONE);
-			buttonModify.setText("��������(&F)....");
+			buttonModify.setText("更改字体(&F)....");
 			buttonModify.setLayoutData(gridDataButton);
 
 			final Button buttonAccount = new Button(comp1, SWT.NONE);
-			buttonAccount.setText("�ʻ�����....");
+			buttonAccount.setText("帐户设置....");
 			buttonAccount.setLayoutData(gridDataButton);
 		}
-		{ // ��comp1�϶��塰������ϼ�¼����ť����������в���
+		{ // 在comp1上定义“启用诊断记录”按钮，并对其进行布局
 			final Button buttonDiagnose = new Button(comp1, SWT.NONE);
-			buttonDiagnose.setText("������ϼ�¼(&E)");
+			buttonDiagnose.setText("启用诊断记录(&E)");
 
 			GridData gridDiagnose = new GridData();
 			gridDiagnose.horizontalSpan = 5;
@@ -241,19 +239,19 @@ public class GoogleTalkExample {
 		}
 	}
 
-	// ��Ƶ���Ĳ�������
+	// 音频面板的布局设置
 	private void comp2Content() {
 		comp2 = new Composite(composite, SWT.BORDER);
 		comp2.setLayout(new GridLayout());
-		// ������Ƶ��ǩ����������в���
+		// 定义音频标签，并对其进行布局
 		{
 			final Label labelAudio = new Label(comp2, SWT.NONE);
-			labelAudio.setText("��Ƶ");
+			labelAudio.setText("音频");
 			GridData gridAudio = new GridData();
 			gridAudio.verticalIndent = 10;
 			labelAudio.setLayoutData(gridAudio);
 		}
-		// ����comp2����ϵķָ�����ǩ
+		// 设置comp2面板上的分隔符标签
 		{
 			final Label labelSeparator = new Label(comp2, SWT.SEPARATOR
 					| SWT.HORIZONTAL);
@@ -262,78 +260,78 @@ public class GoogleTalkExample {
 			gridSeparator.verticalSpan = 5;
 			labelSeparator.setLayoutData(gridSeparator);
 		}
-		// ��comp2�϶��� groupOne ����򣬲�������в���
+		// 在comp2上定义 groupOne 分组框，并对其进行布局
 		{
 			Group groupOne = new Group(comp2, SWT.NONE);
-			groupOne.setText("���롪��˷�����");
+			groupOne.setText("输入—麦克风或耳麦");
 			GridData gridGroupOne = new GridData(GridData.FILL_HORIZONTAL);
 			gridGroupOne.horizontalIndent = 20;
 			gridGroupOne.verticalSpan = 20;
 			groupOne.setLayoutData(gridGroupOne);
-			{ // ����groupa���������Ĳ���
+			{ // 设置groupa面板上组件的布局
 				groupOne.setLayout(new GridLayout());
 				/**
-				 * comb1��check1��ѡ��ť������ͬ�Ĳ��ַ�ʽ����ͬ������ֵ
+				 * comb1和check1复选框按钮可用相同的布局方式和相同的属性值
 				 */
 				GridData grid = new GridData();
 				grid.verticalIndent = 5;
 				grid.horizontalIndent = 10;
 				final Combo combo1 = new Combo(groupOne, SWT.NONE);
-				// ��������������������
-				combo1.setItems(new String[] { "Ĭ���豸", "Realtek AC97 Audio" });
+				// 在下拉框中设置下拉项
+				combo1.setItems(new String[] { "默认设备", "Realtek AC97 Audio" });
 				combo1.setLayoutData(grid);
 
 				final Button check1 = new Button(groupOne, SWT.CHECK);
-				check1.setText("�Զ�������˷�������(&A)");
+				check1.setText("自动调整麦克风灵敏度(&A)");
 				check1.setLayoutData(grid);
 
 			}
 		}
-		// ��comp2�϶���groupTwo����򣬲�������в���
+		// 在comp2上定义groupTwo分组框，并对其进行布局
 		{
 			Group groupTwo = new Group(comp2, SWT.NONE);
-			groupTwo.setText("���롪�����������");
+			groupTwo.setText("输入—扬声器或耳麦");
 
 			GridData gridGroupTwo = new GridData(GridData.FILL_HORIZONTAL);
 			gridGroupTwo.horizontalIndent = 20;
 			gridGroupTwo.verticalSpan = 20;
 			groupTwo.setLayoutData(gridGroupTwo);
 
-			{// ����groupTwo��������������������в���
+			{// 设置groupTwo面板上组件，并对组件进行布局
 				groupTwo.setLayout(new GridLayout());
 				GridData gridData = new GridData();
 				gridData.horizontalIndent = 10;
 				gridData.widthHint = 138;
 				gridData.verticalSpan = 5;
 				final Label lab1 = new Label(groupTwo, SWT.NONE);
-				lab1.setText("֪ͨ������(&N)");
+				lab1.setText("通知—铃声(&N)");
 				lab1.setLayoutData(gridData);
 				final Combo combo2 = new Combo(groupTwo, SWT.NONE);
-				combo2.setItems(new String[] { "�����豸", "Ĭ���豸",
+				combo2.setItems(new String[] { "所有设备", "默认设备",
 						"Realtek AC97 Audio" });
 				combo2.setLayoutData(gridData);
 
 				final Label lab2 = new Label(groupTwo, SWT.NONE);
-				lab2.setText("����(&C)");
+				lab2.setText("呼叫(&C)");
 				lab2.setLayoutData(gridData);
 
 				final Combo combo3 = new Combo(groupTwo, SWT.NONE);
-				combo3.setItems(new String[] { "Ĭ���豸", "Realtek AC97 Audio" });
+				combo3.setItems(new String[] { "默认设备", "Realtek AC97 Audio" });
 
 				combo3.setLayoutData(gridData);
 
 				final Button cancelButton = new Button(groupTwo, SWT.CHECK);
-				cancelButton.setText("����ʱȡ������������(&S)");
+				cancelButton.setText("响铃时取消扬声器静音(&S)");
 				GridData gridDataCancel = new GridData();
 				gridDataCancel.verticalSpan = 6;
 				cancelButton.setLayoutData(gridDataCancel);
 
 			}
 		}
-		// ��comp2������callButton��ť����������в���
+		// 在comp2上设置callButton按钮，并对其进行布局
 		{
 			final Button callButton = new Button(comp2, SWT.CHECK);
-			callButton.setText("����ʱȡ������������˷羲��(&U)");
+			callButton.setText("呼叫时取消扬声器和麦克风静音(&U)");
 			GridData gridDataCall = new GridData();
 			gridDataCall.horizontalIndent = 20;
 			gridDataCall.verticalSpan = 6;
@@ -346,7 +344,7 @@ public class GoogleTalkExample {
 		comp3 = new Composite(composite, SWT.BORDER);
 		comp3.setLayout(new GridLayout());
 		final Label labelRefuse = new Label(comp3, SWT.NONE);
-		labelRefuse.setText("����");
+		labelRefuse.setText("被拒");
 
 	}
 
@@ -354,14 +352,14 @@ public class GoogleTalkExample {
 		comp4 = new Composite(composite, SWT.BORDER);
 		comp4.setLayout(new GridLayout());
 		final Label labelNotice = new Label(comp4, SWT.NONE);
-		labelNotice.setText("֪ͨ");
+		labelNotice.setText("通知");
 	}
 
 	private void comp5Content() {
 		comp5 = new Composite(composite, SWT.BORDER);
 		comp5.setLayout(new GridLayout());
 		final Label labelLink = new Label(comp5, SWT.NONE);
-		labelLink.setText("����");
+		labelLink.setText("链接");
 
 	}
 

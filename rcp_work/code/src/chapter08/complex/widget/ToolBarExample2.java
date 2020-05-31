@@ -13,10 +13,10 @@ public class ToolBarExample2 {
 		final Display display = Display.getDefault();
 		final Shell shell = new Shell();
 		shell.setSize(500, 375);
-		shell.setText("ToolBarÊµï¿½ï¿½");
+		shell.setText("ToolBarÊµÀý");
 		shell.setLayout(new FillLayout());
 
-		// ï¿½ï¿½ï¿½ï¿½ViewFormï¿½ï¿½ï¿½ï¿½
+		// ¶¨ÒåViewForm¶ÔÏó
 		ViewForm vf = new ViewForm(shell, SWT.FLAT);
 		vf.setLayout(new FillLayout());
 		ToolBar toolBar1 = new ToolBar(vf, SWT.WRAP);
@@ -29,7 +29,7 @@ public class ToolBarExample2 {
 
 		ToolItem toolItem1 = new ToolItem(toolBar1, SWT.PUSH);
 
-		// ï¿½Ú°ï¿½Å¥ï¿½ï¿½ï¿½ï¿½ï¿½Í¼Æ¬
+		// ÔÚ°´Å¥ÉÏÌí¼ÓÍ¼Æ¬
 		toolItem1.setImage(new Image(display, "icons/forward.gif"));
 
 		ToolItem toolItem2 = new ToolItem(toolBar1, SWT.CHECK);

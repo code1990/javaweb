@@ -1,5 +1,3 @@
-/**@author WangJinTao,MengQingChang 2006
- */
 package chapter06.swt.dialog;
 
 import java.io.*;
@@ -14,12 +12,12 @@ public class SaveFileDialogExample2 {
 		final Display display = Display.getDefault();
 		shell = new Shell(new Shell());
 		shell.setSize(383, 225);
-		shell.setText("FileDialogÊµï¿½ï¿½");
+		shell.setText("FileDialogÊµÀý");
 		text = new Text(shell, SWT.BORDER | SWT.H_SCROLL | SWT.V_SCROLL);
 		text.setBounds(5, 5, 365, 150);
 		Button button = new Button(shell, SWT.PUSH);
 		button.setBounds(210, 165, 160, 20);
-		button.setText("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½Ñ¡ï¿½ï¿½Ô»ï¿½ï¿½ï¿½");
+		button.setText("±£´æÐÍÎÄ¼þÑ¡Ôñ¶Ô»°¿ò");
 		button.addSelectionListener(new SelectionAdapter() {
 			public void widgetSelected(SelectionEvent e) {
 				saveTextFile();
@@ -33,13 +31,13 @@ public class SaveFileDialogExample2 {
 		}
 	}
 	boolean saveTextFile() {
-		// ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½Ñ¡ï¿½ï¿½Ô»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// ¶¨ÒåÎÄ¼þÑ¡Ôñ¶Ô»°¿ò£¬ÀàÐÍÎª±£´æÐÍ
 		FileDialog dialog = new FileDialog(shell, SWT.SAVE);
-		dialog.setText("ï¿½ï¿½ï¿½ï¿½");
-		// ï¿½ï¿½ï¿½Ã¶Ô»ï¿½ï¿½ò±£´ï¿½ï¿½ï¿½Þ¶ï¿½ï¿½ï¿½ï¿½ï¿½
+		dialog.setText("±£´æ");
+		// ÉèÖÃ¶Ô»°¿ò±£´æµÄÏÞ¶¨ÀàÐÍ
 		dialog.setFilterExtensions(new String[] { "*.txt", "*.doc", "*.xls",
 				"*.*" });
-		// ï¿½ò¿ª¶Ô»ï¿½ï¿½ò£¬·ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½Â·ï¿½ï¿½
+		// ´ò¿ª¶Ô»°¿ò£¬·µ»ØÒ»¸ö±£´æÎÄ¼þµÄÂ·¾¶
 		String saveFile = dialog.open();
 		if (saveFile == null) {
 			return false;
@@ -47,8 +45,8 @@ public class SaveFileDialogExample2 {
 		file = new File(saveFile);
 		try {
 			/**
-			 * FileWriterï¿½ï¿½FileWriterï¿½ï¿½ï¿½Æ£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ 
-			 * ï¿½ï¿½ï¿½ï¿½FileWriterï¿½ï¿½ï¿½ï¿½Ð´ï¿½Ä¼ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
+			 * FileWriterÓëFileWriterÀàËÆ£¬¶¼ÊÇÓÃÀ´´¦Àí×Ö·ûÐÅÏ¢¡£ 
+			 * ²»¹ýFileWriterÓÃÀ´Ð´ÎÄ¼þ×Ö·ûÁ÷
 			 */
 			FileWriter filewriter = new FileWriter(file);
 			filewriter.write(text.getText());

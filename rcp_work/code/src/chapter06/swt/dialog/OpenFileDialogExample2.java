@@ -1,5 +1,3 @@
-/**@author WangJinTao,MengQingChang 2006
- */
 package chapter06.swt.dialog;
 
 import java.io.*;
@@ -10,16 +8,16 @@ public class OpenFileDialogExample2 {
 	private Text text;
 	private File file;
     private Shell shell;
-	public OpenFileDialogExample2() {
+    public OpenFileDialogExample2() {
 		final Display display = Display.getDefault();
 		shell = new Shell(new Shell());
 		shell.setSize(383, 225);
-		shell.setText("FileDialogʵ��");
+		shell.setText("FileDialog实例");
 		text = new Text(shell, SWT.BORDER | SWT.H_SCROLL | SWT.V_SCROLL);
 		text.setBounds(5, 5, 365, 150);
 		Button button = new Button(shell, SWT.PUSH);
 		button.setBounds(210, 165, 160, 20);
-		button.setText("�����ļ�ѡ��Ի���");
+		button.setText("打开型文件选择对话框");
 		button.addSelectionListener(new SelectionAdapter() {
 			public void widgetSelected(SelectionEvent e) {
 				OpenTextFile();
@@ -33,49 +31,49 @@ public class OpenFileDialogExample2 {
 		}
 	}
 	boolean OpenTextFile() {
-		// �����ļ�ѡ��Ի�������Ϊ����
+		// 定义文件选择对话框，类型为打开型
 		FileDialog dialog = new FileDialog(shell, SWT.OPEN);
-		// �򿪶Ի���,����һ����ѡ�ļ���·��
+		// 打开对话框,返回一个所选文件的路径
 		String selectedOpenFile = dialog.open();
 		if (selectedOpenFile != null) {
 			/**
-			 * java.io����File��ר�Ŵ����ļ�������ȡ�ļ������Ϣ��
-			 * File��Ĺ��췽���� 
+			 * java.io包的File类专门处理文件，并获取文件相关信息。
+			 * File类的构造方法： 
 			 * public File(String pathnames)
-			 * ���� ��File file=new(D:\my.java) 
+			 * 例如 ：File file=new(D:\my.java) 
 			 * public File(File parent,String child)
-			 * ���磺 File file=new(parent,"my.java")
-			 * parentָ�ļ�����Ŀ¼���ļ�����
+			 * 例如： File file=new(parent,"my.java")
+			 * parent指文件所在目录的文件对象
 			 * public File(String parent,String child)
-			 * ����:File file=new(dir,"my.java") 
-			 * dirָ�ļ�����Ŀ¼���ַ���
+			 * 例如:File file=new(dir,"my.java") 
+			 * dir指文件所在目录的字符串
 			 */
 			file = new File(selectedOpenFile);
 			try {
 				/**
-				 * FileReader�ļ��ַ��������췽����
+				 * FileReader文件字符流，构造方法：
 				 * public FileReader(File file)
-				 * ���磺FileReader fileReader=new FileReader(file)
+				 * 例如：FileReader fileReader=new FileReader(file)
 				 * public FileReader(String filenames)
-				 * filenamesΪ�����ļ������ַ���
+				 * filenames为包含文件名的字符串
 				 */
 				FileReader fileReader = new FileReader(file);
 				/**
-				 * BufferedReader���������ַ������ַ����뻺����
+				 * BufferedReader类用来把字符流的字符读入缓冲区
 				 */
 				BufferedReader reader = new BufferedReader(fileReader);
 				/**
-				 * ��Stringbuffer�ַ�������ʵ����
+				 * 对Stringbuffer字符串缓冲实例化
 				 */
 				StringBuffer sb = new StringBuffer();
 				String line = null;
 				while ((line = reader.readLine()) != null) {
 					/**
-					 * ͨ��append()����ʵ�ֽ��ַ�����ӵ��ַ��������� 
-					 * Ҳ����ͨ��insert()�������ַ������뻺������
+					 * 通过append()方法实现将字符串添加到字符缓冲区。 
+					 * 也可以通过insert()方法将字符串插入缓冲区中
 					 */
 					sb.append(line);
-					// ����һ�к��Զ�����
+					// 读入一行后自动换行
 					sb.append("\r\n");
 				}
 				text.setText(sb.toString());

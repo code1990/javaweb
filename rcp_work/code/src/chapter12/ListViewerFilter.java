@@ -1,6 +1,3 @@
-/**
- * author: WangJinTao,MengQingChang 2006 
- */
 package chapter12;
 
  
@@ -46,7 +43,7 @@ public class ListViewerFilter extends ApplicationWindow {
 	protected void configureShell(Shell shell) {
 		super.configureShell(shell);
 		shell.setSize(210, 250);
-		shell.setText("ListViewerÊµï¿½ï¿½");
+		shell.setText("ListViewerÊµÀý");
 	}
 
 	protected Control createContents(Composite parent) {
@@ -54,13 +51,13 @@ public class ListViewerFilter extends ApplicationWindow {
 
 		composite.setLayout(new FillLayout());
 		createListViewer(composite);
-		// ï¿½ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½å·½ï¿½ï¿½createAnimalList()
+		// µ÷ÓÃ×Ô¶¨Òå·½·¨createAnimalList()
 		animalList = createAnimalList();
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// ÉèÖÃÄÚÈÝÆ÷
 		lv.setContentProvider(new AnimalContentProvider());
-		// ï¿½ï¿½ï¿½Ã±ï¿½Ç©ï¿½ï¿½
+		// ÉèÖÃ±êÇ©Æ÷
 		lv.setLabelProvider(new AnimalLabelProvider());
-		// ï¿½ï¿½setInput()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// ÓÃsetInput()·½·¨¶ÁÈëÊý¾Ý
 		lv.setInput(animalList);
 		oneFilter = new OneFilter();
 		twoFilter = new TwoFilter();
@@ -79,7 +76,7 @@ public class ListViewerFilter extends ApplicationWindow {
 		gridCombo.horizontalIndent = 5;
 		gridCombo.widthHint = 60;
 		combo.setLayoutData(gridCombo);
-		combo.setItems(new String[] { "ï¿½ï¿½ï¿½ï¿½ ", "Ê¨ï¿½ï¿½", "ï¿½Ï»ï¿½ " });
+		combo.setItems(new String[] { "´óÏó ", "Ê¨×Ó", "ÀÏ»¢ " });
 		combo.addSelectionListener(new SelectionAdapter() {
 			public void widgetSelected(SelectionEvent event) {
 				int selectionIndex = combo.getSelectionIndex();
@@ -98,7 +95,7 @@ public class ListViewerFilter extends ApplicationWindow {
 			}
 		});
 		button = new Button(com, SWT.PUSH);
-		button.setText("ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½");
+		button.setText("»Ö¸´¹ýÂË");
 		GridData gridButton = new GridData();
 		gridButton.widthHint = 85;
 		gridButton.horizontalIndent = 5;
@@ -119,44 +116,44 @@ public class ListViewerFilter extends ApplicationWindow {
 
 		{
 			Animals elephant = new Animals();
-			elephant.setAnimal("ï¿½ï¿½ï¿½ï¿½");
+			elephant.setAnimal("´óÏó");
 			animalList.add(elephant);
 
 		}
 
 		{
 			Animals cetacean = new Animals();
-			cetacean.setAnimal("ï¿½ï¿½ï¿½ï¿½");
+			cetacean.setAnimal("¾¨Óã");
 			animalList.add(cetacean);
 
 		}
 		{
 			Animals leopard = new Animals();
-			leopard.setAnimal("ï¿½Ô±ï¿½");
+			leopard.setAnimal("ÁÔ±ª");
 			animalList.add(leopard);
 
 		}
 		{
 			Animals tiger = new Animals();
-			tiger.setAnimal("ï¿½Ï»ï¿½");
+			tiger.setAnimal("ÀÏ»¢");
 			animalList.add(tiger);
 
 		}
 		{
 			Animals shark = new Animals();
-			shark.setAnimal("ï¿½ï¿½ï¿½ï¿½");
+			shark.setAnimal("öèÓã");
 			animalList.add(shark);
 
 		}
 		{
 			Animals turtle = new Animals();
-			turtle.setAnimal("ï¿½ï¿½ï¿½ï¿½");
+			turtle.setAnimal("º£¹ê");
 			animalList.add(turtle);
 
 		}
 		{
 			Animals lion = new Animals();
-			lion.setAnimal("Ê¨ï¿½ï¿½");
+			lion.setAnimal("Ê¨×Ó");
 			animalList.add(lion);
 
 		}
@@ -164,25 +161,25 @@ public class ListViewerFilter extends ApplicationWindow {
 		return animalList;
 	}
 
-	// /ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	// /¹ýÂËÆ÷
 	class OneFilter extends ViewerFilter {
 		public boolean select(Viewer viewer, Object parent, Object element) {
 			Animals p = (Animals) element;
-			return p.getAnimal() != "ï¿½ï¿½ï¿½ï¿½";
+			return p.getAnimal() != "´óÏó";
 		}
 	}
 
 	class TwoFilter extends ViewerFilter {
 		public boolean select(Viewer viewer, Object parent, Object element) {
 			Animals p = (Animals) element;
-			return p.getAnimal() != "ï¿½Ï»ï¿½";
+			return p.getAnimal() != "ÀÏ»¢";
 		}
 	}
 
 	class ThreeFilter extends ViewerFilter {
 		public boolean select(Viewer viewer, Object parent, Object element) {
 			Animals p = (Animals) element;
-			return p.getAnimal() != "Ê¨ï¿½ï¿½";
+			return p.getAnimal() != "Ê¨×Ó";
 		}
 	}
 

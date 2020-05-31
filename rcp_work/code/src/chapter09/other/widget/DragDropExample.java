@@ -15,30 +15,30 @@ public class DragDropExample {
 		final Display display = Display.getDefault();
 		final Shell shell = new Shell(new Shell());
 		shell.setSize(230, 280);
-		shell.setText("Drag and DropÊµï¿½ï¿½");
-		// ï¿½ï¿½ï¿½ï¿½Ô´ï¿½Ï·ï¿½ï¿½ï¿½ï¿½ï¿½
+		shell.setText("Drag and DropÊµÀý");
+		// ½¨Á¢Ô´ÍÏ·ÅÄÚÈÝ
 		sourcelabel = new Label(shell, SWT.BORDER);
 		sourcelabel.setBounds(60, 50, 100, 25);
-		sourcelabel.setText("ï¿½ï¿½ï¿½ï¿½Òªï¿½Ï·Åµï¿½ï¿½ï¿½Ï¢");
+		sourcelabel.setText("ÕâÊÇÒªÍÏ·ÅµÄÐÅÏ¢");
 		/**
-		 * ï¿½ï¿½È·×ªï¿½Æµï¿½ï¿½ï¿½ï¿½Í£ï¿½ï¿½Ë´ï¿½Îªï¿½Ä±ï¿½×ªï¿½ï¿½TextTransferï¿½ï¿½ï¿½ï¿½ï¿½ï¿½TextTransferï¿½ï¿½ï¿½ï¿½ï¿½â»¹ï¿½ï¿½
-		 * FileTansferï¿½ï¿½RTFTTansfer
+		 * Ã÷È·×ªÒÆµÄÀàÐÍ£¬´Ë´¦ÎªÎÄ±¾×ªÒÆTextTransfer¡£³ýÁËTextTransferÀàÐÍÍâ»¹ÓÐ
+		 * FileTansfer¡¢RTFTTansfer
 		 */
 		Transfer[] type = new Transfer[] { TextTransfer.getInstance() };
-		// ï¿½ï¿½ï¿½ï¿½DragSourceï¿½ï¿½Ä¶ï¿½ï¿½ï¿½
+		// ½¨Á¢DragSourceÀàµÄ¶ÔÏó
 		DragSource dragSource = new DragSource(sourcelabel, DND.DROP_COPY
 				| DND.DROP_MOVE);
 		dragSource.setTransfer(type);
-		// ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// ½¨Á¢Ä¿±êÄÚÈÝ
 		targetlabel = new Label(shell, SWT.BORDER);
 		targetlabel.setBounds(60, 130, 100, 25);
-		targetlabel.setText("ï¿½ï¿½ï¿½ï¿½ï¿½Ï·ï¿½Ä¿ï¿½ï¿½Î»ï¿½ï¿½");
-		// ï¿½ï¿½ï¿½ï¿½DropTargeï¿½ï¿½ï¿½ï¿½ï¿½
+		targetlabel.setText("ÕâÊÇÍÏ·ÅÄ¿±êÎ»ÖÃ");
+		// ½¨Á¢DropTargeÀà¶ÔÏó
 		DropTarget dropTarget = new DropTarget(targetlabel, DND.DROP_COPY
 				| DND.DROP_MOVE);
-		// ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// ÉèÖÃ×ªÒÆÀàÐÍ
 		dropTarget.setTransfer(type);
-		// ï¿½ï¿½Ô´Î»ï¿½ÃµÄ²ï¿½ï¿½ï¿½
+		// ¶ÔÔ´Î»ÖÃµÄ²Ù×÷
 		dragSource.addDragListener(new DragSourceAdapter() {
 			public void dragStart(DragSourceEvent event) {
 				if (sourcelabel.getText().length() == 0) {
@@ -57,7 +57,7 @@ public class DragDropExample {
 					sourcelabel.setText("");
 			}
 		});
-		// ï¿½ï¿½Ä¿ï¿½ï¿½Î»ï¿½ÃµÄ²ï¿½ï¿½ï¿½
+		// ¶ÔÄ¿±êÎ»ÖÃµÄ²Ù×÷
 		dropTarget.addDropListener(new DropTargetAdapter() {
 			public void drop(DropTargetEvent event) {
 				if (event.data == null) {

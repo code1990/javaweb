@@ -1,79 +1,76 @@
-/**
- * @author: WangJinTao,MengQingChang 2006
- */
 package chapter12;
 
 import org.eclipse.swt.graphics.RGB;
 
 public class People {
-	private Integer id;
+	private int id;
 
 	private String name;
 
 	private boolean male;
 
-	private Integer age;
+	private int age;
 
 	private String position;
 
 	private RGB color;
 
-	// ï¿½ï¿½ï¿½ï¿½id
-	public Integer getID() {
+	// ·µ»Øid
+	public int getID() {
 		return id;
 	}
 
-	// ï¿½ï¿½ï¿½ï¿½id
-	public void setID(Integer id) {
+	// ÉèÖÃid
+	public void setID(int id) {
 		this.id = id;
 	}
 
-	// ï¿½ï¿½ï¿½ï¿½name
+	// ·µ»Øname
 	public String getName() {
 		return name;
 	}
 
-	// ï¿½ï¿½ï¿½ï¿½name
+	// ÉèÖÃname
 	public void setName(String name) {
 		this.name = name;
 	}
 
-	// ï¿½ï¿½ï¿½ï¿½male
+	// ·µ»Ømale
 	public boolean getMale() {
 		return male;
 	}
 
-	// ï¿½ï¿½ï¿½ï¿½ male
+	// ÉèÖÃ male
 	public void setMale(boolean male) {
 		this.male = male;
 	}
 
-	// ï¿½ï¿½ï¿½ï¿½age
-	public Integer getAge() {
+	// ÉèÖÃage
+	public int getAge() {
 		return age;
 	}
 
-	// ï¿½ï¿½ï¿½ï¿½age
-	public void setAge(Integer age) {
+	// ·µ»Øage
+	public void setAge(int age) {
 		this.age = age;
 	}
 
-	// ï¿½ï¿½ï¿½ï¿½position
+	// ·µ»Øposition
 	public String getPosition() {
 		return position;
 	}
 
-	// ï¿½ï¿½ï¿½ï¿½position
+	// ÉèÖÃposition
 	public void setPosition(String position) {
 		this.position = position;
 	}
 
-	// ï¿½ï¿½ï¿½ï¿½color
+	// ·µ»Øcolor
 	public RGB getColor() {
 		return color;
 	}
 
-	// ï¿½ï¿½ï¿½ï¿½color
+	// ÉèÖÃcolor
 	public void setColor(RGB color) {
 		this.color = color;
 	}

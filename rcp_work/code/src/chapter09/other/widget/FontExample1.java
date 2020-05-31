@@ -12,22 +12,22 @@ public class FontExample1 {
 		final Display display = Display.getDefault();
 		final Shell shell = new Shell();
 		shell.setSize(400, 180);
-		shell.setText("FontÊµï¿½ï¿½");
+		shell.setText("FontÊµÀý");
 		shell.setLayout(new FillLayout());
 		shell.addPaintListener(new PaintListener() {
 			public void paintControl(PaintEvent e) {
-				// ï¿½ï¿½ï¿½ï¿½GCï¿½ï¿½ï¿½ï¿½
+				// ¶¨ÒåGC¶ÔÏó
 				GC gc = new GC(shell);
-				// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½É«Îªï¿½ï¿½ï¿½ï¿½É«ï¿½ï¿½
+				// ÉèÖÃ×ÖÌåµÄÇ°¾°ÑÕÉ«Îª¡°ºìÉ«¡±
 				gc.setForeground(display.getSystemColor(SWT.COLOR_RED));
-				// ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+				// ¶¨ÒåÒ»¸ö×ÖÌå¶ÔÏó
 				Font font = new Font(display, "Arial", 12, SWT.BOLD);
 				gc.setFont(font);
-				gc.drawString("Îªï¿½Ð»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î°ï¿½ï¿½ï¿½Ë¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", 80, 40);
+				gc.drawString("ÎªÖÐ»ªÃñ×åµÄÎ°´ó¸´ÐË¹±Ï×Á¦Á¿", 80, 40);
 				Font newfont = new Font(display, new FontData("null", 12,
 						 SWT.ITALIC));
 				gc.setFont(newfont);
-				gc.drawString("Îªï¿½Ð»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î°ï¿½ï¿½ï¿½Ë¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", 80, 80);
+				gc.drawString("ÎªÖÐ»ªÃñ×åµÄÎ°´ó¸´ÐË¹±Ï×Á¦Á¿", 80, 80);
 				font.dispose();
 				newfont.dispose();
 			}

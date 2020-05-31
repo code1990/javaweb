@@ -22,12 +22,12 @@ public class SashFormExample {
 		Shell shell = new Shell(display);
 		shell.setSize(400, 280);
 		shell.setLayout(new FillLayout());
-		// ï¿½ï¿½ï¿½ï¿½Ö¸î´°sashForm1
+		// ¶¨Òå·Ö¸î´°sashForm1
 		sashForm1 = new SashForm(shell, SWT.HORIZONTAL);
 		final List list = new List(sashForm1, SWT.NONE | SWT.BORDER
 				| SWT.H_SCROLL);
-		list.setItems(new String[] { "ï¿½ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½A", "ï¿½ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½B", "ï¿½Ö¸ï¿½ï¿½Ä±ï¿½ï¿½ï¿½A,B",
-				"ï¿½Ä±ï¿½Ö¸î´°ï¿½Ä·Ö¸î·½ï¿½ï¿½" });
+		list.setItems(new String[] { "×î´ó»¯ÎÄ±¾¿òA", "×î´ó»¯ÎÄ±¾¿òB", "»Ö¸´ÎÄ±¾¿òA,B",
+				"¸Ä±ä·Ö¸î´°µÄ·Ö¸î·½Ïò" });
 		list.addSelectionListener(new SelectionAdapter() {
 			public void widgetSelected(SelectionEvent e) {
 				int selectionIndex = list.getSelectionIndex();
@@ -52,9 +52,9 @@ public class SashFormExample {
 		});
 		sashForm2 = new SashForm(sashForm1, SWT.VERTICAL);
 		textA = new Text(sashForm2, SWT.BORDER | SWT.CENTER);
-		textA.setText("ï¿½Ä±ï¿½ï¿½ï¿½A");
+		textA.setText("ÎÄ±¾¿òA");
 		textB = new Text(sashForm2, SWT.BORDER | SWT.CENTER);
-		textB.setText("ï¿½Ä±ï¿½ï¿½ï¿½B");
+		textB.setText("ÎÄ±¾¿òB");
 		textB.setEnabled(false);
 		sashForm1.setWeights(new int[] { 1, 3 });
 		

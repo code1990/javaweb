@@ -15,7 +15,7 @@ public class RowDataExample {
 		final Display display = Display.getDefault();
 		final Shell shell = new Shell();
 		shell.setSize(500, 375);
-		shell.setText("RowDataÊµï¿½ï¿½");
+		shell.setText("RowLayoutÊµÀý");
 		RowLayout rowlayout = new RowLayout();
 		shell.setLayout(rowlayout);
 		Button button1 = new Button(shell, SWT.NONE);

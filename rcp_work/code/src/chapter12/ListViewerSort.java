@@ -1,6 +1,3 @@
-/**
- * @author: WangJinTao,MengQingChang 2006 
- */
 package chapter12;
 
 import java.util.ArrayList;
@@ -18,7 +15,7 @@ import org.eclipse.swt.layout.*;
 public class ListViewerSort extends ApplicationWindow {
 	private Button buttonSort;
 
-	private Boolean a = true;
+	private boolean a = true;
 
 	private ListViewer lv;
 
@@ -38,23 +35,23 @@ public class ListViewerSort extends ApplicationWindow {
 	protected void configureShell(Shell shell) {
 		super.configureShell(shell);
 		shell.setSize(245, 250);
-		shell.setText("ListViewerSortÊµï¿½ï¿½");
+		shell.setText("ListViewerSortÊµÀý");
 	}
 
 	protected Control createContents(Composite parent) {
 		Composite composite = new Composite(parent, SWT.NONE);
 		composite.setLayout(new FillLayout());
-		// ï¿½ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½å·½ï¿½ï¿½
+		// µ÷ÓÃ×Ô¶¨Òå·½·¨
 		createTableViewer(composite);
-		// ï¿½ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½å·½ï¿½ï¿½createItemList()
+		// µ÷ÓÃ×Ô¶¨Òå·½·¨createItemList()
 		itemList = createItemList();
-		// ï¿½ï¿½ï¿½Ã±ï¿½Ç©ï¿½ï¿½
+		// ÉèÖÃ±êÇ©Æ÷
 		lv.setLabelProvider(new MyLabelProvider());
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// ÉèÖÃÄÚÈÝÆ÷
 		lv.setContentProvider(new MyContentProvider());
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// ÉèÖÃÅÅÐòÆ÷
 		lv.setSorter(new Sort());
-		// ï¿½ï¿½setInput()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// ÓÃsetInput()·½·¨¶ÁÈëÊý¾Ý
 		lv.setInput(itemList);
 
 		return composite;
@@ -65,7 +62,7 @@ public class ListViewerSort extends ApplicationWindow {
 		Composite com = new Composite(comp, SWT.NONE);
 		com.setLayout(new GridLayout());
 		buttonSort = new Button(com, SWT.PUSH);
-		buttonSort.setText("ï¿½ï¿½ï¿½ï¿½");
+		buttonSort.setText("ÅÅÐò");
 		GridData grid = new GridData();
 		grid.horizontalIndent = 5;
 		grid.widthHint = 100;
@@ -74,7 +71,7 @@ public class ListViewerSort extends ApplicationWindow {
 			public void widgetSelected(SelectionEvent event) {
 				a = !a;
 				((Sort) lv.getSorter()).playSort(a ? -1 : 1);
-				// Ç¿ï¿½ï¿½Ë¢ï¿½Â£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð§ï¿½ï¿½ï¿½ï¿½ï¿½É¼ï¿½
+				// Ç¿ÖÆË¢ÐÂ£¬·ñÔòÅÅÐòÐ§¹û²»¿É¼û
 				lv.refresh();
 			}
 		});
@@ -105,13 +102,13 @@ public class ListViewerSort extends ApplicationWindow {
 		}
 	}
 
-	// ï¿½ï¿½Ç©ï¿½ï¿½
+	// ±êÇ©Æ÷
 	class MyLabelProvider extends LabelProvider {
 		public String getText(Object element) {
 			return ((MyItem) element).item;
 		}
 
-	}// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	}// ÄÚÈÝÆ÷
 
 	class MyContentProvider implements IStructuredContentProvider {
 
@@ -128,13 +125,13 @@ public class ListViewerSort extends ApplicationWindow {
 
 	}
 
-	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	// ÅÅÐòÆ÷
 	class Sort extends ViewerSorter {
 
 		private int column;
 
 		/**
-		 * ï¿½ï¿½ï¿½ï¿½((Sort) tv.getSorter()).playSort()ï¿½ï¿½ï¿½ï¿½ï¿½ playSort()ï¿½ï¿½ï¿½ï¿½ï¿½ÐµÄ²ï¿½ï¿½ï¿½È¡Öµ
+		 * ½ÓÊÕ((Sort) tv.getSorter()).playSort()Óï¾äÖÐ playSort()·½·¨ÖÐµÄ²ÎÊýÈ¡Öµ
 		 */
 		public void playSort(int column) {
 			this.column = column;

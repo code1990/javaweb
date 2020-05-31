@@ -14,7 +14,7 @@ public class FormLayoutExample{
 		final Display display = new Display();
 		final Shell shell = new Shell(display);
 		shell.setSize(250, 150);
-		shell.setText("FormLayoutÊµï¿½ï¿½");
+		shell.setText("FormLayoutÊµÀý");
 		FormLayout formlayout = new FormLayout();
 		// formlayout.marginTop=40;
 		// formlayout.marginLeft=50;

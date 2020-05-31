@@ -10,8 +10,8 @@ public class ExitActionClass extends Action {
 	ApplicationWindow window;
 	public ExitActionClass(ApplicationWindow w) {
 		window = w;
-		setText("ï¿½Ë³ï¿½@Ctrl+E");
-		setToolTipText("ï¿½Ë³ï¿½Ó¦ï¿½Ã³ï¿½ï¿½ï¿½");
+		setText("ÍË³ö@Ctrl+E");
+		setToolTipText("ÍË³öÓ¦ÓÃ³ÌÐò");
 		try {
 			ImageDescriptor icon = ImageDescriptor.createFromURL(new URL(
 					"file:icons/close.bmp"));

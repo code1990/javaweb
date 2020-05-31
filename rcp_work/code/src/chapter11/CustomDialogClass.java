@@ -14,33 +14,33 @@ public class CustomDialogClass extends Dialog {
 		super(parentShell);
 	}
 
-	// ï¿½Ú¶Ô»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
-	protected Control createDialogArea(Composite parent) {
-		Composite composite = new Composite(parent, SWT.NONE);
-		composite.setLayoutData(new GridData(GridData.FILL_BOTH));
-		composite.setLayout(new GridLayout(2, false));
+	// ÔÚ¶Ô»°¿òÖÐÌí¼Ó×é¼þ
+		protected Control createDialogArea(Composite parent) {
+			Composite composite = new Composite(parent, SWT.NONE);
+			composite.setLayoutData(new GridData(GridData.FILL_BOTH));
+			composite.setLayout(new GridLayout(2, false));
 
-		final Label usernameLabel = new Label(composite, SWT.NONE);
-		usernameLabel.setText("ï¿½Ã»ï¿½ï¿½ï¿½:");
-		final Text usernameText = new Text(composite, SWT.BORDER);
-		GridData data = new GridData(GridData.FILL_HORIZONTAL);
-		usernameText.setLayoutData(data);
+			final Label usernameLabel = new Label(composite, SWT.NONE);
+			usernameLabel.setText("ÓÃ»§Ãû:");
+			final Text usernameText = new Text(composite, SWT.BORDER);
+			GridData data = new GridData(GridData.FILL_HORIZONTAL);
+			usernameText.setLayoutData(data);
 
-		final Label passwordLabel = new Label(composite, SWT.NONE);
-		passwordLabel.setText("ï¿½ï¿½  ï¿½ï¿½:");
-		final Text passwordText = new Text(composite, SWT.BORDER | SWT.PASSWORD);
-		data = new GridData(GridData.FILL_HORIZONTAL);
-		passwordText.setLayoutData(data);
-		return composite;
-	}
+			final Label passwordLabel = new Label(composite, SWT.NONE);
+			passwordLabel.setText("ÃÜ  Âë:");
+			final Text passwordText = new Text(composite, SWT.BORDER | SWT.PASSWORD);
+			data = new GridData(GridData.FILL_HORIZONTAL);
+			passwordText.setLayoutData(data);
+			return composite;
+		}
 
-	/**
-	 * ï¿½ï¿½ï¿½Æ´ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ protected int getShellStyle() { return SWT.MIN; }
-	 */
-	// ï¿½ï¿½Ó°ï¿½Å¥
-	protected void createButtonsForButtonBar(Composite parent) {
-		createButton(parent, IDialogConstants.OK_ID, "È·ï¿½ï¿½", true);
-		createButton(parent, IDialogConstants.CANCEL_ID, "È¡ï¿½ï¿½", true);
-		createButton(parent, IDialogConstants.NO_ID, "ï¿½ï¿½ï¿½", true);
-	}
+		/**
+		 * ¶¨ÖÆ´°ÌåÑùÊ½ protected int getShellStyle() { return SWT.MIN; }
+		 */
+		// Ìí¼Ó°´Å¥
+		protected void createButtonsForButtonBar(Composite parent) {
+			createButton(parent, IDialogConstants.OK_ID, "È·¶¨", true);
+			createButton(parent, IDialogConstants.CANCEL_ID, "È¡Ïû", true);
+			createButton(parent, IDialogConstants.NO_ID, "Çå³ý", true);
+		}
 }

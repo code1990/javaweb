@@ -1,140 +1,137 @@
-/**
- *@author: WangJinTao,MengQingChang2006
- */
-package chapter12;
-
-import java.net.*;
-
-import org.eclipse.jface.action.*;
-import org.eclipse.jface.resource.*;
-
-import org.eclipse.jface.text.*;
-import org.eclipse.jface.window.*;
-import org.eclipse.swt.*;
-
-import org.eclipse.swt.events.*;
-import org.eclipse.swt.layout.*;
-import org.eclipse.swt.widgets.*;
-
-public class UndoRedoOperateExample extends ApplicationWindow {
-
-	private TextViewer tv;
-
-	private IUndoManager undoManager;
-
-	private Action undoAction;
-
-	private Action redoAction;
-
-	public UndoRedoOperateExample() {
-		super(null);
-		undoAction = new UndoAction();
-		redoAction = new RedoAction();
-		addMenuBar();
-		addToolBar(SWT.FLAT);
-	}
-
-	public void run() {
-		setBlockOnOpen(true);
-		open();
-		Display.getCurrent().dispose();
-	}
-
-	protected Control createContents(Composite parent) {
-		getShell().setText("UndoRedoÊµï¿½ï¿½");
-
-		Composite container = new Composite(parent, SWT.NONE);
-		container.setLayout(new FillLayout());
-
-		tv = new TextViewer(container, SWT.BORDER | SWT.H_SCROLL | SWT.V_SCROLL);
-		Document doc = new Document();
-		tv.setDocument(doc);
-		// /ï¿½ï¿½ï¿½Ô³ï¿½ï¿½ï¿½1000ï¿½ï¿½ï¿½Ä²ï¿½ï¿½ï¿½
-		undoManager = new DefaultUndoManager(1000);
-		// ï¿½ï¿½textï¿½ï¿½ï¿½ï¿½ï¿½ï¿½IUndoManagerï¿½ï¿½ï¿½ï¿½
-		tv.setUndoManager(undoManager);
-		undoManager.connect(tv);
-
-		tv.getTextWidget().addVerifyListener(new VerifyListener() {
-			public void verifyText(VerifyEvent e) {
-				// Ê¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½Ê¼ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ö·ï¿½Ò»ï¿½ï¿½ï¿½Ö·ï¿½ï¿½Ä³ï¿½ï¿½ï¿½
-				undoManager.endCompoundChange();
-				/**
-				 * ï¿½ï¿½undoManager.beginCompoundChange()ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö±ï¿½Ó³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½Ê¼ï¿½ï¿½
-				 */
-
-			}
-		});
-
-		return container;
-	}
-
-	protected MenuManager createMenuManager() {
-		MenuManager menubar = new MenuManager();
-		MenuManager editMenu = new MenuManager("ï¿½à¼­(&E)");
-
-		editMenu.add(undoAction);
-		editMenu.add(redoAction);
-		menubar.add(editMenu);
-		return menubar;
-	}
-
-	protected ToolBarManager createToolBarManager(int style) {
-		ToolBarManager toolBarManager = new ToolBarManager(style);
-		toolBarManager.add(new UndoAction());
-		toolBarManager.add(new RedoAction());
-
-		return toolBarManager;
-	}
-
-	class UndoAction extends Action {
-		public UndoAction() {
-			super("ï¿½ï¿½ï¿½ï¿½(&U)ï¿½ï¿½ï¿½ï¿½@Ctrl+Z", Action.AS_PUSH_BUTTON);
-			setToolTipText("È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
-			try {
-				// ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½
-				ImageDescriptor icon = ImageDescriptor.createFromURL(new URL(
-						"file:icons/undo.bmp"));
-				setImageDescriptor(icon);
-			} catch (MalformedURLException e) {
-				System.err.println(e.getMessage());
-			}
-		}
-
-		public void run() {
-
-			undoManager.undo();
-			
-			/**
-			 * tv.doOperation(ITextOperationTarget.UNDO);
-			 *Ö´ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ITextOperationï¿½Ó¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä±ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½
-			 */ 
-		}
-	}
-
-	class RedoAction extends Action {
-		public RedoAction() {
-			super("&ï¿½Ö¸ï¿½(&R)ï¿½ï¿½ï¿½ï¿½@Ctrl+R", Action.AS_PUSH_BUTTON);
-			setToolTipText("ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½");
-			try {
-				// ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½
-				ImageDescriptor icon = ImageDescriptor.createFromURL(new URL(
-						"file:icons/redo.bmp"));
-				setImageDescriptor(icon);
-			} catch (MalformedURLException e) {
-				System.err.println(e.getMessage());
-			}
-		}
-
-		public void run() {
-			// tv.doOperation(ITextOperationTarget.REDO);
-			undoManager.redo();
-		}
-	}
-
-	public static void main(String[] args) {
-		new UndoRedoOperateExample().run();
-
-	}
-
-}
+//package chapter12;
+//
+//import java.net.*;
+//
+//import org.eclipse.jface.action.*;
+//import org.eclipse.jface.resource.*;
+//
+//import org.eclipse.jface.text.*;
+//import org.eclipse.jface.window.*;
+//import org.eclipse.swt.*;
+//
+//import org.eclipse.swt.events.*;
+//import org.eclipse.swt.layout.*;
+//import org.eclipse.swt.widgets.*;
+//
+//public class UndoRedoOperateExample extends ApplicationWindow {
+//
+//	private TextViewer tv;
+//
+//	private IUndoManager undoManager;
+//
+//	private Action undoAction;
+//
+//	private Action redoAction;
+//
+//	public UndoRedoOperateExample() {
+//		super(null);
+//		undoAction = new UndoAction();
+//		redoAction = new RedoAction();
+//		addMenuBar();
+//		addToolBar(SWT.FLAT);
+//	}
+//
+//	public void run() {
+//		setBlockOnOpen(true);
+//		open();
+//		Display.getCurrent().dispose();
+//	}
+//
+//	protected Control createContents(Composite parent) {
+//		getShell().setText("UndoRedoÊµÀý");
+//
+//		Composite container = new Composite(parent, SWT.NONE);
+//		container.setLayout(new FillLayout());
+//
+//		tv = new TextViewer(container, SWT.BORDER | SWT.H_SCROLL | SWT.V_SCROLL);
+//		Document doc = new Document();
+//		tv.setDocument(doc);
+//		// /¿ÉÒÔ³·Ïú1000²½µÄ²Ù×÷
+//		undoManager = new DefaultUndoManager(1000);
+//		// ÔÚtextÉÏÉèÖÃIUndoManager¶ÔÏó
+//		tv.setUndoManager(undoManager);
+//		undoManager.connect(tv);
+//
+//		tv.getTextWidget().addVerifyListener(new VerifyListener() {
+//			public void verifyText(VerifyEvent e) {
+//				// Ê¹³·Ïú²Ù×÷´Ó×îºóÒ»¸ö×Ö·û¿ªÊ¼£¬Ò»¸ö×Ö·ûÒ»¸ö×Ö·ûµÄ³·Ïú
+//				undoManager.endCompoundChange();
+//				/**
+//				 * ÓÃundoManager.beginCompoundChange()·½·¨ ³·Ïú²Ù×÷Ö±½Ó³·Ïúµ½ÎÄ±¾¿ªÊ¼´¦
+//				 */
+//
+//			}
+//		});
+//
+//		return container;
+//	}
+//
+//	protected MenuManager createMenuManager() {
+//		MenuManager menubar = new MenuManager();
+//		MenuManager editMenu = new MenuManager("±à¼­(&E)");
+//
+//		editMenu.add(undoAction);
+//		editMenu.add(redoAction);
+//		menubar.add(editMenu);
+//		return menubar;
+//	}
+//
+//	protected ToolBarManager createToolBarManager(int style) {
+//		ToolBarManager toolBarManager = new ToolBarManager(style);
+//		toolBarManager.add(new UndoAction());
+//		toolBarManager.add(new RedoAction());
+//
+//		return toolBarManager;
+//	}
+//
+//	class UndoAction extends Action {
+//		public UndoAction() {
+//			super("³·Ïú(&U)¼üÈë@Ctrl+Z", Action.AS_PUSH_BUTTON);
+//			setToolTipText("È¡Ïû¼üÈë");
+//			try {
+//				// ÔØÈëÍ¼Ïñ
+//				ImageDescriptor icon = ImageDescriptor.createFromURL(new URL(
+//						"file:icons/undo.bmp"));
+//				setImageDescriptor(icon);
+//			} catch (MalformedURLException e) {
+//				System.err.println(e.getMessage());
+//			}
+//		}
+//
+//		public void run() {
+//
+//			undoManager.undo();
+//			
+//			/**
+//			 * tv.doOperation(ITextOperationTarget.UNDO);
+//			 *Ö´ÐÐÄ¿±ê²Ù×÷£¬ITextOperation½Ó¿ÚÓÃÀ´¶¨ÒåÎÄ±¾Ä¿±ê²Ù×÷
+//			 */ 
+//		}
+//	}
+//
+//	class RedoAction extends Action {
+//		public RedoAction() {
+//			super("&»Ö¸´(&R)¼üÈë@Ctrl+R", Action.AS_PUSH_BUTTON);
+//			setToolTipText("»Ö¸´¼üÈë");
+//			try {
+//				// ÔØÈëÍ¼Ïñ
+//				ImageDescriptor icon = ImageDescriptor.createFromURL(new URL(
+//						"file:icons/redo.bmp"));
+//				setImageDescriptor(icon);
+//			} catch (MalformedURLException e) {
+//				System.err.println(e.getMessage());
+//			}
+//		}
+//
+//		public void run() {
+//			// tv.doOperation(ITextOperationTarget.REDO);
+//			undoManager.redo();
+//		}
+//	}
+//
+//	public static void main(String[] args) {
+//		new UndoRedoOperateExample().run();
+//
+//	}
+//
+//}

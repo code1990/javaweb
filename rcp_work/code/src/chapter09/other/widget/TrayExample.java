@@ -11,7 +11,7 @@ public class TrayExample {
 		final Display display = Display.getDefault();
 		final Shell shell = new Shell();
 		shell.setSize(200, 100);
-		shell.setText("TrayÊµï¿½ï¿½");
+		shell.setText("TrayÊµÀý");
 		Tray tray = display.getSystemTray();
 		TrayItem trayItem = new TrayItem(tray, SWT.NONE);
 		trayItem.setToolTipText("TaskTray");
@@ -38,17 +38,17 @@ public class TrayExample {
 		});
 		final Menu menu = new Menu(shell, SWT.POP_UP);
 		MenuItem item1 = new MenuItem(menu, SWT.PUSH);
-		item1.setText("ï¿½ï¿½ï¿½ï¿½");
+		item1.setText("½ûÓÃ");
 		MenuItem item3 = new MenuItem(menu, SWT.CASCADE);
-		item3.setText("ï¿½ï¿½ï¿½ï¿½");
+		item3.setText("ÉèÖÃ");
 		new MenuItem(menu, SWT.SEPARATOR);
 		MenuItem item4 = new MenuItem(menu, SWT.CHECK);
-		item4.setText("ï¿½ï¿½ï¿½ï¿½....");
+		item4.setText("¹ØÓÚ....");
 		MenuItem item6 = new MenuItem(menu, SWT.RADIO);
-		item6.setText("ï¿½ï¿½ï¿½ï¿½");
+		item6.setText("ÊôÐÔ");
 		new MenuItem(menu, SWT.SEPARATOR);
 		MenuItem menuExit = new MenuItem(menu, SWT.PUSH);
-		menuExit.setText("ï¿½Ë³ï¿½");
+		menuExit.setText("ÍË³ö");
 		menuExit.addSelectionListener(new SelectionAdapter() {
 			public void widgetSelected(SelectionEvent e) {
 				shell.dispose();

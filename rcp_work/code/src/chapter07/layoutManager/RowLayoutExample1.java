@@ -14,7 +14,7 @@ public class RowLayoutExample1 {
 		final Display display = Display.getDefault();
 		final Shell shell = new Shell();
 		shell.setSize(200, 100);
-		shell.setText("RowLayoutÊµï¿½ï¿½");
+		shell.setText("RowLayoutÊµÀý");
 		RowLayout rowlayout = new RowLayout();
 		shell.setLayout(rowlayout);
 		new Button(shell, SWT.NONE).setText("Button1");

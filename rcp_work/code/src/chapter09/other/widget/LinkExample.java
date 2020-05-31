@@ -11,14 +11,14 @@ public class LinkExample {
 		final Display display = Display.getDefault();
 		final Shell shell = new Shell();
 		shell.setSize(300, 150);
-		shell.setText("LinkÊµï¿½ï¿½");
+		shell.setText("LinkÊµÀý");
 		shell.setLayout(new GridLayout());
 		Link link = new Link(shell, SWT.NONE);
-		link.setText("ï¿½ï¿½ï¿½ï¿½ <a>link</a> Êµï¿½ï¿½, <a>SWT and JFace</a>,<a>Eclipse Platform</a> ");
-		// ï¿½ï¿½ï¿½ï¿½linkï¿½Ä±ï¿½
+		link.setText("ÕâÊÇ <a>link</a> ÊµÀý, <a>SWT and JFace</a>,<a>Eclipse Platform</a> ");
+		// ¼àÌýlinkÎÄ±¾
 		link.addListener(SWT.Selection, new Listener() {
 			public void handleEvent(Event event) {
-				System.out.println("ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½: " + event.text);
+				System.out.println("ÄúÑ¡ÔñÁË: " + event.text);
 			}
 		});
 		GridData grid = new GridData();

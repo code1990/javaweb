@@ -1,5 +1,3 @@
-/**@author WangJinTao,MengQingChang 2006
- */
 package chapter06.swt.dialog;
 
 import org.eclipse.swt.*;
@@ -11,13 +9,13 @@ public class MessageBoxExample {
 		final Display display = Display.getDefault();
 		final Shell shell = new Shell();
 		shell.setSize(360, 250);
-		shell.setText("MessageBoxÊµï¿½ï¿½");
+		shell.setText("MessageBoxÊµÀý");
 		shell.addShellListener(new ShellAdapter() {
 			public void shellClosed(ShellEvent e) {
 				MessageBox messagebox = new MessageBox(shell, SWT.ICON_QUESTION
 						| SWT.YES | SWT.NO);
-				messagebox.setText("MessageBoxï¿½Ô»ï¿½ï¿½ï¿½");
-				messagebox.setMessage("ï¿½ï¿½È·ï¿½ï¿½ï¿½Ç·ï¿½ï¿½Ë³ï¿½?");
+				messagebox.setText("MessageBox¶Ô»°¿ò");
+				messagebox.setMessage("ÇëÈ·ÈÏÊÇ·ñÍË³ö?");
 				int message = messagebox.open();
 				e.doit = message == SWT.YES;
 			}

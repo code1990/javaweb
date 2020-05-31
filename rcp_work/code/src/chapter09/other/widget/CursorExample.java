@@ -12,7 +12,7 @@ public class CursorExample {
 		final Display display = Display.getDefault();
 		final Shell shell = new Shell();
 		shell.setSize(500, 375);
-		shell.setText("ï¿½ï¿½ï¿½ï¿½Î±ï¿½Êµï¿½ï¿½");
+		shell.setText("Êó±êÓÎ±êÊµÀý");
 		Cursor cursor = new Cursor(display, SWT.CURSOR_HAND);
 		shell.setCursor(cursor);
 

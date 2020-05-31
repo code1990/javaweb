@@ -1,6 +1,3 @@
-/**
- *@ author: WangJinTao,MengQingChang 2006 
- */
 package chapter12;
 
 import org.eclipse.swt.layout.*;
@@ -27,9 +24,9 @@ public class TreeViewerClass extends ApplicationWindow {
 
 	protected void configureShell(Shell shell) {
 		super.configureShell(shell);
-		//ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½ï¿½Ð¡
+		//ÉèÖÃ´°Ìå´óÐ¡
 		shell.setSize(280, 300);
-		shell.setText("TreeViewerÊµï¿½ï¿½");
+		shell.setText("TreeViewerÊµÀý");
 	}
 
 	protected Control createContents(Composite parent) {
@@ -38,11 +35,11 @@ public class TreeViewerClass extends ApplicationWindow {
 		composite.setLayout(new FillLayout());
 
 		final TreeViewer treeViewer = new TreeViewer(composite, SWT.NONE);
-		//ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½Ç©ï¿½ï¿½
+		//ÉèÖÃÖµ±êÇ©Æ÷
 		treeViewer.setLabelProvider(new TreeViewerLabelProvider());
-		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		//ÉèÖÃÄÚÈÝÆä
 		treeViewer.setContentProvider(new TreeViewerContentProvider());
-		//ï¿½ï¿½setInput()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 
+		//ÓÃsetInput()·½·¨¶ÁÈëÊý¾Ý 
 		treeViewer.setInput(Entity.node());
 		return composite;
 	}

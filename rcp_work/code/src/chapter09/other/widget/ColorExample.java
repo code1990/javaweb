@@ -11,7 +11,7 @@ public class ColorExample{
 		final Display display = Display.getDefault();
 		final Shell shell = new Shell();
 		shell.setSize(350, 200);
-		shell.setText("ColorÊµï¿½ï¿½");
+		shell.setText("ColorÊµÀý");
 		shell.setLayout(new FillLayout());
 		Canvas canvas = new Canvas(shell, SWT.BORDER);
 		shell.open();

@@ -1,5 +1,3 @@
-/**@author WangJinTao,MengQingChang 2006
- */
 package chapter06.swt.dialog;
 
 import org.eclipse.swt.widgets.*;
@@ -8,20 +6,20 @@ import org.eclipse.swt.graphics.*;
 public class ColorDialogExample1 {
 	public ColorDialogExample1() {
 		final Shell shell = new Shell();
-		// ï¿½ï¿½ï¿½ï¿½ColorDialogï¿½ï¿½ï¿½ï¿½
+		// ¶¨ÓÚColorDialog¶ÔÏó
 		ColorDialog colordialog = new ColorDialog(shell);
-		// ï¿½ï¿½ï¿½Ã¶Ô»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
-		colordialog.setText("ï¿½ï¿½É«Ñ¡ï¿½ï¿½Ô»ï¿½ï¿½ï¿½");
-		// ï¿½ï¿½ï¿½Ãµï¿½Ç°ï¿½ï¿½É«Öµ
+		// ÉèÖÃ¶Ô»°¿ò±êÌâ
+		colordialog.setText("ÑÕÉ«Ñ¡Ôñ¶Ô»°¿ò");
+		// ÉèÖÃµ±Ç°ÑÕÉ«Öµ
 		colordialog.setRGB(new RGB(0, 0, 255));
 
 		RGB rgb = colordialog.open();
 		/**
-		 * open()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½Ñ¡ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½É«Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½RGBï¿½ï¿½ï¿½ÍµÄ¶ï¿½ï¿½ï¿½
-		 * ï¿½ï¿½ï¿½Ã»ï¿½ Ñ¡ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å¥ï¿½ï¿½ï¿½ï¿½open()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½null
+		 * open()·½·¨µ±ÓÃ»§Ñ¡ÔñÒ»ÖÐÑÕÉ«Ê±½«·µ»ØÒ»¸ö´ú±íRGBÀàÐÍµÄ¶ÔÏó£¬
+		 * ÈçÓÃ»§ Ñ¡Ôñ¡°È¡Ïû¡±°´Å¥£¬Ôòopen()·½·¨·µ»Ønull
 		 */
 		if (rgb != null) {
-			// ï¿½ï¿½Ó¡ï¿½ï¿½ï¿½ï¿½ï¿½Ç°ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½É«Öµ
+			// ´òÓ¡Êä³öµ±Ç°ËùÑ¡µÄÑÕÉ«Öµ
 			System.out.println(rgb);
 
 		}

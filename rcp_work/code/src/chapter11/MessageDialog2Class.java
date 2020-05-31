@@ -14,7 +14,7 @@ public class MessageDialog2Class {
 		final Display display = Display.getDefault();
 		final Shell shell = new Shell();
 		shell.setSize(465, 200);
-		shell.setText("MessageDialogÊµï¿½ï¿½");
+		shell.setText("MessageDialogÊµÀý");
 		shell.setLayout(new GridLayout(5, false));
 		text = new Text(shell, SWT.BORDER | SWT.MULTI | SWT.H_SCROLL
 				| SWT.V_SCROLL);

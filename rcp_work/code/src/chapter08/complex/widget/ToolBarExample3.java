@@ -39,49 +39,49 @@ public class ToolBarExample3 {
 		final Display display = Display.getDefault();
 		final Shell shell = new Shell();
 		shell.setSize(500, 300);
-		shell.setText("ToolBarÊµï¿½ï¿½");
-		// ShellÊ¹ï¿½ï¿½ï¿½Ð²ï¿½ï¿½Ö·ï¿½Ê½ï¿½ï¿½Ê¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½î°´Å¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		shell.setText("ToolBarÊµÀý");
+		// ShellÊ¹ÓÃÐÐ²¼¾Ö·½Ê½£¬Ê¹¹¤¾ßÀ¸Ïî°´Å¥ÒÀ´ÎÅÅÁÐ
 		shell.setLayout(new RowLayout(SWT.VERTICAL));
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë®Æ½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½
+		// ¹¤¾ßÀ¸²ÉÓÃË®Æ½·ÅÖÃÑùÊ½
 		toolBar = new ToolBar(shell, SWT.HORIZONTAL);
 		{
 			/**
-			 * ï¿½ï¿½ï¿½ï¿½createToolItem()ï¿½Ô¶ï¿½ï¿½å·½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Î±ï¿½Ê¾ï¿½ï¿½ToolItemï¿½ï¿½ï¿½ï¿½ï¿½Ú¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½
-			 * ï¿½Ú¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å¥ÎªPUSHï¿½ï¿½ï¿½Í£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½Å¥ï¿½Ïµï¿½ï¿½ï¿½ï¿½Æ£ï¿½ 
-			 * ï¿½ï¿½ï¿½Ä¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾Îªï¿½ï¿½Ê¾ï¿½Ô±ï¿½Ç©ï¿½ï¿½ï¿½Ö£ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð´ï¿½É£ï¿½
-			 * ToolItem item=new ToolItem(toolBarï¿½ï¿½SWT.PUSH); 
-			 * item.setText("PUSHï¿½ï¿½Å¥");
-			 * item.setToolTipText("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½Ô¶Ô»ï¿½ï¿½ï¿½");
+			 * µ÷ÓÃcreateToolItem()×Ô¶¨Òå·½·¨£¬µÚÒ»¸ö²Î±íÊ¾½«ToolItem¹¹ÔìÔÚ¹¤¾ßÀ¸ÉÏ £¬
+			 * µÚ¶þ¸ö²ÎÊý£º°´Å¥ÎªPUSHÀàÐÍ£¬µÚÈý¸ö²ÎÊý±íÊ¾°´Å¥ÉÏµÄÃû³Æ£¬ 
+			 * µÚËÄ¸ö²ÎÊý±íÊ¾ÎªÌáÊ¾ÐÔ±êÇ©ÎÄ×Ö£¬ ¸ÃÓï¾ä¿ÉÒÔÐ´³É£º
+			 * ToolItem item=new ToolItem(toolBar£¬SWT.PUSH); 
+			 * item.setText("PUSH°´Å¥");
+			 * item.setToolTipText("µ¥»÷µ¯³öÌáÊ¾ÐÔ¶Ô»°¿ò");
 			 */
-			item = createToolItem(toolBar, SWT.PUSH, "PUSHï¿½ï¿½Å¥", "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½Ô¶Ô»ï¿½ï¿½ï¿½");
-			// ï¿½ï¿½ï¿½ï¿½PUSHï¿½ï¿½Å¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½MessageBoxï¿½Ô»ï¿½ï¿½ï¿½
+			item = createToolItem(toolBar, SWT.PUSH, "PUSH°´Å¥", "µ¥»÷µ¯³öÌáÊ¾ÐÔ¶Ô»°¿ò");
+			// µ¥»÷PUSH°´Å¥´¥·¢¸ÃÊÂ¼þ£¬µ¯³öMessageBox¶Ô»°¿ò
 			item.addSelectionListener(new SelectionAdapter() {
 				public void widgetSelected(SelectionEvent event) {
-					// /ï¿½ï¿½ï¿½ï¿½MessageBoxï¿½Ô»ï¿½ï¿½ï¿½
+					// /¶¨ÒåMessageBox¶Ô»°¿ò
 					MessageBox messageBox = new MessageBox(shell,
 							SWT.ICON_INFORMATION | SWT.OK);
-					messageBox.setMessage("ï¿½ï¿½ï¿½ï¿½PUSHï¿½ï¿½ï¿½ÍµÄ°ï¿½Å¥");
+					messageBox.setMessage("ÕâÊÇPUSHÀàÐÍµÄ°´Å¥");
 					messageBox.open();
 				}
 			});
 		}
-		{ // ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ëµï¿½ï¿½Ä°ï¿½Å¥
-			item1 = createToolItem(toolBar, SWT.DROP_DOWN, "DROP_DOWNï¿½ï¿½Å¥",
-					"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ëµï¿½ï¿½Ä°ï¿½Å¥");
+		{ // ¶¨ÒåÒ»¸ö´øÏÂÀ­²Ëµ¥µÄ°´Å¥
+			item1 = createToolItem(toolBar, SWT.DROP_DOWN, "DROP_DOWN°´Å¥",
+					"´øÏÂÀ­²Ëµ¥µÄ°´Å¥");
 			final Menu menu = new Menu(shell, SWT.PUSH);
-			// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ëµï¿½ï¿½ï¿½
+			// ¶¨ÒåÎå¸ö²Ëµ¥Ïî
 			for (int i = 0; i < 5; i++) {
 				MenuItem menuitem = new MenuItem(menu, SWT.CHECK);
 				menuitem.setText("MenuItem " + i);
 			}
-			// ï¿½ï¿½ï¿½ï¿½ï¿½Ã¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ëµï¿½
+			// µ¥»÷¸Ã¹¤¾ßÀ¸ÏîÊ±µ¯³öÏÂÀ­²Ëµ¥
 			item1.addSelectionListener(new SelectionAdapter() {
 				public void widgetSelected(SelectionEvent event) {
-					// ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½ARROWï¿½ï¿½ï¿½Í°ï¿½Å¥ï¿½ï¿½Ö´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä³ï¿½ï¿½ï¿½
+					// µ±Êó±êÑ¡ÖÐARROWÀàÐÍ°´Å¥ÔòÖ´ÐÐÏÂÃæµÄ³ÌÐò
 					if (event.detail == SWT.ARROW) {
-						// ï¿½ï¿½È¡itemï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½Å¥ï¿½ï¿½Ð¡
+						// »ñÈ¡item´óÐ¡¼´°´Å¥´óÐ¡
 						Rectangle bound = item1.getBounds();
-						// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ëµï¿½Î»ï¿½Ã½ï¿½ï¿½Ð¶ï¿½Î»
+						// ¶ÔÏÂÀ­²Ëµ¥Î»ÖÃ½øÐÐ¶¨Î»
 						point = toolBar.toDisplay(bound.x, bound.y
 								+ bound.height);
 						menu.setLocation(point);
@@ -91,12 +91,12 @@ public class ToolBarExample3 {
 			});
 		}
 		{
-			item = createToolItem(toolBar, SWT.CHECK, "CHECKï¿½ï¿½Å¥", "ï¿½ï¿½ï¿½ï¿½×´Ì¬ï¿½ï¿½ï¿½Ä±ï¿½");
+			item = createToolItem(toolBar, SWT.CHECK, "CHECK°´Å¥", "µ¥»÷×´Ì¬½«¸Ä±ä");
 			item.addSelectionListener(new SelectionAdapter() {
 				public void widgetSelected(SelectionEvent event) {
 					ToolItem item = (ToolItem) event.widget;
-					// ï¿½ï¿½Ã¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï°ï¿½Å¥ï¿½ï¿½×´Ì¬
-					labela.setText(item.getSelection() ? "ï¿½ï¿½ï¿½ï¿½ " : "ï¿½ï¿½ï¿½ï¿½ ");
+					// »ñµÃ¹¤¾ßÀ¸ÉÏ°´Å¥µÄ×´Ì¬
+					labela.setText(item.getSelection() ? "°´ÏÂ " : "µ¯Æð ");
 				}
 			});
 		}
@@ -109,7 +109,7 @@ public class ToolBarExample3 {
 				public void widgetSelected(SelectionEvent e) {
 					int selectionIndex = combo.getSelectionIndex();
 					if (selectionIndex == 0) {
-						// ï¿½Úµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð±ï¿½ï¿½î±»Ñ¡ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½Ð±ï¿½ï¿½î½«ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½ï¿½ï¿½
+						// ÔÚµ±ÏÂÀ­ÁÐ±íÏî±»Ñ¡ÖÐÊ±£¬¸ÃÁÐ±íÏî½«ÏÔÊ¾ÔÚÎÄ±¾¿òÖÐ
 						textdisplay.setText(combo.getText());
 					} else if (selectionIndex == 1) {
 						textdisplay.setText(combo.getText());
@@ -127,60 +127,60 @@ public class ToolBarExample3 {
 				}
 			});
 			item2.setControl(combo);
-			item2.setWidth(80);// ï¿½ï¿½ï¿½ï¿½Comboï¿½Ä¿ï¿½ï¿½
+			item2.setWidth(80);// ÉèÖÃComboµÄ¿í¶È
 		}
 		{
-			item = createToolItem(toolBar, SWT.RADIO, "RADIO1ï¿½ï¿½Å¥ ", "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½Ã°ï¿½Å¥ï¿½ï¿½Ñ¡ï¿½ï¿½");
+			item = createToolItem(toolBar, SWT.RADIO, "RADIO1°´Å¥ ", "µ¥»÷ÏÔÊ¾¸Ã°´Å¥±»Ñ¡ÖÐ");
 			item.addSelectionListener(new SelectionAdapter() {
 				public void widgetSelected(SelectionEvent event) {
-					labelb.setText("RADIO1ï¿½ï¿½Å¥");
+					labelb.setText("RADIO1°´Å¥");
 				}
 			});
-			item = createToolItem(toolBar, SWT.RADIO, "RADIO2ï¿½ï¿½Å¥", "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½Ã°ï¿½Å¥ï¿½ï¿½Ñ¡ï¿½ï¿½");
+			item = createToolItem(toolBar, SWT.RADIO, "RADIO2°´Å¥", "µ¥»÷ÏÔÊ¾¸Ã°´Å¥±»Ñ¡ÖÐ");
 			item.addSelectionListener(new SelectionAdapter() {
 				public void widgetSelected(SelectionEvent event) {
-					labelb.setText("RADIO2ï¿½ï¿½Å¥");
+					labelb.setText("RADIO2°´Å¥");
 				}
 			});
 		}
 		composite = new Composite(shell, SWT.NONE);
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½Ö£ï¿½ï¿½ï¿½ï¿½ï¿½2ï¿½ï¿½
+		// Ãæ°å²ÉÓÃÍø¸ñÊ½²¼¾Ö£¬¶¨Òå2ÁÐ
 		composite.setLayout(new GridLayout(2, false));
-		// ï¿½ï¿½Ç©ï¿½Ö¸ï¿½ï¿½ï¿½
+		// ±êÇ©·Ö¸ô·û
 		Label label = new Label(composite, SWT.HORIZONTAL | SWT.SEPARATOR);
 		GridData grida = new GridData(GridData.FILL_HORIZONTAL);
-		grida.horizontalSpan = 2;// Ë®Æ½ï¿½ï¿½Õ¼2ï¿½ï¿½
+		grida.horizontalSpan = 2;// Ë®Æ½ÇÀÕ¼2ÁÐ
 		label.setLayoutData(grida);
 		labelA = new Label(composite, SWT.NONE);
-		labelA.setText("CHECKï¿½ï¿½Å¥ï¿½ï¿½Ç°×´Ì¬:");
+		labelA.setText("CHECK°´Å¥µ±Ç°×´Ì¬:");
 		labela = new Label(composite, SWT.NONE);
-		labela.setText("ï¿½ï¿½ï¿½ï¿½");
-		// ï¿½ï¿½Ç©ï¿½Ö¸ï¿½ï¿½ï¿½
+		labela.setText("µ¯Æð");
+		// ±êÇ©·Ö¸ô·û
 		Label lab = new Label(composite, SWT.HORIZONTAL | SWT.SEPARATOR);
 		GridData grid = new GridData(GridData.FILL_HORIZONTAL);
 		grid.horizontalSpan = 2;
 		lab.setLayoutData(grid);
 		labelB = new Label(composite, SWT.RIGHT);
-		labelB.setText("ï¿½ï¿½Ç°Ñ¡ï¿½Ðµï¿½RADIOï¿½ï¿½Å¥Îª:");
+		labelB.setText("µ±Ç°Ñ¡ÖÐµÄRADIO°´Å¥Îª:");
 		labelb = new Label(composite, SWT.NONE);
-		labelb.setText("ï¿½ï¿½Ç°ï¿½ï¿½Ñ¡ï¿½Ðµï¿½RADIOï¿½ï¿½Å¥");
-		// ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½
+		labelb.setText("µ±Ç°ÎÞÑ¡ÖÐµÄRADIO°´Å¥");
+		// ¶¨ÒåÒ»¸öÎÄ±¾¿ò
 		textdisplay = new Text(composite, SWT.BORDER);
 		GridData gridData = new GridData(GridData.FILL_BOTH);
-		gridData.horizontalSpan = 2;// Ë®Æ½ï¿½ï¿½Õ¼2ï¿½ï¿½
-		gridData.heightHint = 20;// ï¿½ß¶ï¿½Îª20ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		gridData.horizontalSpan = 2;// Ë®Æ½ÇÀÕ¼2ÁÐ
+		gridData.heightHint = 20;// ¸ß¶ÈÎª20¸öÏñËØ
 		textdisplay.setLayoutData(gridData);
-		// ï¿½ï¿½ï¿½ï¿½Æ¶ï¿½ï¿½Â¼ï¿½
+		// Êó±êÒÆ¶¯ÊÂ¼þ
 		toolBar.addMouseMoveListener(new MouseMoveListener() {
 			public void mouseMove(MouseEvent e) {
 				item = toolBar.getItem(new Point(e.x, e.y));
 				String name = "";
 				if (item != null) {
-					// ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï°ï¿½Å¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+					// »ñÈ¡¹¤¾ßÀ¸ÏîµÄÃû×Ö£¬¼´¹¤¾ßÀ¸ÉÏ°´Å¥µÄÃû³Æ
 					name = item.getText();
 				}
 				if (!Text.equals(name)) {
-					// ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½È¡ï¿½Ä¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+					// ÔÚÎÄ±¾ÉÏÏÔÊ¾»ñÈ¡µÄ¹¤¾ßÀ¸ÏîµÄÃû³Æ
 					textdisplay.setText(name);
 					Text = name;
 				}
@@ -197,8 +197,8 @@ public class ToolBarExample3 {
 	private ToolItem createToolItem(ToolBar parent, int type, String text,
 			String toolTipText) {
 		ToolItem item = new ToolItem(parent, type);
-		item.setText(text);// ï¿½ï¿½ï¿½ï¿½itemï¿½ï¿½ï¿½ï¿½
-		item.setToolTipText(toolTipText);// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½Ô±ï¿½Ç©ï¿½ï¿½ï¿½ï¿½
+		item.setText(text);// ÉèÖÃitemÃû³Æ
+		item.setToolTipText(toolTipText);// ÉèÖÃÌáÊ¾ÐÔ±êÇ©ÎÄ×Ö
 		return item;
 	}
 

@@ -11,48 +11,48 @@ public class TableExample2 {
 		final Display display = Display.getDefault();
 		final Shell shell = new Shell();
 		shell.setSize(410, 260);
-		shell.setText("TableÊµï¿½ï¿½");
-		// shellï¿½ï¿½ï¿½Ã³ï¿½ï¿½ï¿½ï¿½Ç²ï¿½ï¿½ï¿½
+		shell.setText("TableÊµÀı");
+		// shell²ÉÓÃ³äÂúÊÇ²¼¾Ö
 		shell.setLayout(new FillLayout());
 		table = new Table(shell, SWT.FULL_SELECTION);
-		// ï¿½ï¿½ï¿½Ã±ï¿½Í·ï¿½É¼ï¿½
+		// ÉèÖÃ±íÍ·¿É¼û
 		table.setHeaderVisible(true);
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß¿É¼ï¿½
+		// ÉèÖÃÍø¸ñÏß¿É¼û
 		table.setLinesVisible(true);
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğµï¿½ï¿½ï¿½
+		// ¶¨Òå±íÖĞµÄÁĞ
 		TableColumn tableColumnone = new TableColumn(table, SWT.CENTER);
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
-		tableColumnone.setText("Ñ§ï¿½ï¿½");
-		// ï¿½ï¿½ï¿½ï¿½Ã¿Ò»ï¿½ĞµÄ¿ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½Î»ï¿½ï¿½
+		// ÉèÖÃÁĞÃû
+		tableColumnone.setText("Ñ§ºÅ");
+		// ÉèÖÃÃ¿Ò»ÁĞµÄ¿í¶È(ÒÔÏñËØÎªµ¥Î»£©
 		tableColumnone.setWidth(100);
 		TableColumn tableColumntwo = new TableColumn(table, SWT.RIGHT);
-		tableColumntwo.setText("ï¿½ï¿½ï¿½ï¿½");
+		tableColumntwo.setText("ĞÕÃû");
 		tableColumntwo.setWidth(100);
 		TableColumn tableColumnthree = new TableColumn(table, SWT.CENTER);
-		tableColumnthree.setText("ï¿½Ô±ï¿½");
+		tableColumnthree.setText("ĞÔ±ğ");
 		tableColumnthree.setWidth(100);
 		TableColumn tableColumnfour = new TableColumn(table, SWT.LEFT);
-		tableColumnfour.setText("ï¿½ï¿½ï¿½ï¿½");
+		tableColumnfour.setText("ÄêÁä");
 		tableColumnfour.setWidth(100);
 		TableItem tableItem = new TableItem(table, SWT.LEFT);
-		tableItem.setText(new String[] { "20020001", "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", "Å®", "23" });
+		tableItem.setText(new String[] { "20020001", "ÀîÏşÀò", "Å®", "23" });
 		new TableItem(table, SWT.LEFT).setText(new String[] { "20020002",
-				"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", "Å®", "23" });
+				"ÍõÏşÁÕ", "Å®", "23" });
 		new TableItem(table, SWT.LEFT).setText(new String[] { "20020003",
-				"ï¿½ï¿½Ö¾ï¿½ï¿½", "ï¿½ï¿½", "22" });
+				"ÔøÖ¾¹ã", "ÄĞ", "22" });
 		new TableItem(table, SWT.LEFT).setText(new String[] { "20020004",
-				"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", "Å®", "24" });
+				"³ÂĞãÁá", "Å®", "24" });
 		new TableItem(table, SWT.LEFT).setText(new String[] { "20020005",
-				"ï¿½Å·Ü¶ï¿½", "ï¿½ï¿½", "23" });
-		// ï¿½ï¿½ï¿½ï¿½Ò¼ï¿½ï¿½Ëµï¿½
+				"ÕÅ·Ü¶·", "ÄĞ", "23" });
+		// Ìí¼ÓÓÒ¼ü²Ëµ¥
 		Menu menu = new Menu(shell, SWT.POP_UP);
 		table.setMenu(menu);
 		MenuItem item = new MenuItem(menu, SWT.PUSH);
-		item.setText("É¾ï¿½ï¿½ï¿½ï¿½");
-		// ï¿½ï¿½ï¿½ï¿½Tableï¿½Ò¼ï¿½ï¿½Â¼ï¿½
+		item.setText("É¾³ıĞĞ");
+		// ¼àÌıTableÓÒ¼üÊÂ¼ş
 		item.addListener(SWT.Selection, new Listener() {
 			public void handleEvent(Event event) {
-				//É¾ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½Ò»ï¿½ï¿½
+				//É¾³ıËùÑ¡µÄÒ»ĞĞ
 				table.remove(table.getSelectionIndices());
 			}
 		});

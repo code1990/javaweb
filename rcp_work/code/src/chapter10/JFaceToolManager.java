@@ -19,7 +19,7 @@ public class JFaceToolManager extends ApplicationWindow {
 		Display.getCurrent().dispose();
 	}
 	protected Control createContents(Composite parent) {
-		getShell().setText("ToolManagerÊµï¿½ï¿½");
+		getShell().setText("ToolManagerÊµÀý");
 		getShell().setSize(400, 250);
 		Composite composite = new Composite(parent, SWT.NONE);
 		composite.setLayout(new GridLayout(1, false));
@@ -44,7 +44,7 @@ public class JFaceToolManager extends ApplicationWindow {
 			setText("CheckBox");
 		}
 		public void run() {
-			label.setText("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Checkboxï¿½ï¿½Å¥ .");
+			label.setText("µ¥»÷ÁËCheckbox°´Å¥ .");
 		}
 	}
 	class RadioAction extends Action {
@@ -53,7 +53,7 @@ public class JFaceToolManager extends ApplicationWindow {
 			setText("Radio");
 		}
 		public void run() {
-			label.setText("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Radioï¿½ï¿½Å¥.");
+			label.setText("µ¥»÷ÁËRadio°´Å¥.");
 		}
 	}
 	class PushAction extends Action {
@@ -62,13 +62,13 @@ public class JFaceToolManager extends ApplicationWindow {
 			setText("Push");
 		}
 		public void run() {
-			label.setText("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Pushï¿½ï¿½Å¥.");
+			label.setText("µ¥»÷ÁËPush°´Å¥.");
 		}
 	}
 	class DropDownAction extends Action {
 		public DropDownAction() {
 			super("DropDown", Action.AS_DROP_DOWN_MENU);
-             //ï¿½ï¿½ï¿½Ã¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å¥ï¿½ï¿½ï¿½ï¿½ï¿½Ëµï¿½
+             //ÉèÖÃ¹¤¾ßÀ¸°´Å¥ÏÂÀ­²Ëµ¥
 			setMenuCreator(new IMenuCreator() {
 				public Menu getMenu(Control parent) {
 					Menu menu = new Menu(parent);
@@ -88,7 +88,7 @@ public class JFaceToolManager extends ApplicationWindow {
 			});
 		}
 		public void run() {
-			label.setText("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½DropDownï¿½ï¿½Å¥");
+			label.setText("µ¥»÷ÁËDropDown°´Å¥");
 		}
 	}
 	public static void main(String[] args) {

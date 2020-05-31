@@ -1,5 +1,4 @@
-/**@author WangJinTao,MengQingChang 2006
- */
+
 package chapter05.event;
 
 import org.eclipse.swt.*;
@@ -11,7 +10,7 @@ public class KeyEventExample1 {
 		Display display = new Display();
 		Shell shell = new Shell(display);
 		shell.setSize(200, 150);
-		shell.setText("KeyEventÊµï¿½ï¿½");
+		shell.setText("KeyEventÊµÀý");
 		shell.addListener(SWT.KeyDown, new Listener() {
 			public void handleEvent(Event event) {
 				String string = "";

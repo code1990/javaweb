@@ -9,28 +9,28 @@ public class TableExample1 {
 		final Display display = Display.getDefault();
 		final Shell shell = new Shell();
 		shell.setSize(410, 260);
-		shell.setText("TableÊµï¿½ï¿½");
-		// shellï¿½ï¿½ï¿½Ã³ï¿½ï¿½ï¿½ï¿½Ç²ï¿½ï¿½ï¿½
+		shell.setText("TableÊµÀı");
+		// shell²ÉÓÃ³äÂúÊÇ²¼¾Ö
 		shell.setLayout(new FillLayout());
 		Table table = new Table(shell, SWT.MULTI);
-		// ï¿½ï¿½ï¿½Ã±ï¿½Í·ï¿½É¼ï¿½
+		// ÉèÖÃ±íÍ·¿É¼û
 		table.setHeaderVisible(true);
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß¿É¼ï¿½
+		// ÉèÖÃÍø¸ñÏß¿É¼û
 		table.setLinesVisible(true);
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğµï¿½ï¿½ï¿½
+		// ¶¨Òå±íÖĞµÄÁĞ
 		TableColumn tableColumnone = new TableColumn(table, SWT.NONE);
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
-		tableColumnone.setText("Ñ§ï¿½ï¿½");
-		// ï¿½ï¿½ï¿½ï¿½Ã¿Ò»ï¿½ĞµÄ¿ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½Î»ï¿½ï¿½
+		// ÉèÖÃÁĞÃû
+		tableColumnone.setText("Ñ§ºÅ");
+		// ÉèÖÃÃ¿Ò»ÁĞµÄ¿í¶È(ÒÔÏñËØÎªµ¥Î»£©
 		tableColumnone.setWidth(100);
 		TableColumn tableColumntwo = new TableColumn(table, SWT.NONE);
-		tableColumntwo.setText("ï¿½ï¿½ï¿½ï¿½");
+		tableColumntwo.setText("ĞÕÃû");
 		tableColumntwo.setWidth(100);
 		TableColumn tableColumnthree = new TableColumn(table, SWT.NONE);
-		tableColumnthree.setText("ï¿½Ô±ï¿½");
+		tableColumnthree.setText("ĞÔ±ğ");
 		tableColumnthree.setWidth(100);
 		TableColumn tableColumnfour = new TableColumn(table, SWT.NONE);
-		tableColumnfour.setText("ï¿½ï¿½ï¿½ï¿½");
+		tableColumnfour.setText("ÄêÁä");
 		tableColumnfour.setWidth(100);
 	
 		shell.open();

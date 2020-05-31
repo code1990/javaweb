@@ -1,6 +1,3 @@
-/**
- * @author: WangJinTao,MengQingChang 2006 
- */
 package chapter14;
 
 import org.eclipse.jface.viewers.*;
@@ -8,29 +5,29 @@ import org.eclipse.jface.viewers.*;
 import org.eclipse.swt.graphics.*;
 
 /**
- * 锟斤拷锟斤拷锟斤拷峁╋拷吮锟斤拷谋锟角╋拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷菁锟铰硷拷诒锟斤拷锟矫恳伙拷锟斤拷锟斤拷锟斤拷示
+ * 这个类提供了表格的标签，决定了数据记录在表格的每一列如何显示
  */
 public class EmployeeLabelProvider implements ITableLabelProvider {
 
 	public String getColumnText(Object element, int columnIndex) {
 		Employee employee = (Employee) element;
 		switch (columnIndex) {
-		case 0:// 锟斤拷一锟斤拷
+		case 0:// 第一列
 
 			return "" + employee.getID();
 
-		case 1:// 锟节讹拷锟斤拷
+		case 1:// 第二列
 			return employee.getName();
 
-		case 2:// 锟斤拷锟斤拷锟斤拷
+		case 2:// 第三列
 			return employee.getSex();
-		case 3:// 锟斤拷锟斤拷锟斤拷
+		case 3:// 第四列
 			return "" + employee.getAge();
-		case 4:// 锟斤拷锟斤拷锟斤拷
+		case 4:// 第五列
 
 			return employee.getPosition();
 
-		case 5:// 锟斤拷锟斤拷锟斤拷
+		case 5:// 第六列
 			return "" + employee.getSalary();
 
 		}
@@ -41,7 +38,7 @@ public class EmployeeLabelProvider implements ITableLabelProvider {
 		return null;
 	}
 
-	// 锟斤拷锟铰达拷锟斤拷为通锟矫达拷锟诫，锟斤拷实锟斤拷
+	// 以下代码为通用代码，空实现
 
 	public void addListener(ILabelProviderListener listener) {
 

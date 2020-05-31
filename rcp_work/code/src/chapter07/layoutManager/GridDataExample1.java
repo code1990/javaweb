@@ -13,8 +13,8 @@ public class GridDataExample1{
 		final Display display = Display.getDefault();
 		final Shell shell = new Shell();
 		shell.setSize(300, 150);
-		shell.setText("GridDataÊµï¿½ï¿½");
-		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îª2ï¿½ï¿½
+		shell.setText("GridDataÊµÀý");
+		//½«ÈÝÆ÷·ÖÎª2ÁÐ
 		shell.setLayout(new GridLayout(2, false));
 		final Button button1 = new Button(shell, SWT.NONE);
 		button1.setText("Button1");
@@ -25,7 +25,7 @@ public class GridDataExample1{
 		
 		final Button button4 = new Button(shell, SWT.NONE);
 		button4.setText("B4");
-		//sytleÎªGridData.Fill_BOTH,Ë«ï¿½ï¿½ï¿½ï¿½ï¿½
+		//sytleÎªGridData.Fill_BOTH,Ë«Ïò³äÂú
 		GridData gridData = new GridData(GridData.FILL_BOTH);
 		button4.setLayoutData(gridData);
 		

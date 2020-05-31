@@ -12,8 +12,8 @@ public class TableTreeExample {
 		final Display display = Display.getDefault();
 		final Shell shell = new Shell();
 		shell.setSize(465, 260);
-		shell.setText("TableTreeÊµï¿½ï¿½");
-		// ï¿½ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½å·½ï¿½ï¿½
+		shell.setText("TableTreeÊµÀý");
+		// µ÷ÓÃ×Ô¶¨Òå·½·¨
 		createContents(shell);
 		shell.open();
 		shell.layout();
@@ -24,9 +24,9 @@ public class TableTreeExample {
 	}
 
 	private void createContents(final Shell shell) {
-		// ï¿½ï¿½ï¿½Ã³ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½
+		// ²ÉÓÃ³äÂúÊ½²¼¾Ö
 		shell.setLayout(new FillLayout());
-		// ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// ¶¨ÒåÒ»¸ö±í¸ñÊ÷¶ÔÏó
 		final TableTree tableTree = new TableTree(shell, SWT.BORDER
 				| SWT.FULL_SELECTION);
 
@@ -35,7 +35,7 @@ public class TableTreeExample {
 		table.setLinesVisible(true);
 		{
 
-			String[] columns = { "ï¿½ï¿½ï¿½ï¿½", "Ö°Î»", "ï¿½ï¿½Ð½(ï¿½ï¿½ï¿½ï¿½ï¿½)" };
+			String[] columns = { "²¿ÃÅ", "Ö°Î»", "ÔÂÐ½(ÈËÃñ±Ò)" };
 			for (int i = 0; i < columns.length; i++) {
 				TableColumn Column = new TableColumn(table, SWT.NONE);
 				Column.setText(columns[i]);
@@ -45,27 +45,27 @@ public class TableTreeExample {
 		}
 		final TableTreeItem tabletreeItem1 = new TableTreeItem(tableTree,
 				SWT.NONE);
-		tabletreeItem1.setText(0, "ï¿½ï¿½ï¿½ï¿½");
-		CreateTableTreeItem(tabletreeItem1, "ï¿½ï¿½Ö¾ï¿½ï¿½", "ï¿½ï¿½ï¿½ñ²¿¾ï¿½ï¿½ï¿½", "20000");
-		CreateTableTreeItem(tabletreeItem1, "ï¿½ï¿½Ö¾ï¿½ï¿½", "ï¿½ï¿½ï¿½Û¹ï¿½ï¿½ï¿½Ê¦", "14000");
-		CreateTableTreeItem(tabletreeItem1, "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", "ï¿½ß¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", "10000");
-		CreateTableTreeItem(tabletreeItem1, "Ì·ï¿½ï¿½ï¿½ï¿½", "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", "8000");
+		tabletreeItem1.setText(0, "ÉÌÎñ²¿");
+		CreateTableTreeItem(tabletreeItem1, "ÔøÖ¾¹ã", "ÉÌÎñ²¿¾­Àí", "20000");
+		CreateTableTreeItem(tabletreeItem1, "ÀîÖ¾¾ê", "ÏúÊÛ¹¤³ÌÊ¦", "14000");
+		CreateTableTreeItem(tabletreeItem1, "ÍõÏþÁá", "¸ß¼¶ÉÌÎñ´ú±í", "10000");
+		CreateTableTreeItem(tabletreeItem1, "Ì·½ðÉú", "ÉÌÎñ´ú±í", "8000");
 		final TableTreeItem tabletreeItem2 = new TableTreeItem(tableTree,
 				SWT.NONE);
-		tabletreeItem2.setText(0, "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
-		CreateTableTreeItem(tabletreeItem2, "ï¿½ï¿½Ö¾Ç¿", "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", "10000");
-		CreateTableTreeItem(tabletreeItem2, "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", "ï¿½ß¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¦", "6000");
-		CreateTableTreeItem(tabletreeItem2, "ï¿½ï¿½ï¿½ï¿½ï¿½", "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¦", "5000");
-		CreateTableTreeItem(tabletreeItem2, "ï¿½ï¿½Ö¾ï¿½ï¿½ ", "ï¿½ï¿½ï¿½ï¿½Ô±", "3000");
+		tabletreeItem2.setText(0, "¼¼Êõ²¿");
+		CreateTableTreeItem(tabletreeItem2, "ÕÅÖ¾Ç¿", "¼¼Êõ²¿¾­Àí", "10000");
+		CreateTableTreeItem(tabletreeItem2, "ÍõÃú½Ü", "¸ß¼¶Èí¼þ¹¤³ÌÊ¦", "6000");
+		CreateTableTreeItem(tabletreeItem2, "Ëå·ïÁá", "Èí¼þ¹¤³ÌÊ¦", "5000");
+		CreateTableTreeItem(tabletreeItem2, "ÇÇÖ¾±ë ", "³ÌÐòÔ±", "3000");
 		final TableTreeItem tabletreeItem3 = new TableTreeItem(tableTree,
 				SWT.NONE);
-		tabletreeItem3.setText(0, "ï¿½ï¿½ï¿½ï¿½");
-		CreateTableTreeItem(tabletreeItem3, "ï¿½ï¿½ï¿½Ã·", "ï¿½ï¿½ï¿½ñ²¿¾ï¿½ï¿½ï¿½", "6800");
-		CreateTableTreeItem(tabletreeItem3, "ï¿½ï¿½Ñ©ï¿½ï¿½", "ï¿½ï¿½ï¿½", "3000");
-		CreateTableTreeItem(tabletreeItem3, "ï¿½ï¿½ï¿½ï¿½Ã·", "ï¿½ï¿½ï¿½ï¿½", "2000");
+		tabletreeItem3.setText(0, "²ÆÎñ²¿");
+		CreateTableTreeItem(tabletreeItem3, "ÀîºèÃ·", "²ÆÎñ²¿¾­Àí", "6800");
+		CreateTableTreeItem(tabletreeItem3, "·½Ñ©¾ê", "»á¼Æ", "3000");
+		CreateTableTreeItem(tabletreeItem3, "ÕÔÊçÃ·", "³öÄÉ", "2000");
 	}
 
-	// ï¿½Ô¶ï¿½ï¿½å·½ï¿½ï¿½
+	// ×Ô¶¨Òå·½·¨
 	private TableTreeItem CreateTableTreeItem(
 			TableTreeItem parentTableTreeItem, String str0, String str1,
 			String str2) {

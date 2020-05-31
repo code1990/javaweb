@@ -16,7 +16,7 @@ public class RowLayoutExample5 {
 		final Display display = Display.getDefault();
 		final Shell shell = new Shell();
 		shell.setSize(150, 100);
-		shell.setText("RowLayoutÊµï¿½ï¿½");
+		shell.setText("RowLayoutÊµÀý");
 		RowLayout rowlayout = new RowLayout();
 		rowlayout.wrap=false;
 		shell.setLayout(rowlayout);

@@ -21,18 +21,18 @@ public class ProgressBarExample {
 		final Display display = Display.getDefault();
 		final Shell shell = new Shell(SWT.ON_TOP);
 		shell.setSize(340, 300);
-		// ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½Î»ï¿½ï¿½
+		// ÉèÖÃ´°ÌåÎ»ÖÃ
 		shell.setLocation(350, 180);
 		shell.setLayout(new FormLayout());
 		shell.setBackground(display.getSystemColor(SWT.COLOR_BLUE
-				| SWT.COLOR_BLACK)); // ï¿½ï¿½ï¿½Ã±ï¿½ï¿½ï¿½ï¿½ï¿½É«
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+				| SWT.COLOR_BLACK)); // ÉèÖÃ±³¾°ÑÕÉ«
+		// ¶¨Òå½ø¶ÈÌõ
 		progressBar = new ProgressBar(shell, SWT.SMOOTH);
 		FormData data = new FormData(337, 20);
 		data.bottom = new FormAttachment(50, 50, 0);
 		progressBar.setLayoutData(data);
 		max = progressBar.getMaximum();
-		// ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ß³ï¿½
+		// ´´½¨Ò»¸öÏß³Ì
 		new Thread() {
 			public void run() {
 				for (i = 0; i <= max; i++) {
@@ -46,10 +46,10 @@ public class ProgressBarExample {
 							Value = progressBar.getMaximum();
 							value = progressBar.getSelection();
 							if (Value == value) {
-								shell.dispose();// ï¿½Í·ï¿½shellï¿½ï¿½ï¿½ï¿½
+								shell.dispose();// ÊÍ·Åshell¶ÔÏó
 								final Display dis = Display.getDefault();
 								Shell sh = new Shell(dis);
-								sh.setText("ProgressBarÊµï¿½ï¿½");
+								sh.setText("ProgressBarÊµÀý");
 								sh.setSize(500, 400);
 								sh.open();
 								while (!sh.isDisposed()) {
@@ -61,7 +61,7 @@ public class ProgressBarExample {
 					});
 				}
 			}
-		}.start();// ï¿½ï¿½ï¿½ï¿½ï¿½ß³ï¿½
+		}.start();// Æô¶¯Ïß³Ì
 		shell.open();
 		shell.layout();
 		while (!shell.isDisposed()) {

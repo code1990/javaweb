@@ -1,5 +1,3 @@
-/**@author WangJinTao,MengQingChang 2006
- */
 package chapter04.basic.widget;
 
 import org.eclipse.swt.*;
@@ -11,16 +9,16 @@ public class ComboExample {
 		final Display display = Display.getDefault();
 		final Shell shell = new Shell();
 		shell.setSize(300, 190);
-		shell.setText("ComboÊµï¿½ï¿½");
+		shell.setText("ComboÊµÀı");
 		final Combo combo1 = new Combo(shell, SWT.SIMPLE);
 		combo1.setBounds(25, 25, 90, 90);
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÎªComboï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// ÓÃÊı×éÎªComboÉèÖÃÏÂÀ­¿òÖĞµÄÏÂÀ­Ïî
 		combo1.setItems(new String[] { "Eclipse", "SWT", "JFace", "AWT",
 				"Swing", "MyEclipse", "Lomboz" });
 		
 		final Combo combo2 = new Combo(shell, SWT.DROP_DOWN);
 		combo2.setBounds(150, 25, 90, 20);
-		// ï¿½ï¿½Ñ­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// ÓÃÑ­»·Óï¾äÉèÖÃÏÂÀ­¿òÖĞµÄÏÂÀ­Ïî
 		for (int i = 0; i < 8; i++) {
 			combo2.add("Page " + i);
 		}
@@ -29,7 +27,7 @@ public class ComboExample {
 		button1.setText("OK");
 		button1.addSelectionListener(new SelectionAdapter() {
 			public void widgetSelected(SelectionEvent e) {
-				 combo2.add(combo2.getText());// ï¿½ï¿½combo2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+				 combo2.add(combo2.getText());// Ïòcombo2ÖĞÌí¼ÓÏÂÀ­Ïî
 				 
 			}
 		});
@@ -38,7 +36,7 @@ public class ComboExample {
 		button2.setText("Cancel");
 		button2.addSelectionListener(new SelectionAdapter() {
 			public void widgetSelected(SelectionEvent e) {
-				combo2.removeAll();// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½
+				combo2.removeAll();// ½«ÏÂÀ­¿òÑ¡ÏîÉèÖÃÎª¿Õ
 			}
 		});
 		shell.open();

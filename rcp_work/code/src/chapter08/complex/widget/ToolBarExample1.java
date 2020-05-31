@@ -11,22 +11,22 @@ public class ToolBarExample1 {
 		final Display display = Display.getDefault();
 		final Shell shell = new Shell();
 		shell.setSize(500, 375);
-		shell.setText("ToolBarÊµï¿½ï¿½");
+		shell.setText("ToolBarÊµÀý");
 		shell.setLayout(new FillLayout());
-		// ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ó£¬¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÏµÄ°ï¿½Å¥ï¿½Ïµï¿½ï¿½ï¿½ï¿½Ö¿É»ï¿½ï¿½ï¿½
+		// ¶¨ÒåÒ»¸ö¹¤¾ßÀ¸¶ÔÏó£¬¹¤¾ßÀ¸ÉÏµÄ°´Å¥ÉÏµÄÎÄ×Ö¿É»»ÐÐ
 		ToolBar toolBar = new ToolBar(shell, SWT.WRAP);
-		// ï¿½ï¿½ï¿½Ã¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¹ï¿½ï¿½ï¿½ï¿½î£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï°ï¿½Å¥Îªï¿½ï¿½Í¨ï¿½ï¿½Å¥
+		// ÉèÖÃ¹¤¾ßÀ¸µÄ¹¤¾ßÏî£¬¹¤¾ßÀ¸ÉÏ°´Å¥ÎªÆÕÍ¨°´Å¥
 		ToolItem toolItem1 = new ToolItem(toolBar, SWT.PUSH);
-		toolItem1.setText("Ç°ï¿½ï¿½");
-		// ï¿½Ú°ï¿½Å¥ï¿½ï¿½ï¿½ï¿½ï¿½Í¼Æ¬
+		toolItem1.setText("Ç°½ø");
+		// ÔÚ°´Å¥ÉÏÌí¼ÓÍ¼Æ¬
 		toolItem1.setImage(new Image(display, "icons/forward.gif"));
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï°ï¿½Å¥Îªï¿½ï¿½Ñ¡ï¿½ï¿½Å¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý£ï¿½ï¿½Ù´Îµï¿½ï¿½ï¿½ï¿½ï¿½Åµï¿½ï¿½ï¿½
+		// ¹¤¾ßÀ¸ÉÏ°´Å¥Îª¸´Ñ¡°´Å¥£¬µ¥»÷ºóÏÂÏÝ£¬ÔÙ´Îµ¥»÷ºó²Åµ¯Æð¡£
 		ToolItem toolItem2 = new ToolItem(toolBar, SWT.CHECK);
-		toolItem2.setText("ï¿½ï¿½ï¿½ï¿½");
+		toolItem2.setText("ºóÍË");
 		toolItem2.setImage(new Image(display, "icons/backward.gif"));
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï°ï¿½Å¥Îªï¿½ï¿½Ñ¡ï¿½ï¿½Å¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ìµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// ¹¤¾ßÀ¸ÉÏ°´Å¥Îªµ¥Ñ¡°´Å¥£¬µ¥»÷ºó»áÁ¢¿Ìµ¯ÆðÀ´¡£
 		ToolItem toolItem3 = new ToolItem(toolBar, SWT.RADIO);
-		toolItem3.setText("ï¿½ï¿½ï¿½");
+		toolItem3.setText("Çå³ý");
 		toolItem3.setImage(new Image(display, "icons/remove.gif"));
 		toolBar.pack();
 		shell.open();

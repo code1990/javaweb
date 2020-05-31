@@ -14,20 +14,20 @@ public class TreeEditorExample{
 		final Display display = Display.getDefault();
 		final Shell shell = new Shell();
 		shell.setSize(180, 200);
-		shell.setText("TreeEditorÊµï¿½ï¿½");
+		shell.setText("TreeEditorÊµÀý");
 		shell.setLayout(new FillLayout());
 		final Tree tree = new Tree(shell, SWT.BORDER);
 		TreeItem item1 = new TreeItem(tree, SWT.NULL);
-		item1.setText("ï¿½ï¿½ï¿½ï¿½");
+		item1.setText("³ÇÊÐ");
 		TreeItem item2 = new TreeItem(item1, SWT.NULL);
-		item2.setText("ï¿½ï¿½ï¿½ï¿½");
+		item2.setText("±±¾©");
 		TreeItem item3 = new TreeItem(item1, SWT.NULL);
-		item3.setText("ï¿½Ïºï¿½");
+		item3.setText("ÉÏº£");
 		final TreeEditor treeEditor = new TreeEditor(tree);
 		treeEditor.grabHorizontal = true;
 		tree.addSelectionListener(new SelectionAdapter() {
 			public void widgetSelected(SelectionEvent e) {
-				// ï¿½ï¿½ï¿½Ô­ï¿½ï¿½ï¿½à¼­ï¿½Ä½Úµï¿½ï¿½ï¿½ï¿½ï¿½
+				// Çå³ýÔ­À´±à¼­µÄ½ÚµãÊý¾Ý
 				Control oldEditor = treeEditor.getEditor();
 				if (oldEditor != null)
 					oldEditor.dispose();

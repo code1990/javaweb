@@ -11,28 +11,28 @@ public class ExpandBarExample {
 		final Display display = Display.getDefault();
 		final Shell shell = new Shell();
 		shell.setSize(300, 270);
-		shell.setText("ExpandBarÊµï¿½ï¿½");
+		shell.setText("ExpandBarÊµÀý");
 		shell.setLayout(new FillLayout());
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// ¶¨ÒåÀ©Õ¹À¸¶ÔÏó
 		ExpandBar expandbar = new ExpandBar(shell, SWT.V_SCROLL);
-		// ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Õ¹ï¿½ï¿½ï¿½ï¿½
+		// ¶¨ÒåµÚÒ»¸öÀ©Õ¹À¸Ïî
 		{
 			Composite comp1 = new Composite(expandbar, SWT.NONE);
 			comp1.setLayout(new GridLayout());
 			new Slider(comp1, SWT.SMOOTH);
 			new Scale(comp1, SWT.HORIZONTAL);
 			new ProgressBar(comp1, SWT.INDETERMINATE);
-			// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ¹ï¿½ï¿½Ä¶ï¿½ï¿½ï¿½
+			// ¶¨ÒåÀ©Õ¹ÏîµÄ¶ÔÏó
 			ExpandItem item1 = new ExpandItem(expandbar, SWT.NONE);
 			item1.setText("ExpandItem  Item1");
-			item1.setHeight(100);// ï¿½ï¿½ï¿½ï¿½Itemï¿½Ä¸ß¶ï¿½
-			item1.setControl(comp1);// setControlï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½comp1ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+			item1.setHeight(100);// ÉèÖÃItemµÄ¸ß¶È
+			item1.setControl(comp1);// setControl·½·¨¿ØÖÆcomp1µÄÏÔÏÖ
 		}
-		// ï¿½ï¿½ï¿½ï¿½Ú¶ï¿½ï¿½ï¿½ï¿½ï¿½Õ¹ï¿½ï¿½ï¿½ï¿½
+		// ¶¨ÒåµÚ¶þ¸öÀ©Õ¹À¸Ïî
 		{
 			Composite comp2 = new Composite(expandbar, SWT.NONE);
 			comp2.setLayout(new GridLayout());
-			// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½Ô±ï¿½ï¿½ï¿½ï¿½
+			// ÉèÖÃÌáÊ¾ÐÔ±íÇé·û
 			final Label label1 = new Label(comp2, SWT.NONE);
 			label1.setImage(display.getSystemImage(SWT.ICON_ERROR));
 			final Label label2 = new Label(comp2, SWT.NONE);
@@ -46,7 +46,7 @@ public class ExpandBarExample {
 			item2.setHeight(160);
 			item2.setControl(comp2);
 		}
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ¹ï¿½ï¿½ï¿½ï¿½
+		// ¶¨ÒåµÚÈý¸öÀ©Õ¹À¸Ïî
 		{
 			Composite comp3 = new Composite(expandbar, SWT.NONE);
 			comp3.setLayout(new GridLayout());

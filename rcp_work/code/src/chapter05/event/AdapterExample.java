@@ -1,5 +1,4 @@
-/**@author WangJinTao,MengQingChang 2006
- */
+
 package chapter05.event;
 
 import org.eclipse.jface.dialogs.*;
@@ -15,10 +14,10 @@ public class AdapterExample {
 		final Display display = Display.getDefault();
 		final Shell shell = new Shell();
 		shell.setSize(200, 120);
-		shell.setText("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+		shell.setText("ÊÊÅäÆ÷Æ÷ÊÂÀý");
 		Button button = new Button(shell, SWT.PUSH);
 		button.setBounds(30, 25, 120, 25);
-		button.setText("È·ï¿½ï¿½");
+		button.setText("È·¶¨");
 		button.addSelectionListener(new SelectionAdapter() {
 			public void widgetSelected(SelectionEvent e) {
 				MessageDialog.openInformation(shell, null, "HelloWorld!!");
