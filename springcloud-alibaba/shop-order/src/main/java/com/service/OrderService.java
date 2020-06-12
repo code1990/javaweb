@@ -1,4 +1,6 @@
-package com.com.service;
+package com.service;
+
+import com.Order;
 
 /**
  * @program: springcloud-alibaba
@@ -7,4 +9,5 @@ package com.com.service;
  * @Description:
  */
 public interface OrderService {
+    public void save(Order order);
 }

@@ -1,5 +1,6 @@
 package com.service.impl;
 
+import com.Product;
 import com.dao.ProductDao;
 import com.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,5 +18,8 @@ public class ProductServiceImpl implements ProductService {
     @Autowired
     private ProductDao productDao;
 
-
+    @Override
+    public Product getProductByPid(Integer pid) {
+        return productDao.findById(pid).get();
+    }
 }

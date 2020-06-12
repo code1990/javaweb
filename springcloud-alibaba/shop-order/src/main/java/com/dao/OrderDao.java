@@ -1,7 +1,8 @@
-package com.com.dao;
+package com.dao;
 
 import com.Order;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
 /**
  * @program: springcloud-alibaba
@@ -9,5 +10,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
  * @Author: code1990
  * @Description:
  */
+@Repository
 public interface OrderDao extends JpaRepository<Order, Integer> {
 }
+
