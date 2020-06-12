@@ -276,22 +276,213 @@ FillLayout 可以将组件充满整个窗体
 
 FillLayout 支持的样式类型为SWT.HORIZONTAL、SWT.VERTICAL 两种
 
-```
-
+```java
+shell.setLayout(new FillLayout(SWT.HORIZONTAL)); 
+new Text(shell,SWT.BORDER); 
+//====
+FillLayout fillLayout = new FillLayout(); 
+fillLayout.type = SWT.VERTICAL; 
+shell.setLayout(fillLayout); 
 ```
 
 -------
 
+FillLayout 的属性有 marginWidth、marginHeight、Spacing 
 
+FillLayoutExample4.java 7.3.png
+
+----------------
+
+#### 7.2 网格式布局（GridLayout）
+
+网格布局（GridLayout）相对其他布局类型比较复杂，该布局的功能相当强大，并且应 用灵活
+
+new GridLayout()构造方法为 GridLayout 的默认布局，即将容器设置成为一列，所有组件在 容器中从上至下均排成一列。
+new GriLayout(int numColumns,boolean makeColumnsEqualWidth) 中的参数 numColumns 用来表示容器（一般为窗口）设置的列数，makeColumnsEqualWidth 为 boolean 型的参数，==**当设置为 true 时则组件以等宽度按照指定列数排列在容器中**==
+
+-----------
+
+GridLayout有很多重要属性，主要包括numColunms、 makeColumnsEqualWidth、marginWidth、marginHeight、 verticalSpacing、horizontalSpacing 等
+
+numColumns 属性用来设置容器的列数目，此实例设置为 3 列。  
+horizontalSpacing 属性用来控制各行组件之间横向的间距（以像素为单位）。  
+verticalSpacing 属性用来控制各列组件之间纵向的距离（以像素为单位）。  
+make ColumnsEqualWidth=true 使组件各列等距离分开。  
+marginWidth属性用来控制最左边组件和最右边组件与边框的距离（以像素为单位）。
+marginHeight 属性用来控制顶部组件和底部组件与边框的距离（以像素为单位）。 
+
+-------------
+
+GridLayoutExample3 7.3.png
+
+**GridData 的对象只能应用在一个组件上**
+
+----
+
+GriData.GRAB_HORIZONTAL 设置组件布局时，被设组件所在列的横向空间距 离随着容器（窗体）大小而变化，
+
+GridData.GRAB_VERTICAL 设置组件布局时，被设组件所在行的纵向空间距离 随着容器（窗体）大小而变化
+
+public GridData(int width,int height) 方法用来指定组件的宽度和高度。
+
+ griddata.horizontalSpan=3 设置组件占有 3 列，但组件本身大小不变，
+
+verticalSpan 属性用来设置组件占 有的行数目
+
+horizontalIndent属性设置组件向右移动的距离
+
+verticalIndent 属性设置组件向下移动的距离
+
+widthHint 属性用来设置组件的宽
+
+GridDataExample5 7.15
+
+----------------------
+
+#### 7.3 行布局（RowLayout） 
+
+RowLayout 布局支持自动换行。它的功能不如 GridLayout 布局强大。RowLayout 布局与 GridLayout 布局类似
+
+当窗体宽度不 足时，窗体上的组件自动折行
+
+---------
+
+常用的属性 有 boolean justify、boolean pack、int spacing、int marginBottom、 int marginLeft、int marginRight、int marginTop、boolean warp
+
+rowlayout.justify=true 使组件等距离的分配所在行 空间
+
+rowlayout.pack=false 设置组件的大小相等
+
+rowlayout.wrap=false 控制当窗口宽度不足时强制组件不自动折行
+
+int spacing、int marginLeft、int marginTop 属性用来设置组件布局
+
+**RowData** 类只是起 到控制组件大小的作用
+
+RowDataExample 7.31
+
+-----------
+
+#### 7.4 表格式布局(FormLayout) 
+
+FormLayout 布局允许用户相 对于其他控件来安排每个控件，允许将控件的任意一边（左边、顶部、右边或底部）附着到 另一个控件的（通常相对的）边上，或者附着到容器的某一边上
+
+ FormLayout 与 **FormData** 配合可以对组件 大小进行设置
+
+FormDataExample.java 7.36
+
+-------------------
+
+用 **FomAttachment** 与 FormData 配合使用来控制复杂的布局
+
+FormAttachmentExample1.java 
+
+----------------
+
+#### 7.5 堆栈式布局(StackLayout)
+
+StackLayout是一个类似 没有选项卡的 TabFolder
+可以用它在一次只显示一个 GUI 的 TabFolder 的顶部放置多个 GUI
+
+StackLayoutExample 7.47
+
+------
+
+#### 7.6 一个类似 Google Talk 设置对话框的综合布局
+
+
+
+-----
 
 ### 第 8 章 SW T 的复杂组件
 
+#### 8.1 刻度条(Scale 类) 
 
+#### 8.2 滑动条(Slider 类) 
+
+#### 8.3 进度条(ProgressBar 类) 
+
+#### 8.4 扩展栏(ExpandBar 类、ExpandItem 类) 
+
+#### 8.5 选项卡(TabFolder 类、TabItem 类) 
+
+#### 8.6 自定义选项卡(CTabFolder 类、CTabItem 类) CTabFolder 是 TabFolder 的增强版
+
+#### 8.7 分割框格(Sash 类) 
+
+用 Sash 可以对一个 容器进行分区(分成若干个区域)，并可以手动调整框 格分离的区域大
+
+#### 8.8 分割窗(SashForm 类) 
+
+SashForm 为容器类，所以可以将一 些组件定义在 SashForm 
+
+----
+
+#### 8.9 画布(Canvas 类) 
+
+#### 8.10 菜单（Menu 类、MenuItem 类） 
+
+菜单是动态呈现的选择列 
+
+#### 8.11 工具栏(ToolBar 类、ToolItem 类) 
+
+ToolBar 用 ToolItem 来设定工具栏上的控 件，ToolItem 可以用文本或图片作按钮
+
+#### 8.12 动态工具栏（CoolBar 类、CoolItem 类） 
+
+CoolBar 与 ToolBar 类似，不同的是用户可以通过拖动 CoolBar 的工具栏来改变工具栏的 位置。
+
+#### 8.13 表(Table 类、TableItem 类、TableColumn 类) 
+
+#### 8.14  树（Tree 类） 
+
+树是用来显示分层信息的列表
+
+#### 8.15 表格树(TableTree 类、TableTreeItem 类） 
+
+Table 和 Tree 的结合体
 
 ### 第 9 章 其他组件类用法
 
+#### 9.1 浏览器部件(Browser 类)
 
+在 Windows 平台下，Browser 类实现了一个IE 浏览器的 OLE 客户端
 
+#### 9.2 链接控件(Link 类) 
 
+Link 控件类似于浏览器的超文本链接
 
----
+#### 9.3 Tracker 控件
+
+Tracker 用来修改控件大小或移动控件时给用户提供反馈信息
+
+#### 9.4 剪贴板(Clipboard 类)
+
+剪贴板所涉及的操作包括复制、粘贴、剪切操作
+
+#### 9.5 拖放（DragSource 类、DropTarget 类） 
+
+所谓 拖放就是允许用户将数据从当前位置拖动到目标位置，当前位置通过 DragSource 类来实现， 目标位置通过 DropTarget 类来实现
+
+#### 9.6 图形上下文(GC 类) 
+
+GC 提供了 大量的基本图形功能。 
+
+#### 9.7 颜色(Color 类)
+
+#### 9.8 字体(Font 类) 
+
+#### 9.9 图像(Image 类)
+
+#### 9.10 文本风格(StyledText 类) 
+
+更高级的文本表示形式，如定义字体和颜色， 则需要 StyledText
+
+#### 9.11 系统托盘(Tray 类、TrayItem 类) 
+
+都提供了与系统状态关联的特殊形式的工具栏，称为托盘（Tray
+
+#### 9.12 鼠标游标(Cursor 类) 
+
+该类表示系统鼠标光标指针，但鼠标光标的形 状依赖于所应用的平台
+
