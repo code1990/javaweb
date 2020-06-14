@@ -6,6 +6,8 @@ import com.alibaba.fastjson.JSONObject;
 import com.service.OrderService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.client.ServiceInstance;
+import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -27,9 +29,14 @@ public class OrderController {
     @Autowired
     private RestTemplate restTemplate;
 
+    @Autowired
+    private DiscoveryClient discoveryClient;
+
     @RequestMapping("/order/product/{pid}")
     public Order createOrder(@PathVariable("pid") Integer pid) {
-        Product product = restTemplate.getForObject("http://localhost:8081/product/" + pid, Product.class);
+        ServiceInstance instance = discoveryClient.getInstances("product-service").get(0);
+        String url = instance.getHost()+":"+instance.getPort();
+        Product product = restTemplate.getForObject("http://"+url+"/product/" + pid, Product.class);
         log.info(JSONObject.toJSONString(product));
         Order order = new Order();
         order.setNumber(1);
@@ -42,4 +49,20 @@ public class OrderController {
         log.info(JSONObject.toJSONString(order));
         return order;
     }
+
+//    @RequestMapping("/order/product/{pid}")
+//    public Order createOrder(@PathVariable("pid") Integer pid) {
+//        Product product = restTemplate.getForObject("http://localhost:8081/product/" + pid, Product.class);
+//        log.info(JSONObject.toJSONString(product));
+//        Order order = new Order();
+//        order.setNumber(1);
+//        order.setPid(pid);
+//        order.setPname(product.getPname());
+//        order.setPprice(product.getPprice());
+//        order.setUsername("test");
+//        order.setUid(1);
+//        orderService.save(order);
+//        log.info(JSONObject.toJSONString(order));
+//        return order;
+//    }
 }
