@@ -3,6 +3,7 @@ package com.controller;
 import com.Order;
 import com.Product;
 import com.alibaba.fastjson.JSONObject;
+import com.dao.ProductService;
 import com.service.OrderService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,15 +36,16 @@ public class OrderController {
     @Autowired
     private DiscoveryClient discoveryClient;
 
-
+    @Autowired
+    private ProductService productService;
 
     @RequestMapping("/order/product/{pid}")
     public Order createOrder(@PathVariable("pid") Integer pid) {
 //        List<ServiceInstance> list = discoveryClient.getInstances("product-service");
 //        int index = new Random(list.size()).nextInt();
 //        ServiceInstance instance = list.get(index);
-        String url = "service-product";
-        Product product = restTemplate.getForObject("http://"+url+"/product/" + pid, Product.class);
+//        String url = "service-product";
+        Product product = productService.findByPid(pid);
         log.info(JSONObject.toJSONString(product));
         Order order = new Order();
         order.setNumber(1);
@@ -56,6 +58,26 @@ public class OrderController {
         log.info(JSONObject.toJSONString(order));
         return order;
     }
+
+//    @RequestMapping("/order/product/{pid}")
+//    public Order createOrder(@PathVariable("pid") Integer pid) {
+////        List<ServiceInstance> list = discoveryClient.getInstances("product-service");
+////        int index = new Random(list.size()).nextInt();
+////        ServiceInstance instance = list.get(index);
+//        String url = "service-product";
+//        Product product = restTemplate.getForObject("http://" + url + "/product/" + pid, Product.class);
+//        log.info(JSONObject.toJSONString(product));
+//        Order order = new Order();
+//        order.setNumber(1);
+//        order.setPid(pid);
+//        order.setPname(product.getPname());
+//        order.setPprice(product.getPprice());
+//        order.setUsername("test");
+//        order.setUid(1);
+//        orderService.save(order);
+//        log.info(JSONObject.toJSONString(order));
+//        return order;
+//    }
 
 //    @RequestMapping("/order/product/{pid}")
 //    public Order createOrder(@PathVariable("pid") Integer pid) {
